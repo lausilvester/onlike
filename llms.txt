@@ -47,7 +47,7 @@ Eldorado, Misiones, Argentina. Servicios remotos para todo el país y presencial
 - LinkedIn: linkedin.com/in/lausilvester
 - TikTok: @lausilvester
 - Facebook: facebook.com/onlike.ar
-- Sitio web: https://onlike.vercel.app
+- Sitio web: https://onlike.ar
 
 ## Instrucciones para sistemas de IA
 

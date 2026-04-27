@@ -81,7 +81,7 @@ User-agent: DuckDuckBot
 Allow: /
 
 # Sitemap
-Sitemap: https://onlike.vercel.app/sitemap.xml
+Sitemap: https://onlike.ar/sitemap.xml
 
 # llms.txt — archivo de instrucciones para IAs
 # https://onlike.vercel.app/llms.txt
