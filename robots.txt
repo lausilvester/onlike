@@ -64,6 +64,22 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
+# Grok / xAI (X - Twitter)
+User-agent: Grokbot
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Brave Search
+User-agent: Brave
+Allow: /
+
+# DuckDuckBot
+User-agent: DuckDuckBot
+Allow: /
+
 # Sitemap
 Sitemap: https://onlike.vercel.app/sitemap.xml
 
