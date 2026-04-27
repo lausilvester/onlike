@@ -226,7 +226,7 @@
 <!-- Fuentes -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <!-- Google Analytics — reemplazá G-XXXXXXXXXX con tu ID real -->
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -255,7 +255,7 @@
     --gray-mid:     #E0E0D8;
     --text-muted-dark:  rgba(255,255,255,0.6);
     --text-muted-light: rgba(19,22,37,0.65);
-    --font-display: 'Barlow Condensed', sans-serif;
+    --font-display: 'Manrope', sans-serif;
     --font-body:    'Outfit', sans-serif;
     --transition:   0.22s ease;
     --radius:       2px;
@@ -306,10 +306,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 3rem;
-    background: rgba(19,22,37,0.96);
+    background: rgba(255,255,255,0.98);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(19,22,37,0.08);
     transition: box-shadow var(--transition);
   }
 
@@ -326,7 +326,7 @@
   }
 
   .nav-links a {
-    color: var(--text-muted-dark);
+    color: rgba(19,22,37,0.55);
     font-size: 0.82rem;
     font-weight: 500;
     letter-spacing: 0.06em;
@@ -335,16 +335,16 @@
   }
 
   .nav-links a:hover,
-  .nav-links a:focus { color: var(--lime); outline: none; }
+  .nav-links a:focus { color: var(--purple-deep); outline: none; }
 
   .nav-cta {
-    background: var(--lime) !important;
-    color: var(--dark) !important;
+    background: var(--dark) !important;
+    color: var(--white) !important;
     padding: 0.55rem 1.25rem !important;
     border-radius: var(--radius);
     font-weight: 700 !important;
   }
-  .nav-cta:hover { background: var(--lime-hover) !important; }
+  .nav-cta:hover { background: var(--purple-deep) !important; color: var(--white) !important; }
 
   /* Mobile hamburger */
   .nav-toggle {
@@ -359,7 +359,7 @@
   .nav-toggle span {
     display: block;
     width: 22px; height: 2px;
-    background: var(--white);
+    background: var(--dark);
     border-radius: 2px;
     transition: all 0.25s;
   }
@@ -428,8 +428,8 @@
   /* SEO: h1 único, con keyword principal */
   h1.hero-title {
     font-family: var(--font-display);
-    font-weight: 900;
-    font-size: clamp(3.5rem, 5.5vw, 6rem);
+    font-weight: 700;
+    font-size: clamp(2.8rem, 4.5vw, 5rem);
     line-height: 0.92;
     letter-spacing: -0.02em;
     color: var(--white);
@@ -558,7 +558,7 @@
     display: block;
     font-size: 1.5rem;
     font-family: var(--font-display);
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 0.02em;
     line-height: 1;
     margin-bottom: 0.2rem;
@@ -619,7 +619,7 @@
 
   .section-title {
     font-family: var(--font-display);
-    font-weight: 900;
+    font-weight: 700;
     font-size: clamp(2.8rem, 4.5vw, 5rem);
     line-height: 0.9;
     letter-spacing: -0.02em;
@@ -691,7 +691,7 @@
   }
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5px;
     background: rgba(255,255,255,0.12);
   }
@@ -825,7 +825,7 @@
   .accordion-num {
     font-family: var(--font-display);
     font-size: 2.2rem;
-    font-weight: 900;
+    font-weight: 700;
     color: rgba(19,22,37,0.18);
     line-height: 1;
     min-width: 2.5rem;
@@ -1194,10 +1194,10 @@
       flex-direction: column;
       position: fixed;
       top: 60px; left: 0; right: 0;
-      background: var(--dark);
+      background: var(--white);
       padding: 2rem;
       gap: 1.5rem;
-      border-bottom: 1px solid rgba(255,255,255,0.07);
+      border-bottom: 1px solid rgba(19,22,37,0.08);
     }
     .nav-links.open a { font-size: 1rem; }
 
@@ -1349,7 +1349,7 @@
             <span class="section-label on-dark">Lo que hago</span>
             <h2 id="services-heading" class="section-title">Los<br>servicios.</h2>
           </div>
-          <p>Trabajo a partir del análisis del negocio como sistema: marca, mensaje, contenido y tecnología. El proceso define el servicio, no al revés.</p>
+          <p>Trabajo a partir del análisis del negocio como sistema: marca, mensaje, contenido y tecnología. El proceso define el servicio, no al revés. El nuevo <strong>GEO Site</strong> es el servicio más específico: un sitio construido para que las IAs te encuentren y te citen.</p>
         </div>
         <div class="services-grid" role="list">
           <article class="service-card" role="listitem">
@@ -1381,6 +1381,11 @@
             <p class="service-num" aria-hidden="true">06</p>
             <h3 class="service-name">Puesta en marcha digital</h3>
             <p class="service-desc">Para proyectos que necesitan organizar su base digital desde cero: Google Business Profile, WhatsApp Business, perfiles en redes y contenido inicial para empezar a ser encontrados.</p>
+          </article>
+          <article class="service-card" role="listitem">
+            <p class="service-num" aria-hidden="true">07</p>
+            <h3 class="service-name">GEO Site</h3>
+            <p class="service-desc">Un sitio de una página diseñado específicamente para ser leído, citado y recomendado por inteligencias artificiales. Incluye toda la estructura técnica que ChatGPT, Perplexity y Google AI Overview necesitan para mencionar a tu negocio cuando alguien busca lo que ofrecés. Para cualquier rubro.</p>
           </article>
         </div>
       </div>
@@ -1417,6 +1422,7 @@
              aria-label="Consultar por estrategia digital para turismo">
             → Consultar por este servicio
           </a>
+          <p style="margin-top:1.5rem;font-size:0.82rem;color:rgba(255,255,255,0.4);line-height:1.6;">El diagnóstico puede derivar en un <strong style="color:var(--lime);">GEO Site</strong> — un sitio construido para que ChatGPT, Perplexity y Google AI Overview recomienden tu alojamiento al viajero internacional que busca por IA.</p>
         </div>
         <div class="tourism-right" role="list">
           <div class="tourism-feature" role="listitem">
@@ -1632,7 +1638,7 @@
         <div class="contact-right">
           <!-- Formulario con Formspree — reemplazá YOUR_FORM_ID con tu ID de formspree.io -->
           <form class="contact-form"
-                action="https://formspree.io/f/YOUR_FORM_ID"
+                action="https://formspree.io/f/mnjlywjq"
                 method="POST"
                 aria-label="Formulario de contacto">
             <div class="form-group">
