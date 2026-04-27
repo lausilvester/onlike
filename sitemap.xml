@@ -1,21 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- Página principal -->
   <url>
-    <loc>https://lausilvester.github.io/onlike/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <loc>https://onlike.vercel.app/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
+  <!-- Secciones ancla — útiles para que los crawlers identifiquen contenido -->
   <url>
-    <loc>https://lausilvester.github.io/onlike/quien-soy.html</loc>
-    <lastmod>2026-03-12</lastmod>
+    <loc>https://onlike.vercel.app/#services</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://onlike.vercel.app/#tourism</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://onlike.vercel.app/#method</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://lausilvester.github.io/onlike/posicionamiento-ia.html</loc>
-    <lastmod>2026-03-12</lastmod>
+    <loc>https://onlike.vercel.app/#about</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://onlike.vercel.app/#contact</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
