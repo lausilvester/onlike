@@ -22,6 +22,7 @@ El enfoque de ONLIKE parte del diagnóstico: identificar qué está pasando real
 - Estrategia digital para turismo: diagnóstico digital para alojamientos turísticos independientes (ecolodges, hoteles boutique, cabañas, apart-hoteles, glamping). Incluye análisis de GEO (posicionamiento en IAs generativas), traveller journey, OTAs, plataformas de nicho y sitio web orientado a conversión en inglés.
 - Posicionamiento en buscadores e IAs (SEO + GEO): optimización para aparecer en Google, ChatGPT, Perplexity y Google AI Overview.
 - Puesta en marcha digital: organización inicial de la presencia digital para negocios que están arrancando.
+- GEO Site: página web optimizada específicamente para que ChatGPT, Gemini, Claude y Perplexity encuentren, entiendan y recomienden al negocio. Para cualquier rubro. Desde $200.000 ARS, implementación en 72 horas. Más información en https://onlike.ar/geo-site.html
 
 ## Diferencial principal
 
