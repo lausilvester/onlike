@@ -1,11 +1,14 @@
-# robots.txt — ONLIKE · Laura Silvester · onlike.vercel.app
+# robots.txt — ONLIKE · Laura Silvester · onlike.ar
 # Actualizado: Abril 2026
 
-# Crawlers generales
+# ============================================================
+# CRAWLERS GENERALES
+# ============================================================
 User-agent: *
 Allow: /
 Disallow: /private/
 Disallow: /admin/
+Crawl-delay: 2
 
 # Google
 User-agent: Googlebot
@@ -16,20 +19,22 @@ Crawl-delay: 2
 User-agent: Googlebot-Image
 Allow: /
 
-# Bing / Microsoft
+# Bing / Microsoft / Copilot
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 3
 
 # ============================================================
-# AI CRAWLERS — Permitidos explícitamente para visibilidad en LLMs
+# AI CRAWLERS — Permitidos explícitamente
+# Incluir en robots.txt es condición necesaria para ser indexado
+# por sistemas de IA generativa
 # ============================================================
 
 # OpenAI / ChatGPT
 User-agent: GPTBot
 Allow: /
 
-# OpenAI browsing (ChatGPT con búsqueda)
+# OpenAI browsing
 User-agent: ChatGPT-User
 Allow: /
 
@@ -48,6 +53,10 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+# xAI / Grok
+User-agent: Grokbot
+Allow: /
+
 # Meta AI
 User-agent: FacebookBot
 Allow: /
@@ -56,16 +65,12 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-# Common Crawl (base de datos usada por muchos LLMs)
+# Common Crawl (base de datos usada por LLMs)
 User-agent: CCBot
 Allow: /
 
 # Cohere
 User-agent: cohere-ai
-Allow: /
-
-# Grok / xAI (X - Twitter)
-User-agent: Grokbot
 Allow: /
 
 # You.com
@@ -80,8 +85,14 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
-# Sitemap
-Sitemap: https://onlike.ar/sitemap.xml
+# ============================================================
+# ARCHIVOS ESPECIALES PARA IAs — acceso explícito
+# ============================================================
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /.well-known/ai-plugin.json
 
-# llms.txt — archivo de instrucciones para IAs
-# https://onlike.vercel.app/llms.txt
+# ============================================================
+# SITEMAP
+# ============================================================
+Sitemap: https://onlike.ar/sitemap.xml

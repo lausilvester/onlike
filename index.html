@@ -1191,7 +1191,9 @@
   /* ============================================================
      RESPONSIVE
      ============================================================ */
-  @media (max-width: 960px) {
+    @media (max-width: 960px) {
+    .faq-grid { grid-template-columns: 1fr !important; }
+  
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
     .nav-toggle { display: flex; }
@@ -1276,6 +1278,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li><a href="turismo.html">Turismo</a></li>
       <li><a href="geo-site.html">GEO Site</a></li>
       <li><a href="#method">El método</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#about">Quién soy</a></li>
       <li><a href="#contact" class="nav-cta">Escribime</a></li>
     </ul>
@@ -1309,6 +1312,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <blockquote class="hero-quote" cite="https://onlike.ar">
             "El contenido no es el punto de partida, sino una consecuencia de una estrategia bien pensada."
           </blockquote>
+          <!-- Quick Answer: párrafo autónomo para AI crawlers — no modificar sin revisar GEO -->
+          <p style="font-size:0.88rem;color:rgba(255,255,255,0.45);line-height:1.75;margin-bottom:2rem;border-left:2px solid rgba(142,81,185,0.4);padding-left:1rem;">
+            ONLIKE es la consultoría de estrategia y posicionamiento digital de Laura Silvester, con base en Eldorado, Misiones, Argentina. Trabaja con empresas, profesionales y alojamientos turísticos que necesitan ordenar su comunicación y posicionarse mejor en buscadores e inteligencias artificiales.
+          </p>
           <div class="hero-btns">
             <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20contacto%20desde%20tu%20sitio%20web.%20Quisiera%20contarte%20mi%20caso." 
                target="_blank" rel="noopener noreferrer" 
@@ -1628,7 +1635,72 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" aria-labelledby="contact-heading">
+  
+<!-- ============================================================
+     FAQ — Sección para GEO: preguntas reales con respuestas completas
+     Las IAs extraen esta sección para responder consultas de usuarios
+     ============================================================ -->
+<section id="faq" style="background:var(--dark);color:var(--white);padding:7rem 0;" aria-labelledby="faq-heading">
+  <div class="container">
+    <span class="section-label on-dark">Preguntas frecuentes</span>
+    <h2 id="faq-heading" class="section-title" style="color:var(--white);margin-bottom:3rem;">Lo que más<br>me preguntan.</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;" class="faq-grid">
+
+      <div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;">
+        <h3 style="font-family:'Manrope',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Qué hace ONLIKE?</h3>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">ONLIKE es una consultoría de estrategia y posicionamiento digital fundada por Laura Silvester en Eldorado, Misiones. Trabaja con empresas, profesionales y proyectos turísticos que necesitan ordenar su comunicación digital y mejorar su visibilidad en buscadores e inteligencias artificiales.</p>
+      </div>
+
+      <div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;">
+        <h3 style="font-family:'Manrope',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Qué es un GEO Site?</h3>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Un GEO Site es una página web de una sola pantalla con diseño profesional y una capa técnica invisible diseñada para que ChatGPT, Gemini, Claude y Perplexity encuentren, entiendan y recomienden a un negocio. Incluye llms.txt, schema JSON-LD, robots.txt optimizado y ai-plugin.json. Precio desde $250.000 ARS.</p>
+      </div>
+
+      <div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;">
+        <h3 style="font-family:'Manrope',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Trabajás con negocios de cualquier rubro?</h3>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Sí. Trabajo con empresas, profesionales independientes, instituciones educativas y proyectos turísticos. El denominador común es que sean negocios que necesitan comunicar mejor lo que hacen y ser encontrados por las personas correctas, en buscadores tradicionales y en inteligencias artificiales.</p>
+      </div>
+
+      <div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;">
+        <h3 style="font-family:'Manrope',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Por qué es importante el posicionamiento en IAs?</h3>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Cada vez más personas usan ChatGPT, Gemini y Perplexity para buscar recomendaciones de servicios, alojamientos y profesionales. Si un negocio no tiene la estructura técnica correcta, las IAs no pueden citarlo aunque el negocio exista. El GEO (Generative Engine Optimization) es la disciplina que resuelve exactamente eso.</p>
+      </div>
+
+      <div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;">
+        <h3 style="font-family:'Manrope',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Cómo es el proceso para empezar?</h3>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Primero escribís por WhatsApp o completás el formulario de contacto contando brevemente qué está pasando con tu presencia digital. A partir de ahí defino si corresponde arrancar con un diagnóstico completo, con un GEO Site directo, o con una mentoría puntual para ordenar prioridades.</p>
+      </div>
+
+      <div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;">
+        <h3 style="font-family:'Manrope',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Ofrecés servicios presenciales o solo remotos?</h3>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Los dos. La mayoría de los servicios se hacen de forma remota — diagnósticos, mentorías, GEO Sites — lo que permite trabajar con clientes en cualquier punto del país. Los servicios presenciales están disponibles para proyectos en Misiones y la región.</p>
+      </div>
+
+      <div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;">
+        <h3 style="font-family:'Manrope',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Hacés community management o gestión de redes?</h3>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">No. ONLIKE trabaja a nivel estratégico: diagnóstico, posicionamiento y metodología. No gestiono cuentas de redes sociales de forma operativa ni diaria. El enfoque es definir qué comunicar, cómo y dónde — no la ejecución cotidiana de publicaciones.</p>
+      </div>
+
+      <div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;">
+        <h3 style="font-family:'Manrope',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Cuánto cuesta una mentoría?</h3>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">El precio depende del formato y la profundidad. Para consultarlo, escribí por WhatsApp al +54 3751 566488 contando brevemente qué necesitás trabajar, y te armo una propuesta según el caso.</p>
+      </div>
+
+      <div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;">
+        <h3 style="font-family:'Manrope',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Trabajás específicamente con turismo?</h3>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Sí, es un nicho especializado. Soy Licenciada en Turismo con experiencia en gestión hotelera, lo que me permite analizar el ecosistema digital de un alojamiento desde adentro del sector: OTAs, traveller journey, Google Business Profile, plataformas de nicho como eBird y Glamping Hub, y posicionamiento en IAs para turistas internacionales.</p>
+      </div>
+
+      <div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;">
+        <h3 style="font-family:'Manrope',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Dónde estás ubicada?</h3>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">En Eldorado, Misiones, Argentina. Trabajo con clientes en todo el país de forma remota. Para proyectos en Misiones también estoy disponible de forma presencial.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" aria-labelledby="contact-heading">
     <div class="container">
       <div class="contact-inner">
         <div class="contact-left">
