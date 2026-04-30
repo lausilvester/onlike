@@ -55,6 +55,7 @@
   .container { max-width: 1160px; margin: 0 auto; padding: 0 3rem; }
   footer { background: var(--dark-deep); padding: 1.75rem 3rem; border-top: 1px solid rgba(255,255,255,0.04); text-align: center; }
   .footer-copy { font-size: 0.7rem; color: rgba(255,255,255,0.25); letter-spacing: 0.03em; }
+  .footer-copy span { color: #C8FF00; }
   .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; display: flex; align-items: center; gap: 0.65rem; background: #25D366; color: #fff; padding: 0.75rem 1.2rem 0.75rem 1rem; border-radius: 100px; font-size: 0.82rem; font-weight: 600; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: all var(--transition); }
   .wa-float:hover { background: #1ebe5d; transform: translateY(-2px); }
   .wa-float-text { white-space: nowrap; }
@@ -267,7 +268,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p style="font-size:0.85rem;font-weight:700;color:#C8FF00;letter-spacing:0.04em;margin-bottom:2rem;">De invisible a recomendado en solo 72 horas.</p>
         <div class="geo-hero-btns">
           <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20que%20mi%20negocio%20sea%20recomendado%20por%20las%20IAs.%20Me%20interesa%20el%20GEO%20Site." target="_blank" rel="noopener noreferrer" class="btn-accent">→ Cotizá tu GEO Site</a>
-          <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20interesa%20el%20GEO%20Site." target="_blank" rel="noopener noreferrer" class="btn-ghost">WhatsApp</a>
+          <a href="https://onlike.ar/test.html" class="btn-ghost">¿Lo necesito? Hacé el test →</a>
         </div>
       </div>
       <div class="geo-visual">
@@ -354,44 +355,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<section class="geo-que-es" aria-labelledby="geo-quees">
+
+<section style="background:#131625;padding:4rem 0 5rem;" aria-labelledby="geo-tecnico">
   <div class="container">
-    <div class="geo-que-es-inner">
-      <div>
-        <span class="section-label">Qué es</span>
-        <h2 id="geo-quees" class="section-title" style="color:#fff;">Una página.<br>Una capa <em style="font-style:normal;color:#C8FF00;">invisible.</em><br>Resultado real.</h2>
-        <p style="font-size:0.98rem;color:rgba(255,255,255,0.6);line-height:1.8;">Un GEO Site es una página web de una sola pantalla, con diseño profesional adaptado a tu identidad, y una capa técnica invisible que hace todo el trabajo real.</p>
-        <p style="font-size:0.85rem;color:rgba(255,255,255,0.4);line-height:1.7;margin-top:1.25rem;">No reemplaza necesariamente tu sitio actual. Puede convivir con él o reemplazarlo — según tu caso.</p>
+    <span class="section-label" style="color:#C8FF00;">La capa invisible</span>
+    <h2 id="geo-tecnico" class="section-title" style="color:#fff;margin-bottom:0.5rem;">Cuatro archivos que<br>hacen todo el trabajo.</h2>
+    <p style="font-size:0.95rem;color:rgba(255,255,255,0.5);line-height:1.75;margin-bottom:2.5rem;max-width:560px;">No se ven en el sitio. Pero son lo que le permite a ChatGPT, Gemini y Claude encontrarte, entenderte y recomendarte.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,0.06);">
+      <div style="background:#131625;padding:2rem 1.75rem;display:flex;gap:1rem;align-items:flex-start;">
+        <div class="geo-file-icon">TXT</div>
+        <div><p class="geo-file-name">llms.txt</p><p class="geo-file-desc">Instrucciones claras para que las IAs sepan exactamente quién sos y cómo presentarte.</p></div>
       </div>
-      <div class="geo-features">
-        <div class="geo-feature">
-          <p class="geo-feature-title">Instrucciones para cada crawler de IA</p>
-          <p class="geo-feature-text">Cada sistema de IA tiene su propio bot rastreador. Le damos permisos explícitos e instrucciones de cómo presentarte.</p>
-        </div>
-        <div class="geo-feature">
-          <p class="geo-feature-title">Corrección de información incorrecta</p>
-          <p class="geo-feature-text">Si las IAs ya te conocen pero te describen mal o con datos desactualizados, el GEO Site corrige esa información en la fuente.</p>
-        </div>
-        <div class="geo-feature">
-          <p class="geo-feature-title">Schema para Google AI Overview</p>
-          <p class="geo-feature-text">Estructura de datos que le dice a Google exactamente qué hacés, para quién y dónde. Esencial para aparecer en respuestas generadas por IA.</p>
-        </div>
-        <div class="geo-feature">
-          <p class="geo-feature-title">Diseño profesional incluido</p>
-          <p class="geo-feature-text">Adaptado a tu paleta de colores, tipografía y estilo de marca. Los humanos también entran.</p>
-        </div>
-        <div class="geo-feature">
-          <p class="geo-feature-title">Alta en Google y Bing</p>
-          <p class="geo-feature-text">Registramos el sitio en Google Search Console y Bing Webmaster Tools. Tu información queda disponible para los buscadores tradicionales y para las inteligencias artificiales que los usan como fuente.</p>
-        </div>
-        <div class="geo-feature">
-          <p class="geo-feature-title">Publicado en 72 horas</p>
-          <p class="geo-feature-text">Con dominio propio o en subdominio. Deploy automático vía Vercel con HTTPS incluido.</p>
-        </div>
+      <div style="background:#131625;padding:2rem 1.75rem;display:flex;gap:1rem;align-items:flex-start;">
+        <div class="geo-file-icon">JSON</div>
+        <div><p class="geo-file-name">Schema JSON-LD</p><p class="geo-file-desc">Le dice a Google AI exactamente qué hacés, para quién y dónde — en el lenguaje que entiende.</p></div>
+      </div>
+      <div style="background:#131625;padding:2rem 1.75rem;display:flex;gap:1rem;align-items:flex-start;">
+        <div class="geo-file-icon">BOT</div>
+        <div><p class="geo-file-name">robots.txt</p><p class="geo-file-desc">Abre la puerta a todos los crawlers de IA. Sin esto, muchos no pueden leer tu información.</p></div>
+      </div>
+      <div style="background:#131625;padding:2rem 1.75rem;display:flex;gap:1rem;align-items:flex-start;">
+        <div class="geo-file-icon">AI</div>
+        <div><p class="geo-file-name">ai-plugin.json</p><p class="geo-file-desc">Señal de confianza para agentes de IA autónomos que buscan y recomiendan servicios.</p></div>
       </div>
     </div>
+    <p style="font-size:0.78rem;color:rgba(255,255,255,0.3);margin-top:1.25rem;text-align:center;">El GEO Site puede convivir con tu sitio actual o reemplazarlo — según tu caso.</p>
   </div>
 </section>
+
 
 <section class="geo-como" aria-labelledby="geo-como">
   <div class="container">
@@ -416,9 +407,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p style="font-size:0.75rem;color:rgba(255,255,255,0.35);margin-top:0.5rem;">— Laura Silvester · Fundadora de ONLIKE</p>
       </div>
       <!-- Test de auto-diagnóstico -->
-      <div style="text-align:center;margin-bottom:2rem;padding:1.5rem;background:rgba(200,255,0,0.06);border:1px solid rgba(200,255,0,0.15);border-radius:4px;">
-        <p style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:0.75rem;">¿No sabés si tu negocio lo necesita?</p>
-        <a href="https://onlike.ar/test.html" style="display:inline-flex;align-items:center;gap:0.5rem;color:#C8FF00;font-family:Manrope,sans-serif;font-size:0.85rem;font-weight:700;text-decoration:none;letter-spacing:0.02em;">Hacé el test gratuito →</a>
+      <div style="text-align:center;margin-bottom:2rem;padding:1.75rem;background:rgba(200,255,0,0.06);border:1px solid rgba(200,255,0,0.15);border-radius:4px;">
+        <p style="font-size:0.8rem;font-weight:700;color:#C8FF00;margin-bottom:0.4rem;letter-spacing:0.06em;text-transform:uppercase;">¿No sabés si lo necesitás?</p>
+        <p style="font-size:0.85rem;color:rgba(19,22,37,0.6);margin-bottom:1rem;">Respondé 10 preguntas y descubrí si tu negocio está listo para las IAs.</p>
+        <a href="https://onlike.ar/test.html" style="display:inline-flex;align-items:center;gap:0.5rem;background:#C8FF00;color:#131625;padding:0.75rem 1.5rem;font-family:Manrope,sans-serif;font-size:0.85rem;font-weight:700;text-decoration:none;border-radius:2px;letter-spacing:0.02em;">Evaluá tu necesidad → Test gratuito</a>
       </div>
       <div class="geo-precio">
         <p class="geo-precio-desde">Desde</p>
@@ -436,7 +428,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </main>
 <footer role="contentinfo">
-  <p class="footer-copy">© 2026 Laura Silvester · ONLIKE · Estrategia y posicionamiento digital · Eldorado, Misiones, Argentina</p>
+  <p class="footer-copy"><span>© 2026</span> Laura Silvester · ONLIKE · Estrategia y posicionamiento digital · Eldorado, Misiones, Argentina</p>
 </footer>
 <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20contacto%20desde%20tu%20sitio%20web." target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Contactar por WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
