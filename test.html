@@ -553,6 +553,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <!-- RESULTADO -->
+
+<!-- Pantalla de captura de contacto -->
+<div id="s-contact" class="screen">
+  <div class="card" style="max-width:480px;margin:0 auto;text-align:center;">
+    <div class="pill" style="margin-bottom:1.25rem;">Casi listo</div>
+    <h2 style="font-family:Manrope,sans-serif;font-weight:800;font-size:1.5rem;color:#fff;margin-bottom:0.75rem;line-height:1.2;">¿A dónde te mando el resultado?</h2>
+    <p style="font-size:0.88rem;color:rgba(255,255,255,0.5);line-height:1.65;margin-bottom:2rem;">Dejame tu nombre y WhatsApp para enviarte el análisis completo. También podés saltear este paso y verlo directamente acá.</p>
+    
+    <div style="display:flex;flex-direction:column;gap:0.85rem;margin-bottom:1.25rem;text-align:left;">
+      <div>
+        <label style="font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#8E51B9;display:block;margin-bottom:0.4rem;">Nombre</label>
+        <input type="text" id="c-name" placeholder="Tu nombre" autocomplete="name"
+          style="width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:#fff;padding:0.85rem 1rem;font-family:Manrope,sans-serif;font-size:0.9rem;border-radius:2px;outline:none;"
+          onfocus="this.style.borderColor='#8E51B9'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'">
+      </div>
+      <div>
+        <label style="font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#8E51B9;display:block;margin-bottom:0.4rem;">WhatsApp</label>
+        <input type="tel" id="c-phone" placeholder="Ej: 3511234567" autocomplete="tel"
+          style="width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:#fff;padding:0.85rem 1rem;font-family:Manrope,sans-serif;font-size:0.9rem;border-radius:2px;outline:none;"
+          onfocus="this.style.borderColor='#8E51B9'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'">
+      </div>
+    </div>
+
+    <button onclick="submitContact()" 
+      style="width:100%;background:#8E51B9;color:#fff;border:none;padding:1rem;font-family:Manrope,sans-serif;font-size:0.9rem;font-weight:700;border-radius:2px;cursor:pointer;margin-bottom:0.75rem;transition:all 0.2s;"
+      onmouseover="this.style.background='#7a3fa3'" onmouseout="this.style.background='#8E51B9'">
+      Enviar y ver mi resultado →
+    </button>
+    <button onclick="showResult()" 
+      style="width:100%;background:transparent;color:rgba(255,255,255,0.35);border:none;padding:0.6rem;font-family:Manrope,sans-serif;font-size:0.8rem;cursor:pointer;text-decoration:underline;">
+      Saltear y ver el resultado igual
+    </button>
+    <p id="c-error" style="color:#ff6b6b;font-size:0.78rem;margin-top:0.5rem;display:none;">Por favor completá al menos el nombre.</p>
+  </div>
+</div>
+
 <div id="s-result" class="screen">
   <div class="card">
     <span class="pill">Tu resultado</span>
@@ -664,10 +700,47 @@ function renderQ(i) {
 
 function nextQ() {
   if (cur < Qs.length - 1) renderQ(cur + 1);
-  else showResult();
+  else goTo('s-contact');
 }
 
 function prevQ() { if (cur > 0) renderQ(cur - 1); }
+
+
+function submitContact() {
+  const name = document.getElementById('c-name').value.trim();
+  const phone = document.getElementById('c-phone').value.trim();
+  const errEl = document.getElementById('c-error');
+  
+  if (!name) {
+    errEl.style.display = 'block';
+    return;
+  }
+  errEl.style.display = 'none';
+
+  // Send to Formspree if both fields filled
+  if (name && phone) {
+    const total = answers.reduce((acc, v, i) => acc + sc(i, v || 0), 0);
+    const max = Qs.length * 2;
+    const pct = Math.round((total / max) * 100);
+    const level = total >= 16 ? 'Altamente recomendado' : total >= 12 ? 'Recomendado' : total >= 7 ? 'Vale la pena considerarlo' : 'No es prioridad ahora';
+    const tipo = selType ? typeCtx[selType]?.name || selType : 'No especificado';
+    
+    fetch('https://formspree.io/f/mnjlywjq', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        nombre: name,
+        whatsapp: phone,
+        resultado: level,
+        tipo_negocio: tipo,
+        puntaje: pct + '%',
+        _subject: 'Test GEO Site — ' + name + ' · ' + level
+      })
+    }).catch(() => {}); // silently fail, don't block UX
+  }
+
+  showResult();
+}
 
 function showResult() {
   const total = answers.reduce((acc, v, i) => acc + sc(i, v || 0), 0);
@@ -721,6 +794,9 @@ function restart() {
   selType = null;
   document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('sel'));
   document.getElementById('btn-tnext').disabled = true;
+  document.getElementById('c-name').value = '';
+  document.getElementById('c-phone').value = '';
+  document.getElementById('c-error').style.display = 'none';
   goTo('s-intro');
 }
 </script>
