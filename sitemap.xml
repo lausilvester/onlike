@@ -23,6 +23,11 @@
     <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+<url>
+  <loc>https://onlike.ar/links.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.4</priority>
+</url>
   </url>
   <url>
     <loc>https://onlike.ar/diagnosticotur.html</loc>
