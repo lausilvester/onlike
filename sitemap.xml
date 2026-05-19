@@ -1,50 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://onlike.ar/</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
   </url>
+
   <url>
     <loc>https://onlike.ar/geo-site.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
+
+  <url>
+    <loc>https://onlike.ar/como-te-ve-chatgpt.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
   <url>
     <loc>https://onlike.ar/turismo.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
+
   <url>
     <loc>https://onlike.ar/diagnostico.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-<url>
-  <loc>https://onlike.ar/links.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.4</priority>
-</url>
+    <priority>0.75</priority>
   </url>
+
   <url>
     <loc>https://onlike.ar/diagnosticotur.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
+
   <url>
     <loc>https://onlike.ar/test.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
+
+  <url>
+    <loc>https://onlike.ar/forum2026.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://onlike.ar/links.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
   <url>
     <loc>https://onlike.ar/privacidad.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.30</priority>
   </url>
+
 </urlset>

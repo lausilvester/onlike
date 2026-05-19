@@ -56,8 +56,7 @@
   .nav-cta { background: var(--dark) !important; color: var(--white) !important; padding: 0.5rem 1.1rem !important; border-radius: var(--radius); }
   .nav-cta:hover { background: var(--accent) !important; color: var(--dark) !important; }
   .container { max-width: 1160px; margin: 0 auto; padding: 0 3rem; }
-  footer { background: var(--dark-deep);
-    background-color: #0b0d18; padding: 1.75rem 3rem; border-top: 1px solid rgba(255,255,255,0.04); text-align: center; }
+  footer { background: var(--dark-deep); background-color: #0b0d18; padding: 1.75rem 3rem; border-top: 1px solid rgba(255,255,255,0.04); text-align: center; }
   .footer-copy { font-size: 0.7rem; color: rgba(255,255,255,0.25); letter-spacing: 0.03em; }
   .footer-copy span { color: #C8FF00; }
   .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; display: flex; align-items: center; gap: 0.65rem; background: #25D366; color: #fff; padding: 0.75rem 1.2rem 0.75rem 1rem; border-radius: 100px; font-size: 0.82rem; font-weight: 600; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: all var(--transition); }
@@ -69,14 +68,16 @@
   .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
   .section-label { display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.25rem; color: var(--accent); }
   .section-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.4rem, 4vw, 4.2rem); line-height: 0.92; letter-spacing: -0.02em; margin-bottom: 1.75rem; }
+  .geo-diagnostico-card { background:#131625; color:#fff; border-radius:4px; padding:2rem; margin-bottom:2.5rem; display:grid; grid-template-columns:1.4fr 0.8fr; gap:2rem; align-items:center; }
+  .geo-diagnostico-panel { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.09); border-radius:4px; padding:1.5rem; }
   @media (max-width: 900px) {
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
     .container { padding: 0 1.5rem; }
+    .geo-diagnostico-card { grid-template-columns: 1fr; gap: 1.5rem; }
     .wa-float-text { display: none; }
     .wa-float { padding: 0.85rem; border-radius: 50%; }
-    footer {
-    background-color: #0b0d18; padding: 1.5rem; }
+    footer { background-color: #0b0d18; padding: 1.5rem; }
   }
 </style>
 <!-- Google Tag Manager -->
@@ -255,7 +256,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .btn-dark-outline:hover { border-color: #131625; }
 
   @media (max-width: 900px) {
-    .geo-hero-inner, .geo-que-es-inner, .geo-paths { grid-template-columns: 1fr; gap: 2.5rem; }
+    .geo-hero-inner, .geo-que-es-inner, .geo-paths, .geo-diagnostico-card { grid-template-columns: 1fr; gap: 2.5rem; }
     .geo-hero { padding: 4rem 0; }
     .geo-hero-btns { flex-direction: column; }
     .geo-problem, .geo-que-es, .geo-como { padding: 5rem 0; }
@@ -461,8 +462,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="geo-paths">
         <div class="geo-path">
           <p class="geo-path-num">CAMINO 01</p>
-          <h3>Con diagnóstico previo</h3>
-          <p>Primero auditamos cómo aparece tu negocio hoy en las principales IAs. Qué dicen de vos, qué les falta, qué está mal. El GEO Site cierra esa brecha con precisión.</p>
+          <h3>Con “Cómo te ve ChatGPT”</h3>
+          <p>Primero revisamos cómo aparece tu negocio en ChatGPT, Gemini, Claude, Perplexity, Grok y Google AI Overview. Si el diagnóstico muestra brechas, el GEO Site pasa a ser la implementación lógica.</p>
         </div>
         <div class="geo-path">
           <p class="geo-path-num">CAMINO 02</p>
@@ -470,6 +471,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>Ya sabés lo que querés. Me pasás los datos, el contenido y tu identidad visual — y lo construyo. El camino más rápido si tenés claro el objetivo.</p>
         </div>
       </div>
+
+      <div class="geo-diagnostico-card">
+        <div>
+          <p style="font-size:0.68rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#C8FF00;margin-bottom:0.6rem;">Paso previo</p>
+          <h3 style="font-family:Outfit,sans-serif;font-size:1.8rem;line-height:1;font-weight:700;color:#fff;margin-bottom:0.75rem;">Cómo te ve ChatGPT</h3>
+          <p style="font-size:0.9rem;color:rgba(255,255,255,0.62);line-height:1.75;margin-bottom:0.9rem;">Diagnóstico de visibilidad en ChatGPT, Gemini, Claude, Perplexity, Grok y Google AI Overview. Te muestra si las IAs te recomiendan, si tienen datos correctos o si directamente no te registran.</p>
+          <p style="font-size:0.78rem;color:rgba(255,255,255,0.42);line-height:1.6;">Es ideal si todavía no sabés si necesitás un GEO Site. Primero miramos el punto de partida; después decidimos si hace falta construir.</p>
+        </div>
+        <div class="geo-diagnostico-panel">
+          <p style="font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.38);margin-bottom:0.35rem;">Diagnóstico</p>
+          <p style="font-family:Outfit,sans-serif;font-size:2rem;font-weight:700;color:#C8FF00;line-height:1;margin-bottom:0.45rem;">$30.000</p>
+          <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-bottom:1.2rem;">ARS · Informe en 48 hs</p>
+          <a href="https://onlike.ar/como-te-ve-chatgpt.html" style="display:inline-flex;align-items:center;gap:0.5rem;background:#C8FF00;color:#131625;padding:0.8rem 1.35rem;font-family:Outfit,sans-serif;font-size:0.85rem;font-weight:700;text-decoration:none;border-radius:2px;letter-spacing:0.02em;">Ver diagnóstico →</a>
+        </div>
+      </div>
+
       <div style="background:rgba(200,255,0,0.06);border:1px solid rgba(200,255,0,0.15);border-radius:4px;padding:1.5rem 2rem;margin-bottom:2.5rem;">
         <p style="font-size:0.68rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#C8FF00;margin-bottom:0.5rem;">En primera persona</p>
         <p style="font-size:0.92rem;color:#A08AE5;line-height:1.7;font-style:italic;">"Ya lo implementé en ONLIKE y los primeros resultados llegaron en menos de 72 horas. Los tiempos varían según el sistema de IA, pero este sitio que estás leyendo es un GEO Site en funcionamiento."</p>
@@ -502,7 +519,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p style="font-size:0.72rem;color:rgba(255,255,255,0.55);margin-bottom:0.3rem;font-weight:500;">ONLIKE · Laura Silvester · Estrategia y posicionamiento digital</p>
       <p style="font-size:0.7rem;color:rgba(255,255,255,0.25);">Eldorado, Misiones, Argentina · <a href="mailto:lau@onlike.ar" style="color:rgba(255,255,255,0.25);text-decoration:none;" onmouseover="this.style.color='#D1FA3E'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">lau@onlike.ar</a> · WhatsApp +54 3751 566488</p>
     </div>
-    <nav style="display:flex;gap:1.5rem;align-items:center;" aria-label="Legal">
+    <nav style="display:flex;gap:1.5rem;align-items:center;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;border-bottom:none;padding:0;" aria-label="Legal">
       <a href="https://onlike.ar/privacidad.html" style="font-size:0.7rem;color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#D1FA3E'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">Política de privacidad</a>
       <span style="font-size:0.7rem;color:rgba(255,255,255,0.25);">© 2026</span>
     </nav>
