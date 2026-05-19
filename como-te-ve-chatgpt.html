@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- ============================================================
+     ONLIKE · Laura Silvester · como-te-ve-chatgpt
+     Diagnóstico de visibilidad en IAs · Abril 2026
+     ============================================================ -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PN327WB');</script>
+<!-- End Google Tag Manager -->
+
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB1klEQVR4AeyTPSyDURSGjzZ+avDXpGKxiIXBYmE3sBBTE6sREyMDIxNGq6STsDDYWSwGNotFNKm/Qf2kKk+5SdPec/vdr5VG0iYn93znvO973u/0fpF4YjBfz4hInX8NA/93A339URkebSkEedir5LUBBq5sdcrBZa/snyVk5zBeCHJq9MD4mAlkoDXWJIgzcDLZLl3xSNkMavTAgIVTBrIUypVKQKx39yguiJe01EewcOCqoN+G0wBvsb7XLQNDzeL7gwMXDRfXaWBpoyPUcDMQE2iYZ9upGuAysUobyaeGBloaRzUwlYxpHO+6S0s1MDbR5j1II7i0rAa4vXxWmqBvHS00bTyrgZ5E1IatqqZpWg1UNcmTbDXwkM55ylSGa5pWA3e3OXnKfFVWDYhAC00b3GoA4PnpG0dNwqWlGjhOZWsyHBGXlmrg6uJDTlKv8KsKNNDSRFQDELZXX+Tm+pM0VMBFw0V2GnjP5mVt/jGUCYbDRSO0AYjc3oXpjNffwdrhwEXDFc4NGCJvsbn8LIszP0b4rEzPnNQYDAYsHNNznYEMGAEuE+KzI/cyN54uGGIgOTV6YAw+yOlloFiQ9TKMIC/u+eShDfgMcWEbBv58A6710/sGAAD//4n2wOAAAAAGSURBVAMAJQXL4dhGKuIAAAAASUVORK5CYII=">
+<link rel="apple-touch-icon" sizes="192x192" href="data:image/png;base64,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">
+<meta name="theme-color" content="#131625">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Cómo te ve ChatGPT · Diagnóstico de visibilidad en IAs · ONLIKE</title>
+
+<meta name="description" content="Descubrí cómo aparece tu negocio en ChatGPT, Gemini, Claude, Perplexity, Grok y Google AI Overview. Diagnóstico profesional con informe de sugerencias concretas en 48 horas. $30.000 ARS · ONLIKE · Laura Silvester · Eldorado, Misiones.">
+<meta name="keywords" content="cómo aparece mi negocio en ChatGPT, visibilidad inteligencias artificiales, diagnóstico GEO, posicionamiento en IAs Argentina, ONLIKE, Laura Silvester, Eldorado Misiones">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="Laura Silvester · ONLIKE">
+<meta name="language" content="Spanish">
+<meta name="geo.region" content="AR-N">
+<meta name="geo.placename" content="Eldorado, Misiones, Argentina">
+<link rel="canonical" href="https://onlike.ar/como-te-ve-chatgpt">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ONLIKE · Laura Silvester">
+<meta property="og:title" content="Cómo te ve ChatGPT — Diagnóstico de visibilidad en IAs · ONLIKE">
+<meta property="og:description" content="Descubrí cómo aparece tu negocio en ChatGPT, Gemini, Claude, Perplexity, Grok y Google AI Overview. Informe en 48 horas. $30.000 ARS.">
+<meta property="og:url" content="https://onlike.ar/como-te-ve-chatgpt">
+<meta property="og:image" content="https://onlike.ar/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cómo te ve ChatGPT · ONLIKE · Diagnóstico de visibilidad en IAs">
+<meta property="og:locale" content="es_AR">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cómo te ve ChatGPT — Diagnóstico de visibilidad en IAs · ONLIKE">
+<meta name="twitter:description" content="Descubrí cómo aparece tu negocio en ChatGPT y 5 IAs más. Informe en 48 horas. $30.000 ARS.">
+<meta name="twitter:image" content="https://onlike.ar/og-image.jpg">
+<meta name="twitter:site" content="@lausilvester">
+<meta name="twitter:creator" content="@lausilvester">
+
+<!-- Schema JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://onlike.ar/como-te-ve-chatgpt#webpage",
+      "url": "https://onlike.ar/como-te-ve-chatgpt",
+      "name": "Cómo te ve ChatGPT — Diagnóstico de visibilidad en IAs · ONLIKE",
+      "description": "Descubrí cómo aparece tu negocio en ChatGPT, Gemini, Claude, Perplexity, Grok y Google AI Overview. Diagnóstico profesional con informe en 48 horas. $30.000 ARS. ONLIKE · Laura Silvester · Eldorado, Misiones, Argentina.",
+      "isPartOf": {"@id": "https://onlike.ar/#website"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "ONLIKE", "item": "https://onlike.ar"},
+          {"@type": "ListItem", "position": 2, "name": "Cómo te ve ChatGPT", "item": "https://onlike.ar/como-te-ve-chatgpt"}
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://onlike.ar/como-te-ve-chatgpt#service",
+      "name": "Cómo te ve ChatGPT",
+      "alternateName": "Diagnóstico de visibilidad en inteligencias artificiales",
+      "description": "Revisión profesional de cómo aparece un negocio en las 5 principales inteligencias artificiales (ChatGPT, Gemini, Claude, Perplexity y Grok) más Google AI Overview de forma gratuita. Incluye análisis del sitio web si el cliente lo tiene, y entrega de informe con sugerencias de mejora concretas en un máximo de 48 horas. Disponible para cualquier rubro en Argentina.",
+      "provider": {"@id": "https://onlike.ar/#organization"},
+      "serviceType": "Diagnóstico de presencia digital en inteligencias artificiales",
+      "areaServed": {"@type": "Country", "name": "Argentina"},
+      "offers": {
+        "@type": "Offer",
+        "price": "30000",
+        "priceCurrency": "ARS",
+        "availability": "https://schema.org/InStock",
+        "url": "https://onlike.ar/como-te-ve-chatgpt",
+        "description": "Diagnóstico de visibilidad en 5 IAs + Google AI Overview. Informe en 48 horas."
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué inteligencias artificiales revisa el diagnóstico Cómo te ve ChatGPT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El diagnóstico revisa cómo aparece el negocio en ChatGPT, Gemini, Claude, Perplexity y Grok — las 5 IAs generativas más usadas en Argentina y Latinoamérica — y de bonus en Google AI Overview, el sistema que aparece directamente en los resultados de búsqueda de Google. En total son 6 plataformas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito tener sitio web para contratar el diagnóstico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. El diagnóstico puede hacerse aunque el negocio no tenga sitio web. En ese caso, la revisión se centra en cómo aparece en las IAs a partir de la información disponible online. Si el negocio tiene sitio, se suma el análisis de su estructura y legibilidad para los sistemas de IA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué formato tiene el informe del diagnóstico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El informe es un documento escrito que incluye: qué encontramos en cada plataforma, qué dice la IA sobre el negocio, qué información está incorrecta, incompleta o desactualizada, y sugerencias concretas de mejora priorizadas. Se entrega por WhatsApp en un máximo de 48 horas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿En cuánto tiempo recibo el informe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El informe se entrega en un máximo de 48 horas después de recibir los datos del negocio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El diagnóstico garantiza que voy a aparecer en las IAs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Ningún servicio puede garantizar que una IA cite a un negocio específico — eso depende de múltiples factores que no se controlan directamente. Lo que el diagnóstico garantiza es conocer exactamente el punto de partida y qué cambios técnicos y de contenido mejorarían las condiciones para aparecer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la diferencia entre el diagnóstico Cómo te ve ChatGPT y el GEO Site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El diagnóstico Cómo te ve ChatGPT es un análisis del estado actual: revisa cómo aparece el negocio en las IAs y entrega recomendaciones concretas. El GEO Site es la implementación: una página web profesional con toda la estructura técnica para que ChatGPT, Gemini y Claude puedan leer, entender y recomendar al negocio. El diagnóstico puede ser un paso previo al GEO Site, o contratarse de forma independiente. Precio del diagnóstico: $30.000 ARS. Precio del GEO Site: desde $250.000 ARS."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Fuentes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  /* ============================================================
+     RESET Y VARIABLES
+     ============================================================ */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --dark:         #131625;
+    --dark-deep:    #0b0d18;
+    --purple-deep:  #8E51B9;
+    --lavender:     #A08AE5;
+    --lime:         #D1FA3E;
+    --lime-hover:   #c5ee30;
+    --white:        #FFFFFF;
+    --gray-light:   #F4F4F0;
+    --gray-mid:     #E0E0D8;
+    --text-muted-dark:  rgba(255,255,255,0.6);
+    --text-muted-light: rgba(19,22,37,0.65);
+    --font-display: 'Outfit', sans-serif;
+    --font-body:    'Outfit', sans-serif;
+    --transition:   0.22s ease;
+    --radius:       2px;
+  }
+
+  html { scroll-behavior: smooth; min-height: 100%; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--dark);
+    color: var(--white);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img { max-width: 100%; height: auto; display: block; }
+  a { text-decoration: none; color: inherit; }
+
+  /* ============================================================
+     SKIP LINK
+     ============================================================ */
+  .skip-link {
+    position: absolute;
+    top: -100px;
+    left: 1rem;
+    background: var(--lime);
+    color: var(--dark);
+    padding: 0.75rem 1.25rem;
+    font-weight: 700;
+    font-size: 0.85rem;
+    border-radius: var(--radius);
+    z-index: 9999;
+    transition: top 0.2s;
+  }
+  .skip-link:focus { top: 1rem; }
+
+  /* ============================================================
+     NAV
+     ============================================================ */
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    background: rgba(255,255,255,0.98);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(19,22,37,0.08);
+    transition: box-shadow var(--transition);
+  }
+
+  .nav-logo img { height: 38px; width: auto; }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: rgba(19,22,37,0.55);
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: color var(--transition);
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus { color: var(--purple-deep); outline: none; }
+
+  .nav-cta {
+    background: var(--dark) !important;
+    color: var(--white) !important;
+    padding: 0.55rem 1.25rem !important;
+    border-radius: var(--radius);
+    font-weight: 700 !important;
+  }
+  .nav-cta:hover { background: var(--purple-deep) !important; color: var(--white) !important; }
+
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .nav-toggle span {
+    display: block;
+    width: 22px; height: 2px;
+    background: var(--dark);
+    border-radius: 2px;
+    transition: all 0.25s;
+  }
+
+  /* ============================================================
+     LAYOUT
+     ============================================================ */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem;
+  }
+
+  section { width: 100%; }
+
+  /* ============================================================
+     HERO
+     ============================================================ */
+  #hero {
+    background: var(--dark);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #hero::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -150px;
+    width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(142,81,185,0.12) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  #hero::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -80px;
+    width: 450px; height: 450px;
+    background: radial-gradient(circle, rgba(209,250,62,0.06) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 6rem 0;
+  }
+
+  .hero-label {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--lime);
+    margin-bottom: 1.5rem;
+    animation: fadeUp 0.5s ease both;
+  }
+
+  h1.hero-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2.8rem, 4.5vw, 5rem);
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    color: var(--white);
+    margin-bottom: 1.75rem;
+    animation: fadeUp 0.5s 0.08s ease both;
+  }
+
+  h1.hero-title .accent { color: var(--lime); }
+  h1.hero-title .thin   { font-weight: 200; }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.75;
+    color: var(--text-muted-dark);
+    max-width: 460px;
+    margin-bottom: 1.5rem;
+    animation: fadeUp 0.5s 0.16s ease both;
+  }
+
+  .hero-quick-answer {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.75;
+    margin-bottom: 2rem;
+    border-left: 2px solid rgba(142,81,185,0.4);
+    padding-left: 1rem;
+    animation: fadeUp 0.5s 0.22s ease both;
+  }
+
+  .hero-price {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    padding: 1rem 1.25rem;
+    background: rgba(209,250,62,0.06);
+    border: 1px solid rgba(209,250,62,0.15);
+    border-radius: 4px;
+    width: fit-content;
+    animation: fadeUp 0.5s 0.26s ease both;
+  }
+
+  .price-amount {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--lime);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  .price-detail {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.5);
+    font-weight: 300;
+  }
+
+  .hero-btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    animation: fadeUp 0.5s 0.3s ease both;
+  }
+
+  /* ============================================================
+     BOTONES
+     ============================================================ */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--lime);
+    color: var(--dark);
+    padding: 0.9rem 1.8rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    border-radius: var(--radius);
+    transition: all var(--transition);
+    border: 2px solid var(--lime);
+  }
+  .btn-primary:hover, .btn-primary:focus {
+    background: var(--lime-hover);
+    border-color: var(--lime-hover);
+    transform: translateY(-2px);
+    outline: none;
+  }
+
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    color: var(--white);
+    padding: 0.9rem 1.8rem;
+    font-size: 0.88rem;
+    font-weight: 500;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: var(--radius);
+    transition: all var(--transition);
+  }
+  .btn-outline:hover, .btn-outline:focus {
+    border-color: var(--lime);
+    color: var(--lime);
+    outline: none;
+  }
+
+  .btn-outline-dark {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    color: var(--dark);
+    padding: 0.85rem 1.6rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1.5px solid rgba(19,22,37,0.25);
+    border-radius: var(--radius);
+    transition: all var(--transition);
+  }
+  .btn-outline-dark:hover {
+    border-color: var(--dark);
+    background: rgba(19,22,37,0.05);
+  }
+
+  .btn-dark {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--dark);
+    color: var(--lime);
+    padding: 1.1rem 2.5rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    border-radius: var(--radius);
+    transition: all var(--transition);
+    border: 2px solid var(--dark);
+  }
+  .btn-dark:hover {
+    background: var(--dark-deep);
+    border-color: var(--dark-deep);
+    transform: translateY(-2px);
+  }
+
+  /* ============================================================
+     AI MOCKUP (hero visual)
+     ============================================================ */
+  .hero-visual {
+    display: flex;
+    justify-content: flex-end;
+    animation: fadeUp 0.6s 0.15s ease both;
+  }
+
+  .ai-mockup-wrap {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .ai-mockup {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .ai-mockup-bar {
+    background: rgba(255,255,255,0.05);
+    padding: 0.65rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .ai-mockup-name {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+  }
+
+  .ai-mockup-dots {
+    display: flex;
+    gap: 4px;
+  }
+  .ai-mockup-dots span {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+  }
+
+  .ai-mockup-body {
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .ai-q {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--lime);
+    line-height: 1.5;
+  }
+
+  .ai-r {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.7;
+    font-style: italic;
+  }
+
+  .ai-status {
+    display: inline-block;
+    font-size: 0.63rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 0.28rem 0.7rem;
+    border-radius: 100px;
+  }
+  .ai-status.bad {
+    background: rgba(255,70,70,0.08);
+    color: rgba(255,120,120,0.85);
+    border: 1px solid rgba(255,70,70,0.18);
+  }
+  .ai-status.wrong {
+    background: rgba(255,180,50,0.08);
+    color: rgba(255,200,80,0.85);
+    border: 1px solid rgba(255,180,50,0.18);
+  }
+
+  .ai-mockup-caption {
+    font-size: 0.68rem;
+    color: rgba(255,255,255,0.25);
+    text-align: center;
+    letter-spacing: 0.04em;
+    line-height: 1.6;
+    padding: 0.25rem 0;
+  }
+
+  /* ============================================================
+     MARQUEE
+     ============================================================ */
+  .marquee-wrap {
+    background: var(--lime);
+    padding: 0.8rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .marquee-track {
+    display: inline-flex;
+    animation: marquee 28s linear infinite;
+  }
+  .marquee-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding-right: 2.5rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.88rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--dark);
+  }
+  .marquee-dot {
+    width: 5px; height: 5px;
+    background: var(--dark);
+    border-radius: 50%;
+    flex-shrink: 0;
+    opacity: 0.4;
+  }
+
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ============================================================
+     SECCIÓN BASE
+     ============================================================ */
+  .section-label {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+  }
+  .section-label.on-dark  { color: var(--lime); }
+  .section-label.on-light { color: var(--purple-deep); }
+  .section-label.on-lime  { color: var(--dark); opacity: 0.55; }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2.8rem, 4.5vw, 5rem);
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+  }
+
+  /* ============================================================
+     QUÉ INCLUYE (purple)
+     ============================================================ */
+  #incluye {
+    background: var(--purple-deep);
+    color: var(--white);
+  }
+  .include-inner { padding: 8rem 0; }
+
+  .include-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5px;
+    background: rgba(255,255,255,0.1);
+    margin-top: 3rem;
+  }
+
+  .include-card {
+    background: var(--purple-deep);
+    padding: 2.5rem 2rem;
+    transition: background var(--transition);
+  }
+  .include-card:hover { background: rgba(255,255,255,0.06); }
+
+  .include-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--lime);
+    background: rgba(209,250,62,0.1);
+    border: 1px solid rgba(209,250,62,0.22);
+    padding: 0.3rem 0.75rem;
+    border-radius: 100px;
+    margin-bottom: 1.1rem;
+  }
+
+  .include-card-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.8rem;
+    line-height: 1.1;
+  }
+
+  .include-card-desc {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.75;
+  }
+
+  .include-note {
+    margin-top: 2.5rem;
+    font-size: 0.87rem;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.75;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 1.5rem;
+  }
+
+  /* ============================================================
+     3 ESCENARIOS (dark)
+     ============================================================ */
+  #escenarios {
+    background: var(--dark);
+    color: var(--white);
+  }
+  .escenarios-inner { padding: 8rem 0; }
+
+  .escenarios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5px;
+    background: rgba(255,255,255,0.07);
+    margin-top: 3rem;
+  }
+
+  .scenario-card {
+    background: var(--dark);
+    padding: 2.5rem 2rem;
+    transition: background var(--transition);
+  }
+  .scenario-card:hover { background: rgba(255,255,255,0.025); }
+
+  .scenario-n {
+    font-family: var(--font-display);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--lime);
+    margin-bottom: 1rem;
+  }
+
+  .scenario-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.28rem 0.7rem;
+    border-radius: 100px;
+    margin-bottom: 1.1rem;
+  }
+  .scenario-badge.absent {
+    background: rgba(255,70,70,0.07);
+    color: rgba(255,120,120,0.8);
+    border: 1px solid rgba(255,70,70,0.15);
+  }
+  .scenario-badge.wrong {
+    background: rgba(255,180,50,0.07);
+    color: rgba(255,200,80,0.8);
+    border: 1px solid rgba(255,180,50,0.15);
+  }
+  .scenario-badge.correct {
+    background: rgba(209,250,62,0.07);
+    color: var(--lime);
+    border: 1px solid rgba(209,250,62,0.2);
+  }
+
+  .scenario-title {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.8rem;
+    line-height: 1.1;
+  }
+
+  .scenario-desc {
+    font-size: 0.84rem;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+  }
+
+  .scenario-action {
+    font-size: 0.83rem;
+    color: var(--lavender);
+    line-height: 1.65;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 1.1rem;
+  }
+
+  /* ============================================================
+     CÓMO FUNCIONA (white)
+     ============================================================ */
+  #como-funciona {
+    background: var(--white);
+    color: var(--dark);
+  }
+  .funciona-inner { padding: 8rem 0; }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 3.5rem;
+    position: relative;
+  }
+
+  /* Connector line between steps */
+  .steps-grid::before {
+    content: '';
+    position: absolute;
+    top: 2.8rem;
+    left: 16.66%;
+    right: 16.66%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--purple-deep) 0%, rgba(160,138,229,0.3) 50%, var(--purple-deep) 100%);
+    opacity: 0.25;
+  }
+
+  .step-item { position: relative; }
+
+  .step-n {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgba(142,81,185,0.14);
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .step-title {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0.65rem;
+    line-height: 1.2;
+  }
+
+  .step-desc {
+    font-size: 0.87rem;
+    color: rgba(19,22,37,0.6);
+    line-height: 1.75;
+  }
+
+  /* ============================================================
+     PRÓXIMO PASO (dark)
+     ============================================================ */
+  #proximo-paso {
+    background: var(--dark);
+    color: var(--white);
+  }
+  .paso-inner { padding: 8rem 0; }
+  .paso-inner .section-title { color: var(--white); }
+  .paso-inner .section-title em { font-style: normal; font-weight: 200; }
+
+  .next-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .next-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    transition: background var(--transition), border-color var(--transition);
+  }
+  .next-card:hover {
+    background: rgba(255,255,255,0.05);
+    border-color: rgba(255,255,255,0.14);
+  }
+
+  .next-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 0.28rem 0.7rem;
+    border-radius: 100px;
+    width: fit-content;
+  }
+
+  .next-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .next-card > p {
+    font-size: 0.87rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.75;
+    flex-grow: 1;
+  }
+
+  .next-card .btn-outline {
+    width: fit-content;
+    margin-top: 0.25rem;
+  }
+
+  .next-price {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--lime);
+    letter-spacing: 0.06em;
+  }
+
+  /* ============================================================
+     FAQ (dark)
+     ============================================================ */
+  #faq {
+    background: var(--dark);
+    color: var(--white);
+    padding: 7rem 0;
+    border-top: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 0;
+  }
+
+  .faq-item {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 1.5rem 0;
+  }
+
+  .faq-q {
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--lime);
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
+  }
+
+  .faq-a {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.75;
+  }
+
+  /* ============================================================
+     CTA FINAL (lime)
+     ============================================================ */
+  #cta {
+    background: var(--lime);
+    color: var(--dark);
+    padding: 8rem 0;
+  }
+
+  .cta-inner {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .cta-inner .section-title {
+    color: var(--dark);
+    margin-bottom: 1.25rem;
+  }
+
+  .cta-inner > p {
+    font-size: 1rem;
+    color: rgba(19,22,37,0.65);
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-note {
+    margin-top: 1.25rem;
+    font-size: 0.8rem;
+    color: rgba(19,22,37,0.5);
+    letter-spacing: 0.03em;
+  }
+
+  /* ============================================================
+     FOOTER
+     ============================================================ */
+  footer {
+    background: var(--dark-deep);
+    padding: 1.75rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.04);
+  }
+  .footer-copy {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.28);
+    letter-spacing: 0.03em;
+  }
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .footer-links a {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.28);
+    transition: color var(--transition);
+  }
+  .footer-links a:hover { color: var(--lime); }
+
+  /* ============================================================
+     WHATSAPP FLOTANTE
+     ============================================================ */
+  .wa-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    background: #25D366;
+    color: #fff;
+    padding: 0.75rem 1.2rem 0.75rem 1rem;
+    border-radius: 100px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+    transition: all var(--transition);
+    text-decoration: none;
+    animation: fadeUp 1s 0.6s ease both;
+  }
+  .wa-float:hover, .wa-float:focus {
+    background: #1ebe5d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(37,211,102,0.45);
+    outline: none;
+  }
+  .wa-float svg { width: 20px; height: 20px; flex-shrink: 0; }
+  .wa-float-text { white-space: nowrap; }
+
+  /* ============================================================
+     ANIMACIONES
+     ============================================================ */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ============================================================
+     RESPONSIVE
+     ============================================================ */
+  @media (max-width: 960px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .nav-toggle { display: flex; }
+    .nav-links.open {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 60px; left: 0; right: 0;
+      background: var(--white);
+      padding: 2rem;
+      gap: 1.5rem;
+      border-bottom: 1px solid rgba(19,22,37,0.08);
+    }
+    .nav-links.open a { font-size: 1rem; }
+
+    .container { padding: 0 1.5rem; }
+
+    .hero-inner { grid-template-columns: 1fr; gap: 3rem; padding: 4rem 0; }
+    .hero-visual { justify-content: flex-start; }
+    .ai-mockup-wrap { max-width: 100%; }
+    .hero-btns { flex-direction: column; }
+    .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+
+    .include-grid,
+    .escenarios-grid { grid-template-columns: 1fr; gap: 0; }
+
+    .steps-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .steps-grid::before { display: none; }
+
+    .next-grid { grid-template-columns: 1fr; }
+
+    .faq-grid { grid-template-columns: 1fr; }
+
+    .include-inner,
+    .escenarios-inner,
+    .funciona-inner,
+    .paso-inner { padding: 5rem 0; }
+
+    #faq { padding: 5rem 0; }
+    #cta { padding: 5rem 0; }
+
+    footer { flex-direction: column; padding: 1.5rem; text-align: center; }
+    .footer-links { justify-content: center; }
+    .wa-float-text { display: none; }
+    .wa-float { padding: 0.85rem; border-radius: 50%; }
+  }
+</style>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN327WB"
+height="0" width="0" style="display:none;visibility:hidden;position:absolute;left:-9999px;top:-9999px;"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a href="#main" class="skip-link">Ir al contenido principal</a>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<header role="banner">
+  <nav role="navigation" aria-label="Navegación principal">
+    <a href="index.html" class="nav-logo" aria-label="ONLIKE — Ir al inicio">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAABnCAYAAAAuXxTZAABJ1ElEQVR42u1dd3hUVRY/5977XnpCgITeQTQUSwABxQkWxIaNyWJFUXFt2BVEdhh7QbGiotgFzVjWsqKLQgbEAmIBDL2FFtJ7Mu/de8/+MRMXFTWZmVDf7/vm2w8X3ry55fxOPwAOHDhw4MCBAwcOHDhw4MCBAwcOHOzXQGcJHOwlsCg+i0KfqN8FtzuHAQD4fNl6t++KzksTISLifr4ODhw4cLAfMghDQERgEX6iSRput5sDAP+Lv8M9Hg+L/joAIGIEH+c8OXAsEAcH//kiIsIhx4+cU1Za0QEZ6HCtESJSghucGezdFT8sfBLAzQF8KpxneTwe5vV69W7PNi6+eELc8OGD+8TFGaq4OLB6woSLaxlDSUEdn1HQhKAw3hsRkSorK9NOP+uCN3dsL4gXpiDSFN79I1DCNPnQwce8P+vFp6a73W7u84W3Dg4cRALhLIGDvYGqyipXQWFRW0Mw0OE6XYiAcQNatEjOC/6HwrAEsMvlEl6vVxIRXnn1TaNXrFh9du8+gwfWVNe0WrLsu1YAAJZllcx+550is84du6Tfkb1nPHjP3d8h4h+IpylEKiW2taUaUbCrCOLj44CIwlwGAiEMqKyoXAMAUFhY6CiCDhwCcXAQmyLIqhAgDQA0hh0PQYlAgjGsi+BVuN/vl7fdNqn/4ONGPr1zZ+EJ1dU1QKQAEaG6uoYAABhjrcrLK1utW7/p8BUrf7lkxOnZ7zz/7CO3de7ceXuYJAJak1RSqqD7KaLwhQQgwTjWOifLwb4Ec5bAwV48azyyDwX/lyisc+t2uzljTN100+SxH3z0hX/NmvUnVFZWSERSnDGNiGQYBhqGgYwxMgyhEUgWl5TAN998P+bK8bcsWbjwm/5er1eHGRdBROTRWgfS6NxfBw6BODgUTJB9+/UNcYIJN0868bN5C14tKipqIQRTnHMBAJyCdwGJqMG1hBQkKmEIAxlDufjrJe3vvX/aF1VVVW28Xi9FO7juwIFDIA4c7JE/9h2DeDwe5vP59JdffdXDn/v1u9u2bVemaWqiv8y++hUhQhFxcTFyydIf0y4de+1bcXGx5PV6nY114BCIAwcHM/Ly8pAzRjOffXXK1u07U2NiDKKw3GAoiLRctXr9SdOnzzgPALTbncOdFXbgEIgDB81rguwTEBH6fD615Jdf2v+St8YdCNRrRMbDfBYYhoG7iorp3x9+Ng4BwOfLdvbWgUMgDhwchPwB2dnZDADghadePK6iojJecE5EFPbrICJTUmLBrsJMTdQKAFQkz3PgwCEQBw72UzTUSGzetGVAIGBDOIWAf+RC0vUBq+2sWa/12Z2kHDhwCMSBg4PIBvH7gy1DNm7eEqdJR9wChIiAMQa1NbXw8dxcpw+VA4dAHDhodvrYZ04ev4qJMeGwXj2Pti0LEFnEb8IYg/pAAFasWEEAAD6fs78OHAJx4OAghIsHAhasW7/he9M0gbSO2GrQWkNsbAwcm3kMBwBwu51VduAQiAMHzWmD/O5/9xJ9uIJup549e9iMsYh7nyMiaCKIjY2hoUOPrXH21YFDIA4cHKQnLT09nQAAunTosMA0DSCtI2UwzRlnSus1119/xXIAQJ8vRzsb7MC51g4cHGQICXecMuUWf0J87HZCZIgYtsAnIs04h86dOixGRMvlcnEAdILpDhwCceCgubDvCiWQwOXiHTp0qE1LS3vSEAZqrcMiEEQky7KhZcsUfd7Zo54EAMjKynKsDwcOgThw0LxyfB/W2vlzFQDgwtxXnu/Zo9tWWyqBiE0ewKSUshOTkkS3rp2fvPHGK1e43W4eTlt3Bw4cAnHg4MBhL/J4PIiYVnXhmHPO6Nypg2VZNgcAuzEjyhGRiLQNwMy26a3mfv6pb5LWmvt8Poc8HDgE4sBBs4twAADYd6GCoKXgYTfccPWKUWecMrJ9+3a7EJlh27YCAIkAGgA0/n/akw7GSkgGAhaYZqzRtWvH//TsnnYOIgYASO/TH+TAgUMgDpyjtldpRLvdbv7gg54F119z+fG9enSb3bp1Kw6AQmlixMAsywKlFGpNzJaSMSZEx47trcyjj3z4h6Xzz/P5fHZwDogTOHfgwBlp62CvYX+QuD6fT7ndbn/966/We9Hf7o0bd9/fuXPnypycHKuurjafpgJKlFLJQIFjADgAqIMgv1wCDMk+a0AYpxFYz8A6TsAB4BeVK1AAAAAElFTkSuQmCC" alt="Logo ONLIKE" width="120" height="38" fetchpriority="high">
+    </a>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="index.html#services">Servicios</a></li>
+      <li><a href="geo-site.html">GEO Site</a></li>
+      <li><a href="test.html">Test gratuito</a></li>
+      <li><a href="#cta" class="nav-cta">Quiero mi diagnóstico</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú de navegación">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main id="main" role="main">
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section id="hero" aria-label="Diagnóstico Cómo te ve ChatGPT">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <span class="hero-label" aria-hidden="true">Diagnóstico · ONLIKE</span>
+          <!-- Quick Answer: párrafo autónomo para AI crawlers — no modificar sin revisar GEO -->
+          <h1 class="hero-title">
+            <span class="thin">Descubrí</span><br>
+            cómo te ve<br>
+            <span class="accent">ChatGPT.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Revisamos cómo aparece tu negocio en las 5 IAs más usadas en Argentina — y de bonus, en Google AI Overview. Informe con sugerencias concretas en 48 horas.
+          </p>
+          <p class="hero-quick-answer">
+            "Cómo te ve ChatGPT" es un diagnóstico profesional de ONLIKE que revisa la presencia de un negocio en ChatGPT, Gemini, Claude, Perplexity, Grok y Google AI Overview. Si el negocio tiene sitio web, también se analiza su estructura para IAs. Se entrega un informe escrito con hallazgos y sugerencias de mejora en un máximo de 48 horas. Precio: $30.000 ARS. Disponible para cualquier rubro en Argentina.
+          </p>
+          <div class="hero-price" aria-label="Precio del servicio">
+            <span class="price-amount">$30.000</span>
+            <span class="price-detail">ARS · Informe en 48 hs</span>
+          </div>
+          <div class="hero-btns">
+            <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20contratar%20el%20diagnóstico%20Cómo%20te%20ve%20ChatGPT.%20Mi%20negocio%20es..."
+               target="_blank" rel="noopener noreferrer"
+               class="btn-primary"
+               aria-label="Contratar diagnóstico por WhatsApp">
+              → Quiero mi diagnóstico
+            </a>
+            <a href="test.html" class="btn-outline" aria-label="Hacer el test gratuito">
+              ¿No sabés si lo necesitás? Hacé el test →
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="ai-mockup-wrap">
+            <div class="ai-mockup">
+              <div class="ai-mockup-bar">
+                <span class="ai-mockup-name">ChatGPT</span>
+                <div class="ai-mockup-dots"><span></span><span></span><span></span></div>
+              </div>
+              <div class="ai-mockup-body">
+                <p class="ai-q">¿Me recomendás un fotógrafo de casamientos en Misiones?</p>
+                <p class="ai-r">No tengo información suficiente sobre fotógrafos en Misiones para hacer una recomendación específica. Te sugiero buscar en directorios locales o Instagram.</p>
+                <span class="ai-status bad">← No aparecés</span>
+              </div>
+            </div>
+            <div class="ai-mockup">
+              <div class="ai-mockup-bar">
+                <span class="ai-mockup-name">Gemini</span>
+                <div class="ai-mockup-dots"><span></span><span></span><span></span></div>
+              </div>
+              <div class="ai-mockup-body">
+                <p class="ai-q">¿Cuál es el mejor ecolodge cerca de las Cataratas?</p>
+                <p class="ai-r">Según la información disponible, <em>Tu Negocio</em> ofrece servicios en Puerto Iguazú con habitaciones desde $XXX por noche y acepta reservas online en el sitio...</p>
+                <span class="ai-status wrong">← Datos desactualizados</span>
+              </div>
+            </div>
+            <p class="ai-mockup-caption">El diagnóstico te dice exactamente cuál de los tres escenarios es el tuyo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MARQUEE
+       ============================================================ -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">ChatGPT <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Gemini <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Claude <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Perplexity <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Grok <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Google AI Overview <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Visibilidad en IAs <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Diagnóstico digital <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Informe en 48 hs <span class="marquee-dot"></span></span>
+      <span class="marquee-item">$30.000 ARS <span class="marquee-dot"></span></span>
+      <span class="marquee-item">onlike.ar <span class="marquee-dot"></span></span>
+      <span class="marquee-item">ChatGPT <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Gemini <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Claude <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Perplexity <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Grok <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Google AI Overview <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Visibilidad en IAs <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Diagnóstico digital <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Informe en 48 hs <span class="marquee-dot"></span></span>
+      <span class="marquee-item">$30.000 ARS <span class="marquee-dot"></span></span>
+      <span class="marquee-item">onlike.ar <span class="marquee-dot"></span></span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       QUÉ INCLUYE (purple)
+       ============================================================ -->
+  <section id="incluye" aria-labelledby="incluye-heading">
+    <div class="container">
+      <div class="include-inner">
+        <span class="section-label on-dark">Qué incluye</span>
+        <h2 id="incluye-heading" class="section-title">
+          Tres entregables.<br>
+          <span style="font-weight:200;">Un diagnóstico.</span>
+        </h2>
+        <div class="include-grid" role="list">
+          <article class="include-card" role="listitem">
+            <span class="include-tag">5 IAs + bonus</span>
+            <h3 class="include-card-title">Revisión completa</h3>
+            <p class="include-card-desc">ChatGPT, Gemini, Claude, Perplexity y Grok — las 5 IAs generativas más usadas en Argentina. Y de bonus, Google AI Overview: el sistema que aparece solo en los resultados de búsqueda de Google y que millones de personas ven sin darse cuenta.</p>
+          </article>
+          <article class="include-card" role="listitem">
+            <span class="include-tag">Si tenés sitio web</span>
+            <h3 class="include-card-title">Análisis técnico</h3>
+            <p class="include-card-desc">Revisamos tu sitio web desde el punto de vista de los sistemas de IA: qué pueden leer, qué no, qué estructura técnica le falta para que los modelos puedan entender y citar tu negocio correctamente.</p>
+          </article>
+          <article class="include-card" role="listitem">
+            <span class="include-tag">48 horas</span>
+            <h3 class="include-card-title">Informe accionable</h3>
+            <p class="include-card-desc">Un documento escrito con lo que encontramos en cada plataforma, qué dice la IA sobre tu negocio, qué está mal o incompleto, y sugerencias de mejora priorizadas. Sin tecnicismos innecesarios.</p>
+          </article>
+        </div>
+        <p class="include-note">
+          No hace falta tener sitio web para contratar el diagnóstico — si no tenés, la revisión se centra en cómo aparecés en las IAs a partir de la información disponible online.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3 ESCENARIOS (dark)
+       ============================================================ -->
+  <section id="escenarios" aria-labelledby="escenarios-heading">
+    <div class="container">
+      <div class="escenarios-inner">
+        <span class="section-label on-dark">Tu punto de partida</span>
+        <h2 id="escenarios-heading" class="section-title">
+          Tres escenarios.<br>
+          <span style="font-weight:200;">Una respuesta para cada uno.</span>
+        </h2>
+        <div class="escenarios-grid" role="list">
+          <article class="scenario-card" role="listitem">
+            <p class="scenario-n">01</p>
+            <span class="scenario-badge absent">No aparecés</span>
+            <h3 class="scenario-title">Ausencia total</h3>
+            <p class="scenario-desc">La IA no tiene información suficiente sobre tu negocio. Cuando alguien pregunta por lo que ofrecés, responde con otra cosa — probablemente un competidor o una recomendación genérica.</p>
+            <p class="scenario-action">El informe es el punto de partida para el GEO Site, o te doy herramientas concretas para mejorar la visibilidad por tu cuenta.</p>
+          </article>
+          <article class="scenario-card" role="listitem">
+            <p class="scenario-n">02</p>
+            <span class="scenario-badge wrong">Información incorrecta</span>
+            <h3 class="scenario-title">Datos desactualizados</h3>
+            <p class="scenario-desc">Dirección que cambió, servicio que ya no ofrecés, precio desactualizado, nombre mal escrito. Las IAs reproducen lo que encuentran — si lo que encuentran está mal, eso es lo que dicen.</p>
+            <p class="scenario-action">Identificamos de dónde viene el error y exactamente cómo subsanarlo para corregir lo que las IAs dicen sobre vos.</p>
+          </article>
+          <article class="scenario-card" role="listitem">
+            <p class="scenario-n">03</p>
+            <span class="scenario-badge correct">Aparecés bien</span>
+            <h3 class="scenario-title">Buen posicionamiento</h3>
+            <p class="scenario-desc">Tu negocio ya tiene presencia en las IAs y la información es correcta. Eso es un punto de partida sólido, no un punto de llegada — los modelos se actualizan y el contexto competitivo cambia.</p>
+            <p class="scenario-action">Felicitaciones. Te entregamos buenas prácticas para sostener y mejorar ese posicionamiento a medida que los modelos evolucionan.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CÓMO FUNCIONA (white)
+       ============================================================ -->
+  <section id="como-funciona" aria-labelledby="funciona-heading">
+    <div class="container">
+      <div class="funciona-inner">
+        <span class="section-label on-light">El proceso</span>
+        <h2 id="funciona-heading" class="section-title" style="color:var(--dark);">
+          Tres pasos.<br>
+          <span style="font-weight:200;">48 horas.</span>
+        </h2>
+        <div class="steps-grid" role="list">
+          <div class="step-item" role="listitem">
+            <span class="step-n" aria-hidden="true">01</span>
+            <h3 class="step-title">Me enviás los datos</h3>
+            <p class="step-desc">Tu nombre, rubro y ciudad — y el link de tu sitio si tenés. Con eso es suficiente para arrancar. Todo por WhatsApp, sin formularios ni llamadas previas.</p>
+          </div>
+          <div class="step-item" role="listitem">
+            <span class="step-n" aria-hidden="true">02</span>
+            <h3 class="step-title">Hago la revisión completa</h3>
+            <p class="step-desc">Reviso cómo aparece tu negocio en ChatGPT, Gemini, Claude, Perplexity, Grok y Google AI Overview. Si tenés sitio, analizo su estructura desde la perspectiva de los sistemas de IA.</p>
+          </div>
+          <div class="step-item" role="listitem">
+            <span class="step-n" aria-hidden="true">03</span>
+            <h3 class="step-title">Recibís el informe</h3>
+            <p class="step-desc">En máximo 48 horas tenés el documento en tu WhatsApp. Qué encontré, qué dice cada IA, qué está mal o falta y qué cambiaría para mejorar tu visibilidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRÓXIMO PASO (dark)
+       ============================================================ -->
+  <section id="proximo-paso" aria-labelledby="paso-heading">
+    <div class="container">
+      <div class="paso-inner">
+        <span class="section-label on-dark">¿Qué sigue?</span>
+        <h2 id="paso-heading" class="section-title">
+          Dos caminos<br>
+          <em>desde el diagnóstico.</em>
+        </h2>
+        <div class="next-grid" role="list">
+          <article class="next-card" role="listitem">
+            <span class="next-tag">Si el diagnóstico muestra brechas de visibilidad</span>
+            <h3>GEO Site</h3>
+            <p>La implementación completa. Una página web profesional con toda la estructura técnica para que ChatGPT, Gemini y Claude puedan leer, entender y recomendar tu negocio cuando alguien pregunta por lo que ofrecés.</p>
+            <p class="next-price">Desde $250.000 ARS</p>
+            <a href="geo-site.html" class="btn-outline" aria-label="Ver más sobre el GEO Site">→ Ver GEO Site</a>
+          </article>
+          <article class="next-card" role="listitem">
+            <span class="next-tag">Si todavía no sabés si el diagnóstico es para vos</span>
+            <h3>Test gratuito</h3>
+            <p>Respondé 10 preguntas en 2 minutos y descubrí si tu negocio está preparado para ser encontrado, entendido y considerado por las inteligencias artificiales.</p>
+            <p class="next-price">Sin costo · onlike.ar/test</p>
+            <a href="test.html" class="btn-outline" aria-label="Hacer el test gratuito">→ Hacer el test</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ — Sección para GEO: preguntas reales con respuestas completas
+       ============================================================ -->
+  <section id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <span class="section-label on-dark">Preguntas frecuentes</span>
+      <h2 id="faq-heading" class="section-title" style="color:var(--white);margin-bottom:3rem;">
+        Lo que más<br>me preguntan.
+      </h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3 class="faq-q">¿Qué inteligencias artificiales revisa el diagnóstico?</h3>
+          <p class="faq-a">ChatGPT, Gemini, Claude, Perplexity y Grok — las 5 IAs más usadas en Argentina y Latinoamérica. Y de bonus, Google AI Overview: el sistema que aparece directamente en los resultados de búsqueda de Google cuando alguien busca algo relacionado con tu rubro. Son 6 plataformas en total.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">¿Necesito tener sitio web para contratar el diagnóstico?</h3>
+          <p class="faq-a">No. El diagnóstico puede hacerse aunque el negocio no tenga sitio web. En ese caso, la revisión se centra en cómo aparece en las IAs a partir de lo que está disponible online — redes sociales, Google Business, directorios. Si tenés sitio, se suma el análisis de su estructura para IAs.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">¿Qué formato tiene el informe?</h3>
+          <p class="faq-a">Es un documento escrito que incluye: qué encontré en cada plataforma, qué dice la IA sobre tu negocio, qué información está incorrecta, incompleta o desactualizada, y sugerencias concretas de mejora priorizadas. Se entrega por WhatsApp en 48 horas, sin tecnicismos innecesarios.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">¿En cuánto tiempo recibo el informe?</h3>
+          <p class="faq-a">Máximo 48 horas desde que recibo los datos de tu negocio. En muchos casos antes.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">¿El diagnóstico garantiza que voy a aparecer en las IAs?</h3>
+          <p class="faq-a">No. Ningún servicio puede garantizar que una IA cite a un negocio específico — eso depende de muchos factores que no se controlan directamente. Lo que el diagnóstico garantiza es saber exactamente cuál es el punto de partida y qué cambios mejorarían las condiciones para aparecer.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">¿Cuál es la diferencia con el GEO Site?</h3>
+          <p class="faq-a">El diagnóstico es un análisis: revisa el estado actual y entrega recomendaciones. El GEO Site es la implementación: una página web profesional con toda la estructura técnica para que las IAs puedan leer, entender y recomendar al negocio. El diagnóstico puede ser un paso previo al GEO Site, o contratarse de forma independiente.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">¿Para qué tipo de negocio tiene sentido?</h3>
+          <p class="faq-a">Para cualquier negocio que quiera saber exactamente cómo lo ven las IAs hoy. Profesionales independientes, alojamientos turísticos, estudios y consultorios, comercios locales, marcas personales. Si alguien puede buscar lo que ofrecés en ChatGPT, tiene sentido saber qué responde.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">¿Qué información necesito darte para arrancar?</h3>
+          <p class="faq-a">Tu nombre, el nombre de tu negocio, el rubro y la ciudad donde operás. Y el link de tu sitio web si tenés. Todo por WhatsApp al +54 3751 566488. No hace falta ninguna reunión previa ni formulario.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA FINAL (lime)
+       ============================================================ -->
+  <section id="cta" aria-label="Contratar diagnóstico">
+    <div class="container">
+      <div class="cta-inner">
+        <span class="section-label on-lime">Empezar ahora</span>
+        <h2 class="section-title">
+          $30.000 ARS.<br>
+          <span style="font-weight:200;">Informe en 48 hs.</span>
+        </h2>
+        <p>
+          Una sola inversión para saber exactamente cómo te ven ChatGPT y las otras IAs que hoy recomiendan negocios como el tuyo.
+        </p>
+        <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20contratar%20el%20diagnóstico%20Cómo%20te%20ve%20ChatGPT.%20Mi%20negocio%20es..."
+           target="_blank" rel="noopener noreferrer"
+           class="btn-dark"
+           aria-label="Contratar diagnóstico por WhatsApp">
+          → Contratar por WhatsApp
+        </a>
+        <p class="cta-note">
+          +54 3751 566488 · lau@onlike.ar · Respuesta en menos de 24 hs
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer role="contentinfo">
+  <span class="footer-copy">
+    <span style="color:var(--lime);">© 2026</span> Laura Silvester · ONLIKE · Eldorado, Misiones, Argentina
+  </span>
+  <nav class="footer-links" aria-label="Links del pie de página">
+    <a href="index.html">Inicio</a>
+    <a href="geo-site.html">GEO Site</a>
+    <a href="test.html">Test gratuito</a>
+    <a href="index.html#contact">Contacto</a>
+  </nav>
+</footer>
+
+<!-- ============================================================
+     BOTÓN FLOTANTE WHATSAPP
+     ============================================================ -->
+<a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20contratar%20el%20diagnóstico%20Cómo%20te%20ve%20ChatGPT."
+   target="_blank" rel="noopener noreferrer"
+   class="wa-float"
+   aria-label="Contratar diagnóstico por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+  <span class="wa-float-text">Contratar por WhatsApp</span>
+</a>
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+  'use strict';
+
+  // Nav scroll shadow
+  window.addEventListener('scroll', function() {
+    document.querySelector('nav').style.boxShadow =
+      window.scrollY > 30 ? '0 2px 24px rgba(0,0,0,0.45)' : 'none';
+  }, {passive: true});
+
+  // Mobile menu toggle
+  var toggle = document.getElementById('nav-toggle');
+  var navLinks = document.getElementById('nav-links');
+  if (toggle && navLinks) {
+    toggle.addEventListener('click', function() {
+      var expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
