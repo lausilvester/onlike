@@ -400,12 +400,14 @@
 
   /* FOOTER */
   footer {
-    background: var(--dark-deep); padding: 1.75rem 3rem;
+    background: var(--dark-deep);
+    background-color: #0b0d18; padding: 1.75rem 3rem;
     display: flex; align-items: center; justify-content: space-between;
     flex-wrap: wrap; gap: 1rem; border-top: 1px solid rgba(255,255,255,0.04);
   }
   .footer-copy { font-size: 0.72rem; color: rgba(255,255,255,0.28); letter-spacing: 0.03em; }
-  .footer-privacy { display: flex; gap: 1.5rem; }
+  .footer-privacy {
+    background: transparent; display: flex; gap: 1.5rem; }
   .footer-privacy a { font-size: 0.7rem; color: rgba(255,255,255,0.28); transition: color var(--transition); }
   .footer-privacy a:hover { color: var(--lime); }
 
@@ -449,8 +451,10 @@
     .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
     .work-cta { flex-direction: column; }
     .btn-wa { width: 100%; justify-content: center; }
-    footer { flex-direction: column; padding: 1.5rem; text-align: center; }
-    .footer-privacy { justify-content: center; }
+    footer {
+    background-color: #0b0d18; flex-direction: column; padding: 1.5rem; text-align: center; }
+    .footer-privacy {
+    background: transparent; justify-content: center; }
     .wa-float-text { display: none; }
     .wa-float { padding: 0.85rem; border-radius: 50%; }
     .abstract-inner, .sources-inner, .takeaways-inner,
@@ -685,9 +689,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span class="contact-link-icon" aria-hidden="true">📱</span>
               WhatsApp: +54 3751 566488
             </a>
-            <a href="mailto:silvester.laura@gmail.com" class="contact-link" aria-label="Email">
+            <a href="mailto:lau@onlike.ar" class="contact-link" aria-label="Email">
               <span class="contact-link-icon" aria-hidden="true">✉️</span>
-              silvester.laura@gmail.com
+              lau@onlike.ar
             </a>
           </div>
         </div>

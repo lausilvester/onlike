@@ -35,7 +35,7 @@
   :root {
     --dark: #131625;
     --dark-deep: #0b0d18;
-    --accent: #FF3EBE;
+    --accent: #FF6B6B;
     --white: #FFFFFF;
     --gray-light: #F4F4F0;
     --font-display: 'Outfit', sans-serif;
@@ -56,7 +56,8 @@
   .nav-cta { background: var(--dark) !important; color: var(--white) !important; padding: 0.5rem 1.1rem !important; border-radius: var(--radius); }
   .nav-cta:hover { background: var(--accent) !important; color: var(--dark) !important; }
   .container { max-width: 1160px; margin: 0 auto; padding: 0 3rem; }
-  footer { background: var(--dark-deep); padding: 1.75rem 3rem; border-top: 1px solid rgba(255,255,255,0.04); text-align: center; }
+  footer { background: var(--dark-deep);
+    background-color: #0b0d18; padding: 1.75rem 3rem; border-top: 1px solid rgba(255,255,255,0.04); text-align: center; }
   .footer-copy { font-size: 0.7rem; color: rgba(255,255,255,0.25); letter-spacing: 0.03em; }
   .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; display: flex; align-items: center; gap: 0.65rem; background: #25D366; color: #fff; padding: 0.75rem 1.2rem 0.75rem 1rem; border-radius: 100px; font-size: 0.82rem; font-weight: 600; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: all var(--transition); }
   .wa-float:hover { background: #1ebe5d; transform: translateY(-2px); }
@@ -73,7 +74,8 @@
     .container { padding: 0 1.5rem; }
     .wa-float-text { display: none; }
     .wa-float { padding: 0.85rem; border-radius: 50%; }
-    footer { padding: 1.5rem; }
+    footer {
+    background-color: #0b0d18; padding: 1.5rem; }
   }
 </style>
 <!-- Google Tag Manager -->
@@ -108,14 +110,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .diagtur-wrap { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 5rem 0; }
   .diagtur-inner { display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem; align-items: start; }
   .diagtur-title { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.4rem, 4vw, 4rem); line-height: 0.92; letter-spacing: -0.02em; color: #fff; margin-bottom: 1.25rem; }
-  .diagtur-title em { font-style: normal; color: #FF3EBE; }
+  .diagtur-title em { font-style: normal; color: #FF6B6B; }
   .diagtur-sub { font-size: 0.98rem; color: rgba(255,255,255,0.55); line-height: 1.8; margin-bottom: 2rem; }
   .diagtur-contact { display: flex; flex-direction: column; gap: 0.75rem; }
   .diagtur-contact a { display: flex; align-items: center; gap: 0.75rem; color: rgba(255,255,255,0.45); font-size: 0.88rem; transition: color 0.2s; }
-  .diagtur-contact a:hover { color: #FF3EBE; }
+  .diagtur-contact a:hover { color: #FF6B6B; }
   .diagtur-form-wrap { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 4px; overflow: hidden; }
   .diagtur-form-header { padding: 1.5rem 2rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
-  .diagtur-form-header p { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #FF3EBE; }
+  .diagtur-form-header p { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #FF6B6B; }
   @media (max-width: 900px) {
     .diagtur-inner { grid-template-columns: 1fr; gap: 2.5rem; }
     .diagtur-wrap { padding: 4rem 0; }
@@ -125,7 +127,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="diagtur-inner">
       <div>
-        <span class="section-label" style="color:#FF3EBE;">Diagnóstico · Turismo</span>
+        <span class="section-label" style="color:#FF6B6B;">Diagnóstico · Turismo</span>
         <h1 class="diagtur-title">Cotizá tu<br>diagnóstico <em>turístico.</em></h1>
         <p class="diagtur-sub">Completá el formulario con los datos de tu alojamiento y en 24-48 horas te cuento qué incluye y cuánto vale para tu caso.</p>
         <div class="diagtur-contact">
@@ -133,15 +135,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span style="width:32px;height:32px;background:rgba(255,255,255,0.06);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.8rem;">📱</span>
             +54 3751 566488
           </a>
-          <a href="mailto:silvester.laura@gmail.com">
+          <a href="mailto:lau@onlike.ar">
             <span style="width:32px;height:32px;background:rgba(255,255,255,0.06);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.8rem;">✉️</span>
-            silvester.laura@gmail.com
+            lau@onlike.ar
           </a>
         </div>
       </div>
       <div class="diagtur-form-wrap">
         <div class="diagtur-form-header"><p>Formulario de diagnóstico turístico</p></div>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtRnUtxm_4WNOF99F7YXEZjk1N_mL7_Ol7IOWPFyV4V0-0OQ/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" title="Formulario de diagnóstico turístico" style="display:block;">Cargando formulario...</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSetxJbVqL3DnnKENiE_VneSXdxsLJZOJKR0xM1MgdeSeAOkZw/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" title="Formulario de diagnóstico turístico" style="display:block;">Cargando formulario...</iframe>
       </div>
     </div>
   </div>
@@ -152,7 +154,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div style="max-width:1160px;margin:0 auto;padding:1.75rem 3rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
     <div>
       <p style="font-size:0.72rem;color:rgba(255,255,255,0.55);margin-bottom:0.3rem;font-weight:500;">ONLIKE · Laura Silvester · Estrategia y posicionamiento digital</p>
-      <p style="font-size:0.7rem;color:rgba(255,255,255,0.25);">Eldorado, Misiones, Argentina · <a href="mailto:silvester.laura@gmail.com" style="color:rgba(255,255,255,0.25);text-decoration:none;" onmouseover="this.style.color='#D1FA3E'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">silvester.laura@gmail.com</a> · WhatsApp +54 3751 566488</p>
+      <p style="font-size:0.7rem;color:rgba(255,255,255,0.25);">Eldorado, Misiones, Argentina · <a href="mailto:lau@onlike.ar" style="color:rgba(255,255,255,0.25);text-decoration:none;" onmouseover="this.style.color='#D1FA3E'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">lau@onlike.ar</a> · WhatsApp +54 3751 566488</p>
     </div>
     <nav style="display:flex;gap:1.5rem;align-items:center;" aria-label="Legal">
       <a href="https://onlike.ar/privacidad.html" style="font-size:0.7rem;color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#D1FA3E'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">Política de privacidad</a>
