@@ -21,7 +21,10 @@
   :root {
     --dark: #131625;
     --lime: #D1FA3E;
+    --lime-hover: #c5ee30;
     --violet: #8E51B9;
+    --lavender: #A08AE5;
+    --magenta: #FF3EBE;
     --white: #FFFFFF;
   }
 
@@ -96,20 +99,44 @@
   }
 
   .link-btn--lime:hover {
-    background: #c5ee30;
-    border-color: #c5ee30;
+    background: var(--lime-hover);
+    border-color: var(--lime-hover);
     transform: translateY(-1px);
   }
 
   .link-btn--violet {
     background: transparent;
-    border: 1px solid rgba(142,81,185,0.45);
-    color: rgba(160,138,229,1);
+    border: 1px solid rgba(142,81,185,0.55);
+    color: var(--lavender);
   }
 
   .link-btn--violet:hover {
     border-color: var(--violet);
-    background: rgba(142,81,185,0.08);
+    background: rgba(142,81,185,0.10);
+    color: var(--white);
+  }
+
+  .link-btn--magenta {
+    background: transparent;
+    border: 1px solid rgba(255,62,190,0.58);
+    color: var(--magenta);
+  }
+
+  .link-btn--magenta:hover {
+    border-color: var(--magenta);
+    background: rgba(255,62,190,0.10);
+    transform: translateY(-1px);
+  }
+
+  .link-btn--onlike {
+    background: transparent;
+    border: 1px solid rgba(209,250,62,0.38);
+    color: var(--lime);
+  }
+
+  .link-btn--onlike:hover {
+    border-color: var(--lime);
+    background: rgba(209,250,62,0.08);
   }
 
   .divider {
@@ -138,16 +165,19 @@
 
   <nav class="links" aria-label="Accesos directos">
     <a href="https://onlike.ar/test.html" class="link-btn link-btn--lime">
-      Diagnóstico gratuito de presencia digital
+      Auto test gratuito de presencia digital
+    </a>
+    <a href="https://www.onlike.ar/como-te-ve-chatgpt.html" class="link-btn link-btn--violet">
+      Cómo te ve ChatGPT — diagnóstico de visibilidad
     </a>
     <a href="https://onlike.ar/geo-site.html" class="link-btn link-btn--violet">
       GEO Site — aparecer en IAs
     </a>
     <div class="divider" role="separator"></div>
-    <a href="https://onlike.ar/turismo.html" class="link-btn link-btn--outline">
+    <a href="https://onlike.ar/turismo.html" class="link-btn link-btn--magenta">
       Estrategia digital para turismo
     </a>
-    <a href="https://onlike.ar/" class="link-btn link-btn--outline">
+    <a href="https://onlike.ar/" class="link-btn link-btn--onlike">
       Conocé Onlike
     </a>
     <div class="divider" role="separator"></div>
