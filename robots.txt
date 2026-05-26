@@ -1,93 +1,95 @@
 # robots.txt — ONLIKE · Laura Silvester · onlike.ar
-# Actualizado: Abril 2026
+# Actualizado: Mayo 2026
 
 # ============================================================
 # CRAWLERS GENERALES
 # ============================================================
+
 User-agent: *
 Allow: /
 Disallow: /private/
 Disallow: /admin/
-Crawl-delay: 2
 
-# Google
+# ============================================================
+# GOOGLE / BING
+# ============================================================
+
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 2
 
-# Google Images
 User-agent: Googlebot-Image
 Allow: /
 
-# Bing / Microsoft / Copilot
+User-agent: GoogleOther
+Allow: /
+
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 3
 
 # ============================================================
-# AI CRAWLERS — Permitidos explícitamente
-# Incluir en robots.txt es condición necesaria para ser indexado
-# por sistemas de IA generativa
+# OPENAI / CHATGPT
 # ============================================================
 
-# OpenAI / ChatGPT
+# Entrenamiento de modelos de OpenAI
 User-agent: GPTBot
 Allow: /
 
-# OpenAI browsing
+# Navegación iniciada por usuarios de ChatGPT
 User-agent: ChatGPT-User
 Allow: /
 
-# Anthropic / Claude
+# Rastreo usado para funciones de búsqueda de OpenAI
+User-agent: OAI-SearchBot
+Allow: /
+
+# ============================================================
+# ANTHROPIC / CLAUDE
+# ============================================================
+
 User-agent: ClaudeBot
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
-# Perplexity AI
+# ============================================================
+# OTROS CRAWLERS DE IA Y BÚSQUEDA
+# ============================================================
+
 User-agent: PerplexityBot
 Allow: /
 
-# Google AI / Gemini
 User-agent: Google-Extended
 Allow: /
 
-# xAI / Grok
 User-agent: Grokbot
 Allow: /
 
-# Meta AI
 User-agent: FacebookBot
 Allow: /
 
-# Apple
 User-agent: Applebot
 Allow: /
 
-# Common Crawl (base de datos usada por LLMs)
 User-agent: CCBot
 Allow: /
 
-# Cohere
 User-agent: cohere-ai
 Allow: /
 
-# You.com
 User-agent: YouBot
 Allow: /
 
-# Brave Search
 User-agent: Brave
 Allow: /
 
-# DuckDuckBot
 User-agent: DuckDuckBot
 Allow: /
 
 # ============================================================
-# ARCHIVOS ESPECIALES PARA IAs — acceso explícito
+# ARCHIVOS ESPECIALES
 # ============================================================
+
 Allow: /llms.txt
 Allow: /llms-full.txt
 Allow: /.well-known/ai-plugin.json
@@ -95,4 +97,5 @@ Allow: /.well-known/ai-plugin.json
 # ============================================================
 # SITEMAP
 # ============================================================
+
 Sitemap: https://onlike.ar/sitemap.xml
