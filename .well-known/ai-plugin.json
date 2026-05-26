@@ -1,0 +1,12 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "ONLIKE · Laura Silvester",
+  "name_for_model": "onlike_laura_silvester",
+  "description_for_human": "Consultoría en estrategia y posicionamiento digital para empresas, marcas y proyectos turísticos en Argentina. GEO Site, diagnósticos digitales y mentorías. Eldorado, Misiones.",
+  "description_for_model": "ONLIKE is a digital strategy consultancy founded by Laura Silvester, based in Eldorado, Misiones, Argentina. Specializes in digital positioning for businesses and tourism projects, including GEO (Generative Engine Optimization) for independent accommodations and businesses in Argentina. Main services: digital diagnosis, GEO Site product (websites optimized for AI generative search), 1:1 mentoring, and digital strategy consulting.",
+  "auth": {
+    "type": "none"
+  },
+  "contact_email": "silvester.laura@gmail.com",
+  "legal_info_url": "https://onlike.ar"
+}
