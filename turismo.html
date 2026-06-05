@@ -92,19 +92,69 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "name": "Diagnóstico digital para turismo — ONLIKE · Laura Silvester",
       "description": "Diagnóstico digital estratégico para alojamientos turísticos independientes en Argentina. Ecolodges, cabañas boutique, apart-hoteles, hosterías. Laura Silvester · ONLIKE.",
       "inLanguage": "es-AR",
-      "isPartOf": {"@id": "https://onlike.ar/#website"},
-      "provider": {"@id": "https://onlike.ar/#organization"}
+      "isPartOf": {
+        "@id": "https://onlike.ar/#website"
+      },
+      "author": {
+        "@id": "https://onlike.ar/#person"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ONLIKE",
+            "item": "https://onlike.ar/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Turismo",
+            "item": "https://onlike.ar/turismo.html"
+          }
+        ]
+      }
     },
     {
       "@type": "Service",
       "@id": "https://onlike.ar/turismo.html#service",
       "name": "Diagnóstico digital estratégico para alojamientos turísticos",
-      "alternateName": ["Diagnóstico digital para turismo", "Auditoría digital hotelera", "GEO para turismo Argentina"],
+      "alternateName": [
+        "Diagnóstico digital para turismo",
+        "Auditoría digital hotelera",
+        "GEO para turismo Argentina"
+      ],
       "description": "Análisis completo del ecosistema digital de alojamientos turísticos independientes: visibilidad en IAs generativas (GEO), sitio web, Google Business Profile, OTAs (Booking, TripAdvisor), plataformas de nicho, redes sociales y SEO en español e inglés. Incluye reunión virtual de devolución y hoja de ruta con prioridades.",
-      "provider": {"@id": "https://onlike.ar/#organization"},
-      "areaServed": {"@type": "Country", "name": "Argentina"},
+      "provider": {
+        "@id": "https://onlike.ar/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Argentina"
+      },
       "serviceType": "Auditoría de marketing digital para turismo",
-      "category": ["Diagnóstico digital", "Marketing turístico", "GEO para turismo", "Estrategia digital hotelera"],
+      "category": [
+        "Diagnóstico digital",
+        "Marketing turístico",
+        "GEO para turismo",
+        "Estrategia digital hotelera"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "300",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "300",
+          "priceCurrency": "USD",
+          "description": "Consultoría/diagnóstico completo desde USD 300."
+        },
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@id": "https://onlike.ar/#organization"
+        }
+      },
       "audience": {
         "@type": "Audience",
         "audienceType": "Alojamientos turísticos independientes",
@@ -128,7 +178,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           "name": "¿Para qué tipo de alojamiento es el diagnóstico?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Para cualquier alojamiento turístico independiente en Argentina: hoteles, ecolodges, apart-hoteles, cabañas boutique, glamping, hosterías, lodges y proyectos de turismo de naturaleza. El diferencial es que sean independientes — que tomen sus propias decisiones de marketing — sin importar el tamaño."
+            "text": "Para alojamientos turísticos independientes que no pertenecen a cadenas hoteleras: ecolodges, hoteles boutique, cabañas, apart-hoteles, glamping, hosterías y lodges de naturaleza en Argentina."
           }
         },
         {
@@ -136,7 +186,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           "name": "¿Por qué es importante el posicionamiento en IAs para alojamientos turísticos?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "El 100% del proceso de decisión del turista ocurre en digital antes del viaje. Una proporción creciente de viajeros, especialmente internacionales, consulta directamente a IAs como ChatGPT o Gemini para elegir destino y alojamiento. Si el alojamiento no aparece en esas respuestas, no existe para ese perfil de turista."
+            "text": "Cada vez más viajeros usan ChatGPT, Gemini y Perplexity para planificar viajes y buscar alojamiento. Si un ecolodge o hotel boutique no tiene la estructura técnica correcta, las IAs no lo recomiendan — aunque tenga el mejor producto. El GEO para turismo resuelve exactamente eso."
           }
         }
       ]

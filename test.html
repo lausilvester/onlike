@@ -32,14 +32,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://onlike.ar/test.html",
-  "url": "https://onlike.ar/test.html",
-  "name": "Test: ¿Tu negocio necesita un GEO Site?",
-  "description": "Test interactivo gratuito de ONLIKE para evaluar si un negocio necesita posicionamiento en inteligencias artificiales generativas.",
-  "inLanguage": "es-AR",
-  "isPartOf": {"@id": "https://onlike.ar/#website"},
-  "provider": {"@id": "https://onlike.ar/#organization"}
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://onlike.ar/test.html",
+      "url": "https://onlike.ar/test.html",
+      "name": "Test: ¿Tu negocio necesita un GEO Site?",
+      "description": "Test interactivo gratuito de ONLIKE para evaluar si un negocio necesita posicionamiento en inteligencias artificiales generativas.",
+      "inLanguage": "es-AR",
+      "isPartOf": {
+        "@id": "https://onlike.ar/#website"
+      },
+      "author": {
+        "@id": "https://onlike.ar/#person"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ONLIKE",
+            "item": "https://onlike.ar/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Test GEO Site",
+            "item": "https://onlike.ar/test.html"
+          }
+        ]
+      }
+    }
+  ]
 }
 </script>
 

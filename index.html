@@ -75,17 +75,17 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-
     {
       "@type": "WebSite",
       "@id": "https://onlike.ar/#website",
       "url": "https://onlike.ar/",
       "name": "ONLIKE · Laura Silvester",
       "description": "Consultoría en estrategia y posicionamiento digital para empresas, marcas y proyectos turísticos en Argentina. Especializada en GEO (Generative Engine Optimization) para alojamientos turísticos.",
-      "publisher": {"@id": "https://onlike.ar/#organization"},
+      "publisher": {
+        "@id": "https://onlike.ar/#organization"
+      },
       "inLanguage": "es-AR"
     },
-
     {
       "@type": "WebPage",
       "@id": "https://onlike.ar/#webpage",
@@ -93,23 +93,40 @@
       "name": "ONLIKE — Estrategia digital. Sin excusas.",
       "description": "Consultoría en estrategia y posicionamiento digital para empresas, marcas y proyectos turísticos en Argentina. Auditorías, mentorías, SEO e IA aplicada.",
       "inLanguage": "es-AR",
-      "isPartOf": {"@id": "https://onlike.ar/#website"},
-      "about": {"@id": "https://onlike.ar/#organization"},
-      "author": {"@id": "https://onlike.ar/#person"},
+      "isPartOf": {
+        "@id": "https://onlike.ar/#website"
+      },
+      "about": {
+        "@id": "https://onlike.ar/#organization"
+      },
+      "author": {
+        "@id": "https://onlike.ar/#person"
+      },
       "dateModified": "2026-06-01",
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://onlike.ar/"}
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://onlike.ar/"
+          }
         ]
       }
     },
-
     {
-      "@type": ["Organization", "ProfessionalService", "LocalBusiness"],
+      "@type": [
+        "Organization",
+        "ProfessionalService",
+        "LocalBusiness"
+      ],
       "@id": "https://onlike.ar/#organization",
       "name": "ONLIKE",
-      "alternateName": ["Onlike", "ONLIKE · Laura Silvester"],
+      "alternateName": [
+        "Onlike",
+        "ONLIKE · Laura Silvester"
+      ],
       "url": "https://onlike.ar/",
       "logo": {
         "@type": "ImageObject",
@@ -120,15 +137,19 @@
       "image": "https://onlike.ar/og-image.jpg",
       "description": "Consultoría en estrategia y posicionamiento digital especializada en GEO (Generative Engine Optimization) para turismo y hotelería. Ayuda a ecolodges, hoteles boutique, cabañas y apart-hoteles a ser descubiertos y recomendados por inteligencias artificiales como ChatGPT, Gemini y Perplexity.",
       "foundingDate": "2023",
-      "founder": {"@id": "https://onlike.ar/#person"},
+      "founder": {
+        "@id": "https://onlike.ar/#person"
+      },
       "foundingLocation": {
         "@type": "Place",
         "name": "Eldorado, Misiones, Argentina"
       },
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Barrio Eldorado 2, Esc. 7, Edificio F",
         "addressLocality": "Eldorado",
         "addressRegion": "Misiones",
+        "postalCode": "3380",
         "addressCountry": "AR"
       },
       "geo": {
@@ -138,16 +159,25 @@
       },
       "telephone": "+543751566488",
       "email": "lau@onlike.ar",
+      "priceRange": "USD 20 – USD 300",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+54-3751-566488",
         "email": "lau@onlike.ar",
         "contactType": "customer service",
-        "availableLanguage": ["Spanish"],
+        "availableLanguage": [
+          "Spanish"
+        ],
         "areaServed": "AR"
       },
-      "areaServed": {"@type": "Country", "name": "Argentina"},
-      "serviceArea": {"@type": "Country", "name": "Argentina"},
+      "areaServed": {
+        "@type": "Country",
+        "name": "Argentina"
+      },
+      "serviceArea": {
+        "@type": "Country",
+        "name": "Argentina"
+      },
       "knowsAbout": [
         "Generative Engine Optimization",
         "GEO para turismo",
@@ -169,19 +199,16 @@
               "@type": "Service",
               "@id": "https://onlike.ar/geo-site.html#service",
               "name": "GEO Site",
-              "description": "Sitio web de una página optimizado para que ChatGPT, Gemini, Claude y Perplexity encuentren, entiendan y recomienden a un negocio. Incluye llms.txt, schema JSON-LD, robots.txt para crawlers de IA y ai-plugin.json. Precio desde $250.000 ARS.",
-              "url": "https://onlike.ar/geo-site.html",
-              "provider": {"@id": "https://onlike.ar/#organization"}
+              "url": "https://onlike.ar/geo-site.html"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "@id": "https://onlike.ar/#service-diagnostico",
-              "name": "Diagnóstico de visibilidad en IAs — Cómo te ve ChatGPT",
-              "description": "Análisis de cómo ChatGPT, Gemini y Perplexity ven, describen y recomiendan (o no) un alojamiento o negocio. Identifica brechas de legibilidad digital y define prioridades de acción.",
-              "provider": {"@id": "https://onlike.ar/#organization"}
+              "@id": "https://onlike.ar/como-te-ve-chatgpt#service",
+              "name": "Cómo te ve ChatGPT",
+              "url": "https://onlike.ar/como-te-ve-chatgpt"
             }
           },
           {
@@ -189,9 +216,7 @@
             "itemOffered": {
               "@type": "Service",
               "@id": "https://onlike.ar/#service-estrategia",
-              "name": "Estrategia y posicionamiento digital",
-              "description": "Estrategia de posicionamiento digital integral para empresas, profesionales y proyectos turísticos. Diagnóstico, plan de contenidos semánticos y hoja de ruta de implementación.",
-              "provider": {"@id": "https://onlike.ar/#organization"}
+              "name": "Estrategia y posicionamiento digital"
             }
           },
           {
@@ -199,9 +224,7 @@
             "itemOffered": {
               "@type": "Service",
               "@id": "https://onlike.ar/#service-mentoria",
-              "name": "Mentoría 1:1 en marketing digital",
-              "description": "Sesiones de mentoría individual para propietarios, gestores de alojamientos y profesionales. Estrategia digital, presencia en buscadores e IAs, y comunicación de marca.",
-              "provider": {"@id": "https://onlike.ar/#organization"}
+              "name": "Mentoría 1:1 en marketing digital"
             }
           },
           {
@@ -210,9 +233,7 @@
               "@type": "Service",
               "@id": "https://onlike.ar/turismo.html#service",
               "name": "Estrategia digital para turismo",
-              "description": "Servicio especializado para ecolodges, hoteles boutique, cabañas y apart-hoteles. Análisis del ecosistema digital turístico: OTAs, Google Business Profile, plataformas de nicho y posicionamiento en IAs para turistas nacionales e internacionales.",
-              "url": "https://onlike.ar/turismo.html",
-              "provider": {"@id": "https://onlike.ar/#organization"}
+              "url": "https://onlike.ar/turismo.html"
             }
           }
         ]
@@ -225,7 +246,6 @@
         "https://www.facebook.com/onlike.ar"
       ]
     },
-
     {
       "@type": "Person",
       "@id": "https://onlike.ar/#person",
@@ -237,7 +257,9 @@
       "image": "https://onlike.ar/og-image.jpg",
       "jobTitle": "Consultora en estrategia digital y GEO para turismo",
       "description": "Licenciada en Turismo con más de 15 años de experiencia en el sector. Especializada en GEO (Generative Engine Optimization) para alojamientos turísticos independientes. Docente universitaria, ex gestión hotelera, speaker en Fórum Internacional de Turismo do Iguassu 2026.",
-      "worksFor": {"@id": "https://onlike.ar/#organization"},
+      "worksFor": {
+        "@id": "https://onlike.ar/#organization"
+      },
       "hasCredential": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "degree",
@@ -276,13 +298,15 @@
       ],
       "performerIn": {
         "@type": "Event",
+        "@id": "https://onlike.ar/forum2026.html#event",
         "name": "Fórum Internacional de Turismo do Iguassu 2026",
-        "startDate": "2026-06-11",
+        "startDate": "2026-06-10",
+        "endDate": "2026-06-12",
         "location": {
           "@type": "Place",
-          "name": "Foz do Iguaçu, Brasil"
+          "name": "Rafain Palace, Foz do Iguaçu, Brasil"
         },
-        "url": "https://onlike.ar/forum2026"
+        "url": "https://forumdeturismodoiguassu.com/"
       },
       "sameAs": [
         "https://www.instagram.com/lausilvester",
@@ -290,7 +314,6 @@
         "https://www.tiktok.com/@lausilvester"
       ]
     },
-
     {
       "@type": "FAQPage",
       "@id": "https://onlike.ar/#faq",
@@ -308,7 +331,7 @@
           "name": "¿Qué es un GEO Site?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Un GEO Site es una página web de una sola pantalla con diseño profesional y una capa técnica invisible diseñada para que ChatGPT, Gemini, Claude y Perplexity encuentren, entiendan y recomienden a un negocio. Incluye llms.txt, schema JSON-LD, robots.txt optimizado y ai-plugin.json. Precio desde $250.000 ARS."
+            "text": "Un GEO Site es una página web de una sola pantalla con diseño profesional y una capa técnica invisible diseñada para que ChatGPT, Gemini, Claude y Perplexity encuentren, entiendan y recomienden a un negocio. Incluye llms.txt, schema JSON-LD, robots.txt optimizado y ai-plugin.json. Precio desde USD 200."
           }
         },
         {
@@ -356,7 +379,7 @@
           "name": "¿Cuánto cuesta una mentoría?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "El precio depende del formato y la profundidad. Para consultarlo, escribí por WhatsApp al +54 3751 566488 contando brevemente qué necesitás trabajar, y te armo una propuesta según el caso."
+            "text": "La mentoría 1:1 online arranca desde USD 50 por encuentro. El precio final depende del formato y la profundidad. Para consultarlo, escribí por WhatsApp al +54 3751 566488."
           }
         },
         {
@@ -377,7 +400,6 @@
         }
       ]
     }
-
   ]
 }
 </script>
