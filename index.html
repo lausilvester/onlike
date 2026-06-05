@@ -69,60 +69,62 @@
 
 <!-- ============================================================
      SCHEMA.ORG — JSON-LD (invisible para usuarios, esencial para Google y AIs)
+     Versión 2 · Junio 2026 · GEO-optimizado
      ============================================================ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
+
     {
       "@type": "WebSite",
       "@id": "https://onlike.ar/#website",
       "url": "https://onlike.ar/",
       "name": "ONLIKE · Laura Silvester",
-      "description": "Consultoría en estrategia y posicionamiento digital para empresas, marcas y proyectos turísticos en Argentina.",
+      "description": "Consultoría en estrategia y posicionamiento digital para empresas, marcas y proyectos turísticos en Argentina. Especializada en GEO (Generative Engine Optimization) para alojamientos turísticos.",
       "publisher": {"@id": "https://onlike.ar/#organization"},
       "inLanguage": "es-AR"
     },
+
     {
-      "@type": "Organization",
+      "@type": "WebPage",
+      "@id": "https://onlike.ar/#webpage",
+      "url": "https://onlike.ar/",
+      "name": "ONLIKE — Estrategia digital. Sin excusas.",
+      "description": "Consultoría en estrategia y posicionamiento digital para empresas, marcas y proyectos turísticos en Argentina. Auditorías, mentorías, SEO e IA aplicada.",
+      "inLanguage": "es-AR",
+      "isPartOf": {"@id": "https://onlike.ar/#website"},
+      "about": {"@id": "https://onlike.ar/#organization"},
+      "author": {"@id": "https://onlike.ar/#person"},
+      "dateModified": "2026-06-01",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://onlike.ar/"}
+        ]
+      }
+    },
+
+    {
+      "@type": ["Organization", "ProfessionalService", "LocalBusiness"],
       "@id": "https://onlike.ar/#organization",
       "name": "ONLIKE",
       "alternateName": ["Onlike", "ONLIKE · Laura Silvester"],
       "url": "https://onlike.ar/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://onlike.ar/og-image.jpg"
+        "url": "https://onlike.ar/og-image.jpg",
+        "width": 1200,
+        "height": 630
       },
+      "image": "https://onlike.ar/og-image.jpg",
+      "description": "Consultoría en estrategia y posicionamiento digital especializada en GEO (Generative Engine Optimization) para turismo y hotelería. Ayuda a ecolodges, hoteles boutique, cabañas y apart-hoteles a ser descubiertos y recomendados por inteligencias artificiales como ChatGPT, Gemini y Perplexity.",
+      "foundingDate": "2023",
       "founder": {"@id": "https://onlike.ar/#person"},
       "foundingLocation": {
         "@type": "Place",
         "name": "Eldorado, Misiones, Argentina"
       },
-      "sameAs": [
-        "https://www.instagram.com/onlike.ar",
-        "https://www.instagram.com/lausilvester",
-        "https://linkedin.com/in/lausilvester",
-        "https://www.tiktok.com/@lausilvester",
-        "https://www.facebook.com/onlike.ar"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+54-3751-566488",
-        "email": "lau@onlike.ar",
-        "contactType": "customer service",
-        "availableLanguage": ["Spanish", "English"],
-        "areaServed": "AR"
-      }
-    },
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://onlike.ar/#business",
-      "name": "ONLIKE · Estrategia y Posicionamiento Digital",
-      "image": "https://onlike.ar/og-image.jpg",
-      "url": "https://onlike.ar/",
-      "telephone": "+543751566488",
-      "email": "lau@onlike.ar",
-      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Eldorado",
@@ -134,67 +136,153 @@
         "latitude": -26.4028,
         "longitude": -54.6622
       },
-      "areaServed": [
-        {"@type": "Country", "name": "Argentina"},
-        {"@type": "City", "name": "Buenos Aires"},
-        {"@type": "City", "name": "Córdoba"},
-        {"@type": "City", "name": "Rosario"},
-        {"@type": "City", "name": "Mendoza"},
-        {"@type": "City", "name": "Neuquén"},
-        {"@type": "City", "name": "Salta"},
-        {"@type": "City", "name": "Bariloche"},
-        {"@type": "City", "name": "Tucumán"},
-        {"@type": "AdministrativeArea", "name": "Misiones, Argentina"},
-        {"@type": "AdministrativeArea", "name": "Patagonia, Argentina"}
-      ],
+      "telephone": "+543751566488",
+      "email": "lau@onlike.ar",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+54-3751-566488",
+        "email": "lau@onlike.ar",
+        "contactType": "customer service",
+        "availableLanguage": ["Spanish"],
+        "areaServed": "AR"
+      },
+      "areaServed": {"@type": "Country", "name": "Argentina"},
       "serviceArea": {"@type": "Country", "name": "Argentina"},
+      "knowsAbout": [
+        "Generative Engine Optimization",
+        "GEO para turismo",
+        "Posicionamiento en inteligencias artificiales",
+        "Estrategia digital para alojamientos turísticos",
+        "Legibilidad digital para IAs",
+        "SEO para hoteles y ecolodges",
+        "Marketing digital turístico",
+        "Auditoría de presencia digital"
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
+        "@id": "https://onlike.ar/#services",
         "name": "Servicios ONLIKE",
         "itemListElement": [
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Estrategia y posicionamiento digital"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Auditoría estratégica de presencia digital"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mentorías 1:1 en marketing digital"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Estrategia digital para turismo"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Posicionamiento en buscadores e inteligencias artificiales"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Puesta en marcha digital para negocios"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GEO Site"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cómo te ve ChatGPT - Diagnóstico de visibilidad en inteligencias artificiales"}}
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://onlike.ar/geo-site.html#service",
+              "name": "GEO Site",
+              "description": "Sitio web de una página optimizado para que ChatGPT, Gemini, Claude y Perplexity encuentren, entiendan y recomienden a un negocio. Incluye llms.txt, schema JSON-LD, robots.txt para crawlers de IA y ai-plugin.json. Precio desde $250.000 ARS.",
+              "url": "https://onlike.ar/geo-site.html",
+              "provider": {"@id": "https://onlike.ar/#organization"}
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://onlike.ar/#service-diagnostico",
+              "name": "Diagnóstico de visibilidad en IAs — Cómo te ve ChatGPT",
+              "description": "Análisis de cómo ChatGPT, Gemini y Perplexity ven, describen y recomiendan (o no) un alojamiento o negocio. Identifica brechas de legibilidad digital y define prioridades de acción.",
+              "provider": {"@id": "https://onlike.ar/#organization"}
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://onlike.ar/#service-estrategia",
+              "name": "Estrategia y posicionamiento digital",
+              "description": "Estrategia de posicionamiento digital integral para empresas, profesionales y proyectos turísticos. Diagnóstico, plan de contenidos semánticos y hoja de ruta de implementación.",
+              "provider": {"@id": "https://onlike.ar/#organization"}
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://onlike.ar/#service-mentoria",
+              "name": "Mentoría 1:1 en marketing digital",
+              "description": "Sesiones de mentoría individual para propietarios, gestores de alojamientos y profesionales. Estrategia digital, presencia en buscadores e IAs, y comunicación de marca.",
+              "provider": {"@id": "https://onlike.ar/#organization"}
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://onlike.ar/turismo.html#service",
+              "name": "Estrategia digital para turismo",
+              "description": "Servicio especializado para ecolodges, hoteles boutique, cabañas y apart-hoteles. Análisis del ecosistema digital turístico: OTAs, Google Business Profile, plataformas de nicho y posicionamiento en IAs para turistas nacionales e internacionales.",
+              "url": "https://onlike.ar/turismo.html",
+              "provider": {"@id": "https://onlike.ar/#organization"}
+            }
+          }
         ]
       },
       "sameAs": [
         "https://www.instagram.com/onlike.ar",
+        "https://www.instagram.com/lausilvester",
+        "https://linkedin.com/in/lausilvester",
+        "https://www.tiktok.com/@lausilvester",
         "https://www.facebook.com/onlike.ar"
       ]
     },
+
     {
       "@type": "Person",
       "@id": "https://onlike.ar/#person",
       "name": "Laura Silvester",
       "alternateName": "Lic. Laura Natalia Silvester",
+      "givenName": "Laura",
+      "familyName": "Silvester",
       "url": "https://onlike.ar/",
-      "jobTitle": "Consultora en estrategia y posicionamiento digital",
+      "image": "https://onlike.ar/og-image.jpg",
+      "jobTitle": "Consultora en estrategia digital y GEO para turismo",
+      "description": "Licenciada en Turismo con más de 15 años de experiencia en el sector. Especializada en GEO (Generative Engine Optimization) para alojamientos turísticos independientes. Docente universitaria, ex gestión hotelera, speaker en Fórum Internacional de Turismo do Iguassu 2026.",
       "worksFor": {"@id": "https://onlike.ar/#organization"},
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "degree",
+        "name": "Licenciatura en Turismo",
+        "recognizedBy": {
+          "@type": "EducationalOrganization",
+          "name": "Universidad Nacional de Misiones"
+        }
+      },
       "alumniOf": {
         "@type": "CollegeOrUniversity",
         "name": "CESMI",
-        "address": {"@type": "PostalAddress", "addressLocality": "Eldorado", "addressRegion": "Misiones", "addressCountry": "AR"}
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Eldorado",
+          "addressRegion": "Misiones",
+          "addressCountry": "AR"
+        }
       },
-      "knowsAbout": [
-        "Estrategia digital",
-        "Posicionamiento digital",
-        "Marketing digital",
-        "SEO",
-        "GEO - Generative Engine Optimization",
-        "Inteligencia artificial aplicada a negocios",
-        "Marketing turístico",
-        "Gestión hotelera"
-      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Eldorado",
         "addressRegion": "Misiones",
         "addressCountry": "AR"
+      },
+      "knowsAbout": [
+        "Generative Engine Optimization",
+        "Marketing digital turístico",
+        "GEO para hoteles y ecolodges",
+        "Posicionamiento en inteligencias artificiales",
+        "Estrategia de contenidos",
+        "SEO",
+        "Gestión hotelera",
+        "Turismo de naturaleza",
+        "Ecosistema digital de alojamientos turísticos"
+      ],
+      "performerIn": {
+        "@type": "Event",
+        "name": "Fórum Internacional de Turismo do Iguassu 2026",
+        "startDate": "2026-06-11",
+        "location": {
+          "@type": "Place",
+          "name": "Foz do Iguaçu, Brasil"
+        },
+        "url": "https://onlike.ar/forum2026"
       },
       "sameAs": [
         "https://www.instagram.com/lausilvester",
@@ -202,43 +290,94 @@
         "https://www.tiktok.com/@lausilvester"
       ]
     },
+
     {
       "@type": "FAQPage",
+      "@id": "https://onlike.ar/#faq",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "¿Qué es ONLIKE?",
+          "name": "¿Qué hace ONLIKE?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ONLIKE es la consultoría de estrategia y posicionamiento digital de Laura Silvester, con base en Eldorado, Misiones, Argentina. Trabaja con empresas, profesionales e instituciones que necesitan ordenar su comunicación digital y posicionarse con más claridad en buscadores, redes sociales e inteligencias artificiales."
+            "text": "ONLIKE es una consultoría de estrategia y posicionamiento digital fundada por Laura Silvester en Eldorado, Misiones. Trabaja con empresas, profesionales y proyectos turísticos que necesitan ordenar su comunicación digital y mejorar su visibilidad en buscadores e inteligencias artificiales."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Qué servicios ofrece ONLIKE?",
+          "name": "¿Qué es un GEO Site?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ONLIKE ofrece auditoría estratégica de presencia digital, mentorías 1:1 en marketing digital, estrategia digital para proyectos turísticos, posicionamiento en buscadores e inteligencias artificiales (SEO + GEO), y puesta en marcha digital para negocios."
+            "text": "Un GEO Site es una página web de una sola pantalla con diseño profesional y una capa técnica invisible diseñada para que ChatGPT, Gemini, Claude y Perplexity encuentren, entiendan y recomienden a un negocio. Incluye llms.txt, schema JSON-LD, robots.txt optimizado y ai-plugin.json. Precio desde $250.000 ARS."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Qué es GEO o posicionamiento en inteligencias artificiales?",
+          "name": "¿Trabajás con negocios de cualquier rubro?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "GEO (Generative Engine Optimization) es la optimización de la presencia digital para aparecer en las respuestas de sistemas de inteligencia artificial como ChatGPT, Perplexity, Google AI Overview y Claude. ONLIKE incluye este análisis en sus diagnósticos, especialmente para proyectos turísticos que buscan atraer viajeros internacionales."
+            "text": "Me especializo en turismo — es el sector donde tengo formación académica y experiencia real en gestión hotelera. Además trabajo con empresas, profesionales independientes e instituciones de cualquier rubro que necesiten comunicar mejor lo que hacen y ser encontrados en buscadores e inteligencias artificiales."
           }
         },
         {
           "@type": "Question",
-          "name": "¿ONLIKE trabaja con proyectos turísticos?",
+          "name": "¿Por qué es importante el posicionamiento en IAs?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. Laura Silvester es Licenciada en Turismo con experiencia en gestión hotelera, lo que le permite ofrecer diagnósticos digitales específicos para alojamientos independientes: ecolodges, hoteles boutique, cabañas, apart-hoteles y proyectos de turismo de naturaleza en Argentina."
+            "text": "Cada vez más personas usan ChatGPT, Gemini y Perplexity para buscar recomendaciones de servicios, alojamientos y profesionales. Si un negocio no tiene la estructura técnica correcta, las IAs no pueden citarlo aunque el negocio exista. El GEO (Generative Engine Optimization) es la disciplina que resuelve exactamente eso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo es el proceso para empezar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Primero escribís por WhatsApp o completás el formulario de contacto contando brevemente qué está pasando con tu presencia digital. A partir de ahí defino si corresponde arrancar con un diagnóstico completo, con un GEO Site directo, o con una mentoría puntual para ordenar prioridades."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Ofrecés servicios presenciales o solo remotos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los dos. La mayoría de los servicios se hacen de forma remota — diagnósticos, mentorías, GEO Sites — lo que permite trabajar con clientes en cualquier punto del país. Los servicios presenciales están disponibles para proyectos en Misiones y la región."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hacés community management o gestión de redes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. ONLIKE trabaja a nivel estratégico: diagnóstico, posicionamiento y metodología. No gestiono cuentas de redes sociales de forma operativa ni diaria. El enfoque es definir qué comunicar, cómo y dónde — no la ejecución cotidiana de publicaciones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta una mentoría?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El precio depende del formato y la profundidad. Para consultarlo, escribí por WhatsApp al +54 3751 566488 contando brevemente qué necesitás trabajar, y te armo una propuesta según el caso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Trabajás específicamente con turismo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, es un nicho especializado. Soy Licenciada en Turismo con experiencia en gestión hotelera, lo que me permite analizar el ecosistema digital de un alojamiento desde adentro del sector: OTAs, traveller journey, Google Business Profile, plataformas de nicho como eBird y Glamping Hub, y posicionamiento en IAs para turistas internacionales."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Dónde estás ubicada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En Eldorado, Misiones, Argentina. Trabajo con clientes en todo el país de forma remota. Para proyectos en Misiones también estoy disponible de forma presencial."
           }
         }
       ]
     }
+
   ]
 }
 </script>
