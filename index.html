@@ -407,8 +407,7 @@
 <!-- Fuentes -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap"></noscript>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
   /* ============================================================
      RESET Y VARIABLES
@@ -857,7 +856,7 @@
   }
   .section-header p {
     font-size: 0.98rem;
-    color: rgba(255,255,255,0.78);
+    color: rgba(255,255,255,0.6);
     max-width: 360px;
     line-height: 1.75;
   }
@@ -893,7 +892,7 @@
     font-size: 0.85rem;
     font-weight: 300;
     line-height: 1.75;
-    color: rgba(255,255,255,0.80);
+    color: rgba(255,255,255,0.65);
   }
 
   /* ============================================================
@@ -1239,7 +1238,7 @@
     padding: 1.5rem;
     border-radius: var(--radius);
   }
-  .info-box h3 {
+  .info-box h4 {
     font-size: 0.68rem;
     font-weight: 700;
     letter-spacing: 0.16em;
@@ -1263,7 +1262,7 @@
     align-items: center;
     gap: 0.35rem;
     background: rgba(255,255,255,0.07);
-    color: rgba(255,255,255,0.78);
+    color: rgba(255,255,255,0.6);
     padding: 0.4rem 0.9rem;
     border-radius: 100px;
     font-size: 0.75rem;
@@ -1294,7 +1293,7 @@
   }
   .footer-copy {
     font-size: 0.72rem;
-    color: rgba(255,255,255,0.55);
+    color: rgba(255,255,255,0.28);
     letter-spacing: 0.03em;
   }
   .footer-logo img {
@@ -1309,7 +1308,7 @@
   }
   .footer-privacy a {
     font-size: 0.7rem;
-    color: rgba(255,255,255,0.55);
+    color: rgba(255,255,255,0.28);
     transition: color var(--transition);
   }
   .footer-privacy a:hover { color: var(--lime); }
@@ -1439,7 +1438,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header role="banner">
   <nav role="navigation" aria-label="Navegación principal">
     <a href="#hero" class="nav-logo" aria-label="ONLIKE — Ir al inicio">
-      <img src="assets/logo-onlike.png" alt="Logo ONLIKE" width="120" height="38" fetchpriority="high">
+      <picture>
+        <source srcset="assets/logo-onlike.webp" type="image/webp">
+        <img src="assets/logo-onlike.png" alt="Logo ONLIKE" width="120" height="38" fetchpriority="high">
+      </picture>
     </a>
     <ul class="nav-links" id="nav-links" role="list">
       <li><a href="#services">Servicios</a></li>
@@ -1498,8 +1500,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="hero-visual">
           <div class="hero-photo-wrap">
-            <img src="assets/foto-lau.jpg" alt="Laura Silvester - Fundadora de ONLIKE" width="370" height="500" loading="lazy" decoding="async"
+            <picture>
+              <source srcset="assets/foto-lau.webp" type="image/webp">
+              <img src="assets/foto-lau.jpg" alt="Laura Silvester - Fundadora de ONLIKE" width="370" height="500" loading="lazy" decoding="async"
                  fetchpriority="high">
+            </picture>
             <div class="hero-badge" aria-label="Más de 15 años de experiencia en turismo y marketing digital">
               <strong>+15</strong>
               años en turismo<br>y marketing digital
@@ -1933,11 +1938,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </p>
           </form>
           <div class="info-box">
-            <h3>Dónde estoy</h3>
+            <h4>Dónde estoy</h4>
             <p>Eldorado, Misiones · Argentina<br>Servicios remotos en todo el país y presenciales en Misiones.</p>
           </div>
           <div class="info-box">
-            <h3>Redes sociales</h3>
+            <h4>Redes sociales</h4>
             <div class="social-row">
               <a href="https://www.instagram.com/onlike.ar" target="_blank" rel="noopener noreferrer" 
                  class="social-pill" aria-label="Instagram de ONLIKE">Instagram</a>
