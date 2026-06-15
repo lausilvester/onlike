@@ -407,7 +407,8 @@
 <!-- Fuentes -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap"></noscript>
 <style>
   /* ============================================================
      RESET Y VARIABLES
@@ -856,7 +857,7 @@
   }
   .section-header p {
     font-size: 0.98rem;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.78);
     max-width: 360px;
     line-height: 1.75;
   }
@@ -892,7 +893,7 @@
     font-size: 0.85rem;
     font-weight: 300;
     line-height: 1.75;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255,255,255,0.80);
   }
 
   /* ============================================================
@@ -1238,7 +1239,7 @@
     padding: 1.5rem;
     border-radius: var(--radius);
   }
-  .info-box h4 {
+  .info-box h3 {
     font-size: 0.68rem;
     font-weight: 700;
     letter-spacing: 0.16em;
@@ -1262,7 +1263,7 @@
     align-items: center;
     gap: 0.35rem;
     background: rgba(255,255,255,0.07);
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.78);
     padding: 0.4rem 0.9rem;
     border-radius: 100px;
     font-size: 0.75rem;
@@ -1293,7 +1294,7 @@
   }
   .footer-copy {
     font-size: 0.72rem;
-    color: rgba(255,255,255,0.28);
+    color: rgba(255,255,255,0.55);
     letter-spacing: 0.03em;
   }
   .footer-logo img {
@@ -1308,7 +1309,7 @@
   }
   .footer-privacy a {
     font-size: 0.7rem;
-    color: rgba(255,255,255,0.28);
+    color: rgba(255,255,255,0.55);
     transition: color var(--transition);
   }
   .footer-privacy a:hover { color: var(--lime); }
@@ -1932,11 +1933,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </p>
           </form>
           <div class="info-box">
-            <h4>Dónde estoy</h4>
+            <h3>Dónde estoy</h3>
             <p>Eldorado, Misiones · Argentina<br>Servicios remotos en todo el país y presenciales en Misiones.</p>
           </div>
           <div class="info-box">
-            <h4>Redes sociales</h4>
+            <h3>Redes sociales</h3>
             <div class="social-row">
               <a href="https://www.instagram.com/onlike.ar" target="_blank" rel="noopener noreferrer" 
                  class="social-pill" aria-label="Instagram de ONLIKE">Instagram</a>
