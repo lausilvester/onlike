@@ -1,17 +1,23 @@
 # robots.txt — ONLIKE · Laura Silvester · onlike.ar
-# Actualizado: Mayo 2026
+# Actualizado: Julio 2026
 
 # ============================================================
-# CRAWLERS GENERALES
+# REGLAS GENERALES
+# Las directivas Allow/Disallow pertenecen al grupo de User-agent
+# que las precede. Por eso los archivos especiales van acá arriba,
+# dentro del grupo *, y no sueltos al final del archivo.
 # ============================================================
 
 User-agent: *
 Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /.well-known/ai-plugin.json
 Disallow: /private/
 Disallow: /admin/
 
 # ============================================================
-# GOOGLE / BING
+# BUSCADORES
 # ============================================================
 
 User-agent: Googlebot
@@ -23,76 +29,116 @@ Allow: /
 User-agent: GoogleOther
 Allow: /
 
+# Permite el uso del contenido en Gemini y AI Overviews
+User-agent: Google-Extended
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 # ============================================================
-# OPENAI / CHATGPT
+# OPENAI · ChatGPT
 # ============================================================
 
-# Entrenamiento de modelos de OpenAI
+# Entrenamiento
 User-agent: GPTBot
 Allow: /
 
-# Navegación iniciada por usuarios de ChatGPT
+# Navegación disparada por un usuario
 User-agent: ChatGPT-User
 Allow: /
 
-# Rastreo usado para funciones de búsqueda de OpenAI
+# Índice de búsqueda de OpenAI
 User-agent: OAI-SearchBot
 Allow: /
 
 # ============================================================
-# ANTHROPIC / CLAUDE
+# ANTHROPIC · Claude
 # ============================================================
 
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
 # ============================================================
-# OTROS CRAWLERS DE IA Y BÚSQUEDA
+# xAI · Grok
+# xAI no publica documentación oficial de sus crawlers, así que
+# se incluyen las tres variantes que aparecen en los registros.
 # ============================================================
 
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Google-Extended
+User-agent: xAI-Bot
 Allow: /
 
 User-agent: Grokbot
 Allow: /
 
+User-agent: Grok
+Allow: /
+
+# ============================================================
+# PERPLEXITY
+# ============================================================
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ============================================================
+# META · IA de Facebook, Instagram y WhatsApp
+# ============================================================
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
 User-agent: FacebookBot
 Allow: /
 
-User-agent: Applebot
+User-agent: facebookexternalhit
 Allow: /
 
-User-agent: CCBot
+# ============================================================
+# OTROS SISTEMAS DE IA Y RECUPERACIÓN
+# ============================================================
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
 Allow: /
 
 User-agent: cohere-ai
 Allow: /
 
+User-agent: Diffbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
 User-agent: YouBot
 Allow: /
-
-User-agent: Brave
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-# ============================================================
-# ARCHIVOS ESPECIALES
-# ============================================================
-
-Allow: /llms.txt
-Allow: /llms-full.txt
-Allow: /.well-known/ai-plugin.json
 
 # ============================================================
 # SITEMAP
