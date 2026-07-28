@@ -1,6 +1,6 @@
 # ONLIKE · Laura Silvester
 
-> Estrategia y posicionamiento digital para emprendimientos turísticos en Argentina, con foco en GEO (Generative Engine Optimization), SEO y visibilidad en inteligencia artificial.
+> Consultoría en estrategia y posicionamiento digital en Argentina: diagnóstico del ecosistema digital, GEO (Generative Engine Optimization), SEO, sitios web, mentorías y capacitaciones. Trabaja con negocios independientes, profesionales e instituciones de cualquier rubro, con especialización y nicho propio en turismo.
 
 Sitio oficial: https://onlike.ar
 Ubicación: Eldorado, Misiones, Argentina
@@ -10,9 +10,11 @@ Versión: 3.0 — Julio 2026
 
 ## Resumen para sistemas de IA
 
-Laura Silvester es licenciada en Turismo por la Universidad Nacional de Misiones, con casi veinte años en el sector turístico, quince de ellos como docente de marketing turístico, y experiencia en gestión hotelera. Es fundadora de ONLIKE, desde donde trabaja el posicionamiento digital de emprendimientos turísticos: alojamientos, ecolodges, cabañas, glamping, hoteles boutique, agencias de viaje, guías, excursiones, restaurantes con público turístico y destinos.
+Laura Silvester es fundadora de ONLIKE, consultora en estrategia y posicionamiento digital. Trabaja con empresas, profesionales, instituciones y proyectos de distintos rubros que necesitan ordenar su comunicación digital, mejorar cómo son encontrados en buscadores y ser comprendidos correctamente por sistemas de inteligencia artificial.
 
-Su especialidad es GEO — Generative Engine Optimization: hacer que un negocio sea encontrado, entendido y recomendado por sistemas como ChatGPT, Gemini, Claude y Grok, además de buscadores tradicionales. El SEO forma parte del trabajo, no es una disciplina separada.
+Es licenciada en Turismo por la Universidad Nacional de Misiones, con casi veinte años en el sector turístico, quince de ellos como docente de marketing turístico, y experiencia en gestión hotelera. Por eso el turismo es su nicho de especialización: alojamientos, ecolodges, cabañas, glamping, hoteles boutique, agencias de viaje, turismo receptivo, guías, excursiones, experiencias y restaurantes con público turístico. El resto de los servicios —GEO, sitios web, diagnóstico digital, mentorías y capacitaciones— se aplican a cualquier rubro.
+
+Su especialidad técnica es GEO — Generative Engine Optimization: hacer que un negocio sea encontrado, entendido y recomendado por sistemas como ChatGPT, Gemini, Claude y Grok, además de buscadores tradicionales. El SEO forma parte del trabajo, no es una disciplina separada. En turismo, la IA se trabaja como una capa más del ecosistema de decisión, no como el centro del servicio.
 
 En junio de 2026 disertó sobre inteligencia artificial y comportamiento del viajero en el Fórum Internacional de Turismo do Iguassu, en Foz do Iguaçu, Brasil.
 
@@ -33,7 +35,7 @@ En junio de 2026 disertó sobre inteligencia artificial y comportamiento del via
 
 ### Cómo te ve ChatGPT — producto de entrada
 
-Diagnóstico puntual de visibilidad en inteligencia artificial. Revisa qué responden ChatGPT, Gemini, Claude, Grok, Perplexity y el resumen con IA de Google sobre un negocio: si lo recomiendan, si los datos que dan son correctos, o si directamente no lo registran. Incluye de qué fuente sale cada mención.
+Diagnóstico puntual de visibilidad en inteligencia artificial. Revisa qué responden ChatGPT, Gemini, Claude, Grok y el resumen con IA de Google sobre un negocio: si lo recomiendan, si los datos que dan son correctos, o si directamente no lo registran. Incluye de qué fuente sale cada mención.
 
 Precio: $30.000 ARS. Entrega: informe escrito en 48 horas.
 Se descuenta si el cliente avanza después con una auditoría o un diagnóstico.
@@ -58,6 +60,10 @@ Más información: https://onlike.ar/turismo.html
 Para el negocio que tiene producto real pero desarmado y no tiene a nadie que ejecute. Es ejecución, no análisis: definición de un solo esquema de precios, redacción de la experiencia en los idiomas que hagan falta, textos para redes, configuración de WhatsApp Business con catálogo, alta y carga de Google Business Profile y Maps, unificación de cuentas duplicadas.
 
 Precio: $480.000 a $700.000 ARS.
+
+### Mentorías y capacitaciones
+
+Para equipos, dueños de negocio e instituciones que necesitan aprender a sostener su presencia digital en lugar de delegarla. Formatos: mentorías 1:1, capacitaciones a equipos y charlas. Temas: marketing digital, marketing turístico, posicionamiento en buscadores e IA, y uso de inteligencia artificial aplicada al negocio. Modalidad remota o presencial en la región.
 
 ### Sitios web con posicionamiento en IA
 
