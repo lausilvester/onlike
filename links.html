@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ONLIKE · Laura Silvester — Accesos directos</title>
-<meta name="description" content="Estrategia digital y posicionamiento en IAs. Accedé al diagnóstico gratuito, servicios y contacto directo. Laura Silvester · ONLIKE · onlike.ar">
+<meta name="description" content="Estrategia y posicionamiento digital para el ecosistema turístico. Empezá por el checklist de legibilidad digital: siete preguntas, sin dejar datos. Laura Silvester · ONLIKE · onlike.ar">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://onlike.ar/links.html">
 <meta property="og:title" content="ONLIKE · Laura Silvester">
-<meta property="og:description" content="Estrategia digital y posicionamiento en IAs.">
+<meta property="og:description" content="Estrategia y posicionamiento digital. Para negocios que funcionan pero no se ven.">
 <meta property="og:url" content="https://onlike.ar/links.html">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#131625">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -24,8 +24,8 @@
     --lime-hover: #c5ee30;
     --violet: #8E51B9;
     --lavender: #A08AE5;
-    --magenta: #FF3EBE;
     --white: #FFFFFF;
+    --w: 420px;
   }
 
   html, body {
@@ -45,32 +45,57 @@
     padding: 3rem 1.5rem;
   }
 
-  .logo {
+  .head {
     width: 100%;
-    max-width: 420px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2.25rem;
+    max-width: var(--w);
+    text-align: center;
+    margin-bottom: 2.5rem;
   }
 
-  .logo img {
-    width: clamp(170px, 48vw, 220px);
+  .head img {
+    width: clamp(170px, 48vw, 210px);
     height: auto;
     display: block;
+    margin: 0 auto 1.25rem;
+  }
+
+  .tagline {
+    font-size: 0.86rem;
+    font-weight: 300;
+    line-height: 1.55;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.005em;
+  }
+
+  .tagline strong {
+    display: block;
+    font-weight: 400;
+    color: rgba(255,255,255,0.85);
   }
 
   .links {
     width: 100%;
-    max-width: 420px;
+    max-width: var(--w);
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.65rem;
   }
+
+  .label {
+    font-size: 0.63rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: rgba(255,255,255,0.32);
+    margin: 1.35rem 0 0.35rem;
+  }
+
+  .label:first-child { margin-top: 0; }
 
   .link-btn {
     display: block;
     width: 100%;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.35rem;
     border-radius: 3px;
     font-family: 'Outfit', sans-serif;
     font-size: 0.92rem;
@@ -81,80 +106,67 @@
     transition: all 0.18s ease;
   }
 
-  .link-btn--outline {
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.18);
-    color: var(--white);
-  }
-
-  .link-btn--outline:hover {
-    border-color: rgba(255,255,255,0.5);
-    background: rgba(255,255,255,0.04);
-  }
-
-  .link-btn--lime {
+  /* Acción principal — único botón lleno */
+  .link-btn--primary {
     background: var(--lime);
     border: 1px solid var(--lime);
     color: var(--dark);
+    padding: 1.15rem 1.35rem;
+    line-height: 1.3;
   }
 
-  .link-btn--lime:hover {
+  .link-btn--primary span {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.78rem;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 1.45;
+    color: rgba(19,22,37,0.78);
+  }
+
+  .link-btn--primary:hover {
     background: var(--lime-hover);
     border-color: var(--lime-hover);
     transform: translateY(-1px);
   }
 
-  .link-btn--violet {
+  /* Servicios */
+  .link-btn--service {
     background: transparent;
     border: 1px solid rgba(142,81,185,0.55);
     color: var(--lavender);
   }
 
-  .link-btn--violet:hover {
+  .link-btn--service:hover {
     border-color: var(--violet);
-    background: rgba(142,81,185,0.10);
+    background: rgba(142,81,185,0.12);
     color: var(--white);
   }
 
-  .link-btn--magenta {
+  /* Marca y contacto */
+  .link-btn--soft {
     background: transparent;
-    border: 1px solid rgba(255,62,190,0.58);
-    color: var(--magenta);
+    border: 1px solid rgba(255,255,255,0.16);
+    color: rgba(255,255,255,0.9);
+    font-weight: 400;
   }
 
-  .link-btn--magenta:hover {
-    border-color: var(--magenta);
-    background: rgba(255,62,190,0.10);
-    transform: translateY(-1px);
-  }
-
-  .link-btn--onlike {
-    background: transparent;
-    border: 1px solid rgba(209,250,62,0.38);
-    color: var(--lime);
-  }
-
-  .link-btn--onlike:hover {
-    border-color: var(--lime);
-    background: rgba(209,250,62,0.08);
-  }
-
-  .divider {
-    height: 1px;
-    background: rgba(255,255,255,0.07);
-    margin: 0.5rem 0;
+  .link-btn--soft:hover {
+    border-color: rgba(255,255,255,0.45);
+    background: rgba(255,255,255,0.04);
+    color: var(--white);
   }
 
   .signature {
-    margin-top: 2.5rem;
+    margin-top: 2.75rem;
     font-size: 0.72rem;
+    font-weight: 300;
     color: rgba(255,255,255,0.25);
     letter-spacing: 0.04em;
   }
 
-  .signature span {
-    color: var(--lime);
-  }
+  .signature span { color: var(--lime); }
 </style>
 
 <script type="application/ld+json">
@@ -166,13 +178,39 @@
       "@id": "https://onlike.ar/links.html",
       "url": "https://onlike.ar/links.html",
       "name": "ONLIKE · Laura Silvester — Accesos directos",
-      "description": "Links directos a los servicios, redes sociales y recursos de ONLIKE · Laura Silvester. Consultoría en GEO y estrategia digital para turismo.",
+      "description": "Accesos directos a los diagnósticos, servicios y contacto de ONLIKE · Laura Silvester. Estrategia digital y posicionamiento en IAs (GEO) para el ecosistema turístico.",
       "inLanguage": "es-AR",
-      "isPartOf": {
-        "@id": "https://onlike.ar/#website"
-      },
-      "author": {
-        "@id": "https://onlike.ar/#person"
+      "isPartOf": { "@id": "https://onlike.ar/#website" },
+      "author": { "@id": "https://onlike.ar/#person" },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Checklist de legibilidad digital para turismo",
+            "url": "https://onlike.ar/checklist-legibilidad-digital.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Cómo te ve ChatGPT — diagnóstico de visibilidad en IAs",
+            "url": "https://onlike.ar/como-te-ve-chatgpt.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "GEO Site",
+            "url": "https://onlike.ar/geo-site.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Estrategia digital para turismo",
+            "url": "https://onlike.ar/turismo.html"
+          }
+        ]
       }
     }
   ]
@@ -181,33 +219,46 @@
 </head>
 <body>
 
-  <div class="logo">
-    <img src="assets/logo-onlike-sm.png" alt="onlike. — estrategia digital y posicionamiento en IAs">
-  </div>
+  <header class="head">
+    <img src="assets/logo-onlike-sm.png" alt="onlike. — estrategia y posicionamiento digital">
+    <p class="tagline">
+      <strong>Estrategia y posicionamiento digital.</strong>
+      Para negocios que funcionan pero no se ven.
+    </p>
+  </header>
 
   <nav class="links" aria-label="Accesos directos">
-    <a href="https://onlike.ar/test.html" class="link-btn link-btn--lime">
-      Auto test gratuito de presencia digital
+
+    <p class="label">Empezá acá</p>
+
+    <a href="https://onlike.ar/checklist-legibilidad-digital.html" class="link-btn link-btn--primary">
+      ¿Tu proyecto se entiende como vos creés?
+      <span>Siete preguntas sobre tu sitio, tu Google y tus reseñas. Sin dejar datos, con puntaje al final.</span>
     </a>
-    <a href="https://www.onlike.ar/como-te-ve-chatgpt.html" class="link-btn link-btn--violet">
+
+    <p class="label">Servicios</p>
+
+    <a href="https://onlike.ar/como-te-ve-chatgpt.html" class="link-btn link-btn--service">
       Cómo te ve ChatGPT — diagnóstico de visibilidad
     </a>
-    <a href="https://onlike.ar/geo-site.html" class="link-btn link-btn--violet">
-      GEO Site — aparecer en IAs
+    <a href="https://onlike.ar/geo-site.html" class="link-btn link-btn--service">
+      GEO Site — que las IAs te recomienden
     </a>
-    <div class="divider" role="separator"></div>
-    <a href="https://onlike.ar/turismo.html" class="link-btn link-btn--magenta">
+    <a href="https://onlike.ar/turismo.html" class="link-btn link-btn--service">
       Estrategia digital para turismo
     </a>
-    <a href="https://onlike.ar/" class="link-btn link-btn--onlike">
+
+    <p class="label">Onlike</p>
+
+    <a href="https://onlike.ar/" class="link-btn link-btn--soft">
       Conocé Onlike
     </a>
-    <div class="divider" role="separator"></div>
     <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20contacto%20desde%20tu%20Instagram."
-       class="link-btn link-btn--outline"
+       class="link-btn link-btn--soft"
        target="_blank" rel="noopener noreferrer">
       Hablemos por WhatsApp
     </a>
+
   </nav>
 
   <p class="signature"><span>onlike.ar</span> · Laura Silvester</p>
