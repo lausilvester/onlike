@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 580" width="720" height="580" role="img" aria-labelledby="g2-titulo g2-desc" font-family="Outfit, sans-serif">
+
+  <title id="g2-titulo">Viajeros hospedados y pernoctaciones en el alojamiento formal argentino, 2019 a 2025</title>
+  <desc id="g2-desc">Viajeros hospedados en millones: 21,09 en 2019; 5,85 en 2020; 10,61 en 2021; 19,29 en 2022; 20,53 en 2023; 18,31 en 2024; y 17,19 en los primeros once meses de 2025. Pernoctaciones en millones: 49,16 en 2019; 15,97 en 2020; 26,82 en 2021; 48,43 en 2022; 50,66 en 2023; 44,47 en 2024; y 40,44 en los primeros once meses de 2025. Los años 2019 a 2024 son completos; 2025 corresponde a enero-noviembre y no es comparable con los anteriores. Fuente: INDEC, Encuesta de Ocupación Hotelera.</desc>
+
+  <rect x="0" y="0" width="720" height="580" rx="10" fill="#131625"/>
+
+  <text x="48" y="52" font-size="11" font-weight="700" letter-spacing="1.98" fill="#A08AE5">ALOJAMIENTO FORMAL EN ARGENTINA</text>
+
+  <text x="48" y="96" font-size="38" letter-spacing="-1.14" fill="#FFFFFF"><tspan font-weight="200">Siete años en </tspan><tspan font-weight="700">dos líneas</tspan></text>
+
+  <text x="48" y="126" font-size="15" font-weight="300" fill="#FFFFFF" fill-opacity="0.6">Viajeros hospedados y pernoctaciones, en millones</text>
+
+  <!-- Leyenda -->
+  <line x1="48" y1="162" x2="76" y2="162" stroke="#D1FA3E" stroke-width="2.5"/>
+  <text x="84" y="167" font-size="13" font-weight="300" fill="#FFFFFF" fill-opacity="0.75">Pernoctaciones</text>
+  <line x1="210" y1="162" x2="238" y2="162" stroke="#A08AE5" stroke-width="2.5"/>
+  <text x="246" y="167" font-size="13" font-weight="300" fill="#FFFFFF" fill-opacity="0.75">Viajeros</text>
+
+  <!-- Grilla -->
+  <line x1="90" y1="221.8" x2="672" y2="221.8" stroke="#FFFFFF" stroke-opacity="0.07"/>
+  <line x1="90" y1="265.5" x2="672" y2="265.5" stroke="#FFFFFF" stroke-opacity="0.07"/>
+  <line x1="90" y1="309.1" x2="672" y2="309.1" stroke="#FFFFFF" stroke-opacity="0.07"/>
+  <line x1="90" y1="352.7" x2="672" y2="352.7" stroke="#FFFFFF" stroke-opacity="0.07"/>
+  <line x1="90" y1="396.4" x2="672" y2="396.4" stroke="#FFFFFF" stroke-opacity="0.07"/>
+  <line x1="90" y1="440" x2="672" y2="440" stroke="#FFFFFF" stroke-opacity="0.25"/>
+
+  <text x="78" y="225" font-size="11" font-weight="300" fill="#FFFFFF" fill-opacity="0.35" text-anchor="end">50</text>
+  <text x="78" y="269" font-size="11" font-weight="300" fill="#FFFFFF" fill-opacity="0.35" text-anchor="end">40</text>
+  <text x="78" y="313" font-size="11" font-weight="300" fill="#FFFFFF" fill-opacity="0.35" text-anchor="end">30</text>
+  <text x="78" y="356" font-size="11" font-weight="300" fill="#FFFFFF" fill-opacity="0.35" text-anchor="end">20</text>
+  <text x="78" y="400" font-size="11" font-weight="300" fill="#FFFFFF" fill-opacity="0.35" text-anchor="end">10</text>
+  <text x="78" y="444" font-size="11" font-weight="300" fill="#FFFFFF" fill-opacity="0.35" text-anchor="end">0</text>
+
+  <!-- Separador del período parcial -->
+  <line x1="605" y1="200" x2="605" y2="440" stroke="#FF3EBE" stroke-opacity="0.4" stroke-dasharray="2 5"/>
+  <text x="650" y="196" font-size="11" font-weight="700" letter-spacing="0.5" fill="#FF3EBE" text-anchor="middle">11 MESES</text>
+
+  <!-- Pernoctaciones -->
+  <path d="M110,225.5 L200,370.3 L290,323.0 L380,228.6 L470,218.9 L560,245.9" fill="none" stroke="#D1FA3E" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M560,245.9 L650,263.5" fill="none" stroke="#D1FA3E" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <circle cx="110" cy="225.5" r="4" fill="#D1FA3E"/>
+  <circle cx="200" cy="370.3" r="4" fill="#D1FA3E"/>
+  <circle cx="290" cy="323.0" r="4" fill="#D1FA3E"/>
+  <circle cx="380" cy="228.6" r="4" fill="#D1FA3E"/>
+  <circle cx="470" cy="218.9" r="4" fill="#D1FA3E"/>
+  <circle cx="560" cy="245.9" r="4" fill="#D1FA3E"/>
+  <circle cx="650" cy="263.5" r="4.5" fill="#131625" stroke="#D1FA3E" stroke-width="2.5"/>
+
+  <!-- Viajeros -->
+  <path d="M110,348.0 L200,414.5 L290,393.7 L380,355.8 L470,350.4 L560,360.1" fill="none" stroke="#A08AE5" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M560,360.1 L650,365.0" fill="none" stroke="#A08AE5" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <circle cx="110" cy="348.0" r="4" fill="#A08AE5"/>
+  <circle cx="200" cy="414.5" r="4" fill="#A08AE5"/>
+  <circle cx="290" cy="393.7" r="4" fill="#A08AE5"/>
+  <circle cx="380" cy="355.8" r="4" fill="#A08AE5"/>
+  <circle cx="470" cy="350.4" r="4" fill="#A08AE5"/>
+  <circle cx="560" cy="360.1" r="4" fill="#A08AE5"/>
+  <circle cx="650" cy="365.0" r="4.5" fill="#131625" stroke="#A08AE5" stroke-width="2.5"/>
+
+  <!-- Valores en los extremos -->
+  <text x="110" y="212" font-size="13" font-weight="700" fill="#FFFFFF" fill-opacity="0.9" text-anchor="middle">49,16</text>
+  <text x="470" y="206" font-size="13" font-weight="700" fill="#FFFFFF" fill-opacity="0.9" text-anchor="middle">50,66</text>
+  <text x="650" y="252" font-size="13" font-weight="700" fill="#FFFFFF" fill-opacity="0.9" text-anchor="middle">40,44</text>
+  <text x="110" y="338" font-size="13" font-weight="700" fill="#FFFFFF" fill-opacity="0.55" text-anchor="middle">21,09</text>
+  <text x="650" y="388" font-size="13" font-weight="700" fill="#FFFFFF" fill-opacity="0.55" text-anchor="middle">17,19</text>
+
+  <!-- Años -->
+  <text x="110" y="462" font-size="13" font-weight="300" fill="#FFFFFF" fill-opacity="0.55" text-anchor="middle">2019</text>
+  <text x="200" y="462" font-size="13" font-weight="300" fill="#FFFFFF" fill-opacity="0.55" text-anchor="middle">2020</text>
+  <text x="290" y="462" font-size="13" font-weight="300" fill="#FFFFFF" fill-opacity="0.55" text-anchor="middle">2021</text>
+  <text x="380" y="462" font-size="13" font-weight="300" fill="#FFFFFF" fill-opacity="0.55" text-anchor="middle">2022</text>
+  <text x="470" y="462" font-size="13" font-weight="300" fill="#FFFFFF" fill-opacity="0.55" text-anchor="middle">2023</text>
+  <text x="560" y="462" font-size="13" font-weight="300" fill="#FFFFFF" fill-opacity="0.55" text-anchor="middle">2024</text>
+  <text x="650" y="462" font-size="13" font-weight="300" fill="#FFFFFF" fill-opacity="0.55" text-anchor="middle">2025</text>
+
+  <line x1="48" y1="500" x2="672" y2="500" stroke="#FFFFFF" stroke-opacity="0.1"/>
+
+  <text x="48" y="528" font-size="16" font-weight="400" fill="#FFFFFF" fill-opacity="0.85">Las noches se recuperaron más rápido que los viajeros, y volvieron a caer más fuerte.</text>
+
+  <text x="48" y="556" font-size="11" font-weight="300" fill="#FFFFFF" fill-opacity="0.42">Fuente: INDEC, Encuesta de Ocupación Hotelera. 2019–2024 son años completos. 2025 corresponde a enero–noviembre y no es comparable.</text>
+
+  <text x="672" y="528" font-size="13" font-weight="700" fill="#D1FA3E" text-anchor="end">onlike.ar</text>
+
+</svg>
