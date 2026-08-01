@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ONLIKE · Laura Silvester — Accesos directos</title>
-<meta name="description" content="Estrategia y posicionamiento digital para el ecosistema turístico. Empezá por el checklist de legibilidad digital: siete preguntas, sin dejar datos. Laura Silvester · ONLIKE · onlike.ar">
+<meta name="description" content="Estrategia y posicionamiento digital para el ecosistema turístico. Empezá por la nota con los datos oficiales del turismo argentino, o por el checklist de legibilidad digital. Laura Silvester · ONLIKE · onlike.ar">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://onlike.ar/links.html">
 <meta property="og:title" content="ONLIKE · Laura Silvester">
@@ -131,6 +131,30 @@
     transform: translateY(-1px);
   }
 
+  /* Segundo rango — contorno lima, sin competir con el botón lleno */
+  .link-btn--featured {
+    background: transparent;
+    border: 1px solid rgba(209,250,62,0.45);
+    color: var(--lime);
+    padding: 1.15rem 1.35rem;
+    line-height: 1.3;
+  }
+
+  .link-btn--featured span {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.78rem;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 1.45;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .link-btn--featured:hover {
+    border-color: var(--lime);
+    background: rgba(209,250,62,0.07);
+  }
+
   /* Servicios */
   .link-btn--service {
     background: transparent;
@@ -169,6 +193,12 @@
   .signature span { color: var(--lime); }
 </style>
 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PN327WB');</script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -178,7 +208,7 @@
       "@id": "https://onlike.ar/links.html",
       "url": "https://onlike.ar/links.html",
       "name": "ONLIKE · Laura Silvester — Accesos directos",
-      "description": "Accesos directos a los diagnósticos, servicios y contacto de ONLIKE · Laura Silvester. Estrategia digital y posicionamiento en IAs (GEO) para el ecosistema turístico.",
+      "description": "Accesos directos a las notas, diagnósticos, servicios y contacto de ONLIKE · Laura Silvester. Estrategia digital y posicionamiento en IAs (GEO) para el ecosistema turístico.",
       "inLanguage": "es-AR",
       "isPartOf": { "@id": "https://onlike.ar/#website" },
       "author": { "@id": "https://onlike.ar/#person" },
@@ -189,24 +219,30 @@
           {
             "@type": "ListItem",
             "position": 1,
+            "name": "Cuánto bajó realmente el turismo en Argentina — datos oficiales 2019-2026",
+            "url": "https://onlike.ar/turismo-argentina-2026.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Checklist de legibilidad digital para turismo",
             "url": "https://onlike.ar/checklist-legibilidad-digital.html"
           },
           {
             "@type": "ListItem",
-            "position": 2,
+            "position": 3,
             "name": "Cómo te ve ChatGPT — diagnóstico de visibilidad en IAs",
             "url": "https://onlike.ar/como-te-ve-chatgpt.html"
           },
           {
             "@type": "ListItem",
-            "position": 3,
+            "position": 4,
             "name": "GEO Site",
             "url": "https://onlike.ar/geo-site.html"
           },
           {
             "@type": "ListItem",
-            "position": 4,
+            "position": 5,
             "name": "Estrategia digital para turismo",
             "url": "https://onlike.ar/turismo.html"
           }
@@ -218,6 +254,8 @@
 </script>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN327WB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <header class="head">
     <img src="assets/logo-onlike-sm.png" alt="onlike. — estrategia y posicionamiento digital">
@@ -229,32 +267,40 @@
 
   <nav class="links" aria-label="Accesos directos">
 
-    <p class="label">Empezá acá</p>
+    <p class="label">La nota</p>
 
-    <a href="https://onlike.ar/checklist-legibilidad-digital.html" class="link-btn link-btn--primary">
+    <a href="https://onlike.ar/turismo-argentina-2026.html" class="link-btn link-btn--primary js-link" data-link="nota-turismo-2026">
+      Cuánto bajó realmente el turismo en Argentina
+      <span>Los datos oficiales de 2019 a 2026, con las fuentes a la vista. Qué explican de tu caso y qué no.</span>
+    </a>
+
+    <p class="label">Probate</p>
+
+    <a href="https://onlike.ar/checklist-legibilidad-digital.html" class="link-btn link-btn--featured js-link" data-link="checklist">
       ¿Tu proyecto se entiende como vos creés?
       <span>Siete preguntas sobre tu sitio, tu Google y tus reseñas. Sin dejar datos, con puntaje al final.</span>
     </a>
 
     <p class="label">Servicios</p>
 
-    <a href="https://onlike.ar/como-te-ve-chatgpt.html" class="link-btn link-btn--service">
+    <a href="https://onlike.ar/como-te-ve-chatgpt.html" class="link-btn link-btn--service js-link" data-link="como-te-ve-chatgpt">
       Cómo te ve ChatGPT — diagnóstico de visibilidad
     </a>
-    <a href="https://onlike.ar/geo-site.html" class="link-btn link-btn--service">
+    <a href="https://onlike.ar/geo-site.html" class="link-btn link-btn--service js-link" data-link="geo-site">
       GEO Site — que las IAs te recomienden
     </a>
-    <a href="https://onlike.ar/turismo.html" class="link-btn link-btn--service">
+    <a href="https://onlike.ar/turismo.html" class="link-btn link-btn--service js-link" data-link="turismo">
       Estrategia digital para turismo
     </a>
 
     <p class="label">Onlike</p>
 
-    <a href="https://onlike.ar/" class="link-btn link-btn--soft">
+    <a href="https://onlike.ar/" class="link-btn link-btn--soft js-link" data-link="home">
       Conocé Onlike
     </a>
-    <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20contacto%20desde%20tu%20Instagram."
-       class="link-btn link-btn--soft"
+    <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20contacto%20desde%20tus%20redes."
+       class="link-btn link-btn--soft js-wa"
+       data-wa="links"
        target="_blank" rel="noopener noreferrer">
       Hablemos por WhatsApp
     </a>
@@ -263,5 +309,19 @@
 
   <p class="signature"><span>onlike.ar</span> · Laura Silvester</p>
 
+<script>
+  document.querySelectorAll('.js-link').forEach(function(el){
+    el.addEventListener('click', function(){
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({event: 'click_link_bio', link_destino: el.getAttribute('data-link')});
+    });
+  });
+  document.querySelectorAll('.js-wa').forEach(function(el){
+    el.addEventListener('click', function(){
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({event: 'click_whatsapp', wa_origen: el.getAttribute('data-wa')});
+    });
+  });
+</script>
 </body>
 </html>
