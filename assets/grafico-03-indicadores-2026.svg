@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" width="720" height="540" role="img" aria-labelledby="g3-titulo g3-desc" font-family="Outfit, sans-serif">
+
+  <title id="g3-titulo">Cuatro indicadores del turismo argentino en 2026, sin serie hotelera nacional disponible</title>
+  <desc id="g3-desc">Los aeropuertos argentinos movieron 24,6 millones de pasajeros durante el primer semestre de 2026, récord histórico para ese período, según ANAC. El verano 2026 movilizó 30,7 millones de turistas, un 9,5 por ciento más que el verano anterior, según CAME. El turismo receptivo gastó 608,8 millones de dólares en Ezeiza y Aeroparque durante el segundo trimestre, un 13,8 por ciento más que un año atrás, según INDEC. Los parques nacionales recibieron 1,61 millones de visitas entre enero y abril, prácticamente igual al mismo período de 2025, según la Administración de Parques Nacionales.</desc>
+
+  <rect x="0" y="0" width="720" height="540" rx="10" fill="#131625"/>
+
+  <text x="48" y="52" font-size="11" font-weight="700" letter-spacing="1.98" fill="#FF3EBE">LA SERIE HOTELERA NACIONAL SE DISCONTINUÓ</text>
+
+  <text x="48" y="96" font-size="38" letter-spacing="-1.14" fill="#FFFFFF"><tspan font-weight="200">Lo que </tspan><tspan font-weight="700">sí se puede mirar</tspan><tspan font-weight="200"> de 2026</tspan></text>
+
+  <line x1="48" y1="132" x2="672" y2="132" stroke="#FFFFFF" stroke-opacity="0.1"/>
+
+  <!-- Celda 1 -->
+  <text x="48" y="196" font-size="40" font-weight="700" letter-spacing="-1.2" fill="#D1FA3E">24,6 millones</text>
+  <text x="48" y="226" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.7">de pasajeros en aeropuertos durante el</text>
+  <text x="48" y="246" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.7">primer semestre. Récord histórico para</text>
+  <text x="48" y="266" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.7">ese período.</text>
+  <text x="48" y="290" font-size="11" font-weight="700" letter-spacing="1.5" fill="#A08AE5">ANAC</text>
+
+  <!-- Celda 2 -->
+  <text x="392" y="196" font-size="40" font-weight="700" letter-spacing="-1.2" fill="#D1FA3E">30,7 millones</text>
+  <text x="392" y="226" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.7">de turistas en el verano 2026. Un 9,5%</text>
+  <text x="392" y="246" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.7">más que el verano anterior, con el gasto</text>
+  <text x="392" y="266" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.7">real creciendo apenas 4,5%.</text>
+  <text x="392" y="290" font-size="11" font-weight="700" letter-spacing="1.5" fill="#A08AE5">CAME</text>
+
+  <line x1="48" y1="326" x2="672" y2="326" stroke="#FFFFFF" stroke-opacity="0.1"/>
+
+  <!-- Celda 3 -->
+  <text x="48" y="390" font-size="34" font-weight="700" letter-spacing="-1" fill="#D1FA3E">USD 608,8 millones</text>
+  <text x="48" y="420" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.7">gastó el turismo receptivo en Ezeiza y</text>
+  <text x="48" y="440" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.7">Aeroparque en el segundo trimestre:</text>
+  <text x="48" y="460" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.7">13,8% más que un año atrás.</text>
+  <text x="48" y="484" font-size="11" font-weight="700" letter-spacing="1.5" fill="#A08AE5">INDEC</text>
+
+  <!-- Celda 4 -->
+  <text x="392" y="390" font-size="34" font-weight="700" letter-spacing="-1" fill="#D1FA3E">1,61 millones</text>
+  <text x="392" y="420" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.7">de visitas a parques nacionales entre</text>
+  <text x="392" y="440" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.7">enero y abril, prácticamente igual al</text>
+  <text x="392" y="460" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.7">mismo período de 2025.</text>
+  <text x="392" y="484" font-size="11" font-weight="700" letter-spacing="1.5" fill="#A08AE5">PARQUES NACIONALES</text>
+
+  <text x="672" y="484" font-size="13" font-weight="700" fill="#D1FA3E" text-anchor="end">onlike.ar</text>
+
+</svg>
