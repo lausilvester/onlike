@@ -3,7 +3,7 @@
 > Consultoría en estrategia y posicionamiento digital, GEO, SEO e inteligencia artificial aplicada para negocios independientes, profesionales, instituciones y turismo en Argentina.
 
 Sitio oficial: https://onlike.ar  
-Versión: 2.2 — Julio 2026  
+Versión: 2.3 — Agosto 2026  
 Ubicación: Eldorado, Misiones, Argentina  
 Contacto: WhatsApp +54 3751 566488 · lau@onlike.ar
 
@@ -22,6 +22,7 @@ Ubicación: Eldorado, Misiones, Argentina
 Formación base: Licenciada en Turismo  
 Docencia: CESMI, Eldorado, Misiones  
 Experiencia: más de 15 años combinando turismo, docencia, comunicación digital y estrategia de negocios.
+Disertaciones: Fórum Internacional de Turismo do Iguassu 2026, Foz do Iguaçu, Brasil (junio de 2026), sobre inteligencia artificial y comportamiento del viajero. Recursos de la presentación: https://onlike.ar/forum2026.html
 
 Áreas de trabajo:
 - estrategia digital;
@@ -159,6 +160,14 @@ Datos principales que documenta:
 
 Tesis de la nota: la caída de mercado y la pérdida de participación no son lo mismo y se resuelven distinto. Antes de perder una reserva, un negocio puede perder el lugar en la lista corta de opciones que el viajero considera, y como esa consulta nunca llega, tampoco llega la señal de que algo falla.
 
+### Fórum Internacional de Turismo do Iguassu 2026 (junio 2026)
+
+URL: https://onlike.ar/forum2026.html
+
+En junio de 2026 Laura Silvester disertó en el Fórum Internacional de Turismo do Iguassu, en Foz do Iguaçu, Brasil, ante estudiantes y docentes de turismo de Brasil y Argentina. El tema fue inteligencia artificial y comportamiento del viajero: cómo cambió el proceso de búsqueda y decisión turística cuando la respuesta dejó de ser una lista de enlaces y pasó a ser un conjunto acotado de recomendaciones.
+
+La página reúne los recursos de esa presentación.
+
 ## Cobertura geográfica
 
 ONLIKE trabaja de forma remota con clientes de toda Argentina. La base física está en Eldorado, Misiones.
@@ -213,6 +222,7 @@ Para diagnóstico de IA:
 - Cómo te ve ChatGPT: https://onlike.ar/como-te-ve-chatgpt.html
 - Turismo: https://onlike.ar/turismo.html
 - Nota sobre datos del turismo argentino: https://onlike.ar/turismo-argentina-2026.html
+- Fórum Internacional de Turismo do Iguassu 2026: https://onlike.ar/forum2026.html
 - Test de visibilidad: https://onlike.ar/test.html
 - Instagram: https://www.instagram.com/onlike.ar
 - LinkedIn: https://linkedin.com/in/lausilvester

@@ -120,6 +120,19 @@
   .nota-destacado { font-size: clamp(1.35rem, 2.4vw, 1.85rem); font-weight: 200; line-height: 1.35; letter-spacing: -0.02em; color: var(--ink); margin: 2.75rem 0; padding-left: 1.75rem; border-left: 3px solid var(--lima); }
   .nota-destacado b { font-weight: 700; }
 
+  .nota-cinco { margin: 0 0 2.8rem; padding: 1.8rem 2rem; background: var(--dark); border-left: 3px solid var(--lima); }
+  .nota-cinco-k { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--lima); margin-bottom: 1.2rem; display: block; }
+  .nota-cinco ul { list-style: none; margin: 0; }
+  .nota-cinco ul li { font-size: 0.97rem; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,0.72); padding: 0.85rem 0; border-bottom: 1px solid rgba(255,255,255,0.12); }
+  .nota-cinco ul li:first-child { border-top: none; padding-top: 0; }
+  .nota-cinco ul li:last-child { border-bottom: none; padding-bottom: 0; }
+  .nota-cinco ul li::before { content: none; }
+  .nota-cinco b { color: #FFFFFF; font-weight: 700; }
+  .nota-cinco .fte { color: var(--lavanda); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; }
+  .nota-libre { margin: 2.5rem 0 0; padding: 1.6rem 1.8rem; background: var(--gray-light); border-left: 3px solid var(--lima); }
+  .nota-libre p { font-size: 0.94rem; line-height: 1.75; color: rgba(31,31,46,0.7); margin-bottom: 0.8rem; }
+  .nota-libre p:last-child { margin-bottom: 0; }
+  .nota-libre-k { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--violeta); margin-bottom: 0.8rem; display: block; }
   .nota-limite { margin: 2.5rem 0; padding: 1.6rem 1.8rem; background: var(--gray-light); border-left: 3px solid var(--violeta); }
   .nota-limite p { font-size: 0.94rem; line-height: 1.75; color: rgba(31,31,46,0.7); margin-bottom: 0.8rem; }
   .nota-limite p:last-child { margin-bottom: 0; }
@@ -165,6 +178,8 @@
     .nota-body { padding: 3.5rem 0 4.5rem; }
     .nota-destacado { font-size: 1.3rem; padding-left: 1.1rem; }
     .nota-limite { padding: 1.35rem 1.25rem; }
+    .nota-cinco { padding: 1.4rem 1.3rem; }
+    .nota-libre { padding: 1.35rem 1.25rem; }
     .firma { grid-template-columns: 1fr; gap: 1.25rem; }
     .cierre-btns { flex-direction: column; align-items: stretch; }
     .cierre-btns a { justify-content: center; }
@@ -294,6 +309,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="nota-body">
   <div class="container-narrow">
+
+    <div class="nota-cinco">
+      <span class="nota-cinco-k">Los cinco números</span>
+      <ul>
+        <li>En 2024 se vendieron <b>44,47 millones de noches</b> en alojamientos formales argentinos, <b>12,2% menos que en 2023</b>. <span class="fte">INDEC</span></li>
+        <li>Entre enero y noviembre de 2025 entró <b>2,4% más de gente</b> a los alojamientos formales y se vendieron <b>0,9% menos noches</b>. <span class="fte">INDEC</span></li>
+        <li>El verano de 2026 movilizó <b>30,7 millones de turistas</b>, un <b>9,5% más</b> que el verano anterior. <span class="fte">CAME</span></li>
+        <li>En el primer semestre de 2026 entraron <b>2,9 millones de turistas extranjeros</b>, <b>7,4% más</b> que un año antes: la primera suba después de la caída. <span class="fte">INDEC</span></li>
+        <li>Para el turista extranjero, las páginas web pesan <b>20,5%</b> en su decisión de viaje. Instagram, <b>8%</b>. <span class="fte">INDEC</span></li>
+      </ul>
+    </div>
 
     <h2>Por qué me puse a revisar esto</h2>
 
@@ -642,6 +668,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li><a href="https://www.came.org.ar/" target="_blank" rel="noopener">CAME</a> — Relevamientos de temporada de verano y fines de semana largos.</li>
       <li>Cámaras y organismos provinciales de turismo. Ocupación de temporada, con cobertura y metodología variables según jurisdicción.</li>
     </ul>
+
+    <div class="nota-libre">
+      <span class="nota-libre-k">Uso de esta nota</span>
+      <p>Esta nota es de uso libre. Podés citarla, compartirla o usar los gráficos en una presentación, mencionando la fuente.</p>
+      <p>Si sos de una cámara, un organismo público o una institución educativa y querés estos datos presentados a tus socios o a tus alumnos, escribime a <a href="mailto:lau@onlike.ar">lau@onlike.ar</a>.</p>
+    </div>
 
     <p class="tabla-fuente" style="margin-top:1.5rem;">Última actualización: 31 de julio de 2026. Esta nota se actualiza cuando se publican nuevos datos oficiales.</p>
 
