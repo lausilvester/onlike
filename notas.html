@@ -6,13 +6,13 @@
 <meta name="theme-color" content="#131625">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Notas sobre turismo y visibilidad digital | ONLIKE · Laura Silvester</title>
-<meta name="description" content="Notas de Laura Silvester sobre demanda turística, datos oficiales del sector y por qué algunos negocios turísticos quedan afuera de las recomendaciones antes de competir.">
+<meta name="description" content="Notas de Laura Silvester sobre demanda turística, datos oficiales del sector, destinos e inteligencia artificial, y por qué algunos negocios turísticos quedan afuera de las recomendaciones antes de competir.">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <meta name="author" content="Laura Silvester · ONLIKE">
 <link rel="canonical" href="https://onlike.ar/notas.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Notas · ONLIKE">
-<meta property="og:description" content="Análisis propios sobre demanda turística y visibilidad digital, con fuentes y límites declarados.">
+<meta property="og:description" content="Análisis propios sobre demanda turística, destinos e inteligencia artificial, con fuentes y límites declarados.">
 <meta property="og:url" content="https://onlike.ar/notas.html">
 <meta property="og:locale" content="es_AR">
 <meta property="og:site_name" content="ONLIKE">
@@ -190,6 +190,7 @@
   .idx-item h2 { font-size: clamp(1.4rem, 2.6vw, 1.95rem); font-weight: 700; letter-spacing: -0.025em; line-height: 1.15; color: var(--ink); margin-bottom: 0.7rem; transition: color var(--transition); }
   .idx-item p { font-size: 1rem; line-height: 1.75; color: rgba(31,31,46,0.7); max-width: 660px; }
   .idx-mas { font-size: 0.86rem; font-weight: 600; color: var(--violeta); margin-top: 0.9rem; display: inline-block; }
+  .idx-serie { display: inline-block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink); background: var(--lima); padding: 0.2rem 0.6rem; border-radius: 2px; margin-left: 0.6rem; vertical-align: 3px; }
   @media (max-width: 900px) { .idx-hero { padding: 7rem 0 3rem; } .idx-list { padding: 3.2rem 0 4rem; } }
 </style>
 
@@ -210,6 +211,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "url": "https://onlike.ar/notas.html",
   "author": { "@type": "Person", "name": "Laura Silvester", "url": "https://onlike.ar/" },
   "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Cuando una inteligencia artificial recomienda un destino turístico, decide también qué negocios aparecen",
+      "url": "https://onlike.ar/destinos-turisticos-inteligencia-artificial.html",
+      "datePublished": "2026-08-27",
+      "author": { "@type": "Person", "name": "Laura Silvester" }
+    },
     {
       "@type": "BlogPosting",
       "headline": "Por qué bajaron las consultas en tu alojamiento",
@@ -261,6 +269,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="idx-list">
   <div class="container-narrow">
 
+    <a class="idx-item" href="https://onlike.ar/destinos-turisticos-inteligencia-artificial.html">
+      <span class="idx-fecha"><time datetime="2026-08-27">27 de agosto de 2026</time></span>
+      <h2>Cuando una inteligencia artificial recomienda un destino turístico, decide también qué negocios aparecen<span class="idx-serie">Destinos · 1</span></h2>
+      <p>Antes de elegir dónde duerme, el viajero elige el destino. Esa decisión ya está pasando adentro de un chat, en respuestas armadas con información dispersa sobre el lugar. Y de esa descripción depende qué prestadores entran en la recomendación y cuáles quedan afuera.</p>
+      <span class="idx-mas">Leer la nota →</span>
+    </a>
+
     <a class="idx-item" href="https://onlike.ar/por-que-bajaron-las-consultas-alojamiento.html">
       <span class="idx-fecha"><time datetime="2026-08-26">26 de agosto de 2026</time></span>
       <h2>Por qué bajaron las consultas en tu alojamiento</h2>
@@ -301,6 +316,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <nav style="display:flex;gap:1.5rem;align-items:center;background:transparent;padding:0;border-bottom:0;backdrop-filter:none;-webkit-backdrop-filter:none;" aria-label="Legal">
       <a href="https://onlike.ar/" style="font-size:0.7rem;color:rgba(255,255,255,0.3);">Onlike</a>
+      <a href="https://onlike.ar/notas.html" style="font-size:0.7rem;color:rgba(255,255,255,0.3);">Notas</a>
       <a href="https://onlike.ar/privacidad.html" style="font-size:0.7rem;color:rgba(255,255,255,0.3);">Política de privacidad</a>
       <span style="font-size:0.7rem;color:rgba(255,255,255,0.25);">© 2026</span>
     </nav>
@@ -320,6 +336,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       var e = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!e));
       navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
     });
   }
   window.addEventListener('scroll', function() {
