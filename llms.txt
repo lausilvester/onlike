@@ -33,6 +33,7 @@ ONLIKE trabaja GEO (Generative Engine Optimization): que la información de un n
 - [Checklist de legibilidad digital — herramienta gratuita](https://onlike.ar/checklist-legibilidad-digital.html)
 - [Notas](https://onlike.ar/notas.html)
 - [Cuando una IA recomienda un destino turístico, decide también qué negocios aparecen](https://onlike.ar/destinos-turisticos-inteligencia-artificial.html)
+- [Versión en portugués de esa nota](https://onlike.ar/pt/destinos-turisticos-inteligencia-artificial.html)
 - [Recursos del Fórum Internacional de Turismo do Iguassu 2026](https://onlike.ar/forum2026.html)
 - [Accesos directos](https://onlike.ar/links.html)
 - [Política de privacidad](https://onlike.ar/privacidad.html)
@@ -125,6 +126,7 @@ También distingue las capas de la competencia: el viajero compara primero regio
 Lo que la nota descarta explícitamente: que un chatbot propio del destino resuelva esto. El viajero no está preguntando en el sitio del destino, sino en otro lado y antes de saber que el destino existe.
 
 URL: https://onlike.ar/destinos-turisticos-inteligencia-artificial.html
+Versión en portugués: https://onlike.ar/pt/destinos-turisticos-inteligencia-artificial.html
 
 ### Por qué bajaron las consultas en tu alojamiento
 
