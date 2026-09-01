@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" sizes="192x192" href="https://onlike.ar/assets/icon-192.png">
+<meta name="theme-color" content="#131625">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qué contesta una IA sobre el turismo en Eldorado, Misiones | ONLIKE · Laura Silvester</title>
+<meta name="description" content="Le pregunté a una IA qué hacer en mi ciudad y revisé la respuesta con lo que sé. Lo que encontré no es un problema de Eldorado: es lo que pasa en cualquier localidad donde nadie mira qué se dice de ella. Y decide qué prestadores entran en el viaje de alguien.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="author" content="Laura Silvester · ONLIKE">
+<link rel="canonical" href="https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html">
+<link rel="alternate" hreflang="es-AR" href="https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html">
+<link rel="alternate" hreflang="x-default" href="https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Le pregunté a una IA qué hacer en mi ciudad y revisé uno por uno los atractivos turísticos que recomendó">
+<meta property="og:description" content="Lo que encontré no es un problema de mi ciudad: es lo que pasa en cualquier localidad donde nadie mira qué se dice de ella. Y decide qué prestadores entran en el viaje de alguien.">
+<meta property="og:url" content="https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="ONLIKE">
+<meta property="og:image" content="https://onlike.ar/assets/og-ia-eldorado.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-08-31">
+<meta property="article:modified_time" content="2026-08-31">
+<meta property="article:author" content="Laura Silvester">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Le pregunté a una IA qué hacer en mi ciudad y revisé la respuesta">
+<meta name="twitter:description" content="Seis de trece atractivos no se pueden visitar. Y faltan cuatro prestadores reales.">
+<meta name="twitter:image" content="https://onlike.ar/assets/og-ia-eldorado.png">
+
+<meta name="google-site-verification" content="hInoWU68h1d6ULKuopnIw51sVLE0juKjC98S1EQ3e98">
+<meta name="msvalidate.01" content="0F33184E2EE4830D19FB8460FF45F9AE">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --dark: #131625; --dark-deep: #0b0d18; --lima: #D1FA3E; --violeta: #8E51B9;
+    --lavanda: #A08AE5; --magenta: #FF3EBE; --white: #FFFFFF; --ink: #1F1F2E;
+    --gray-light: #F4F4F0; --font-body: 'Outfit', sans-serif; --transition: 0.22s ease; --radius: 2px;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); background: var(--dark); color: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { text-decoration: none; color: inherit; }
+
+  header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; }
+  nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 3rem; background: rgba(255,255,255,0.98); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(19,22,37,0.08); }
+  .nav-logo img { height: 36px; width: auto; }
+  .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+  .nav-links a { color: rgba(19,22,37,0.55); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; transition: color var(--transition); }
+  .nav-links a:hover { color: var(--dark); }
+  .nav-cta { background: var(--dark) !important; color: var(--white) !important; padding: 0.5rem 1.1rem !important; border-radius: var(--radius); }
+  .nav-cta:hover { background: var(--lima) !important; color: var(--dark) !important; }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.4rem; flex-direction: column; gap: 5px; }
+  .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--dark); border-radius: 2px; transition: all 0.25s; }
+
+  .container { max-width: 1160px; margin: 0 auto; padding: 0 3rem; }
+  .container-narrow { max-width: 820px; margin: 0 auto; padding: 0 3rem; }
+
+  .btn-lima { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--lima); color: var(--dark); padding: 0.95rem 1.9rem; font-size: 0.92rem; font-weight: 700; border-radius: var(--radius); transition: all var(--transition); }
+  .btn-lima:hover { background: #c2ef2a; transform: translateY(-2px); }
+  .btn-ghost { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--white); padding: 0.95rem 1.9rem; font-size: 0.92rem; font-weight: 500; border: 1px solid rgba(255,255,255,0.22); border-radius: var(--radius); transition: all var(--transition); }
+  .btn-ghost:hover { border-color: var(--lima); color: var(--lima); }
+
+  .s-label { display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.35rem; }
+  .s-title { font-weight: 700; font-size: clamp(2.1rem, 3.8vw, 3.6rem); line-height: 0.98; letter-spacing: -0.03em; margin-bottom: 1.75rem; }
+  .s-title .thin { font-weight: 200; }
+  section { padding: 6.5rem 0; }
+  .sec-dark { background: var(--dark); color: var(--white); }
+  .cierre { text-align: center; }
+  .cierre .s-title { max-width: 780px; margin-left: auto; margin-right: auto; }
+  .cierre-btns { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 2.5rem; }
+
+  footer { background: var(--dark-deep); padding: 1.75rem 3rem; border-top: 1px solid rgba(255,255,255,0.04); }
+  .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; display: flex; align-items: center; gap: 0.65rem; background: #25D366; color: #fff; padding: 0.75rem 1.2rem 0.75rem 1rem; border-radius: 100px; font-size: 0.82rem; font-weight: 600; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: all var(--transition); }
+  .wa-float:hover { background: #1ebe5d; transform: translateY(-2px); }
+
+  .nota-hero { background: var(--dark); padding: 9rem 0 4.5rem; position: relative; overflow: hidden; }
+  .nota-hero::before { content: ''; position: absolute; top: -180px; right: -160px; width: 560px; height: 560px; background: radial-gradient(circle, rgba(209,250,62,0.07) 0%, transparent 65%); pointer-events: none; }
+  .nota-hero .container-narrow { position: relative; }
+  .nota-kicker { display: inline-block; background: rgba(209,250,62,0.1); color: var(--lima); border: 1px solid rgba(209,250,62,0.25); padding: 0.35rem 0.95rem; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; border-radius: 100px; margin-bottom: 1.75rem; }
+  .nota-hero h1 { font-weight: 700; font-size: clamp(1.95rem, 3.8vw, 3.1rem); line-height: 1.05; letter-spacing: -0.035em; color: #fff; margin-bottom: 1.5rem; }
+  .nota-hero h1 .thin { font-weight: 200; }
+  .nota-bajada { font-size: 1.12rem; font-weight: 300; line-height: 1.75; color: rgba(255,255,255,0.68); margin-bottom: 2.25rem; }
+  .nota-meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-size: 0.78rem; color: rgba(255,255,255,0.4); border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.25rem; }
+  .nota-meta strong { color: rgba(255,255,255,0.7); font-weight: 500; }
+
+  .nota-body { background: var(--white); color: var(--ink); padding: 5rem 0 6rem; }
+  .nota-body h2 { font-size: clamp(1.5rem, 2.6vw, 2.05rem); font-weight: 700; letter-spacing: -0.025em; line-height: 1.15; color: var(--ink); margin: 3.75rem 0 1.4rem; }
+  .nota-body h3 { font-size: 1.14rem; font-weight: 700; letter-spacing: -0.015em; color: var(--ink); margin: 2.5rem 0 0.9rem; }
+  .nota-body p { font-size: 1.04rem; line-height: 1.85; color: rgba(31,31,46,0.78); margin-bottom: 1.3rem; }
+  .nota-body strong { color: var(--ink); font-weight: 600; }
+  .nota-body ul { list-style: none; margin: 0 0 1.6rem; }
+  .nota-body ul li { font-size: 1.02rem; line-height: 1.75; color: rgba(31,31,46,0.78); padding: 0.7rem 0 0.7rem 1.9rem; position: relative; border-bottom: 1px solid rgba(31,31,46,0.08); }
+  .nota-body ul li::before { content: '→'; position: absolute; left: 0; top: 0.7rem; color: var(--violeta); font-weight: 700; }
+  .nota-body ul li:first-child { border-top: 1px solid rgba(31,31,46,0.12); }
+  .nota-body .cita { font-size: 1.08rem; font-weight: 400; line-height: 1.7; color: var(--ink); margin: 1.9rem 0; padding-left: 1.5rem; border-left: 3px solid rgba(31,31,46,0.15); font-style: italic; }
+
+  .nota-destacado { font-size: clamp(1.35rem, 2.4vw, 1.85rem); font-weight: 200; line-height: 1.35; letter-spacing: -0.02em; color: var(--ink); margin: 2.75rem 0; padding-left: 1.75rem; border-left: 3px solid var(--lima); }
+  .nota-destacado b { font-weight: 700; }
+
+  .nota-cinco { margin: 0 0 2.8rem; padding: 1.8rem 2rem; background: var(--dark); border-left: 3px solid var(--lima); }
+  .nota-cinco-k { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--lima); margin-bottom: 1.2rem; display: block; }
+  .nota-cinco ul { list-style: none; margin: 0; }
+  .nota-cinco ul li { font-size: 0.97rem; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,0.72); padding: 0.85rem 0; border-bottom: 1px solid rgba(255,255,255,0.12); }
+  .nota-cinco ul li:first-child { border-top: none; padding-top: 0; }
+  .nota-cinco ul li:last-child { border-bottom: none; padding-bottom: 0; }
+  .nota-cinco ul li::before { content: none; }
+  .nota-cinco b { color: #FFFFFF; font-weight: 700; }
+  .nota-cinco .fte { color: var(--lavanda); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; }
+
+  .nota-pd { margin: 3.5rem 0 0; padding: 1.8rem 2rem; background: var(--dark); border-left: 3px solid var(--magenta); }
+  .nota-pd-k { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--magenta); margin-bottom: 1rem; display: block; }
+  .nota-pd p { font-size: 0.98rem; font-weight: 300; line-height: 1.8; color: rgba(255,255,255,0.75); margin-bottom: 0.9rem; }
+  .nota-pd p:last-child { margin-bottom: 0; }
+  .nota-pd b { color: #FFFFFF; font-weight: 700; }
+
+  sup.nref { font-size: 0.66rem; font-weight: 700; vertical-align: super; line-height: 0; }
+  sup.nref a { color: var(--violeta); padding: 0 0.1rem; }
+  sup.nref a:hover { border-bottom: 1px solid var(--violeta); }
+
+  figure { margin: 3rem 0; }
+  figure svg { width: 100%; height: auto; display: block; border-radius: 6px; }
+  figure img { width: 100%; height: auto; display: block; border-radius: 6px; }
+  figcaption { font-size: 0.8rem; line-height: 1.6; color: rgba(31,31,46,0.45); margin-top: 0.85rem; }
+
+
+  .notas-pie { margin-top: 3.5rem; padding-top: 1.75rem; border-top: 2px solid rgba(31,31,46,0.15); }
+  .notas-pie-k { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--violeta); margin-bottom: 1.1rem; display: block; }
+  .notas-pie ol { list-style: none; counter-reset: np; margin: 0; }
+  .notas-pie li { counter-increment: np; font-size: 0.87rem; line-height: 1.7; color: rgba(31,31,46,0.65); padding: 0.7rem 0 0.7rem 2rem; position: relative; border-bottom: 1px solid rgba(31,31,46,0.08); }
+  .notas-pie li::before { content: counter(np); position: absolute; left: 0; top: 0.7rem; color: var(--violeta); font-weight: 700; font-size: 0.87rem; }
+  .notas-pie li:first-child { border-top: 1px solid rgba(31,31,46,0.12); }
+  .notas-pie a { color: var(--violeta); border-bottom: 1px solid rgba(142,81,185,0.3); }
+
+  .cierre-nota { margin: 3.5rem 0 0; padding: 1.9rem 2rem; background: var(--gray-light); border-left: 3px solid var(--lima); }
+  .cierre-nota p { font-size: 1rem; line-height: 1.8; color: rgba(31,31,46,0.78); margin-bottom: 0.9rem; }
+  .cierre-nota p:last-child { margin-bottom: 0; }
+  .cierre-nota a { color: var(--violeta); font-weight: 500; border-bottom: 1px solid rgba(142,81,185,0.3); }
+
+  .firma { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(31,31,46,0.12); display: grid; grid-template-columns: 96px 1fr; gap: 1.5rem; align-items: start; }
+  .firma img { width: 96px; height: 120px; object-fit: cover; border-radius: 3px; }
+  .firma-k { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--violeta); margin-bottom: 0.85rem; display: block; }
+  .firma p { font-size: 0.9rem; line-height: 1.7; color: rgba(31,31,46,0.65); margin-bottom: 0.75rem; }
+  .firma strong { color: var(--ink); }
+  .firma a { color: var(--violeta); border-bottom: 1px solid rgba(142,81,185,0.3); }
+  .firma-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.85rem; }
+  .firma-chips span { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.04em; padding: 0.22rem 0.6rem; border: 1px solid rgba(31,31,46,0.18); border-radius: 100px; color: rgba(31,31,46,0.6); }
+  .firma-chips span.lima { background: var(--lima); border-color: var(--lima); color: var(--ink); }
+  .firma-redes { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .firma-redes a { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.35rem 0.75rem; border: 1px solid rgba(31,31,46,0.2); border-radius: var(--radius); color: rgba(31,31,46,0.65); transition: all var(--transition); border-bottom: 1px solid rgba(31,31,46,0.2); }
+  .firma-redes a:hover { background: var(--dark); border-color: var(--dark); color: #fff; }
+
+  @media (max-width: 900px) {
+    nav { padding: 0.85rem 1.25rem; }
+    .nav-links { display: none; }
+    .nav-toggle { display: flex; }
+    .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 60px; left: 0; right: 0; background: var(--white); padding: 2rem; gap: 1.5rem; border-bottom: 1px solid rgba(19,22,37,0.08); }
+    .nav-links.open a { font-size: 1rem; }
+    .container, .container-narrow { padding: 0 1.5rem; }
+    section { padding: 4.5rem 0; }
+    .nota-hero { padding: 7rem 0 3.5rem; }
+    .nota-body { padding: 3.5rem 0 4.5rem; }
+    .nota-destacado { font-size: 1.3rem; padding-left: 1.1rem; }
+    .nota-cinco, .nota-pd { padding: 1.4rem 1.3rem; }
+    .cierre-nota { padding: 1.4rem 1.3rem; }
+    .firma { grid-template-columns: 1fr; gap: 1.25rem; }
+    .cierre-btns { flex-direction: column; align-items: stretch; }
+    .cierre-btns a { justify-content: center; }
+    .wa-float span { display: none; }
+    .wa-float { padding: 0.9rem; border-radius: 50%; }
+    footer { padding: 1.5rem; }
+  }
+</style>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PN327WB');</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html#article",
+      "headline": "Le pregunté a una IA qué hacer en mi ciudad y revisé uno por uno los atractivos turísticos que recomendó",
+      "alternativeHeadline": "Qué contesta una IA sobre el turismo en Eldorado, Misiones",
+      "description": "Prueba hecha en Eldorado, Misiones, en agosto de 2026. De trece lugares recomendados, seis no se pueden visitar. Cuatro prestadores locales que ofrecen exactamente lo que el sistema dice que la ciudad ofrece no aparecen en el itinerario. Y durante la escritura de la nota el municipio publicó un sitio de turismo nuevo con atractivos de otros municipios que bloquea a los rastreadores de IA.",
+      "inLanguage": "es-AR",
+      "datePublished": "2026-08-31",
+      "dateModified": "2026-08-31",
+      "url": "https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html" },
+      "image": "https://onlike.ar/assets/og-ia-eldorado.png",
+      "author": { "@id": "https://onlike.ar/#laurasilvester" },
+      "publisher": { "@id": "https://onlike.ar/#onlike" },
+      "isPartOf": { "@id": "https://onlike.ar/destinos-turisticos-inteligencia-artificial.html#article" },
+      "about": [
+        { "@type": "Thing", "name": "Turismo en Eldorado, Misiones" },
+        { "@type": "Thing", "name": "Atractivos turísticos de Eldorado" },
+        { "@type": "Thing", "name": "Legibilidad digital de destinos turísticos" },
+        { "@type": "Thing", "name": "Inteligencia artificial generativa y planificación de viajes" },
+        { "@type": "Thing", "name": "Visibilidad de prestadores turísticos en sistemas de IA" }
+      ],
+      "mentions": [
+        { "@type": "Place", "name": "Eldorado", "address": { "@type": "PostalAddress", "addressLocality": "Eldorado", "addressRegion": "Misiones", "addressCountry": "AR" } },
+        { "@type": "TouristAttraction", "name": "Parque Natural Municipal Salto Küppers" },
+        { "@type": "TouristAttraction", "name": "Costanera Eldorado Eduviges Markovics" },
+        { "@type": "TouristAttraction", "name": "Parque Schwelm" }
+      ],
+      "citation": [
+        { "@type": "CreativeWork", "name": "Jia, Ma, Chi y Fan — A socio-technical exploration of bias in generative AI travel planners. Tourism Management 116 (2026) 105442", "url": "https://doi.org/10.1016/j.tourman.2026.105442" },
+        { "@type": "CreativeWork", "name": "Wayback Machine — captura de turismo.eldorado.gob.ar del 31 de agosto de 2026", "url": "https://web.archive.org/web/20260831204902/https://turismo.eldorado.gob.ar/" }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://onlike.ar/#laurasilvester",
+      "name": "Laura Silvester",
+      "givenName": "Laura",
+      "familyName": "Silvester",
+      "jobTitle": "Consultora en estrategia y posicionamiento digital",
+      "description": "Licenciada en Turismo por la Universidad Nacional de Misiones. Casi veinte años en el sector turístico, quince de ellos como docente de marketing turístico, con experiencia en gestión hotelera. Fundadora de ONLIKE.",
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad Nacional de Misiones" },
+      "worksFor": { "@id": "https://onlike.ar/#onlike" },
+      "url": "https://onlike.ar/",
+      "image": "https://onlike.ar/assets/laura.webp",
+      "sameAs": [
+        "https://www.instagram.com/lausilvester",
+        "https://www.instagram.com/onlike.ar",
+        "https://linkedin.com/in/lausilvester",
+        "https://www.tiktok.com/@lausilvester",
+        "https://www.facebook.com/onlike.ar"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://onlike.ar/#onlike",
+      "name": "ONLIKE",
+      "url": "https://onlike.ar/",
+      "logo": "https://onlike.ar/assets/logo-onlike.png",
+      "email": "lau@onlike.ar",
+      "telephone": "+5493751566488",
+      "founder": { "@id": "https://onlike.ar/#laurasilvester" },
+      "address": { "@type": "PostalAddress", "addressLocality": "Eldorado", "addressRegion": "Misiones", "addressCountry": "AR" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://onlike.ar/" },
+        { "@type": "ListItem", "position": 2, "name": "Notas", "item": "https://onlike.ar/notas.html" },
+        { "@type": "ListItem", "position": 3, "name": "Le pregunté a una IA qué hacer en mi ciudad" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN327WB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<header role="banner">
+  <nav role="navigation" aria-label="Navegación principal">
+    <a href="https://onlike.ar/" class="nav-logo" aria-label="ONLIKE — Ir al inicio">
+      <img src="https://onlike.ar/assets/logo-onlike.png" alt="Logo ONLIKE" height="36">
+    </a>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="https://onlike.ar/#services">Servicios</a></li>
+      <li><a href="https://onlike.ar/turismo.html">Turismo</a></li>
+      <li><a href="https://onlike.ar/notas.html">Notas</a></li>
+      <li><a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20escribo%20desde%20la%20nota%20sobre%20Eldorado%20y%20la%20IA." target="_blank" rel="noopener noreferrer" class="nav-cta js-wa" data-wa="nota-eldorado-ia-nav">Escribime</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú de navegación">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main id="main" role="main">
+<article>
+
+<div class="nota-hero">
+  <div class="container-narrow">
+    <span class="nota-kicker">Nota · Destinos 2 · El caso Eldorado</span>
+    <h1><span class="thin">Le pregunté a una IA qué hacer en mi ciudad</span> y revisé uno por uno los atractivos turísticos que recomendó</h1>
+    <p class="nota-bajada">Vivo y trabajo en Eldorado, Misiones. Le pregunté a una inteligencia artificial qué hacer acá y revisé la respuesta con lo que sé. Lo que encontré no es un problema de mi ciudad: es lo que pasa en cualquier localidad donde nadie está mirando qué se dice de ella. Y decide qué prestadores entran en el viaje de alguien.</p>
+    <div class="nota-meta">
+      <span>Por <strong>Laura Silvester</strong></span>
+      <span>Eldorado, Misiones</span>
+      <span><time datetime="2026-08-31">31 de agosto de 2026</time></span>
+      <span>Lectura: 8 minutos</span>
+    </div>
+  </div>
+</div>
+
+<div class="nota-body">
+  <div class="container-narrow">
+
+    <div class="nota-cinco">
+      <span class="nota-cinco-k">Lo que encontré</span>
+      <ul>
+        <li>De <b>13 lugares</b> recomendados, <b>6</b> no se pueden visitar. Uno más funciona solo en verano y se ofrece todo el año. <span class="fte">VERIFICACIÓN PROPIA</span></li>
+        <li><b>Cuatro prestadores locales</b> que hacen kayak y cabalgatas no aparecen en un itinerario que nombra kayak y cabalgatas. <span class="fte">VERIFICACIÓN PROPIA</span></li>
+        <li>Preguntando por la provincia, sin nombrar Eldorado, el sistema recomienda <b>once prestadores</b> de otras localidades. De Eldorado, uno. <span class="fte">VERIFICACIÓN PROPIA</span></li>
+        <li>El Ministerio de Turismo de Misiones lista <b>4 atractivos</b> para Eldorado. Un agregador comercial lista <b>8</b>. Coinciden en <b>2</b>. <span class="fte">FUENTES PÚBLICAS</span></li>
+        <li>El sitio oficial de turismo del municipio <b>le prohíbe el paso a los sistemas de inteligencia artificial</b>. <span class="fte">VERIFICADO EL 31 DE AGOSTO</span></li>
+      </ul>
+    </div>
+
+    <p>En turismo la decisión se toma antes del viaje, entera y a distancia. No hay vidriera, no hay cartel, no hay ubicación que ayude. Y esa decisión se toma por capas.</p>
+
+    <p>Nadie empieza eligiendo dónde duerme. Primero elige la región: Misiones o Jujuy, la Patagonia o el Litoral. Después, con el pasaje sacado, elige en qué localidad hace base. Recién tercero aparece el nombre de un negocio.</p>
+
+    <p>Un prestador trabaja el tercer escalón. Los dos primeros no los toca, y son los que definen cuánta gente llega hasta él. Eso siempre fue así. Lo que cambió es dónde pasa: una parte de esas dos primeras decisiones se está tomando adentro de un chat, en respuestas armadas con lo que haya dando vueltas sobre el lugar.</p>
+
+    <p>Los destinos que van adelante entendieron esto antes. Alemania, Francia y Finlandia construyeron inventarios turísticos donde cada atractivo, cada evento y cada prestador se carga una vez y se publica en todos los canales. España financia plataformas de destino con el mismo criterio. No lo tratan como marketing: lo tratan como infraestructura, igual que un camino o la señalización.</p>
+
+    <p>Todo eso lo desarrollé en la nota anterior, con fuentes.<sup class="nref"><a href="#n1" id="r1">1</a></sup> Ahí está el mecanismo. Acá está lo que pasa cuando ese trabajo no se hace.</p>
+
+    <h2>La prueba</h2>
+
+    <p>Abrí ChatGPT en una ventana de incógnito, sin sesión iniciada, y escribí la pregunta más común que existe: qué hay para hacer en Eldorado, Misiones. Después pregunté si eso era todo. Después pedí un plan de dos días.</p>
+
+    <p>Repetí las mismas preguntas en dos fechas distintas, con cinco días de diferencia. Y sumé cuatro consultas sobre Misiones sin nombrar Eldorado: un viaje en auto de Posadas a Iguazú, el mismo viaje sin salir de la ruta 12, dónde hacer kayak y cabalgatas en la provincia, y qué hay cerca de Iguazú para dos días libres.</p>
+
+    <p>Los resultados cambian de una consulta a otra. Cambian también de una persona a otra, porque estos sistemas no consultan una tabla: predicen un texto.<sup class="nref"><a href="#n2" id="r2">2</a></sup> Nadie controla lo que sale.</p>
+
+    <p>Lo que no cambia es el fondo. Los mismos lugares que no se pueden visitar. Los mismos prestadores ausentes.</p>
+
+    <p>Hago esto en Eldorado porque vivo acá. Es el único lugar donde puedo leer una lista de atractivos y saber, uno por uno, qué hay detrás de cada nombre.</p>
+
+    <p>Esa es la única ventaja que tengo, y también el límite de la nota. Lo que encontré acá puede estar pasando igual en cualquier localidad donde nadie esté mirando. La diferencia es que allá no hay quien lo verifique.</p>
+
+    <h2>La lista, revisada</h2>
+
+    <p>En una sola conversación juntó trece lugares. Los ordené según lo que sé de cada uno.</p>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 760" role="img" aria-labelledby="g1t g1d" font-family="Outfit, sans-serif">
+        <title id="g1t">Los trece lugares recomendados para Eldorado, revisados uno por uno</title>
+        <desc id="g1d">De los trece lugares que el sistema recomendó para visitar en Eldorado, seis no se pueden visitar: Salto Schwarzenberg, Parque Natural Municipal YVU, Parque Los Cedros, Paseo de las Palmeras, Paseo La Plaza y Salto Elena. Uno, el Balneario Piray Guazú, funciona solamente en temporada de verano y se ofrece todo el año. Los seis restantes sí son visitables: Salto Küppers, Costanera Eldorado Eduviges Markovics, Parque Lago Ziegler, Museo de la CEEL, Km 14 Senderos en la Selva y Cueva Miní Lodge and Adventure. En la consulta más reciente el Salto Elena, que no tiene acceso habilitado, pasó a ser la parada central de la tarde del primer día con dos horas asignadas. Verificación propia sobre conocimiento directo de la ciudad, agosto de 2026.</desc>
+        <rect x="0" y="0" width="720" height="760" rx="10" fill="#131625"/>
+        <text x="48" y="52" font-size="11" font-weight="700" letter-spacing="1.98" fill="#A08AE5">TRECE LUGARES RECOMENDADOS</text>
+        <text x="48" y="96" font-size="38" letter-spacing="-1.14" fill="#FFFFFF"><tspan font-weight="200">La lista, </tspan><tspan font-weight="700">revisada</tspan></text>
+        <text x="48" y="126" font-size="15" font-weight="300" fill="#FFFFFF" fill-opacity="0.6">Consulta a ChatGPT en ventana de incógnito, contrastada con lo que hay</text>
+        <rect x="48" y="150" width="10" height="10" fill="#FF3EBE"/>
+        <text x="66" y="160" font-size="12" font-weight="300" fill="#FFFFFF" fill-opacity="0.7">No visitable</text>
+        <rect x="180" y="150" width="10" height="10" fill="#A08AE5"/>
+        <text x="198" y="160" font-size="12" font-weight="300" fill="#FFFFFF" fill-opacity="0.7">Solo en temporada</text>
+        <rect x="340" y="150" width="10" height="10" fill="#D1FA3E"/>
+        <text x="358" y="160" font-size="12" font-weight="300" fill="#FFFFFF" fill-opacity="0.7">Sí se puede visitar</text>
+        <line x1="48" y1="180" x2="672" y2="180" stroke="#FFFFFF" stroke-opacity="0.1"/>
+        <rect x="48" y="198" width="4" height="20" fill="#FF3EBE"/>
+        <text x="68" y="213" font-size="15" font-weight="400" fill="#FFFFFF" fill-opacity="0.9">Salto Schwarzenberg</text>
+        <text x="672" y="213" font-size="12" font-weight="300" fill="#FF3EBE" text-anchor="end">no habilitado</text>
+        <rect x="48" y="232" width="4" height="20" fill="#FF3EBE"/>
+        <text x="68" y="247" font-size="15" font-weight="400" fill="#FFFFFF" fill-opacity="0.9">Parque Natural Municipal «YVU»</text>
+        <text x="672" y="247" font-size="12" font-weight="300" fill="#FF3EBE" text-anchor="end">es un baldío</text>
+        <rect x="48" y="266" width="4" height="20" fill="#FF3EBE"/>
+        <text x="68" y="281" font-size="15" font-weight="400" fill="#FFFFFF" fill-opacity="0.9">Parque Los Cedros</text>
+        <text x="672" y="281" font-size="12" font-weight="300" fill="#FF3EBE" text-anchor="end">espacio verde de barrio</text>
+        <rect x="48" y="300" width="4" height="20" fill="#FF3EBE"/>
+        <text x="68" y="315" font-size="15" font-weight="400" fill="#FFFFFF" fill-opacity="0.9">Paseo de las Palmeras</text>
+        <text x="672" y="315" font-size="12" font-weight="300" fill="#FF3EBE" text-anchor="end">no es un paseo turístico</text>
+        <rect x="48" y="334" width="4" height="20" fill="#FF3EBE"/>
+        <text x="68" y="349" font-size="15" font-weight="400" fill="#FFFFFF" fill-opacity="0.9">Paseo La Plaza</text>
+        <text x="672" y="349" font-size="12" font-weight="300" fill="#FF3EBE" text-anchor="end">la plaza principal</text>
+        <rect x="48" y="368" width="4" height="20" fill="#FF3EBE"/>
+        <text x="68" y="383" font-size="15" font-weight="400" fill="#FFFFFF" fill-opacity="0.9">Salto Elena</text>
+        <text x="672" y="383" font-size="12" font-weight="300" fill="#FF3EBE" text-anchor="end">sin acceso habilitado</text>
+        <rect x="48" y="402" width="4" height="20" fill="#A08AE5"/>
+        <text x="68" y="417" font-size="15" font-weight="400" fill="#FFFFFF" fill-opacity="0.9">Balneario Piray Guazú</text>
+        <text x="672" y="417" font-size="12" font-weight="300" fill="#A08AE5" text-anchor="end">se concesiona en verano</text>
+        <rect x="48" y="436" width="4" height="20" fill="#D1FA3E"/>
+        <text x="68" y="451" font-size="15" font-weight="400" fill="#FFFFFF" fill-opacity="0.9">Parque Natural Municipal Salto Küppers</text>
+        <rect x="48" y="470" width="4" height="20" fill="#D1FA3E"/>
+        <text x="68" y="485" font-size="15" font-weight="400" fill="#FFFFFF" fill-opacity="0.9">Costanera Eldorado Eduviges Markovics</text>
+        <rect x="48" y="504" width="4" height="20" fill="#D1FA3E"/>
+        <text x="68" y="519" font-size="15" font-weight="400" fill="#FFFFFF" fill-opacity="0.9">Parque Lago Ziegler</text>
+        <rect x="48" y="538" width="4" height="20" fill="#D1FA3E"/>
+        <text x="68" y="553" font-size="15" font-weight="400" fill="#FFFFFF" fill-opacity="0.9">Museo de la CEEL</text>
+        <rect x="48" y="572" width="4" height="20" fill="#D1FA3E"/>
+        <text x="68" y="587" font-size="15" font-weight="400" fill="#FFFFFF" fill-opacity="0.9">Km 14 Senderos en la Selva</text>
+        <text x="672" y="587" font-size="12" font-weight="300" fill="#FFFFFF" fill-opacity="0.45" text-anchor="end">privado</text>
+        <rect x="48" y="606" width="4" height="20" fill="#D1FA3E"/>
+        <text x="68" y="621" font-size="15" font-weight="400" fill="#FFFFFF" fill-opacity="0.9">Cueva Miní Lodge &amp; Adventure</text>
+        <text x="672" y="621" font-size="12" font-weight="300" fill="#FFFFFF" fill-opacity="0.45" text-anchor="end">privado</text>
+        <rect x="48" y="654" width="624" height="52" rx="4" fill="#FF3EBE" fill-opacity="0.12"/>
+        <rect x="48" y="654" width="4" height="52" fill="#FF3EBE"/>
+        <text x="72" y="678" font-size="11" font-weight="700" letter-spacing="1.4" fill="#FF3EBE">EN LA CONSULTA MÁS RECIENTE</text>
+        <text x="72" y="698" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.85">El Salto Elena pasó a ser la parada central de la tarde, con dos horas asignadas.</text>
+        <line x1="48" y1="726" x2="672" y2="726" stroke="#FFFFFF" stroke-opacity="0.1"/>
+        <text x="48" y="748" font-size="16" font-weight="400" fill="#FFFFFF" fill-opacity="0.85">Seis de trece. Y la respuesta no avisa cuál es cuál.</text>
+        <text x="672" y="748" font-size="13" font-weight="700" fill="#D1FA3E" text-anchor="end">onlike.ar</text>
+      </svg>
+      <figcaption>La clasificación es de elaboración propia, sobre conocimiento directo de la ciudad. Cualquier vecino de Eldorado puede corregirme y le voy a agradecer: ese es exactamente el punto.</figcaption>
+    </figure>
+
+    <p>Los Cedros es el que mejor lo explica. Es un espacio verde de barrio, un cuarto de manzana, a una cuadra de mi casa. No hay nada que visitar. Está listado como atractivo de la ciudad.</p>
+
+    <p>El Parque Natural Municipal YVU lo vi cargado en Google Maps y fui a verlo. Es un baldío.</p>
+
+    <p>Hay recomendaciones que no entran en ese gráfico y aparecen igual. Me mandan dos horas de la tarde al Salto Elena, que no tiene acceso habilitado.</p>
+
+    <p>Y aparecen lugares que dudo que estén habilitados y que no le recomendaría a nadie que viene de visita. Un Salto Escondido y un Salto Pomar, que no conozco. Una Travesía del Paraná, que me suena a una actividad puntual que alguna vez armó algún prestador, no a algo que se preste todo el año.</p>
+
+    <p>Vivo en Eldorado y trabajo en turismo hace casi veinte años. Que yo no conozca un lugar no prueba que no exista. Lo que no existe es una fuente que diga dónde está, si se puede entrar, en qué temporada y cómo se llega. Nadie que reciba esa recomendación puede verificarla, y yo tampoco.</p>
+
+    <h3>Lo que sí está bien</h3>
+
+    <p>Conviene decirlo, porque si todo estuviera mal la lista sonaría inventada.</p>
+
+    <p>Los negocios que nombra existen y funcionan. Km 14 Senderos en la Selva y Cueva Miní Lodge &amp; Adventure son emprendimientos privados habilitados, con actividades reales. Los lugares para comer también existen. El Salto Küppers, la Costanera y el Parque Schwelm son lo mejor que la ciudad tiene para ofrecer y están bien elegidos.</p>
+
+    <p>El sistema no está delirando. Está armando con lo que hay.</p>
+
+    <h2>De dónde salía esa respuesta</h2>
+
+    <p>Cuatro fuentes de terceros y una oficial.</p>
+
+    <p>El Ministerio de Turismo de Misiones, con cuatro atractivos. Argentinaturismo.com.ar, un agregador comercial, con ocho. El sitio nacional de promoción, argentina.travel. Y un portal de noticias local, del que sacó los museos y la fábrica de madera comestible, porque no encontró dónde más buscarlos.</p>
+
+    <p>Entre las dos primeras, que son las que se presentan como oficiales o semioficiales, coinciden dos nombres.</p>
+
+    <p>La quinta fuente es la que importa. <strong>El sistema citó como fuente el sitio oficial de turismo del municipio, con enlace, dos veces.</strong> De ahí sacó que la ciudad ofrece senderismo, kayak y cabalgatas.</p>
+
+    <p>Ese sitio, ese día, devolvía un error de servidor. Quien hacía clic en la cita para verificar se encontraba con una pantalla en blanco que decía Bad Gateway. La última vez que ese sitio quedó archivado funcionando fue en marzo de 2025.<sup class="nref"><a href="#n3" id="r3">3</a></sup></p>
+
+    <p class="nota-destacado">Un destino no le entrega una descripción a estos sistemas. <b>Deja señales, y ellos las recomponen.</b> Cuando una señal se apaga, lo último que dijo sigue dando vueltas.</p>
+
+    <h2>Lo que pasó mientras escribo esto</h2>
+
+    <p>El 31 de agosto, todavía escribiendo esta nota, el sitio del municipio cargó.</p>
+
+    <p>No volvió: responde a veces. La misma dirección devuelve Bad Gateway y minutos después carga bien. Para un sistema que pasa una sola vez, eso es peor que estar caído, porque nadie sabe cuál de las dos versiones se llevó.</p>
+
+    <p>Cuando carga, la portada tiene una sección que se llama Imperdibles, con el subtítulo «Lugares que tenés que conocer». Son cinco. El primero son los Saltos del Moconá, que están en el Yabotí, cerca de El Soberbio, a unos trescientos kilómetros de acá. Después una reserva natural y unas cuevas que tampoco son de Eldorado. Las imágenes que los ilustran están generadas con inteligencia artificial.</p>
+
+    <p>De los cinco imperdibles de Eldorado, dos son de Eldorado.</p>
+
+    <figure>
+      <img src="https://onlike.ar/assets/sitio-eldorado-31-08-2026.png" alt="Dos capturas del sitio turismo.eldorado.gob.ar tomadas el 31 de agosto de 2026: la portada, con el titular «Eldorado, siempre cerca tuyo», y la sección Imperdibles, que lista los Saltos del Moconá, la Reserva Natural Delicia, el Museo Cooperativo, la Costanera al Atardecer y las Cuevas de Santo Ángel." loading="lazy" width="1600" height="2162">
+      <figcaption>Capturas del 31 de agosto de 2026, archivadas ese día en el Wayback Machine. El nombre del primer imperdible aparece cortado en pantalla por un error de codificación del propio sitio.</figcaption>
+    </figure>
+
+    <p>Lo primero que se lee sobre la ciudad, en el texto que aparece en cualquier buscador, nombra los Saltos del Moconá. El teléfono de contacto publicado es el número de relleno de la plantilla. El pie dice © 2024. Y el sitio no tiene un solo dato estructurado.</p>
+
+    <p>Y hay algo que no se ve y decide más que todo lo anterior: el archivo que le indica a los rastreadores qué pueden leer les prohíbe el paso a los de OpenAI, Anthropic, Google, Common Crawl, Amazon, Apple, TikTok y Meta. El sitio declara que su contenido no puede usarse para entrenar modelos.</p>
+
+    <p>Nadie decidió eso. Y ese es el punto: no hay nadie mirando.</p>
+
+    <p class="nota-destacado">La última captura de ese sitio funcionando es de marzo de 2025. En agosto de 2026 el sistema lo citaba igual. <b>No hacer era una decisión. Ahora hay dos más.</b></p>
+
+    <h2>Los que no aparecen</h2>
+
+    <p>Este es el hallazgo que le importa a cualquiera que trabaje en un destino.</p>
+
+    <p>El sistema afirma que Eldorado ofrece senderismo, kayak y cabalgatas. El sitio nuevo del municipio también lo dice: kayak en el Paraná, trekking en la selva, avistaje de aves. Cada una de esas experiencias tiene su ficha, y cada ficha tiene un botón que dice «Reservar / Consultar».</p>
+
+    <p>Ese botón lleva a una página de información general del municipio. No hay nadie del otro lado.</p>
+
+    <p>No aparecieron <strong>Estancia Las Mercedes</strong>, que hace kayak y cabalgatas. Ni <strong>Cabalgatas El Tacuaral</strong>. Ni <strong>CERNE Turismo</strong>. Ni <strong>Haras Rancho Lodge</strong>. Son los que conozco. Seguramente hay más que yo no conozco, y eso también es parte del problema.</p>
+
+    <p>La lista de lugares cambia en cada consulta. Se suman saltos, campings, museos, una plazoleta, un anfiteatro. La lista de prestadores no se mueve nunca. Lo que varía es el listado de lugares; lo que no varía es quién falta.</p>
+
+    <p>Después hice la pregunta al revés, sin nombrar Eldorado: dónde hacer kayak y cabalgatas en Misiones, y con quién.</p>
+
+    <p>La respuesta mandó a Puerto Iguazú y a San Ignacio, y nombró once prestadores con nombre propio. De Eldorado nombró uno, suelto, al final, entre las alternativas.</p>
+
+    <p>Esos cuatro emprendimientos tienen producto, tienen años de trabajo y tienen buena reputación. No perdieron por precio. No perdieron por reseñas. Quedaron afuera de una lista que se armó sin ellos, en una conversación de la que nunca se van a enterar, sobre una actividad que sí hacen.</p>
+
+    <p class="nota-destacado">No se puede reservar en un lugar que no fue nombrado. <b>Y el que no fue nombrado no se entera de que hubo una consulta.</b></p>
+
+    <h2>Hay dos visibilidades y no se ganan igual</h2>
+
+    <p>Acá está lo que aprendí haciendo esto, y no lo vi escrito en ningún lado.</p>
+
+    <p>Cuando alguien pregunta por Eldorado, por su nombre, el sistema sale a buscar en ese momento, entra al sitio del municipio y lo cita. Esa puerta está abierta.</p>
+
+    <p>Cuando alguien pregunta por Misiones, sin nombrar ninguna ciudad, el sistema no sale a buscar: compara con lo que ya sabe. Y ahí Eldorado no está, porque los rastreadores que alimentan ese conocimiento son exactamente los que el sitio bloqueó.</p>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 600" role="img" aria-labelledby="g2t g2d" font-family="Outfit, sans-serif">
+        <title id="g2t">Las dos visibilidades de un destino ante los sistemas de inteligencia artificial</title>
+        <desc id="g2d">Hay dos formas distintas de aparecer y no se ganan igual. Cuando alguien pregunta por Eldorado nombrándola, el sistema sale a buscar en ese momento, entra al sitio del municipio y lo cita: esa puerta está abierta. Cuando alguien pregunta por Misiones sin nombrar ninguna ciudad, el sistema no sale a buscar y compara con lo que ya sabe, y ahí Eldorado no está, porque el sitio bloquea a los rastreadores que alimentan ese conocimiento previo, los de OpenAI, Anthropic, Google y Common Crawl. El viaje se decide en la segunda situación, porque nadie que todavía no eligió el destino escribe el nombre del destino.</desc>
+        <rect x="0" y="0" width="720" height="600" rx="10" fill="#131625"/>
+        <text x="48" y="52" font-size="11" font-weight="700" letter-spacing="1.98" fill="#A08AE5">LAS DOS VISIBILIDADES</text>
+        <text x="48" y="96" font-size="29" font-weight="200" letter-spacing="-1" fill="#FFFFFF">Aparecer cuando te buscan</text>
+        <text x="48" y="132" font-size="29" font-weight="700" letter-spacing="-1" fill="#FFFFFF">no es aparecer cuando no te nombran</text>
+        <line x1="48" y1="170" x2="672" y2="170" stroke="#FFFFFF" stroke-opacity="0.1"/>
+        <rect x="48" y="196" width="300" height="256" rx="4" fill="#FFFFFF" fill-opacity="0.05"/>
+        <rect x="48" y="196" width="4" height="256" fill="#D1FA3E"/>
+        <text x="72" y="226" font-size="11" font-weight="700" letter-spacing="1.4" fill="#D1FA3E">PUERTA ABIERTA</text>
+        <text x="72" y="258" font-size="19" font-weight="700" fill="#FFFFFF">Te buscan por tu nombre</text>
+        <text x="72" y="292" font-size="14" font-weight="300" font-style="italic" fill="#FFFFFF" fill-opacity="0.55">«qué hacer en Eldorado»</text>
+        <text x="72" y="326" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.8">El sistema sale a buscar</text>
+        <text x="72" y="348" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.8">en ese momento.</text>
+        <text x="72" y="386" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.8">Entra al sitio del municipio</text>
+        <text x="72" y="408" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.8">y lo cita.</text>
+        <rect x="372" y="196" width="300" height="256" rx="4" fill="#FF3EBE" fill-opacity="0.1"/>
+        <rect x="372" y="196" width="4" height="256" fill="#FF3EBE"/>
+        <text x="396" y="226" font-size="11" font-weight="700" letter-spacing="1.4" fill="#FF3EBE">PUERTA CERRADA</text>
+        <text x="396" y="258" font-size="19" font-weight="700" fill="#FFFFFF">Nadie te nombra</text>
+        <text x="396" y="292" font-size="14" font-weight="300" font-style="italic" fill="#FFFFFF" fill-opacity="0.55">«qué hacer en Misiones»</text>
+        <text x="396" y="326" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.8">No sale a buscar: usa</text>
+        <text x="396" y="348" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.8">lo que ya sabe.</text>
+        <text x="396" y="386" font-size="11" font-weight="700" letter-spacing="1.2" fill="#FF3EBE">BLOQUEADOS POR EL SITIO</text>
+        <text x="396" y="408" font-size="13" font-weight="400" fill="#FFFFFF" fill-opacity="0.75">OpenAI · Anthropic</text>
+        <text x="396" y="428" font-size="13" font-weight="400" fill="#FFFFFF" fill-opacity="0.75">Google · Common Crawl</text>
+        <rect x="48" y="486" width="624" height="56" rx="4" fill="#D1FA3E"/>
+        <text x="72" y="521" font-size="18" font-weight="700" fill="#131625">El viaje se decide del lado derecho.</text>
+        <line x1="48" y1="566" x2="672" y2="566" stroke="#FFFFFF" stroke-opacity="0.1"/>
+        <text x="48" y="588" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.6">Nadie que todavía no eligió el destino escribe el nombre del destino.</text>
+        <text x="672" y="588" font-size="13" font-weight="700" fill="#D1FA3E" text-anchor="end">onlike.ar</text>
+      </svg>
+      <figcaption>Aparecer cuando te buscan por tu nombre lo resuelve cualquier sitio que funcione. Aparecer cuando nadie te nombra se juega en otro lado.</figcaption>
+    </figure>
+
+    <p>Aparecer cuando te buscan por tu nombre es lo fácil. Lo hace cualquier sitio que funcione. Aparecer cuando nadie te nombra es lo difícil, y es donde se decide el viaje, porque nadie que todavía no eligió el destino escribe el nombre del destino.</p>
+
+    <p>Le pedí al sistema que me explicara cómo puntúa las ciudades cuando arma un recorrido. Me contestó con una fórmula: cuánto pesa el atractivo principal, cuánta variedad aporta, si es fácil parar ahí, si vale el tiempo que consume, cuánto tiene de único.</p>
+
+    <p>Cinco de esos seis criterios se contestan con información publicada. Un destino no puntúa bajo porque le falte producto. Puntúa bajo porque nadie describió el producto.</p>
+
+    <p class="nota-destacado">La fórmula mide la información disponible. <b>Y devuelve un número que parece medir el lugar.</b></p>
+
+    <p>En ese recorrido, Eldorado quedó como parada opcional. Montecarlo, que está a treinta kilómetros y es más chica, quedó por encima y entre las cuatro paradas elegidas. Cuando el mismo viaje se rearmó para gente que busca naturaleza y aventura —que es exactamente lo que Eldorado tiene— Eldorado directamente no figuró.</p>
+
+    <p>Montecarlo no tiene más atractivos que Eldorado. Tiene su información mejor trabajada. Tiene sitio propio de turismo, y se nota cómo difunden lo que organizan. El sistema los citó dos veces por su sitio. A Eldorado, ninguna. Esto lo afirmo yo: conozco la provincia, sé lo que hay en cada lugar, y lo que separa a esas dos ciudades en esa lista no es el producto.</p>
+
+    <h2>Lo práctico, que es lo que arruina un viaje</h2>
+
+    <p>Hay un tipo de error que no se ve en una lista y es el que más molesta cuando ya estás parado en el lugar.</p>
+
+    <p>El plan de dos días viene con horarios asignados, con nombres propios y con lugares para comer. Está presentado como algo que se sigue, no como algo que se consulta. Y ahí adentro hay cosas que no avisa.<sup class="nref"><a href="#n4" id="r4">4</a></sup></p>
+
+    <p>Manda al Balneario Piray Guazú. Se concesiona en verano; ahora no hay nadie. Y para llegar hay unos diez kilómetros de tierra con piedras, que yo no hago con mi auto.</p>
+
+    <p>Manda a Km 14 a las nueve de la mañana, como si uno llegara y entrara. Hay actividades ahí que necesitan reserva previa.</p>
+
+    <p><strong>Ese negocio queda mal por una recomendación que no hizo, que no controla y de la que ni se entera.</strong></p>
+
+    <h2>Qué tipo de decisión hace falta</h2>
+
+    <p>Nada de esto se arregla con un desarrollo, ni con un asistente propio, ni automatizando nada. Tampoco se arregla publicando más: el exceso de información confunde igual que la falta.</p>
+
+    <p>Se arregla con alguien mirando. Alguien que sepa qué tiene que decir un destino sobre sí mismo para que un sistema pueda recomendarlo bien, que lo escriba una vez y lo sostenga en el tiempo. Es un trabajo de criterio, no de tecnología, y por eso no lo resuelve el que hizo el sitio.</p>
+
+    <p>Es la diferencia entre tener una web y tener una arquitectura digital. Una web la tiene cualquiera. La segunda es la que decide si tu localidad entra en la conversación o queda como parada opcional.</p>
+
+    <p>Ningún prestador puede hacerlo solo, y ahí está la buena noticia: no hace falta esperar a nadie. Una cámara, una asociación o seis emprendimientos que se ponen de acuerdo pueden ordenar la información de su destino sin pedirle permiso a nadie. Cuesta bastante menos que una campaña y queda como activo del lugar.</p>
+
+    <h2>Lo que me animo a decir</h2>
+
+    <p>No estoy midiendo nada. Estoy mostrando qué puede pasar y de dónde sale.<sup class="nref"><a href="#n5" id="r5">5</a></sup></p>
+
+    <p>Que ordenar la información de un lugar produzca más reservas no está probado, y no lo voy a afirmar.<sup class="nref"><a href="#n6" id="r6">6</a></sup> Lo que sí digo es esto: lo que quedó afuera de esa respuesta no compitió, y el que llegue con esa información va a llegar mal informado.</p>
+
+    <p>Puedo dar cuenta de lo que pasa en mi ciudad porque vivo acá. En ninguna otra podría hacer esto, y ese es el punto.</p>
+
+    <p class="nota-destacado">Si en el único lugar donde puedo verificar la lista falla, la pregunta que queda es <b>quién está verificando todas las demás.</b></p>
+
+    <div class="cierre-nota">
+      <p>Esta nota es de uso libre. Podés citarla, compartirla o usar los gráficos en una presentación, mencionando la fuente.</p>
+      <p>Si sos de Eldorado y tenés información que corrija o complete algo de acá, escribime y lo actualizo. Estas listas se arman mejor entre varios, y esa es exactamente la idea.</p>
+      <p>Y si trabajás en un destino, en una cámara o en un negocio turístico y querés ver cómo te están describiendo hoy, escribime a <a href="mailto:lau@onlike.ar">lau@onlike.ar</a>. Es una revisión que se hace con método y se puede repetir en el tiempo.</p>
+    </div>
+
+    <div class="nota-pd">
+      <span class="nota-pd-k">Posdata</span>
+      <p>Los folletos turísticos impresos de la ciudad, los que se entregan en mano, llevan un código QR al sitio oficial de turismo.</p>
+      <p>La persona que lo escanea ya está acá. Ya decidió venir, tiene el teléfono en la mano y quiere hacer algo hoy. <b>Es el momento de mayor intención que existe en todo un viaje.</b></p>
+      <p>Hasta hace unos días ese código llevaba a un error de servidor. Ahora, cuando el sitio responde, lleva a una página que le recomienda ir a los Saltos del Moconá.</p>
+      <p>Están a trescientos kilómetros.</p>
+    </div>
+
+    <div class="notas-pie">
+      <span class="notas-pie-k">Notas</span>
+      <ol>
+        <li id="n1"><a href="https://onlike.ar/destinos-turisticos-inteligencia-artificial.html">«Cuando una inteligencia artificial recomienda un destino turístico, decide también qué negocios aparecen»</a>, publicada el 27 de agosto de 2026. Es la primera nota de esta serie y desarrolla el mecanismo con fuentes, incluidas las de los inventarios turísticos de Alemania, Francia, Finlandia y España. <a href="#r1">↩</a></li>
+        <li id="n2">Consultas propias a ChatGPT del 26 y el 31 de agosto de 2026, en ventana de incógnito y sin sesión iniciada. Preguntas textuales y respuestas completas archivadas y disponibles a pedido. Estos sistemas generan un texto nuevo cada vez: la misma pregunta devuelve resultados distintos según el día y según quién la haga. Por eso la prueba se corrió en dos fechas, y por eso lo que importa acá no es una respuesta puntual sino lo que se repite en todas. <a href="#r2">↩</a></li>
+        <li id="n3"><a href="https://web.archive.org/web/*/turismo.eldorado.gob.ar" target="_blank" rel="noopener">Wayback Machine</a>, capturas de turismo.eldorado.gob.ar. Última con contenido y respuesta correcta antes de este año: 26 de marzo de 2025. El estado del sitio al 31 de agosto de 2026 quedó <a href="https://web.archive.org/web/20260831204902/https://turismo.eldorado.gob.ar/" target="_blank" rel="noopener">archivado ese día</a>. La revisión de lo que el sitio declara a los rastreadores es de elaboración propia sobre la página, el 31 de agosto de 2026. <a href="#r3">↩</a></li>
+        <li id="n4">No pregunté por horarios, accesos ni condiciones de reserva. Pregunté qué hacer, si eso era todo, y pedí un plan de dos días: las tres preguntas que hace alguien que está organizando un viaje. Un sistema puede tener esa información y darla si se la piden. Lo que registro es qué contiene el itinerario que entrega cuando no se la piden. <a href="#r4">↩</a></li>
+        <li id="n5">La clasificación de qué se puede visitar y qué no es mía, sobre conocimiento directo de la ciudad, y no sobre un registro oficial, porque ese registro no existe en forma pública y verificable. Si alguien tiene información distinta, quiero verla. <a href="#r5">↩</a></li>
+        <li id="n6">Jia, S., Ma, C., Chi, O. H. y Fan, A., «A socio-technical exploration of bias in generative AI travel planners», <a href="https://doi.org/10.1016/j.tourman.2026.105442" target="_blank" rel="noopener">Tourism Management, volumen 116, 2026, artículo 105442</a>. El estudio auditó cinco mil itinerarios generados con IA y encontró que los sesgos iniciales en la información sobre un destino condicionan después las recomendaciones de alojamiento, actividades y gastronomía. No tiene a la Argentina como objeto y no mide ingresos ni llegadas. Nadie midió todavía si corregir la información de un destino produce más reservas. <a href="#r6">↩</a></li>
+      </ol>
+    </div>
+
+    <div class="firma">
+      <img src="https://onlike.ar/assets/laura.webp" alt="Laura Silvester, licenciada en Turismo y consultora en estrategia digital">
+      <div>
+        <span class="firma-k">Acerca de mí</span>
+        <div class="firma-chips">
+          <span class="lima">Lic. en Turismo · UNaM</span>
+          <span>Docente hace 15 años</span>
+          <span>Eldorado, Misiones</span>
+        </div>
+        <p>Soy <strong>Laura Silvester</strong>. Licenciada en Turismo por la Universidad Nacional de Misiones, doy clases de marketing turístico hace quince años y llevo casi veinte en el sector, con experiencia en gestión hotelera. Trabajo desde Eldorado.</p>
+        <p>Con alojamientos, guías, excursiones, agencias y restaurantes con público turístico de toda la Argentina hago lo mismo que hice acá: mirar el negocio como lo mira alguien que todavía no lo conoce, y como lo lee una máquina. Qué encuentran, qué entienden, qué falta. Con destinos, cámaras y grupos de prestadores, ordenar la información del lugar.</p>
+        <p>Si algo de esto te tocó de cerca, escribime a <a href="mailto:lau@onlike.ar">lau@onlike.ar</a>.</p>
+        <div class="firma-redes">
+          <a href="https://www.instagram.com/lausilvester" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://linkedin.com/in/lausilvester" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.tiktok.com/@lausilvester" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.facebook.com/onlike.ar" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</article>
+
+<section class="sec-dark cierre">
+  <div class="container">
+    <span class="s-label" style="color:var(--lima);">Hacé la prueba en tu lugar</span>
+    <h2 class="s-title"><span class="thin">Preguntale a una IA qué hacer en tu localidad</span> y leé la respuesta con lo que sabés vos.</h2>
+    <p style="font-size:1.05rem;font-weight:300;line-height:1.8;color:rgba(255,255,255,0.68);max-width:640px;margin:0 auto;">Te lleva cinco minutos y no vas a necesitar que nadie te explique el resultado. Si querés entender por qué esto le pega directo a tu negocio, empezá por la nota anterior.</p>
+    <div class="cierre-btns">
+      <a href="https://onlike.ar/destinos-turisticos-inteligencia-artificial.html" class="btn-lima">Por qué te afecta a vos →</a>
+      <a href="https://onlike.ar/checklist-legibilidad-digital.html" class="btn-ghost">Hacer el checklist</a>
+      <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20le%C3%AD%20tu%20nota%20sobre%20Eldorado%20y%20quiero%20contarte%20mi%20caso." target="_blank" rel="noopener noreferrer" class="btn-ghost js-wa" data-wa="nota-eldorado-ia">Contame tu caso</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+  <div style="max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+    <div>
+      <p style="font-size:0.72rem;color:rgba(255,255,255,0.55);margin-bottom:0.3rem;font-weight:500;">ONLIKE · Laura Silvester · Estrategia y posicionamiento digital</p>
+      <p style="font-size:0.7rem;color:rgba(255,255,255,0.28);">Eldorado, Misiones, Argentina · <a href="mailto:lau@onlike.ar" style="color:rgba(255,255,255,0.28);">lau@onlike.ar</a> · WhatsApp +54 3751 566488</p>
+    </div>
+    <nav style="display:flex;gap:1.5rem;align-items:center;background:transparent;padding:0;border-bottom:0;backdrop-filter:none;-webkit-backdrop-filter:none;" aria-label="Legal">
+      <a href="https://onlike.ar/" style="font-size:0.7rem;color:rgba(255,255,255,0.3);">Onlike</a>
+      <a href="https://onlike.ar/notas.html" style="font-size:0.7rem;color:rgba(255,255,255,0.3);">Notas</a>
+      <a href="https://onlike.ar/privacidad.html" style="font-size:0.7rem;color:rgba(255,255,255,0.3);">Política de privacidad</a>
+      <span style="font-size:0.7rem;color:rgba(255,255,255,0.25);">© 2026</span>
+    </nav>
+  </div>
+</footer>
+
+<a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20contacto%20desde%20la%20nota%20sobre%20Eldorado%20y%20la%20IA." target="_blank" rel="noopener noreferrer" class="wa-float js-wa" data-wa="nota-eldorado-ia-flotante" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span>Escribime por WhatsApp</span>
+</a>
+
+<script>
+  var toggle = document.getElementById('nav-toggle');
+  var navLinks = document.getElementById('nav-links');
+  if (toggle && navLinks) {
+    toggle.addEventListener('click', function() {
+      var e = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!e));
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+  window.addEventListener('scroll', function() {
+    document.querySelector('header nav').style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(0,0,0,0.25)' : 'none';
+  }, {passive: true});
+  document.querySelectorAll('.js-wa').forEach(function(el){
+    el.addEventListener('click', function(){
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({event: 'click_whatsapp', wa_origen: el.getAttribute('data-wa')});
+    });
+  });
+</script>
+</body>
+</html>

@@ -17,8 +17,15 @@
   </url>
 
   <url>
+    <loc>https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
     <loc>https://onlike.ar/destinos-turisticos-inteligencia-artificial.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
     <xhtml:link rel="alternate" hreflang="es-AR" href="https://onlike.ar/destinos-turisticos-inteligencia-artificial.html"/>
@@ -28,7 +35,7 @@
 
   <url>
     <loc>https://onlike.ar/pt/destinos-turisticos-inteligencia-artificial.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
     <xhtml:link rel="alternate" hreflang="es-AR" href="https://onlike.ar/destinos-turisticos-inteligencia-artificial.html"/>
@@ -45,7 +52,7 @@
 
   <url>
     <loc>https://onlike.ar/notas.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -87,7 +94,7 @@
 
   <url>
     <loc>https://onlike.ar/links.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.50</priority>
   </url>
