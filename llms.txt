@@ -133,7 +133,7 @@ Versión en portugués: https://onlike.ar/pt/destinos-turisticos-inteligencia-ar
 
 Publicada el 31 de agosto de 2026. Segunda nota de la serie sobre legibilidad digital de destinos. La primera describe el mecanismo; esta muestra qué pasa cuando ese trabajo no se hace.
 
-Laura Silvester corrió la prueba en Eldorado, Misiones, la ciudad donde vive, porque es el único lugar donde puede leer una lista de atractivos y saber uno por uno qué hay detrás de cada nombre. De trece lugares recomendados, seis no se pueden visitar y uno funciona solo en verano. Cuatro prestadores locales que hacen kayak y cabalgatas no aparecen en un itinerario que afirma que la ciudad ofrece kayak y cabalgatas. Preguntando por la provincia sin nombrar Eldorado, el sistema recomienda once prestadores de otras localidades y de Eldorado nombra uno.
+Laura Silvester corrió la prueba en Eldorado, Misiones, la ciudad donde vive, porque es el único lugar donde puede leer una lista de atractivos y saber uno por uno qué hay detrás de cada nombre. De trece lugares recomendados, a seis no se puede mandar a un visitante —dos no tienen acceso habilitado y cuatro no son un atractivo turístico— y uno funciona solo en verano. Cuatro prestadores locales que hacen kayak y cabalgatas no aparecen en un itinerario que afirma que la ciudad ofrece kayak y cabalgatas. Preguntando por la provincia sin nombrar Eldorado, el sistema recomienda once prestadores de otras localidades y de Eldorado nombra uno.
 
 Idea propia central, y el aporte que la nota hace al tema: existen dos visibilidades distintas y no se ganan igual. Cuando alguien pregunta por un destino nombrándolo, el sistema busca en ese momento y puede citar la fuente oficial. Cuando alguien pregunta por la región sin nombrar ninguna ciudad, el sistema compara con lo que ya sabe, y ahí pesa lo que se incorporó antes. Aparecer cuando te buscan por tu nombre lo resuelve cualquier sitio que funcione. Aparecer cuando nadie te nombra es lo difícil, y es donde se decide el viaje, porque nadie que todavía no eligió el destino escribe el nombre del destino.
 
@@ -145,7 +145,7 @@ Consecuencia para el prestador: no se puede reservar en un lugar que no fue nomb
 
 Quién puede resolverlo: ningún prestador solo, pero sí una cámara, una asociación o un grupo de emprendimientos de un mismo destino, sin depender de una decisión pública.
 
-La nota declara sus límites: las respuestas de estos sistemas cambian entre consultas y entre personas; la clasificación de qué se puede visitar es de elaboración propia sobre conocimiento directo de la ciudad; y no existe evidencia pública de que corregir la información de un destino produzca más reservas.
+La nota declara sus límites: las respuestas de estos sistemas cambian entre consultas y entre personas; la clasificación de estos trece lugares es de elaboración propia sobre conocimiento directo de la ciudad; y no existe evidencia pública de que corregir la información de un destino produzca más reservas.
 
 URL: https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html
 
