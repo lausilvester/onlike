@@ -187,6 +187,9 @@
     .wa-float { padding: 0.9rem; border-radius: 50%; }
     footer { padding: 1.5rem; }
   }
+
+  .fuente-preferida { margin: 3rem 0 0; padding: 1.5rem 1.8rem; background: var(--gray-light); border-left: 3px solid var(--lima); display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; }
+  .fuente-preferida p { font-size: 0.94rem; font-weight: 500; line-height: 1.6; color: var(--ink); margin: 0; flex: 1 1 260px; }
 </style>
 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -685,6 +688,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
+    <div class="fuente-preferida">
+      <p>¿Te sirvió esta nota? Agregá ONLIKE como fuente preferida en Google.</p>
+      <div google-add-preferred-source-btn data-theme="dark" data-lang="es"></div>
+    </div>
+
   </div>
 </div>
 
@@ -751,5 +759,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
   });
 </script>
+<script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
 </body>
 </html>
