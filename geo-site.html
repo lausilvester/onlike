@@ -7,32 +7,31 @@
 <link rel="apple-touch-icon" sizes="192x192" href="assets/icon-192.png">
 <meta name="theme-color" content="#131625">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GEO Site · ONLIKE — Tu negocio existe para las inteligencias artificiales</title>
-<meta name="description" content="Un sitio construido para que ChatGPT, Gemini y Claude te encuentren, entiendan y citen correctamente. Servicio de Laura Silvester · ONLIKE · Argentina.">
+<title>GEO Site · ONLIKE — Un sitio escrito para que te lean las personas y las IA</title>
+<meta name="description" content="Sitio propio en tu dominio, escrito antes que diseñado, para que ChatGPT, Gemini y Claude encuentren material claro sobre tu negocio. Desde $250.000 ARS. Laura Silvester · ONLIKE · Eldorado, Misiones.">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Laura Silvester · ONLIKE">
 <link rel="canonical" href="https://onlike.ar/geo-site.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="GEO Site · ONLIKE — Tu negocio existe para las inteligencias artificiales">
-<meta property="og:description" content="Un sitio construido para que ChatGPT, Gemini y Claude te encuentren y recomienden. Servicio de Laura Silvester · ONLIKE · Argentina.">
+<meta property="og:title" content="GEO Site · ONLIKE — Un sitio escrito para que te lean las personas y las IA">
+<meta property="og:description" content="Las IA no adivinan: arman la respuesta con lo que está publicado. Un GEO Site es ese material, hecho bien. Desde $250.000 ARS.">
 <meta property="og:url" content="https://onlike.ar/geo-site.html">
 <meta property="og:locale" content="es_AR">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="GEO Site · ONLIKE — Tu negocio existe para las inteligencias artificiales">
-<meta name="twitter:description" content="Un sitio construido para que ChatGPT, Gemini y Claude te encuentren y recomienden. Servicio de Laura Silvester · ONLIKE · Argentina.">
+<meta name="twitter:title" content="GEO Site · ONLIKE — Un sitio escrito para que te lean las personas y las IA">
+<meta name="twitter:description" content="Las IA no adivinan: arman la respuesta con lo que está publicado. Un GEO Site es ese material, hecho bien.">
 <meta name="google-site-verification" content="hInoWU68h1d6ULKuopnIw51sVLE0juKjC98S1EQ3e98">
 <meta name="msvalidate.01" content="0F33184E2EE4830D19FB8460FF45F9AE">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
-<!-- Meta Pixel — reemplazá XXXXXXXXXXXXXXX con tu ID -->
-<!-- <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','XXXXXXXXXXXXXXX');fbq('track','PageView');</script> -->
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
     --dark: #131625;
     --dark-deep: #0b0d18;
     --accent: #C8FF00;
+    --purple: #8E51B9;
     --white: #FFFFFF;
     --gray-light: #F4F4F0;
     --font-display: 'Outfit', sans-serif;
@@ -45,7 +44,7 @@
   img { max-width: 100%; height: auto; display: block; }
   a { text-decoration: none; color: inherit; }
   header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; }
-  nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 3rem; background: rgba(255,255,255,0.98); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(19,22,37,0.08); }
+  header nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 3rem; background: rgba(255,255,255,0.98); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(19,22,37,0.08); }
   .nav-logo img { height: 36px; width: auto; }
   .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
   .nav-links a { color: rgba(19,22,37,0.55); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; transition: color var(--transition); }
@@ -53,9 +52,7 @@
   .nav-cta { background: var(--dark) !important; color: var(--white) !important; padding: 0.5rem 1.1rem !important; border-radius: var(--radius); }
   .nav-cta:hover { background: var(--accent) !important; color: var(--dark) !important; }
   .container { max-width: 1160px; margin: 0 auto; padding: 0 3rem; }
-  footer { background: var(--dark-deep); background-color: #0b0d18; padding: 1.75rem 3rem; border-top: 1px solid rgba(255,255,255,0.04); text-align: center; }
-  .footer-copy { font-size: 0.7rem; color: rgba(255,255,255,0.25); letter-spacing: 0.03em; }
-  .footer-copy span { color: #C8FF00; }
+  footer { background: var(--dark-deep); background-color: #0b0d18; border-top: 1px solid rgba(255,255,255,0.04); }
   .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; display: flex; align-items: center; gap: 0.65rem; background: #25D366; color: #fff; padding: 0.75rem 1.2rem 0.75rem 1rem; border-radius: 100px; font-size: 0.82rem; font-weight: 600; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: all var(--transition); }
   .wa-float:hover { background: #1ebe5d; transform: translateY(-2px); }
   .wa-float-text { white-space: nowrap; }
@@ -63,18 +60,39 @@
   .btn-accent:hover { opacity: 0.88; transform: translateY(-2px); }
   .btn-ghost { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--white); padding: 0.9rem 1.8rem; font-size: 0.9rem; font-weight: 500; border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius); transition: all var(--transition); }
   .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+  .btn-dark { display: inline-flex; align-items: center; gap: 0.5rem; background: #131625; color: #fff; padding: 0.9rem 1.8rem; font-size: 0.9rem; font-weight: 700; border-radius: 2px; transition: all 0.22s; }
+  .btn-dark:hover { background: var(--purple); }
+  .btn-dark-outline { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: #131625; padding: 0.9rem 1.8rem; font-size: 0.9rem; font-weight: 600; border: 1.5px solid rgba(19,22,37,0.3); border-radius: 2px; transition: all 0.22s; }
+  .btn-dark-outline:hover { border-color: #131625; }
   .section-label { display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.25rem; color: var(--accent); }
   .section-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.4rem, 4vw, 4.2rem); line-height: 0.92; letter-spacing: -0.02em; margin-bottom: 1.75rem; }
-  .geo-diagnostico-card { background:#131625; color:#fff; border-radius:4px; padding:2rem; margin-bottom:2.5rem; display:grid; grid-template-columns:1.4fr 0.8fr; gap:2rem; align-items:center; }
-  .geo-diagnostico-panel { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.09); border-radius:4px; padding:1.5rem; }
+
+  /* HERO */
+  .geo-hero { background: #131625; padding: 7rem 0 6rem; position: relative; overflow: hidden; }
+  .geo-hero::before { content: ''; position: absolute; top: -150px; right: -150px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(200,255,0,0.08) 0%, transparent 65%); pointer-events: none; }
+  .geo-hero-inner { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 4.5rem; align-items: center; }
+  .geo-tag { display: inline-block; background: rgba(200,255,0,0.12); color: #C8FF00; border: 1px solid rgba(200,255,0,0.25); padding: 0.35rem 0.9rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; border-radius: 100px; margin-bottom: 1.5rem; }
+  .geo-hero h1 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.6rem, 4.4vw, 4.4rem); line-height: 0.95; letter-spacing: -0.02em; color: #fff; margin-bottom: 1.5rem; }
+  .geo-hero h1 em { font-style: normal; color: #C8FF00; }
+  .geo-hero-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.75; color: rgba(255,255,255,0.62); margin-bottom: 1.5rem; max-width: 520px; }
+  .geo-hero-claim { font-size: 0.95rem; font-weight: 700; color: #C8FF00; line-height: 1.5; margin-bottom: 2.25rem; max-width: 460px; }
+  .geo-hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .geo-ask { background: rgba(200,255,0,0.04); border: 1px solid rgba(200,255,0,0.14); border-radius: 4px; padding: 2.25rem 2rem; }
+  .geo-ask-label { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #C8FF00; margin-bottom: 1rem; }
+  .geo-ask-q { font-family: 'Outfit', sans-serif; font-size: 1.3rem; font-weight: 700; line-height: 1.25; color: #fff; margin-bottom: 1.25rem; }
+  .geo-ask-list { list-style: none; margin-bottom: 1.25rem; }
+  .geo-ask-list li { font-size: 0.82rem; color: rgba(255,255,255,0.5); line-height: 1.5; padding: 0.5rem 0; border-top: 1px solid rgba(255,255,255,0.07); }
+  .geo-ask-close { font-size: 0.82rem; color: rgba(255,255,255,0.72); line-height: 1.65; }
+
   @media (max-width: 900px) {
-    nav { padding: 1rem 1.5rem; }
+    header nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
     .container { padding: 0 1.5rem; }
-    .geo-diagnostico-card { grid-template-columns: 1fr; gap: 1.5rem; }
     .wa-float-text { display: none; }
     .wa-float { padding: 0.85rem; border-radius: 50%; }
-    footer { background-color: #0b0d18; padding: 1.5rem; }
+    .geo-hero { padding: 5rem 0 4rem; }
+    .geo-hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .geo-hero-btns { flex-direction: column; }
   }
 </style>
 <!-- Google Tag Manager -->
@@ -84,138 +102,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PN327WB');</script>
 <!-- End Google Tag Manager -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      "@id": "https://onlike.ar/geo-site.html",
-      "url": "https://onlike.ar/geo-site.html",
-      "name": "GEO Site — Tu negocio tiene que existir para las inteligencias artificiales",
-      "description": "Un sitio construido para que ChatGPT, Gemini y Claude te encuentren, te entiendan y te recomienden. Servicio de ONLIKE · Laura Silvester · Argentina.",
-      "inLanguage": "es-AR",
-      "isPartOf": {
-        "@id": "https://onlike.ar/#website"
-      },
-      "author": {
-        "@id": "https://onlike.ar/#person"
-      },
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "ONLIKE",
-            "item": "https://onlike.ar/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "GEO Site",
-            "item": "https://onlike.ar/geo-site.html"
-          }
-        ]
-      }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://onlike.ar/geo-site.html#service",
-      "name": "GEO Site",
-      "alternateName": [
-        "Sitio optimizado para inteligencias artificiales",
-        "AI-optimized website",
-        "Generative Engine Optimization Site"
-      ],
-      "description": "Página web de una sola pantalla diseñada específicamente para ser leída, entendida y recomendada por sistemas de inteligencia artificial generativa como ChatGPT, Gemini, Claude y Perplexity. Incluye diseño profesional, llms.txt, schema JSON-LD, robots.txt optimizado para AI crawlers y ai-plugin.json.",
-      "provider": {
-        "@id": "https://onlike.ar/#organization"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Argentina"
-      },
-      "serviceType": "Generative Engine Optimization",
-      "category": [
-        "GEO",
-        "AEO",
-        "Posicionamiento en inteligencias artificiales",
-        "Marketing digital"
-      ],
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "price": "200",
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "minPrice": "200",
-          "priceCurrency": "USD",
-          "description": "Precio desde USD 200. El valor final depende del contenido disponible y la complejidad del caso."
-        },
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@id": "https://onlike.ar/#organization"
-        }
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Modalidades GEO Site",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "name": "GEO Site con diagnóstico previo",
-            "description": "Primero auditamos cómo aparece el negocio en las principales IAs. El GEO Site cierra esa brecha con precisión."
-          },
-          {
-            "@type": "Offer",
-            "name": "GEO Site directo",
-            "description": "El cliente aporta datos, contenido e identidad visual. Implementación en 72 horas."
-          }
-        ]
-      },
-      "serviceOutput": "Sitio web publicado en dominio propio con capa técnica completa para visibilidad en inteligencias artificiales"
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "¿Qué es un GEO Site?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Un GEO Site es una página web de una sola pantalla con diseño profesional y una capa técnica invisible que permite que sistemas de IA como ChatGPT, Gemini y Claude encuentren, entiendan y recomienden a un negocio cuando alguien pregunta por lo que ese negocio ofrece."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cuánto cuesta un GEO Site?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "El precio parte desde USD 200. El valor final depende del contenido disponible y la complejidad del caso. Hay dos modalidades: con diagnóstico previo o directo con el material del cliente."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿El GEO Site reemplaza mi sitio web actual?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No necesariamente. El GEO Site puede funcionar como capa complementaria de un sitio existente, o como presencia digital principal para negocios que hoy no tienen sitio web. En ambos casos cumple una función específica: ser legible para las IAs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿En cuánto tiempo está listo un GEO Site?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "En la modalidad directa, el GEO Site está listo en 72 horas una vez que el cliente entrega el material necesario. En la modalidad con diagnóstico previo, el tiempo total depende del diagnóstico."
-          }
-        }
-      ]
-    }
-  ]
-}
-</script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -237,310 +123,538 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <main id="main" role="main" style="padding-top: 70px;">
 
-<style>
-  .geo-hero { background: #131625; min-height: 100vh; display: flex; align-items: center; padding: 6rem 0; position: relative; overflow: hidden; }
-  .geo-hero::before { content: ''; position: absolute; top: -150px; right: -150px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(200,255,0,0.08) 0%, transparent 65%); pointer-events: none; }
-  .geo-hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-  .geo-tag { display: inline-block; background: rgba(200,255,0,0.12); color: #C8FF00; border: 1px solid rgba(200,255,0,0.25); padding: 0.35rem 0.9rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; border-radius: 100px; margin-bottom: 1.5rem; }
-  .geo-hero h1 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(3rem, 5vw, 5rem); line-height: 0.92; letter-spacing: -0.02em; color: #fff; margin-bottom: 1.5rem; }
-  .geo-hero h1 em { font-style: normal; color: #C8FF00; }
-  .geo-hero-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.75; color: rgba(255,255,255,0.6); margin-bottom: 2.5rem; max-width: 480px; }
-  .geo-hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
-  .geo-visual { background: rgba(200,255,0,0.04); border: 1px solid rgba(200,255,0,0.12); border-radius: 4px; padding: 2.5rem; }
-  .geo-visual-title { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #C8FF00; margin-bottom: 1.25rem; }
-  .geo-file { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.85rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
-  .geo-file:last-child { border-bottom: none; }
-  .geo-file-icon { width: 28px; height: 28px; background: rgba(200,255,0,0.1); border-radius: 4px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.65rem; font-weight: 700; color: #C8FF00; letter-spacing: 0.05em; }
-  .geo-file-name { font-size: 0.82rem; font-weight: 600; color: #fff; margin-bottom: 0.2rem; }
-  .geo-file-desc { font-size: 0.75rem; color: rgba(255,255,255,0.4); line-height: 1.5; }
-
-  .geo-problem { background: #fff; color: #131625; padding: 7rem 0; }
-  .geo-problem h2 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.4rem, 4vw, 4rem); line-height: 0.92; letter-spacing: -0.02em; color: #131625; margin-bottom: 1.5rem; }
-  .geo-problem-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #8E51B9; margin-bottom: 1.25rem; display: block; }
-  .geo-problem-text { font-size: 1rem; color: rgba(19,22,37,0.65); line-height: 1.85; max-width: 600px; }
-  .geo-problem-text strong { color: #131625; font-weight: 600; }
-  .geo-rubros { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2.5rem; }
-  .geo-rubro { background: #F4F4F0; color: #131625; padding: 0.4rem 0.9rem; font-size: 0.75rem; font-weight: 500; border-radius: 100px; }
-
-  .geo-que-es { background: #131625; padding: 7rem 0; }
-  .geo-que-es-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
-  .geo-features { margin-top: 2rem; }
-  .geo-feature { border-top: 1px solid rgba(255,255,255,0.08); padding: 1.25rem 0; }
-  .geo-feature:last-child { border-bottom: 1px solid rgba(255,255,255,0.08); }
-  .geo-feature-title { font-size: 0.9rem; font-weight: 700; color: #C8FF00; margin-bottom: 0.4rem; }
-  .geo-feature-text { font-size: 0.83rem; color: rgba(255,255,255,0.55); line-height: 1.7; }
-
-  .geo-como { background: #C8FF00; color: #131625; padding: 7rem 0; }
-  .geo-como h2 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.4rem, 4vw, 4rem); line-height: 0.92; letter-spacing: -0.02em; color: #131625; margin-bottom: 3rem; }
-  .geo-como-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(19,22,37,0.5); margin-bottom: 1.25rem; display: block; }
-  .geo-paths { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5px; background: rgba(19,22,37,0.15); margin-bottom: 3rem; }
-  .geo-path { background: #C8FF00; padding: 2rem 1.75rem; }
-  .geo-path-num { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; color: rgba(19,22,37,0.35); margin-bottom: 0.75rem; }
-  .geo-path h3 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.4rem; color: #131625; margin-bottom: 0.75rem; line-height: 1.1; }
-  .geo-path p { font-size: 0.85rem; color: rgba(19,22,37,0.6); line-height: 1.7; }
-  .geo-precio { text-align: center; }
-  .geo-precio-desde { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(19,22,37,0.45); margin-bottom: 0.5rem; }
-  .geo-precio-num { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 3.5rem; color: #131625; line-height: 1; margin-bottom: 0.5rem; }
-  .geo-precio-nota { font-size: 0.8rem; color: rgba(19,22,37,0.5); margin-bottom: 2rem; }
-  .geo-cta-row { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
-  .btn-dark { display: inline-flex; align-items: center; gap: 0.5rem; background: #131625; color: #fff; padding: 0.9rem 1.8rem; font-size: 0.9rem; font-weight: 700; border-radius: 2px; transition: all 0.22s; }
-  .btn-dark:hover { background: #8E51B9; }
-  .btn-dark-outline { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: #131625; padding: 0.9rem 1.8rem; font-size: 0.9rem; font-weight: 600; border: 1.5px solid rgba(19,22,37,0.3); border-radius: 2px; transition: all 0.22s; }
-  .btn-dark-outline:hover { border-color: #131625; }
-
-  @media (max-width: 900px) {
-    .geo-hero-inner, .geo-que-es-inner, .geo-paths, .geo-diagnostico-card { grid-template-columns: 1fr; gap: 2.5rem; }
-    .geo-hero { padding: 4rem 0; }
-    .geo-hero-btns { flex-direction: column; }
-    .geo-problem, .geo-que-es, .geo-como { padding: 5rem 0; }
-    .geo-cta-row { flex-direction: column; align-items: center; }
-  }
-</style>
-
 <section class="geo-hero" aria-labelledby="geo-h1">
   <div class="container">
     <div class="geo-hero-inner">
       <div>
-        <span class="geo-tag">Nuevo servicio · ONLIKE</span>
-        <h1 id="geo-h1">Aparecé y sé<br><em>recomendado</em> por<br>ChatGPT, Gemini<br>y Claude.</h1>
-        <p class="geo-hero-sub">Una página profesional con capa invisible especialmente creada para que las inteligencias artificiales te encuentren, te entiendan correctamente y te recomienden cuando alguien pregunta por tu servicio.</p>
-        <p style="font-size:0.85rem;font-weight:700;color:#C8FF00;letter-spacing:0.04em;margin-bottom:2rem;">De invisible a recomendado en solo 72 horas.</p>
+        <span class="geo-tag">GEO Site · ONLIKE</span>
+        <h1 id="geo-h1">Las IA no adivinan.<br>Arman la respuesta<br>con lo que <em>está publicado</em>.</h1>
+        <p class="geo-hero-sub">Si de tu negocio hay poco escrito, hay poco para relacionar cuando alguien pregunta. Un GEO Site es ese material: un sitio propio, escrito antes que diseñado, para que te entiendan las personas y encuentren contenido claro los sistemas que hoy recorren internet.</p>
+        <p class="geo-hero-claim">Si aparecés, podés ser recomendado. Si no aparecés, no.</p>
         <div class="geo-hero-btns">
-          <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20que%20mi%20negocio%20sea%20recomendado%20por%20las%20IAs.%20Me%20interesa%20el%20GEO%20Site." target="_blank" rel="noopener noreferrer" class="btn-accent">→ Cotizá tu GEO Site</a>
-          <a href="https://onlike.ar/test.html" class="btn-ghost">¿Lo necesito? Hacé el test →</a>
+          <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20interesa%20el%20GEO%20Site.%20Quiero%20cotizar." target="_blank" rel="noopener noreferrer" class="btn-accent">→ Cotizá tu GEO Site</a>
+          <a href="#entrego" class="btn-ghost">Ver qué incluye ↓</a>
         </div>
       </div>
-      <div class="geo-visual">
-        <p class="geo-visual-title">Lo que no se ve — pero hace todo el trabajo</p>
-        <div class="geo-file">
-          <div class="geo-file-icon">TXT</div>
-          <div><p class="geo-file-name">llms.txt</p><p class="geo-file-desc">Contexto estructurado en formato legible para que las IAs entiendan exactamente qué hacés y cómo citarte.</p></div>
-        </div>
-        <div class="geo-file">
-          <div class="geo-file-icon">JSON</div>
-          <div><p class="geo-file-name">Schema JSON-LD</p><p class="geo-file-desc">Estructura de datos para que Google AI sepa exactamente qué hacés y para quién.</p></div>
-        </div>
-        <div class="geo-file">
-          <div class="geo-file-icon">BOT</div>
-          <div><p class="geo-file-name">robots.txt</p><p class="geo-file-desc">Configuración clara de acceso para que los crawlers de IA tengan vía libre a tu contenido.</p></div>
-        </div>
-        <div class="geo-file">
-          <div class="geo-file-icon">AI</div>
-          <div><p class="geo-file-name">ai-plugin.json</p><p class="geo-file-desc">Señal de confianza para agentes de IA autónomos que buscan y recomiendan servicios.</p></div>
-        </div>
+      <div class="geo-ask">
+        <p class="geo-ask-label">Una pregunta para saber si te hace falta</p>
+        <p class="geo-ask-q">¿Qué cosas importantes de tu negocio no están escritas hoy en ningún lado?</p>
+        <ul class="geo-ask-list">
+          <li>Qué incluye cada servicio</li>
+          <li>Cuánto tarda</li>
+          <li>Cómo se contrata</li>
+          <li>Qué formas de pago tenés</li>
+          <li>Las preguntas que te hacen todas las semanas</li>
+        </ul>
+        <p class="geo-ask-close">Si la lista es corta, con lo que tenés puede alcanzar. Si es larga, ahí está tu sitio.</p>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .geo-problem { background: #fff; color: #131625; padding: 6.5rem 0; }
+  .geo-problem h2 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.2rem, 4vw, 3.8rem); line-height: 0.94; letter-spacing: -0.02em; color: #131625; margin-bottom: 1.5rem; }
+  .geo-problem-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #8E51B9; margin-bottom: 1.25rem; display: block; }
+  .geo-problem-text { font-size: 1rem; color: rgba(19,22,37,0.65); line-height: 1.85; max-width: 620px; }
+  .geo-problem-text strong { color: #131625; font-weight: 600; }
+  .geo-clic { margin-top: 3rem; border-top: 2px solid #131625; padding-top: 1.75rem; max-width: 720px; }
+  .geo-clic-h { font-family: 'Outfit', sans-serif; font-size: 1.3rem; font-weight: 700; color: #131625; margin-bottom: 0.9rem; line-height: 1.2; }
+  .geo-clic-t { font-size: 0.95rem; color: rgba(19,22,37,0.68); line-height: 1.85; }
+  .geo-clic-t strong { color: #131625; font-weight: 700; }
+  .geo-clic-f { font-size: 0.72rem; color: rgba(19,22,37,0.38); margin-top: 1.25rem; line-height: 1.5; }
+
+  .geo-promesa-intro { font-size: 1.05rem; color: rgba(19,22,37,0.72); line-height: 1.8; max-width: 720px; margin-bottom: 2rem; font-weight: 500; }
+
+  .geo-quien { background: #fff; color: #131625; padding: 6rem 0; }
+  .geo-quien h2 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.2rem,4vw,3.6rem); line-height: 0.94; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
+  .geo-criterio { font-size: 1.05rem; color: rgba(19,22,37,0.75); line-height: 1.8; max-width: 700px; border-left: 3px solid #C8FF00; padding-left: 1.25rem; }
+  .geo-quien-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: #e8e8e0; margin-top: 3rem; }
+  .geo-quien-col { background: #fff; padding: 1.9rem 1.6rem; }
+  .geo-quien-col.tenue { background: #F4F4F0; }
+  .geo-quien-h { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 1.1rem; line-height: 1.4; }
+  .geo-quien-col ul { list-style: none; }
+  .geo-quien-col li { font-size: 0.86rem; color: rgba(19,22,37,0.68); line-height: 1.5; padding: 0.55rem 0; border-top: 1px solid rgba(19,22,37,0.08); }
+  .geo-quien-col.tenue li { color: rgba(19,22,37,0.45); }
+  .geo-quien-f { font-size: 0.72rem; color: rgba(19,22,37,0.38); margin-top: 1.25rem; line-height: 1.6; max-width: 720px; }
+
+  .geo-promesa { background: #C8FF00; color: #131625; padding: 5rem 0; }
+  .geo-promesa-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(19,22,37,0.5); margin-bottom: 1.5rem; display: block; }
+  .geo-promesa-big { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(1.6rem, 3vw, 2.5rem); line-height: 1.15; letter-spacing: -0.015em; color: #131625; max-width: 860px; margin-bottom: 2rem; }
+  .geo-logica { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5px; background: rgba(19,22,37,0.18); max-width: 760px; }
+  .geo-logica-item { background: #C8FF00; padding: 1.5rem 1.5rem; }
+  .geo-logica-item p:first-child { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(19,22,37,0.4); margin-bottom: 0.5rem; }
+  .geo-logica-item p:last-child { font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 700; color: #131625; line-height: 1.35; }
+
+  .geo-razones { background: #131625; padding: 6.5rem 0; }
+  .geo-tri { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; background: rgba(255,255,255,0.08); margin-top: 3rem; }
+  .geo-tri-item { background: #131625; padding: 2.25rem 1.75rem; }
+  .geo-tri-num { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 1rem; }
+  .geo-tri-item h3 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.15rem; color: #C8FF00; margin-bottom: 0.75rem; line-height: 1.2; }
+  .geo-tri-item p { font-size: 0.86rem; color: rgba(255,255,255,0.55); line-height: 1.75; }
+
+  .geo-requisitos { background: #F4F4F0; color: #131625; padding: 6.5rem 0; }
+  .geo-requisitos h2 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.2rem, 4vw, 3.8rem); line-height: 0.94; letter-spacing: -0.02em; color: #131625; margin-bottom: 1.25rem; }
+  .geo-tri-light { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: #e2e2da; margin-top: 3rem; }
+  .geo-tri-light-item { background: #fff; padding: 2.25rem 1.75rem; }
+  .geo-tri-light-item .geo-tri-num { color: rgba(19,22,37,0.3); }
+  .geo-tri-light-item h3 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.15rem; color: #131625; margin-bottom: 0.75rem; line-height: 1.2; }
+  .geo-tri-light-item p { font-size: 0.86rem; color: rgba(19,22,37,0.6); line-height: 1.75; }
+  .geo-kicker { font-size: 0.95rem; font-weight: 700; color: #8E51B9; margin-top: 2rem; }
+
+  @media (max-width: 900px) {
+    .geo-problem, .geo-razones, .geo-requisitos { padding: 4.5rem 0; }
+    .geo-promesa { padding: 3.5rem 0; }
+    .geo-tri, .geo-tri-light, .geo-logica, .geo-quien-grid { grid-template-columns: 1fr; }
+    .geo-quien { padding: 4.5rem 0; }
+  }
+</style>
 
 <section class="geo-problem" aria-labelledby="geo-problema">
   <div class="container">
     <span class="geo-problem-label">El problema</span>
-    <h2 id="geo-problema">¿Cuántas veces alguien<br>preguntó por tu servicio<br>en las IAs y no apareciste?</h2>
-    <p class="geo-problem-text">Cuando alguien le pregunta a ChatGPT <em>"¿qué ecolodge me recomendás en Misiones?"</em>, <em>"¿cuál es el mejor fotógrafo de casamientos en Córdoba?"</em> o <em>"¿dónde como comida celíaca cerca?"</em>, la IA responde con lo que encontró y entendió. Pero mientras tanto, la mayoría ya no busca solo en Google, Instagram o LinkedIn. Cada vez más consulta ChatGPT, Gemini o Claude. Si tu negocio no tiene la estructura correcta, <strong>simplemente no aparece</strong>. O peor: aparece con información incompleta o desactualizada.</p>
-    <p class="geo-problem-text" style="margin-top:1.25rem;">Mientras tanto, la competencia — o las OTAs — sí aparecen. Y se quedan con ese cliente.</p>
-    <p class="geo-problem-text" style="margin-top:1rem;font-style:italic;color:rgba(19,22,37,0.5);">La búsqueda está cambiando. El GEO Site es la respuesta concreta a ese cambio.</p>
-    <div class="geo-rubros">
-      <span class="geo-rubro">Alojamientos turísticos</span>
-      <span class="geo-rubro">Gastronomía</span>
-      <span class="geo-rubro">Fotógrafos y artistas</span>
-      <span class="geo-rubro">Estudios jurídicos y contables</span>
-      <span class="geo-rubro">Arquitectos y diseñadores</span>
-      <span class="geo-rubro">Terapeutas y psicólogos</span>
-      <span class="geo-rubro">Médicos con práctica privada</span>
-      <span class="geo-rubro">Inmobiliarias independientes</span>
-      <span class="geo-rubro">Wedding planners</span>
-      <span class="geo-rubro">Comercios locales</span>
+    <h2 id="geo-problema">¿Cuántas veces alguien<br>preguntó por tu servicio<br>y contestaron otro nombre?</h2>
+    <p class="geo-problem-text">Cuando alguien pregunta <em>"¿qué ecolodge me recomendás en Misiones?"</em>, <em>"¿cuál es el mejor fotógrafo de casamientos en Córdoba?"</em> o <em>"¿dónde como comida celíaca cerca?"</em>, la respuesta llega armada. Cada vez más gente le pregunta directamente a un asistente de inteligencia artificial dónde alojarse, a qué profesional consultar o qué empresa presta determinado servicio. Y los buscadores ya contestan con un resumen antes de mostrar los resultados.</p>
+    <p class="geo-problem-text" style="margin-top:1.25rem;"><strong>Esos sistemas no adivinan.</strong> Arman la respuesta con lo que está publicado. Si de tu negocio hay poco escrito, hay poco para relacionar con esa consulta. Mientras tanto la competencia — o las OTAs — sí tienen material disponible. Y se quedan con ese cliente.</p>
+    <div class="geo-clic">
+      <p class="geo-clic-h">Y la decisión puede empezar antes del clic</p>
+      <p class="geo-clic-t">Cuando el buscador responde con un resumen armado por inteligencia artificial, la gente hace la mitad de clic hacia afuera: baja del 15% al 8%. Y termina ahí, sin abrir nada, en uno de cada cuatro casos. Los enlaces citados adentro del propio resumen reciben clic en alrededor del 1% de las visitas.</p>
+      <p class="geo-clic-t" style="margin-top:1rem;"><strong>Esa visita puede no existir nunca.</strong> Y aun así tu negocio pudo entrar — o quedar afuera — de la respuesta que decidió la compra.</p>
+      <p class="geo-clic-f">Pew Research Center · 68.879 búsquedas de adultos en Estados Unidos · marzo 2025.</p>
     </div>
   </div>
 </section>
 
-<section style="background:#0d0f1c;padding:5rem 0;" aria-labelledby="geo-beneficios">
+<section class="geo-promesa" aria-labelledby="geo-promesa-t">
   <div class="container">
-    <span class="section-label" style="color:#C8FF00;">Beneficios concretos</span>
-    <h2 id="geo-beneficios" class="section-title" style="color:#fff;margin-bottom:3rem;">Qué vas a ganar<br>con tu GEO Site.</h2>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5px;background:rgba(255,255,255,0.06);">
-      <div style="background:#0d0f1c;padding:2rem 1.75rem;">
-        <p style="font-size:1.8rem;margin-bottom:0.75rem;">🎯</p>
-        <h3 style="font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;color:#C8FF00;margin-bottom:0.6rem;">Aparecés cuando te buscan</h3>
-        <p style="font-size:0.83rem;color:rgba(255,255,255,0.55);line-height:1.7;">Cuando tus clientes ideales preguntan en las IAs por lo que ofrecés, tu negocio aparece en la respuesta.</p>
+    <span class="geo-promesa-label">Lo que prometo y lo que no</span>
+    <p class="geo-promesa-intro">Si querés que las IA digan de tu negocio lo que vos querés que digan, tenés que ponerlo en el sistema. Escrito, claro, y en un lugar que puedan leer. La mejor forma sigue siendo un sitio propio.</p>
+    <p class="geo-promesa-big" id="geo-promesa-t">Ninguna web garantiza que te recomienden. Lo que sí podés mejorar es el material que existe sobre vos, que es la parte que depende de vos.</p>
+    <div class="geo-logica">
+      <div class="geo-logica-item">
+        <p>Si no aparecés</p>
+        <p>No te pueden recomendar. No hay vuelta.</p>
       </div>
-      <div style="background:#0d0f1c;padding:2rem 1.75rem;">
-        <p style="font-size:1.8rem;margin-bottom:0.75rem;">📢</p>
-        <h3 style="font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;color:#C8FF00;margin-bottom:0.6rem;">Te recomiendan sin pagar</h3>
-        <p style="font-size:0.83rem;color:rgba(255,255,255,0.55);line-height:1.7;">Reducís tu dependencia de publicidad pagada. Cuando una IA puede encontrarte y citarte, no necesitás pagar por cada mención.</p>
-      </div>
-      <div style="background:#0d0f1c;padding:2rem 1.75rem;">
-        <p style="font-size:1.8rem;margin-bottom:0.75rem;">✏️</p>
-        <h3 style="font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;color:#C8FF00;margin-bottom:0.6rem;">Establecés la fuente oficial</h3>
-        <p style="font-size:0.83rem;color:rgba(255,255,255,0.55);line-height:1.7;">Tu sitio se convierte en la referencia. Las IAs actuales la leen; las futuras pueden entrenarla.</p>
-      </div>
-      <div style="background:#0d0f1c;padding:2rem 1.75rem;">
-        <p style="font-size:1.8rem;margin-bottom:0.75rem;">🏛️</p>
-        <h3 style="font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;color:#C8FF00;margin-bottom:0.6rem;">Un activo digital propio</h3>
-        <p style="font-size:0.83rem;color:rgba(255,255,255,0.55);line-height:1.7;">No dependés de algoritmos de redes sociales. El GEO Site es tuyo y trabaja por vos las 24 horas.</p>
-      </div>
-      <div style="background:#0d0f1c;padding:2rem 1.75rem;">
-        <p style="font-size:1.8rem;margin-bottom:0.75rem;">📉</p>
-        <h3 style="font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;color:#C8FF00;margin-bottom:0.6rem;">Menos dependencia de terceros</h3>
-        <p style="font-size:0.83rem;color:rgba(255,255,255,0.55);line-height:1.7;">Reducís la dependencia de Booking, Instagram Ads y el alcance orgánico que cada vez es más difícil.</p>
-      </div>
-      <div style="background:#0d0f1c;padding:2rem 1.75rem;">
-        <p style="font-size:1.8rem;margin-bottom:0.75rem;">⚡</p>
-        <h3 style="font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;color:#C8FF00;margin-bottom:0.6rem;">Resultados en semanas</h3>
-        <p style="font-size:0.83rem;color:rgba(255,255,255,0.55);line-height:1.7;">Los crawlers de IA indexan rápido. En pocas semanas podés verificar cómo aparece tu negocio en las respuestas.</p>
+      <div class="geo-logica-item">
+        <p>Si aparecés</p>
+        <p>Podés ser recomendado. Ahí empieza a ser posible.</p>
       </div>
     </div>
   </div>
 </section>
 
-
-<section style="background:#131625;padding:4rem 0 5rem;" aria-labelledby="geo-tecnico">
+<section class="geo-quien" aria-labelledby="geo-quien-t">
   <div class="container">
-    <span class="section-label" style="color:#C8FF00;">La capa invisible</span>
-    <h2 id="geo-tecnico" class="section-title" style="color:#fff;margin-bottom:0.5rem;">Cuatro archivos que<br>hacen todo el trabajo.</h2>
-    <p style="font-size:0.95rem;color:rgba(255,255,255,0.5);line-height:1.75;margin-bottom:2.5rem;max-width:560px;">No se ven en el sitio. Pero son lo que le permite a ChatGPT, Gemini y Claude encontrarte, entenderte y recomendarte.</p>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,0.06);">
-      <div style="background:#131625;padding:2rem 1.75rem;display:flex;gap:1rem;align-items:flex-start;">
-        <div class="geo-file-icon">TXT</div>
-        <div><p class="geo-file-name">llms.txt</p><p class="geo-file-desc">Contexto estructurado en formato legible para que las IAs entiendan exactamente qué hacés y cómo citarte.</p></div>
+    <span class="geo-problem-label">Para quién pesa más</span>
+    <h2 id="geo-quien-t">No a todos los negocios<br>les pesa igual.</h2>
+    <p class="geo-criterio">Cuanto más necesita una persona explicar su necesidad, comparar opciones, verificar y confiar antes de decidir, más espacio tiene una inteligencia artificial para intervenir en esa decisión.</p>
+    <div class="geo-quien-grid">
+      <div class="geo-quien-col">
+        <p class="geo-quien-h" style="color:#8E51B9;">Donde ya hay evidencia</p>
+        <ul>
+          <li>Turismo y alojamiento</li>
+          <li>Tecnología y software</li>
+          <li>Productos que se comparan antes de comprar</li>
+          <li>Servicios financieros</li>
+          <li>Información de salud</li>
+        </ul>
       </div>
-      <div style="background:#131625;padding:2rem 1.75rem;display:flex;gap:1rem;align-items:flex-start;">
-        <div class="geo-file-icon">JSON</div>
-        <div><p class="geo-file-name">Schema JSON-LD</p><p class="geo-file-desc">Le dice a Google AI exactamente qué hacés, para quién y dónde — en el lenguaje que entiende.</p></div>
+      <div class="geo-quien-col">
+        <p class="geo-quien-h" style="color:#8E51B9;">Alto potencial por tipo de decisión</p>
+        <ul>
+          <li>Profesionales especializados</li>
+          <li>Contadores y escribanas</li>
+          <li>Abogados</li>
+          <li>Consultoría y B2B</li>
+          <li>Inmobiliarias</li>
+          <li>Educación e instituciones</li>
+          <li>Productos a medida</li>
+        </ul>
       </div>
-      <div style="background:#131625;padding:2rem 1.75rem;display:flex;gap:1rem;align-items:flex-start;">
-        <div class="geo-file-icon">BOT</div>
-        <div><p class="geo-file-name">robots.txt</p><p class="geo-file-desc">Configuración clara de acceso para que los crawlers de IA tengan vía libre y completa a tu contenido.</p></div>
-      </div>
-      <div style="background:#131625;padding:2rem 1.75rem;display:flex;gap:1rem;align-items:flex-start;">
-        <div class="geo-file-icon">AI</div>
-        <div><p class="geo-file-name">ai-plugin.json</p><p class="geo-file-desc">Señal de confianza para agentes de IA autónomos que buscan y recomiendan servicios.</p></div>
+      <div class="geo-quien-col tenue">
+        <p class="geo-quien-h" style="color:rgba(19,22,37,0.4);">Menor peso hoy</p>
+        <ul>
+          <li>Compra cotidiana y de baja consideración</li>
+          <li>Reposición rutinaria</li>
+          <li>Kiosco</li>
+          <li>Estación de servicio</li>
+        </ul>
       </div>
     </div>
-    <p style="font-size:0.78rem;color:rgba(255,255,255,0.3);margin-top:1.25rem;text-align:center;">El GEO Site puede convivir con tu sitio actual o reemplazarlo — según tu caso.</p>
+    <p class="geo-quien-f">La primera columna se apoya en estudios publicados. La segunda es una lectura estratégica: todavía no existe un ranking que diga qué actividad recibe más clientes desde una inteligencia artificial.</p>
   </div>
 </section>
 
-
-
-<!-- Sección: Lo que pasa por detrás — justifica el precio con datos concretos -->
-<section style="background:#fff;color:#131625;padding:5rem 0;" aria-labelledby="geo-detras">
+<section class="geo-razones" aria-labelledby="geo-razones-t">
   <div class="container">
-    <span style="display:inline-block;font-size:0.68rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#8E51B9;margin-bottom:1.25rem;">Lo que no se ve</span>
-    <h2 id="geo-detras" style="font-family:'Outfit',sans-serif;font-weight:700;font-size:clamp(2.2rem,4vw,3.8rem);line-height:0.92;letter-spacing:-0.02em;color:#131625;margin-bottom:1rem;">Una página.<br>Cincuenta movimientos invisibles.</h2>
-    <p style="font-size:0.98rem;color:rgba(19,22,37,0.55);line-height:1.8;max-width:560px;margin-bottom:3.5rem;">Esto es lo que el cliente ve vs. lo que realmente se hace.</p>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;background:#e8e8e0;">
-
-      <div style="background:#F4F4F0;padding:2rem 2rem 0.5rem;">
-        <p style="font-size:0.68rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(19,22,37,0.35);margin-bottom:1.5rem;">Lo que ve el cliente</p>
-        <div style="display:flex;align-items:center;gap:0.75rem;padding:1rem 0;border-top:1px solid rgba(19,22,37,0.08);">
-          <span style="font-size:1.4rem;">👁️</span>
-          <p style="font-size:0.88rem;color:rgba(19,22,37,0.6);line-height:1.5;">Una página web profesional</p>
-        </div>
-        <div style="display:flex;align-items:center;gap:0.75rem;padding:1rem 0;border-top:1px solid rgba(19,22,37,0.08);">
-          <span style="font-size:1.4rem;">📱</span>
-          <p style="font-size:0.88rem;color:rgba(19,22,37,0.6);line-height:1.5;">Se ve bien en celular y escritorio</p>
-        </div>
-        <div style="display:flex;align-items:center;gap:0.75rem;padding:1rem 0;border-top:1px solid rgba(19,22,37,0.08);">
-          <span style="font-size:1.4rem;">🔗</span>
-          <p style="font-size:0.88rem;color:rgba(19,22,37,0.6);line-height:1.5;">Un link propio que puede compartir</p>
-        </div>
-        <div style="display:flex;align-items:center;gap:0.75rem;padding:1rem 0;border-top:1px solid rgba(19,22,37,0.08);">
-          <span style="font-size:1.4rem;">💬</span>
-          <p style="font-size:0.88rem;color:rgba(19,22,37,0.6);line-height:1.5;">Un botón de WhatsApp para contacto</p>
-        </div>
+    <span class="section-label">Para qué sirve hoy</span>
+    <h2 id="geo-razones-t" class="section-title" style="color:#fff;margin-bottom:0;">Tres razones para<br>tener un sitio propio.</h2>
+    <div class="geo-tri">
+      <div class="geo-tri-item">
+        <p class="geo-tri-num">Razón 01</p>
+        <h3>Es el único lugar donde entra toda tu información</h3>
+        <p>Las redes obligan a resumir. Una biografía tiene tres líneas y una publicación se pierde a los dos días. En una web entra lo demás: qué ofrecés, para quién, dónde trabajás, qué incluye cada servicio, cuánto tarda, cómo se contrata, qué formas de pago tenés. Y las preguntas que te hacen siempre, esas que hoy contestás de a uno, por mensaje, todas las semanas.</p>
       </div>
-
-      <div style="background:#131625;padding:2rem 2rem 0.5rem;">
-        <p style="font-size:0.68rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#C8FF00;margin-bottom:1.5rem;">Lo que realmente se hace</p>
-        <div style="padding:0.85rem 0;border-top:1px solid rgba(255,255,255,0.07);">
-          <p style="font-size:0.78rem;font-weight:700;color:#C8FF00;margin-bottom:0.2rem;">7 archivos generados</p>
-          <p style="font-size:0.78rem;color:rgba(255,255,255,0.45);line-height:1.5;">index.html · robots.txt · sitemap.xml · llms.txt · llms-full.txt · favicon.svg · ai-plugin.json</p>
-        </div>
-        <div style="padding:0.85rem 0;border-top:1px solid rgba(255,255,255,0.07);">
-          <p style="font-size:0.78rem;font-weight:700;color:#C8FF00;margin-bottom:0.2rem;">5 schemas JSON-LD conectados</p>
-          <p style="font-size:0.78rem;color:rgba(255,255,255,0.45);line-height:1.5;">WebSite · Organization · LocalBusiness · Person · FAQPage — en @graph</p>
-        </div>
-        <div style="padding:0.85rem 0;border-top:1px solid rgba(255,255,255,0.07);">
-          <p style="font-size:0.78rem;font-weight:700;color:#C8FF00;margin-bottom:0.2rem;">6 plataformas dadas de alta</p>
-          <p style="font-size:0.78rem;color:rgba(255,255,255,0.45);line-height:1.5;">GitHub · Vercel · Google Search Console · Bing Webmaster Tools · Formspree + verificación en cada una</p>
-        </div>
-        <div style="padding:0.85rem 0;border-top:1px solid rgba(255,255,255,0.07);">
-          <p style="font-size:0.78rem;font-weight:700;color:#C8FF00;margin-bottom:0.2rem;">Redacción específica para IAs</p>
-          <p style="font-size:0.78rem;color:rgba(255,255,255,0.45);line-height:1.5;">Cada bloque redactado para ser citado: Quick Answer, FAQs investigadas, frases literales de citación por contexto</p>
-        </div>
-        <div style="padding:0.85rem 0;border-top:1px solid rgba(255,255,255,0.07);">
-          <p style="font-size:0.78rem;font-weight:700;color:#C8FF00;margin-bottom:0.2rem;">Baseline documentado en 3 IAs</p>
-          <p style="font-size:0.78rem;color:rgba(255,255,255,0.45);line-height:1.5;">Capturas de cómo aparece hoy el negocio en ChatGPT, Perplexity y Google AI Overview</p>
-        </div>
-        <div style="padding:0.85rem 0;border-top:1px solid rgba(255,255,255,0.07);">
-          <p style="font-size:0.78rem;font-weight:700;color:#C8FF00;margin-bottom:0.2rem;">5 a 10 ciclos de deploy y verificación</p>
-          <p style="font-size:0.78rem;color:rgba(255,255,255,0.45);line-height:1.5;">Editar → commit → deploy en Vercel → verificar en plataforma → corregir → repetir hasta que todo valida</p>
-        </div>
+      <div class="geo-tri-item">
+        <p class="geo-tri-num">Razón 02</p>
+        <h3>Es un espacio tuyo</h3>
+        <p>Las redes y los mapas son de otras empresas. Sus formatos cambian, sus reglas cambian, el alcance cambia. No hace falta imaginar catástrofes: alcanza con haber visto cómo una publicación que antes llegaba a mil personas hoy llega a ochenta. Un sitio tiene tu dominio y tu contenido. Ahí decidís vos qué se muestra primero y qué querés que haga la persona que entra.</p>
       </div>
-
+      <div class="geo-tri-item">
+        <p class="geo-tri-num">Razón 03</p>
+        <h3>Ahora también te buscan preguntando</h3>
+        <p>No es una búsqueda con dos palabras: es una pregunta completa, hecha en una conversación. Y la respuesta se arma con material publicado. Un GEO Site existe para que ese material exista, esté ordenado y se pueda leer sin ambigüedad — por una persona apurada y por un sistema que recorre internet.</p>
+      </div>
     </div>
-
-    <p style="font-size:0.8rem;color:rgba(19,22,37,0.4);text-align:center;margin-top:1.5rem;font-style:italic;">El precio no es por la página. Es por todo lo invisible que la hace funcionar.</p>
   </div>
 </section>
 
-<section class="geo-como" aria-labelledby="geo-como">
+<section class="geo-requisitos" aria-labelledby="geo-req-t">
   <div class="container">
-    <div class="geo-como-inner">
-      <span class="geo-como-label">Cómo funciona</span>
-      <h2 id="geo-como">Dos caminos<br>de entrada.</h2>
-      <div class="geo-paths">
-        <div class="geo-path">
-          <p class="geo-path-num">CAMINO 01</p>
-          <h3>Con “Cómo te ve ChatGPT”</h3>
-          <p>Primero revisamos cómo aparece tu negocio en ChatGPT, Gemini, Claude, Perplexity, Grok y Google AI Overview. Si el diagnóstico muestra brechas, el GEO Site pasa a ser la implementación lógica.</p>
-        </div>
-        <div class="geo-path">
-          <p class="geo-path-num">CAMINO 02</p>
-          <h3>Directo</h3>
-          <p>Ya sabés lo que querés. Me pasás los datos, el contenido y tu identidad visual — y lo construyo. El camino más rápido si tenés claro el objetivo.</p>
-        </div>
+    <span class="geo-problem-label">Cómo lo hago</span>
+    <h2 id="geo-req-t">Y tres requisitos<br>para que valga la pena.</h2>
+    <p style="font-size:1rem;color:rgba(19,22,37,0.6);line-height:1.8;max-width:620px;">Una web pensada para verse linda y una pensada para ser leída no son la misma cosa.</p>
+    <div class="geo-tri-light">
+      <div class="geo-tri-light-item">
+        <p class="geo-tri-num">Requisito 01</p>
+        <h3>Escrita antes que diseñada</h3>
+        <p>Cuando alguien me consulta por un sitio, lo primero que hago no es elegir colores. Leo qué hay publicado, qué dicen otros sitios, qué falta. Y hago las búsquedas que haría un cliente, para ver qué aparece. Después viene ordenar y escribir, que es la parte que más trabajo lleva. El diseño va al final.</p>
       </div>
+      <div class="geo-tri-light-item">
+        <p class="geo-tri-num">Requisito 02</p>
+        <h3>Cómoda de usar</h3>
+        <p>Casi todos entran desde el celular, muchas veces con poca señal. Si tarda en abrir, se van. Si hay que agrandar el texto con los dedos, se van. El botón para escribir o llamar va a la vista, no al final de todo. Los efectos pueden sumar, pero nunca a costa de la velocidad.</p>
+      </div>
+      <div class="geo-tri-light-item">
+        <p class="geo-tri-num">Requisito 03</p>
+        <h3>Fácil de medir</h3>
+        <p>Si invertís en publicidad, tenés que poder saber qué pasó con esa plata: cuánta gente entró, de dónde vino, qué miró y cuánta terminó consultando. El sitio queda preparado para eso. Tener muchas visitas suena bien; saber cuántas terminaron en un presupuesto sirve mucho más.</p>
+      </div>
+    </div>
+    <p class="geo-kicker">Una web preciosa con contenido pobre sigue siendo una web pobre.</p>
+  </div>
+</section>
 
-      <div class="geo-diagnostico-card">
-        <div>
-          <p style="font-size:0.68rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#C8FF00;margin-bottom:0.6rem;">Paso previo</p>
-          <h3 style="font-family:Outfit,sans-serif;font-size:1.8rem;line-height:1;font-weight:700;color:#fff;margin-bottom:0.75rem;">Cómo te ve ChatGPT</h3>
-          <p style="font-size:0.9rem;color:rgba(255,255,255,0.62);line-height:1.75;margin-bottom:0.9rem;">Diagnóstico de visibilidad en ChatGPT, Gemini, Claude, Perplexity, Grok y Google AI Overview. Te muestra si las IAs te recomiendan, si tienen datos correctos o si directamente no te registran.</p>
-          <p style="font-size:0.78rem;color:rgba(255,255,255,0.42);line-height:1.6;">Es ideal si todavía no sabés si necesitás un GEO Site. Primero miramos el punto de partida; después decidimos si hace falta construir.</p>
-        </div>
-        <div class="geo-diagnostico-panel">
-          <p style="font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.38);margin-bottom:0.35rem;">Diagnóstico</p>
-          <p style="font-family:Outfit,sans-serif;font-size:2rem;font-weight:700;color:#C8FF00;line-height:1;margin-bottom:0.45rem;">$50.000</p>
-          <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-bottom:1.2rem;">ARS · Informe en 48 hs</p>
-          <a href="https://onlike.ar/como-te-ve-chatgpt.html" style="display:inline-flex;align-items:center;gap:0.5rem;background:#C8FF00;color:#131625;padding:0.8rem 1.35rem;font-family:Outfit,sans-serif;font-size:0.85rem;font-weight:700;text-decoration:none;border-radius:2px;letter-spacing:0.02em;">Ver diagnóstico →</a>
-        </div>
-      </div>
+<style>
+  .geo-entrego { background: #0d0f1c; padding: 6.5rem 0; }
+  .geo-entrego-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5px; background: rgba(255,255,255,0.07); margin-top: 3rem; }
+  .geo-ent { background: #0d0f1c; padding: 1.75rem 1.75rem; }
+  .geo-ent-t { font-family: 'Outfit', sans-serif; font-size: 0.92rem; font-weight: 700; color: #C8FF00; margin-bottom: 0.4rem; line-height: 1.25; }
+  .geo-ent-d { font-size: 0.82rem; color: rgba(255,255,255,0.5); line-height: 1.65; }
+  .geo-ent-d code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.78rem; color: rgba(255,255,255,0.72); }
+  .geo-extra { margin-top: 2rem; padding: 1.5rem 1.75rem; background: rgba(142,81,185,0.12); border: 1px solid rgba(142,81,185,0.3); border-radius: 4px; }
+  .geo-extra p:first-child { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #C89BE8; margin-bottom: 0.5rem; }
+  .geo-extra p:last-child { font-size: 0.85rem; color: rgba(255,255,255,0.6); line-height: 1.7; }
 
-      <div style="background:rgba(200,255,0,0.06);border:1px solid rgba(200,255,0,0.15);border-radius:4px;padding:1.5rem 2rem;margin-bottom:2.5rem;">
-        <p style="font-size:0.68rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#C8FF00;margin-bottom:0.5rem;">En primera persona</p>
-        <p style="font-size:0.92rem;color:#A08AE5;line-height:1.7;font-style:italic;">"Ya lo implementé en ONLIKE y los primeros resultados llegaron en menos de 72 horas. Los tiempos varían según el sistema de IA, pero este sitio que estás leyendo es un GEO Site en funcionamiento."</p>
-        <p style="font-size:0.75rem;color:rgba(255,255,255,0.35);margin-top:0.5rem;">— Laura Silvester · Fundadora de ONLIKE</p>
+  .geo-detras { background: #fff; color: #131625; padding: 6rem 0; }
+  .geo-detras h2 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.2rem,4vw,3.8rem); line-height: 0.92; letter-spacing: -0.02em; color: #131625; margin-bottom: 1rem; }
+  .geo-vs { display: grid; grid-template-columns: 1fr 1.2fr; gap: 2px; background: #e8e8e0; margin-top: 3rem; }
+  .geo-vs-col { padding: 2rem 2rem 1.5rem; }
+  .geo-vs-h { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 1.5rem; }
+  .geo-vs-row { padding: 0.9rem 0; }
+  .geo-vs-row-t { font-size: 0.78rem; font-weight: 700; margin-bottom: 0.2rem; }
+  .geo-vs-row-d { font-size: 0.78rem; line-height: 1.55; }
+
+  .geo-archivos { background: #131625; padding: 6rem 0; }
+  .geo-archivos-inner { display: grid; grid-template-columns: 1fr 0.9fr; gap: 4rem; align-items: start; }
+  .geo-quote-box { background: rgba(200,255,0,0.05); border-left: 3px solid #C8FF00; padding: 1.75rem 2rem; }
+  .geo-quote-box p { font-size: 0.95rem; color: rgba(255,255,255,0.75); line-height: 1.85; }
+  .geo-quote-box p + p { margin-top: 1rem; }
+
+  @media (max-width: 900px) {
+    .geo-entrego, .geo-detras, .geo-archivos { padding: 4.5rem 0; }
+    .geo-entrego-grid, .geo-vs, .geo-archivos-inner { grid-template-columns: 1fr; gap: 1.5px; }
+    .geo-archivos-inner { gap: 2.5rem; }
+  }
+</style>
+
+<section class="geo-entrego" id="entrego" aria-labelledby="geo-ent-t">
+  <div class="container">
+    <span class="section-label">Qué te entrego</span>
+    <h2 id="geo-ent-t" class="section-title" style="color:#fff;margin-bottom:0.75rem;">Una lista finita.<br>Todo verificable.</h2>
+    <p style="font-size:0.95rem;color:rgba(255,255,255,0.5);line-height:1.75;max-width:560px;">Sin letra chica. Esto es lo que recibís.</p>
+    <div class="geo-entrego-grid">
+      <div class="geo-ent">
+        <p class="geo-ent-t">El sitio en tu propio dominio</p>
+        <p class="geo-ent-d">Publicado en Vercel, sin costo mensual de hosting. Vos pagás el dominio en nic.ar una vez por año y es tuyo. Nada de alquilar una plataforma para siempre.</p>
       </div>
-      <!-- Test de auto-diagnóstico -->
-      <div style="text-align:center;margin-bottom:2rem;padding:1.75rem;background:rgba(200,255,0,0.06);border:1px solid rgba(200,255,0,0.15);border-radius:4px;">
-        <p style="font-size:0.8rem;font-weight:700;color:#C8FF00;margin-bottom:0.4rem;letter-spacing:0.06em;text-transform:uppercase;">¿No sabés si lo necesitás?</p>
-        <p style="font-size:0.85rem;color:rgba(19,22,37,0.6);margin-bottom:1rem;">Respondé 10 preguntas y descubrí si tu negocio está listo para las IAs.</p>
-        <a href="https://onlike.ar/test.html" style="display:inline-flex;align-items:center;gap:0.5rem;background:#C8FF00;color:#131625;padding:0.75rem 1.5rem;font-family:Outfit,sans-serif;font-size:0.85rem;font-weight:700;text-decoration:none;border-radius:2px;letter-spacing:0.02em;">Evaluá tu necesidad → Test gratuito</a>
+      <div class="geo-ent">
+        <p class="geo-ent-t">Los textos, escritos y ordenados</p>
+        <p class="geo-ent-d">Cada bloque redactado para que se entienda solo y se pueda citar: definición clara, servicios, diferencial y las preguntas que te hacen todas las semanas.</p>
       </div>
-      <div class="geo-precio">
-        <p class="geo-precio-desde">Desde</p>
-        <p class="geo-precio-num">$250.000</p>
-        <p style="font-size:0.9rem;color:rgba(255,255,255,0.7);margin-bottom:0.5rem;font-weight:600;">ARS</p>
-        <p class="geo-precio-nota">El precio final depende del contenido disponible y la complejidad del caso.</p>
-        <p style="font-size:0.75rem;color:rgba(19,22,37,0.55);margin-top:0.5rem;font-weight:600;">Cupos limitados por mes.</p>
-        <div class="geo-cta-row">
-          <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20que%20mi%20negocio%20sea%20recomendado%20por%20las%20IAs.%20Me%20interesa%20el%20GEO%20Site." target="_blank" rel="noopener noreferrer" class="btn-dark">→ Solicitar cotización por WhatsApp</a>
-          <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20interesa%20el%20GEO%20Site." target="_blank" rel="noopener noreferrer" class="btn-dark-outline">WhatsApp</a>
+      <div class="geo-ent">
+        <p class="geo-ent-t">Política por bot en el <code>robots.txt</code></p>
+        <p class="geo-ent-d"><code>OAI-SearchBot</code> no es <code>GPTBot</code>. <code>Claude-SearchBot</code>, <code>Claude-User</code> y <code>ClaudeBot</code> son tres cosas distintas. <code>PerplexityBot</code> es búsqueda y no entrenamiento. Se decide cada uno por separado: dejás pasar a los que buscan y elegís qué hacer con los que entrenan.</p>
+      </div>
+      <div class="geo-ent">
+        <p class="geo-ent-t">5 schemas JSON-LD conectados</p>
+        <p class="geo-ent-d"><code>WebSite</code> · <code>Organization</code> · <code>LocalBusiness</code> · <code>Person</code> · <code>FAQPage</code>, enlazados en un <code>@graph</code> con identificadores estables. Describe qué sos, dónde estás y quién está detrás.</p>
+      </div>
+      <div class="geo-ent">
+        <p class="geo-ent-t">Los archivos completos</p>
+        <p class="geo-ent-d"><code>index.html</code> · <code>robots.txt</code> · <code>sitemap.xml</code> · <code>llms.txt</code> · <code>llms-full.txt</code> · <code>favicon.svg</code></p>
+      </div>
+      <div class="geo-ent">
+        <p class="geo-ent-t">Alta y verificación en buscadores</p>
+        <p class="geo-ent-d">Google Search Console y Bing Webmaster Tools, dadas de alta y verificadas. Quedan a tu nombre, con acceso tuyo.</p>
+      </div>
+      <div class="geo-ent">
+        <p class="geo-ent-t">Formulario conectado a tu mail</p>
+        <p class="geo-ent-d">Las consultas te llegan al correo, sin depender de que alguien te escriba por Instagram. Más el botón de WhatsApp flotante, a la vista en toda la página.</p>
+      </div>
+      <div class="geo-ent">
+        <p class="geo-ent-t">Tres preguntas en ChatGPT antes de empezar</p>
+        <p class="geo-ent-d">Para ver de dónde partimos: qué dice hoy de tu negocio, qué confunde y qué directamente no registra. Es el punto de partida de lo que hay que escribir.</p>
+      </div>
+      <div class="geo-ent">
+        <p class="geo-ent-t">Probado en celular</p>
+        <p class="geo-ent-d">Que abra rápido con poca señal, que se lea sin agrandar con los dedos y que el botón de contacto esté siempre arriba.</p>
+      </div>
+      <div class="geo-ent">
+        <p class="geo-ent-t">Una ronda de ajustes</p>
+        <p class="geo-ent-d">Revisás, marcás lo que quieras cambiar y se corrige. Después el sitio queda cerrado.</p>
+      </div>
+    </div>
+    <div class="geo-extra">
+      <p>Con costo adicional</p>
+      <p>Portugués e inglés, cada idioma con su propio <code>llms.txt</code>, <code>hreflang</code> y preguntas adaptadas a cómo consulta ese público. Píxel de Meta, Google Tag Manager y GA4. Fotos de 9 a 20 con optimización y texto alternativo. Videos embebidos. Configuración de mail propio.</p>
+    </div>
+  </div>
+</section>
+
+<section class="geo-detras" aria-labelledby="geo-detras-t">
+  <div class="container">
+    <span class="geo-problem-label">Lo que no se ve</span>
+    <h2 id="geo-detras-t">Una página.<br>Cincuenta movimientos invisibles.</h2>
+    <p style="font-size:0.98rem;color:rgba(19,22,37,0.55);line-height:1.8;max-width:560px;">Esto es lo que ve el cliente frente a lo que realmente se hace.</p>
+    <div class="geo-vs">
+      <div class="geo-vs-col" style="background:#F4F4F0;">
+        <p class="geo-vs-h" style="color:rgba(19,22,37,0.35);">Lo que ve el cliente</p>
+        <div class="geo-vs-row" style="border-top:1px solid rgba(19,22,37,0.08);"><p class="geo-vs-row-d" style="color:rgba(19,22,37,0.6);">Una página web profesional</p></div>
+        <div class="geo-vs-row" style="border-top:1px solid rgba(19,22,37,0.08);"><p class="geo-vs-row-d" style="color:rgba(19,22,37,0.6);">Se ve bien en celular y escritorio</p></div>
+        <div class="geo-vs-row" style="border-top:1px solid rgba(19,22,37,0.08);"><p class="geo-vs-row-d" style="color:rgba(19,22,37,0.6);">Un link propio que puede compartir</p></div>
+        <div class="geo-vs-row" style="border-top:1px solid rgba(19,22,37,0.08);"><p class="geo-vs-row-d" style="color:rgba(19,22,37,0.6);">Un botón de WhatsApp para contacto</p></div>
+      </div>
+      <div class="geo-vs-col" style="background:#131625;">
+        <p class="geo-vs-h" style="color:#C8FF00;">Lo que realmente se hace</p>
+        <div class="geo-vs-row" style="border-top:1px solid rgba(255,255,255,0.07);">
+          <p class="geo-vs-row-t" style="color:#C8FF00;">6 archivos generados</p>
+          <p class="geo-vs-row-d" style="color:rgba(255,255,255,0.45);">index.html · robots.txt · sitemap.xml · llms.txt · llms-full.txt · favicon.svg</p>
         </div>
+        <div class="geo-vs-row" style="border-top:1px solid rgba(255,255,255,0.07);">
+          <p class="geo-vs-row-t" style="color:#C8FF00;">5 schemas JSON-LD conectados</p>
+          <p class="geo-vs-row-d" style="color:rgba(255,255,255,0.45);">WebSite · Organization · LocalBusiness · Person · FAQPage — en @graph</p>
+        </div>
+        <div class="geo-vs-row" style="border-top:1px solid rgba(255,255,255,0.07);">
+          <p class="geo-vs-row-t" style="color:#C8FF00;">Política de acceso bot por bot</p>
+          <p class="geo-vs-row-d" style="color:rgba(255,255,255,0.45);">Ocho agentes distintos identificados y decididos uno por uno, separando búsqueda de entrenamiento</p>
+        </div>
+        <div class="geo-vs-row" style="border-top:1px solid rgba(255,255,255,0.07);">
+          <p class="geo-vs-row-t" style="color:#C8FF00;">5 plataformas dadas de alta</p>
+          <p class="geo-vs-row-d" style="color:rgba(255,255,255,0.45);">GitHub · Vercel · Google Search Console · Bing Webmaster Tools · Formspree, con verificación en cada una</p>
+        </div>
+        <div class="geo-vs-row" style="border-top:1px solid rgba(255,255,255,0.07);">
+          <p class="geo-vs-row-t" style="color:#C8FF00;">Redacción pensada para ser citada</p>
+          <p class="geo-vs-row-d" style="color:rgba(255,255,255,0.45);">Respuesta corta al inicio, preguntas frecuentes investigadas, frases que se entienden fuera de contexto</p>
+        </div>
+        <div class="geo-vs-row" style="border-top:1px solid rgba(255,255,255,0.07);">
+          <p class="geo-vs-row-t" style="color:#C8FF00;">5 a 10 ciclos de publicación y control</p>
+          <p class="geo-vs-row-d" style="color:rgba(255,255,255,0.45);">Editar → commit → publicar → controlar en cada plataforma → corregir → repetir hasta que todo valida</p>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:0.85rem;color:rgba(19,22,37,0.45);text-align:center;margin-top:1.5rem;">El precio no es por la página. Es por todo lo invisible que la hace funcionar.</p>
+  </div>
+</section>
+
+<section class="geo-archivos" aria-labelledby="geo-arch-t">
+  <div class="container">
+    <div class="geo-archivos-inner">
+      <div>
+        <span class="section-label">Una aclaración que nadie hace</span>
+        <h2 id="geo-arch-t" class="section-title" style="color:#fff;font-size:clamp(2rem,3.4vw,3.2rem);margin-bottom:1.5rem;">Por qué te pongo archivos que nadie te pide.</h2>
+        <p style="font-size:0.95rem;color:rgba(255,255,255,0.55);line-height:1.85;">Google dijo públicamente que su buscador ignora el archivo <code style="font-family:ui-monospace,monospace;font-size:0.88rem;color:#C8FF00;">llms.txt</code>. Lo pongo igual, y te digo por qué.</p>
+      </div>
+      <div class="geo-quote-box">
+        <p>Google es una cosa y ChatGPT es otra. Cada motor lee distinto y todo esto cambia mes a mes.</p>
+        <p>Los archivos cuestan cero. Si mañana uno de esos sistemas empieza a leerlos, tu sitio ya los tiene puestos. Si nunca los lee, no pagaste por ellos.</p>
+        <p style="color:#C8FF00;font-weight:600;">Lo pruebo. No te lo vendo como magia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .geo-limites { background: #F4F4F0; color: #131625; padding: 6rem 0; }
+  .geo-lim-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 2.5rem; }
+  .geo-lim-card { background: #fff; padding: 2rem 1.9rem; border-radius: 4px; }
+  .geo-lim-card > p:first-child { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 1.25rem; }
+  .geo-lim-row { padding: 0.85rem 0; border-top: 1px solid rgba(19,22,37,0.09); font-size: 0.86rem; color: rgba(19,22,37,0.68); line-height: 1.6; }
+  .geo-lim-row strong { color: #131625; font-weight: 700; }
+  .geo-comprobar { background: #131625; color: #fff; border-radius: 4px; padding: 2.25rem 2.25rem; margin-top: 2.5rem; }
+  .geo-comprobar h3 { font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 700; color: #C8FF00; margin-bottom: 1rem; line-height: 1.15; }
+  .geo-comprobar p { font-size: 0.92rem; color: rgba(255,255,255,0.65); line-height: 1.85; max-width: 720px; }
+  .geo-comprobar p + p { margin-top: 0.9rem; }
+
+  .geo-trabajo { background: #131625; padding: 6rem 0; }
+  .geo-pasos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5px; background: rgba(255,255,255,0.08); margin-top: 3rem; }
+  .geo-paso { background: #131625; padding: 1.9rem 1.5rem; }
+  .geo-paso-n { font-family: 'Outfit', sans-serif; font-size: 1.9rem; font-weight: 700; color: rgba(200,255,0,0.28); line-height: 1; margin-bottom: 0.85rem; }
+  .geo-paso h3 { font-family: 'Outfit', sans-serif; font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; line-height: 1.3; }
+  .geo-paso p { font-size: 0.8rem; color: rgba(255,255,255,0.5); line-height: 1.65; }
+
+  .geo-precio-sec { background: #C8FF00; color: #131625; padding: 6rem 0; }
+  .geo-precio { text-align: center; max-width: 640px; margin: 0 auto; }
+  .geo-precio-desde { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(19,22,37,0.45); margin-bottom: 0.5rem; }
+  .geo-precio-num { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(3rem, 7vw, 4.5rem); color: #131625; line-height: 1; }
+  .geo-precio-ars { font-size: 0.95rem; color: rgba(19,22,37,0.55); font-weight: 700; letter-spacing: 0.1em; margin-bottom: 1.5rem; }
+  .geo-precio-eje { font-size: 0.95rem; color: rgba(19,22,37,0.75); line-height: 1.8; margin-bottom: 1.5rem; }
+  .geo-cupos { display: inline-block; background: #131625; color: #C8FF00; padding: 0.6rem 1.4rem; border-radius: 100px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; margin-bottom: 2.25rem; }
+  .geo-cta-row { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+  .geo-testimonio { max-width: 700px; margin: 3rem auto 0; padding: 0.4rem 0 0.4rem 1.6rem; border-left: 3px solid #131625; }
+  .geo-testimonio p:first-child { font-size: 0.95rem; color: #131625; line-height: 1.75; font-weight: 500; }
+  .geo-testimonio p:last-child { font-size: 0.78rem; color: rgba(19,22,37,0.55); margin-top: 0.6rem; }
+
+  @media (max-width: 900px) {
+    .geo-limites, .geo-trabajo, .geo-precio-sec { padding: 4.5rem 0; }
+    .geo-lim-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .geo-pasos { grid-template-columns: 1fr; }
+    .geo-cta-row { flex-direction: column; align-items: center; }
+  }
+</style>
+
+<section class="geo-limites" aria-labelledby="geo-lim-t">
+  <div class="container">
+    <span class="geo-problem-label">Los límites, por escrito</span>
+    <h2 id="geo-lim-t" style="font-family:'Outfit',sans-serif;font-weight:700;font-size:clamp(2.2rem,4vw,3.6rem);line-height:0.94;letter-spacing:-0.02em;margin-bottom:1rem;">Lo que no vendo<br>y lo que no incluye.</h2>
+    <p style="font-size:0.98rem;color:rgba(19,22,37,0.6);line-height:1.8;max-width:600px;">Va escrito acá y va escrito en la propuesta. Así nadie descubre nada a mitad de camino.</p>
+    <div class="geo-lim-grid">
+      <div class="geo-lim-card">
+        <p style="color:#8E51B9;">Lo que no vendo</p>
+        <div class="geo-lim-row"><strong>Que ChatGPT te recomiende.</strong> Eso lo decide el motor. Yo hago que exista material tuyo para leer.</div>
+        <div class="geo-lim-row"><strong>Un puesto o una posición.</strong> En una respuesta generada no hay puesto uno. Quien te lo venda, te está vendiendo algo que no existe.</div>
+        <div class="geo-lim-row"><strong>Seguimiento posterior.</strong> No está incluido. Si querés actualización y re-chequeo mensual, se contrata aparte.</div>
+        <div class="geo-lim-row"><strong>El algoritmo.</strong> Nadie que te diga que conoce el algoritmo de ChatGPT lo conoce. Yo trabajo sobre lo que las plataformas documentan.</div>
+      </div>
+      <div class="geo-lim-card">
+        <p style="color:#8E51B9;">Lo que no incluye</p>
+        <div class="geo-lim-row">El dominio: lo registrás y lo pagás vos en nic.ar, se renueva una vez por año</div>
+        <div class="geo-lim-row">El servicio de mail, si querés casilla propia</div>
+        <div class="geo-lim-row">Producción o compra de fotos</div>
+        <div class="geo-lim-row">Diseño de logo</div>
+        <div class="geo-lim-row">Redacción de textos legales</div>
+        <div class="geo-lim-row">Rondas de ajuste extra</div>
+        <div class="geo-lim-row">Cambios estructurales después de entregado</div>
+      </div>
+    </div>
+    <div class="geo-comprobar">
+      <h3>Cómo comprobás por tu cuenta que el sitio quedó accesible</h3>
+      <p>No te pido que confíes. Te dejo el método, y lo hacés vos cuando quieras.</p>
+      <p>Preguntale a Grok por el nombre de tu negocio. Cuando lo que escribiste en tu sitio empieza a aparecer en esa respuesta, el sitio entró al circuito: hay material tuyo disponible y accesible. Con el mío pasó en veinticuatro horas.</p>
+      <p style="color:#C8FF00;font-weight:600;">Eso no significa que te vayan a recomendar. Significa que existís para los sistemas que arman las respuestas. Antes de eso, ni siquiera estabas en la conversación.</p>
+    </div>
+  </div>
+</section>
+
+<section class="geo-trabajo" aria-labelledby="geo-trab-t">
+  <div class="container">
+    <span class="section-label">Cómo se trabaja</span>
+    <h2 id="geo-trab-t" class="section-title" style="color:#fff;margin-bottom:0;">Cuatro pasos<br>y está publicado.</h2>
+    <div class="geo-pasos">
+      <div class="geo-paso">
+        <p class="geo-paso-n">01</p>
+        <h3>Hablamos</h3>
+        <p>Me contás qué hacés y para quién. Hago tres preguntas en ChatGPT sobre tu negocio y vemos de dónde partimos. Te mando una propuesta con el alcance cerrado.</p>
+      </div>
+      <div class="geo-paso">
+        <p class="geo-paso-n">02</p>
+        <h3>Seña del 50%</h3>
+        <p>Con la seña entrás en agenda. El saldo va contra entrega. Sin seña no reservo lugar, porque los cupos son pocos.</p>
+      </div>
+      <div class="geo-paso">
+        <p class="geo-paso-n">03</p>
+        <h3>Mandás el material</h3>
+        <p>Tenés 15 días para mandarlo completo. Pasado ese plazo se reprograma. El trabajo arranca cuando llega el material, no cuando se paga.</p>
+      </div>
+      <div class="geo-paso">
+        <p class="geo-paso-n">04</p>
+        <h3>Se publica</h3>
+        <p>Escribo, estructuro y publico en tu dominio. Revisás, marcás cambios, se corrige una vez y queda cerrado. Los accesos quedan a tu nombre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="geo-precio-sec" aria-labelledby="geo-precio-t">
+  <div class="container">
+    <div class="geo-precio">
+      <p class="geo-precio-desde">Desde</p>
+      <p class="geo-precio-num" id="geo-precio-t">$250.000</p>
+      <p class="geo-precio-ars">ARS</p>
+      <p class="geo-precio-eje">Ese es el valor si traés los textos escritos: servicios, precios, preguntas frecuentes, fotos y logo. Yo estructuro, redacto para citación y publico. <strong>Si los textos los escribo yo, el valor cambia</strong> — y esa es la única variable que mueve el presupuesto.</p>
+      <p class="geo-cupos">2 cupos por mes</p>
+      <div class="geo-cta-row">
+        <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20interesa%20el%20GEO%20Site.%20Quiero%20cotizar." target="_blank" rel="noopener noreferrer" class="btn-dark">→ Solicitar cotización por WhatsApp</a>
+      </div>
+    </div>
+    <div class="geo-testimonio">
+      <p>"Este sitio que estás leyendo es un GEO Site en funcionamiento. Lo mismo que hago para un cliente lo hice primero para mí."</p>
+      <p>— Laura Silvester · Fundadora de ONLIKE</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .geo-faq { background: #131625; padding: 6rem 0 7rem; }
+  .geo-faq-list { margin-top: 3rem; }
+  .geo-faq-item { border-top: 1px solid rgba(255,255,255,0.09); padding: 1.6rem 0; }
+  .geo-faq-item:last-child { border-bottom: 1px solid rgba(255,255,255,0.09); }
+  .geo-faq-q { font-family: 'Outfit', sans-serif; font-size: 1.02rem; font-weight: 700; color: #C8FF00; margin-bottom: 0.6rem; line-height: 1.3; }
+  .geo-faq-a { font-size: 0.9rem; color: rgba(255,255,255,0.58); line-height: 1.85; max-width: 780px; }
+  .footer-inner { max-width:1160px; margin:0 auto; padding:2rem 3rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+  @media (max-width: 900px) { .geo-faq { padding: 4.5rem 0 5rem; } .footer-inner { padding: 1.75rem 1.5rem; } }
+</style>
+
+<section class="geo-faq" aria-labelledby="geo-faq-t">
+  <div class="container">
+    <span class="section-label">Preguntas frecuentes</span>
+    <h2 id="geo-faq-t" class="section-title" style="color:#fff;margin-bottom:0;">Lo que me preguntan<br>antes de contratar.</h2>
+    <div class="geo-faq-list">
+      <div class="geo-faq-item">
+        <p class="geo-faq-q">¿Qué es un GEO Site?</p>
+        <p class="geo-faq-a">Un sitio web de una sola pantalla, publicado en tu propio dominio, escrito antes que diseñado. Tiene dos capas: el contenido, redactado para que se entienda solo y se pueda citar fuera de contexto; y una capa técnica que declara qué sos, dónde estás, quién está detrás y qué sistemas pueden leerte. Está pensado para que lo entienda igual de rápido una persona con poca señal y un sistema que recorre internet armando respuestas.</p>
+      </div>
+      <div class="geo-faq-item">
+        <p class="geo-faq-q">¿Me garantiza que ChatGPT me recomiende?</p>
+        <p class="geo-faq-a">No. Ninguna web garantiza eso, y quien te lo prometa te está vendiendo algo que no puede cumplir. Lo que sí podés mejorar es el material que existe sobre vos, que es la parte que depende de vos. Si no aparecés, no te pueden recomendar. Si aparecés, podés ser recomendado.</p>
+      </div>
+      <div class="geo-faq-item">
+        <p class="geo-faq-q">¿Cuánto cuesta?</p>
+        <p class="geo-faq-a">Desde $250.000 ARS si traés los textos escritos. Si los redacto yo, el valor cambia. Es la única variable que mueve el presupuesto. Se trabaja con seña del 50% para entrar en agenda y el saldo contra entrega. Hay 2 cupos por mes.</p>
+      </div>
+      <div class="geo-faq-item">
+        <p class="geo-faq-q">¿Tengo que pagar hosting todos los meses?</p>
+        <p class="geo-faq-a">No. El sitio se publica en Vercel sin costo mensual. Lo único que pagás es el dominio en nic.ar, una vez por año, y queda a tu nombre. No alquilás una plataforma: el sitio es tuyo.</p>
+      </div>
+      <div class="geo-faq-item">
+        <p class="geo-faq-q">¿Reemplaza mi sitio web actual?</p>
+        <p class="geo-faq-a">Convive con el que tenés o lo reemplaza. Vos elegís. Si hoy no tenés sitio, pasa a ser tu presencia digital principal. Si ya tenés uno pesado o difícil de actualizar, el GEO Site funciona como la puerta liviana y legible que ese sitio no es.</p>
+      </div>
+      <div class="geo-faq-item">
+        <p class="geo-faq-q">¿Hacés seguimiento después de entregar?</p>
+        <p class="geo-faq-a">No está incluido en el precio. La actualización de contenido y el re-chequeo en las IAs se contratan aparte, mensualmente, y se ofrecen recién después de entregar el sitio. Lo que sí te dejo es el método para que comprobés por tu cuenta que el sitio quedó accesible.</p>
+      </div>
+      <div class="geo-faq-item">
+        <p class="geo-faq-q">¿En qué idiomas trabajás?</p>
+        <p class="geo-faq-a">Español incluido. Portugués e inglés con costo adicional, cada uno con su propio <code>llms.txt</code>, <code>hreflang</code> y preguntas frecuentes adaptadas a cómo consulta ese público — no una traducción literal. Es especialmente útil para turismo en la zona de frontera con Brasil.</p>
+      </div>
+      <div class="geo-faq-item">
+        <p class="geo-faq-q">¿Hacés tiendas online?</p>
+        <p class="geo-faq-a">No. Los pagos, los envíos y el stock son un rubro aparte y prefiero no meterme donde no tengo experiencia. Lo que sí hago, y le sirve a una tienda que ya funciona, es la otra mitad: una IA no recomienda un carrito de compras, recomienda un negocio. Para hacerlo tiene que entender qué vendés, para quién, qué te diferencia y por qué conviene comprarte a vos. Esa información casi nunca está en la tienda — está repartida entre Instagram, las descripciones de producto y la cabeza del dueño. Un GEO Site es el lugar donde eso queda escrito.</p>
+      </div>
+      <div class="geo-faq-item">
+        <p class="geo-faq-q">¿Para qué negocios sirve y para cuáles no?</p>
+        <p class="geo-faq-a">Preguntate qué cosas importantes de tu negocio no están escritas hoy en ningún lado. Si la lista es corta, con lo que tenés puede alcanzar: una despensa de barrio o un oficio con la clientela hecha funcionan sin sitio. Si la lista es larga — servicios que hay que explicar, precios, condiciones, preguntas que contestás todas las semanas por mensaje — ahí está tu sitio.</p>
       </div>
     </div>
   </div>
@@ -548,25 +662,164 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </main>
 <footer role="contentinfo">
-  <div style="max-width:1160px;margin:0 auto;padding:1.75rem 3rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+  <div class="footer-inner">
     <div>
       <p style="font-size:0.72rem;color:rgba(255,255,255,0.55);margin-bottom:0.3rem;font-weight:500;">ONLIKE · Laura Silvester · Estrategia y posicionamiento digital</p>
-      <p style="font-size:0.7rem;color:rgba(255,255,255,0.25);">Eldorado, Misiones, Argentina · <a href="mailto:lau@onlike.ar" style="color:rgba(255,255,255,0.25);text-decoration:none;" onmouseover="this.style.color='#D1FA3E'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">lau@onlike.ar</a> · WhatsApp +54 3751 566488</p>
+      <p style="font-size:0.7rem;color:rgba(255,255,255,0.25);">Eldorado, Misiones, Argentina · <a href="mailto:lau@onlike.ar" style="color:rgba(255,255,255,0.25);">lau@onlike.ar</a> · WhatsApp +54 3751 566488</p>
     </div>
-    <nav style="display:flex;gap:1.5rem;align-items:center;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;border-bottom:none;padding:0;" aria-label="Legal">
-      <a href="https://onlike.ar/privacidad.html" style="font-size:0.7rem;color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#D1FA3E'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">Política de privacidad</a>
+    <nav style="display:flex;gap:1.5rem;align-items:center;" aria-label="Legal">
+      <a href="https://onlike.ar/privacidad.html" style="font-size:0.7rem;color:rgba(255,255,255,0.3);">Política de privacidad</a>
       <span style="font-size:0.7rem;color:rgba(255,255,255,0.25);">© 2026</span>
     </nav>
   </div>
 </footer>
 <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20contacto%20desde%20tu%20sitio%20web." target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Contactar por WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   <span class="wa-float-text">Escribime por WhatsApp</span>
 </a>
 <script>
   window.addEventListener('scroll', function() {
-    document.querySelector('nav').style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(0,0,0,0.3)' : 'none';
+    document.querySelector('header nav').style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(0,0,0,0.3)' : 'none';
   }, {passive: true});
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://onlike.ar/geo-site.html",
+      "url": "https://onlike.ar/geo-site.html",
+      "name": "GEO Site — Un sitio escrito para que te lean las personas y las inteligencias artificiales",
+      "description": "Las inteligencias artificiales no adivinan: arman la respuesta con lo que está publicado. Un GEO Site es un sitio propio en tu dominio, escrito antes que diseñado, para que exista material claro sobre tu negocio. Servicio de ONLIKE · Laura Silvester · Eldorado, Misiones, Argentina.",
+      "inLanguage": "es-AR",
+      "isPartOf": { "@id": "https://onlike.ar/#website" },
+      "author": { "@id": "https://onlike.ar/#person" },
+      "publisher": { "@id": "https://onlike.ar/#organization" },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "ONLIKE", "item": "https://onlike.ar/" },
+          { "@type": "ListItem", "position": 2, "name": "GEO Site", "item": "https://onlike.ar/geo-site.html" }
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://onlike.ar/geo-site.html#service",
+      "name": "GEO Site",
+      "alternateName": [
+        "Sitio web optimizado para inteligencias artificiales",
+        "AI-readable website",
+        "Generative Engine Optimization Site"
+      ],
+      "description": "Sitio web de una sola pantalla publicado en el dominio propio del cliente, escrito antes que diseñado, para que su contenido pueda ser leído y utilizado tanto por personas como por sistemas de inteligencia artificial generativa. Incluye redacción y estructuración del contenido, robots.txt con política diferenciada por bot (OAI-SearchBot, GPTBot, Claude-SearchBot, Claude-User, ClaudeBot, PerplexityBot, Googlebot, Google-Extended), cinco schemas JSON-LD conectados en @graph, sitemap.xml, llms.txt, llms-full.txt, alta y verificación en Google Search Console y Bing Webmaster Tools, formulario de contacto y publicación en Vercel sin costo mensual de hosting. No garantiza recomendación ni posicionamiento en respuestas de inteligencia artificial: garantiza que exista material accesible y correctamente descrito sobre el negocio.",
+      "provider": { "@id": "https://onlike.ar/#organization" },
+      "areaServed": { "@type": "Country", "name": "Argentina" },
+      "availableLanguage": ["es", "pt", "en"],
+      "serviceType": "Desarrollo de sitios web legibles para inteligencias artificiales",
+      "category": [
+        "GEO",
+        "Generative Engine Optimization",
+        "Desarrollo web",
+        "Posicionamiento digital",
+        "Marketing digital"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "ARS",
+        "price": "250000",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "250000",
+          "priceCurrency": "ARS",
+          "description": "Desde $250.000 ARS si el cliente aporta los textos escritos. Si la redacción la realiza ONLIKE, el valor cambia. Seña del 50% para entrar en agenda, saldo contra entrega. Cupos limitados a 2 por mes."
+        },
+        "availability": "https://schema.org/LimitedAvailability",
+        "seller": { "@id": "https://onlike.ar/#organization" }
+      },
+      "serviceOutput": "Sitio web publicado en dominio propio del cliente, con contenido redactado para ser citado y capa técnica que declara la identidad del negocio y la política de acceso para crawlers de búsqueda e inteligencia artificial"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://onlike.ar/geo-site.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es un GEO Site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un GEO Site es un sitio web de una sola pantalla, publicado en el dominio propio del cliente y escrito antes que diseñado. Tiene dos capas: el contenido, redactado para que se entienda solo y se pueda citar fuera de contexto; y una capa técnica que declara qué es el negocio, dónde está, quién está detrás y qué sistemas pueden leerlo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Un GEO Site garantiza que ChatGPT recomiende mi negocio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Ninguna web garantiza que una inteligencia artificial recomiende un negocio. Lo que sí se puede mejorar es el material que existe sobre ese negocio, que es la parte que depende del negocio. Si no aparece, no lo pueden recomendar. Si aparece, puede ser recomendado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta un GEO Site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Desde $250.000 ARS si el cliente aporta los textos escritos. Si la redacción la hace ONLIKE, el valor cambia: es la única variable que mueve el presupuesto. Se trabaja con seña del 50% para entrar en agenda y saldo contra entrega. Hay 2 cupos por mes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hay que pagar hosting todos los meses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. El sitio se publica en Vercel sin costo mensual de hosting. El cliente solo paga el dominio en nic.ar una vez por año, y queda a su nombre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El GEO Site reemplaza mi sitio web actual?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Convive con el sitio actual o lo reemplaza, según lo que elija el cliente. Para un negocio que hoy no tiene sitio, pasa a ser su presencia digital principal. Para uno que ya tiene un sitio pesado o difícil de actualizar, funciona como la puerta liviana y legible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Incluye seguimiento después de la entrega?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. La actualización de contenido y el re-chequeo en inteligencias artificiales se contratan aparte, de forma mensual, y se ofrecen después de entregar el sitio. Lo que sí se entrega es el método para que el cliente compruebe por su cuenta que el sitio quedó accesible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿En qué idiomas se hace un GEO Site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Español incluido. Portugués e inglés con costo adicional, cada idioma con su propio llms.txt, hreflang y preguntas frecuentes adaptadas a cómo consulta ese público, no como traducción literal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿ONLIKE hace tiendas online o ecommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Los pagos, los envíos y el stock son un rubro aparte. Lo que sí aporta un GEO Site a una tienda que ya funciona es la otra mitad: una inteligencia artificial no recomienda un carrito de compras, recomienda un negocio, y para eso necesita entender qué vende, para quién, qué lo diferencia y por qué conviene comprarle. Esa información casi nunca está en la tienda."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué no incluye un GEO Site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No incluye el dominio, que registra y paga el cliente en nic.ar; el servicio de mail; la producción o compra de fotos; el diseño de logo; la redacción de textos legales; rondas de ajuste extra más allá de la incluida; ni cambios estructurales después de la entrega."
+          }
+        }
+      ]
+    }
+  ]
+}
 </script>
 </body>
 </html>
