@@ -210,8 +210,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "name": "ONLIKE · Laura Silvester — Accesos directos",
       "description": "Accesos directos a las notas, la revisión de entrada, los servicios y el contacto de ONLIKE · Laura Silvester. Posicionamiento digital y en sistemas de IA para negocios turísticos de Argentina.",
       "inLanguage": "es-AR",
-      "isPartOf": { "@id": "https://onlike.ar/#website" },
-      "author": { "@id": "https://onlike.ar/#person" },
+      "isPartOf": {
+        "@id": "https://onlike.ar/#website"
+      },
+      "author": {
+        "@id": "https://onlike.ar/#person"
+      },
       "mainEntity": {
         "@type": "ItemList",
         "itemListOrder": "https://schema.org/ItemListOrderAscending",
@@ -219,46 +223,103 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {
             "@type": "ListItem",
             "position": 1,
+            "name": "Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio",
+            "url": "https://onlike.ar/buscate-vos-que-dicen-las-ias.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Notas sobre turismo y visibilidad digital",
             "url": "https://onlike.ar/notas.html"
           },
           {
             "@type": "ListItem",
-            "position": 2,
+            "position": 3,
             "name": "Cuando una inteligencia artificial recomienda un destino turístico, decide también qué negocios aparecen",
             "url": "https://onlike.ar/destinos-turisticos-inteligencia-artificial.html"
           },
           {
             "@type": "ListItem",
-            "position": 3,
+            "position": 4,
             "name": "Por qué bajaron las consultas en tu alojamiento",
             "url": "https://onlike.ar/por-que-bajaron-las-consultas-alojamiento.html"
           },
           {
             "@type": "ListItem",
-            "position": 4,
+            "position": 5,
             "name": "Checklist de legibilidad digital para turismo",
             "url": "https://onlike.ar/checklist-legibilidad-digital.html"
           },
           {
             "@type": "ListItem",
-            "position": 5,
+            "position": 6,
             "name": "Cómo te ve un viajero — revisión digital para negocios turísticos",
             "url": "https://onlike.ar/como-te-ve-un-viajero.html"
           },
           {
             "@type": "ListItem",
-            "position": 6,
+            "position": 7,
             "name": "GEO Site",
             "url": "https://onlike.ar/geo-site.html"
           },
           {
             "@type": "ListItem",
-            "position": 7,
+            "position": 8,
             "name": "Diagnóstico digital estratégico para turismo",
             "url": "https://onlike.ar/turismo.html"
           }
         ]
+      },
+      "publisher": {
+        "@id": "https://onlike.ar/#organization"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://onlike.ar/#person",
+      "name": "Laura Silvester",
+      "url": "https://onlike.ar/laura-silvester.html",
+      "mainEntityOfPage": {
+        "@id": "https://onlike.ar/laura-silvester.html"
+      },
+      "jobTitle": "Consultora en estrategia digital y GEO",
+      "image": "https://onlike.ar/assets/foto-lau.jpg",
+      "worksFor": {
+        "@id": "https://onlike.ar/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/lausilvester/",
+        "https://www.instagram.com/lausilvester",
+        "https://www.tiktok.com/@lausilvester",
+        "https://facebook.com/onlike.ar"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://onlike.ar/#organization",
+      "name": "ONLIKE",
+      "url": "https://onlike.ar/",
+      "logo": "https://onlike.ar/assets/logo-onlike.png",
+      "email": "lau@onlike.ar",
+      "telephone": "+543751566488",
+      "founder": {
+        "@id": "https://onlike.ar/#person"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Eldorado",
+        "addressRegion": "Misiones",
+        "addressCountry": "AR"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://onlike.ar/#website",
+      "url": "https://onlike.ar/",
+      "name": "ONLIKE",
+      "inLanguage": "es-AR",
+      "publisher": {
+        "@id": "https://onlike.ar/#organization"
       }
     }
   ]
@@ -279,9 +340,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <nav class="links" aria-label="Accesos directos">
 
+    <p class="label">Nota nueva</p>
+
+    <a href="https://onlike.ar/buscate-vos-que-dicen-las-ias.html" class="link-btn link-btn--primary js-link" data-link="nota-buscate-vos">
+      Buscate vos: qué dicen las IA sobre tu negocio
+      <span>El procedimiento completo, sin registro y sin reservarme nada: por qué la prueba no sirve si estás logueada, las tres búsquedas en orden y los once errores que se repiten en todos los diagnósticos.</span>
+    </a>
+
     <p class="label">Empezá por acá</p>
 
-    <a href="https://onlike.ar/notas.html" class="link-btn link-btn--primary js-link" data-link="notas">
+    <a href="https://onlike.ar/notas.html" class="link-btn link-btn--featured js-link" data-link="notas">
       Todas las notas
       <span>Análisis propios sobre el turismo argentino, con fuente y con los límites de cada dato declarados. Datos oficiales, por qué caen las consultas, y cómo describen los sistemas de IA a un destino.</span>
     </a>
@@ -311,7 +379,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       Cómo te ve un viajero — revisión desde afuera
     </a>
     <a href="https://onlike.ar/geo-site.html" class="link-btn link-btn--service js-link" data-link="geo-site">
-      GEO Site — que las IAs te recomienden
+      GEO Site — una página web que se entiende
     </a>
     <a href="https://onlike.ar/turismo.html" class="link-btn link-btn--service js-link" data-link="turismo">
       Diagnóstico digital para turismo
