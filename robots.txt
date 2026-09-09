@@ -1,23 +1,27 @@
 # robots.txt — ONLIKE · Laura Silvester · onlike.ar
-# Actualizado: Julio 2026
+# Actualizado: septiembre 2026
+#
+# Este archivo está organizado por función, no por empresa.
+# Un mismo proveedor tiene bots distintos para buscar y para entrenar,
+# y son decisiones separadas. Acá están separadas.
+#
+# Las páginas que no se indexan (diagnostico.html, diagnosticotur.html)
+# se manejan con X-Robots-Tag desde vercel.json, no con Disallow:
+# para que una página no se indexe, el bot primero tiene que poder leerla.
 
 # ============================================================
-# REGLAS GENERALES
-# Las directivas Allow/Disallow pertenecen al grupo de User-agent
-# que las precede. Por eso los archivos especiales van acá arriba,
-# dentro del grupo *, y no sueltos al final del archivo.
+# REGLA GENERAL
 # ============================================================
 
 User-agent: *
 Allow: /
-Allow: /llms.txt
-Allow: /llms-full.txt
-Allow: /.well-known/ai-plugin.json
 Disallow: /private/
 Disallow: /admin/
 
 # ============================================================
-# BUSCADORES
+# 1 · BUSCADORES TRADICIONALES
+# Sin esto no hay nada. Googlebot es además el que gobierna
+# la aparición como enlace de apoyo en AI Overviews y AI Mode.
 # ============================================================
 
 User-agent: Googlebot
@@ -29,10 +33,6 @@ Allow: /
 User-agent: GoogleOther
 Allow: /
 
-# Permite el uso del contenido en Gemini y AI Overviews
-User-agent: Google-Extended
-Allow: /
-
 User-agent: Bingbot
 Allow: /
 
@@ -42,47 +42,77 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-User-agent: Applebot-Extended
-Allow: /
-
 # ============================================================
-# OPENAI · ChatGPT
+# 2 · BÚSQUEDA EN SISTEMAS DE IA
+# Estos son los que recuperan páginas en el momento de responder.
+# Bloquear alguno de estos reduce la posibilidad de ser citado.
+# En onlike.ar van todos permitidos.
 # ============================================================
 
-# Entrenamiento
-User-agent: GPTBot
-Allow: /
-
-# Navegación disparada por un usuario
-User-agent: ChatGPT-User
-Allow: /
-
-# Índice de búsqueda de OpenAI
+# OpenAI — índice de búsqueda de ChatGPT
 User-agent: OAI-SearchBot
 Allow: /
 
-# ============================================================
-# ANTHROPIC · Claude
-# ============================================================
-
-User-agent: ClaudeBot
+# OpenAI — navegación disparada por un usuario en su conversación
+User-agent: ChatGPT-User
 Allow: /
 
+# Anthropic — búsqueda de Claude
+User-agent: Claude-SearchBot
+Allow: /
+
+# Anthropic — fetch pedido por un usuario en su conversación
 User-agent: Claude-User
 Allow: /
 
-User-agent: Claude-SearchBot
+# Perplexity — recuperación para búsqueda.
+# Perplexity declara que este bot no se usa para preentrenamiento.
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ============================================================
+# 3 · ENTRENAMIENTO DE MODELOS
+# Decisión de política, no de posicionamiento. Permitir esto no
+# mejora el ranking y bloquearlo no saca a nadie de los buscadores.
+# En onlike.ar van permitidos: el objetivo es que el contenido
+# esté disponible para los sistemas que después responden.
+# Para bloquear entrenamiento sin perder búsqueda, cambiar
+# Allow por Disallow SOLO en este bloque.
+# ============================================================
+
+# OpenAI — entrenamiento
+User-agent: GPTBot
+Allow: /
+
+# Anthropic — entrenamiento
+User-agent: ClaudeBot
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
-# ============================================================
-# xAI · Grok
-# xAI no publica documentación oficial de sus crawlers, así que
-# se incluyen las tres variantes que aparecen en los registros.
-# ============================================================
+# Google — otros usos del contenido por Gemini y productos de Google.
+# NO controla la aparición en AI Overviews ni en AI Mode: eso lo
+# gobierna Googlebot y los controles normales de Search.
+User-agent: Google-Extended
+Allow: /
 
+# Apple — entrenamiento. Applebot (arriba) es el de búsqueda.
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta — IA de Facebook, Instagram y WhatsApp
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# xAI · Grok — xAI no publica documentación oficial de sus crawlers.
+# Se incluyen las variantes que aparecen en registros.
 User-agent: xAI-Bot
 Allow: /
 
@@ -93,24 +123,9 @@ User-agent: Grok
 Allow: /
 
 # ============================================================
-# PERPLEXITY
+# 4 · PREVISUALIZACIÓN EN REDES
+# Son los que arman la tarjeta cuando alguien comparte un link.
 # ============================================================
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Perplexity-User
-Allow: /
-
-# ============================================================
-# META · IA de Facebook, Instagram y WhatsApp
-# ============================================================
-
-User-agent: Meta-ExternalAgent
-Allow: /
-
-User-agent: meta-externalagent
-Allow: /
 
 User-agent: FacebookBot
 Allow: /
@@ -118,26 +133,35 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
 # ============================================================
-# OTROS SISTEMAS DE IA Y RECUPERACIÓN
+# 5 · OTROS RECUPERADORES Y AGREGADORES
 # ============================================================
 
 User-agent: Amazonbot
 Allow: /
 
-User-agent: Bytespider
-Allow: /
-
 User-agent: cohere-ai
 Allow: /
 
-User-agent: Diffbot
+User-agent: YouBot
 Allow: /
 
 User-agent: CCBot
 Allow: /
 
-User-agent: YouBot
+User-agent: Bytespider
+Allow: /
+
+User-agent: Diffbot
 Allow: /
 
 # ============================================================

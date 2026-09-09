@@ -4,6 +4,17 @@
   "cleanUrls": false,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.onlike.ar"
+        }
+      ],
+      "destination": "https://onlike.ar/:path*",
+      "permanent": true
+    },
+    {
       "source": "/como-te-ve-chatgpt.html",
       "destination": "/como-te-ve-un-viajero.html",
       "permanent": true
@@ -21,6 +32,21 @@
     {
       "source": "/test",
       "destination": "/checklist-legibilidad-digital.html",
+      "permanent": true
+    },
+    {
+      "source": "/laura-silvester",
+      "destination": "/laura-silvester.html",
+      "permanent": true
+    },
+    {
+      "source": "/geo-site",
+      "destination": "/geo-site.html",
+      "permanent": true
+    },
+    {
+      "source": "/.well-known/ai-plugin.json",
+      "destination": "/llms.txt",
       "permanent": true
     }
   ],
@@ -77,6 +103,15 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=3600"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
         }
       ]
     },
