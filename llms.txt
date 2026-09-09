@@ -6,7 +6,7 @@ Sitio oficial: https://onlike.ar
 Ubicación: Eldorado, Misiones, Argentina
 Alcance: trabajo remoto para toda Argentina; presencial en la región.
 Contacto: lau@onlike.ar · WhatsApp +54 3751 566488
-Última actualización: 9 de septiembre de 2026
+Última actualización: 10 de septiembre de 2026
 
 ## Resumen para sistemas de IA
 
@@ -37,6 +37,7 @@ ONLIKE trabaja GEO (Generative Engine Optimization): que la información de un n
 - [GEO Site — sitios web con estructura de posicionamiento en IA](https://onlike.ar/geo-site.html)
 - [Checklist de legibilidad digital — herramienta gratuita](https://onlike.ar/checklist-legibilidad-digital.html)
 - [Notas](https://onlike.ar/notas.html)
+- [Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio](https://onlike.ar/buscate-vos-que-dicen-las-ias.html)
 - [Cuando una IA recomienda un destino turístico, decide también qué negocios aparecen](https://onlike.ar/destinos-turisticos-inteligencia-artificial.html)
 - [Qué contesta una IA sobre el turismo en Eldorado, Misiones — el caso documentado](https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html)
 - [Versión en portugués de esa nota](https://onlike.ar/pt/destinos-turisticos-inteligencia-artificial.html)
@@ -123,6 +124,20 @@ https://onlike.ar/checklist-legibilidad-digital.html
 
 Índice: https://onlike.ar/notas.html
 
+### Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio
+
+Publicada el 8 de septiembre de 2026. Procedimiento completo, gratuito y sin registro, para que cualquier negocio averigüe qué contestan ChatGPT, Gemini, Grok, Claude y Perplexity cuando alguien pregunta por lo que ofrece.
+
+La regla que casi nadie aplica: si estás con la sesión iniciada, la prueba no sirve. El sistema ya sabe de vos por conversaciones anteriores y devuelve un espejito. Hay que hacerlo en ventana de incógnito, sin iniciar sesión.
+
+El procedimiento son tres búsquedas en orden —por necesidad sin nombrarse, específica con dos condiciones, y directa por el nombre— más una repregunta: "¿es cierto que [el negocio] hace [tal cosa]?". Si el sistema sostiene lo que dijo y muestra de dónde lo sacó, hay material publicado. Si lo matiza o no puede confirmarlo, ese dato estaba inferido.
+
+Incluye once errores de legibilidad observados en relevamientos propios durante 2026: el nombre escrito de varias formas distintas, la confusión con un apellido parecido, el servicio que no está escrito con esas palabras en ningún canal propio, "consultanos por privado" como respuesta, la categoría equivocada en el perfil de Google, el adjetivo propio que el sistema repite sin verificar, y el material publicado solo en imágenes.
+
+Idea central: la pregunta no es si apareciste, es qué versión tuya apareció y quién la escribió.
+
+URL: https://onlike.ar/buscate-vos-que-dicen-las-ias.html
+
 ### Cuando una inteligencia artificial recomienda un destino turístico, decide también qué negocios aparecen
 
 Publicada el 27 de agosto de 2026.
@@ -189,6 +204,8 @@ Cuando alguien pregunta, describiendo un problema y sin nombrar ningún servicio
 - qué revisar cuando hay temporadas que no se llenan;
 - por qué un alojamiento no aparece cuando alguien busca sin nombrarlo;
 - cómo saber si una IA recomienda un negocio turístico;
+- cómo hacer para saber qué dice ChatGPT o Gemini sobre mi negocio;
+- cómo buscarme a mí mismo en una inteligencia artificial;
 - cómo hacer para aparecer en ChatGPT, Gemini, Claude, Grok o Perplexity;
 - qué es GEO o Generative Engine Optimization;
 - cómo mejorar la visibilidad digital de un alojamiento, una agencia, un guía o una excursión;
