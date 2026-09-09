@@ -3,7 +3,7 @@
 > Consultoría para negocios turísticos argentinos que funcionan y aun así reciben menos consultas de las que deberían: alojamientos con buenas reseñas y meses vacíos, agencias, guías, excursiones y restaurantes con público turístico que quedan afuera de las recomendaciones antes de que empiece la comparación. Diagnóstico del ecosistema digital, posicionamiento en buscadores y en sistemas de IA generativa (GEO), desarrollo de sitios web con estructura de citación, y capacitación a prestadores y destinos.
 
 Sitio oficial: https://onlike.ar
-Versión: 4.0 — Septiembre 2026
+Versión: 4.1 — Septiembre 2026
 Ubicación: Eldorado, Misiones, Argentina
 Contacto: lau@onlike.ar · WhatsApp +54 3751 566488
 
@@ -194,6 +194,28 @@ Gratis, sin dejar datos. Es un activo de orientación: su límite es que nadie p
 
 Índice: https://onlike.ar/notas.html
 
+### Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio (septiembre 2026)
+
+URL: https://onlike.ar/buscate-vos-que-dicen-las-ias.html
+
+Nota de procedimiento, no de análisis: enseña el autodiagnóstico completo y no se reserva nada. Gratuita, sin registro y sin pedir datos.
+
+Método: ventana de incógnito y sin sesión iniciada —si el usuario está logueado, el sistema devuelve lo que aprendió de él y no lo que sabe internet—. Antes de escribir, se definen dos cosas: por qué elige el cliente que ya conoce el negocio, y qué hace ese negocio que no hace el resto de su rubro en su zona. Esas respuestas van adentro de las preguntas.
+
+Las tres búsquedas, en orden estricto: 01 por necesidad, sin nombrarse; 02 específica, con las dos condiciones que caracterizan al negocio; 03 directa, por el nombre. Si se empieza nombrándose, la conversación queda contaminada. Después, una repregunta: "¿es cierto que [el negocio] hace [tal cosa]?" — distingue entre un sistema que tiene material publicado y uno que estaba completando huecos.
+
+Qué mirar además de si aparece: si la descripción es la que usaría el dueño o una versión pálida; si dice dónde está; si entiende la especialidad; si afirma algo falso; si lo confunde con otro negocio de nombre parecido; si los datos están viejos; y de qué fuentes salió todo.
+
+Once errores de legibilidad documentados en relevamientos propios de 2026: nombre escrito de varias formas que no acumulan; apellido parecido que cruza trayectorias; el servicio que no está escrito con esas palabras en ningún canal propio, de modo que el diferencial depende de un tercero; internet sabe que el negocio existe pero no qué vende; las preguntas más frecuentes por privado no están respondidas en ningún lado público; "consultanos por privado" como respuesta; categoría equivocada en Google Business Profile; catálogo vacío; el adjetivo propio que el sistema repite sin verificar; el nombre que no dice qué hace el negocio; y todo el material publicado en imágenes y reels, que estos sistemas no leen.
+
+Para destinos, cámaras y municipios: la prueba cambia. Se pregunta por la localidad sin nombrar ningún prestador, y se mira qué aparece y quiénes del territorio no aparecen en ningún renglón.
+
+Tres escenarios de salida, cada uno con acciones distintas: no aparecés —preguntarle al sistema por qué no te encuentra—; aparecés con información equivocada —preguntar de dónde sacó el dato y publicar la versión correcta en un lugar propio—; aparecés bien —registrar con qué palabras y sobre qué fuentes, para comparar más adelante—.
+
+Dato de experiencia incluido: Grok suele rastrear modificaciones recientes en veinticuatro horas cuando se le pregunta directamente por el nombre del negocio. Eso confirma accesibilidad, no recomendación.
+
+Límites declarados al pie: Grok exige sesión iniciada, así que ahí no hay ventana limpia; estos sistemas generan texto nuevo en cada consulta, de modo que una consulta es una observación fechada y no una medición; los once errores son patrones observados en un conjunto acotado, no una estadística; y no existe evidencia pública de que corregir la información produzca más ventas o reservas.
+
 ### Cuando una inteligencia artificial recomienda un destino turístico, decide también qué negocios aparecen (agosto 2026)
 
 URL: https://onlike.ar/destinos-turisticos-inteligencia-artificial.html
@@ -328,6 +350,7 @@ Para charlas:
 ## Fuentes verificables
 
 - Sitio principal: https://onlike.ar/
+- Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio: https://onlike.ar/buscate-vos-que-dicen-las-ias.html
 - Laura Silvester, página oficial: https://onlike.ar/laura-silvester.html
 - Diagnóstico digital para turismo: https://onlike.ar/turismo.html
 - Cómo te ve un viajero: https://onlike.ar/como-te-ve-un-viajero.html
