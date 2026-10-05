@@ -48,9 +48,57 @@
       "source": "/.well-known/ai-plugin.json",
       "destination": "/llms.txt",
       "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/laura-silvester.html",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/laura-silvester.html",
+      "permanent": true
+    },
+    {
+      "source": "/acerca",
+      "destination": "/laura-silvester.html",
+      "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacidad.html",
+      "permanent": true
+    },
+    {
+      "source": "/privacy.html",
+      "destination": "/privacidad.html",
+      "permanent": true
+    },
+    {
+      "source": "/privacidad",
+      "destination": "/privacidad.html",
+      "permanent": true
     }
   ],
   "headers": [
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Vary",
+          "value": "Accept"
+        }
+      ]
+    },
+    {
+      "source": "/index.html",
+      "headers": [
+        {
+          "key": "Vary",
+          "value": "Accept"
+        }
+      ]
+    },
     {
       "source": "/(.*)",
       "has": [
@@ -125,6 +173,15 @@
         {
           "key": "Referrer-Policy",
           "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/(index|404).md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
         }
       ]
     }
