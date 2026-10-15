@@ -58,7 +58,7 @@ La frase que mejor explica el trabajo: recorro el negocio como lo recorre el via
 
 ## Servicios
 
-### 1. Auditoría digital para negocios turísticos
+### 1. Estrategia digital para turismo: auditoría
 
 Página: https://onlike.ar/turismo.html
 
@@ -74,7 +74,7 @@ Método: cuestionario de siete bloques respondido por el dueño (identidad y dif
 
 Un diagnóstico de un negocio que funciona no se escribe en clave de error. El orden es: lo que está bien hecho, lo que ya tiene y no está usando, lo que falta.
 
-El precio depende de la complejidad del caso y se define después de una conversación. La implementación se presupuesta aparte y no se vende antes del diagnóstico.
+El precio depende de la complejidad del caso y se define después de una conversación. Si después el cliente quiere que Onlike lo ejecute, sigue el ordenamiento digital, que se presupuesta aparte.
 
 ### 2. Cómo te ve un viajero
 
@@ -136,15 +136,17 @@ ONLIKE no hace tiendas online ni ecommerce. Pagos, envíos y stock son otro rubr
 
 A quién le sirve: cuanto más necesita una persona explicar su necesidad, comparar opciones, verificar y confiar antes de decidir, más espacio tiene una inteligencia artificial para intervenir en esa decisión. Turismo y alojamiento, tecnología, productos que se comparan antes de comprar, servicios financieros e información de salud son los rubros donde ya hay evidencia. Profesionales especializados, contadores y escribanas, abogados, consultoría y B2B, inmobiliarias, educación e instituciones y productos a medida son los de alto potencial por tipo de decisión. Tiene menos peso en compra cotidiana y reposición rutinaria.
 
-### 4. Ordenamiento e implementación digital
+### 4. Estrategia digital para turismo: ordenamiento digital
 
-Para negocios con producto real cuya presencia digital está desarmada y que no tienen quién ejecute. Es ejecución, no análisis. Se vende por etapas y cada una se contrata por separado.
+Página: https://onlike.ar/turismo.html
 
-La primera etapa ordena lo que se ve afuera: un solo esquema de precios y paquetes en las monedas del mercado, redacción de la experiencia completa en los idiomas que hagan falta, WhatsApp Business con catálogo, alta y carga de Google Business Profile y Maps, mensaje para pedir reseñas, unificación o cierre de cuentas duplicadas, Instagram ordenado.
+Para negocios con producto real cuya presencia digital está desarmada y que no tienen quién ejecute. Es ejecución: el cliente recibe las cosas hechas. La pregunta que separa la auditoría del ordenamiento es quién va a hacer el trabajo. Se vende por etapas y cada una se contrata por separado; se puede contratar directo o después de una auditoría.
 
-La segunda es contenido y visibilidad: auditoría de bloqueos y de cómo lo encuentran hoy, textos de los circuitos o productos en los idiomas que correspondan, calendario de contenido con guía de qué publicar y qué no, y estructura para que las IAs puedan citarlo.
+La primera etapa ordena lo que el viajero ve cuando busca el negocio: una promesa y un público prioritario, un solo esquema de precios y paquetes en las monedas del mercado, redacción de la experiencia completa en los idiomas que hagan falta, WhatsApp Business con catálogo, alta u optimización de Google Business Profile y Maps, respuesta a reseñas y mensaje para pedir nuevas, unificación o cierre de cuentas duplicadas, Instagram y Facebook ordenados.
 
-Sale del diagnóstico y siempre se presupuesta aparte.
+La segunda etapa la define el caso: alta y carga en una plataforma de reserva como Booking, una página web en los idiomas del mercado, o visibilidad y estructura para que las IAs puedan citar el negocio.
+
+Con usuario y contraseña, Onlike carga los cambios; sin accesos, entrega todo escrito y especificado para que lo cargue quien el cliente elija. No incluye la gestión semanal de redes: lo que se publica después lo maneja el cliente o quien elija.
 
 ### 5. Mentoría y acompañamiento
 
@@ -361,7 +363,7 @@ Para charlas:
 - Qué te llevás de una auditoría de tu negocio turístico: https://onlike.ar/auditoria-negocio-turistico.html
 - Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio: https://onlike.ar/buscate-vos-que-dicen-las-ias.html
 - Laura Silvester, página oficial: https://onlike.ar/laura-silvester.html
-- Auditoría digital para negocios turísticos: https://onlike.ar/turismo.html
+- Estrategia digital para turismo, auditoría y ordenamiento digital: https://onlike.ar/turismo.html
 - Cómo te ve un viajero: https://onlike.ar/como-te-ve-un-viajero.html
 - GEO Site: https://onlike.ar/geo-site.html
 - Checklist de legibilidad digital: https://onlike.ar/checklist-legibilidad-digital.html

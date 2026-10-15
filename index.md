@@ -21,11 +21,11 @@ Una página web escrita antes que diseñada, pensada desde el primer texto para 
 
 ### Cómo te ve un viajero
 
-Para negocios turísticos. Miro tu alojamiento, excursión o servicio desde afuera, como alguien que está por decidir: plataformas de reserva, Google, redes, WhatsApp y qué contesta ChatGPT. Entrego un documento con qué conviene cambiar primero. $90.000. [Ver diagnóstico](https://onlike.ar/como-te-ve-un-viajero.html)
+Para negocios turísticos. Miro tu alojamiento, excursión o servicio desde afuera, como alguien que está por decidir: plataformas de reserva, Google, redes, WhatsApp y qué contesta ChatGPT. Entrego un documento con qué conviene cambiar primero. $90.000. [Ver el servicio](https://onlike.ar/como-te-ve-un-viajero.html)
 
 ### Estrategia digital para turismo
 
-Para alojamientos y proyectos con producto probado: reconstruyo el recorrido del viajero para ver dónde se pierde la consulta, qué canal conviene trabajar primero y cuánta reserva está pasando por plataformas. [Ver el servicio](https://onlike.ar/turismo.html)
+Para alojamientos y proyectos con producto probado: reconstruyo el recorrido del viajero para ver dónde se pierde la consulta, qué canal conviene trabajar primero y cuánta reserva está pasando por plataformas. Auditoría u ordenamiento, según quién vaya a ejecutar. [Ver el servicio](https://onlike.ar/turismo.html)
 
 ### Posicionamiento en buscadores e inteligencias artificiales
 
