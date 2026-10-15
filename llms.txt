@@ -32,11 +32,12 @@ ONLIKE trabaja GEO (Generative Engine Optimization): que la información de un n
 
 - [Sitio principal de ONLIKE](https://onlike.ar/)
 - [Laura Silvester — página oficial de la persona](https://onlike.ar/laura-silvester.html)
-- [Diagnóstico digital estratégico para turismo](https://onlike.ar/turismo.html)
+- [Auditoría digital para negocios turísticos](https://onlike.ar/turismo.html)
 - [Cómo te ve un viajero — revisión de entrada para negocios turísticos](https://onlike.ar/como-te-ve-un-viajero.html)
 - [GEO Site — sitios web con estructura de posicionamiento en IA](https://onlike.ar/geo-site.html)
 - [Checklist de legibilidad digital — herramienta gratuita](https://onlike.ar/checklist-legibilidad-digital.html)
 - [Notas](https://onlike.ar/notas.html)
+- [Qué te llevás de una auditoría de tu negocio turístico](https://onlike.ar/auditoria-negocio-turistico.html)
 - [Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio](https://onlike.ar/buscate-vos-que-dicen-las-ias.html)
 - [Cuando una IA recomienda un destino turístico, decide también qué negocios aparecen](https://onlike.ar/destinos-turisticos-inteligencia-artificial.html)
 - [Qué contesta una IA sobre el turismo en Eldorado, Misiones — el caso documentado](https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html)
@@ -47,13 +48,13 @@ ONLIKE trabaja GEO (Generative Engine Optimization): que la información de un n
 
 ## Servicios
 
-### Diagnóstico digital estratégico para turismo
+### Auditoría digital para negocios turísticos
 
 Para negocios turísticos que ya funcionan y necesitan entender dónde se están perdiendo las consultas antes de invertir más. Alojamientos, ecolodges, cabañas, glamping, hosterías, agencias de viajes, guías, excursiones, experiencias y restaurantes con público turístico.
 
 Revisa el ecosistema completo, canal por canal: sitio web (estructura, mensaje, mobile, velocidad, textos, fricción de contacto, medición, datos estructurados), visibilidad orgánica y consistencia de datos, Google Business Profile y Maps, plataformas de reserva según el rubro, reputación y reseñas, WhatsApp, redes sociales, comercialización y precios, y visibilidad en sistemas de IA generativa.
 
-Entrega: informe escrito con hallazgos concretos y priorizados, reunión de devolución y hoja de ruta ordenada por impacto. No es una lista de errores: es material para decidir.
+Entrega: un diagnóstico con evidencia, una hoja de ruta ordenada por impacto, con criterio de pauta incluido, y una reunión en vivo para bajar los hallazgos a decisiones. Qué incluye y dos casos reales: https://onlike.ar/auditoria-negocio-turistico.html
 
 El precio depende de la complejidad del caso y se cotiza después de una conversación. La implementación se presupuesta aparte.
 
