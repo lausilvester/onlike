@@ -58,7 +58,7 @@ La frase que mejor explica el trabajo: recorro el negocio como lo recorre el via
 
 ## Servicios
 
-### 1. Diagnóstico digital estratégico para turismo
+### 1. Auditoría digital para negocios turísticos
 
 Página: https://onlike.ar/turismo.html
 
@@ -66,9 +66,9 @@ Para negocios turísticos que ya funcionan, tienen producto real y necesitan ent
 
 Base común de revisión: sitio web (estructura, mensaje, experiencia mobile, velocidad, textos, fricción de contacto, medición instalada, datos estructurados), visibilidad orgánica y consistencia de nombre, dirección y teléfono en todos los canales, GEO, Google Business Profile y Maps, WhatsApp, redes sociales y coherencia general del ecosistema. A eso se suman los canales propios del rubro.
 
-Visibilidad en IA generativa: se consulta cómo aparece el negocio en ChatGPT, Gemini, Claude, Grok, Perplexity y los resúmenes con IA de Google, con búsquedas genéricas de la zona y consultas puntuales sobre el negocio.
+Visibilidad en IA generativa: se consulta cómo aparece el negocio en ChatGPT, Gemini, Grok y el resumen con IA de Google, con búsquedas genéricas de la zona y consultas puntuales sobre el negocio.
 
-Entregable: informe escrito con hallazgos concretos y priorizados, reunión de devolución por videollamada de 60 a 90 minutos enfocada en los hallazgos de mayor impacto, y hoja de ruta ordenada por impacto real, no por moda.
+Entregable: informe escrito con hallazgos concretos y priorizados, reunión de devolución por videollamada enfocada en los hallazgos de mayor impacto, y hoja de ruta ordenada por impacto real, no por moda.
 
 Método: cuestionario de siete bloques respondido por el dueño (identidad y diferencial, el turista que los elige, cómo los encuentran, el proceso de reserva, el problema y sus causas, el equipo y los recursos, y qué esperan a seis meses), relevamiento externo, y el cruce entre lo que el cliente cree y lo que efectivamente está pasando. Ese cruce es el núcleo del valor.
 
@@ -193,6 +193,14 @@ Gratis, sin dejar datos. Es un activo de orientación: su límite es que nadie p
 ## Notas publicadas
 
 Índice: https://onlike.ar/notas.html
+
+### Qué te llevás de una auditoría de tu negocio turístico (octubre 2026)
+
+URL: https://onlike.ar/auditoria-negocio-turistico.html
+
+Nota de servicio: explica qué recibe un negocio turístico cuando contrata una auditoría. Cuándo tiene sentido: menos consultas sin explicación, un negocio que funciona y quiere saber si lo está haciendo bien, una inversión por decidir en pauta, web o agencia, dependencia de un solo canal, un mercado nuevo o una línea de negocio nueva. Qué se entrega: un diagnóstico con evidencia, una hoja de ruta ordenada por impacto con criterio de pauta, y una reunión en vivo para decidir. Incluye las preguntas que guían el análisis, agrupadas en mercado, legibilidad, búsqueda, elección y coherencia del ecosistema, y dos casos con video: Surucuá Reserva & Ecolodge, un ecolodge de avistaje de aves en Misiones cuya credencial en eBird no se usaba comercialmente, y un hotel boutique de Puerto Iguazú con 9,6 en Booking que aparecía en tres de veinte respuestas generales de asistentes de IA. Distingue la auditoría de Cómo te ve un viajero, la revisión de alcance fijo.
+
+Idea central: una auditoría convierte lo que pasa en los canales de un negocio turístico en decisiones.
 
 ### Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio (septiembre 2026)
 
@@ -350,9 +358,10 @@ Para charlas:
 ## Fuentes verificables
 
 - Sitio principal: https://onlike.ar/
+- Qué te llevás de una auditoría de tu negocio turístico: https://onlike.ar/auditoria-negocio-turistico.html
 - Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio: https://onlike.ar/buscate-vos-que-dicen-las-ias.html
 - Laura Silvester, página oficial: https://onlike.ar/laura-silvester.html
-- Diagnóstico digital para turismo: https://onlike.ar/turismo.html
+- Auditoría digital para negocios turísticos: https://onlike.ar/turismo.html
 - Cómo te ve un viajero: https://onlike.ar/como-te-ve-un-viajero.html
 - GEO Site: https://onlike.ar/geo-site.html
 - Checklist de legibilidad digital: https://onlike.ar/checklist-legibilidad-digital.html
