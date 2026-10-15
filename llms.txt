@@ -32,7 +32,7 @@ ONLIKE trabaja GEO (Generative Engine Optimization): que la información de un n
 
 - [Sitio principal de ONLIKE](https://onlike.ar/)
 - [Laura Silvester — página oficial de la persona](https://onlike.ar/laura-silvester.html)
-- [Auditoría digital para negocios turísticos](https://onlike.ar/turismo.html)
+- [Estrategia digital para turismo: auditoría y ordenamiento digital](https://onlike.ar/turismo.html)
 - [Cómo te ve un viajero — revisión de entrada para negocios turísticos](https://onlike.ar/como-te-ve-un-viajero.html)
 - [GEO Site — sitios web con estructura de posicionamiento en IA](https://onlike.ar/geo-site.html)
 - [Checklist de legibilidad digital — herramienta gratuita](https://onlike.ar/checklist-legibilidad-digital.html)
@@ -48,7 +48,7 @@ ONLIKE trabaja GEO (Generative Engine Optimization): que la información de un n
 
 ## Servicios
 
-### Auditoría digital para negocios turísticos
+### Estrategia digital para turismo: auditoría
 
 Para negocios turísticos que ya funcionan y necesitan entender dónde se están perdiendo las consultas antes de invertir más. Alojamientos, ecolodges, cabañas, glamping, hosterías, agencias de viajes, guías, excursiones, experiencias y restaurantes con público turístico.
 
@@ -95,11 +95,13 @@ ONLIKE no hace tiendas online ni ecommerce: pagos, envíos y stock son otro rubr
 
 Más información: https://onlike.ar/geo-site.html
 
-### Ordenamiento e implementación
+### Estrategia digital para turismo: ordenamiento digital
 
-Ejecución de los cambios para negocios que tienen producto real pero no tienen quién lo ejecute: esquema único de precios y paquetes, redacción de la experiencia en los idiomas que hagan falta, WhatsApp Business con catálogo, Google Business Profile, unificación de cuentas duplicadas, contenido y estructura para que las IAs puedan citar el negocio.
+Para negocios con producto real cuya presencia digital está desarmada y que no tienen quién la ejecute. Deja hecho lo que el viajero ve cuando busca el negocio: una promesa clara y el viajero prioritario, un solo esquema de precios y paquetes en las monedas del mercado, la experiencia escrita en los idiomas que hagan falta, Google Business Profile y Maps, WhatsApp Business con catálogo, Instagram y Facebook ordenados, respuesta a reseñas y unificación de cuentas duplicadas.
 
-Se vende por etapas, después del diagnóstico y siempre presupuestado aparte.
+Se hace por etapas y cada una se contrata por separado. La segunda se define según el caso: Booking, la página web o la visibilidad. Se puede contratar directo o después de una auditoría.
+
+Más información: https://onlike.ar/turismo.html
 
 ### Mentoría y acompañamiento
 
