@@ -186,15 +186,6 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "@id": "https://onlike.ar/geo-site.html#service",
-              "name": "GEO Site",
-              "url": "https://onlike.ar/geo-site.html"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
               "@id": "https://onlike.ar/como-te-ve-un-viajero.html#service",
               "name": "Cómo te ve un viajero",
               "url": "https://onlike.ar/como-te-ve-un-viajero.html"
@@ -204,8 +195,42 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
+              "@id": "https://onlike.ar/turismo.html#service",
+              "name": "Estrategia digital para turismo",
+              "url": "https://onlike.ar/turismo.html"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://onlike.ar/geo-site.html#service",
+              "name": "GEO Site",
+              "url": "https://onlike.ar/geo-site.html"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
               "@id": "https://onlike.ar/#service-estrategia",
-              "name": "Estrategia digital y posicionamiento en buscadores e IAs"
+              "name": "Posicionamiento en buscadores e inteligencias artificiales"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://onlike.ar/#service-implementacion-ia",
+              "name": "Implementación de IA"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://onlike.ar/#service-mentoria",
+              "name": "Mentoría 1:1"
             }
           },
           {
@@ -214,15 +239,6 @@
               "@type": "Service",
               "@id": "https://onlike.ar/#service-charlas",
               "name": "Charlas y capacitaciones sobre IA y turismo"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "@id": "https://onlike.ar/turismo.html#service",
-              "name": "Estrategia digital para turismo",
-              "url": "https://onlike.ar/turismo.html"
             }
           }
         ]
@@ -353,7 +369,7 @@
           "name": "¿Cuánto cuestan los servicios?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Cómo te ve un viajero: $90.000 ARS. GEO Site: desde $250.000 ARS cuando traés el contenido base escrito. Los diagnósticos completos, mentorías y capacitaciones se cotizan según el caso."
+            "text": "Cómo te ve un viajero: $90.000 ARS. GEO Site: desde $250.000 ARS cuando traés el contenido base escrito. Las auditorías, mentorías, implementaciones de IA y capacitaciones se cotizan según el caso."
           }
         },
         {
@@ -808,6 +824,17 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5px;
     background: rgba(255,255,255,0.12);
+  }
+  .services-grid--two { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 760px) { .services-grid--two { grid-template-columns: 1fr; } }
+  .services-group-label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--lime);
+    margin: 3rem 0 1rem;
   }
   .service-card {
     background: var(--purple-deep);
@@ -1361,21 +1388,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <p>Trabajo sobre una pregunta simple: qué encuentra alguien sobre tu negocio, qué entiende y qué necesita verificar antes de elegirte. Según el caso, el trabajo empieza con un diagnóstico, un GEO Site o una estrategia más amplia.</p>
 </div>
-<div class="services-grid" role="list">
+<p class="services-group-label">Para turismo</p>
+<div class="services-grid services-grid--two" role="list">
 <article class="service-card" role="listitem">
 <p aria-hidden="true" class="service-num">01</p>
-<h3 class="service-name">GEO Site</h3>
-<p class="service-desc">Una página web escrita antes que diseñada, pensada desde el primer texto para personas, buscadores e inteligencias artificiales. Sitio propio en tu dominio, con botón de WhatsApp y formulario de contacto. Desde $250.000. <a href="https://onlike.ar/geo-site.html" style="color:var(--lime);font-weight:600;text-decoration:none;">Ver el servicio →</a></p>
+<h3 class="service-name">Cómo te ve un viajero</h3>
+<p class="service-desc">Miro tu alojamiento, excursión o servicio desde afuera, como alguien que está por decidir: plataformas de reserva, Google, redes, WhatsApp y qué contesta ChatGPT. Entrego un documento con qué conviene cambiar primero. Después, lo resolvés vos solo o lo resolvemos juntos, con una mentoría, un ordenamiento o los dos. $90.000. <a href="https://onlike.ar/como-te-ve-un-viajero.html" style="color:var(--lime);font-weight:600;text-decoration:none;">Ver el servicio →</a></p>
 </article>
 <article class="service-card" role="listitem">
 <p aria-hidden="true" class="service-num">02</p>
-<h3 class="service-name">Cómo te ve un viajero</h3>
-<p class="service-desc">Para negocios turísticos. Miro tu alojamiento, excursión o servicio desde afuera, como alguien que está por decidir: plataformas de reserva, Google, redes, WhatsApp y qué contesta ChatGPT. Entrego un documento con qué conviene cambiar primero. $90.000. <a href="https://onlike.ar/como-te-ve-un-viajero.html" style="color:var(--lime);font-weight:600;text-decoration:none;">Ver el servicio →</a></p>
+<h3 class="service-name">Estrategia digital para turismo</h3>
+<p class="service-desc">Para alojamientos y proyectos con producto probado: reconstruyo el recorrido del viajero para ver dónde se pierde la consulta, qué canal conviene trabajar primero y cuánta reserva está pasando por plataformas. Siempre empieza con una auditoría que termina en una hoja de ruta. Después la ejecutás vos o sumo mi intervención: ordenamiento digital, mentoría o los dos. <a href="https://onlike.ar/turismo.html" style="color:var(--lime);font-weight:600;text-decoration:none;">Ver el servicio →</a></p>
 </article>
+</div>
+<p class="services-group-label">Para cualquier negocio</p>
+<div class="services-grid services-grid--two" role="list">
 <article class="service-card" role="listitem">
 <p aria-hidden="true" class="service-num">03</p>
-<h3 class="service-name">Estrategia digital para turismo</h3>
-<p class="service-desc">Para alojamientos y proyectos con producto probado: reconstruyo el recorrido del viajero para ver dónde se pierde la consulta, qué canal conviene trabajar primero y cuánta reserva está pasando por plataformas. Auditoría u ordenamiento, según quién vaya a ejecutar. <a href="https://onlike.ar/turismo.html" style="color:var(--lime);font-weight:600;text-decoration:none;">Ver el servicio →</a></p>
+<h3 class="service-name">GEO Site</h3>
+<p class="service-desc">Una página web escrita antes que diseñada, pensada desde el primer texto para personas, buscadores e inteligencias artificiales. Sitio propio en tu dominio, con botón de WhatsApp y formulario de contacto. Desde $250.000. <a href="https://onlike.ar/geo-site.html" style="color:var(--lime);font-weight:600;text-decoration:none;">Ver el servicio →</a></p>
 </article>
 <article class="service-card" role="listitem">
 <p aria-hidden="true" class="service-num">04</p>
@@ -1384,8 +1415,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </article>
 <article class="service-card" role="listitem">
 <p aria-hidden="true" class="service-num">05</p>
-<h3 class="service-name">Capacitaciones y disertaciones</h3>
-<p class="service-desc">Charlas y formación para cámaras, entes de turismo, instituciones educativas y equipos de trabajo sobre inteligencia artificial aplicada, comportamiento del viajero y visibilidad digital. <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20consultarte%20por%20una%20charla%20o%20capacitaci%C3%B3n." rel="noopener noreferrer" style="color:var(--lime);font-weight:600;text-decoration:none;" target="_blank">Consultar por este servicio →</a></p>
+<h3 class="service-name">Implementación de IA</h3>
+<p class="service-desc">Recorro en persona los procesos de tu negocio: acompaño las tareas y converso con el equipo. Te propongo qué se puede resolver con inteligencia artificial y qué conviene dejar como está, y después elegimos juntos qué poner en marcha. Presencial. <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20interesa%20la%20implementaci%C3%B3n%20de%20IA%20en%20mi%20negocio." rel="noopener noreferrer" style="color:var(--lime);font-weight:600;text-decoration:none;" target="_blank">Consultar por este servicio →</a></p>
+</article>
+<article class="service-card" role="listitem">
+<p aria-hidden="true" class="service-num">06</p>
+<h3 class="service-name">Mentorías 1:1, capacitaciones y disertaciones</h3>
+<p class="service-desc">Mentoría uno a uno, a pedido: estudio previo, encuentro y apunte guía. Presencial en tu negocio si estás en Eldorado, virtual para el resto del país. Charlas y capacitaciones para cámaras, entes de turismo, instituciones educativas y equipos de trabajo, sobre inteligencia artificial aplicada, comportamiento del viajero y visibilidad digital. <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20consultarte%20por%20una%20mentor%C3%ADa%2C%20charla%20o%20capacitaci%C3%B3n." rel="noopener noreferrer" style="color:var(--lime);font-weight:600;text-decoration:none;" target="_blank">Consultar por este servicio →</a></p>
 </article>
 </div>
 </div>
@@ -1465,14 +1501,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="accordion-item" role="listitem" style="padding:1.9rem 0;display:grid;grid-template-columns:auto 1fr;gap:1.6rem;align-items:start;">
 <span aria-hidden="true" class="accordion-num">01</span>
 <div>
-<h3 class="accordion-title" style="display:block;margin-bottom:0.7rem;">Diagnóstico estratégico</h3>
+<h3 class="accordion-title" style="display:block;margin-bottom:0.7rem;">Primero, mirar.</h3>
 <p style="font-size:0.95rem;color:rgba(19,22,37,0.72);line-height:1.8;max-width:640px;">Miro el negocio desde afuera, cruzo lo que se cree adentro con lo que muestran los canales y ordeno prioridades antes de tocar nada.</p>
 </div>
 </div>
 <div class="accordion-item" role="listitem" style="padding:1.9rem 0;display:grid;grid-template-columns:auto 1fr;gap:1.6rem;align-items:start;">
 <span aria-hidden="true" class="accordion-num">02</span>
 <div>
-<h3 class="accordion-title" style="display:block;margin-bottom:0.7rem;">Dirección estratégica y crecimiento</h3>
+<h3 class="accordion-title" style="display:block;margin-bottom:0.7rem;">Después, acompañar.</h3>
 <p style="font-size:0.95rem;color:rgba(19,22,37,0.72);line-height:1.8;max-width:640px;">Acompaño la ejecución con hoja de ruta y sigo qué cambia en buscadores y en las IAs.</p>
 </div>
 </div>
@@ -1545,7 +1581,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="container">
 <span class="section-label on-dark">Preguntas frecuentes</span>
 <h2 class="section-title" id="faq-heading" style="color:var(--white);margin-bottom:3rem;">Lo que más<br/>me preguntan.</h2>
-<div class="faq-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;"><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Qué es GEO y por qué importa ahora?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">GEO significa Generative Engine Optimization. Es el trabajo de preparar la información y la presencia digital de un negocio para que pueda ser encontrada e interpretada por motores generativos cuando responden consultas. Se suma al SEO; trabaja otra capa de la visibilidad.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Por qué algunos negocios aparecen en las IAs y otros no?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Las respuestas se construyen con información disponible en distintas fuentes. Cuando esa información es escasa, contradictoria o difícil de relacionar, el sistema puede describir mal el negocio, reconocerlo solo por su nombre o dejarlo afuera de una respuesta.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Cómo sé qué dicen las IAs sobre mi negocio?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Una prueba simple es preguntar por lo que ofrecés sin usar tu nombre y después buscarte por nombre. Para hacerlo con más criterio publiqué el procedimiento completo en la nota <a href="https://onlike.ar/buscate-vos-que-dicen-las-ias.html" style="color:var(--lime);text-decoration:none;border-bottom:1px solid rgba(209,250,62,0.3);">“Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio”</a>.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Qué es un GEO Site?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Es una página web escrita antes que diseñada, desarrollada para este nuevo entorno: personas, buscadores e inteligencias artificiales. Incluye contenido estructurado, datos Schema.org, robots.txt, sitemap, archivos complementarios y alta en buscadores. Desde $250.000 ARS. <a href="https://onlike.ar/geo-site.html" style="color:var(--lime);text-decoration:none;border-bottom:1px solid rgba(209,250,62,0.3);">Ver más →</a></p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Cuánto cuestan los servicios?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Cómo te ve un viajero: $90.000 ARS. GEO Site: desde $250.000 ARS cuando traés el contenido base escrito. Los diagnósticos completos, mentorías y capacitaciones se cotizan según el caso.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Trabajás solo con turismo?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Turismo es mi especialidad. También trabajo con profesionales independientes, servicios especializados e instituciones cuando la decisión necesita explicación, comparación y confianza antes de elegir.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Hacés community management o gestión de redes?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Mi trabajo es estratégico: diagnóstico, posicionamiento, sitios y metodología. La gestión operativa y diaria de redes queda fuera del servicio.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Ofrecés servicios presenciales o remotos?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Los dos. Trabajo de forma remota con proyectos de todo el país y de manera presencial en Misiones cuando el proyecto lo requiere.</p></div></div>
+<div class="faq-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;"><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Qué es GEO y por qué importa ahora?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">GEO significa Generative Engine Optimization. Es el trabajo de preparar la información y la presencia digital de un negocio para que pueda ser encontrada e interpretada por motores generativos cuando responden consultas. Se suma al SEO; trabaja otra capa de la visibilidad.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Por qué algunos negocios aparecen en las IAs y otros no?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Las respuestas se construyen con información disponible en distintas fuentes. Cuando esa información es escasa, contradictoria o difícil de relacionar, el sistema puede describir mal el negocio, reconocerlo solo por su nombre o dejarlo afuera de una respuesta.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Cómo sé qué dicen las IAs sobre mi negocio?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Una prueba simple es preguntar por lo que ofrecés sin usar tu nombre y después buscarte por nombre. Para hacerlo con más criterio publiqué el procedimiento completo en la nota <a href="https://onlike.ar/buscate-vos-que-dicen-las-ias.html" style="color:var(--lime);text-decoration:none;border-bottom:1px solid rgba(209,250,62,0.3);">“Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio”</a>.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Qué es un GEO Site?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Es una página web escrita antes que diseñada, desarrollada para este nuevo entorno: personas, buscadores e inteligencias artificiales. Incluye contenido estructurado, datos Schema.org, robots.txt, sitemap, archivos complementarios y alta en buscadores. Desde $250.000 ARS. <a href="https://onlike.ar/geo-site.html" style="color:var(--lime);text-decoration:none;border-bottom:1px solid rgba(209,250,62,0.3);">Ver más →</a></p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Cuánto cuestan los servicios?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Cómo te ve un viajero: $90.000 ARS. GEO Site: desde $250.000 ARS cuando traés el contenido base escrito. Las auditorías, mentorías, implementaciones de IA y capacitaciones se cotizan según el caso.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Trabajás solo con turismo?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Turismo es mi especialidad. También trabajo con profesionales independientes, servicios especializados e instituciones cuando la decisión necesita explicación, comparación y confianza antes de elegir.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Hacés community management o gestión de redes?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Mi trabajo es estratégico: diagnóstico, posicionamiento, sitios y metodología. La gestión operativa y diaria de redes queda fuera del servicio.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Ofrecés servicios presenciales o remotos?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Los dos. Trabajo de forma remota con proyectos de todo el país y de manera presencial en Misiones cuando el proyecto lo requiere.</p></div></div>
 </div>
 </section>
 <!-- CHECKLIST -->

@@ -15,25 +15,33 @@ ONLIKE es mi consultoría de estrategia digital, en Eldorado, Misiones. Trabajo 
 
 Trabajo sobre una pregunta simple: qué encuentra alguien sobre tu negocio, qué entiende y qué necesita verificar antes de elegirte. Según el caso, el trabajo empieza con un diagnóstico, un GEO Site o una estrategia más amplia.
 
-### GEO Site
+### Para turismo
+
+#### Cómo te ve un viajero
+
+Miro tu alojamiento, excursión o servicio desde afuera, como alguien que está por decidir: plataformas de reserva, Google, redes, WhatsApp y qué contesta ChatGPT. Entrego un documento con qué conviene cambiar primero. Después, lo resolvés vos solo o lo resolvemos juntos, con una mentoría, un ordenamiento o los dos. $90.000. [Ver el servicio](https://onlike.ar/como-te-ve-un-viajero.html)
+
+#### Estrategia digital para turismo
+
+Para alojamientos y proyectos con producto probado: reconstruyo el recorrido del viajero para ver dónde se pierde la consulta, qué canal conviene trabajar primero y cuánta reserva está pasando por plataformas. Siempre empieza con una auditoría que termina en una hoja de ruta. Después la ejecutás vos o sumo mi intervención: ordenamiento digital, mentoría o los dos. [Ver el servicio](https://onlike.ar/turismo.html)
+
+### Para cualquier negocio
+
+#### GEO Site
 
 Una página web escrita antes que diseñada, pensada desde el primer texto para personas, buscadores e inteligencias artificiales. Sitio propio en tu dominio, con botón de WhatsApp y formulario de contacto. Desde $250.000. [Ver el servicio](https://onlike.ar/geo-site.html)
 
-### Cómo te ve un viajero
-
-Para negocios turísticos. Miro tu alojamiento, excursión o servicio desde afuera, como alguien que está por decidir: plataformas de reserva, Google, redes, WhatsApp y qué contesta ChatGPT. Entrego un documento con qué conviene cambiar primero. $90.000. [Ver el servicio](https://onlike.ar/como-te-ve-un-viajero.html)
-
-### Estrategia digital para turismo
-
-Para alojamientos y proyectos con producto probado: reconstruyo el recorrido del viajero para ver dónde se pierde la consulta, qué canal conviene trabajar primero y cuánta reserva está pasando por plataformas. Auditoría u ordenamiento, según quién vaya a ejecutar. [Ver el servicio](https://onlike.ar/turismo.html)
-
-### Posicionamiento en buscadores e inteligencias artificiales
+#### Posicionamiento en buscadores e inteligencias artificiales
 
 Trabajo la información que existe sobre el negocio y cómo está estructurada, para que buscadores y sistemas de inteligencia artificial puedan encontrarla y entenderla. SEO y GEO.
 
-### Capacitaciones y disertaciones
+#### Implementación de IA
 
-Charlas y formación para cámaras, entes de turismo, instituciones educativas y equipos de trabajo sobre inteligencia artificial aplicada, comportamiento del viajero y visibilidad digital.
+Recorro en persona los procesos de tu negocio: acompaño las tareas y converso con el equipo. Te propongo qué se puede resolver con inteligencia artificial y qué conviene dejar como está, y después elegimos juntos qué poner en marcha. Presencial.
+
+#### Mentorías 1:1, capacitaciones y disertaciones
+
+Mentoría uno a uno, a pedido: estudio previo, encuentro y apunte guía. Presencial en tu negocio si estás en Eldorado, virtual para el resto del país. Charlas y capacitaciones para cámaras, entes de turismo, instituciones educativas y equipos de trabajo, sobre inteligencia artificial aplicada, comportamiento del viajero y visibilidad digital.
 
 ## Digital para turismo
 
@@ -45,8 +53,8 @@ Un negocio no le entrega una descripción a estos sistemas: deja señales, y ell
 
 Cada propietario llega con un problema propio, y casi nunca es el mismo. Empiezo escuchando ese. La investigación sale de ahí: cómo funciona el negocio por dentro, qué mercado tiene, qué decisión hay que tomar. Lo que investigo lo decide el caso.
 
-1. **Diagnóstico estratégico.** Miro el negocio desde afuera, cruzo lo que se cree adentro con lo que muestran los canales y ordeno prioridades antes de tocar nada.
-2. **Dirección estratégica y crecimiento.** Acompaño la ejecución con hoja de ruta y sigo qué cambia en buscadores y en las IAs.
+1. **Primero, mirar.** Miro el negocio desde afuera, cruzo lo que se cree adentro con lo que muestran los canales y ordeno prioridades antes de tocar nada.
+2. **Después, acompañar.** Acompaño la ejecución con hoja de ruta y sigo qué cambia en buscadores y en las IAs.
 
 ## Para quién trabajo
 
@@ -65,7 +73,7 @@ Licenciada en Turismo por la Universidad Nacional de Misiones y fundadora de ONL
 
 **¿Qué es GEO?** Generative Engine Optimization: preparar la información y la presencia digital de un negocio para que pueda ser encontrada e interpretada por sistemas de inteligencia artificial cuando responden consultas. Se suma al SEO.
 
-**¿Cuánto cuestan los servicios?** Cómo te ve un viajero: $90.000 ARS. GEO Site: desde $250.000 ARS cuando traés el contenido base escrito. Diagnósticos completos, mentorías y capacitaciones se cotizan según el caso.
+**¿Cuánto cuestan los servicios?** Cómo te ve un viajero: $90.000 ARS. GEO Site: desde $250.000 ARS cuando traés el contenido base escrito. Las auditorías, mentorías, implementaciones de IA y capacitaciones se cotizan según el caso.
 
 **¿Trabajás solo con turismo?** Turismo es la especialidad. También profesionales independientes, servicios especializados e instituciones.
 
