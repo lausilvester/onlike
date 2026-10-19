@@ -250,6 +250,46 @@
     footer { padding: 1.5rem; }
   }
 
+
+  /* ---------- animación del hero: recorrido del viajero ---------- */
+  .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 2.5rem; align-items: center; }
+  .hero-anim svg { display: block; width: 100%; max-width: 480px; height: auto; margin-left: auto; overflow: visible; }
+  .r-line { fill: none; stroke: #A08AE5; stroke-width: 4; stroke-dasharray: 6 7; stroke-linecap: round; }
+  .r-draw { stroke-dasharray: 1; stroke-dashoffset: 0; }
+  .r-node { fill: #C8FF00; }
+  .r-lab { font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 19px; fill: #fff; }
+  .r-off { fill: rgba(255,255,255,0.35); }
+  .r-lost { fill: #C8FF00; }
+  .r-ring { fill: none; stroke: rgba(200,255,0,0.45); stroke-width: 2; transform-box: fill-box; transform-origin: center; }
+  .r-all { animation: r-all 7s linear infinite; }
+  .r-d1 { animation: r-d1 7s linear infinite; }
+  .r-d2 { animation: r-d2 7s linear infinite; }
+  .r-d3 { animation: r-d3 7s linear infinite; }
+  .r-n1 { animation: r-n1 7s linear infinite; } .r-l1 { animation: r-l1 7s linear infinite; }
+  .r-n2 { animation: r-n2 7s linear infinite; } .r-l2 { animation: r-l2 7s linear infinite; }
+  .r-n3 { animation: r-n3 7s linear infinite; } .r-l3 { animation: r-l3 7s linear infinite; }
+  .r-lost { animation: r-lost 7s linear infinite; }
+  .r-ring { animation: r-ring 7s ease-out infinite; }
+  @keyframes r-all { 0%,86% { opacity: 1; } 95% { opacity: 0.25; } 100% { opacity: 1; } }
+  @keyframes r-d1 { 0%,6% { stroke-dashoffset: 1; } 24%,100% { stroke-dashoffset: 0; } }
+  @keyframes r-d2 { 0%,26% { stroke-dashoffset: 1; } 44%,100% { stroke-dashoffset: 0; } }
+  @keyframes r-d3 { 0%,46% { stroke-dashoffset: 1; } 54%,100% { stroke-dashoffset: 0; } }
+  @keyframes r-n1 { 0% { fill: #3a3d55; } 5%,100% { fill: #C8FF00; } }
+  @keyframes r-l1 { 0% { fill: rgba(255,255,255,0.35); } 5%,100% { fill: #fff; } }
+  @keyframes r-n2 { 0%,23% { fill: #3a3d55; } 26%,100% { fill: #C8FF00; } }
+  @keyframes r-l2 { 0%,23% { fill: rgba(255,255,255,0.35); } 26%,100% { fill: #fff; } }
+  @keyframes r-n3 { 0%,43% { fill: #3a3d55; } 46%,100% { fill: #C8FF00; } }
+  @keyframes r-l3 { 0%,43% { fill: rgba(255,255,255,0.35); } 46%,100% { fill: #fff; } }
+  @keyframes r-lost { 0%,53% { opacity: 0; } 55%,100% { opacity: 1; } }
+  @keyframes r-ring { 0%,55% { opacity: 0; transform: scale(0.3); } 57% { opacity: 1; transform: scale(0.3); } 70% { opacity: 0; transform: scale(1.3); } 71% { opacity: 1; transform: scale(0.3); } 84% { opacity: 0; transform: scale(1.3); } 100% { opacity: 0; } }
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-anim svg { max-width: 380px; margin: 0.5rem 0 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .r-all, .r-d1, .r-d2, .r-d3, .r-n1, .r-l1, .r-n2, .r-l2, .r-n3, .r-l3, .r-lost, .r-ring { animation: none !important; }
+  }
+
   /* foco visible y movimiento reducido */
   :focus-visible { outline: 2px solid #C8FF00; outline-offset: 3px; }
   .nota-body :focus-visible, .idx-list :focus-visible, .sec-white :focus-visible, nav :focus-visible { outline-color: #8E51B9; }
@@ -538,7 +578,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- ============ HERO ============ -->
 <section class="hero" aria-labelledby="h1">
-  <div class="container">
+  <div class="container hero-grid">
     <div class="hero-inner">
       <h1 id="h1">Buenas reseñas.<br><span class="thin">Pocas consultas.</span></h1>
       <p class="hero-sub">Puede ser una temporada floja que nadie sabe explicar, la dependencia de un solo canal, o un producto que en persona es excelente y en pantalla parece uno más. Analizo cómo el viajero encuentra, entiende, compara y elige tu negocio, y dónde se pierden las consultas antes de llegar a vos. Y cuando hace falta, lo ordeno yo.</p>
@@ -546,6 +586,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20escribo%20desde%20tu%20p%C3%A1gina.%20Quiero%20contarte%20mi%20caso." target="_blank" rel="noopener noreferrer" class="btn-lima js-wa" data-wa="hero">Contame tu caso</a>
         <a href="#formas" class="btn-ghost">Cómo trabajo</a>
       </div>
+    </div>
+    <div class="hero-anim" aria-hidden="true">
+      <svg viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <mask id="rm1" maskUnits="userSpaceOnUse"><path class="r-draw r-d1" d="M70 110 C110 70 170 160 210 220" pathLength="1" stroke="#fff" stroke-width="10" fill="none"/></mask>
+          <mask id="rm2" maskUnits="userSpaceOnUse"><path class="r-draw r-d2" d="M210 220 C250 140 320 96 360 120" pathLength="1" stroke="#fff" stroke-width="10" fill="none"/></mask>
+          <mask id="rm3" maskUnits="userSpaceOnUse"><path class="r-draw r-d3" d="M360 120 C385 106 410 106 432 118" pathLength="1" stroke="#fff" stroke-width="10" fill="none"/></mask>
+        </defs>
+        <g class="r-all">
+          <path d="M70 110 C110 70 170 160 210 220" mask="url(#rm1)" class="r-line"/>
+          <path d="M210 220 C250 140 320 96 360 120" mask="url(#rm2)" class="r-line"/>
+          <path d="M360 120 C385 106 410 106 432 118" mask="url(#rm3)" class="r-line"/>
+          <circle class="r-node r-n1" cx="70" cy="110" r="11"/>
+          <text class="r-lab r-l1" x="70" y="146" text-anchor="middle">Busca</text>
+          <circle class="r-node r-n2" cx="210" cy="220" r="11"/>
+          <text class="r-lab r-l2" x="210" y="256" text-anchor="middle">Compara</text>
+          <circle class="r-node r-n3" cx="360" cy="120" r="11"/>
+          <text class="r-lab r-l3" x="360" y="156" text-anchor="middle">Consulta</text>
+          <circle class="r-ring" cx="432" cy="118" r="22"/>
+          <circle class="r-lost" cx="432" cy="118" r="6"/>
+          <circle cx="500" cy="214" r="10" fill="#3a3d55"/>
+          <text class="r-lab r-off" x="500" y="250" text-anchor="middle">Reserva</text>
+        </g>
+      </svg>
     </div>
   </div>
 </section>
