@@ -41,6 +41,15 @@ No se usan bloques lima a sangre, secciones enteras en violeta ni magenta.
 - Contenido alineado a la izquierda, líneas de menos de 80 caracteres.
 - Funciona en celular, con 16px de margen lateral y sin scroll horizontal.
 
+## Animación
+
+- Como máximo una animación por página, y solo en páginas de servicio.
+- Tiene que mostrar la idea del servicio. Si es decoración, no va.
+- Se hace en SVG con animación por código, sin texto adentro: el texto queda en el HTML.
+- Se detiene con `prefers-reduced-motion` y muestra una pose fija que se entienda sola.
+- Nada de textos que aparecen al hacer scroll ni efectos en cada tarjeta.
+- Referencia: el viajero con la valija en `como-te-ve-un-viajero.html`.
+
 ## Contenido fijo
 
 - Trayectoria: más de veinte años en el sector turístico; los últimos quince, también como docente (desde 2011).

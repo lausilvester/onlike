@@ -236,7 +236,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   /* ---------- hero ---------- */
   .hero { background: var(--dark); padding: 9.5rem 0 6rem; position: relative; overflow: hidden; }
-  .hero-inner { max-width: 720px; position: relative; }
+  .hero-inner { max-width: 560px; position: relative; }
   .tag { display: inline-block; background: rgba(200,255,0,0.14); color: var(--lima); border: 1px solid rgba(200,255,0,0.35); padding: 0.35rem 0.95rem; font-size:0.85rem; font-weight: 700; border-radius: 100px; margin-bottom: 1.7rem; }
   .hero h1 { font-weight: 300; font-size: clamp(2.5rem, 5.4vw, 4.3rem); line-height: 0.98; letter-spacing: -0.035em; color: #fff; margin-bottom: 1.4rem; }
   .hero h1 b { font-weight: 700; }
@@ -306,6 +306,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .foot-in { flex-direction: column; align-items: flex-start; }
   }
 
+
+  /* ---------- animación del hero ---------- */
+  .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+  .hero-anim svg { display: block; width: 100%; max-width: 520px; height: auto; margin-left: auto; }
+  .v-walker { animation: v-walk 8s linear infinite; }
+  .v-leg, .v-arm { transform-box: fill-box; transform-origin: top center; }
+  .v-leg-a { animation: v-leg-a 8s linear infinite; }
+  .v-leg-b { animation: v-leg-b 8s linear infinite; }
+  .v-arm { transform: rotate(-140deg); animation: v-arm 8s ease-in-out infinite; }
+  .v-phone { animation: v-phone 8s linear infinite; }
+  .v-q { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 40px; fill: #C8FF00; transform-box: fill-box; transform-origin: center; }
+  .v-q1 { animation: v-q1 8s ease-out infinite; }
+  .v-q2 { animation: v-q2 8s ease-out infinite; }
+  .v-q3 { animation: v-q3 8s ease-out infinite; }
+  @keyframes v-walk { 0% { transform: translateX(-440px); } 22% { transform: translateX(0); } 68% { transform: translateX(0); } 100% { transform: translateX(470px); } }
+  @keyframes v-leg-a { 0%,11% { transform: rotate(22deg); } 5.5%,16.5% { transform: rotate(-22deg); } 22%,68% { transform: rotate(0); } 73%,84%,95% { transform: rotate(22deg); } 78.5%,89.5%,100% { transform: rotate(-22deg); } }
+  @keyframes v-leg-b { 0%,11% { transform: rotate(-22deg); } 5.5%,16.5% { transform: rotate(22deg); } 22%,68% { transform: rotate(0); } 73%,84%,95% { transform: rotate(-22deg); } 78.5%,89.5%,100% { transform: rotate(22deg); } }
+  @keyframes v-arm { 0%,11% { transform: rotate(-18deg); } 5.5%,16.5% { transform: rotate(18deg); } 22% { transform: rotate(0); } 29%,60% { transform: rotate(-140deg); } 67% { transform: rotate(0); } 73%,84%,95% { transform: rotate(18deg); } 78.5%,89.5%,100% { transform: rotate(-18deg); } }
+  @keyframes v-phone { 0%,26% { opacity: 0; } 29%,59% { opacity: 1; } 62%,100% { opacity: 0; } }
+  @keyframes v-q1 { 0%,34% { opacity: 0; transform: scale(0.5); } 38%,61% { opacity: 1; transform: scale(1); } 64%,100% { opacity: 0; transform: scale(1); } }
+  @keyframes v-q2 { 0%,41% { opacity: 0; transform: scale(0.5); } 45%,61% { opacity: 1; transform: scale(1); } 64%,100% { opacity: 0; transform: scale(1); } }
+  @keyframes v-q3 { 0%,48% { opacity: 0; transform: scale(0.5); } 52%,61% { opacity: 1; transform: scale(1); } 64%,100% { opacity: 0; transform: scale(1); } }
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-anim svg { max-width: 360px; margin: 1rem 0 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .v-walker, .v-leg-a, .v-leg-b, .v-arm, .v-phone, .v-q1, .v-q2, .v-q3 { animation: none !important; }
+  }
+
   /* foco visible y movimiento reducido */
   :focus-visible { outline: 2px solid #C8FF00; outline-offset: 3px; }
   .nota-body :focus-visible, .idx-list :focus-visible, .sec-white :focus-visible, nav :focus-visible { outline-color: #8E51B9; }
@@ -341,12 +371,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- ============ HERO ============ -->
 <section class="hero" aria-labelledby="h1">
-  <div class="container">
+  <div class="container hero-grid">
     <div class="hero-inner">
-      <h1 id="h1">Cómo te ve <b>un viajero.</b></h1>
+      <h1 id="h1">Cómo te ve<br><b>un viajero.</b></h1>
       <p class="hero-sub">Revisión rápida de tu negocio, desde afuera.</p>
       <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20la%20revisi%C3%B3n%20C%C3%B3mo%20te%20ve%20un%20viajero.%20Mi%20negocio%20es%3A" target="_blank" rel="noopener noreferrer" class="btn-lima js-wa" data-wa="viajero-hero">Quiero la revisión</a>
     </div>
+      <div class="hero-anim" aria-hidden="true">
+        <svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="403" x2="560" y2="403" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+          <g class="v-walker">
+            <!-- valija -->
+            <line x1="220" y1="252" x2="220" y2="206" stroke="#3a3d55" stroke-width="6" stroke-linecap="round"/>
+            <line x1="208" y1="206" x2="228" y2="206" stroke="#3a3d55" stroke-width="6" stroke-linecap="round"/>
+            <rect x="150" y="250" width="112" height="146" rx="12" fill="#C8FF00"/>
+            <line x1="172" y1="264" x2="172" y2="382" stroke="#A6D400" stroke-width="4" stroke-linecap="round"/>
+            <line x1="240" y1="264" x2="240" y2="382" stroke="#A6D400" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="172" cy="398" r="9" fill="#2a2d40"/>
+            <circle cx="240" cy="398" r="9" fill="#2a2d40"/>
+            <!-- brazo de atrás, en la manija -->
+            <line x1="310" y1="192" x2="228" y2="208" stroke="#7A44A8" stroke-width="14" stroke-linecap="round"/>
+            <!-- piernas -->
+            <g transform="translate(320 302)"><g class="v-leg v-leg-a"><line x1="0" y1="0" x2="0" y2="96" stroke="#5E4BA8" stroke-width="16" stroke-linecap="round"/></g></g>
+            <g transform="translate(340 302)"><g class="v-leg v-leg-b"><line x1="0" y1="0" x2="0" y2="96" stroke="#5E4BA8" stroke-width="16" stroke-linecap="round"/></g></g>
+            <!-- cuerpo y cabeza -->
+            <rect x="296" y="168" width="68" height="148" rx="34" fill="#8E51B9"/>
+            <circle cx="342" cy="128" r="36" fill="#D9CCF5"/>
+            <path d="M306 126 A36 36 0 0 1 378 126 Q342 114 306 126 Z" fill="#3F2D6E"/>
+            <circle cx="306" cy="116" r="11" fill="#3F2D6E"/>
+            <circle cx="362" cy="130" r="3.5" fill="#131625"/>
+            <!-- brazo de adelante -->
+            <g transform="translate(350 190)"><g class="v-arm"><line x1="0" y1="0" x2="0" y2="72" stroke="#7A44A8" stroke-width="14" stroke-linecap="round"/></g></g>
+            <rect class="v-phone" x="387" y="100" width="20" height="34" rx="4" fill="#C8FF00" stroke="#2a2d40" stroke-width="3"/>
+            <!-- dudas -->
+            <text class="v-q v-q1" x="300" y="70">?</text>
+            <text class="v-q v-q2" x="352" y="46">?</text>
+            <text class="v-q v-q3" x="404" y="72">?</text>
+          </g>
+        </svg>
+      </div>
   </div>
 </section>
 
