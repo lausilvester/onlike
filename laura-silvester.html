@@ -39,13 +39,12 @@
   .nav-cta { background:var(--dark)!important; color:#fff!important; padding:0.5rem 1.1rem!important; border-radius:2px; }
   .nav-cta:hover { background:var(--accent)!important; color:var(--dark)!important; }
   .container { max-width:1000px; margin:0 auto; padding:0 3rem; }
-  .label { display:inline-block; font-size:0.66rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; margin-bottom:1.1rem; color:var(--accent); }
+  .label { display:inline-block; font-size:0.85rem; font-weight:700; margin-bottom:1.1rem; color:var(--accent); }
   .label-dark { color:var(--purple); }
   h2.sec { font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(1.9rem,3.2vw,2.8rem); line-height:1; letter-spacing:-0.02em; margin-bottom:1.75rem; }
 
   /* HERO */
   .hero { background:var(--dark); padding:8rem 0 4.5rem; position:relative; overflow:hidden; }
-  .hero::before { content:''; position:absolute; top:-160px; right:-160px; width:520px; height:520px; background:radial-gradient(circle,rgba(200,255,0,0.07) 0%,transparent 65%); pointer-events:none; }
   .hero-inner { display:grid; grid-template-columns:200px 1fr; gap:3rem; align-items:start; }
   .hero-foto { width:200px; height:240px; object-fit:cover; border-radius:3px; filter:grayscale(15%); }
   .hero h1 { font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(2.6rem,5vw,4rem); line-height:0.95; letter-spacing:-0.03em; margin-bottom:1.25rem; }
@@ -55,11 +54,11 @@
   .entidad { font-size:1.05rem; line-height:1.8; color:rgba(255,255,255,0.72); max-width:640px; }
 
   /* DATOS RAPIDOS */
-  .datos { background:var(--accent); color:var(--dark); padding:3.5rem 0; }
-  .datos h2 { font-family:'Outfit',sans-serif; font-size:0.68rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:rgba(19,22,37,0.5); margin-bottom:1.5rem; }
-  .datos-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5px; background:rgba(19,22,37,0.18); }
-  .dato { background:var(--accent); padding:1rem 1.25rem; }
-  .dato dt { font-size:0.66rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:rgba(19,22,37,0.45); margin-bottom:0.25rem; }
+  .datos { background:var(--gray-light); color:var(--dark); padding:3.5rem 0; }
+  .datos h2 { font-family:'Outfit',sans-serif; font-size:0.85rem; font-weight:700; color:rgba(19,22,37,0.5); margin-bottom:1.5rem; }
+  .datos-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5px; background:#e1e1da; }
+  .dato { background:var(--gray-light); padding:1rem 1.25rem; }
+  .dato dt { font-size:0.85rem; font-weight:700; color:rgba(19,22,37,0.45); margin-bottom:0.25rem; }
   .dato dd { font-size:0.92rem; font-weight:600; color:var(--dark); line-height:1.4; }
 
   /* BLOQUES */
@@ -76,18 +75,18 @@
   .lista { list-style:none; max-width:760px; }
   .lista li { padding:1rem 0; border-top:1px solid rgba(255,255,255,0.09); font-size:0.92rem; line-height:1.65; color:rgba(255,255,255,0.62); }
   .lista li:last-child { border-bottom:1px solid rgba(255,255,255,0.09); }
-  .lista strong { color:var(--accent); font-weight:700; display:block; margin-bottom:0.15rem; font-size:0.95rem; }
+  .lista strong { color:#fff; font-weight:700; display:block; margin-bottom:0.15rem; font-size:0.95rem; }
   .lista .meta { color:rgba(255,255,255,0.38); font-size:0.8rem; }
   .band-light .lista li { border-color:rgba(19,22,37,0.1); color:rgba(19,22,37,0.65); }
   .band-light .lista strong { color:var(--purple); }
   .band-light .lista .meta { color:rgba(19,22,37,0.4); }
 
   .perfiles { display:flex; flex-wrap:wrap; gap:0.6rem; margin-top:0.5rem; }
-  .perfil { border:1px solid rgba(255,255,255,0.18); padding:0.6rem 1.15rem; font-size:0.78rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:rgba(255,255,255,0.7); border-radius:2px; transition:all var(--t); }
+  .perfil { border:1px solid rgba(255,255,255,0.18); padding:0.6rem 1.15rem; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.7); border-radius:2px; transition:all var(--t); }
   .perfil:hover { border-color:var(--accent); color:var(--accent); }
 
   .contacto-l { font-size:1.05rem; line-height:2; color:rgba(255,255,255,0.72); }
-  .contacto-l a { color:var(--accent); }
+  .contacto-l a { color:#A08AE5; }
   .volver { display:inline-block; margin-top:2.5rem; font-size:0.82rem; color:rgba(255,255,255,0.4); border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:2px; }
   .volver:hover { color:var(--accent); border-color:var(--accent); }
 
@@ -105,6 +104,16 @@
     .band { padding:3.5rem 0; }
     .footer-inner { padding:1.75rem 1.5rem; }
   }
+
+  /* foco visible y movimiento reducido */
+  :focus-visible { outline: 2px solid #C8FF00; outline-offset: 3px; }
+  .nota-body :focus-visible, .idx-list :focus-visible, .sec-white :focus-visible, nav :focus-visible { outline-color: #8E51B9; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+
+  .light { font-weight: 300; }
 </style>
 </head>
 <body>
@@ -132,12 +141,6 @@
       <img class="hero-foto" src="assets/foto-lau.jpg" alt="Laura Silvester, consultora en estrategia digital y GEO, Eldorado, Misiones" width="200" height="240">
       <div>
         <h1 id="h1">Laura Silvester</h1>
-        <div class="chips">
-          <span class="chip">Lic. en Turismo · UNaM, 2007</span>
-          <span class="chip-n chip">Más de 20 años en el sector</span>
-          <span class="chip-n chip">Docente desde 2011</span>
-          <span class="chip-n chip">Eldorado, Misiones, Argentina</span>
-        </div>
         <p class="entidad">Laura Silvester es Licenciada en Turismo por la Universidad Nacional de Misiones y fundadora de ONLIKE, consultoría de estrategia y posicionamiento digital con base en Eldorado, Misiones, Argentina. Trabaja en GEO —posicionamiento en sistemas de inteligencia artificial generativa— aplicado a negocios turísticos y profesionales independientes. Da clases de marketing turístico y materias afines en nivel superior desde 2011.</p>
       </div>
     </div>
@@ -163,7 +166,6 @@
 
 <section class="band band-dark" aria-labelledby="tray-t">
   <div class="container">
-    <span class="label">Trayectoria</span>
     <h2 class="sec" id="tray-t">Cómo llegué acá.</h2>
     <p class="prosa">Trabajo desde chica: en las vacaciones de la primaria mi papá me llevaba a su estudio contable, y no paré más. A los 24 era gerente del hotel del ACA. Estudié Turismo en la Universidad Nacional de Misiones y desde 2011 doy clases. Seis años los pasé en gestión y ejecución de proyectos del clúster forestal, trabajando con ingenieros.</p>
     <p class="prosa">De todo eso no me quedó una técnica. Me quedó una forma de trabajar: <strong>reviso</strong>. Cuando digo que una inteligencia artificial recomienda trece lugares de mi ciudad, voy y los verifico uno por uno. Cuando publico una cifra, digo de dónde salió y qué no prueba.</p>
@@ -172,7 +174,6 @@
 
 <section class="band band-deep" aria-labelledby="doc-t">
   <div class="container">
-    <span class="label">Docencia</span>
     <h2 class="sec" id="doc-t">Quince años dando clases.</h2>
     <p class="prosa" style="margin-bottom:2rem;">Doy clases en el Centro de Estudios Superiores de Misiones (CESMI), en Eldorado, en las carreras de Turismo y Hotelería y de Administración de Empresas.</p>
     <ul class="lista">
@@ -185,7 +186,6 @@
 
 <section class="band band-light" aria-labelledby="hoy-t">
   <div class="container">
-    <span class="label label-dark">Qué hago hoy</span>
     <h2 class="sec" id="hoy-t" style="color:#131625;">Trabajo sobre lo que<br>se puede leer de un negocio.</h2>
     <p class="prosa">Desde ONLIKE hago diagnóstico digital, posicionamiento en buscadores y en sistemas de inteligencia artificial generativa, y desarrollo de sitios escritos para ser leídos. Trabajo con alojamientos, agencias, guías, excursiones y restaurantes con público turístico de toda la Argentina, y con profesionales independientes e instituciones.</p>
     <p class="prosa">Mi tema no es la inteligencia artificial en general. Es <strong>cómo se decide un viaje ahora que buena parte de esa decisión pasa adentro de una conversación con una máquina</strong>: quién entra en la lista corta, quién queda afuera antes de que empiece la comparación, y qué información hace la diferencia entre una cosa y la otra.</p>
@@ -195,7 +195,6 @@
 
 <section class="band band-dark" aria-labelledby="conf-t">
   <div class="container">
-    <span class="label">Conferencias y charlas</span>
     <h2 class="sec" id="conf-t">Dónde hablé.</h2>
     <ul class="lista">
       <li><strong>Fórum Internacional de Turismo do Iguassu — keynote de cierre</strong>Vigésima edición, dedicada a turismo e inteligencia artificial. Foz do Iguaçu, Brasil, ante estudiantes y docentes de turismo de Brasil y Argentina. Tema: inteligencia artificial y comportamiento del viajero.<span class="meta"> · Junio 2026 · <a href="https://onlike.ar/forum2026.html" style="color:rgba(255,255,255,0.5);border-bottom:1px solid rgba(255,255,255,0.2);">Recursos de la presentación</a></span></li>
@@ -206,7 +205,6 @@
 
 <section class="band band-deep" aria-labelledby="inv-t">
   <div class="container">
-    <span class="label">Investigaciones publicadas</span>
     <h2 class="sec" id="inv-t">Lo que probé<br>y lo que encontré.</h2>
     <p class="prosa" style="margin-bottom:2rem;">Trabajo propio, con método declarado, fecha de captura y límites escritos al pie.</p>
     <ul class="lista">
@@ -221,7 +219,6 @@
 
 <section class="band band-dark" aria-labelledby="cont-t">
   <div class="container">
-    <span class="label">Contacto y perfiles</span>
     <h2 class="sec" id="cont-t">Dónde encontrarme.</h2>
     <p class="contacto-l"><a href="mailto:lau@onlike.ar">lau@onlike.ar</a><br>WhatsApp <a href="https://wa.me/543751566488" target="_blank" rel="noopener noreferrer">+54 3751 566488</a><br>Eldorado, Misiones, Argentina</p>
     <div class="perfiles" style="margin-top:1.75rem;">
@@ -231,7 +228,7 @@
       <a class="perfil" href="https://facebook.com/onlike.ar" target="_blank" rel="noopener noreferrer">Facebook</a>
       <a class="perfil" href="https://github.com/lausilvester" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
-    <a class="volver" href="https://onlike.ar/#services">Ver los servicios de ONLIKE →</a>
+    <a class="volver" href="https://onlike.ar/#services">Ver los servicios de ONLIKE</a>
   </div>
 </section>
 

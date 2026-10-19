@@ -27,7 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   :root {
     --dark: #131625;
     --dark-deep: #0b0d18;
-    --lime: #D1FA3E;
+    --lime: #C8FF00;
     --purple: #8E51B9;
     --white: #fff;
   }
@@ -37,12 +37,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   header { background: rgba(255,255,255,0.98); padding: 1rem 3rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(19,22,37,0.08); }
   header img { height: 34px; }
-  header a.back { font-size: 0.78rem; font-weight: 600; color: rgba(19,22,37,0.5); letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; }
+  header a.back { font-size:0.85rem; font-weight: 600; color: rgba(19,22,37,0.5); text-decoration: none; }
   header a.back:hover { color: var(--purple); }
 
   .container { max-width: 740px; margin: 0 auto; padding: 5rem 2rem 6rem; }
 
-  .doc-tag { display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--lime); margin-bottom: 1.25rem; }
+  .doc-tag { display: inline-block; font-size:0.85rem; font-weight: 700; color: var(--lime); margin-bottom: 1.25rem; }
   h1 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 2.8rem; line-height: 0.95; letter-spacing: -0.02em; color: var(--white); margin-bottom: 1rem; }
   .last-updated { font-size: 0.78rem; color: rgba(255,255,255,0.3); margin-bottom: 3.5rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
 
@@ -64,6 +64,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     h1 { font-size: 2rem; }
     footer { padding: 1.5rem; }
   }
+
+  /* foco visible y movimiento reducido */
+  :focus-visible { outline: 2px solid #C8FF00; outline-offset: 3px; }
+  .nota-body :focus-visible, .idx-list :focus-visible, .sec-white :focus-visible, nav :focus-visible { outline-color: #8E51B9; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+
+  .light { font-weight: 300; }
 </style>
 </head>
 <body>
@@ -79,7 +89,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <main>
   <div class="container">
-    <span class="doc-tag">Legal · Argentina</span>
     <h1>Política de<br>privacidad.</h1>
     <p class="last-updated">Última actualización: abril 2026</p>
 

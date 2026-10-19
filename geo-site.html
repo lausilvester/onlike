@@ -64,21 +64,20 @@
   .btn-dark:hover { background: var(--purple); }
   .btn-dark-outline { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: #131625; padding: 0.9rem 1.8rem; font-size: 0.9rem; font-weight: 600; border: 1.5px solid rgba(19,22,37,0.3); border-radius: 2px; transition: all 0.22s; }
   .btn-dark-outline:hover { border-color: #131625; }
-  .section-label { display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.25rem; color: var(--accent); }
+  .section-label { display: inline-block; font-size:0.85rem; font-weight: 700; margin-bottom: 1.25rem; color: var(--accent); }
   .section-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.4rem, 4vw, 4.2rem); line-height: 0.92; letter-spacing: -0.02em; margin-bottom: 1.75rem; }
 
   /* HERO */
   .geo-hero { background: #131625; padding: 7rem 0 6rem; position: relative; overflow: hidden; }
-  .geo-hero::before { content: ''; position: absolute; top: -150px; right: -150px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(200,255,0,0.08) 0%, transparent 65%); pointer-events: none; }
   .geo-hero-inner { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 4.5rem; align-items: center; }
-  .geo-tag { display: inline-block; background: rgba(200,255,0,0.12); color: #C8FF00; border: 1px solid rgba(200,255,0,0.25); padding: 0.35rem 0.9rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; border-radius: 100px; margin-bottom: 1.5rem; }
+  .geo-tag { display: inline-block; background: rgba(200,255,0,0.12); color: #C8FF00; border: 1px solid rgba(200,255,0,0.25); padding: 0.35rem 0.9rem; font-size:0.85rem; font-weight: 700; border-radius: 100px; margin-bottom: 1.5rem; }
   .geo-hero h1 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.6rem, 4.4vw, 4.4rem); line-height: 0.95; letter-spacing: -0.02em; color: #fff; margin-bottom: 1.5rem; }
-  .geo-hero h1 em { font-style: normal; color: #C8FF00; }
+  .geo-hero h1 .light { font-weight: 300; color: rgba(255,255,255,0.82); }
   .geo-hero-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.75; color: rgba(255,255,255,0.62); margin-bottom: 1.5rem; max-width: 520px; }
   .geo-hero-claim { font-size: 0.95rem; font-weight: 700; color: #C8FF00; line-height: 1.5; margin-bottom: 2.25rem; max-width: 460px; }
   .geo-hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
-  .geo-ask { background: rgba(200,255,0,0.04); border: 1px solid rgba(200,255,0,0.14); border-radius: 4px; padding: 2.25rem 2rem; }
-  .geo-ask-label { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #C8FF00; margin-bottom: 1rem; }
+  .geo-ask { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 2px; padding: 2.25rem 2rem; }
+  .geo-ask-label { font-size:0.85rem; font-weight: 700; color: #A08AE5; margin-bottom: 1rem; }
   .geo-ask-q { font-family: 'Outfit', sans-serif; font-size: 1.3rem; font-weight: 700; line-height: 1.25; color: #fff; margin-bottom: 1.25rem; }
   .geo-ask-list { list-style: none; margin-bottom: 1.25rem; }
   .geo-ask-list li { font-size: 0.82rem; color: rgba(255,255,255,0.5); line-height: 1.5; padding: 0.5rem 0; border-top: 1px solid rgba(255,255,255,0.07); }
@@ -93,6 +92,14 @@
     .geo-hero { padding: 5rem 0 4rem; }
     .geo-hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
     .geo-hero-btns { flex-direction: column; }
+  }
+
+  /* foco visible y movimiento reducido */
+  :focus-visible { outline: 2px solid #C8FF00; outline-offset: 3px; }
+  .nota-body :focus-visible, .idx-list :focus-visible, .sec-white :focus-visible, nav :focus-visible { outline-color: #8E51B9; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
   }
 </style>
 <!-- Google Tag Manager -->
@@ -129,13 +136,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="geo-hero-inner">
       <div>
-        <span class="geo-tag">Sitio web · ONLIKE</span>
-        <h1 id="geo-h1">Una página web.<br><em>Escrita antes<br>que diseñada.</em></h1>
+        <h1 id="geo-h1"><span class="light">Una página web.</span><br>Escrita antes<br>que diseñada.</h1>
         <p class="geo-hero-sub">Un sitio propio en tu dominio, rápido, claro y pensado desde el principio para la persona que entra, los buscadores y las inteligencias artificiales.</p>
         <p class="geo-hero-sub" style="margin-bottom:1.75rem;">Se llama <strong style="color:rgba(255,255,255,0.9);font-weight:600;">GEO Site</strong> porque está desarrollado especialmente para este nuevo entorno, donde además de personas y buscadores la información también puede ser leída por motores generativos como ChatGPT, Gemini, Claude y Grok.</p>
         <div class="geo-hero-btns">
-          <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20interesa%20el%20GEO%20Site.%20Quiero%20cotizar." target="_blank" rel="noopener noreferrer" class="btn-accent">→ Cotizá tu GEO Site</a>
-          <a href="#entrego" class="btn-ghost">Ver qué incluye ↓</a>
+          <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20interesa%20el%20GEO%20Site.%20Quiero%20cotizar." target="_blank" rel="noopener noreferrer" class="btn-accent">Cotizá tu GEO Site</a>
+          <a href="#entrego" class="btn-ghost">Ver qué incluye</a>
         </div>
       </div>
       <div class="geo-ask">
@@ -157,10 +163,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <style>
   .geo-diff { background:#F4F4F0; color:#131625; padding:6rem 0; }
   .geo-diff h2, .geo-limits h2 { font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(2.2rem,4vw,3.7rem); line-height:.95; letter-spacing:-.02em; margin-bottom:1.25rem; }
-  .geo-label-dark { display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:#8E51B9; margin-bottom:1.25rem; }
+  .geo-label-dark { display:inline-block; font-size:0.85rem; font-weight:700; color:#8E51B9; margin-bottom:1.25rem; }
   .geo-diff-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:#e1e1da; margin-top:2.75rem; }
   .geo-diff-card { background:#fff; padding:2.1rem 1.8rem; }
-  .geo-diff-num { font-size:.68rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:#8E51B9; margin-bottom:.85rem; }
+  .geo-diff-num { font-size:0.85rem; font-weight:700; color:#8E51B9; margin-bottom:.85rem; }
   .geo-diff-card h3 { font-family:'Outfit',sans-serif; font-size:1.1rem; font-weight:700; color:#131625; margin-bottom:.7rem; }
   .geo-diff-card p { font-size:.9rem; line-height:1.75; color:rgba(19,22,37,.64); }
   .geo-kicker { font-size:.95rem; font-weight:700; color:#8E51B9; margin-top:2rem; }
@@ -171,13 +177,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .geo-entrego { background:#0d0f1c; padding:6rem 0; }
   .geo-entrego-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5px; background:rgba(255,255,255,.07); margin-top:2.75rem; }
   .geo-ent { background:#0d0f1c; padding:1.65rem 1.65rem; }
-  .geo-ent-t { font-family:'Outfit',sans-serif; font-size:.92rem; font-weight:700; color:#C8FF00; margin-bottom:.4rem; line-height:1.25; }
-  .geo-ent-d { font-size:.82rem; color:rgba(255,255,255,.53); line-height:1.68; }
+  .geo-ent-t { font-family:'Outfit',sans-serif; font-size:1rem; font-weight:700; color:#fff; margin-bottom:.4rem; line-height:1.25; }
+  .geo-ent-d { font-size:.9rem; color:rgba(255,255,255,.62); line-height:1.68; }
   .geo-ent-d code, .geo-extra code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.78rem; color:rgba(255,255,255,.75); }
   .geo-extra { margin-top:2rem; padding:1.5rem 1.75rem; background:rgba(142,81,185,.12); border:1px solid rgba(142,81,185,.3); border-radius:4px; }
-  .geo-extra p:first-child { font-size:.66rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:#C89BE8; margin-bottom:.5rem; }
+  .geo-extra p:first-child { font-size:0.85rem; font-weight:700; color:#C89BE8; margin-bottom:.5rem; }
   .geo-extra p:last-child { font-size:.85rem; color:rgba(255,255,255,.62); line-height:1.7; }
-  .geo-ent-note { font-size:.88rem; color:rgba(255,255,255,.58); line-height:1.75; max-width:760px; margin-top:2rem; border-left:3px solid #C8FF00; padding-left:1.2rem; }
+  .geo-ent-note { font-size:.88rem; color:rgba(255,255,255,.58); line-height:1.75; max-width:760px; margin-top:2rem; border-left:3px solid rgba(255,255,255,.2); padding-left:1.2rem; }
 
   .geo-limits { background:#fff; color:#131625; padding:6rem 0; }
   .geo-limits-intro { font-size:1rem; color:rgba(19,22,37,.67); line-height:1.8; max-width:720px; }
@@ -185,7 +191,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .geo-limits-card { background:#F4F4F0; padding:2rem; }
   .geo-limits-card:last-child { background:#131625; color:#fff; }
   .geo-limits-card h3 { font-family:'Outfit',sans-serif; font-size:1.1rem; font-weight:700; margin-bottom:1rem; color:#131625; }
-  .geo-limits-card:last-child h3 { color:#C8FF00; }
+  .geo-limits-card:last-child h3 { color:#fff; }
   .geo-limits-card p { font-size:.88rem; line-height:1.75; color:rgba(19,22,37,.66); }
   .geo-limits-card p + p { margin-top:.8rem; }
   .geo-limits-card:last-child p { color:rgba(255,255,255,.62); }
@@ -193,17 +199,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .geo-trabajo { background:#131625; padding:6rem 0; }
   .geo-pasos { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5px; background:rgba(255,255,255,.08); margin-top:2.75rem; }
   .geo-paso { background:#131625; padding:1.9rem 1.5rem; }
-  .geo-paso-n { font-family:'Outfit',sans-serif; font-size:1.9rem; font-weight:700; color:rgba(200,255,0,.28); line-height:1; margin-bottom:.85rem; }
+  .geo-paso-n { font-family:'Outfit',sans-serif; font-size:1.9rem; font-weight:700; color:#A08AE5; line-height:1; margin-bottom:.85rem; }
   .geo-paso h3 { font-family:'Outfit',sans-serif; font-size:.95rem; font-weight:700; color:#fff; margin-bottom:.5rem; line-height:1.3; }
-  .geo-paso p { font-size:.8rem; color:rgba(255,255,255,.52); line-height:1.65; }
+  .geo-paso p { font-size:.9rem; color:rgba(255,255,255,.62); line-height:1.65; }
 
-  .geo-precio-sec { background:#C8FF00; color:#131625; padding:5.5rem 0; }
+  .geo-precio-sec { background:#fff; color:#131625; border-top:1px solid #e7e7e0; padding:5.5rem 0; }
   .geo-precio { text-align:center; max-width:660px; margin:0 auto; }
-  .geo-precio-desde { font-size:.72rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:rgba(19,22,37,.45); margin-bottom:.5rem; }
+  .geo-precio-desde { font-size:0.85rem; font-weight:700; color:rgba(19,22,37,.45); margin-bottom:.5rem; }
   .geo-precio-num { font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(3rem,7vw,4.5rem); color:#131625; line-height:1; }
   .geo-precio-ars { font-size:.95rem; color:rgba(19,22,37,.55); font-weight:700; letter-spacing:.1em; margin-bottom:1.5rem; }
   .geo-precio-eje { font-size:.95rem; color:rgba(19,22,37,.75); line-height:1.8; margin-bottom:1.5rem; }
-  .geo-cupos { display:inline-block; background:#131625; color:#C8FF00; padding:.6rem 1.4rem; border-radius:100px; font-size:.8rem; font-weight:700; letter-spacing:.06em; margin-bottom:2.25rem; }
+  .geo-cupos { display:inline-block; background:#131625; color:#fff; padding:.6rem 1.4rem; border-radius:2px; font-size:.8rem; font-weight:700; letter-spacing:.06em; margin-bottom:2.25rem; }
   .geo-cta-row { display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; }
   .geo-testimonio { max-width:700px; margin:3rem auto 0; padding:.4rem 0 .4rem 1.6rem; border-left:3px solid #131625; }
   .geo-testimonio p:first-child { font-size:.95rem; color:#131625; line-height:1.75; font-weight:500; }
@@ -213,7 +219,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .geo-faq-list { margin-top:2.75rem; }
   .geo-faq-item { border-top:1px solid rgba(255,255,255,.09); padding:1.55rem 0; }
   .geo-faq-item:last-child { border-bottom:1px solid rgba(255,255,255,.09); }
-  .geo-faq-q { font-family:'Outfit',sans-serif; font-size:1.02rem; font-weight:700; color:#C8FF00; margin-bottom:.6rem; line-height:1.3; }
+  .geo-faq-q { font-family:'Outfit',sans-serif; font-size:1.02rem; font-weight:700; color:#fff; margin-bottom:.6rem; line-height:1.3; }
   .geo-faq-a { font-size:.9rem; color:rgba(255,255,255,.58); line-height:1.82; max-width:800px; }
   .footer-inner { max-width:1160px; margin:0 auto; padding:2rem 3rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
 
@@ -228,27 +234,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="geo-diff" aria-labelledby="geo-diff-t">
   <div class="container">
-    <span class="geo-label-dark">Qué tiene de diferente</span>
     <h2 id="geo-diff-t">Información, estructura<br>y diseño desde el principio.</h2>
     <div class="geo-diff-grid">
       <div class="geo-diff-card">
-        <p class="geo-diff-num">01 · Información</p>
         <h3>Primero trabajo la información</h3>
         <p>Qué necesita estar dicho, qué falta y cómo conviene explicarlo. Antes de empezar hago tres preguntas en ChatGPT para ver qué sabe hoy del negocio, qué confunde y qué directamente no registra.</p>
       </div>
       <div class="geo-diff-card">
-        <p class="geo-diff-num">02 · Estructura</p>
         <h3>Después viene la capa técnica</h3>
         <p>Datos estructurados, sitemap, política por bot en el robots.txt y archivos complementarios para que la información quede clara y accesible también en este nuevo entorno.</p>
       </div>
       <div class="geo-diff-card">
-        <p class="geo-diff-num">03 · Diseño</p>
         <h3>Recién entonces diseño</h3>
         <p>El sitio queda liviano, cómodo de usar desde el celular, con el contacto a la vista y publicado en tu propio dominio.</p>
       </div>
     </div>
     <div class="geo-test-link">
-      <strong>¿Querés probarlo por tu cuenta?</strong> En esta nota te dejo el procedimiento para revisar qué dicen las inteligencias artificiales sobre tu negocio. <a href="https://onlike.ar/buscate-vos-que-dicen-las-ias.html">Buscate vos →</a>
+      <strong>¿Querés probarlo por tu cuenta?</strong> En esta nota te dejo el procedimiento para revisar qué dicen las inteligencias artificiales sobre tu negocio. <a href="https://onlike.ar/buscate-vos-que-dicen-las-ias.html">Buscate vos</a>
     </div>
     <p class="geo-kicker">Una web preciosa con contenido pobre sigue siendo una web pobre.</p>
   </div>
@@ -256,7 +258,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="geo-entrego" id="entrego" aria-labelledby="geo-ent-t">
   <div class="container">
-    <span class="section-label">Qué incluye</span>
     <h2 id="geo-ent-t" class="section-title" style="color:#fff;margin-bottom:.75rem;">Todo lo que<br>recibís.</h2>
     <div class="geo-entrego-grid">
       <div class="geo-ent">
@@ -302,7 +303,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="geo-limits" aria-labelledby="geo-limits-t">
   <div class="container">
-    <span class="geo-label-dark">Los límites, por escrito</span>
     <h2 id="geo-limits-t">Qué depende del sitio<br>y qué depende del motor.</h2>
     <p class="geo-limits-intro">Trabajo sobre la parte que podemos controlar: qué información existe sobre tu negocio, cómo está escrita, cómo está estructurada y cómo pueden acceder a ella los distintos sistemas. La recomendación final la decide cada motor y puede cambiar según la consulta, el sistema y el momento.</p>
     <div class="geo-limits-grid">
@@ -321,7 +321,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="geo-trabajo" aria-labelledby="geo-trab-t">
   <div class="container">
-    <span class="section-label">Cómo se trabaja</span>
     <h2 id="geo-trab-t" class="section-title" style="color:#fff;margin-bottom:0;">Cuatro pasos<br>y está publicado.</h2>
     <div class="geo-pasos">
       <div class="geo-paso">
@@ -357,7 +356,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="geo-precio-eje">Ese valor corresponde al desarrollo cuando traés el contenido base escrito. Yo lo ordeno, lo adapto al sitio, estructuro y publico. <strong>Si redacto los textos desde cero, el presupuesto cambia.</strong></p>
       <p class="geo-cupos">2 cupos por mes</p>
       <div class="geo-cta-row">
-        <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20interesa%20el%20GEO%20Site.%20Quiero%20cotizar." target="_blank" rel="noopener noreferrer" class="btn-dark">→ Solicitar cotización por WhatsApp</a>
+        <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20interesa%20el%20GEO%20Site.%20Quiero%20cotizar." target="_blank" rel="noopener noreferrer" class="btn-dark">Solicitar cotización por WhatsApp</a>
       </div>
     </div>
     <div class="geo-testimonio">
@@ -369,7 +368,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="geo-faq" aria-labelledby="geo-faq-t">
   <div class="container">
-    <span class="section-label">Preguntas frecuentes</span>
     <h2 id="geo-faq-t" class="section-title" style="color:#fff;margin-bottom:0;">Lo que me preguntan<br>antes de contratar.</h2>
     <div class="geo-faq-list">
       <div class="geo-faq-item">

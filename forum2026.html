@@ -144,8 +144,8 @@
     --dark-deep:    #0b0d18;
     --purple-deep:  #8E51B9;
     --lavender:     #A08AE5;
-    --lime:         #D1FA3E;
-    --lime-hover:   #c5ee30;
+    --lime:         #C8FF00;
+    --lime-hover:   #B8EB00;
     --white:        #FFFFFF;
     --gray-light:   #F4F4F0;
     --gray-mid:     #E0E0D8;
@@ -212,8 +212,7 @@
 
   /* LABELS & TITLES */
   .section-label {
-    display: inline-block; font-size: 0.68rem; font-weight: 700;
-    letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.25rem;
+    display: inline-block; font-size:0.85rem; font-weight: 700; margin-bottom: 1.25rem;
   }
   .section-label.on-dark { color: var(--lime); }
   .section-label.on-light { color: var(--purple-deep); }
@@ -228,22 +227,15 @@
     background: var(--dark); min-height: 100vh; display: flex;
     align-items: center; padding-top: 80px; position: relative; overflow: hidden;
   }
-  #hero::before {
-    content: ''; position: absolute; top: -200px; right: -150px;
-    width: 700px; height: 700px;
-    background: radial-gradient(circle, rgba(142,81,185,0.12) 0%, transparent 65%);
-    pointer-events: none;
-  }
   #hero::after {
     content: ''; position: absolute; bottom: -80px; left: -80px;
     width: 450px; height: 450px;
-    background: radial-gradient(circle, rgba(209,250,62,0.06) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(200,255,0,0.06) 0%, transparent 65%);
     pointer-events: none;
   }
   .hero-inner { padding: 6rem 0; max-width: 800px; }
   .hero-event {
-    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em;
-    text-transform: uppercase; color: var(--lime); margin-bottom: 1rem;
+    font-size:0.85rem; font-weight: 700; color: var(--lime); margin-bottom: 1rem;
     animation: fadeUp 0.5s ease both;
   }
   .hero-role {
@@ -319,7 +311,7 @@
   .chip.accent { background: var(--purple-deep); color: var(--white); }
 
   /* TAKEAWAYS */
-  #takeaways { background: var(--lime); color: var(--dark); }
+  #takeaways { background: var(--gray-light, #F4F4F0); color: var(--dark); }
   .takeaways-inner { padding: 6rem 0; }
   .takeaway-grid { display: grid; grid-template-columns: 1fr; gap: 0; margin-top: 2.5rem; border-top: 2px solid var(--dark); }
   .takeaway-item { display: flex; gap: 1.75rem; align-items: baseline; padding: 2rem 0; border-bottom: 1px solid rgba(19,22,37,0.18); }
@@ -348,8 +340,7 @@
   .sources-body.open { display: block; }
   .sources-group { margin-bottom: 2rem; }
   .sources-group-title {
-    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em;
-    text-transform: uppercase; color: var(--lime); margin-bottom: 0.75rem;
+    font-size:0.85rem; font-weight: 700; color: var(--lime); margin-bottom: 0.75rem;
   }
   .sources-group p {
     font-size: 0.8rem; color: rgba(255,255,255,0.45); line-height: 1.85;
@@ -360,10 +351,10 @@
   }
 
   /* WORK */
-  #work { background: var(--purple-deep); color: var(--white); }
+  #work { background: var(--dark); color: var(--white); }
   .work-inner { padding: 6rem 0; }
   .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5px; background: rgba(255,255,255,0.12); margin-top: 2.5rem; }
-  .service-card { background: var(--purple-deep); padding: 2.5rem 2rem; transition: background var(--transition); }
+  .service-card { background: var(--dark); padding: 2.5rem 2rem; transition: background var(--transition); }
   .service-card:hover { background: rgba(255,255,255,0.07); }
   .service-card h3 {
     font-family: var(--font-display); font-size: 1.2rem; font-weight: 700;
@@ -405,8 +396,7 @@
     padding: 1.5rem; border-radius: var(--radius);
   }
   .info-box h4 {
-    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em;
-    text-transform: uppercase; color: var(--lime); margin-bottom: 0.65rem;
+    font-size:0.85rem; font-weight: 700; color: var(--lime); margin-bottom: 0.65rem;
   }
   .info-box p { font-size: 0.87rem; color: rgba(255,255,255,0.55); line-height: 1.65; }
   .social-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
@@ -417,8 +407,8 @@
     transition: all var(--transition);
   }
   .social-pill:hover {
-    background: rgba(209,250,62,0.08); color: var(--lime);
-    border-color: rgba(209,250,62,0.25);
+    background: rgba(200,255,0,0.08); color: var(--lime);
+    border-color: rgba(200,255,0,0.25);
   }
   .contact-right { display: flex; flex-direction: column; gap: 1.25rem; }
   .back-link {
@@ -490,6 +480,16 @@
     .abstract-inner, .sources-inner, .takeaways-inner,
     .resources-inner, .bio-inner, .work-inner, .contact-inner { padding: 4rem 0; }
   }
+
+  /* foco visible y movimiento reducido */
+  :focus-visible { outline: 2px solid #C8FF00; outline-offset: 3px; }
+  .nota-body :focus-visible, .idx-list :focus-visible, .sec-white :focus-visible, nav :focus-visible { outline-color: #8E51B9; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+
+  .light { font-weight: 300; }
 </style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -553,18 +553,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section id="resources" aria-labelledby="resources-heading">
     <div class="container">
       <div class="resources-inner">
-        <span class="section-label on-light">O que prometi na palestra</span>
-        <h2 id="resources-heading" class="section-title" style="color:var(--dark);">Material<br>complementar<span style="color:var(--lime);">.</span></h2>
+        <h2 id="resources-heading" class="section-title" style="color:var(--dark);">Material<br>complementar.</h2>
         <div class="resources-grid">
           <div class="resource-card">
             <h3>Os slides</h3>
             <p>A apresentação completa em PDF, com as referências bibliográficas e os exemplos citados durante a palestra.</p>
-            <a href="/forum2026/slides.pdf" class="btn-download" aria-label="Baixar slides da palestra em PDF">→ Baixar slides</a>
+            <a href="/forum2026/slides.pdf" class="btn-download" aria-label="Baixar slides da palestra em PDF">Baixar slides</a>
           </div>
           <div class="resource-card">
             <h3>Checklist de Legibilidade Digital</h3>
             <p>Sete perguntas para descobrir como o seu negócio aparece — ou não — nas respostas de IA. Aplicável a hotéis, pousadas, ecolodges, destinos e experiências turísticas.</p>
-            <a href="/forum2026/checklist.pdf" class="btn-download" aria-label="Baixar checklist de legibilidade digital em PDF">→ Baixar checklist</a>
+            <a href="/forum2026/checklist.pdf" class="btn-download" aria-label="Baixar checklist de legibilidade digital em PDF">Baixar checklist</a>
           </div>
         </div>
       </div>
@@ -575,7 +574,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section id="abstract" aria-labelledby="abstract-heading">
     <div class="container">
       <div class="abstract-inner">
-        <span class="section-label on-dark">Sobre a palestra</span>
         <h2 id="abstract-heading" class="section-title" style="color:var(--white);font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.1;margin-bottom:1.5rem;">Do que se trata</h2>
         <div class="abstract-text">
           <p>A palestra propõe uma leitura concreta de como a inteligência artificial generativa está mudando a forma em que viajantes descobrem e consideram destinos turísticos. A partir da teoria de <em>choice sets</em> (Crompton, 1992) e de dados recentes de Deloitte, Expedia Group, Phocuswright, HotelWorld AI e Semrush, Laura Silvester analisa o que determina que um hotel, pousada ou ecolodge entre — ou não — na recomendação de ferramentas como ChatGPT, Gemini ou Perplexity.</p>
@@ -591,21 +589,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
       <div class="bio-inner">
         <div>
-          <span class="section-label on-light">Quem sou</span>
-          <h2 id="bio-heading" class="section-title" style="color:var(--dark);">Laura<br>Silvester<span style="color:var(--lime);">.</span></h2>
+          <h2 id="bio-heading" class="section-title" style="color:var(--dark);">Laura<br>Silvester.</h2>
         </div>
         <div class="bio-text">
           <p><strong>Licenciada em Turismo</strong> pela Universidad Nacional de Misiones, Argentina, e docente. Há mais de 20 anos trabalho com marketing e projetos — em turismo e hotelaria, mas também em outros setores — e foi essa diversidade que me mostrou um padrão comum: a forma como as pessoas buscam, comparam e decidem se repete, não importa o ramo.</p>
           <p>Fundadora da <strong>Onlike</strong>, consultoria especializada em <strong>GEO — Generative Engine Optimization</strong> aplicado ao turismo. Ajudo hotéis, pousadas, ecolodges e destinos a se posicionarem nas respostas de IA generativa — ChatGPT, Gemini, Perplexity, Google AI Mode — e nos canais de descoberta que hoje definem se um viajante chega a considerá-los.</p>
           <p>Vivo em Eldorado, Misiones, na fronteira com o Brasil, e atendo de forma remota em todo o Mercosul.</p>
-          <div class="bio-chips">
-            <span class="chip accent">Licenciada em Turismo</span>
-            <span class="chip">GEO · Visibilidade em IA</span>
-            <span class="chip">Posicionamento digital turismo</span>
-            <span class="chip">Gestão hoteleira</span>
-            <span class="chip">Docência universitária</span>
-            <span class="chip">Misiones · Mercosul</span>
-          </div>
         </div>
       </div>
     </div>
@@ -615,8 +604,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section id="takeaways" aria-labelledby="takeaways-heading">
     <div class="container">
       <div class="takeaways-inner">
-        <span class="section-label on-lime">O que levar daqui</span>
-        <h2 id="takeaways-heading" class="section-title" style="color:var(--dark);">Três<br>coisas<span style="color:var(--purple-deep);">.</span></h2>
+        <h2 id="takeaways-heading" class="section-title" style="color:var(--dark);">Três<br>coisas.</h2>
         <div class="takeaway-grid">
           <div class="takeaway-item">
             <span class="takeaway-num">01</span>
@@ -639,7 +627,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section id="sources" aria-labelledby="sources-heading">
     <div class="container">
       <div class="sources-inner">
-        <span class="section-label on-dark">As raízes do que apresentei</span>
         <h2 id="sources-heading" class="section-title" style="color:var(--white);font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.1;margin-bottom:1.5rem;">Para ir mais fundo</h2>
         <button class="sources-toggle" id="sources-toggle" aria-expanded="false" aria-controls="sources-body">
           Ver fontes e referências <span class="arrow">↓</span>
@@ -693,7 +680,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
       <div class="work-inner">
         <span class="section-label" style="color:var(--lime);">Trabalhe comigo</span>
-        <h2 id="work-heading" class="section-title" style="color:var(--white);">Próximos<br>passos<span style="color:var(--lime);">.</span></h2>
+        <h2 id="work-heading" class="section-title" style="color:var(--white);">Próximos<br>passos.</h2>
         <div class="services-grid">
           <div class="service-card">
             <h3>Diagnóstico de visibilidade em IA</h3>
@@ -716,7 +703,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>Se o tema da palestra tocou em um problema real do seu destino, hotel, agência ou empreendimento, posso ajudar a transformar essa percepção em um plano de posicionamento.</p>
           <p>Atendo poucos projetos por mês para trabalhar com profundidade.</p>
           <a href="https://wa.me/543751566488?text=Olá%20Laura%2C%20te%20contacto%20desde%20a%20landing%20do%20Fórum%20Iguassu%202026." target="_blank" rel="noopener noreferrer" class="btn-wa" aria-label="Falar com Laura pelo WhatsApp">
-            → Falar pelo WhatsApp
+            Falar pelo WhatsApp
           </a>
         </div>
       </div>
@@ -728,8 +715,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
       <div class="contact-inner">
         <div class="contact-left">
-          <span class="section-label on-dark">Contato</span>
-          <h2 id="contact-heading" class="section-title">Vamos<br><em>conversar.</em></h2>
+          <h2 id="contact-heading" class="section-title"><span class="light">Vamos</span><br>conversar.</h2>
           <p>Se quiser falar sobre posicionamento digital para o seu empreendimento, ou convidar-me para um evento, escreva por WhatsApp ou email.</p>
           <div class="contact-direct">
             <a href="https://wa.me/543751566488?text=Olá%20Laura%2C%20te%20contacto%20desde%20a%20landing%20do%20Fórum%20Iguassu%202026." target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="WhatsApp">
