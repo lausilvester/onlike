@@ -431,6 +431,15 @@
 
   html { scroll-behavior: smooth; }
 
+  :focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; }
+  nav :focus-visible, #services :focus-visible, #method :focus-visible,
+  #who :focus-visible, #about :focus-visible, #checklist :focus-visible { outline-color: var(--purple-deep); }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+
   body {
     font-family: var(--font-body);
     background: var(--dark);
@@ -453,7 +462,7 @@
     color: var(--dark);
     padding: 0.75rem 1.25rem;
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size:0.9rem;
     border-radius: var(--radius);
     z-index: 9999;
     transition: top 0.2s;
@@ -495,7 +504,7 @@
 
   .nav-links a {
     color: rgba(19,22,37,0.55);
-    font-size: 0.82rem;
+    font-size:0.8rem;
     font-weight: 500;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -503,7 +512,7 @@
   }
 
   .nav-links a:hover,
-  .nav-links a:focus { color: var(--purple-deep); outline: none; }
+  .nav-links a:focus { color: var(--purple-deep); }
 
   .nav-cta {
     background: var(--dark) !important;
@@ -556,23 +565,6 @@
     overflow: hidden;
   }
 
-  /* Ambient glow decorativo */
-  #hero::before {
-    content: '';
-    position: absolute;
-    top: -200px; right: -150px;
-    width: 700px; height: 700px;
-    background: radial-gradient(circle, rgba(142,81,185,0.12) 0%, transparent 65%);
-    pointer-events: none;
-  }
-  #hero::after {
-    content: '';
-    position: absolute;
-    bottom: -80px; left: -80px;
-    width: 450px; height: 450px;
-    background: radial-gradient(circle, rgba(209,250,62,0.06) 0%, transparent 65%);
-    pointer-events: none;
-  }
 
   .hero-inner {
     display: grid;
@@ -582,36 +574,28 @@
     padding: 6rem 0;
   }
 
-  .hero-label {
-    display: inline-block;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--lime);
-    margin-bottom: 1.5rem;
-    animation: fadeUp 0.5s ease both;
-  }
 
   /* SEO: h1 único, con keyword principal */
   h1.hero-title {
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: clamp(2.8rem, 4.5vw, 5rem);
-    line-height: 0.92;
-    letter-spacing: -0.02em;
+    font-size: clamp(2.4rem, 4vw, 4.25rem);
+    line-height: 1;
+    letter-spacing: -0.025em;
     color: var(--white);
     margin-bottom: 1.75rem;
     animation: fadeUp 0.5s 0.08s ease both;
   }
 
+  h1.hero-title > span { display: block; }
+  h1.hero-title .light { font-weight: 300; color: rgba(255,255,255,0.82); }
   h1.hero-title .accent { color: var(--lime); }
 
   .hero-subtitle {
-    font-size: 1.05rem;
+    font-size:1rem;
     font-weight: 300;
     line-height: 1.75;
-    color: var(--text-muted-dark);
+    color: rgba(255,255,255,0.75);
     max-width: 460px;
     margin-bottom: 2rem;
     animation: fadeUp 0.5s 0.16s ease both;
@@ -620,7 +604,7 @@
   .hero-quote {
     border-left: 3px solid var(--lime);
     padding-left: 1.2rem;
-    font-size: 0.95rem;
+    font-size:0.9rem;
     font-style: italic;
     color: rgba(255,255,255,0.45);
     line-height: 1.65;
@@ -643,7 +627,7 @@
     background: var(--lime);
     color: var(--dark);
     padding: 0.9rem 1.8rem;
-    font-size: 0.88rem;
+    font-size:0.9rem;
     font-weight: 700;
     letter-spacing: 0.03em;
     border-radius: var(--radius);
@@ -654,7 +638,6 @@
     background: var(--lime-hover);
     border-color: var(--lime-hover);
     transform: translateY(-2px);
-    outline: none;
   }
 
   .btn-outline {
@@ -664,7 +647,7 @@
     background: transparent;
     color: var(--white);
     padding: 0.9rem 1.8rem;
-    font-size: 0.88rem;
+    font-size:0.9rem;
     font-weight: 500;
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: var(--radius);
@@ -673,7 +656,6 @@
   .btn-outline:hover, .btn-outline:focus {
     border-color: var(--lime);
     color: var(--lime);
-    outline: none;
   }
 
   /* Foto hero */
@@ -688,16 +670,6 @@
     width: 370px;
   }
 
-  .hero-photo-wrap::before {
-    content: '';
-    position: absolute;
-    top: -10px; left: -10px;
-    right: 10px; bottom: 10px;
-    border: 2px solid var(--lime);
-    border-radius: var(--radius);
-    z-index: 0;
-    opacity: 0.6;
-  }
 
   .hero-photo-wrap img {
     width: 100%;
@@ -709,35 +681,13 @@
     z-index: 1;
   }
 
-  .hero-badge {
-    position: absolute;
-    bottom: -1rem; right: -1rem;
-    background: var(--purple-deep);
-    color: var(--white);
-    padding: 1rem 1.25rem;
-    font-size: 0.72rem;
-    font-weight: 500;
-    line-height: 1.5;
-    border-radius: var(--radius);
-    z-index: 2;
-    text-align: center;
-  }
-  .hero-badge strong {
-    display: block;
-    font-size: 1.5rem;
-    font-family: var(--font-display);
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    line-height: 1;
-    margin-bottom: 0.2rem;
-  }
 
   /* ============================================================
      SECCIÓN BASE
      ============================================================ */
   .section-label {
     display: inline-block;
-    font-size: 0.68rem;
+    font-size:0.8rem;
     font-weight: 700;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -755,6 +705,7 @@
     letter-spacing: -0.02em;
     margin-bottom: 2rem;
   }
+  .section-title .light { font-weight: 300; }
 
   /* ============================================================
      ABOUT
@@ -771,39 +722,21 @@
     align-items: start;
   }
   .about-text p {
-    font-size: 1rem;
+    font-size:1rem;
     font-weight: 400;
     line-height: 1.85;
     color: var(--text-muted-light);
     margin-bottom: 1.2rem;
   }
   .about-text p strong { color: var(--dark); font-weight: 600; }
-  .about-chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.45rem;
-    margin-top: 2rem;
-  }
-  .chip {
-    background: var(--gray-light);
-    color: var(--dark);
-    padding: 0.38rem 0.85rem;
-    font-size: 0.75rem;
-    font-weight: 500;
-    border-radius: 100px;
-    letter-spacing: 0.02em;
-  }
-  .chip.accent {
-    background: var(--purple-deep);
-    color: var(--white);
-  }
 
   /* ============================================================
      SERVICES
      ============================================================ */
   #services {
-    background: var(--purple-deep);
-    color: var(--white);
+    background: var(--white);
+    color: var(--dark);
+    border-top: 1px solid var(--gray-mid);
   }
   .services-inner { padding: 8rem 0; }
   .section-header {
@@ -814,8 +747,8 @@
     gap: 2rem;
   }
   .section-header p {
-    font-size: 0.98rem;
-    color: rgba(255,255,255,0.6);
+    font-size:1rem;
+    color: var(--text-muted-light);
     max-width: 360px;
     line-height: 1.75;
   }
@@ -823,46 +756,38 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5px;
-    background: rgba(255,255,255,0.12);
+    background: var(--gray-mid);
+    border: 1px solid var(--gray-mid);
   }
   .services-grid--two { grid-template-columns: repeat(2, 1fr); }
   @media (max-width: 760px) { .services-grid--two { grid-template-columns: 1fr; } }
   .services-group-label {
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.72rem;
+    font-family: var(--font-display);
+    font-size: 1rem;
     font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--lime);
+    color: var(--dark);
     margin: 3rem 0 1rem;
   }
   .service-card {
-    background: var(--purple-deep);
+    background: var(--white);
     padding: 2.5rem 2rem;
     transition: background var(--transition);
   }
-  .service-card:hover { background: rgba(255,255,255,0.07); }
-  .service-num {
-    font-family: var(--font-display);
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    color: var(--lime);
-    margin-bottom: 1.1rem;
-  }
+  .service-card:hover { background: var(--gray-light); }
   .service-name {
     font-family: var(--font-display);
-    font-size: 1.55rem;
+    font-size:1.6rem;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 0.9rem;
     letter-spacing: -0.01em;
   }
+  .service-desc a { color: var(--purple-deep); font-weight: 600; }
   .service-desc {
-    font-size: 0.85rem;
-    font-weight: 300;
+    font-size:0.9rem;
+    font-weight: 400;
     line-height: 1.75;
-    color: rgba(255,255,255,0.65);
+    color: rgba(19,22,37,0.75);
   }
 
   /* ============================================================
@@ -880,9 +805,9 @@
     align-items: start;
   }
   .tourism-left .section-title { color: var(--white); }
-  .tourism-left .section-title em { font-style: normal; color: var(--lime); }
+
   .tourism-intro {
-    font-size: 1rem;
+    font-size:1rem;
     color: var(--text-muted-dark);
     line-height: 1.8;
     margin-bottom: 1.5rem;
@@ -894,13 +819,13 @@
     margin: 1.5rem 0 2.5rem;
   }
   .tourism-badge {
-    background: rgba(209,250,62,0.1);
-    color: var(--lime);
-    border: 1px solid rgba(209,250,62,0.2);
+    background: transparent;
+    color: rgba(255,255,255,0.75);
+    border: 1px solid rgba(255,255,255,0.2);
     padding: 0.3rem 0.8rem;
-    font-size: 0.72rem;
+    font-size:0.8rem;
     font-weight: 500;
-    border-radius: 100px;
+    border-radius: var(--radius);
     letter-spacing: 0.03em;
   }
   .tourism-feature {
@@ -910,15 +835,15 @@
   .tourism-feature:last-child { border-bottom: 1px solid rgba(255,255,255,0.08); }
   .tourism-feature-title {
     font-family: var(--font-display);
-    font-size: 1.05rem;
+    font-size:1rem;
     font-weight: 700;
-    color: var(--lime);
+    color: var(--white);
     margin-bottom: 0.45rem;
     letter-spacing: 0.01em;
   }
   .tourism-feature-text {
-    font-size: 0.85rem;
-    color: rgba(255,255,255,0.55);
+    font-size:0.9rem;
+    color: rgba(255,255,255,0.62);
     line-height: 1.7;
   }
 
@@ -926,7 +851,7 @@
      METHOD / ACCORDION
      ============================================================ */
   #method {
-    background: var(--lime);
+    background: var(--gray-light);
     color: var(--dark);
   }
   .method-inner { padding: 8rem 0; }
@@ -939,7 +864,7 @@
   }
   .method-header .section-title { color: var(--dark); }
   .method-header p {
-    font-size: 1rem;
+    font-size:1rem;
     color: rgba(19,22,37,0.65);
     line-height: 1.8;
   }
@@ -947,15 +872,15 @@
   .accordion-item { border-bottom: 1px solid rgba(19,22,37,0.18); }
   .accordion-num {
     font-family: var(--font-display);
-    font-size: 2.2rem;
+    font-size:2.4rem;
     font-weight: 700;
-    color: rgba(19,22,37,0.18);
+    color: var(--purple-deep);
     line-height: 1;
     min-width: 2.5rem;
   }
   .accordion-title {
     font-family: var(--font-display);
-    font-size: 1.8rem;
+    font-size:1.6rem;
     font-weight: 700;
     color: var(--dark);
     letter-spacing: -0.01em;
@@ -971,8 +896,9 @@
   .who-inner { padding: 8rem 0; }
   .who-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2px;
+    border: 2px solid var(--gray-mid);
     margin-top: 3.5rem;
     background: var(--gray-mid);
   }
@@ -983,19 +909,19 @@
   }
   .who-card:hover { background: var(--gray-light); }
   .who-icon {
-    font-size: 1.4rem;
+    font-size:1.25rem;
     margin-bottom: 0.9rem;
   }
   .who-card h3 {
     font-family: var(--font-display);
-    font-size: 1.2rem;
+    font-size:1.25rem;
     font-weight: 700;
     color: var(--dark);
     margin-bottom: 0.5rem;
   }
   .who-card p {
-    font-size: 0.83rem;
-    color: rgba(19,22,37,0.55);
+    font-size:0.9rem;
+    color: rgba(19,22,37,0.7);
     line-height: 1.65;
   }
 
@@ -1014,9 +940,9 @@
     align-items: start;
   }
   .contact-left .section-title { color: var(--white); }
-  .contact-left .section-title em { font-style: normal; color: var(--lime); }
+
   .contact-left > p {
-    font-size: 0.98rem;
+    font-size:1rem;
     color: var(--text-muted-dark);
     line-height: 1.8;
     margin-bottom: 2.5rem;
@@ -1032,10 +958,10 @@
     align-items: center;
     gap: 0.85rem;
     color: rgba(255,255,255,0.5);
-    font-size: 0.9rem;
+    font-size:0.9rem;
     transition: color var(--transition);
   }
-  .contact-link:hover, .contact-link:focus { color: var(--lime); outline: none; }
+  .contact-link:hover, .contact-link:focus { color: var(--lime); }
   .contact-link-icon {
     width: 34px; height: 34px;
     background: rgba(255,255,255,0.06);
@@ -1043,7 +969,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.85rem;
+    font-size:0.9rem;
     flex-shrink: 0;
   }
   .contact-right {
@@ -1060,11 +986,9 @@
   }
   .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
   .form-group label {
-    font-size: 0.72rem;
+    font-size:0.8rem;
     font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--lime);
+    color: rgba(255,255,255,0.85);
   }
   .form-group input,
   .form-group textarea {
@@ -1073,7 +997,7 @@
     color: var(--white);
     padding: 0.85rem 1rem;
     font-family: var(--font-body);
-    font-size: 0.9rem;
+    font-size:0.9rem;
     border-radius: var(--radius);
     transition: border-color var(--transition);
     resize: vertical;
@@ -1091,7 +1015,7 @@
     border: none;
     padding: 1rem 2rem;
     font-family: var(--font-body);
-    font-size: 0.9rem;
+    font-size:0.9rem;
     font-weight: 700;
     cursor: pointer;
     border-radius: var(--radius);
@@ -1101,11 +1025,10 @@
   }
   .form-submit:hover, .form-submit:focus {
     background: var(--lime-hover);
-    outline: none;
     transform: translateY(-1px);
   }
   .form-note {
-    font-size: 0.72rem;
+    font-size:0.8rem;
     color: rgba(255,255,255,0.3);
     line-height: 1.5;
     text-align: center;
@@ -1119,15 +1042,13 @@
     border-radius: var(--radius);
   }
   .info-box h3 {
-    font-size: 0.68rem;
+    font-size:0.8rem;
     font-weight: 700;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--lime);
+    color: var(--white);
     margin-bottom: 0.65rem;
   }
   .info-box p {
-    font-size: 0.87rem;
+    font-size:0.9rem;
     color: rgba(255,255,255,0.55);
     line-height: 1.65;
   }
@@ -1144,8 +1065,8 @@
     background: rgba(255,255,255,0.07);
     color: rgba(255,255,255,0.6);
     padding: 0.4rem 0.9rem;
-    border-radius: 100px;
-    font-size: 0.75rem;
+    border-radius: var(--radius);
+    font-size:0.8rem;
     font-weight: 500;
     border: 1px solid transparent;
     transition: all var(--transition);
@@ -1154,7 +1075,6 @@
     background: rgba(209,250,62,0.08);
     color: var(--lime);
     border-color: rgba(209,250,62,0.25);
-    outline: none;
   }
 
   /* ============================================================
@@ -1172,7 +1092,7 @@
     border-top: 1px solid rgba(255,255,255,0.04);
   }
   .footer-copy {
-    font-size: 0.72rem;
+    font-size:0.8rem;
     color: rgba(255,255,255,0.28);
     letter-spacing: 0.03em;
   }
@@ -1187,7 +1107,7 @@
     gap: 1.5rem;
   }
   .footer-privacy a {
-    font-size: 0.7rem;
+    font-size:0.8rem;
     color: rgba(255,255,255,0.28);
     transition: color var(--transition);
   }
@@ -1208,7 +1128,7 @@
     color: #fff;
     padding: 0.75rem 1.2rem 0.75rem 1rem;
     border-radius: 100px;
-    font-size: 0.82rem;
+    font-size:0.8rem;
     font-weight: 600;
     box-shadow: 0 4px 20px rgba(37,211,102,0.35);
     transition: all var(--transition);
@@ -1219,7 +1139,6 @@
     background: #1ebe5d;
     transform: translateY(-2px);
     box-shadow: 0 6px 24px rgba(37,211,102,0.45);
-    outline: none;
   }
   .wa-float svg {
     width: 20px; height: 20px;
@@ -1254,7 +1173,7 @@
       gap: 1.5rem;
       border-bottom: 1px solid rgba(19,22,37,0.08);
     }
-    .nav-links.open a { font-size: 1rem; }
+    .nav-links.open a { font-size:1rem; }
 
     .container { padding: 0 1.5rem; }
 
@@ -1269,6 +1188,7 @@
 
     .hero-inner { padding: 4rem 0; }
     .hero-visual { justify-content: flex-start; }
+    h1.hero-title { font-size: 2.15rem; }
     .hero-photo-wrap { width: 260px; }
     .hero-photo-wrap img { height: 360px; }
     .hero-btns { flex-direction: column; }
@@ -1277,11 +1197,11 @@
     .section-header { flex-direction: column; align-items: flex-start; }
 
     .services-grid,
-    .who-grid { grid-template-columns: 1fr; gap: 0; }
+    .who-grid { grid-template-columns: 1fr; gap: 1px; }
     .services-grid { gap: 1px; }
 
 
-    .accordion-title { font-size: 1.3rem; }
+    .accordion-title { font-size:1.25rem; }
 
     .about-inner, .who-inner,
     .method-inner, .services-inner,
@@ -1338,23 +1258,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="container">
 <div class="hero-inner">
 <div class="hero-content">
-<span aria-hidden="true" class="hero-label">Laura Silvester · ONLIKE · Eldorado, Misiones</span>
-<!-- SEO: único h1 de la página, keyword: estrategia digital + posicionamiento digital -->
-<h1 class="hero-title">
-            Que te<br/>
-            encuentren<span class="accent">.</span><br/>
-            Que te entiendan.
-          </h1>
-<p class="hero-subtitle">Estrategia y posicionamiento digital para negocios turísticos y profesionales independientes. Diagnósticos y páginas web para que te encuentren, te entiendan y puedan elegirte.</p>
-<div style="border-left:3px solid var(--lime);padding-left:1.3rem;margin:0 0 1.9rem;">
-<p style="font-size:1.02rem;color:rgba(255,255,255,0.84);line-height:1.75;margin-bottom:0.7rem;">Hay tres problemas que desde adentro se sienten igual: no te encuentran, te encuentran y no te entienden, o te entienden y no te eligen. Mi trabajo empieza por saber cuál de los tres tenés.</p>
-<a href="https://onlike.ar/por-que-bajaron-las-consultas-alojamiento.html" style="font-size:0.8rem;color:var(--lime);font-weight:600;text-decoration:none;">Por qué bajaron las consultas en tu alojamiento →</a>
-</div>
-<!-- Quick Answer: párrafo autónomo para AI crawlers — no modificar sin revisar GEO -->
-<p style="font-size:0.88rem;color:rgba(255,255,255,0.45);line-height:1.75;margin-bottom:2rem;border-left:2px solid rgba(142,81,185,0.4);padding-left:1rem;">ONLIKE es mi consultoría de estrategia digital, en Eldorado, Misiones. Trabajo con turismo —mi especialidad—, con profesionales independientes y con instituciones: servicios que hay que explicar antes de que alguien los elija.</p>
+<!-- SEO: único h1 de la página. La keyword (estrategia y posicionamiento digital) va en el primer párrafo -->
+<h1 class="hero-title"><span class="light">Que te encuentren.</span><span class="light">Que te entiendan.</span><span>Que te elijan<span class="accent">.</span></span></h1>
+<p class="hero-subtitle">Estrategia y posicionamiento digital para negocios turísticos y profesionales independientes. Mi trabajo empieza por saber cuál de los tres problemas tenés.</p>
 <div class="hero-btns">
 <a aria-label="Contactar a Laura Silvester por WhatsApp" class="btn-primary" href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20contacto%20desde%20tu%20sitio%20web.%20Quisiera%20contarte%20mi%20caso." rel="noopener noreferrer" target="_blank">
-              → Hablemos por WhatsApp
+              Hablemos por WhatsApp
             </a>
 <a aria-label="Ver todos los servicios de ONLIKE" class="btn-outline" href="#services">
               Ver servicios
@@ -1365,12 +1274,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="hero-photo-wrap">
 <picture>
 <source srcset="assets/foto-lau.webp" type="image/webp"/>
-<img alt="Laura Silvester - Fundadora de ONLIKE" decoding="async" fetchpriority="high" height="500" loading="lazy" src="assets/foto-lau.jpg" width="370"/>
+<img alt="Laura Silvester - Fundadora de ONLIKE" decoding="async" fetchpriority="high" height="500" src="assets/foto-lau.jpg" width="370"/>
 </picture>
-<div aria-label="Más de 20 años de experiencia en el sector turístico" class="hero-badge">
-<strong>+20</strong>
-              años en turismo<br/>y estrategia digital
-            </div>
 </div>
 </div>
 </div>
@@ -1383,7 +1288,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="services-inner">
 <div class="section-header">
 <div>
-<span class="section-label on-dark">Lo que hago</span>
 <h2 class="section-title" id="services-heading">Los<br/>servicios.</h2>
 </div>
 <p>Trabajo sobre una pregunta simple: qué encuentra alguien sobre tu negocio, qué entiende y qué necesita verificar antes de elegirte. Según el caso, el trabajo empieza con un diagnóstico, un GEO Site o una estrategia más amplia.</p>
@@ -1391,37 +1295,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p class="services-group-label">Para turismo</p>
 <div class="services-grid services-grid--two" role="list">
 <article class="service-card" role="listitem">
-<p aria-hidden="true" class="service-num">01</p>
 <h3 class="service-name">Cómo te ve un viajero</h3>
-<p class="service-desc">Miro tu alojamiento, excursión o servicio desde afuera, como alguien que está por decidir: plataformas de reserva, Google, redes, WhatsApp y qué contesta ChatGPT. Entrego un documento con qué conviene cambiar primero. Después, lo resolvés vos solo o lo resolvemos juntos, con una mentoría, un ordenamiento o los dos. $90.000. <a href="https://onlike.ar/como-te-ve-un-viajero.html" style="color:var(--lime);font-weight:600;text-decoration:none;">Ver el servicio →</a></p>
+<p class="service-desc">Miro tu alojamiento, excursión o servicio desde afuera, como alguien que está por decidir: plataformas de reserva, Google, redes, WhatsApp y qué contesta ChatGPT. Entrego un documento con qué conviene cambiar primero. Después, lo resolvés vos solo o lo resolvemos juntos, con una mentoría, un ordenamiento o los dos. $90.000. <a href="https://onlike.ar/como-te-ve-un-viajero.html">Ver el servicio</a></p>
 </article>
 <article class="service-card" role="listitem">
-<p aria-hidden="true" class="service-num">02</p>
 <h3 class="service-name">Estrategia digital para turismo</h3>
-<p class="service-desc">Para alojamientos y proyectos con producto probado: reconstruyo el recorrido del viajero para ver dónde se pierde la consulta, qué canal conviene trabajar primero y cuánta reserva está pasando por plataformas. Siempre empieza con una auditoría que termina en una hoja de ruta. Después la ejecutás vos o sumo mi intervención: ordenamiento digital, mentoría o los dos. <a href="https://onlike.ar/turismo.html" style="color:var(--lime);font-weight:600;text-decoration:none;">Ver el servicio →</a></p>
+<p class="service-desc">Para alojamientos y proyectos con producto probado: reconstruyo el recorrido del viajero para ver dónde se pierde la consulta, qué canal conviene trabajar primero y cuánta reserva está pasando por plataformas. Siempre empieza con una auditoría que termina en una hoja de ruta. Después la ejecutás vos o sumo mi intervención: ordenamiento digital, mentoría o los dos. <a href="https://onlike.ar/turismo.html">Ver el servicio</a></p>
 </article>
 </div>
 <p class="services-group-label">Para cualquier negocio</p>
 <div class="services-grid services-grid--two" role="list">
 <article class="service-card" role="listitem">
-<p aria-hidden="true" class="service-num">03</p>
 <h3 class="service-name">GEO Site</h3>
-<p class="service-desc">Una página web escrita antes que diseñada, pensada desde el primer texto para personas, buscadores e inteligencias artificiales. Sitio propio en tu dominio, con botón de WhatsApp y formulario de contacto. Desde $250.000. <a href="https://onlike.ar/geo-site.html" style="color:var(--lime);font-weight:600;text-decoration:none;">Ver el servicio →</a></p>
+<p class="service-desc">Una página web escrita antes que diseñada, pensada desde el primer texto para personas, buscadores e inteligencias artificiales. Sitio propio en tu dominio, con botón de WhatsApp y formulario de contacto. Desde $250.000. <a href="https://onlike.ar/geo-site.html">Ver el servicio</a></p>
 </article>
 <article class="service-card" role="listitem">
-<p aria-hidden="true" class="service-num">04</p>
 <h3 class="service-name">Posicionamiento en buscadores e inteligencias artificiales</h3>
-<p class="service-desc">Trabajo la información que existe sobre el negocio y cómo está estructurada, para que buscadores y sistemas de inteligencia artificial puedan encontrarla y entenderla. SEO y GEO. <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20interesa%20el%20posicionamiento%20en%20buscadores%20e%20inteligencias%20artificiales." rel="noopener noreferrer" style="color:var(--lime);font-weight:600;text-decoration:none;" target="_blank">Consultar por este servicio →</a></p>
+<p class="service-desc">Trabajo la información que existe sobre el negocio y cómo está estructurada, para que buscadores y sistemas de inteligencia artificial puedan encontrarla y entenderla. SEO y GEO. <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20interesa%20el%20posicionamiento%20en%20buscadores%20e%20inteligencias%20artificiales." rel="noopener noreferrer" target="_blank">Consultar por este servicio</a></p>
 </article>
 <article class="service-card" role="listitem">
-<p aria-hidden="true" class="service-num">05</p>
 <h3 class="service-name">Implementación de IA</h3>
-<p class="service-desc">Recorro en persona los procesos de tu negocio: acompaño las tareas y converso con el equipo. Te propongo qué se puede resolver con inteligencia artificial y qué conviene dejar como está, y después elegimos juntos qué poner en marcha. Presencial. <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20interesa%20la%20implementaci%C3%B3n%20de%20IA%20en%20mi%20negocio." rel="noopener noreferrer" style="color:var(--lime);font-weight:600;text-decoration:none;" target="_blank">Consultar por este servicio →</a></p>
+<p class="service-desc">Recorro en persona los procesos de tu negocio: acompaño las tareas y converso con el equipo. Te propongo qué se puede resolver con inteligencia artificial y qué conviene dejar como está, y después elegimos juntos qué poner en marcha. Presencial. <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20interesa%20la%20implementaci%C3%B3n%20de%20IA%20en%20mi%20negocio." rel="noopener noreferrer" target="_blank">Consultar por este servicio</a></p>
 </article>
 <article class="service-card" role="listitem">
-<p aria-hidden="true" class="service-num">06</p>
 <h3 class="service-name">Mentorías 1:1, capacitaciones y disertaciones</h3>
-<p class="service-desc">Mentoría uno a uno, a pedido: estudio previo, encuentro y apunte guía. Presencial en tu negocio si estás en Eldorado, virtual para el resto del país. Charlas y capacitaciones para cámaras, entes de turismo, instituciones educativas y equipos de trabajo, sobre inteligencia artificial aplicada, comportamiento del viajero y visibilidad digital. <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20consultarte%20por%20una%20mentor%C3%ADa%2C%20charla%20o%20capacitaci%C3%B3n." rel="noopener noreferrer" style="color:var(--lime);font-weight:600;text-decoration:none;" target="_blank">Consultar por este servicio →</a></p>
+<p class="service-desc">Mentoría uno a uno, a pedido: estudio previo, encuentro y apunte guía. Presencial en tu negocio si estás en Eldorado, virtual para el resto del país. Charlas y capacitaciones para cámaras, entes de turismo, instituciones educativas y equipos de trabajo, sobre inteligencia artificial aplicada, comportamiento del viajero y visibilidad digital. <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20consultarte%20por%20una%20mentor%C3%ADa%2C%20charla%20o%20capacitaci%C3%B3n." rel="noopener noreferrer" target="_blank">Consultar por este servicio</a></p>
 </article>
 </div>
 </div>
@@ -1433,12 +1331,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="container">
 <div class="tourism-inner">
 <div class="tourism-left">
-<span class="section-label on-dark">Nicho especializado</span>
 <h2 class="section-title" id="tourism-heading">
-            Digital<br/>para<br/><em>turismo.</em>
+            <span class="light">Digital para</span><br/>turismo.
 </h2>
 <p class="tourism-intro">Es mi especialidad y donde tengo el trabajo más largo: alojamientos, ecolodges, cabañas, agencias, guías, excursiones y destinos. El viajero busca, compara, verifica y arma una lista corta semanas antes del viaje. Ahí se define también cuánta reserva te va a llegar directa y cuánta va a pasar por una plataforma.</p>
-<p class="tourism-intro" style="font-size:0.9rem;">En julio de 2026 publiqué una revisión de las cifras oficiales del turismo argentino entre 2019 y 2026, sobre fuentes del INDEC, ANAC, CAME y Parques Nacionales. <a href="https://onlike.ar/turismo-argentina-2026.html" style="color:var(--lime);font-weight:600;text-decoration:none;">Leer la nota →</a></p>
+<p class="tourism-intro" style="font-size:0.9rem;">En julio de 2026 publiqué una revisión de las cifras oficiales del turismo argentino entre 2019 y 2026, sobre fuentes del INDEC, ANAC, CAME y Parques Nacionales. <a href="https://onlike.ar/turismo-argentina-2026.html" style="color:var(--lavender);font-weight:600;text-decoration:none;">Leer la nota →</a></p>
+<p class="tourism-intro" style="font-size:0.9rem;"><a href="https://onlike.ar/por-que-bajaron-las-consultas-alojamiento.html" style="color:var(--lavender);font-weight:600;text-decoration:none;">Por qué bajaron las consultas en tu alojamiento →</a></p>
 <div aria-label="Tipos de alojamiento que acompaño" class="tourism-badge-group">
 <span class="tourism-badge">Ecolodges</span>
 <span class="tourism-badge">Apart-hoteles</span>
@@ -1450,13 +1348,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <div style="display:flex;flex-wrap:wrap;gap:0.85rem;">
 <a aria-label="Ver la página de estrategia digital para turismo" class="btn-primary" href="https://onlike.ar/turismo.html">
-            Ver estrategia digital para turismo →
+            Ver estrategia digital para turismo
           </a>
 <a aria-label="Consultar por estrategia digital para turismo" class="btn-outline" href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20interesa%20el%20servicio%20de%20estrategia%20digital%20para%20turismo." rel="noopener noreferrer" target="_blank">
             Consultar por WhatsApp
           </a>
 </div>
-<p style="margin-top:1.5rem;font-size:0.82rem;color:rgba(255,255,255,0.45);line-height:1.7;">Un negocio no le entrega una descripción a estos sistemas: deja señales, y ellos las recomponen. Cuando el problema está en esas señales —qué información hay, cómo está estructurada, si se puede leer— el diagnóstico deriva en un GEO Site.</p>
+<p style="margin-top:1.5rem;font-size:0.8rem;color:rgba(255,255,255,0.45);line-height:1.7;">Un negocio no le entrega una descripción a estos sistemas: deja señales, y ellos las recomponen. Cuando el problema está en esas señales —qué información hay, cómo está estructurada, si se puede leer— el diagnóstico deriva en un GEO Site.</p>
 </div>
 <div class="tourism-right" role="list">
 <div class="tourism-feature" role="listitem">
@@ -1489,8 +1387,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="method-inner">
 <div class="method-header">
 <div>
-<span class="section-label on-lime">Cómo trabajo</span>
-<h2 class="section-title" id="method-heading">Cada negocio trae su <em>propia pregunta.</em></h2>
+<h2 class="section-title" id="method-heading"><span class="light">Cada negocio trae</span> su propia pregunta.</h2>
 </div>
 <div>
 <p>Cada propietario llega con un problema propio, y casi nunca es el mismo. Empiezo escuchando ese. La investigación sale de ahí: cómo funciona el negocio por dentro, qué mercado tiene, qué decisión hay que tomar. Hay bastante ida y vuelta en el medio. Lo que investigo lo decide el caso.</p>
@@ -1502,14 +1399,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <span aria-hidden="true" class="accordion-num">01</span>
 <div>
 <h3 class="accordion-title" style="display:block;margin-bottom:0.7rem;">Primero, mirar.</h3>
-<p style="font-size:0.95rem;color:rgba(19,22,37,0.72);line-height:1.8;max-width:640px;">Miro el negocio desde afuera, cruzo lo que se cree adentro con lo que muestran los canales y ordeno prioridades antes de tocar nada.</p>
+<p style="font-size:0.9rem;color:rgba(19,22,37,0.72);line-height:1.8;max-width:640px;">Miro el negocio desde afuera, cruzo lo que se cree adentro con lo que muestran los canales y ordeno prioridades antes de tocar nada.</p>
 </div>
 </div>
 <div class="accordion-item" role="listitem" style="padding:1.9rem 0;display:grid;grid-template-columns:auto 1fr;gap:1.6rem;align-items:start;">
 <span aria-hidden="true" class="accordion-num">02</span>
 <div>
 <h3 class="accordion-title" style="display:block;margin-bottom:0.7rem;">Después, acompañar.</h3>
-<p style="font-size:0.95rem;color:rgba(19,22,37,0.72);line-height:1.8;max-width:640px;">Acompaño la ejecución con hoja de ruta y sigo qué cambia en buscadores y en las IAs.</p>
+<p style="font-size:0.9rem;color:rgba(19,22,37,0.72);line-height:1.8;max-width:640px;">Acompaño la ejecución con hoja de ruta y sigo qué cambia en buscadores y en las IAs.</p>
 </div>
 </div>
 </div>
@@ -1520,14 +1417,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section aria-labelledby="who-heading" id="who">
 <div class="container">
 <div class="who-inner">
-<span class="section-label on-light">A quién le sirve</span>
 <h2 class="section-title" id="who-heading" style="color:var(--dark);">Para quién<br/>trabajo.</h2>
-<p style="font-size:1rem;color:rgba(19,22,37,0.7);line-height:1.85;max-width:660px;margin-bottom:2.5rem;border-left:3px solid var(--lime);padding-left:1.25rem;">El criterio es el tipo de decisión. Cuanto más necesita una persona entender, comparar, verificar y confiar antes de elegir, más sentido tiene trabajar cómo aparece y se explica el negocio en digital. Turismo es mi especialidad.</p>
+<p style="font-size:1rem;color:rgba(19,22,37,0.7);line-height:1.85;max-width:660px;margin-bottom:2.5rem;">El criterio es el tipo de decisión. Cuanto más necesita una persona entender, comparar, verificar y confiar antes de elegir, más sentido tiene trabajar cómo aparece y se explica el negocio en digital. Turismo es mi especialidad.</p>
 <div class="who-grid" role="list">
-<article class="who-card" role="listitem" style="border-color:rgba(200,255,0,0.5);">
-<p style="font-size:0.62rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--purple);margin-bottom:0.6rem;">Especialidad</p>
+<article class="who-card" role="listitem">
 <h3>Turismo y hospitalidad</h3>
-<p>Alojamientos, ecolodges, cabañas, agencias, guías, excursiones y destinos. Veinte años adentro del sector, con experiencia en gerencia hotelera.</p>
+<p>Alojamientos, ecolodges, cabañas, agencias, guías, excursiones y destinos. Es mi especialidad.</p>
 </article>
 <article class="who-card" role="listitem">
 <h3>Profesionales independientes</h3>
@@ -1550,24 +1445,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="container">
 <div class="about-inner">
 <div>
-<span class="section-label on-light">Quién soy</span>
 <!-- SEO: h2 con nombre y cargo para búsquedas por persona -->
 <h2 class="section-title" id="about-heading" style="color:var(--dark);">Laura<br/>Silvester.</h2>
 </div>
 <div class="about-text">
+<!-- Quick Answer: párrafo autónomo para AI crawlers — no modificar sin revisar GEO -->
+<p>ONLIKE es mi consultoría de estrategia digital, en Eldorado, Misiones. Trabajo con turismo —mi especialidad—, con profesionales independientes y con instituciones: servicios que hay que explicar antes de que alguien los elija.</p>
 <p>Soy Licenciada en Turismo por la Universidad Nacional de Misiones y fundadora de ONLIKE. Trabajo en estrategia y posicionamiento digital, con especialidad en turismo, y doy clases en nivel superior desde 2011. Tengo más de veinte años de experiencia en el sector, incluida gestión hotelera.</p>
 
 <p>El punto en común es siempre el mismo: negocios que funcionan en el mundo real pero cuya presencia digital todavía no lo refleja. Mi trabajo es ampliar el cuadro y conectar causas con consecuencias: lo que desde adentro se ve como una temporada floja casi nunca empieza ahí. Y lo que afirmo, lo compruebo. Cuando digo que una inteligencia artificial recomienda trece lugares de mi ciudad, voy y los chequeo uno por uno. Cuando publico una cifra, digo de dónde salió y qué no prueba.</p>
-<p><a href="https://onlike.ar/laura-silvester.html" style="color:var(--purple-deep);text-decoration:none;border-bottom:1px solid rgba(142,81,185,0.35);font-weight:600;">Trayectoria, docencia, conferencias e investigaciones publicadas&nbsp;→</a></p>
-<div class="about-chips">
-<span class="chip accent">Lic. en Turismo · UNaM, 2007</span>
-<span class="chip">Más de 20 años en turismo</span>
-<span class="chip">Docente desde 2011</span>
-<span class="chip">IA aplicada a negocios</span>
-<span class="chip"><a href="https://onlike.ar/forum2026.html" style="color:inherit;text-decoration:none;">Fórum Internacional de Turismo do Iguassu 2026</a></span>
-<span class="chip">Eldorado, Misiones, Argentina</span>
-<span class="chip">Servicios remotos y presenciales</span>
-</div>
+<p><a href="https://onlike.ar/laura-silvester.html" style="color:var(--purple-deep);text-decoration:none;border-bottom:1px solid rgba(142,81,185,0.35);font-weight:600;">Trayectoria, docencia, conferencias e investigaciones publicadas</a></p>
+<p><a href="https://onlike.ar/forum2026.html" style="color:var(--purple-deep);text-decoration:none;border-bottom:1px solid rgba(142,81,185,0.35);font-weight:600;">Disertación en el Fórum Internacional de Turismo do Iguassu 2026</a></p>
 </div>
 </div>
 </div>
@@ -1579,19 +1467,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      ============================================================ -->
 <section aria-labelledby="faq-heading" id="faq" style="background:var(--dark);color:var(--white);padding:7rem 0;">
 <div class="container">
-<span class="section-label on-dark">Preguntas frecuentes</span>
 <h2 class="section-title" id="faq-heading" style="color:var(--white);margin-bottom:3rem;">Lo que más<br/>me preguntan.</h2>
-<div class="faq-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;"><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Qué es GEO y por qué importa ahora?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">GEO significa Generative Engine Optimization. Es el trabajo de preparar la información y la presencia digital de un negocio para que pueda ser encontrada e interpretada por motores generativos cuando responden consultas. Se suma al SEO; trabaja otra capa de la visibilidad.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Por qué algunos negocios aparecen en las IAs y otros no?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Las respuestas se construyen con información disponible en distintas fuentes. Cuando esa información es escasa, contradictoria o difícil de relacionar, el sistema puede describir mal el negocio, reconocerlo solo por su nombre o dejarlo afuera de una respuesta.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Cómo sé qué dicen las IAs sobre mi negocio?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Una prueba simple es preguntar por lo que ofrecés sin usar tu nombre y después buscarte por nombre. Para hacerlo con más criterio publiqué el procedimiento completo en la nota <a href="https://onlike.ar/buscate-vos-que-dicen-las-ias.html" style="color:var(--lime);text-decoration:none;border-bottom:1px solid rgba(209,250,62,0.3);">“Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio”</a>.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Qué es un GEO Site?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Es una página web escrita antes que diseñada, desarrollada para este nuevo entorno: personas, buscadores e inteligencias artificiales. Incluye contenido estructurado, datos Schema.org, robots.txt, sitemap, archivos complementarios y alta en buscadores. Desde $250.000 ARS. <a href="https://onlike.ar/geo-site.html" style="color:var(--lime);text-decoration:none;border-bottom:1px solid rgba(209,250,62,0.3);">Ver más →</a></p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Cuánto cuestan los servicios?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Cómo te ve un viajero: $90.000 ARS. GEO Site: desde $250.000 ARS cuando traés el contenido base escrito. Las auditorías, mentorías, implementaciones de IA y capacitaciones se cotizan según el caso.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Trabajás solo con turismo?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Turismo es mi especialidad. También trabajo con profesionales independientes, servicios especializados e instituciones cuando la decisión necesita explicación, comparación y confianza antes de elegir.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Hacés community management o gestión de redes?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Mi trabajo es estratégico: diagnóstico, posicionamiento, sitios y metodología. La gestión operativa y diaria de redes queda fuera del servicio.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.95rem;font-weight:700;color:var(--lime);margin-bottom:0.6rem;">¿Ofrecés servicios presenciales o remotos?</h3><p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.75;">Los dos. Trabajo de forma remota con proyectos de todo el país y de manera presencial en Misiones cuando el proyecto lo requiere.</p></div></div>
+<div class="faq-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;"><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Qué es GEO y por qué importa ahora?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">GEO significa Generative Engine Optimization. Es el trabajo de preparar la información y la presencia digital de un negocio para que pueda ser encontrada e interpretada por motores generativos cuando responden consultas. Se suma al SEO; trabaja otra capa de la visibilidad.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Por qué algunos negocios aparecen en las IAs y otros no?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">Las respuestas se construyen con información disponible en distintas fuentes. Cuando esa información es escasa, contradictoria o difícil de relacionar, el sistema puede describir mal el negocio, reconocerlo solo por su nombre o dejarlo afuera de una respuesta.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Cómo sé qué dicen las IAs sobre mi negocio?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">Una prueba simple es preguntar por lo que ofrecés sin usar tu nombre y después buscarte por nombre. Para hacerlo con más criterio publiqué el procedimiento completo en la nota <a href="https://onlike.ar/buscate-vos-que-dicen-las-ias.html" style="color:var(--lavender);text-decoration:none;border-bottom:1px solid rgba(160,138,229,0.4);">“Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio”</a>.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Qué es un GEO Site?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">Es una página web escrita antes que diseñada, desarrollada para este nuevo entorno: personas, buscadores e inteligencias artificiales. Incluye contenido estructurado, datos Schema.org, robots.txt, sitemap, archivos complementarios y alta en buscadores. Desde $250.000 ARS. <a href="https://onlike.ar/geo-site.html" style="color:var(--lavender);text-decoration:none;border-bottom:1px solid rgba(160,138,229,0.4);">Ver más</a></p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Cuánto cuestan los servicios?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">Cómo te ve un viajero: $90.000 ARS. GEO Site: desde $250.000 ARS cuando traés el contenido base escrito. Las auditorías, mentorías, implementaciones de IA y capacitaciones se cotizan según el caso.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Trabajás solo con turismo?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">Turismo es mi especialidad. También trabajo con profesionales independientes, servicios especializados e instituciones cuando la decisión necesita explicación, comparación y confianza antes de elegir.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Hacés community management o gestión de redes?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">Mi trabajo es estratégico: diagnóstico, posicionamiento, sitios y metodología. La gestión operativa y diaria de redes queda fuera del servicio.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Ofrecés servicios presenciales o remotos?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">Los dos. Trabajo de forma remota con proyectos de todo el país y de manera presencial en Misiones cuando el proyecto lo requiere.</p></div></div>
 </div>
 </section>
 <!-- CHECKLIST -->
 <section aria-labelledby="checklist-heading" id="checklist" style="background:var(--white);color:var(--dark);padding:6rem 0;">
 <div class="container">
 <div style="max-width:700px;">
-<span class="section-label on-light">Recurso abierto</span>
-<h2 class="section-title" id="checklist-heading" style="color:var(--dark);">Siete preguntas<br/>para revisar <em>tu propio caso.</em></h2>
+<h2 class="section-title" id="checklist-heading" style="color:var(--dark);"><span class="light">Siete preguntas para</span><br/>revisar tu propio caso.</h2>
 <p style="font-size:1rem;color:rgba(19,22,37,0.7);line-height:1.85;margin:1.6rem 0 2.2rem;">Un checklist para ver si tu sitio, tu Google, tus plataformas y tus reseñas cuentan la misma historia. Se hace sin dejar datos y al final te da un puntaje.</p>
-<a aria-label="Hacer el checklist de legibilidad digital" class="btn-primary" href="https://onlike.ar/checklist-legibilidad-digital.html">Hacer el checklist →</a>
+<a aria-label="Hacer el checklist de legibilidad digital" class="btn-primary" href="https://onlike.ar/checklist-legibilidad-digital.html">Hacer el checklist</a>
 </div>
 </div>
 </section>
@@ -1599,9 +1485,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="container">
 <div class="contact-inner">
 <div class="contact-left">
-<span class="section-label on-dark">Contacto</span>
 <h2 class="section-title" id="contact-heading">
-            Contame<br/>tu <em>caso.</em>
+            Contame<br/><span class="light">tu caso.</span>
 </h2>
 <p>Si tenés un proyecto en marcha y necesitás claridad para decidir cómo comunicarlo y posicionarlo mejor, escribime y contame brevemente qué está pasando.</p>
 <div class="contact-direct">
@@ -1633,7 +1518,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <input name="_subject" type="hidden" value="Consulta desde onlike.ar"/>
 <input name="_next" type="hidden" value="https://onlike.ar/?gracias=1"/>
 <button class="form-submit" type="submit">
-              Enviar consulta →
+              Enviar consulta
             </button>
 <p class="form-note">
               También podés escribirme directo por WhatsApp si preferís una respuesta más rápida.
