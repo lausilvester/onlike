@@ -78,6 +78,21 @@
       "source": "/privacidad",
       "destination": "/privacidad.html",
       "permanent": true
+    },
+    {
+      "source": "/destinosturisticosinteligenciaartificial.html",
+      "destination": "/destinos-turisticos-inteligencia-artificial.html",
+      "permanent": true
+    },
+    {
+      "source": "/destinos-turisticos-inteligencia-artificial_1.html",
+      "destination": "/destinos-turisticos-inteligencia-artificial.html",
+      "permanent": true
+    },
+    {
+      "source": "/llmsfull.txt",
+      "destination": "/llms-full.txt",
+      "permanent": true
     }
   ],
   "headers": [
