@@ -31,7 +31,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-  :root { --dark:#131625; --dark-deep:#0b0d18; --accent:#C8FF00; --purple:#8E51B9; --gray-light:#F4F4F0; --t:0.22s ease; }
+  :root { --dark:#131625; --dark-deep:#0b0d18; --lima:#C8FF00; --violeta:#8E51B9; --gray-light:#F4F4F0; --t:0.22s ease; }
   html { scroll-behavior:smooth; }
   body { font-family:'Outfit',sans-serif; background:var(--dark); color:#fff; overflow-x:hidden; -webkit-font-smoothing:antialiased; }
   img { max-width:100%; height:auto; display:block; }
@@ -43,10 +43,10 @@
   .nav-links a { color:rgba(19,22,37,0.55); font-size:0.78rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; transition:color var(--t); }
   .nav-links a:hover { color:var(--dark); }
   .nav-cta { background:var(--dark)!important; color:#fff!important; padding:0.5rem 1.1rem!important; border-radius:2px; }
-  .nav-cta:hover { background:var(--accent)!important; color:var(--dark)!important; }
+  .nav-cta:hover { background:var(--lima)!important; color:var(--dark)!important; }
   .container { max-width:1000px; margin:0 auto; padding:0 3rem; }
-  .label { display:inline-block; font-size:0.85rem; font-weight:700; margin-bottom:1.1rem; color:var(--accent); }
-  .label-dark { color:var(--purple); }
+  .label { display:inline-block; font-size:0.85rem; font-weight:700; margin-bottom:1.1rem; color:var(--lima); }
+  .label-dark { color:var(--violeta); }
   h2.sec { font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(1.9rem,3.2vw,2.8rem); line-height:1; letter-spacing:-0.02em; margin-bottom:1.75rem; }
 
   /* HERO */
@@ -55,7 +55,7 @@
   .hero-foto { width:200px; height:240px; object-fit:cover; border-radius:3px; filter:grayscale(15%); }
   .hero h1 { font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(2.6rem,5vw,4rem); line-height:0.95; letter-spacing:-0.03em; margin-bottom:1.25rem; }
   .chips { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.75rem; }
-  .chip { background:rgba(200,255,0,0.1); border:1px solid rgba(200,255,0,0.22); color:var(--accent); padding:0.35rem 0.85rem; font-size:0.72rem; font-weight:600; border-radius:100px; }
+  .chip { background:rgba(200,255,0,0.1); border:1px solid rgba(200,255,0,0.22); color:var(--lima); padding:0.35rem 0.85rem; font-size:0.72rem; font-weight:600; border-radius:100px; }
   .chip-n { background:rgba(255,255,255,0.05); border-color:rgba(255,255,255,0.14); color:rgba(255,255,255,0.65); }
   .entidad { font-size:1.05rem; line-height:1.8; color:rgba(255,255,255,0.72); max-width:640px; }
 
@@ -84,17 +84,17 @@
   .lista strong { color:#fff; font-weight:700; display:block; margin-bottom:0.15rem; font-size:0.95rem; }
   .lista .meta { color:rgba(255,255,255,0.38); font-size:0.8rem; }
   .band-light .lista li { border-color:rgba(19,22,37,0.1); color:rgba(19,22,37,0.65); }
-  .band-light .lista strong { color:var(--purple); }
+  .band-light .lista strong { color:var(--violeta); }
   .band-light .lista .meta { color:rgba(19,22,37,0.4); }
 
   .perfiles { display:flex; flex-wrap:wrap; gap:0.6rem; margin-top:0.5rem; }
   .perfil { border:1px solid rgba(255,255,255,0.18); padding:0.6rem 1.15rem; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.7); border-radius:2px; transition:all var(--t); }
-  .perfil:hover { border-color:var(--accent); color:var(--accent); }
+  .perfil:hover { border-color:var(--lima); color:var(--lima); }
 
   .contacto-l { font-size:1.05rem; line-height:2; color:rgba(255,255,255,0.72); }
   .contacto-l a { color:#A08AE5; }
   .volver { display:inline-block; margin-top:2.5rem; font-size:0.82rem; color:rgba(255,255,255,0.4); border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:2px; }
-  .volver:hover { color:var(--accent); border-color:var(--accent); }
+  .volver:hover { color:var(--lima); border-color:var(--lima); }
 
   footer { background:var(--dark-deep); border-top:1px solid rgba(255,255,255,0.05); }
   .footer-inner { max-width:1000px; margin:0 auto; padding:2rem 3rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
