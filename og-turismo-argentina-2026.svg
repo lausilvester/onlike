@@ -11,11 +11,11 @@
 
   <line x1="80" y1="424" x2="1120" y2="424" stroke="#FFFFFF" stroke-opacity="0.12"/>
 
-  <text x="80" y="490" font-size="44" font-weight="700" letter-spacing="-1.2" fill="#D1FA3E">Hay menos mercado que en 2023.</text>
+  <text x="80" y="490" font-size="44" font-weight="700" letter-spacing="-1.2" fill="#C8FF00">Hay menos mercado que en 2023.</text>
   <text x="80" y="540" font-size="44" font-weight="700" letter-spacing="-1.2" fill="#FFFFFF">Y todavía hay mercado.</text>
 
   <text x="80" y="590" font-size="16" font-weight="300" fill="#FFFFFF" fill-opacity="0.42">INDEC · ANAC · CAME · Parques Nacionales</text>
 
-  <text x="1120" y="590" font-size="20" font-weight="700" fill="#D1FA3E" text-anchor="end">onlike.ar</text>
+  <text x="1120" y="590" font-size="20" font-weight="700" fill="#C8FF00" text-anchor="end">onlike.ar</text>
 
 </svg>
