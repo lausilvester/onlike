@@ -17,13 +17,13 @@
   <line x1="565" y1="232" x2="584" y2="232" stroke="#FFFFFF" stroke-opacity="0.3"/>
 
   <!-- Etapas 1 a 3 -->
-  <rect x="48" y="210" width="88" height="44" rx="4" fill="#D1FA3E"/>
+  <rect x="48" y="210" width="88" height="44" rx="4" fill="#C8FF00"/>
   <text x="92" y="237" font-size="13" font-weight="700" fill="#131625" text-anchor="middle">Inspiración</text>
 
-  <rect x="155" y="210" width="88" height="44" rx="4" fill="#D1FA3E"/>
+  <rect x="155" y="210" width="88" height="44" rx="4" fill="#C8FF00"/>
   <text x="199" y="237" font-size="13" font-weight="700" fill="#131625" text-anchor="middle">Lista corta</text>
 
-  <rect x="262" y="210" width="88" height="44" rx="4" fill="#D1FA3E"/>
+  <rect x="262" y="210" width="88" height="44" rx="4" fill="#C8FF00"/>
   <text x="306" y="237" font-size="13" font-weight="700" fill="#131625" text-anchor="middle">Comparación</text>
 
   <!-- Etapas 4 a 6 -->
@@ -37,7 +37,7 @@
   <text x="628" y="237" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Reserva</text>
 
   <!-- Corchetes rectos -->
-  <path d="M48,282 L48,274 L350,274 L350,282" fill="none" stroke="#D1FA3E" stroke-opacity="0.5"/>
+  <path d="M48,282 L48,274 L350,274 L350,282" fill="none" stroke="#C8FF00" stroke-opacity="0.5"/>
   <path d="M370,282 L370,274 L672,274 L672,282" fill="none" stroke="#8E51B9" stroke-opacity="0.7"/>
 
   <text x="199" y="306" font-size="14" font-weight="400" fill="#FFFFFF" fill-opacity="0.8" text-anchor="middle">Acá ya se decidió casi todo,</text>
@@ -48,8 +48,8 @@
 
   <line x1="48" y1="378" x2="672" y2="378" stroke="#FFFFFF" stroke-opacity="0.1"/>
 
-  <text x="360" y="418" font-size="22" letter-spacing="-0.5" text-anchor="middle" fill="#FFFFFF"><tspan font-weight="200">Lo que queda afuera de la lista no compite por precio. </tspan><tspan font-weight="700" fill="#D1FA3E">No compite.</tspan></text>
+  <text x="360" y="418" font-size="22" letter-spacing="-0.5" text-anchor="middle" fill="#FFFFFF"><tspan font-weight="200">Lo que queda afuera de la lista no compite por precio. </tspan><tspan font-weight="700" fill="#C8FF00">No compite.</tspan></text>
 
-  <text x="672" y="466" font-size="13" font-weight="700" fill="#D1FA3E" text-anchor="end">onlike.ar</text>
+  <text x="672" y="466" font-size="13" font-weight="700" fill="#C8FF00" text-anchor="end">onlike.ar</text>
 
 </svg>

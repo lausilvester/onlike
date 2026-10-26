@@ -12,7 +12,7 @@
   <text x="48" y="126" font-size="15" font-weight="300" fill="#FFFFFF" fill-opacity="0.6">Viajeros hospedados y pernoctaciones, en millones</text>
 
   <!-- Leyenda -->
-  <line x1="48" y1="162" x2="76" y2="162" stroke="#D1FA3E" stroke-width="2.5"/>
+  <line x1="48" y1="162" x2="76" y2="162" stroke="#C8FF00" stroke-width="2.5"/>
   <text x="84" y="167" font-size="13" font-weight="300" fill="#FFFFFF" fill-opacity="0.75">Pernoctaciones</text>
   <line x1="210" y1="162" x2="238" y2="162" stroke="#A08AE5" stroke-width="2.5"/>
   <text x="246" y="167" font-size="13" font-weight="300" fill="#FFFFFF" fill-opacity="0.75">Viajeros</text>
@@ -37,15 +37,15 @@
   <text x="650" y="196" font-size="11" font-weight="700" letter-spacing="0.5" fill="#FF3EBE" text-anchor="middle">11 MESES</text>
 
   <!-- Pernoctaciones -->
-  <path d="M110,225.5 L200,370.3 L290,323.0 L380,228.6 L470,218.9 L560,245.9" fill="none" stroke="#D1FA3E" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M560,245.9 L650,263.5" fill="none" stroke="#D1FA3E" stroke-width="2.5" stroke-dasharray="5 4"/>
-  <circle cx="110" cy="225.5" r="4" fill="#D1FA3E"/>
-  <circle cx="200" cy="370.3" r="4" fill="#D1FA3E"/>
-  <circle cx="290" cy="323.0" r="4" fill="#D1FA3E"/>
-  <circle cx="380" cy="228.6" r="4" fill="#D1FA3E"/>
-  <circle cx="470" cy="218.9" r="4" fill="#D1FA3E"/>
-  <circle cx="560" cy="245.9" r="4" fill="#D1FA3E"/>
-  <circle cx="650" cy="263.5" r="4.5" fill="#131625" stroke="#D1FA3E" stroke-width="2.5"/>
+  <path d="M110,225.5 L200,370.3 L290,323.0 L380,228.6 L470,218.9 L560,245.9" fill="none" stroke="#C8FF00" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M560,245.9 L650,263.5" fill="none" stroke="#C8FF00" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <circle cx="110" cy="225.5" r="4" fill="#C8FF00"/>
+  <circle cx="200" cy="370.3" r="4" fill="#C8FF00"/>
+  <circle cx="290" cy="323.0" r="4" fill="#C8FF00"/>
+  <circle cx="380" cy="228.6" r="4" fill="#C8FF00"/>
+  <circle cx="470" cy="218.9" r="4" fill="#C8FF00"/>
+  <circle cx="560" cy="245.9" r="4" fill="#C8FF00"/>
+  <circle cx="650" cy="263.5" r="4.5" fill="#131625" stroke="#C8FF00" stroke-width="2.5"/>
 
   <!-- Viajeros -->
   <path d="M110,348.0 L200,414.5 L290,393.7 L380,355.8 L470,350.4 L560,360.1" fill="none" stroke="#A08AE5" stroke-width="2.5" stroke-linejoin="round"/>
@@ -80,6 +80,6 @@
 
   <text x="48" y="556" font-size="11" font-weight="300" fill="#FFFFFF" fill-opacity="0.42">Fuente: INDEC, Encuesta de Ocupación Hotelera. 2019–2024 son años completos. 2025 corresponde a enero–noviembre y no es comparable.</text>
 
-  <text x="672" y="528" font-size="13" font-weight="700" fill="#D1FA3E" text-anchor="end">onlike.ar</text>
+  <text x="672" y="528" font-size="13" font-weight="700" fill="#C8FF00" text-anchor="end">onlike.ar</text>
 
 </svg>
