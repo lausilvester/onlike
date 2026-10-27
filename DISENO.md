@@ -13,15 +13,18 @@ Leer antes de crear o modificar cualquier página del sitio. Si algo de lo que s
 | Violeta | `#8E51B9`. Links y números sobre fondo claro |
 | Lavanda | `#A08AE5`. Links y números sobre fondo oscuro |
 | Verde | `#25D366`. Solo el botón flotante de WhatsApp |
+| Magenta | `#FF3EBE`. Dentro de los gráficos, para marcar lo que falta o cae. Y el acento de `diagnosticotur.html` |
 
-No se usan bloques lima a sangre, secciones enteras en violeta ni magenta.
+No se usan bloques lima a sangre ni secciones enteras en violeta.
+
+El magenta tiene dos usos y son los únicos: señalar el dato negativo adentro de un gráfico (*fuera de toda recomendación*, *−0,9%*, *sin acceso*) y el acento de `diagnosticotur.html`. Fuera de ahí no entra.
 
 ## Tipografía
 
 - Outfit en pesos 300, 400 y 700. Una sola familia.
 - Escala de siete tamaños: 0.8 / 0.9 / 1 / 1.25 / 1.6 / 2.4 rem y el titular grande con `clamp()`.
 - Titulares con contraste de peso: una parte en 300 y otra en 700. Ejemplo: "Buenas reseñas." en bold y "Pocas consultas." liviano.
-- Nunca una palabra pintada de otro color ni en cursiva dentro de un titular.
+- Nunca una palabra pintada de otro color ni en cursiva dentro de un titular. La excepción son los dos formularios, `diagnostico.html` y `diagnosticotur.html`, donde la última palabra va en el acento de la página.
 - Ningún texto de lectura por debajo de 0.8rem.
 
 ## Lo que no va
