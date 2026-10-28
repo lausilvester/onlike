@@ -155,7 +155,11 @@
   .r-cierre .acciones { margin-top: 1.75rem; }
 
   .herramientas { display: flex; flex-wrap: wrap; gap: 0.75rem; }
-  .estado-copia { font-size: 0.95rem; min-height: 1.5em; margin-top: 0.9rem; color: var(--ink); }
+  .ayuda-herr { font-size: 0.9rem; line-height: 1.6; color: rgba(31,31,46,0.75); max-width: 36em; margin-top: 1rem; }
+  .estado-copia { font-size: 0.95rem; min-height: 1.5em; margin-top: 0.6rem; color: var(--ink); }
+  .r-compartir .herramientas { margin-top: 1rem; }
+  .r-compartir p { margin-bottom: 0; }
+  .p-ayuda a { color: var(--lavanda); font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
   .r-buscate { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(31,31,46,0.18); }
   .r-buscate h3 { font-size: 1.4rem; line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 0.8rem; max-width: 22em; }
   .r-buscate p { font-size: 1rem; line-height: 1.7; color: rgba(31,31,46,0.8); max-width: 34em; margin-bottom: 0.8rem; }
@@ -285,7 +289,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         { "@type": "ListItem", "position": 5, "name": "¿Lo que hace especial a tu negocio está explicado antes de que el viajero te contacte?" },
         { "@type": "ListItem", "position": 6, "name": "¿Tu ubicación está explicada de una manera útil para planificar un viaje?" },
         { "@type": "ListItem", "position": 7, "name": "¿El viajero encuentra la información que necesita para decidir antes de escribirte?" },
-        { "@type": "ListItem", "position": 8, "name": "¿Tus distintos canales muestran los mismos servicios y condiciones vigentes?" },
+        { "@type": "ListItem", "position": 8, "name": "¿Tus distintos canales (sitio, redes, Google, plataformas) muestran los mismos servicios y condiciones vigentes?" },
         { "@type": "ListItem", "position": 9, "name": "¿Estás aprovechando lo que tus clientes cuentan de vos en sus reseñas?" },
         { "@type": "ListItem", "position": 10, "name": "¿Alguien que ya decidió contratarte puede avanzar sin obstáculos?" }
       ]
@@ -354,7 +358,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li>¿Lo que hace especial a tu negocio está explicado antes de que el viajero te contacte?</li>
             <li>¿Tu ubicación está explicada de una manera útil para planificar un viaje?</li>
             <li>¿El viajero encuentra la información que necesita para decidir antes de escribirte?</li>
-            <li>¿Tus distintos canales muestran los mismos servicios y condiciones vigentes?</li>
+            <li>¿Tus distintos canales (sitio, redes, Google, plataformas) muestran los mismos servicios y condiciones vigentes?</li>
             <li>¿Estás aprovechando lo que tus clientes cuentan de vos en sus reseñas?</li>
             <li>¿Alguien que ya decidió contratarte puede avanzar sin obstáculos?</li>
           </ol>
@@ -444,7 +448,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Reviso Google, plataformas, redes, WhatsApp y las respuestas de inteligencia artificial para identificar qué está comunicando tu negocio y qué conviene cambiar primero.</p>
         <div class="acciones">
           <a class="btn btn-lima js-servicio" id="r-servicio" href="https://onlike.ar/como-te-ve-un-viajero.html">Ver cómo funciona la revisión</a>
-          <a class="btn btn-ghost js-wa" id="r-whatsapp" data-wa="test-turismo-resultado" target="_blank" rel="noopener noreferrer" href="https://wa.me/543751566488?text=Hola%2C%20Laura.%20Hice%20el%20Test%20Turismo%20de%20ONLIKE%20y%20me%20gustar%C3%ADa%20consultarte%20por%20mi%20negocio.">Contarme mi caso por WhatsApp</a>
+          <a class="btn btn-ghost js-wa" id="r-whatsapp" data-wa="test-turismo-resultado" target="_blank" rel="noopener noreferrer" href="https://wa.me/543751566488?text=Hola%2C%20Laura.%20Vengo%20de%20hacerme%20el%20Test%20Turismo%20de%20ONLIKE%20y%20me%20gustar%C3%ADa%20contar%20con%20tu%20asesoramiento%20para%20mi%20negocio.">Contarme mi caso por WhatsApp</a>
         </div>
       </div>
     </section>
@@ -456,7 +460,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <button type="button" class="btn btn-claro" id="btn-pdf">Guardar como PDF</button>
           <button type="button" class="btn btn-claro" id="btn-reiniciar">Volver a empezar</button>
         </div>
+        <p class="ayuda-herr">«Copiar mi diagnóstico» lo copia como texto para pegarlo en WhatsApp, un mail o tus notas. «Guardar como PDF» abre la ventana de imprimir de tu navegador: elegí «Guardar como PDF» como destino.</p>
         <p class="estado-copia" id="estado-copia" role="status"></p>
+
+        <div class="r-buscate r-compartir">
+          <h3>Si te sirvió, compartilo con otros prestadores.</h3>
+          <p>Compartís el test, no tu resultado.</p>
+          <div class="herramientas">
+            <a class="btn btn-claro" id="btn-x" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Hice%20el%20Test%20Turismo%20de%20ONLIKE%3A%20diez%20preguntas%20para%20revisar%20qu%C3%A9%20entiende%20un%20viajero%20de%20tu%20negocio%20antes%20de%20elegirlo.%20Gratis%20y%20sin%20registro.&amp;url=https%3A%2F%2Fonlike.ar%2Ftest-turismo">Compartir en X</a>
+            <button type="button" class="btn btn-claro" id="btn-enlace">Copiar enlace del test</button>
+          </div>
+        </div>
 
         <div class="r-buscate">
           <h3>¿Querés comprobar qué dicen las inteligencias artificiales sobre tu negocio?</h3>

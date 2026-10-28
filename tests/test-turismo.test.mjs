@@ -30,6 +30,11 @@ test('los datos están completos y son consistentes', () => {
       }
       assert.match(p.recomendacion.tituloPendiente, /^Comprobá /, `P${p.n}: el título pendiente debe empezar con «Comprobá»`);
       for (const item of p.comprobar) {
+        if (item && typeof item === 'object' && item.enlace) {
+          assert.match(item.enlace.url, /^https:\/\/onlike\.ar\//, `P${p.n}: el enlace debe ser de onlike.ar`);
+          assert.equal(vacio(item.enlace.texto), false);
+          continue;
+        }
         const valor = item && typeof item === 'object' && 'ejemplo' in item ? item.ejemplo : item;
         assert.equal(vacio(motor.texto(valor, tipo)), false, `P${p.n} (${tipo}) tiene un «cómo comprobarlo» vacío`);
       }
@@ -43,6 +48,7 @@ test('los textos de agencia y gastronomía no hablan de alojamiento', () => {
     for (const p of datos.preguntas) {
       const textos = [motor.texto(p.apoyo, tipo), motor.texto(p.recomendacion.accion, tipo), p.recomendacion.titulo];
       for (const item of p.comprobar) {
+        if (item && typeof item === 'object' && item.enlace) continue;
         textos.push(motor.texto(item && typeof item === 'object' && 'ejemplo' in item ? item.ejemplo : item, tipo));
       }
       for (const t of textos) assert.doesNotMatch(t, prohibido, `P${p.n} (${tipo}): «${t}»`);

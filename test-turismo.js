@@ -161,6 +161,15 @@
         var ej = M.texto(item.ejemplo, tipo);
         p.appendChild(crear('strong', '', 'Ejemplo: '));
         p.appendChild(document.createTextNode(/[.?!]$/.test(ej) ? ej : ej + '.'));
+      } else if (item && typeof item === 'object' && item.enlace) {
+        // Se abre en otra pestaña para no perder el lugar del test.
+        var a = crear('a', '', item.enlace.texto);
+        a.href = item.enlace.url;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        p.appendChild(document.createTextNode(item.enlace.antes));
+        p.appendChild(a);
+        p.appendChild(document.createTextNode(item.enlace.despues || ''));
       } else {
         p.textContent = M.texto(item, tipo);
       }
@@ -353,16 +362,28 @@
     return ok;
   }
 
-  function copiar() {
-    var diag = M.diagnosticar(D, estado.respuestas, estado.tipo);
-    var texto = M.aTexto(D, diag, nombreTipo(), URL_TEST);
-    var listo = function () { avisoCopia('Diagnóstico copiado.'); };
+  function copiarTexto(texto, mensajeOk, mensajeError) {
+    var listo = function () { avisoCopia(mensajeOk); };
     var falla = function () {
       if (copiarConRespaldo(texto)) listo();
-      else avisoCopia('No se pudo copiar. Usá «Guardar como PDF» para conservar el diagnóstico.');
+      else avisoCopia(mensajeError);
     };
     if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(texto).then(listo, falla);
     else falla();
+  }
+
+  function copiar() {
+    var diag = M.diagnosticar(D, estado.respuestas, estado.tipo);
+    copiarTexto(
+      M.aTexto(D, diag, nombreTipo(), URL_TEST),
+      'Diagnóstico copiado.',
+      'No se pudo copiar. Usá «Guardar como PDF» para conservar el diagnóstico.'
+    );
+  }
+
+  // Se comparte el test, nunca el resultado de la persona.
+  function copiarEnlace() {
+    copiarTexto(URL_TEST, 'Enlace copiado: ' + URL_TEST, 'No se pudo copiar. El enlace es ' + URL_TEST);
   }
 
   function guardarPdf() {
@@ -401,6 +422,7 @@
     });
     $('btn-copiar').addEventListener('click', copiar);
     $('btn-pdf').addEventListener('click', guardarPdf);
+    $('btn-enlace').addEventListener('click', copiarEnlace);
     $('btn-reiniciar').addEventListener('click', reiniciar);
     $('r-servicio').addEventListener('click', function () { medir('test_turismo_servicio'); });
 

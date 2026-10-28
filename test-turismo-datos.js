@@ -72,7 +72,7 @@
       // Reemplaza la lista de prioridades cuando todo está en «Sí, lo comprobé».
       todoResuelto: {
         titulo: 'Tenés una base comprobada.',
-        texto: 'Con lo que respondiste no hay nada para corregir. Conviene repetir esta revisión cada tanto y sumar una mirada externa: lo que un viajero ve cambia con cada actualización de tus canales.'
+        texto: 'Con lo que respondiste no hay nada para corregir. Conviene repetir esta revisión cada tanto y sumar una mirada externa: lo que un viajero ve cambia con cada actualización de tus canales (sitio, redes, Google, plataformas).'
       }
     },
 
@@ -96,6 +96,7 @@
         },
         comprobar: [
           'Buscá en Google y probá una consulta en una IA usando tu tipo de servicio, tu destino y alguna característica relevante. No escribas el nombre de tu negocio.',
+          'Hacelo en una ventana de incógnito y sin sesión iniciada, para que tu historial no contamine el resultado.',
           {
             ejemplo: {
               base: '«[tu servicio] en [tu destino], con [una característica real de tu propuesta]»',
@@ -104,7 +105,15 @@
               gastronomia: '«Restaurantes de cocina regional cerca de las Cataratas del Iguazú»'
             }
           },
-          'Comprobá qué aparece. Una prueba es una observación puntual: las respuestas pueden variar.'
+          'Comprobá qué aparece. Una prueba es una observación puntual: las respuestas pueden variar.',
+          {
+            enlace: {
+              antes: 'Tenés el paso a paso en la nota ',
+              texto: '«Buscate vos»',
+              url: 'https://onlike.ar/buscate-vos-que-dicen-las-ias.html',
+              despues: '.'
+            }
+          }
         ],
         recomendacion: {
           titulo: 'Revisá cómo aparece tu negocio cuando buscan tu tipo de servicio',
@@ -138,7 +147,7 @@
         n: 3, etapa: 'encuentren',
         aspecto: 'las fuentes externas',
         pregunta: '¿Tu negocio aparece en fuentes externas relevantes para lo que ofrecés?',
-        apoyo: 'Además de tus propios canales, hay lugares donde un viajero puede encontrar referencias sobre vos.',
+        apoyo: 'Además de tus propios canales (tu sitio, tus redes, tu ficha de Google), hay lugares donde un viajero puede encontrar referencias sobre vos.',
         comprobar: [
           {
             base: 'Revisá si figurás correctamente en portales turísticos oficiales, registros del sector, directorios especializados, guías, operadores o plataformas vinculadas con tu actividad.',
@@ -149,7 +158,7 @@
           'No hace falta aparecer en todos. Importa estar en los que utilizan tus potenciales clientes.'
         ],
         recomendacion: {
-          titulo: 'Revisá dónde se habla de tu negocio fuera de tus propios canales',
+          titulo: 'Revisá dónde se habla de tu negocio fuera de tus propios canales (tu sitio y tus redes)',
           tituloPendiente: 'Comprobá si figurás, y si figurás bien, en fuentes externas relevantes',
           accion: 'Identificá los registros, portales y sitios especializados relevantes para tu actividad. Comprobá si estás incluido y si la información publicada es correcta.'
         }
@@ -160,7 +169,7 @@
         pregunta: '¿Alguien que no te conoce entiende claramente qué ofrecés y para quién es?',
         apoyo: 'Las fotos pueden atraer, pero la persona también necesita saber qué experiencia o servicio está evaluando.',
         comprobar: [
-          'Abrí tu principal canal de presentación e imaginá que nunca escuchaste hablar del negocio.',
+          'Abrí tu principal canal (tu sitio web, tu Instagram, tu ficha de Google u otro lugar donde presentás tu negocio) e imaginá que nunca escuchaste hablar de él.',
           {
             base: '¿Se entiende qué se puede hacer, qué incluye la propuesta y para qué tipo de viajero está pensada?',
             alojamiento: '¿Se entiende qué tipo de alojamiento es, qué incluye la estadía y para qué tipo de viajero está pensado?',
@@ -187,12 +196,12 @@
             agencia: 'Puede ser un guía especializado, el conocimiento del lugar, el tamaño de los grupos o una actividad poco común.',
             gastronomia: 'Puede ser una receta, un producto local, la atención o el entorno donde se come.'
           },
-          'Comprobá si eso aparece explicado con ejemplos concretos en tus canales.'
+          'Comprobá si eso aparece explicado con ejemplos concretos en tus canales (sitio, redes, Google, plataformas).'
         ],
         recomendacion: {
           titulo: 'Hacé visible aquello por lo que tus clientes te eligen',
           tituloPendiente: 'Comprobá si lo que te hace especial está explicado antes de que te contacten',
-          accion: 'Identificá tres motivos concretos por los que te recomiendan. Comprobá si están explicados en tus principales canales con información verificable.'
+          accion: 'Identificá tres motivos concretos por los que te recomiendan. Comprobá si están explicados en tus principales canales (sitio, redes, Google, plataformas) con información verificable.'
         }
       },
       {
@@ -240,13 +249,13 @@
         recomendacion: {
           titulo: 'Respondé las dudas que pueden frenar una decisión',
           tituloPendiente: 'Comprobá si el viajero encuentra lo que necesita para decidir antes de escribirte',
-          accion: 'Reuní las preguntas que recibís antes de una reserva. Publicá las respuestas importantes sobre inclusiones, condiciones, costos y funcionamiento en los canales correspondientes.'
+          accion: 'Reuní las preguntas que recibís antes de una reserva. Publicá las respuestas importantes sobre inclusiones, condiciones, costos y funcionamiento en los canales correspondientes (tu sitio, tus redes, Google, plataformas).'
         }
       },
       {
         n: 8, etapa: 'elijan',
         aspecto: 'la coherencia entre canales',
-        pregunta: '¿Tus distintos canales muestran los mismos servicios y condiciones vigentes?',
+        pregunta: '¿Tus distintos canales (sitio, redes, Google, plataformas) muestran los mismos servicios y condiciones vigentes?',
         apoyo: 'Un viajero puede consultar varios lugares antes de contratar. Las diferencias importantes pueden generarle dudas.',
         comprobar: [
           'Compará tu sitio, Google, Instagram y las plataformas donde vendés.',
@@ -254,8 +263,8 @@
           'No hace falta repetir las mismas palabras. Los hechos importantes deben ser compatibles.'
         ],
         recomendacion: {
-          titulo: 'Corregí las diferencias entre tus canales',
-          tituloPendiente: 'Comprobá si tus canales muestran los mismos servicios y condiciones',
+          titulo: 'Corregí las diferencias entre tus canales (sitio, redes, Google, plataformas)',
+          tituloPendiente: 'Comprobá si tus canales (sitio, redes, Google, plataformas) muestran los mismos servicios y condiciones',
           accion: 'Compará las condiciones, los servicios y los datos operativos de tus principales plataformas. Definí cuál es la información vigente y actualizá las demás fuentes.'
         }
       },
