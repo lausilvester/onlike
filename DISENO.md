@@ -21,6 +21,8 @@ El magenta tiene dos usos y son los únicos: señalar el dato negativo adentro d
 
 En `test-turismo.html` el lima también marca la respuesta elegida. Es la única excepción y vale solo ahí; el puntaje del resultado va en blanco. En ese test el botón flotante de WhatsApp se oculta mientras se responde, para que no tape las opciones.
 
+En `links.html` el botón del Test Turismo va en magenta. Es el único uso del magenta en esa página y el único botón lleno.
+
 ## Tipografía
 
 - Outfit en pesos 300, 400 y 700. Una sola familia.

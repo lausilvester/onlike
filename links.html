@@ -22,6 +22,8 @@
     --dark: #131625;
     --lima: #C8FF00;
     --lima-hover: #B8EB00;
+    --magenta: #FF3EBE;
+    --magenta-hover: #E62FA8;
     --violeta: #8E51B9;
     --lavanda: #A08AE5;
     --white: #FFFFFF;
@@ -127,6 +129,21 @@
     background: var(--lima-hover);
     border-color: var(--lima-hover);
     transform: translateY(-1px);
+  }
+
+  /* Test Turismo: botón lleno en magenta (único uso del magenta en esta página) */
+  .link-btn--primary.link-btn--magenta {
+    background: var(--magenta);
+    border-color: var(--magenta);
+  }
+
+  .link-btn--primary.link-btn--magenta span {
+    color: rgba(19,22,37,0.92);
+  }
+
+  .link-btn--primary.link-btn--magenta:hover {
+    background: var(--magenta-hover);
+    border-color: var(--magenta-hover);
   }
 
   /* Segundo rango — contorno lima, sin competir con el botón lleno */
@@ -361,9 +378,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span>Análisis propios sobre el turismo argentino, con fuente y con los límites de cada dato declarados: datos oficiales, por qué caen las consultas y cómo describen las IA a un destino.</span>
     </a>
 
-    <p class="label">Probate</p>
+    <p class="label">Autotest</p>
 
-    <a href="https://onlike.ar/test-turismo" class="link-btn link-btn--primary js-link" data-link="test-turismo">
+    <a href="https://onlike.ar/test-turismo" class="link-btn link-btn--primary link-btn--magenta js-link" data-link="test-turismo">
       Test Turismo (gratuito)
       <span>Diez preguntas para revisar qué entiende un viajero de tu negocio antes de elegirte. Sin registro y con prioridades al final.</span>
     </a>
