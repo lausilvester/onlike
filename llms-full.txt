@@ -187,23 +187,31 @@ Lo que ONLIKE no recomienda: desarrollar un asistente o chat propio de un organi
 
 ## Herramienta gratuita
 
-### Checklist de legibilidad digital
+### Test Turismo
 
-https://onlike.ar/checklist-legibilidad-digital.html
+https://onlike.ar/test-turismo
 
-Nueve preguntas para que un negocio turístico o un destino revise por su cuenta cómo lo ve una IA. No se contestan con sí o no: se contestan con "esto tengo que ajustar". Al final hay un puntaje.
+Autodiagnóstico gratuito de diez preguntas para que el dueño de un negocio turístico (alojamiento, agencia, excursiones y experiencias, gastronomía con público turístico u otro servicio) revise qué entiende un viajero de su negocio antes de elegirlo. Se hace en el navegador, sin registro y sin dejar datos; las respuestas no se envían a ningún servidor. Cada pregunta se responde con «Sí, lo comprobé» (2 puntos), «En parte» (1), «No» (0) o «No lo revisé» (0, registrado aparte: no cuenta como un problema confirmado).
 
-1. ¿Te encuentran sin que pongan tu nombre? Buscar en ChatGPT, Gemini, Claude y Grok describiendo lo que se ofrece, sin nombrar el negocio.
-2. ¿Tu propuesta se entiende en treinta segundos? Para quién es, para quién no, cuál es la experiencia, qué está incluido, qué la diferencia.
-3. ¿Tu información dice lo mismo en todos lados? Sitio, Google Business Profile, plataformas y reseñas: dirección, horarios, servicios, políticas, precios.
-4. ¿Tus reseñas dicen lo mismo que prometés?
-5. ¿Contestás preguntas reales? Cómo se llega, cuánto se tarda, accesibilidad, chicos, wifi, mascotas, mejor época, qué pasa si llueve, idiomas, cómo se reserva y se paga.
-6. ¿Alguien más habla de vos? Guías, medios, blogs con autor identificable, directorios oficiales, operadores.
-7. ¿Sos legible para una máquina? Información en texto y no dentro de imágenes o PDFs, datos estructurados, velocidad en celular, medición instalada, y precios y horarios que no vivan solo en flyers de Instagram.
-8. ¿Te llamás siempre igual? El nombre escrito letra por letra igual en todos los canales, cuentas viejas o duplicadas con otra versión del nombre, confusión con negocios parecidos de la zona, razón social y nombre de fantasía mezclados.
-9. ¿Se te puede ubicar en un recorrido? Dirección en texto con localidad y provincia, distancias a los lugares por donde llega el viajero, pin y categoría correctos en Google Maps, localidad y región nombradas en el texto.
+Que te encuentren
+1. ¿Te encuentran cuando buscan lo que ofrecés, sin escribir el nombre de tu negocio?
+2. ¿Los lugares donde figurás explican correctamente qué tipo de negocio tenés?
+3. ¿Tu negocio aparece en fuentes externas relevantes para lo que ofrecés?
 
-Gratis, sin dejar datos. Es un activo de orientación: su límite es que nadie puede ver su propio negocio como lo ve alguien que no lo conoce.
+Que te entiendan
+4. ¿Alguien que no te conoce entiende claramente qué ofrecés y para quién es?
+5. ¿Lo que hace especial a tu negocio está explicado antes de que el viajero te contacte?
+6. ¿Tu ubicación está explicada de una manera útil para planificar un viaje?
+
+Que te elijan
+7. ¿El viajero encuentra la información que necesita para decidir antes de escribirte?
+8. ¿Tus distintos canales muestran los mismos servicios y condiciones vigentes?
+9. ¿Estás aprovechando lo que tus clientes cuentan de vos en sus reseñas?
+10. ¿Alguien que ya decidió contratarte puede avanzar sin obstáculos?
+
+Resultado: un puntaje sobre 20 que refleja lo que la persona pudo confirmar sobre la información de su negocio (no mide la posición en Google ni garantiza recomendaciones de inteligencias artificiales), un resultado por etapa y hasta tres prioridades que dependen de las respuestas reales. Se puede copiar el diagnóstico o guardarlo como PDF.
+
+Es una autoevaluación y su límite es que nadie puede ver su propio negocio como lo ve alguien que no lo conoce. Para esa mirada externa existe la revisión Cómo te ve un viajero: https://onlike.ar/como-te-ve-un-viajero.html
 
 ## Notas publicadas
 
@@ -381,7 +389,7 @@ Para charlas:
 - Estrategia digital para turismo, auditoría y ordenamiento digital: https://onlike.ar/turismo.html
 - Cómo te ve un viajero: https://onlike.ar/como-te-ve-un-viajero.html
 - GEO Site: https://onlike.ar/geo-site.html
-- Checklist de legibilidad digital: https://onlike.ar/checklist-legibilidad-digital.html
+- Test Turismo: https://onlike.ar/test-turismo
 - Notas: https://onlike.ar/notas.html
 - Cuando una IA recomienda un destino turístico, decide también qué negocios aparecen: https://onlike.ar/destinos-turisticos-inteligencia-artificial.html
 - Qué contesta una IA sobre el turismo en Eldorado, Misiones: https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html

@@ -2,6 +2,12 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "trailingSlash": false,
   "cleanUrls": false,
+  "rewrites": [
+    {
+      "source": "/test-turismo",
+      "destination": "/test-turismo.html"
+    }
+  ],
   "redirects": [
     {
       "source": "/:path*",
@@ -26,12 +32,22 @@
     },
     {
       "source": "/test.html",
-      "destination": "/checklist-legibilidad-digital.html",
+      "destination": "/test-turismo",
       "permanent": true
     },
     {
       "source": "/test",
-      "destination": "/checklist-legibilidad-digital.html",
+      "destination": "/test-turismo",
+      "permanent": true
+    },
+    {
+      "source": "/checklist-legibilidad-digital.html",
+      "destination": "/test-turismo",
+      "permanent": true
+    },
+    {
+      "source": "/checklist-legibilidad-digital",
+      "destination": "/test-turismo",
       "permanent": true
     },
     {

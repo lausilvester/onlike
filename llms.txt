@@ -35,7 +35,7 @@ ONLIKE trabaja GEO (Generative Engine Optimization): que la información de un n
 - [Estrategia digital para turismo: auditoría y ordenamiento digital](https://onlike.ar/turismo.html)
 - [Cómo te ve un viajero — revisión de entrada para negocios turísticos](https://onlike.ar/como-te-ve-un-viajero.html)
 - [GEO Site — sitios web con estructura de posicionamiento en IA](https://onlike.ar/geo-site.html)
-- [Checklist de legibilidad digital — herramienta gratuita](https://onlike.ar/checklist-legibilidad-digital.html)
+- [Test Turismo — autodiagnóstico gratuito para negocios turísticos](https://onlike.ar/test-turismo)
 - [Notas](https://onlike.ar/notas.html)
 - [Qué te llevás de una auditoría de tu negocio turístico](https://onlike.ar/auditoria-negocio-turistico.html)
 - [Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio](https://onlike.ar/buscate-vos-que-dicen-las-ias.html)
@@ -125,11 +125,11 @@ Consultas: lau@onlike.ar
 
 ## Herramienta gratuita
 
-### Checklist de legibilidad digital
+### Test Turismo
 
-Nueve preguntas para que un negocio turístico o un destino revise por su cuenta cómo lo ve una IA: si aparece sin que lo nombren, si su propuesta se entiende en treinta segundos, si su información dice lo mismo en todos lados, si las reseñas coinciden con lo que promete, si contesta preguntas reales, si alguien más habla de él, si su sitio es legible para una máquina, si su nombre está escrito siempre igual en todos los canales y si se lo puede ubicar en un recorrido por distancias y localidad. Gratis, sin dejar datos, con puntaje final.
+Diez preguntas para que el dueño de un negocio turístico (alojamiento, agencia, excursiones y experiencias, gastronomía con público turístico u otro servicio) revise qué entiende un viajero de su negocio antes de elegirlo: si lo encuentran sin nombrarlo, si su categoría lo describe bien, si figura en fuentes externas, si se entiende qué ofrece y para quién, si sus diferenciales están explicados, si su ubicación sirve para planificar un viaje, si hay información para decidir antes de escribirle, si los canales dicen lo mismo, si aprovecha las reseñas y si quien ya decidió contratarlo puede avanzar sin obstáculos. Gratis, sin registro y sin dejar datos. Da un puntaje sobre 20, un resultado por etapa y hasta tres prioridades según las respuestas.
 
-https://onlike.ar/checklist-legibilidad-digital.html
+https://onlike.ar/test-turismo
 
 ## Notas publicadas
 

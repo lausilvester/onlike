@@ -82,6 +82,6 @@ Licenciada en Turismo por la Universidad Nacional de Misiones y fundadora de ONL
 ## Más
 
 - [Notas](https://onlike.ar/notas.html)
-- [Checklist de legibilidad digital](https://onlike.ar/checklist-legibilidad-digital.html)
+- [Test Turismo](https://onlike.ar/test-turismo)
 - [Política de privacidad](https://onlike.ar/privacidad.html)
 - [Mapa del sitio](https://onlike.ar/sitemap.xml)

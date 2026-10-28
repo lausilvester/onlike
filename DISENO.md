@@ -19,6 +19,8 @@ No se usan bloques lima a sangre ni secciones enteras en violeta.
 
 El magenta tiene dos usos y son los únicos: señalar el dato negativo adentro de un gráfico (*fuera de toda recomendación*, *−0,9%*, *sin acceso*) y el acento de `diagnosticotur.html`. Fuera de ahí no entra.
 
+En `test-turismo.html` el lima también marca la respuesta elegida. Es la única excepción y vale solo ahí; el puntaje del resultado va en blanco. En ese test el botón flotante de WhatsApp se oculta mientras se responde, para que no tape las opciones.
+
 ## Tipografía
 
 - Outfit en pesos 300, 400 y 700. Una sola familia.
