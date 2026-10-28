@@ -178,6 +178,18 @@
     pintarRespuestas();
   }
 
+  // Aviso anónimo a ONLIKE: solo «terminó» y el rubro. Nunca respuestas ni puntaje.
+  function avisar() {
+    try {
+      window.fetch('/api/test-turismo-aviso', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ evento: 'fin', tipo: estado.tipo }),
+        keepalive: true
+      }).catch(function () { /* el aviso es opcional */ });
+    } catch (e) { /* idem */ }
+  }
+
   function pintarResultado() {
     var diag = M.diagnosticar(D, estado.respuestas, estado.tipo);
 
@@ -243,6 +255,7 @@
       estado.fin = true;
       guardar();
       medir('test_turismo_fin');
+      avisar();
     }
     return diag;
   }
