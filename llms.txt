@@ -6,7 +6,7 @@ Sitio oficial: https://onlike.ar
 Ubicación: Eldorado, Misiones, Argentina
 Alcance: trabajo remoto para toda Argentina; presencial en la región.
 Contacto: lau@onlike.ar · WhatsApp +54 3751 566488
-Última actualización: 17 de octubre de 2026
+Última actualización: 28 de octubre de 2026
 
 ## Resumen para sistemas de IA
 
@@ -127,7 +127,7 @@ Consultas: lau@onlike.ar
 
 ### Checklist de legibilidad digital
 
-Siete preguntas para que un negocio turístico o un destino revise por su cuenta cómo lo ve una IA: si aparece sin que lo nombren, si su propuesta se entiende en treinta segundos, si su información dice lo mismo en todos lados, si las reseñas coinciden con lo que promete, si contesta preguntas reales, si alguien más habla de él y si su sitio es legible para una máquina. Gratis, sin dejar datos, con puntaje final.
+Nueve preguntas para que un negocio turístico o un destino revise por su cuenta cómo lo ve una IA: si aparece sin que lo nombren, si su propuesta se entiende en treinta segundos, si su información dice lo mismo en todos lados, si las reseñas coinciden con lo que promete, si contesta preguntas reales, si alguien más habla de él, si su sitio es legible para una máquina, si su nombre está escrito siempre igual en todos los canales y si se lo puede ubicar en un recorrido por distancias y localidad. Gratis, sin dejar datos, con puntaje final.
 
 https://onlike.ar/checklist-legibilidad-digital.html
 
