@@ -149,7 +149,7 @@ Lo que ONLIKE no recomienda: desarrollar un asistente o chat propio de un organi
 
 https://onlike.ar/checklist-legibilidad-digital.html
 
-Siete preguntas para que un negocio turístico o un destino revise por su cuenta cómo lo ve una IA. No se contestan con sí o no: se contestan con "esto tengo que ajustar". Al final hay un puntaje.
+Nueve preguntas para que un negocio turístico o un destino revise por su cuenta cómo lo ve una IA. No se contestan con sí o no: se contestan con "esto tengo que ajustar". Al final hay un puntaje.
 
 1. ¿Te encuentran sin que pongan tu nombre? Buscar en ChatGPT, Gemini, Claude y Grok describiendo lo que se ofrece, sin nombrar el negocio.
 2. ¿Tu propuesta se entiende en treinta segundos? Para quién es, para quién no, cuál es la experiencia, qué está incluido, qué la diferencia.
