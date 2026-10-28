@@ -127,7 +127,7 @@ Consultas: lau@onlike.ar
 
 ### Test Turismo
 
-Diez preguntas para que el dueño de un negocio turístico (alojamiento, agencia, excursiones y experiencias, gastronomía con público turístico u otro servicio) revise qué entiende un viajero de su negocio antes de elegirlo: si lo encuentran sin nombrarlo, si su categoría lo describe bien, si figura en fuentes externas, si se entiende qué ofrece y para quién, si sus diferenciales están explicados, si su ubicación sirve para planificar un viaje, si hay información para decidir antes de escribirle, si los canales dicen lo mismo, si aprovecha las reseñas y si quien ya decidió contratarlo puede avanzar sin obstáculos. Gratis, sin registro y sin dejar datos. Da un puntaje sobre 20, un resultado por etapa y hasta tres prioridades según las respuestas.
+Diez preguntas para que el dueño de un negocio turístico (alojamiento, agencia receptiva, excursiones y experiencias, gastronomía con público turístico u otro servicio, como guías, traslados o alquiler de equipos) revise qué entiende un viajero de su negocio antes de elegirlo: si lo encuentran sin nombrarlo, si su categoría lo describe bien, si figura en fuentes externas, si se entiende qué ofrece y para quién, si sus diferenciales están explicados, si su ubicación sirve para planificar un viaje, si hay información para decidir antes de escribirle, si los canales dicen lo mismo, si aprovecha las reseñas y si quien ya decidió contratarlo puede avanzar sin obstáculos. Gratis, sin registro y sin dejar datos. Da un puntaje sobre 20, un resultado por etapa y hasta tres prioridades según las respuestas.
 
 https://onlike.ar/test-turismo
 

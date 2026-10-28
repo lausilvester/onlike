@@ -2,7 +2,9 @@
   Test Turismo · interfaz.
   Una pregunta por pantalla, historial del navegador, resultado, copiar y PDF.
   Todo ocurre en el navegador: no se envían respuestas a ningún servidor.
-  Mide solo tres eventos en dataLayer: inicio, finalización y clic al servicio.
+  Mide en dataLayer: test_turismo_inicio, test_turismo_completo (con puntaje
+  total y rubro, como checklist_completo) y test_turismo_servicio. Nunca envía
+  respuestas individuales ni datos personales.
 */
 (function () {
   'use strict';
@@ -31,9 +33,11 @@
 
   function mayuscula(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
 
-  function medir(evento) {
+  function medir(evento, datos) {
+    var e = { event: evento };
+    if (datos) Object.keys(datos).forEach(function (k) { e[k] = datos[k]; });
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: evento });
+    window.dataLayer.push(e);
   }
 
   /* ---------- almacenamiento de la sesión (solo en este navegador) ---------- */
@@ -231,6 +235,7 @@
     var prios = $('r-prios');
     prios.textContent = '';
     prios.hidden = diag.prioridades.length === 0;
+    $('r-prios-intro').hidden = prios.hidden;
     diag.prioridades.forEach(function (p, i) {
       var li = crear('li', 'prio');
       var n = crear('span', 'prio-n', String(i + 1));
@@ -254,7 +259,7 @@
     if (!estado.fin) {
       estado.fin = true;
       guardar();
-      medir('test_turismo_fin');
+      medir('test_turismo_completo', { test_turismo_puntaje: diag.total, test_turismo_rubro: estado.tipo });
       avisar();
     }
     return diag;

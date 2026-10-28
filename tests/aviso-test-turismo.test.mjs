@@ -40,7 +40,7 @@ test('manda el aviso con el rubro y sin respuestas ni puntaje', async () => {
   const mail = JSON.parse(llamadas[0].init.body);
   assert.deepEqual(mail.to, ['yo@ejemplo.com']);
   assert.equal(mail.subject, 'Alguien terminó el Test Turismo');
-  assert.match(mail.text, /Agencia, excursiones o experiencias/);
+  assert.match(mail.text, /Agencia receptiva, excursiones o experiencias/);
   assert.match(mail.text, /28 de octubre de 2026.*20:00/);
   assert.doesNotMatch(mail.text, /puntaje: \d|respuesta: /i);
 });

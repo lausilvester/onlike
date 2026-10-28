@@ -182,6 +182,7 @@
     l.push('');
     if (diag.prioridades.length) {
       l.push('Por dónde empezaría');
+      l.push('Según lo que respondiste, esto es lo que conviene revisar primero.');
       diag.prioridades.forEach(function (p, i) {
         l.push((i + 1) + '. ' + p.titulo + ' (' + p.etiqueta.charAt(0).toLowerCase() + p.etiqueta.slice(1) + ')');
         l.push('   ' + p.accion);

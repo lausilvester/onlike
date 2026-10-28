@@ -23,7 +23,7 @@
 
     tipos: [
       { id: 'alojamiento', nombre: 'Alojamiento' },
-      { id: 'agencia', nombre: 'Agencia, excursiones o experiencias' },
+      { id: 'agencia', nombre: 'Agencia receptiva, excursiones o experiencias' },
       { id: 'gastronomia', nombre: 'Gastronomía turística' },
       { id: 'otro', nombre: 'Otro servicio turístico' }
     ],
@@ -89,14 +89,14 @@
         aspecto: 'las búsquedas sin tu nombre',
         pregunta: '¿Te encuentran cuando buscan lo que ofrecés, sin escribir el nombre de tu negocio?',
         apoyo: {
-          base: 'Pensá en alguien que busca un alojamiento, excursión o experiencia en tu destino y todavía no sabe que existís.',
+          base: 'Pensá en alguien que busca un servicio como el tuyo en el destino donde trabajás y todavía no sabe que existís.',
           alojamiento: 'Pensá en alguien que busca un alojamiento en tu destino y todavía no sabe que existís.',
           agencia: 'Pensá en alguien que busca una excursión o una experiencia en tu destino y todavía no sabe que existís.',
           gastronomia: 'Pensá en alguien que busca dónde comer en tu destino y todavía no sabe que existís.'
         },
         comprobar: [
           'Buscá en Google y probá una consulta en una IA usando tu tipo de servicio, tu destino y alguna característica relevante. No escribas el nombre de tu negocio.',
-          'Hacelo en una ventana de incógnito y sin sesión iniciada, para que tu historial no contamine el resultado.',
+          'Hacelo en una ventana de incógnito y sin sesión iniciada, para reducir la influencia de tu historial.',
           {
             ejemplo: {
               base: '«[tu servicio] en [tu destino], con [una característica real de tu propuesta]»',
@@ -123,24 +123,25 @@
       },
       {
         n: 2, etapa: 'encuentren',
-        aspecto: 'la clasificación de tu negocio',
+        aspecto: 'la clasificación y la descripción de tu negocio',
         pregunta: '¿Los lugares donde figurás explican correctamente qué tipo de negocio tenés?',
-        apoyo: 'Una categoría demasiado general puede dejar afuera características importantes de tu actividad.',
+        apoyo: 'Si la categoría es general y la descripción no explica lo específico, quedan afuera características importantes de tu actividad.',
         comprobar: [
           'Revisá la categoría principal y los servicios de tu Perfil de Empresa en Google. Comparalos con tus fichas en plataformas o directorios.',
+          'La lista de categorías de Google es cerrada y no permite crear una propia. Si no existe una exacta para tu actividad, lo correcto es elegir la más cercana y explicar lo específico en la descripción y en los servicios.',
           {
             ejemplo: {
-              base: 'un servicio con una propuesta específica descrito solamente con una categoría genérica',
-              alojamiento: 'un ecolodge especializado en naturaleza descrito solamente como «hotel»',
-              agencia: 'una agencia receptiva especializada en turismo de naturaleza descrita solamente como «agencia de viajes»',
-              gastronomia: 'un restaurante de cocina regional descrito solamente como «restaurante»'
+              base: 'un guía de avistaje de aves que figura con una categoría general y cuya descripción no dice qué salidas hace ni en qué zona',
+              alojamiento: 'un ecolodge que figura como «hotel» y cuya descripción no dice que está en plena naturaleza ni qué actividades ofrece',
+              agencia: 'una agencia receptiva que figura como «agencia de viajes» y cuya descripción no dice qué excursiones organiza ni en qué destino',
+              gastronomia: 'un restaurante de cocina regional que figura como «restaurante» y cuya descripción no menciona qué platos ni qué productos locales sirve'
             }
           }
         ],
         recomendacion: {
-          titulo: 'Comprobá cómo estás clasificado',
+          titulo: 'Comprobá cómo estás clasificado y descrito',
           tituloPendiente: 'Comprobá si tu categoría y tu descripción representan lo que hacés',
-          accion: 'Revisá la categoría principal y la descripción de servicios en Google y en tus plataformas principales. Corregí clasificaciones que no representen tu actividad real.'
+          accion: 'Revisá la categoría principal en Google y en tus plataformas. Si existe una más exacta para tu actividad, elegila. Si no existe, explicá lo específico en la descripción y en los servicios.'
         }
       },
       {
@@ -171,7 +172,7 @@
         comprobar: [
           'Abrí tu principal canal (tu sitio web, tu Instagram, tu ficha de Google u otro lugar donde presentás tu negocio) e imaginá que nunca escuchaste hablar de él.',
           {
-            base: '¿Se entiende qué se puede hacer, qué incluye la propuesta y para qué tipo de viajero está pensada?',
+            base: '¿Se entiende qué ofrecés, qué incluye y para qué tipo de viajero está pensado?',
             alojamiento: '¿Se entiende qué tipo de alojamiento es, qué incluye la estadía y para qué tipo de viajero está pensado?',
             agencia: '¿Se entiende qué actividades se hacen, qué incluye cada propuesta y para qué tipo de viajero está pensada?',
             gastronomia: '¿Se entiende qué tipo de cocina y de experiencia ofrecés y para qué tipo de viajero está pensada?'
@@ -191,7 +192,7 @@
         comprobar: [
           'Pensá en los elogios que recibís habitualmente.',
           {
-            base: 'Puede ser la atención de los dueños, un guía especializado, una experiencia gastronómica, la tranquilidad del lugar o una actividad poco común.',
+            base: 'Puede ser la atención personal, el conocimiento del lugar, la puntualidad, el estado de los vehículos o equipos, o una actividad poco común.',
             alojamiento: 'Puede ser la atención de los dueños, la tranquilidad del lugar, el entorno natural o un servicio que otros alojamientos no ofrecen.',
             agencia: 'Puede ser un guía especializado, el conocimiento del lugar, el tamaño de los grupos o una actividad poco común.',
             gastronomia: 'Puede ser una receta, un producto local, la atención o el entorno donde se come.'
@@ -211,7 +212,7 @@
         apoyo: 'Saber dónde estás es apenas una parte. El viajero necesita entender qué implica llegar hasta ahí.',
         comprobar: [
           {
-            base: 'Revisá si explicás cómo llegar, distancias reales, conexiones con atractivos, transporte y condiciones importantes del lugar.',
+            base: 'Revisá si explicás cómo llegar o dónde encontrarte, distancias reales, conexiones con atractivos, transporte y condiciones importantes del lugar.',
             agencia: 'Revisá si explicás dónde es el punto de encuentro o de salida, cómo llegar, cuánto dura cada traslado, el transporte y las condiciones importantes del recorrido.'
           },
           {
@@ -219,7 +220,7 @@
               base: '«Cerca de todo» puede necesitar una explicación de las distancias reales y de cómo se llega.',
               alojamiento: '«A 50 km de Puerto Iguazú» puede necesitar una explicación sobre el acceso y el trayecto.',
               agencia: '«Salimos desde Puerto Iguazú» puede necesitar aclarar el punto exacto de encuentro y cuánto dura el traslado.',
-              gastronomia: '«A diez minutos del centro» puede necesitar aclarar cómo se llega y dónde se estaciona.'
+              gastronomia: '«Cerca del centro» puede necesitar aclarar cómo se llega y dónde se estaciona.'
             }
           }
         ],
@@ -227,8 +228,8 @@
           titulo: 'Explicá tu ubicación pensando en el viaje',
           tituloPendiente: 'Comprobá si tu ubicación sirve para planificar un viaje',
           accion: {
-            base: 'Revisá distancias, accesos, conexiones y condiciones de llegada. Evitá descripciones ambiguas como “cerca de todo” cuando no explican el recorrido real.',
-            agencia: 'Revisá que el punto de encuentro, los tiempos de traslado y las condiciones de llegada estén escritos con claridad. Evitá descripciones ambiguas como “cerca de todo” cuando no explican el recorrido real.'
+            base: 'Revisá distancias, accesos, conexiones y condiciones de llegada. Evitá descripciones ambiguas como «cerca de todo» cuando no explican el recorrido real.',
+            agencia: 'Revisá que el punto de encuentro, los tiempos de traslado y las condiciones de llegada estén escritos con claridad. Evitá descripciones ambiguas como «cerca de todo» cuando no explican el recorrido real.'
           }
         }
       },
@@ -254,18 +255,19 @@
       },
       {
         n: 8, etapa: 'elijan',
-        aspecto: 'la coherencia entre canales',
+        aspecto: 'la coherencia entre tus canales (sitio, redes, Google, plataformas)',
         pregunta: '¿Tus distintos canales (sitio, redes, Google, plataformas) muestran los mismos servicios y condiciones vigentes?',
         apoyo: 'Un viajero puede consultar varios lugares antes de contratar. Las diferencias importantes pueden generarle dudas.',
         comprobar: [
           'Compará tu sitio, Google, Instagram y las plataformas donde vendés.',
+          'Mirá la misma propuesta, para las mismas fechas y condiciones. Un precio distinto según el canal puede ser válido y no cuenta como contradicción.',
           'Revisá servicios incluidos, horarios, precios o condiciones, características del producto y modalidad de reserva.',
           'No hace falta repetir las mismas palabras. Los hechos importantes deben ser compatibles.'
         ],
         recomendacion: {
           titulo: 'Corregí las diferencias entre tus canales (sitio, redes, Google, plataformas)',
           tituloPendiente: 'Comprobá si tus canales (sitio, redes, Google, plataformas) muestran los mismos servicios y condiciones',
-          accion: 'Compará las condiciones, los servicios y los datos operativos de tus principales plataformas. Definí cuál es la información vigente y actualizá las demás fuentes.'
+          accion: 'Compará la misma propuesta, para las mismas fechas y condiciones, en tus principales plataformas. Definí cuál es la información vigente y actualizá las demás fuentes.'
         }
       },
       {

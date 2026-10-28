@@ -10,7 +10,7 @@
 
 const RUBROS = {
   alojamiento: 'Alojamiento',
-  agencia: 'Agencia, excursiones o experiencias',
+  agencia: 'Agencia receptiva, excursiones o experiencias',
   gastronomia: 'Gastronomía turística',
   otro: 'Otro servicio turístico'
 };
