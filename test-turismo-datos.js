@@ -284,9 +284,9 @@
           'No hace falta repetir las mismas palabras. Los hechos importantes deben ser compatibles.'
         ],
         recomendacion: {
-          titulo: 'Corregí las diferencias entre tus canales (sitio, redes, Google, plataformas)',
-          tituloPendiente: 'Comprobá si tus canales (sitio, redes, Google, plataformas) muestran los mismos servicios y condiciones',
-          accion: 'Compará la misma propuesta, para las mismas fechas y condiciones, en tus principales plataformas. Definí cuál es la información vigente y actualizá las demás fuentes.'
+          titulo: 'Corregí la información contradictoria o desactualizada en tus canales (sitio, redes, Google, plataformas)',
+          tituloPendiente: 'Comprobá si hay información contradictoria o desactualizada en tus canales (sitio, redes, Google, plataformas)',
+          accion: 'Compará la misma propuesta, para las mismas fechas y condiciones. Corregí datos desactualizados y contradicciones. Si las condiciones cambian según dónde se contrata, explicalo con claridad.'
         }
       },
       {
