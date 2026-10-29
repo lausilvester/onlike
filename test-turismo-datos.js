@@ -66,7 +66,7 @@
         {
           id: 'alto', hasta: 20,
           titulo: 'Tu información tiene una base bastante trabajada',
-          texto: 'Confirmaste varios aspectos importantes. Ahora conviene concentrarte en los puntos pendientes y comprobar cómo se ve el conjunto desde afuera.'
+          texto: 'Confirmaste varios aspectos importantes. Si quedó alguno sin resolver o sin revisar, empezá por ahí y comprobá cómo se ve el conjunto desde afuera.'
         }
       ],
       // Reemplaza la lista de prioridades cuando todo está en «Sí, lo comprobé».
@@ -136,6 +136,10 @@
               agencia: 'una agencia receptiva que figura como «agencia de viajes» y cuya descripción no dice qué excursiones organiza ni en qué destino',
               gastronomia: 'un restaurante de cocina regional que figura como «restaurante» y cuya descripción no menciona qué platos ni qué productos locales sirve'
             }
+          },
+          {
+            base: 'Otra cosa es una categoría equivocada: si la lista tiene una opción que describe mejor lo que hacés y elegiste otra, ahí sí conviene corregirla.',
+            alojamiento: 'Otra cosa es una categoría equivocada: un departamento de alquiler temporario que figura como «hotel» cuando la lista tiene una opción de alquiler vacacional. Ahí sí conviene corregirla.'
           }
         ],
         recomendacion: {
@@ -207,12 +211,19 @@
       },
       {
         n: 6, etapa: 'entiendan',
-        aspecto: 'la explicación de tu ubicación',
+        aspecto: {
+          base: 'la explicación de tu ubicación',
+          otro: 'dónde te encuentra el viajero y qué zona cubrís'
+        },
         pregunta: '¿Tu ubicación está explicada de una manera útil para planificar un viaje?',
-        apoyo: 'Saber dónde estás es apenas una parte. El viajero necesita entender qué implica llegar hasta ahí.',
+        apoyo: {
+          base: 'Saber dónde estás es apenas una parte. El viajero necesita entender qué implica llegar hasta ahí.',
+          otro: 'El viajero necesita saber dónde se encuentra con vos y hasta dónde llega tu servicio antes de reservar.'
+        },
         comprobar: [
           {
-            base: 'Revisá si explicás cómo llegar o dónde encontrarte, distancias reales, conexiones con atractivos, transporte y condiciones importantes del lugar.',
+            base: 'Revisá si explicás cómo llegar, distancias reales, conexiones con atractivos, transporte y condiciones importantes del lugar.',
+            otro: 'Revisá si explicás dónde te encuentra el viajero (tu local, un punto de encuentro o su alojamiento), qué zona cubrís y las condiciones del recorrido, incluido el cruce de frontera si lo hacés.',
             agencia: 'Revisá si explicás dónde es el punto de encuentro o de salida, cómo llegar, cuánto dura cada traslado, el transporte y las condiciones importantes del recorrido.'
           },
           {
@@ -220,14 +231,22 @@
               base: '«Cerca de todo» puede necesitar una explicación de las distancias reales y de cómo se llega.',
               alojamiento: '«A 50 km de Puerto Iguazú» puede necesitar una explicación sobre el acceso y el trayecto.',
               agencia: '«Salimos desde Puerto Iguazú» puede necesitar aclarar el punto exacto de encuentro y cuánto dura el traslado.',
-              gastronomia: '«Cerca del centro» puede necesitar aclarar cómo se llega y dónde se estaciona.'
+              gastronomia: '«Cerca del centro» puede necesitar aclarar cómo se llega y dónde se estaciona.',
+              otro: '«Traslados en toda la zona» puede necesitar aclarar desde dónde salís, hasta dónde llegás y si cruzás a Brasil o a Paraguay.'
             }
           }
         ],
         recomendacion: {
-          titulo: 'Explicá tu ubicación pensando en el viaje',
-          tituloPendiente: 'Comprobá si tu ubicación sirve para planificar un viaje',
+          titulo: {
+            base: 'Explicá tu ubicación pensando en el viaje',
+            otro: 'Explicá dónde te encuentra el viajero y qué zona cubrís'
+          },
+          tituloPendiente: {
+            base: 'Comprobá si tu ubicación sirve para planificar un viaje',
+            otro: 'Comprobá si queda claro dónde te encuentra el viajero y qué zona cubrís'
+          },
           accion: {
+            otro: 'Escribí dónde te encuentra el viajero, qué zona cubrís y qué condiciones tiene el recorrido, incluido el cruce de frontera si lo hacés. Evitá descripciones ambiguas como «toda la zona» cuando no dicen hasta dónde llegás.',
             base: 'Revisá distancias, accesos, conexiones y condiciones de llegada. Evitá descripciones ambiguas como «cerca de todo» cuando no explican el recorrido real.',
             agencia: 'Revisá que el punto de encuentro, los tiempos de traslado y las condiciones de llegada estén escritos con claridad. Evitá descripciones ambiguas como «cerca de todo» cuando no explican el recorrido real.'
           }

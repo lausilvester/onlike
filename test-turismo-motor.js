@@ -42,7 +42,7 @@
 
   // Descripción breve de cada etapa, armada con lo que respondió la persona.
   // Atribuye los problemas a lo que marcó el usuario; nunca afirma cómo se ve el negocio desde afuera.
-  function describirEtapa(datos, etapa, respuestas, conteo) {
+  function describirEtapa(datos, etapa, respuestas, conteo, tipo) {
     var n = etapa.preguntas.length;
     if (conteo.sin_revisar === n) {
       return 'Todavía no revisaste ninguno de estos aspectos. Sin comprobarlos no se puede leer esta etapa.';
@@ -52,7 +52,7 @@
     }
     var por = { si: [], parcial: [], no: [], sin_revisar: [] };
     etapa.preguntas.forEach(function (q) {
-      por[respuestas[q]].push(preguntaDe(datos, q).aspecto);
+      por[respuestas[q]].push(texto(preguntaDe(datos, q).aspecto, tipo));
     });
     var partes = [];
     if (por.si.length) partes.push('Confirmaste ' + unir(por.si) + '.');
@@ -92,7 +92,7 @@
           n: n,
           estado: estado,
           etiqueta: datos.estados[estado],
-          titulo: estado === 'sin_revisar' ? rec.tituloPendiente : rec.titulo,
+          titulo: texto(estado === 'sin_revisar' ? rec.tituloPendiente : rec.titulo, tipo),
           accion: texto(rec.accion, tipo)
         });
       });
@@ -130,7 +130,7 @@
         puntos: puntos,
         max: etapa.preguntas.length * 2,
         conteo: c,
-        descripcion: describirEtapa(datos, etapa, respuestas, c)
+        descripcion: describirEtapa(datos, etapa, respuestas, c, tipo)
       };
     });
 
@@ -140,7 +140,7 @@
     var pendientes = [];
     for (var n = 1; n <= datos.preguntas.length; n++) {
       if (respuestas[n] === 'sin_revisar') {
-        pendientes.push({ n: n, aspecto: preguntaDe(datos, n).aspecto });
+        pendientes.push({ n: n, aspecto: texto(preguntaDe(datos, n).aspecto, tipo) });
       }
     }
 

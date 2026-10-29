@@ -152,14 +152,20 @@
 
   .r-cierre p { font-size: 1.05rem; font-weight: 300; line-height: 1.75; color: rgba(255,255,255,0.8); max-width: 34em; margin-bottom: 1rem; }
   .r-intro-prios { font-size: 1.05rem; line-height: 1.65; color: rgba(31,31,46,0.8); max-width: 34em; margin: -0.5rem 0 1.5rem; }
-  .r-cierre .r-precio { font-size: 1.25rem; font-weight: 700; color: var(--white); margin-top: 0.25rem; }
-  .r-cierre h3 { font-size: 1.5rem; font-weight: 500; letter-spacing: -0.02em; margin: 2.25rem 0 0.75rem; }
   .r-cierre .acciones { margin-top: 1.75rem; }
+  .r-cierre .r-leer { font-size: 0.95rem; margin: 2.25rem 0 0.5rem; color: rgba(255,255,255,0.7); }
+  .r-enlaces { list-style: none; }
+  .r-enlaces li { padding: 0.55rem 0; border-top: 1px solid rgba(255,255,255,0.12); }
+  .r-enlaces li:last-child { border-bottom: 1px solid rgba(255,255,255,0.12); }
+  .r-enlaces a { display: inline-block; min-height: 44px; padding: 0.6rem 0; font-size: 1rem; font-weight: 500; color: var(--lavanda); text-decoration: underline; text-decoration-color: rgba(160,138,229,0.45); text-underline-offset: 4px; }
+  .r-enlaces a:hover { text-decoration-color: var(--lavanda); }
 
   .herramientas { display: flex; flex-wrap: wrap; gap: 0.75rem; }
   .ayuda-herr { font-size: 0.9rem; line-height: 1.6; color: rgba(31,31,46,0.75); max-width: 36em; margin-top: 1rem; }
   .estado-copia { font-size: 0.95rem; min-height: 1.5em; margin-top: 0.6rem; color: var(--ink); }
-  .r-compartir .herramientas { margin-top: 1rem; }
+  .compartir { display: flex; flex-wrap: nowrap; gap: 0.75rem; margin-top: 1rem; }
+  .icono { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; padding: 0; background: transparent; color: var(--ink); border: 1px solid rgba(31,31,46,0.35); border-radius: var(--radius); cursor: pointer; transition: color var(--transition), border-color var(--transition); }
+  .icono:hover { color: var(--violeta); border-color: var(--violeta); }
   .r-compartir p { margin-bottom: 0; }
   .p-ayuda a { color: var(--lavanda); font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
   .r-buscate { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(31,31,46,0.18); }
@@ -200,6 +206,23 @@
     .p-nav .enlace { padding-right: 0; }
   }
   @media (min-width: 901px) { :root { --nav-h: 69px; } }
+
+  /* animación de la portada: tres señales en orden, una por etapa */
+  .intro-anim svg { display: block; width: 100%; max-width: 220px; height: auto; margin: 2.25rem 0 0; }
+  .t-s { transform-box: fill-box; transform-origin: center; opacity: 0; }
+  .t-s1 { animation: t-s1 7s ease-out infinite; }
+  .t-s2 { animation: t-s2 7s ease-out infinite; }
+  .t-s3 { animation: t-s3 7s ease-out infinite; }
+  @keyframes t-s1 { 0%,8% { opacity: 0; transform: scale(0.6); } 14%,82% { opacity: 1; transform: scale(1); } 90%,100% { opacity: 0; transform: scale(1); } }
+  @keyframes t-s2 { 0%,22% { opacity: 0; transform: scale(0.6); } 28%,82% { opacity: 1; transform: scale(1); } 90%,100% { opacity: 0; transform: scale(1); } }
+  @keyframes t-s3 { 0%,36% { opacity: 0; transform: scale(0.6); } 42%,82% { opacity: 1; transform: scale(1); } 90%,100% { opacity: 0; transform: scale(1); } }
+  @media (min-width: 960px) {
+    .wrap--intro { max-width: 1120px; display: grid; grid-template-columns: minmax(0, 640px) minmax(0, 1fr); gap: 3rem; align-items: center; }
+    .intro-anim svg { max-width: 340px; margin: 0 auto; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .t-s { animation: none !important; opacity: 1; }
+  }
 
   /* foco visible y movimiento reducido */
   :focus-visible { outline: 2px solid #C8FF00; outline-offset: 3px; }
@@ -316,6 +339,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li><a href="https://onlike.ar/turismo.html">Turismo</a></li>
       <li><a href="https://onlike.ar/geo-site.html">GEO Site</a></li>
       <li><a href="https://onlike.ar/notas.html">Notas</a></li>
+      <li><a href="https://onlike.ar/test-turismo" aria-current="page">Test gratis</a></li>
       <li><a href="https://onlike.ar/laura-silvester.html">Sobre mí</a></li>
       <li><a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20escribo%20desde%20el%20Test%20Turismo." target="_blank" rel="noopener noreferrer" class="nav-cta js-wa" data-wa="test-turismo-nav">Escribime</a></li>
     </ul>
@@ -330,7 +354,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- 1. Presentación -->
   <section class="paso" id="pantalla-intro" aria-labelledby="intro-titulo">
-    <div class="wrap">
+    <div class="wrap wrap--intro">
+      <div class="intro-texto">
       <p class="eyebrow">Test Turismo de ONLIKE</p>
       <h1 class="titular" id="intro-titulo" tabindex="-1"><span class="light">¿Qué entiende un viajero</span> de tu negocio antes de elegirte?</h1>
       <div class="lectura">
@@ -366,6 +391,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </ol>
         </div>
       </noscript>
+      </div>
+      <!-- El viajero de «Cómo te ve un viajero», quieto, revisando el celular.
+           Las tres señales son las tres etapas del test: encontrar, entender, elegir. -->
+      <div class="intro-anim" aria-hidden="true">
+        <svg viewBox="130 0 320 420" xmlns="http://www.w3.org/2000/svg">
+          <line x1="130" y1="403" x2="450" y2="403" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+          <!-- valija -->
+          <line x1="220" y1="252" x2="220" y2="206" stroke="#3a3d55" stroke-width="6" stroke-linecap="round"/>
+          <line x1="208" y1="206" x2="228" y2="206" stroke="#3a3d55" stroke-width="6" stroke-linecap="round"/>
+          <rect x="150" y="250" width="112" height="146" rx="12" fill="#C8FF00"/>
+          <line x1="172" y1="264" x2="172" y2="382" stroke="#A6D400" stroke-width="4" stroke-linecap="round"/>
+          <line x1="240" y1="264" x2="240" y2="382" stroke="#A6D400" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="172" cy="398" r="9" fill="#2a2d40"/>
+          <circle cx="240" cy="398" r="9" fill="#2a2d40"/>
+          <!-- brazo de atrás, en la manija -->
+          <line x1="310" y1="192" x2="228" y2="208" stroke="#7A44A8" stroke-width="14" stroke-linecap="round"/>
+          <!-- piernas -->
+          <line x1="320" y1="302" x2="320" y2="398" stroke="#5E4BA8" stroke-width="16" stroke-linecap="round"/>
+          <line x1="340" y1="302" x2="340" y2="398" stroke="#5E4BA8" stroke-width="16" stroke-linecap="round"/>
+          <!-- cuerpo y cabeza -->
+          <rect x="296" y="168" width="68" height="148" rx="34" fill="#8E51B9"/>
+          <circle cx="342" cy="128" r="36" fill="#D9CCF5"/>
+          <path d="M306 126 A36 36 0 0 1 378 126 Q342 114 306 126 Z" fill="#3F2D6E"/>
+          <circle cx="306" cy="116" r="11" fill="#3F2D6E"/>
+          <circle cx="362" cy="130" r="3.5" fill="#131625"/>
+          <!-- brazo de adelante, con el celular -->
+          <g transform="translate(350 190) rotate(-140)"><line x1="0" y1="0" x2="0" y2="72" stroke="#7A44A8" stroke-width="14" stroke-linecap="round"/></g>
+          <rect x="387" y="100" width="20" height="34" rx="4" fill="#C8FF00" stroke="#2a2d40" stroke-width="3"/>
+          <!-- encontrar -->
+          <g class="t-s t-s1">
+            <circle cx="296" cy="56" r="22" fill="#131625" stroke="#A08AE5" stroke-width="3"/>
+            <circle cx="292" cy="52" r="8" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+            <line x1="298" y1="58" x2="305" y2="65" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+          </g>
+          <!-- entender -->
+          <g class="t-s t-s2">
+            <circle cx="352" cy="34" r="22" fill="#131625" stroke="#A08AE5" stroke-width="3"/>
+            <path d="M339 34 Q352 22 365 34 Q352 46 339 34 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linejoin="round"/>
+            <circle cx="352" cy="34" r="4" fill="#FFFFFF"/>
+          </g>
+          <!-- elegir -->
+          <g class="t-s t-s3">
+            <circle cx="408" cy="56" r="22" fill="#131625" stroke="#A08AE5" stroke-width="3"/>
+            <polyline points="398,56 405,63 418,49" fill="none" stroke="#C8FF00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+        </svg>
+      </div>
     </div>
   </section>
 
@@ -447,13 +519,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Vos conocés tu negocio. Sabés qué incluye, cómo funciona y por qué te eligen.</p>
         <p>Un viajero que llega por primera vez tiene que descubrir todo eso con la información que encuentra.</p>
         <p>Este test te devuelve qué revisar a partir de lo que vos conocés. Una mirada externa permite comprobar qué entiende alguien que todavía no sabe nada de tu propuesta.</p>
-        <h3>Cómo te ve un viajero</h3>
-        <p>Miro tu negocio en los cinco lugares donde el viajero te compara antes de decidir: las plataformas de reserva, Google, Instagram y Facebook, WhatsApp y ChatGPT. Cruzo lo que dice cada uno y te entrego por escrito el orden de prioridad: qué cambiar primero.</p>
-        <p class="r-precio">$90.000, precio cerrado.</p>
+        <p>Con lo que respondiste ya tenés por dónde empezar. Si querés una mirada externa, escribime y te digo qué tipo de revisión le sirve a tu negocio.</p>
         <div class="acciones">
-          <a class="btn btn-lima js-servicio" id="r-servicio" href="https://onlike.ar/como-te-ve-un-viajero.html">Ver cómo funciona la revisión</a>
-          <a class="btn btn-ghost js-wa" id="r-whatsapp" data-wa="test-turismo-resultado" target="_blank" rel="noopener noreferrer" href="https://wa.me/543751566488?text=Hola%2C%20Laura.%20Vengo%20de%20hacerme%20el%20Test%20Turismo%20de%20ONLIKE%20y%20me%20gustar%C3%ADa%20contar%20con%20tu%20asesoramiento%20para%20mi%20negocio.">Contarme mi caso por WhatsApp</a>
+          <a class="btn btn-lima js-wa" id="r-whatsapp" data-wa="test-turismo-resultado" target="_blank" rel="noopener noreferrer" href="https://wa.me/543751566488?text=Hola%2C%20Laura.%20Vengo%20de%20hacerme%20el%20Test%20Turismo%20de%20ONLIKE%20y%20me%20gustar%C3%ADa%20contar%20con%20tu%20asesoramiento%20para%20mi%20negocio.">Contame tu caso por WhatsApp</a>
         </div>
+        <p class="r-leer">Si preferís leer antes de escribirme:</p>
+        <ul class="r-enlaces">
+          <li><a class="js-servicio" data-destino="auditoria" href="https://onlike.ar/auditoria-negocio-turistico.html">Qué te llevás de una auditoría de tu negocio turístico</a></li>
+          <li><a class="js-servicio" data-destino="como-te-ve-un-viajero" href="https://onlike.ar/como-te-ve-un-viajero.html">Cómo te ve un viajero: una revisión desde afuera de los cinco lugares donde te comparan</a></li>
+        </ul>
       </div>
     </section>
 
@@ -470,9 +544,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="r-buscate r-compartir">
           <h3>Si te sirvió, compartilo con otros prestadores.</h3>
           <p>Compartís el test, no tu resultado.</p>
-          <div class="herramientas">
-            <a class="btn btn-claro" id="btn-x" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Hice%20el%20Test%20Turismo%20de%20ONLIKE%3A%20diez%20preguntas%20para%20revisar%20qu%C3%A9%20entiende%20un%20viajero%20de%20tu%20negocio%20antes%20de%20elegirlo.%20Gratis%20y%20sin%20registro.&amp;url=https%3A%2F%2Fonlike.ar%2Ftest-turismo">Compartir en X</a>
-            <button type="button" class="btn btn-claro" id="btn-enlace">Copiar enlace del test</button>
+          <div class="compartir">
+            <a class="icono" target="_blank" rel="noopener noreferrer" aria-label="Compartir en Facebook" title="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fonlike.ar%2Ftest-turismo"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.026 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.971H15.83c-1.491 0-1.956.931-1.956 1.886v2.264h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg></a>
+            <a class="icono" target="_blank" rel="noopener noreferrer" aria-label="Compartir en LinkedIn" title="LinkedIn" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fonlike.ar%2Ftest-turismo"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="icono" target="_blank" rel="noopener noreferrer" aria-label="Compartir en X" title="X" href="https://twitter.com/intent/tweet?text=Hice%20el%20Test%20Turismo%20de%20ONLIKE%3A%20diez%20preguntas%20para%20revisar%20qu%C3%A9%20entiende%20un%20viajero%20de%20tu%20negocio%20antes%20de%20elegirlo.%20Gratis%20y%20sin%20registro.&amp;url=https%3A%2F%2Fonlike.ar%2Ftest-turismo"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
+            <button type="button" class="icono" id="btn-enlace" aria-label="Copiar el enlace del test" title="Copiar enlace"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button>
           </div>
         </div>
 
@@ -486,7 +562,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 
     <div class="wrap solo-impresion">
-      <p class="imp-pie">Cómo te ve un viajero, la revisión de ONLIKE: onlike.ar/como-te-ve-un-viajero.html</p>
+      <p class="imp-pie">¿Querés una mirada externa? Escribime por WhatsApp al +54 3751 566488 o entrá a onlike.ar.</p>
     </div>
   </div>
 

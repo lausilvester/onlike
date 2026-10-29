@@ -25,10 +25,11 @@ test('los datos están completos y son consistentes', () => {
   for (const tipo of TIPOS) {
     for (const p of datos.preguntas) {
       assert.equal(datos.etapas.find((e) => e.id === p.etapa).preguntas.includes(p.n), true);
-      for (const t of [p.pregunta, p.aspecto, motor.texto(p.apoyo, tipo), motor.texto(p.recomendacion.accion, tipo), p.recomendacion.titulo, p.recomendacion.tituloPendiente]) {
+      const r = p.recomendacion;
+      for (const t of [p.pregunta, motor.texto(p.aspecto, tipo), motor.texto(p.apoyo, tipo), motor.texto(r.accion, tipo), motor.texto(r.titulo, tipo), motor.texto(r.tituloPendiente, tipo)]) {
         assert.equal(vacio(t), false, `P${p.n} (${tipo}) tiene un texto vacío`);
       }
-      assert.match(p.recomendacion.tituloPendiente, /^Comprobá /, `P${p.n}: el título pendiente debe empezar con «Comprobá»`);
+      assert.match(motor.texto(r.tituloPendiente, tipo), /^Comprobá /, `P${p.n} (${tipo}): el título pendiente debe empezar con «Comprobá»`);
       for (const item of p.comprobar) {
         if (item && typeof item === 'object' && item.enlace) {
           assert.match(item.enlace.url, /^https:\/\/onlike\.ar\//, `P${p.n}: el enlace debe ser de onlike.ar`);
@@ -46,7 +47,7 @@ test('los textos de agencia y gastronomía no hablan de alojamiento', () => {
   const prohibido = /habitaci|booking|check-in|estad[ií]a|ecolodge|\bhotel|alojamiento/i;
   for (const tipo of ['agencia', 'gastronomia']) {
     for (const p of datos.preguntas) {
-      const textos = [motor.texto(p.apoyo, tipo), motor.texto(p.recomendacion.accion, tipo), p.recomendacion.titulo];
+      const textos = [motor.texto(p.apoyo, tipo), motor.texto(p.recomendacion.accion, tipo), motor.texto(p.recomendacion.titulo, tipo)];
       for (const item of p.comprobar) {
         if (item && typeof item === 'object' && item.enlace) continue;
         textos.push(motor.texto(item && typeof item === 'object' && 'ejemplo' in item ? item.ejemplo : item, tipo));
@@ -222,4 +223,28 @@ test('la medición de finalización sigue el formato de checklist_completo y no 
   const html = readFileSync(new URL('../test-turismo.html', import.meta.url), 'utf8');
   const origenes = [...html.matchAll(/data-wa="([^"]+)"/g)].map((m) => m[1]).sort();
   assert.deepEqual(origenes, ['test-turismo-flotante', 'test-turismo-nav', 'test-turismo-resultado']);
+});
+
+test('«Otro servicio turístico» recibe su propia pregunta 6, sin hablar de una ubicación fija', () => {
+  const r = con(todas('si'), { 6: 'no' });
+  const otro = diag(r, 'otro');
+  assert.equal(otro.prioridades[0].titulo, 'Explicá dónde te encuentra el viajero y qué zona cubrís');
+  assert.match(otro.prioridades[0].accion, /zona cubrís/);
+  assert.match(otro.etapas[1].descripcion, /dónde te encuentra el viajero/);
+  const alojamiento = diag(r, 'alojamiento');
+  assert.equal(alojamiento.prioridades[0].titulo, 'Explicá tu ubicación pensando en el viaje');
+  const pendiente = diag(con(todas('si'), { 6: 'sin_revisar' }), 'otro');
+  assert.match(pendiente.prioridades[0].titulo, /^Comprobá si queda claro dónde te encuentra/);
+  assert.match(pendiente.pendientes[0].aspecto, /zona cubrís/);
+});
+
+test('el cierre lleva a WhatsApp primero y no muestra precios', async () => {
+  const { readFileSync } = await import('node:fs');
+  const html = readFileSync(new URL('../test-turismo.html', import.meta.url), 'utf8');
+  const cierre = html.slice(html.indexOf('id="r-cierre-titulo"'), html.indexOf('r-herramientas', html.indexOf('id="r-cierre-titulo"')));
+  assert.doesNotMatch(cierre, /\$\s?\d/);
+  assert.ok(cierre.indexOf('btn btn-lima js-wa') !== -1, 'el botón principal tiene que ser WhatsApp');
+  assert.ok(cierre.indexOf('btn btn-lima js-wa') < cierre.indexOf('auditoria-negocio-turistico'), 'WhatsApp va antes que los enlaces');
+  assert.match(cierre, /data-destino="auditoria"/);
+  assert.match(cierre, /data-destino="como-te-ve-un-viajero"/);
 });

@@ -442,7 +442,11 @@
     $('btn-pdf').addEventListener('click', guardarPdf);
     $('btn-enlace').addEventListener('click', copiarEnlace);
     $('btn-reiniciar').addEventListener('click', reiniciar);
-    $('r-servicio').addEventListener('click', function () { medir('test_turismo_servicio'); });
+    document.querySelectorAll('.js-servicio').forEach(function (a) {
+      a.addEventListener('click', function () {
+        medir('test_turismo_servicio', { test_turismo_destino: a.getAttribute('data-destino') });
+      });
+    });
 
     window.addEventListener('popstate', function () {
       mostrar(destinoDeHash(), { sinHistorial: true });
