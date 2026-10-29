@@ -209,3 +209,17 @@ test('las 4^10 combinaciones producen un resultado válido', () => {
     }
   }
 });
+
+test('la medición de finalización sigue el formato de checklist_completo y no manda respuestas', async () => {
+  const { readFileSync } = await import('node:fs');
+  const ui = readFileSync(new URL('../test-turismo.js', import.meta.url), 'utf8');
+  const llamada = ui.match(/medir\('test_turismo_completo', \{[^}]*\}\)/);
+  assert.ok(llamada, 'falta el evento test_turismo_completo');
+  assert.match(llamada[0], /test_turismo_puntaje: diag\.total/);
+  assert.match(llamada[0], /test_turismo_rubro: estado\.tipo/);
+  assert.doesNotMatch(llamada[0], /respuestas/);
+  assert.doesNotMatch(ui, /'test_turismo_fin'|'checklist_completo'/);
+  const html = readFileSync(new URL('../test-turismo.html', import.meta.url), 'utf8');
+  const origenes = [...html.matchAll(/data-wa="([^"]+)"/g)].map((m) => m[1]).sort();
+  assert.deepEqual(origenes, ['test-turismo-flotante', 'test-turismo-nav', 'test-turismo-resultado']);
+});

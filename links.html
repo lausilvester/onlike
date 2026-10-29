@@ -22,6 +22,8 @@
     --dark: #131625;
     --lima: #C8FF00;
     --lima-hover: #B8EB00;
+    --magenta: #FF3EBE;
+    --magenta-hover: #E62FA8;
     --violeta: #8E51B9;
     --lavanda: #A08AE5;
     --white: #FFFFFF;
@@ -129,6 +131,21 @@
     transform: translateY(-1px);
   }
 
+  /* Test Turismo: botón lleno en magenta (único uso del magenta en esta página) */
+  .link-btn--primary.link-btn--magenta {
+    background: var(--magenta);
+    border-color: var(--magenta);
+  }
+
+  .link-btn--primary.link-btn--magenta span {
+    color: rgba(19,22,37,0.92);
+  }
+
+  .link-btn--primary.link-btn--magenta:hover {
+    background: var(--magenta-hover);
+    border-color: var(--magenta-hover);
+  }
+
   /* Segundo rango — contorno lima, sin competir con el botón lleno */
   .link-btn--featured {
     background: transparent;
@@ -231,14 +248,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Qué te llevás de una auditoría de tu negocio turístico",
-            "url": "https://onlike.ar/auditoria-negocio-turistico.html"
+            "name": "Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio",
+            "url": "https://onlike.ar/buscate-vos-que-dicen-las-ias.html"
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio",
-            "url": "https://onlike.ar/buscate-vos-que-dicen-las-ias.html"
+            "name": "Qué te llevás de una auditoría de tu negocio turístico",
+            "url": "https://onlike.ar/auditoria-negocio-turistico.html"
           },
           {
             "@type": "ListItem",
@@ -249,36 +266,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {
             "@type": "ListItem",
             "position": 4,
-            "name": "Cuando una inteligencia artificial recomienda un destino turístico, decide también qué negocios aparecen",
-            "url": "https://onlike.ar/destinos-turisticos-inteligencia-artificial.html"
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "Por qué bajaron las consultas en tu alojamiento",
-            "url": "https://onlike.ar/por-que-bajaron-las-consultas-alojamiento.html"
-          },
-          {
-            "@type": "ListItem",
-            "position": 6,
             "name": "Test Turismo: autodiagnóstico gratuito para negocios turísticos",
             "url": "https://onlike.ar/test-turismo"
           },
           {
             "@type": "ListItem",
-            "position": 7,
+            "position": 5,
             "name": "Cómo te ve un viajero — revisión digital para negocios turísticos",
             "url": "https://onlike.ar/como-te-ve-un-viajero.html"
           },
           {
             "@type": "ListItem",
-            "position": 8,
+            "position": 6,
             "name": "GEO Site",
             "url": "https://onlike.ar/geo-site.html"
           },
           {
             "@type": "ListItem",
-            "position": 9,
+            "position": 7,
             "name": "Diagnóstico digital estratégico para turismo",
             "url": "https://onlike.ar/turismo.html"
           }
@@ -356,42 +361,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <nav class="links" aria-label="Accesos directos">
 
-    <p class="label">Notas nuevas</p>
-
-    <a href="https://onlike.ar/auditoria-negocio-turistico.html" class="link-btn link-btn--primary js-link" data-link="nota-auditoria">
-      Qué te llevás de una auditoría de tu negocio turístico
-      <span>Cuándo tiene sentido, qué recibís, las preguntas que me hago cuando miro un negocio turístico y dos casos reales en video.</span>
-    </a>
+    <p class="label">Notas</p>
 
     <a href="https://onlike.ar/buscate-vos-que-dicen-las-ias.html" class="link-btn link-btn--featured js-link" data-link="nota-buscate-vos">
       Buscate vos: qué dicen las IA sobre tu negocio
-      <span>El procedimiento completo, sin registro y sin reservarme nada: por qué la prueba no sirve si estás logueada, las tres búsquedas en orden y los once errores que se repiten en todos los diagnósticos.</span>
+      <span>Cómo averiguar qué contestan ChatGPT, Gemini, Grok y el resumen con IA de Google cuando alguien pregunta por lo que ofrecés. Tres búsquedas, una repregunta y qué mirar en la respuesta. Gratis y sin registro.</span>
     </a>
 
-    <p class="label">Empezá por acá</p>
+    <a href="https://onlike.ar/auditoria-negocio-turistico.html" class="link-btn link-btn--featured js-link" data-link="nota-auditoria">
+      Qué te llevás de una auditoría de tu negocio turístico
+      <span>Cuándo tiene sentido, qué recibís (un diagnóstico, una hoja de ruta ordenada por impacto y una reunión para decidir) y dos casos reales: un ecolodge en Misiones y un hotel boutique en Puerto Iguazú.</span>
+    </a>
 
     <a href="https://onlike.ar/notas.html" class="link-btn link-btn--featured js-link" data-link="notas">
       Todas las notas
-      <span>Análisis propios sobre el turismo argentino, con fuente y con los límites de cada dato declarados. Datos oficiales, por qué caen las consultas, y cómo describen los sistemas de IA a un destino.</span>
+      <span>Análisis propios sobre el turismo argentino, con fuente y con los límites de cada dato declarados: datos oficiales, por qué caen las consultas y cómo describen las IA a un destino.</span>
     </a>
 
-    <p class="label">La serie sobre destinos</p>
+    <p class="label">Autotest</p>
 
-    <a href="https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html" class="link-btn link-btn--featured js-link" data-link="nota-eldorado-ia">
-      Le pregunté a una IA qué hacer en mi ciudad
-      <span>De trece atractivos turísticos recomendados en Eldorado, seis no se pueden visitar. Y faltan cuatro prestadores que hacen justo lo que el sistema dice que la ciudad ofrece.</span>
-    </a>
-
-    <a href="https://onlike.ar/destinos-turisticos-inteligencia-artificial.html" class="link-btn link-btn--featured js-link" data-link="nota-destinos-ia">
-      Cuando una IA recomienda un destino
-      <span>La nota que explica por qué pasa esto. Nadie reserva lo que no consideró, y la consideración se arma antes, en un chat donde tu negocio no está.</span>
-    </a>
-
-    <p class="label">Probate</p>
-
-    <a href="https://onlike.ar/test-turismo" class="link-btn link-btn--featured js-link" data-link="test-turismo">
-      ¿Qué entiende un viajero de tu negocio?
-      <span>Diez preguntas para revisar cómo te encuentran, te entienden y te eligen. Sin dejar datos, con prioridades al final.</span>
+    <a href="https://onlike.ar/test-turismo" class="link-btn link-btn--primary link-btn--magenta js-link" data-link="test-turismo">
+      Test Turismo (gratuito)
+      <span>Diez preguntas para revisar qué entiende un viajero de tu negocio antes de elegirte. Sin registro y con prioridades al final.</span>
     </a>
 
     <p class="label">Servicios</p>

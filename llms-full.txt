@@ -191,7 +191,7 @@ Lo que ONLIKE no recomienda: desarrollar un asistente o chat propio de un organi
 
 https://onlike.ar/test-turismo
 
-Autodiagnóstico gratuito de diez preguntas para que el dueño de un negocio turístico (alojamiento, agencia, excursiones y experiencias, gastronomía con público turístico u otro servicio) revise qué entiende un viajero de su negocio antes de elegirlo. Se hace en el navegador, sin registro y sin dejar datos; las respuestas no se envían a ningún servidor. Cada pregunta se responde con «Sí, lo comprobé» (2 puntos), «En parte» (1), «No» (0) o «No lo revisé» (0, registrado aparte: no cuenta como un problema confirmado).
+Autodiagnóstico gratuito de diez preguntas para que el dueño de un negocio turístico (alojamiento, agencia receptiva, excursiones y experiencias, gastronomía con público turístico u otro servicio, como guías, traslados o alquiler de equipos) revise qué entiende un viajero de su negocio antes de elegirlo. Se hace en el navegador, sin registro y sin dejar datos; las respuestas no se envían a ningún servidor. Cada pregunta se responde con «Sí, lo comprobé» (2 puntos), «En parte» (1), «No» (0) o «No lo revisé» (0, registrado aparte: no cuenta como un problema confirmado).
 
 Que te encuentren
 1. ¿Te encuentran cuando buscan lo que ofrecés, sin escribir el nombre de tu negocio?
@@ -205,7 +205,7 @@ Que te entiendan
 
 Que te elijan
 7. ¿El viajero encuentra la información que necesita para decidir antes de escribirte?
-8. ¿Tus distintos canales muestran los mismos servicios y condiciones vigentes?
+8. ¿Tus distintos canales (sitio, redes, Google, plataformas) muestran los mismos servicios y condiciones vigentes?
 9. ¿Estás aprovechando lo que tus clientes cuentan de vos en sus reseñas?
 10. ¿Alguien que ya decidió contratarte puede avanzar sin obstáculos?
 
