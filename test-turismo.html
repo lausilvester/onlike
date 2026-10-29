@@ -152,9 +152,13 @@
 
   .r-cierre p { font-size: 1.05rem; font-weight: 300; line-height: 1.75; color: rgba(255,255,255,0.8); max-width: 34em; margin-bottom: 1rem; }
   .r-intro-prios { font-size: 1.05rem; line-height: 1.65; color: rgba(31,31,46,0.8); max-width: 34em; margin: -0.5rem 0 1.5rem; }
-  .r-cierre .r-precio { font-size: 1.25rem; font-weight: 700; color: var(--white); margin-top: 0.25rem; }
-  .r-cierre h3 { font-size: 1.5rem; font-weight: 500; letter-spacing: -0.02em; margin: 2.25rem 0 0.75rem; }
   .r-cierre .acciones { margin-top: 1.75rem; }
+  .r-cierre .r-leer { font-size: 0.95rem; margin: 2.25rem 0 0.5rem; color: rgba(255,255,255,0.7); }
+  .r-enlaces { list-style: none; }
+  .r-enlaces li { padding: 0.55rem 0; border-top: 1px solid rgba(255,255,255,0.12); }
+  .r-enlaces li:last-child { border-bottom: 1px solid rgba(255,255,255,0.12); }
+  .r-enlaces a { display: inline-block; min-height: 44px; padding: 0.6rem 0; font-size: 1rem; font-weight: 500; color: var(--lavanda); text-decoration: underline; text-decoration-color: rgba(160,138,229,0.45); text-underline-offset: 4px; }
+  .r-enlaces a:hover { text-decoration-color: var(--lavanda); }
 
   .herramientas { display: flex; flex-wrap: wrap; gap: 0.75rem; }
   .ayuda-herr { font-size: 0.9rem; line-height: 1.6; color: rgba(31,31,46,0.75); max-width: 36em; margin-top: 1rem; }
@@ -447,13 +451,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Vos conocés tu negocio. Sabés qué incluye, cómo funciona y por qué te eligen.</p>
         <p>Un viajero que llega por primera vez tiene que descubrir todo eso con la información que encuentra.</p>
         <p>Este test te devuelve qué revisar a partir de lo que vos conocés. Una mirada externa permite comprobar qué entiende alguien que todavía no sabe nada de tu propuesta.</p>
-        <h3>Cómo te ve un viajero</h3>
-        <p>Miro tu negocio en los cinco lugares donde el viajero te compara antes de decidir: las plataformas de reserva, Google, Instagram y Facebook, WhatsApp y ChatGPT. Cruzo lo que dice cada uno y te entrego por escrito el orden de prioridad: qué cambiar primero.</p>
-        <p class="r-precio">$90.000, precio cerrado.</p>
+        <p>Con lo que respondiste ya tenés por dónde empezar. Si querés una mirada externa, escribime y te digo qué tipo de revisión le sirve a tu negocio.</p>
         <div class="acciones">
-          <a class="btn btn-lima js-servicio" id="r-servicio" href="https://onlike.ar/como-te-ve-un-viajero.html">Ver cómo funciona la revisión</a>
-          <a class="btn btn-ghost js-wa" id="r-whatsapp" data-wa="test-turismo-resultado" target="_blank" rel="noopener noreferrer" href="https://wa.me/543751566488?text=Hola%2C%20Laura.%20Vengo%20de%20hacerme%20el%20Test%20Turismo%20de%20ONLIKE%20y%20me%20gustar%C3%ADa%20contar%20con%20tu%20asesoramiento%20para%20mi%20negocio.">Contarme mi caso por WhatsApp</a>
+          <a class="btn btn-lima js-wa" id="r-whatsapp" data-wa="test-turismo-resultado" target="_blank" rel="noopener noreferrer" href="https://wa.me/543751566488?text=Hola%2C%20Laura.%20Vengo%20de%20hacerme%20el%20Test%20Turismo%20de%20ONLIKE%20y%20me%20gustar%C3%ADa%20contar%20con%20tu%20asesoramiento%20para%20mi%20negocio.">Contame tu caso por WhatsApp</a>
         </div>
+        <p class="r-leer">Si preferís leer antes de escribirme:</p>
+        <ul class="r-enlaces">
+          <li><a class="js-servicio" data-destino="auditoria" href="https://onlike.ar/auditoria-negocio-turistico.html">Qué te llevás de una auditoría de tu negocio turístico</a></li>
+          <li><a class="js-servicio" data-destino="como-te-ve-un-viajero" href="https://onlike.ar/como-te-ve-un-viajero.html">Cómo te ve un viajero: una revisión desde afuera de los cinco lugares donde te comparan</a></li>
+        </ul>
       </div>
     </section>
 
@@ -486,7 +492,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 
     <div class="wrap solo-impresion">
-      <p class="imp-pie">Cómo te ve un viajero, la revisión de ONLIKE: onlike.ar/como-te-ve-un-viajero.html</p>
+      <p class="imp-pie">¿Querés una mirada externa? Escribime por WhatsApp al +54 3751 566488 o entrá a onlike.ar.</p>
     </div>
   </div>
 

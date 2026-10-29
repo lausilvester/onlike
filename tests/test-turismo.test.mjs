@@ -237,3 +237,14 @@ test('«Otro servicio turístico» recibe su propia pregunta 6, sin hablar de un
   assert.match(pendiente.prioridades[0].titulo, /^Comprobá si queda claro dónde te encuentra/);
   assert.match(pendiente.pendientes[0].aspecto, /zona cubrís/);
 });
+
+test('el cierre lleva a WhatsApp primero y no muestra precios', async () => {
+  const { readFileSync } = await import('node:fs');
+  const html = readFileSync(new URL('../test-turismo.html', import.meta.url), 'utf8');
+  const cierre = html.slice(html.indexOf('id="r-cierre-titulo"'), html.indexOf('r-herramientas', html.indexOf('id="r-cierre-titulo"')));
+  assert.doesNotMatch(cierre, /\$\s?\d/);
+  assert.ok(cierre.indexOf('btn btn-lima js-wa') !== -1, 'el botón principal tiene que ser WhatsApp');
+  assert.ok(cierre.indexOf('btn btn-lima js-wa') < cierre.indexOf('auditoria-negocio-turistico'), 'WhatsApp va antes que los enlaces');
+  assert.match(cierre, /data-destino="auditoria"/);
+  assert.match(cierre, /data-destino="como-te-ve-un-viajero"/);
+});
