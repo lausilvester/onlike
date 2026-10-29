@@ -207,6 +207,23 @@
   }
   @media (min-width: 901px) { :root { --nav-h: 69px; } }
 
+  /* animación de la portada: tres señales en orden, una por etapa */
+  .intro-anim svg { display: block; width: 100%; max-width: 220px; height: auto; margin: 2.25rem 0 0; }
+  .t-s { transform-box: fill-box; transform-origin: center; opacity: 0; }
+  .t-s1 { animation: t-s1 7s ease-out infinite; }
+  .t-s2 { animation: t-s2 7s ease-out infinite; }
+  .t-s3 { animation: t-s3 7s ease-out infinite; }
+  @keyframes t-s1 { 0%,8% { opacity: 0; transform: scale(0.6); } 14%,82% { opacity: 1; transform: scale(1); } 90%,100% { opacity: 0; transform: scale(1); } }
+  @keyframes t-s2 { 0%,22% { opacity: 0; transform: scale(0.6); } 28%,82% { opacity: 1; transform: scale(1); } 90%,100% { opacity: 0; transform: scale(1); } }
+  @keyframes t-s3 { 0%,36% { opacity: 0; transform: scale(0.6); } 42%,82% { opacity: 1; transform: scale(1); } 90%,100% { opacity: 0; transform: scale(1); } }
+  @media (min-width: 960px) {
+    .wrap--intro { max-width: 1120px; display: grid; grid-template-columns: minmax(0, 640px) minmax(0, 1fr); gap: 3rem; align-items: center; }
+    .intro-anim svg { max-width: 340px; margin: 0 auto; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .t-s { animation: none !important; opacity: 1; }
+  }
+
   /* foco visible y movimiento reducido */
   :focus-visible { outline: 2px solid #C8FF00; outline-offset: 3px; }
   .r-sec--white :focus-visible, .r-sec--gris :focus-visible, nav :focus-visible { outline-color: #8E51B9; }
@@ -322,6 +339,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li><a href="https://onlike.ar/turismo.html">Turismo</a></li>
       <li><a href="https://onlike.ar/geo-site.html">GEO Site</a></li>
       <li><a href="https://onlike.ar/notas.html">Notas</a></li>
+      <li><a href="https://onlike.ar/test-turismo" aria-current="page">Test gratis</a></li>
       <li><a href="https://onlike.ar/laura-silvester.html">Sobre mí</a></li>
       <li><a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20escribo%20desde%20el%20Test%20Turismo." target="_blank" rel="noopener noreferrer" class="nav-cta js-wa" data-wa="test-turismo-nav">Escribime</a></li>
     </ul>
@@ -336,7 +354,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- 1. Presentación -->
   <section class="paso" id="pantalla-intro" aria-labelledby="intro-titulo">
-    <div class="wrap">
+    <div class="wrap wrap--intro">
+      <div class="intro-texto">
       <p class="eyebrow">Test Turismo de ONLIKE</p>
       <h1 class="titular" id="intro-titulo" tabindex="-1"><span class="light">¿Qué entiende un viajero</span> de tu negocio antes de elegirte?</h1>
       <div class="lectura">
@@ -372,6 +391,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </ol>
         </div>
       </noscript>
+      </div>
+      <!-- El viajero de «Cómo te ve un viajero», quieto, revisando el celular.
+           Las tres señales son las tres etapas del test: encontrar, entender, elegir. -->
+      <div class="intro-anim" aria-hidden="true">
+        <svg viewBox="130 0 320 420" xmlns="http://www.w3.org/2000/svg">
+          <line x1="130" y1="403" x2="450" y2="403" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+          <!-- valija -->
+          <line x1="220" y1="252" x2="220" y2="206" stroke="#3a3d55" stroke-width="6" stroke-linecap="round"/>
+          <line x1="208" y1="206" x2="228" y2="206" stroke="#3a3d55" stroke-width="6" stroke-linecap="round"/>
+          <rect x="150" y="250" width="112" height="146" rx="12" fill="#C8FF00"/>
+          <line x1="172" y1="264" x2="172" y2="382" stroke="#A6D400" stroke-width="4" stroke-linecap="round"/>
+          <line x1="240" y1="264" x2="240" y2="382" stroke="#A6D400" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="172" cy="398" r="9" fill="#2a2d40"/>
+          <circle cx="240" cy="398" r="9" fill="#2a2d40"/>
+          <!-- brazo de atrás, en la manija -->
+          <line x1="310" y1="192" x2="228" y2="208" stroke="#7A44A8" stroke-width="14" stroke-linecap="round"/>
+          <!-- piernas -->
+          <line x1="320" y1="302" x2="320" y2="398" stroke="#5E4BA8" stroke-width="16" stroke-linecap="round"/>
+          <line x1="340" y1="302" x2="340" y2="398" stroke="#5E4BA8" stroke-width="16" stroke-linecap="round"/>
+          <!-- cuerpo y cabeza -->
+          <rect x="296" y="168" width="68" height="148" rx="34" fill="#8E51B9"/>
+          <circle cx="342" cy="128" r="36" fill="#D9CCF5"/>
+          <path d="M306 126 A36 36 0 0 1 378 126 Q342 114 306 126 Z" fill="#3F2D6E"/>
+          <circle cx="306" cy="116" r="11" fill="#3F2D6E"/>
+          <circle cx="362" cy="130" r="3.5" fill="#131625"/>
+          <!-- brazo de adelante, con el celular -->
+          <g transform="translate(350 190) rotate(-140)"><line x1="0" y1="0" x2="0" y2="72" stroke="#7A44A8" stroke-width="14" stroke-linecap="round"/></g>
+          <rect x="387" y="100" width="20" height="34" rx="4" fill="#C8FF00" stroke="#2a2d40" stroke-width="3"/>
+          <!-- encontrar -->
+          <g class="t-s t-s1">
+            <circle cx="296" cy="56" r="22" fill="#131625" stroke="#A08AE5" stroke-width="3"/>
+            <circle cx="292" cy="52" r="8" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+            <line x1="298" y1="58" x2="305" y2="65" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+          </g>
+          <!-- entender -->
+          <g class="t-s t-s2">
+            <circle cx="352" cy="34" r="22" fill="#131625" stroke="#A08AE5" stroke-width="3"/>
+            <path d="M339 34 Q352 22 365 34 Q352 46 339 34 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linejoin="round"/>
+            <circle cx="352" cy="34" r="4" fill="#FFFFFF"/>
+          </g>
+          <!-- elegir -->
+          <g class="t-s t-s3">
+            <circle cx="408" cy="56" r="22" fill="#131625" stroke="#A08AE5" stroke-width="3"/>
+            <polyline points="398,56 405,63 418,49" fill="none" stroke="#C8FF00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+        </svg>
+      </div>
     </div>
   </section>
 
