@@ -86,6 +86,8 @@
   .band-light .lista li { border-color:rgba(19,22,37,0.1); color:rgba(19,22,37,0.65); }
   .band-light .lista strong { color:var(--violeta); }
   .band-light .lista .meta { color:rgba(19,22,37,0.4); }
+  .band-light .lista .meta a { color:var(--violeta); border-bottom:1px solid rgba(142,81,185,0.35); }
+  .band-light .lista .meta a:hover { border-bottom-color:var(--violeta); }
 
   .perfiles { display:flex; flex-wrap:wrap; gap:0.6rem; margin-top:0.5rem; }
   .perfil { border:1px solid rgba(255,255,255,0.18); padding:0.6rem 1.15rem; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.7); border-radius:2px; transition:all var(--t); }
@@ -210,6 +212,15 @@
   </div>
 </section>
 
+<section class="band band-light" aria-labelledby="pub-t">
+  <div class="container">
+    <h2 class="sec" id="pub-t">Publicaciones en medios.</h2>
+    <ul class="lista">
+      <li><strong><a href="https://www.entornoturistico.com/la-ia-ya-puede-traerte-turistas-que-les-dice/" target="_blank" rel="noopener noreferrer">La IA ya puede traerte turistas, ¿Qué les dice?</a></strong>Una recomendación de ChatGPT acercó un turista a una rentadora de Puerto Iguazú. El viajero llegó con una expectativa sobre el alquiler que la empresa no podía cumplir. Qué implica esto para la gestión de un negocio turístico.<span class="meta"> · Columna de opinión en Entorno Turístico · 2 de noviembre de 2026 · <a href="https://www.entornoturistico.com/la-ia-ya-puede-traerte-turistas-que-les-dice/" target="_blank" rel="noopener noreferrer">Leer en Entorno Turístico ↗</a></span></li>
+    </ul>
+  </div>
+</section>
+
 <section class="band band-deep" aria-labelledby="inv-t">
   <div class="container">
     <h2 class="sec" id="inv-t">Lo que probé<br>y lo que encontré.</h2>
@@ -260,7 +271,7 @@
       "name": "Laura Silvester — Consultora en estrategia digital y GEO",
       "description": "Página oficial de Laura Silvester: formación, docencia, trayectoria, conferencias e investigaciones publicadas. Fundadora de ONLIKE, Eldorado, Misiones, Argentina.",
       "inLanguage": "es-AR",
-      "dateModified": "2026-09-09",
+      "dateModified": "2026-11-02",
       "isPartOf": {
         "@id": "https://onlike.ar/#website"
       },
@@ -283,6 +294,27 @@
             "item": "https://onlike.ar/laura-silvester.html"
           }
         ]
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.entornoturistico.com/la-ia-ya-puede-traerte-turistas-que-les-dice/#article",
+      "headline": "La IA ya puede traerte turistas, ¿Qué les dice?",
+      "url": "https://www.entornoturistico.com/la-ia-ya-puede-traerte-turistas-que-les-dice/",
+      "mainEntityOfPage": "https://www.entornoturistico.com/la-ia-ya-puede-traerte-turistas-que-les-dice/",
+      "datePublished": "2026-11-02",
+      "inLanguage": "es",
+      "genre": "Columna de opinión",
+      "description": "Una recomendación de ChatGPT acercó un turista a una rentadora de Puerto Iguazú. El viajero llegó con una expectativa sobre el alquiler que la empresa no podía cumplir. Qué implica esto para la gestión de un negocio turístico.",
+      "isAccessibleForFree": true,
+      "author": {
+        "@id": "https://onlike.ar/#person"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://www.entornoturistico.com/#organization",
+        "name": "Entorno Turístico",
+        "url": "https://www.entornoturistico.com/"
       }
     },
     {
@@ -390,7 +422,8 @@
         "https://www.instagram.com/lausilvester",
         "https://www.tiktok.com/@lausilvester",
         "https://facebook.com/onlike.ar",
-        "https://github.com/lausilvester"
+        "https://github.com/lausilvester",
+        "https://www.entornoturistico.com/author/laura_silvester/"
       ],
       "performerIn": [
         {
