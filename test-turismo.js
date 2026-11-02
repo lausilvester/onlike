@@ -14,6 +14,7 @@
   if (!D || !M) return;
 
   var URL_TEST = 'https://onlike.ar/test-turismo';
+  var WA_NUMERO = '543751566488';
   var CLAVE = 'testTurismo.v1';
   var TOTAL = D.preguntas.length;
   var reducido = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
@@ -182,6 +183,25 @@
     pintarRespuestas();
   }
 
+  // El mensaje que la persona le manda a ONLIKE. Lo envía ella desde WhatsApp:
+  // acá solo se prellena. Van los títulos de las prioridades, no el texto de
+  // cada acción, para que el mensaje entre en pocas líneas.
+  function mensajeWhatsapp(diag) {
+    var l = ['Hola, Laura. Hice el Test Turismo de ONLIKE.'];
+    l.push('Tipo de negocio: ' + nombreTipo());
+    if (diag.verificacion) {
+      l.push('Pendientes de comprobar: ' + diag.pendientes.length + ' de ' + TOTAL + ' · Puntaje: ' + diag.total + '/' + diag.max);
+    } else {
+      l.push('Tu diagnóstico: ' + diag.total + '/' + diag.max);
+    }
+    if (diag.prioridades.length) {
+      l.push(diag.prioridades.length === 3 ? 'Mis tres prioridades:' : 'Mis prioridades:');
+      diag.prioridades.forEach(function (p, i) { l.push((i + 1) + '. ' + p.titulo); });
+    }
+    l.push('Me gustaría consultarte por una revisión de mi negocio.');
+    return l.join('\n');
+  }
+
   // Aviso anónimo a ONLIKE: solo «terminó» y el rubro. Nunca respuestas ni puntaje.
   function avisar() {
     try {
@@ -197,9 +217,28 @@
   function pintarResultado() {
     var diag = M.diagnosticar(D, estado.respuestas, estado.tipo);
 
-    $('r-total').textContent = diag.total;
-    $('r-max').textContent = '/' + diag.max;
-    $('r-numero').setAttribute('aria-label', 'Tu diagnóstico: ' + diag.total + ' de ' + diag.max);
+    // Con cuatro o más «No lo revisé» el número grande pasa a ser la cantidad
+    // de pendientes: un 0/20 al lado de «todavía hay que comprobar» se contradice.
+    var numero = $('r-numero');
+    var puntaje = $('r-puntaje');
+    if (diag.verificacion) {
+      $('r-etiqueta').textContent = 'Pendientes de comprobar';
+      $('r-total').textContent = diag.pendientes.length;
+      $('r-max').textContent = ' de ' + TOTAL;
+      numero.setAttribute('aria-label', 'Pendientes de comprobar: ' + diag.pendientes.length + ' de ' + TOTAL);
+      numero.classList.add('con-puntaje');
+      puntaje.textContent = 'Tu diagnóstico: ' + diag.total + '/' + diag.max + ' sobre lo que pudiste confirmar.';
+      puntaje.hidden = false;
+    } else {
+      $('r-etiqueta').textContent = 'Tu diagnóstico';
+      $('r-total').textContent = diag.total;
+      $('r-max').textContent = '/' + diag.max;
+      numero.setAttribute('aria-label', 'Tu diagnóstico: ' + diag.total + ' de ' + diag.max);
+      numero.classList.remove('con-puntaje');
+      puntaje.textContent = '';
+      puntaje.hidden = true;
+    }
+    $('r-whatsapp').href = 'https://wa.me/' + WA_NUMERO + '?text=' + encodeURIComponent(mensajeWhatsapp(diag));
     $('r-titulo').textContent = diag.lectura.titulo + '.';
     $('r-texto').textContent = diag.lectura.texto;
     $('imp-tipo').textContent = 'Tipo de negocio: ' + nombreTipo();
