@@ -73,7 +73,7 @@ test('todo en «Sí»: 20 puntos, sin correcciones', () => {
   assert.equal(d.todoResuelto, true);
   assert.deepEqual(d.prioridades, []);
   assert.deepEqual(d.etapas.map((e) => e.puntos), [6, 6, 8]);
-  assert.match(motor.aTexto(datos, d, 'Alojamiento', 'https://onlike.ar/test-turismo'), /revisión cada tanto/);
+  assert.match(motor.aTexto(datos, d, 'Alojamiento', 'https://onlike.ar/test-turismo'), /Repetí el test cada tanto/);
 });
 
 test('todo «No lo revisé»: 0 puntos pero nunca se presenta como problema confirmado', () => {
@@ -238,13 +238,61 @@ test('«Otro servicio turístico» recibe su propia pregunta 6, sin hablar de un
   assert.match(pendiente.pendientes[0].aspecto, /zona cubrís/);
 });
 
-test('el cierre lleva a WhatsApp primero y no muestra precios', async () => {
+test('el cierre lleva a WhatsApp y nada más compite con el botón', async () => {
   const { readFileSync } = await import('node:fs');
   const html = readFileSync(new URL('../test-turismo.html', import.meta.url), 'utf8');
   const cierre = html.slice(html.indexOf('id="r-cierre-titulo"'), html.indexOf('r-herramientas', html.indexOf('id="r-cierre-titulo"')));
   assert.doesNotMatch(cierre, /\$\s?\d/);
   assert.ok(cierre.indexOf('btn btn-lima js-wa') !== -1, 'el botón principal tiene que ser WhatsApp');
-  assert.ok(cierre.indexOf('btn btn-lima js-wa') < cierre.indexOf('auditoria-negocio-turistico'), 'WhatsApp va antes que los enlaces');
-  assert.match(cierre, /data-destino="auditoria"/);
-  assert.match(cierre, /data-destino="como-te-ve-un-viajero"/);
+  assert.doesNotMatch(cierre, /data-destino=/, 'los enlaces de lectura no van en el cierre');
+  // Las dos lecturas quedan abajo, con las herramientas, después del botón.
+  const abajo = html.slice(html.indexOf('r-herramientas'));
+  assert.match(abajo, /data-destino="auditoria"/);
+  assert.match(abajo, /data-destino="como-te-ve-un-viajero"/);
+  assert.ok(abajo.indexOf('data-destino="auditoria"') < abajo.indexOf('buscate-vos'), 'las lecturas van antes de «Buscate vos»');
+});
+
+test('con cuatro o más «No lo revisé» el número grande son los pendientes', () => {
+  const r = todas('si');
+  [1, 2, 3, 4].forEach((n) => { r[n] = 'sin_revisar'; });
+  const d = diag(r);
+  assert.equal(d.verificacion, true);
+  assert.equal(d.pendientes.length, 4);
+  const texto = motor.aTexto(datos, d, 'Alojamiento', 'https://onlike.ar/test-turismo');
+  assert.match(texto, /Pendientes de comprobar: 4 de 10/);
+  assert.match(texto, /12\/20 sobre lo que pudiste confirmar/);
+});
+
+test('sin verificación el texto copiado muestra solo el puntaje', () => {
+  const texto = motor.aTexto(datos, diag(todas('si')), 'Alojamiento', '');
+  assert.match(texto, /Tu diagnóstico: 20\/20/);
+  assert.doesNotMatch(texto, /Pendientes de comprobar:/);
+});
+
+test('la cabecera del resultado tiene lugar para la etiqueta y el puntaje chico', async () => {
+  const { readFileSync } = await import('node:fs');
+  const html = readFileSync(new URL('../test-turismo.html', import.meta.url), 'utf8');
+  assert.match(html, /id="r-etiqueta"/);
+  assert.match(html, /id="r-puntaje"/);
+  const ui = readFileSync(new URL('../test-turismo.js', import.meta.url), 'utf8');
+  assert.match(ui, /Pendientes de comprobar/);
+  assert.match(ui, /sobre lo que pudiste confirmar/);
+});
+
+test('el botón del cierre arma el mensaje de WhatsApp con el contexto del test', async () => {
+  const { readFileSync } = await import('node:fs');
+  const ui = readFileSync(new URL('../test-turismo.js', import.meta.url), 'utf8');
+  const bloque = ui.slice(ui.indexOf('function mensajeWhatsapp'), ui.indexOf('// Aviso anónimo'));
+  assert.match(bloque, /Tipo de negocio: /);
+  assert.match(bloque, /prioridades/);
+  assert.doesNotMatch(bloque, /p\.accion/, 'van los títulos, no el texto de cada acción');
+  assert.match(ui, /wa\.me\/' \+ WA_NUMERO \+ '\?text=' \+ encodeURIComponent/);
+});
+
+test('el test se puede compartir por WhatsApp sin mandar el resultado', async () => {
+  const { readFileSync } = await import('node:fs');
+  const html = readFileSync(new URL('../test-turismo.html', import.meta.url), 'utf8');
+  const compartir = html.slice(html.indexOf('<div class="compartir">'), html.indexOf('</div>', html.indexOf('<div class="compartir">')));
+  assert.match(compartir, /wa\.me\/\?text=/, 'sin número: abre el selector de contactos');
+  assert.doesNotMatch(compartir, /wa\.me\/\d/);
 });

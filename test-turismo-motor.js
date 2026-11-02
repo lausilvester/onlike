@@ -164,7 +164,12 @@
     l.push('Test Turismo de ONLIKE');
     if (nombreTipo) l.push('Tipo de negocio: ' + nombreTipo);
     l.push('');
-    l.push('Tu diagnóstico: ' + diag.total + '/' + diag.max);
+    if (diag.verificacion) {
+      l.push('Pendientes de comprobar: ' + diag.pendientes.length + ' de ' + datos.preguntas.length);
+      l.push('Tu diagnóstico: ' + diag.total + '/' + diag.max + ' sobre lo que pudiste confirmar.');
+    } else {
+      l.push('Tu diagnóstico: ' + diag.total + '/' + diag.max);
+    }
     l.push(diag.lectura.titulo + '.');
     l.push(diag.lectura.texto);
     l.push('Este puntaje refleja lo que pudiste confirmar sobre la información de tu negocio. No mide tu posición en Google ni garantiza recomendaciones de inteligencias artificiales.');

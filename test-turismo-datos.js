@@ -71,8 +71,8 @@
       ],
       // Reemplaza la lista de prioridades cuando todo está en «Sí, lo comprobé».
       todoResuelto: {
-        titulo: 'Tenés una base comprobada.',
-        texto: 'Con lo que respondiste no hay nada para corregir. Conviene repetir esta revisión cada tanto y sumar una mirada externa: lo que un viajero ve cambia con cada actualización de tus canales (sitio, redes, Google, plataformas).'
+        titulo: 'Está todo confirmado.',
+        texto: 'Según tus respuestas, no quedan aspectos pendientes. Repetí el test cada tanto: lo que un viajero encuentra cambia con cada actualización de tus canales (sitio, redes, Google, plataformas).'
       }
     },
 
