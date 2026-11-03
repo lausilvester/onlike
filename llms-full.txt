@@ -157,17 +157,27 @@ A quién le sirve: cuanto más necesita una persona explicar su necesidad, compa
 
 Trabaja la información que existe sobre el negocio y cómo está estructurada, para que buscadores y sistemas de inteligencia artificial puedan encontrarla y entenderla. SEO y GEO. Se cotiza según el caso.
 
-### 6. Diagnóstico de destinos
+### 6. Información y presencia turística digital de un destino
 
-Para municipios, organismos públicos, cámaras y asociaciones del sector turístico. Analiza cómo está representada la oferta turística de una localidad en el entorno digital y qué encuentra el viajero que todavía está decidiendo adónde ir: qué información existe sobre sus atractivos y experiencias, cómo está estructurada, dónde se contradice entre canales y quién la valida.
+Para municipios, organismos públicos, cámaras y asociaciones del sector turístico. Es un programa de cuatro etapas complementarias, cada una con objetivos, entregables, alcance, presupuesto y contratación propios.
+
+**Etapa 1. Diagnóstico estratégico.** Cómo está representada la oferta turística de la localidad en el entorno digital y qué encuentra el viajero que todavía está decidiendo adónde ir. Responde tres preguntas: si encuentran el destino, si entienden qué ofrece y si tienen motivos para elegirlo. Se reproducen situaciones de búsqueda y planificación de un viaje, con y sin nombrar la localidad, y después se contrasta lo observado con la oferta real, con lo que comunica la institución y con lo que cuentan las fuentes externas. Entrega plan de trabajo, informe ejecutivo, recomendaciones priorizadas, presentación de resultados y una línea de base fechada que permite repetir la medición más adelante.
+
+**Etapa 2. Ordenamiento de la información turística.** A partir de las recomendaciones del diagnóstico, criterios para seleccionar y presentar las experiencias según los públicos de interés y el diferencial de cada una: cómo se describe cada atractivo, experiencia y prestador, qué información necesita el visitante, quién valida los datos y cómo se mantienen actualizados.
+
+**Etapa 3. Mejora de los canales digitales.** Aplicar esos criterios en el sitio oficial, las redes y los demás canales relevantes: textos, selección de fotografías, navegación, organización de contenidos y forma de presentar cada experiencia. El alcance depende de lo que se acuerde y de quién administra cada plataforma.
+
+**Etapa 4. Capacitación y transferencia.** Fortalecer las capacidades del equipo municipal y, según el alcance que se defina, de los prestadores, para comunicar experiencias atractivas, ofrecer información útil y mantenerla actualizada.
+
+Se contrata primero la Etapa 1. Sus resultados definen qué componentes de las etapas siguientes hacen falta, en qué orden y con qué responsables.
 
 La distinción que ordena este trabajo: un destino puede aparecer bien cuando alguien escribe su nombre y quedar fuera de la respuesta cuando la consulta es por una experiencia, sin nombrar la localidad. Son dos problemas distintos y se observan por separado.
 
-Parte de un diagnóstico estratégico. Las etapas posteriores —organización de la información, estrategia, capacitación— se definen según los hallazgos y se contratan por separado. Una institución pública tiene procesos de decisión, contratación y ejecución distintos de los de una empresa privada, y el alcance se define caso por caso.
+Reparto de responsabilidades: la institución designa una contraparte, facilita la información disponible y valida los datos de su competencia —condiciones de visita, accesos, habilitaciones e información institucional—. Onlike tiene a su cargo el relevamiento, la investigación, el análisis, las recomendaciones y la presentación de resultados.
 
-Lo que no promete: que una inteligencia artificial recomiende un destino. Trabaja sobre la información, su estructura y su accesibilidad.
+Lo que no promete: que una inteligencia artificial recomiende un destino. Trabaja sobre la información, su estructura y su accesibilidad. Las posiciones en buscadores, las recomendaciones de los asistentes y los resultados económicos del destino dependen además de factores externos.
 
-Se cotiza según alcance. Consultas: lau@onlike.ar
+Una institución pública tiene procesos de decisión, contratación y ejecución distintos de los de una empresa privada. El alcance se define caso por caso. Consultas: lau@onlike.ar
 
 ### 7. Implementación de IA
 
