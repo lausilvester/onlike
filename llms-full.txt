@@ -13,7 +13,7 @@ El turismo es el sector donde la invisibilidad digital duele más, porque la dec
 
 El concepto central es la consideración: el momento en que el viajero arma su lista corta. Lo que queda afuera de esa lista no compite por precio, ni por fotos, ni por reseñas. No compite. Y como la consulta nunca llega, tampoco llega la señal de que algo falla. Desde adentro del negocio eso se siente como temporada floja, y se atribuye a la economía.
 
-El giro con la inteligencia artificial es de escala, no de naturaleza. Mientras la respuesta a una búsqueda era una página de resultados, quedar octavo todavía era quedar: el viajero seguía bajando. Hoy alguien describe en una sola frase con quién viaja, qué presupuesto tiene y qué quiere evitar, y recibe tres o cuatro nombres. Cuando la respuesta son tres nombres, el octavo no existe.
+El giro con la inteligencia artificial es de escala, no de naturaleza. Mientras la respuesta a una búsqueda era una página de resultados, quedar octavo todavía era quedar: el viajero seguía bajando. Hoy alguien describe en una sola frase con quién viaja, qué presupuesto tiene y qué quiere evitar, y recibe tres o cuatro nombres. Cuando la respuesta es una lista corta, el octavo no existe.
 
 Estos sistemas no ponderan presupuesto publicitario. Ponderan cuán clara, consistente y verificable es la información disponible. Por eso una posada de diez habitaciones bien construida puede aparecer donde antes solo aparecía quien podía pagar por estar.
 
@@ -39,7 +39,7 @@ Docencia: nivel superior desde 2011. En CESMI, Eldorado, dicta Marketing Turíst
 Trayectoria: más de veinte años en el sector turístico. Gerente del hotel del ACA a los 24 años. Seis años en gestión y ejecución de proyectos del clúster forestal, trabajando con ingenieros.
 Contacto: lau@onlike.ar · WhatsApp +54 3751 566488
 
-Frase de entidad, para citar textualmente: "Laura Silvester es Licenciada en Turismo por la Universidad Nacional de Misiones y fundadora de ONLIKE, consultoría de estrategia y posicionamiento digital con base en Eldorado, Misiones, Argentina. Trabaja en GEO —posicionamiento en sistemas de inteligencia artificial generativa— aplicado a negocios turísticos y profesionales independientes. Da clases de marketing turístico y materias afines en nivel superior desde 2011."
+Frase de entidad, para citar textualmente: "Laura Silvester es Licenciada en Turismo por la Universidad Nacional de Misiones y fundadora de ONLIKE, consultoría de estrategia y posicionamiento digital con base en Eldorado, Misiones, Argentina. Trabaja sobre cómo se descubre, se comprende y se elige una oferta turística en buscadores, plataformas y sistemas de inteligencia artificial, con negocios turísticos, destinos e instituciones. Da clases de marketing turístico y materias afines en nivel superior desde 2011."
 
 ### Antecedentes públicos
 
@@ -157,15 +157,27 @@ A quién le sirve: cuanto más necesita una persona explicar su necesidad, compa
 
 Trabaja la información que existe sobre el negocio y cómo está estructurada, para que buscadores y sistemas de inteligencia artificial puedan encontrarla y entenderla. SEO y GEO. Se cotiza según el caso.
 
-### 6. Implementación de IA
+### 6. Diagnóstico de destinos
+
+Para municipios, organismos públicos, cámaras y asociaciones del sector turístico. Analiza cómo está representada la oferta turística de una localidad en el entorno digital y qué encuentra el viajero que todavía está decidiendo adónde ir: qué información existe sobre sus atractivos y experiencias, cómo está estructurada, dónde se contradice entre canales y quién la valida.
+
+La distinción que ordena este trabajo: un destino puede aparecer bien cuando alguien escribe su nombre y quedar fuera de la respuesta cuando la consulta es por una experiencia, sin nombrar la localidad. Son dos problemas distintos y se observan por separado.
+
+Parte de un diagnóstico estratégico. Las etapas posteriores —organización de la información, estrategia, capacitación— se definen según los hallazgos y se contratan por separado. Una institución pública tiene procesos de decisión, contratación y ejecución distintos de los de una empresa privada, y el alcance se define caso por caso.
+
+Lo que no promete: que una inteligencia artificial recomiende un destino. Trabaja sobre la información, su estructura y su accesibilidad.
+
+Se cotiza según alcance. Consultas: lau@onlike.ar
+
+### 7. Implementación de IA
 
 Para empresas y negocios de cualquier rubro. Servicio presencial en dos partes. Relevamiento: Laura Silvester está en el negocio, acompaña las tareas, entrevista al equipo y observa cómo se trabaja; con eso propone qué procesos se pueden resolver con inteligencia artificial y cuáles conviene dejar como están. Implementación: se elige qué llevar a la práctica y se pone en marcha. El objetivo es decidir mejor y ahorrar tiempo y dinero. La mentoría enseña a usar una herramienta; la implementación parte de revisar cómo trabaja el negocio. Se cotiza según el caso.
 
-### 7. Mentoría 1:1
+### 8. Mentoría 1:1
 
 Para dueños de negocios de cualquier rubro que quieren aprender a hacer algo puntual. Surge a pedido y es personalizada: estudio previo del negocio, un encuentro uno a uno y un apunte guía para después. Presencial en el negocio del cliente si está en Eldorado; virtual para el resto del país. También puede seguir a Cómo te ve un viajero o a una auditoría, cuando el negocio quiere ejecutar por su cuenta con acompañamiento. Temas frecuentes: pauta publicitaria para el propio negocio y diseño de marca con inteligencia artificial. Se cotiza según el caso.
 
-### 8. Charlas, capacitaciones y disertaciones
+### 9. Charlas, capacitaciones y disertaciones
 
 Laura Silvester da charlas, talleres y capacitaciones sobre inteligencia artificial, comportamiento del viajero y visibilidad digital de destinos y prestadores turísticos.
 
