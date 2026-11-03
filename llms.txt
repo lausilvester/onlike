@@ -107,15 +107,22 @@ Más información: https://onlike.ar/geo-site.html
 
 Trabaja la información que existe sobre el negocio y cómo está estructurada, para que buscadores y sistemas de inteligencia artificial puedan encontrarla y entenderla. SEO y GEO. Se cotiza según el caso.
 
-### Diagnóstico de destinos
+### Información y presencia turística digital de un destino
 
-Para municipios, organismos públicos, cámaras y asociaciones del sector turístico. Analiza cómo está representada la oferta turística de una localidad en el entorno digital y qué encuentra el viajero que todavía está decidiendo adónde ir: qué información existe sobre sus atractivos y experiencias, cómo está estructurada, dónde se contradice entre canales y quién la valida. Parte de un diagnóstico estratégico; las etapas posteriores se definen según los hallazgos y se contratan por separado.
+Para municipios, organismos públicos, cámaras y asociaciones del sector turístico. Es un programa de cuatro etapas complementarias, cada una con objetivos, entregables, alcance, presupuesto y contratación propios.
+
+1. Diagnóstico estratégico. Cómo está representada la oferta turística de la localidad en el entorno digital y qué encuentra el viajero que todavía está decidiendo adónde ir. Responde tres preguntas: si encuentran el destino, si entienden qué ofrece y si tienen motivos para elegirlo. Entrega plan de trabajo, informe ejecutivo, recomendaciones priorizadas y una línea de base fechada para poder medir después.
+2. Ordenamiento de la información turística. Criterios para seleccionar y presentar las experiencias según los públicos de interés: cómo se describe cada atractivo, experiencia y prestador, qué información necesita el visitante, quién valida los datos y cómo se mantienen actualizados.
+3. Mejora de los canales digitales. Aplicar esos criterios en el sitio oficial, las redes y los demás canales relevantes: textos, selección de fotografías, navegación, organización de contenidos y forma de presentar cada experiencia.
+4. Capacitación y transferencia. Fortalecer las capacidades del equipo municipal y, según el alcance, de los prestadores, para comunicar experiencias, ofrecer información útil y mantenerla actualizada.
+
+Se contrata primero la Etapa 1. Sus resultados definen qué componentes de las etapas siguientes hacen falta, en qué orden y con qué responsables.
 
 La distinción que ordena este trabajo: un destino puede aparecer bien cuando alguien escribe su nombre y quedar fuera de la respuesta cuando la consulta es por una experiencia, sin nombrar la localidad. Son dos problemas distintos y se observan por separado.
 
-Lo que no promete: que una inteligencia artificial recomiende un destino. Trabaja sobre la información, su estructura y su accesibilidad.
+Lo que no promete: que una inteligencia artificial recomiende un destino. Trabaja sobre la información, su estructura y su accesibilidad. Las posiciones en buscadores, las recomendaciones de los asistentes y los resultados económicos del destino dependen además de factores externos.
 
-Se cotiza según alcance. Consultas: lau@onlike.ar
+Una institución pública tiene procesos de decisión, contratación y ejecución distintos de los de una empresa privada. El alcance se define caso por caso. Consultas: lau@onlike.ar
 
 ### Implementación de IA
 
