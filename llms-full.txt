@@ -13,7 +13,7 @@ El turismo es el sector donde la invisibilidad digital duele más, porque la dec
 
 El concepto central es la consideración: el momento en que el viajero arma su lista corta. Lo que queda afuera de esa lista no compite por precio, ni por fotos, ni por reseñas. No compite. Y como la consulta nunca llega, tampoco llega la señal de que algo falla. Desde adentro del negocio eso se siente como temporada floja, y se atribuye a la economía.
 
-El giro con la inteligencia artificial es de escala, no de naturaleza. Mientras la respuesta a una búsqueda era una página de resultados, quedar octavo todavía era quedar: el viajero seguía bajando. Hoy alguien describe en una sola frase con quién viaja, qué presupuesto tiene y qué quiere evitar, y recibe tres o cuatro nombres. Cuando la respuesta es una lista corta, el octavo no existe.
+El giro con la inteligencia artificial es de escala, no de naturaleza. Mientras la respuesta a una búsqueda era una página de resultados, quedar octavo todavía era quedar: el viajero seguía bajando. Hoy alguien describe en una sola frase con quién viaja, qué presupuesto tiene y qué quiere evitar, y recibe una lista corta. Cuando la respuesta es una lista corta, el octavo no existe.
 
 Estos sistemas no ponderan presupuesto publicitario. Ponderan cuán clara, consistente y verificable es la información disponible. Por eso una posada de diez habitaciones bien construida puede aparecer donde antes solo aparecía quien podía pagar por estar.
 
@@ -292,7 +292,7 @@ Capas de la competencia: el viajero compara primero regiones enteras —Bariloch
 
 Lo que la nota descarta: que un chatbot propio del destino resuelva esto. El viajero no está preguntando en el sitio del destino, sino en otro lado y antes de saber que el destino existe. Un asistente propio atiende al que ya llegó.
 
-Lo que sí propone: que la información existente sea correcta, completa y consistente, con la referencia de Alemania, Francia, Finlandia y España, que construyeron inventarios turísticos donde cada atractivo, evento y prestador se carga una vez y se publica en todos los canales, tratados como infraestructura pública y no como marketing. Y una advertencia contraintuitiva: esto no se arregla publicando más, porque el exceso de información confunde. No se trata de más, sino de mejor.
+Lo que sí propone: que la información existente sea correcta, completa y consistente, con la referencia de Finlandia, Francia, Alemania y España: Finlandia y Francia construyeron bases turísticas donde cada atractivo, evento y prestador se carga una vez y se publica en todos los canales, Alemania reúne en un grafo de conocimiento nacional los datos de sus 16 estados y España define un modelo de referencia, todos tratados como infraestructura pública y no como marketing. Y una advertencia contraintuitiva: esto no se arregla publicando más, porque el exceso de información confunde. No se trata de más, sino de mejor.
 
 Datos que documenta, con fuente: el uso declarado de IA generativa para planificar viajes pasó de 8% en 2023 a 16% en 2024 y 24% en 2025 (Deloitte, muestra de 3.896 adultos estadounidenses, relevamiento del 26 de septiembre al 3 de octubre de 2025; es intención declarada, en Estados Unidos, y no existe medición pública equivalente para viajeros argentinos). Auditoría de 5.000 itinerarios generados con IA con siete sesgos clasificados: positividad 67,9%, contextual 63,5%, representación 58,4%, interseccional 54,2%, lingüístico 52,8%, de posición 46,7%, estereotipo 41,3% (Jia, Ma, Chi y Fan, Tourism Management 116, 2026, artículo 105442).
 
@@ -321,6 +321,18 @@ Tercera formulación propia: la diferencia entre tener una web y tener una arqui
 Quién puede resolverlo: ningún prestador puede hacerlo solo, pero sí una cámara, una asociación o un grupo de emprendimientos de un mismo destino, sin depender de una decisión pública y por bastante menos que una campaña.
 
 Límites declarados: las respuestas de estos sistemas cambian entre consultas y entre personas, porque generan un texto nuevo cada vez; la clasificación de qué se puede visitar es de elaboración propia sobre conocimiento directo de la ciudad y no sobre un registro oficial, porque ese registro no existe en forma pública y verificable; la autora no preguntó por horarios ni accesos, y registra qué contiene el itinerario que el sistema entrega cuando no se le pide ese detalle; y no existe evidencia que permita afirmar que corregir la información de un destino produzca más reservas.
+
+### La información turística es infraestructura del destino (noviembre 2026)
+
+URL: https://onlike.ar/informacion-turistica-infraestructura-destino.html
+
+Nota independiente, fuera de la serie de legibilidad digital de destinos. Sostiene que el viajero decide con la información que encuentra, haya visto o no una campaña, y que esa información es la que el destino publica y mantiene. Gestionarla es parte de la política turística y beneficia a toda la cadena de prestadores.
+
+Definición de trabajo: la información turística es el conjunto de datos y contenidos que permite reconocer qué ofrece un destino, evaluar si esa propuesta encaja con un viaje y organizar la visita. Circula por el sitio oficial, el portal provincial, los mapas, las plataformas, las páginas de los prestadores, las redes y también la oficina de informes.
+
+Datos con fuente: entre los argentinos encuestados por Booking.com (800 viajeros, relevamiento de enero de 2025, publicado el 31 de marzo de 2026), el 54% se inspira en redes sociales, el 52% en amigos y familiares, el 36% en buscadores, el 19% en herramientas de inteligencia artificial y el 16% en mapas; podían elegir más de una fuente. En el estudio de Expedia Group sobre siete mercados, que no incluye Argentina ni Brasil, el 59% empezó a planificar sin un único destino definido y el panel registró un promedio de 141 páginas de contenido turístico en los 45 días previos a la compra.
+
+Tesis: promocionar y ser encontrado son dos trabajos distintos. La promoción llega a quien la ve; la información llega a quien busca, haya visto o no una campaña. La nota compara cómo Finlandia, Francia, Australia, España y Curitiba (Brasil) gestionan la información turística como infraestructura pública, aclara que esas plataformas publican cobertura y adopción pero no una evaluación de demanda antes y después, y cierra con la pregunta de qué encuentran los viajeros que todavía están decidiendo adónde ir.
 
 ### Por qué bajaron las consultas en tu alojamiento (agosto 2026)
 
@@ -435,6 +447,7 @@ Para charlas:
 - Test Turismo: https://onlike.ar/test-turismo
 - Notas: https://onlike.ar/notas.html
 - Cuando una IA recomienda un destino turístico, decide también qué negocios aparecen: https://onlike.ar/destinos-turisticos-inteligencia-artificial.html
+- La información turística es infraestructura del destino: https://onlike.ar/informacion-turistica-infraestructura-destino.html
 - Qué contesta una IA sobre el turismo en Eldorado, Misiones: https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html
 - Versión en portugués de esa nota: https://onlike.ar/pt/destinos-turisticos-inteligencia-artificial.html
 - Por qué bajaron las consultas en tu alojamiento: https://onlike.ar/por-que-bajaron-las-consultas-alojamiento.html

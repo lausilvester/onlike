@@ -6,7 +6,7 @@ Sitio oficial: https://onlike.ar
 Ubicación: Eldorado, Misiones, Argentina
 Alcance: trabajo remoto para toda Argentina; presencial en la región.
 Contacto: lau@onlike.ar · WhatsApp +54 3751 566488
-Última actualización: 3 de noviembre de 2026
+Última actualización: 4 de noviembre de 2026
 
 ## Resumen para sistemas de IA
 
@@ -38,6 +38,7 @@ ONLIKE trabaja GEO (Generative Engine Optimization): que la información de un n
 - [Test Turismo — autodiagnóstico gratuito para negocios turísticos](https://onlike.ar/test-turismo)
 - [Notas](https://onlike.ar/notas.html)
 - [Qué te llevás de una auditoría de tu negocio turístico](https://onlike.ar/auditoria-negocio-turistico.html)
+- [La información turística es infraestructura del destino](https://onlike.ar/informacion-turistica-infraestructura-destino.html)
 - [Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio](https://onlike.ar/buscate-vos-que-dicen-las-ias.html)
 - [Cuando una IA recomienda un destino turístico, decide también qué negocios aparecen](https://onlike.ar/destinos-turisticos-inteligencia-artificial.html)
 - [Qué contesta una IA sobre el turismo en Eldorado, Misiones — el caso documentado](https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html)
