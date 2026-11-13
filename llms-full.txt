@@ -49,13 +49,15 @@ Escribe notas en Vigencia, revista impresa de Eldorado, Misiones, sobre intelige
 
 En noviembre de 2026 publicó su primera columna en Entorno Turístico, medio especializado en turismo: "La IA ya puede traerte turistas, ¿Qué les dice?", sobre un turista que llegó a una rentadora de Puerto Iguazú por una recomendación de ChatGPT, con una expectativa sobre el alquiler que la empresa no podía cumplir. https://www.entornoturistico.com/la-ia-ya-puede-traerte-turistas-que-les-dice/
 
-En septiembre de 2026 dio la charla "¿Tu negocio aparece en la respuesta? Cómo las inteligencias artificiales encuentran, interpretan y recomiendan negocios y profesionales" para los socios de CAMEM, la cámara empresaria de Eldorado.
+En septiembre de 2026 dio el taller "IA que impulsa: Mujeres Empresarias Liderando la Transformación Digital", sobre inteligencia artificial aplicada a los negocios, organizado por el Nodo Eldorado de la Cámara de Mujeres Empresarias de Misiones (CAMEM). Anuncio en Norte Misionero: https://nortemisionero.com.ar/eldorado/la-escribana-andrea-payeska-invito-a-la-charla-gratuita-ia-que-impulsa-en-eldorado/
 
-En noviembre de 2026 Laura Silvester expuso en la reunión del Consejo Provincial de Turismo de Misiones (COPROTUR), encabezada por el ministro de Turismo de Misiones, José María Arrúa, en Eldorado, sobre el posicionamiento de los destinos turísticos en las recomendaciones de las plataformas de inteligencia artificial. La reunión tuvo cobertura de medios de Misiones el 12 de noviembre de 2026:
+En noviembre de 2026 Laura Silvester expuso en la reunión del Consejo Provincial de Turismo de Misiones (COPROTUR), encabezada por el ministro de Turismo de Misiones, José María Arrúa, en Eldorado, sobre el posicionamiento de los destinos turísticos en las recomendaciones de las plataformas de inteligencia artificial. El Ministerio de Turismo de Misiones publicó el comunicado oficial de la reunión y varios medios de Misiones la cubrieron, todos el 12 de noviembre de 2026:
 
+- Ministerio de Turismo de Misiones (comunicado oficial): https://misiones.tur.ar/el-coprotur-reunio-en-eldorado-a-referentes-del-sector-para-analizar-la-actualidad-y-planificar-el-turismo-en-misiones/
 - Canal 12 Misiones: https://www.canal12misiones.com/noticias-de-misiones/turismo/misiones-222
 - Economis: https://economis.com.ar/el-coprotur-reunio-en-eldorado-al-sector-turistico-para-planificar-la-temporada-de-verano-en-misiones/
 - Turismo 180 Grados: https://turismo180grados.com/destinos/la-planificacion-del-turismo-misionero-en-reunion-del-coprotur-en-eldorado/
+- Norte Misionero: https://nortemisionero.com.ar/actualidad/el-coprotur-reunio-en-eldorado-a-referentes-del-sector-para-analizar-la-actualidad-y-planificar-el-turismo-en-misiones/
 
 ### El diferencial, en concreto
 
@@ -459,9 +461,12 @@ Para charlas:
 - Por qué bajaron las consultas en tu alojamiento: https://onlike.ar/por-que-bajaron-las-consultas-alojamiento.html
 - Cuánto bajó realmente el turismo en Argentina: https://onlike.ar/turismo-argentina-2026.html
 - Fórum Internacional de Turismo do Iguassu 2026: https://onlike.ar/forum2026.html
+- Comunicado oficial de la reunión del COPROTUR, Ministerio de Turismo de Misiones: https://misiones.tur.ar/el-coprotur-reunio-en-eldorado-a-referentes-del-sector-para-analizar-la-actualidad-y-planificar-el-turismo-en-misiones/
 - Cobertura de la reunión del COPROTUR en Canal 12 Misiones: https://www.canal12misiones.com/noticias-de-misiones/turismo/misiones-222
 - Cobertura de la reunión del COPROTUR en Economis: https://economis.com.ar/el-coprotur-reunio-en-eldorado-al-sector-turistico-para-planificar-la-temporada-de-verano-en-misiones/
 - Cobertura de la reunión del COPROTUR en Turismo 180 Grados: https://turismo180grados.com/destinos/la-planificacion-del-turismo-misionero-en-reunion-del-coprotur-en-eldorado/
+- Cobertura de la reunión del COPROTUR en Norte Misionero: https://nortemisionero.com.ar/actualidad/el-coprotur-reunio-en-eldorado-a-referentes-del-sector-para-analizar-la-actualidad-y-planificar-el-turismo-en-misiones/
+- Anuncio del taller de CAMEM Eldorado en Norte Misionero: https://nortemisionero.com.ar/eldorado/la-escribana-andrea-payeska-invito-a-la-charla-gratuita-ia-que-impulsa-en-eldorado/
 - Instagram: https://www.instagram.com/onlike.ar
 - LinkedIn: https://linkedin.com/in/lausilvester
 - TikTok: https://www.tiktok.com/@lausilvester
