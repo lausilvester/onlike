@@ -80,7 +80,7 @@
   .geo-hero-inner { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 4.5rem; align-items: center; }
   .geo-tag { display: inline-block; background: rgba(200,255,0,0.12); color: #C8FF00; border: 1px solid rgba(200,255,0,0.25); padding: 0.35rem 0.9rem; font-size:0.85rem; font-weight: 700; border-radius: 100px; margin-bottom: 1.5rem; }
   .geo-hero h1 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.6rem, 4.4vw, 4.4rem); line-height: 0.95; letter-spacing: -0.02em; color: #fff; margin-bottom: 1.5rem; }
-  .geo-hero h1 .light { font-weight: 300; color: rgba(255,255,255,0.82); }
+  .geo-hero h1 .light { font-weight: 300; color: inherit; }
   .geo-hero-sub { font-size: 1.05rem; font-weight: 300; line-height: 1.75; color: rgba(255,255,255,0.62); margin-bottom: 1.5rem; max-width: 520px; }
   .geo-hero-claim { font-size: 0.95rem; font-weight: 700; color: #C8FF00; line-height: 1.5; margin-bottom: 2.25rem; max-width: 460px; }
   .geo-hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
@@ -194,6 +194,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   .geo-entrego { background:#0d0f1c; padding:6rem 0; }
   .geo-entrego-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5px; background:rgba(255,255,255,.07); margin-top:2.75rem; }
+  .geo-ent-group { font-size:.95rem; font-weight:700; color:#A08AE5; margin-top:2.75rem; }
+  .geo-ent-group + .geo-entrego-grid { margin-top:1rem; }
   .geo-ent { background:#0d0f1c; padding:1.65rem 1.65rem; }
   .geo-ent-t { font-family:'Outfit',sans-serif; font-size:1rem; font-weight:700; color:#fff; margin-bottom:.4rem; line-height:1.25; }
   .geo-ent-d { font-size:.9rem; color:rgba(255,255,255,.62); line-height:1.68; }
@@ -295,13 +297,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="geo-test-link">
       <strong>¿Querés ver qué dicen hoy las IAs sobre tu negocio?</strong> Te dejo el paso a paso para probarlo por tu cuenta: <a href="https://onlike.ar/buscate-vos-que-dicen-las-ias.html">Buscate vos</a>.
     </div>
-    <p class="geo-kicker">Una web preciosa con contenido pobre sigue siendo una web pobre.</p>
   </div>
 </section>
 
 <section class="geo-entrego" id="entrego" aria-labelledby="geo-ent-t">
   <div class="container">
     <h2 id="geo-ent-t" class="section-title" style="color:#fff;margin-bottom:.75rem;">Todo lo que<br>recibís.</h2>
+    <h3 class="geo-ent-group">Lo que armamos</h3>
     <div class="geo-entrego-grid">
       <div class="geo-ent">
         <p class="geo-ent-t">Un sitio pensado para tu proyecto</p>
@@ -320,20 +322,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="geo-ent-d">La versión base incluye hasta 8 fotos seleccionadas, optimizadas y con texto alternativo cuando corresponde, para que mantengan calidad sin volver pesado el sitio.</p>
       </div>
       <div class="geo-ent">
-        <p class="geo-ent-t">Tu dominio y tus accesos, a tu nombre</p>
-        <p class="geo-ent-d">Te acompaño a registrar el dominio en nic.ar y queda a tu nombre. El sitio se publica en cuentas a tu nombre y vos tenés los accesos.</p>
+        <p class="geo-ent-t">El contacto que elijas</p>
+        <p class="geo-ent-d">Te armo WhatsApp y formulario si los querés. Si preferís otro canal, como mail o redes, el sitio lleva el que elijas y no agrego los que no quieras usar.</p>
       </div>
       <div class="geo-ent">
         <p class="geo-ent-t">Tus menciones, reunidas</p>
         <p class="geo-ent-d">Busco las notas, entrevistas, reseñas y menciones públicas sobre vos o tu negocio y las reúno en el sitio, con sus links.</p>
       </div>
+    </div>
+    <h3 class="geo-ent-group">Cómo queda publicado</h3>
+    <div class="geo-entrego-grid">
+      <div class="geo-ent">
+        <p class="geo-ent-t">Tu dominio y tus accesos, a tu nombre</p>
+        <p class="geo-ent-d">Te acompaño a registrar el dominio en nic.ar y queda a tu nombre. El sitio se publica en cuentas a tu nombre y vos tenés los accesos.</p>
+      </div>
       <div class="geo-ent">
         <p class="geo-ent-t">Alta en buscadores y revisión al publicar</p>
         <p class="geo-ent-d">Doy de alta tu sitio en Google Search Console y Bing Webmaster Tools y te agrego como colaborador, así recibís los reportes vos también. Una vez publicado, verifico que todo funcione y consulto a las IAs para ver qué reconocen del sitio, como referencia para controles posteriores.</p>
-      </div>
-      <div class="geo-ent">
-        <p class="geo-ent-t">El contacto que elijas</p>
-        <p class="geo-ent-d">Te armo WhatsApp y formulario si los querés. Si preferís otro canal, como mail o redes, el sitio lleva el que elijas y no agrego los que no quieras usar.</p>
       </div>
       <div class="geo-ent">
         <p class="geo-ent-t">Preparado para buscadores e IA (GEO)</p>
@@ -343,6 +348,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="geo-ent-t">Revisado antes de entregar</p>
         <p class="geo-ent-d">Revisado en celular, con navegación por teclado, contraste y movimiento reducido. También compruebo que el contacto funcione y que la lectura y la velocidad se sientan bien en pantalla chica.</p>
       </div>
+    </div>
+    <h3 class="geo-ent-group">Revisión y después de publicar</h3>
+    <div class="geo-entrego-grid">
       <div class="geo-ent">
         <p class="geo-ent-t">Tu revisión y una ronda de ajustes</p>
         <p class="geo-ent-d">Después de mi revisión, lo revisás vos, marcás cambios y hacemos una ronda de correcciones.</p>
