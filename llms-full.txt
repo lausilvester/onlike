@@ -142,7 +142,7 @@ Qué incluye:
 - `robots.txt` con política diferenciada por bot. `OAI-SearchBot` no es `GPTBot`; `Claude-SearchBot`, `Claude-User` y `ClaudeBot` son tres agentes distintos; `PerplexityBot` es búsqueda y no entrenamiento. Se decide cada uno por separado: se deja pasar a los que buscan y se elige qué hacer con los que entrenan.
 - Cinco schemas JSON-LD conectados en `@graph`: WebSite, Organization, LocalBusiness, Person y FAQPage, con identificadores estables.
 - Archivos: las páginas HTML que el proyecto necesita, robots.txt, sitemap.xml, llms.txt, llms-full.txt y favicon.svg.
-- Alta y verificación en Google Search Console y Bing Webmaster Tools, con el cliente agregado como colaborador para que reciba los reportes.
+- Alta y verificación en Google Search Console y Bing Webmaster Tools, con el cliente agregado como colaborador para que reciba los reportes. Al publicar, ONLIKE verifica que todo funcione y consulta a las IAs para ver si ya reconocen el sitio.
 - Canales de contacto a elección del cliente: formulario conectado a su mail y botón de WhatsApp flotante son opcionales.
 - Curaduría del material del cliente: se selecciona, se ordena y se deja afuera lo que no suma.
 - Reunión en el sitio de las notas, entrevistas, reseñas y menciones públicas sobre el cliente, con sus enlaces.
