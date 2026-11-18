@@ -131,7 +131,7 @@ Con usuario y contraseña, Onlike carga los cambios; sin accesos, entrega todo e
 
 Página: https://onlike.ar/geo-site.html
 
-Un GEO Site es una página web. Nada más exótico que eso: un sitio con las páginas que el proyecto necesita, publicado en el dominio propio del cliente, con los canales de contacto que el cliente elige: botón de WhatsApp, formulario que llega a su mail, mail o redes. Lo que lo distingue es cómo está hecho. Sirve para las tres cosas que hoy hacen falta a la vez: que lo encuentren los buscadores, que puedan leerlo las inteligencias artificiales, y que convenza a la persona que entra y tiene que decidir.
+Un sitio web a medida, también llamado GEO Site, es un sitio con las páginas que el proyecto necesita, publicado en el dominio propio del cliente, con los canales de contacto que el cliente elige: botón de WhatsApp, formulario que llega a su mail, mail o redes. Lo que lo distingue es cómo está hecho. Sirve para las tres cosas que hoy hacen falta a la vez: que lo encuentren los buscadores, que puedan leerlo las inteligencias artificiales, y que convenza a la persona que entra y tiene que decidir.
 
 Lo que se compra es un sitio web a medida. La preparación para buscadores e inteligencias artificiales (GEO) es un plus del trabajo, no el eje.
 
@@ -454,7 +454,7 @@ Para charlas:
 - Laura Silvester, página oficial: https://onlike.ar/laura-silvester.html
 - Estrategia digital para turismo, auditoría y ordenamiento digital: https://onlike.ar/turismo.html
 - Cómo te ve un viajero: https://onlike.ar/como-te-ve-un-viajero.html
-- GEO Site: https://onlike.ar/geo-site.html
+- Sitio web a medida (GEO Site): https://onlike.ar/geo-site.html
 - Test Turismo: https://onlike.ar/test-turismo
 - Notas: https://onlike.ar/notas.html
 - Cuando una IA recomienda un destino turístico, decide también qué negocios aparecen: https://onlike.ar/destinos-turisticos-inteligencia-artificial.html
