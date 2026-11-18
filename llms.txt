@@ -92,7 +92,7 @@ Más información: https://onlike.ar/turismo.html
 
 Un sitio web propio, armado a partir de los objetivos del cliente, con curaduría de su material, estructura y diseño propios sin plantilla prediseñada, y preparado para que lo lean buscadores y sistemas de inteligencia artificial. Se hacen las páginas que el proyecto necesita, publicadas en el dominio y en cuentas a nombre del cliente, con los canales de contacto que el cliente elige: botón de WhatsApp, formulario que llega a su mail, mail o redes. La preparación para buscadores e IA (lo que se llama GEO) es un plus del trabajo, no el eje.
 
-Incluye: redacción y estructuración del contenido; robots.txt con política diferenciada por bot, separando búsqueda de entrenamiento; cinco schemas JSON-LD conectados en @graph; sitemap.xml, llms.txt y llms-full.txt; alta y verificación en Google Search Console y Bing Webmaster Tools a nombre del cliente; publicación a nombre del cliente, sin costo mensual de hosting; y una ronda de ajustes.
+Incluye: redacción y estructuración del contenido; diseño con punto de vista propio, revisado en celular, con navegación por teclado, contraste y movimiento reducido; robots.txt con política diferenciada por bot, separando búsqueda de entrenamiento; cinco schemas JSON-LD conectados en @graph; sitemap.xml, llms.txt y llms-full.txt; alta y verificación en Google Search Console y Bing Webmaster Tools a nombre del cliente; publicación a nombre del cliente, sin costo mensual de hosting; y una ronda de ajustes.
 
 Precio: desde $250.000 ARS por un sitio de una página, si el cliente aporta los textos escritos. Más páginas o redacción desde cero se presupuestan según el proyecto. Portugués e inglés con costo adicional. Seña del 50% para entrar en agenda.
 

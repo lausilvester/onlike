@@ -145,6 +145,8 @@ Qué incluye:
 - Alta y verificación en Google Search Console y Bing Webmaster Tools, con el cliente agregado como colaborador para que reciba los reportes. Al publicar, ONLIKE verifica que todo funcione y consulta a las IAs para ver si ya reconocen el sitio.
 - Canales de contacto a elección del cliente: formulario conectado a su mail y botón de WhatsApp flotante son opcionales.
 - Curaduría del material del cliente: se selecciona, se ordena y se deja afuera lo que no suma.
+- Diseño con punto de vista propio: antes de construir se define paleta, tipografía y estructura pensadas para el proyecto y se las revisa contra lo que el cliente quiere lograr.
+- Revisión antes de entregar: en celular, con navegación por teclado, contraste y movimiento reducido.
 - Reunión en el sitio de las notas, entrevistas, reseñas y menciones públicas sobre el cliente, con sus enlaces.
 - Una ronda de ajustes.
 
