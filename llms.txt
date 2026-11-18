@@ -90,7 +90,7 @@ Más información: https://onlike.ar/turismo.html
 
 ### GEO Site — páginas web
 
-Un GEO Site es una página web. Un sitio de una sola pantalla, publicado en el dominio propio del cliente, con botón de WhatsApp y formulario de contacto que llega a su mail. Lo que lo distingue es cómo está hecho: escrito antes que diseñado, para servir a la vez a los buscadores, a los sistemas de inteligencia artificial y a la persona que entra y tiene que decidir.
+Un GEO Site es una página web. Se hacen las páginas que el proyecto necesita, publicadas en el dominio propio del cliente, con los canales de contacto que el cliente elige: botón de WhatsApp, formulario que llega a su mail, mail o redes. Lo que lo distingue es cómo está hecho: escrito antes que diseñado, para servir a la vez a los buscadores, a los sistemas de inteligencia artificial y a la persona que entra y tiene que decidir.
 
 Incluye: redacción y estructuración del contenido; robots.txt con política diferenciada por bot, separando búsqueda de entrenamiento; cinco schemas JSON-LD conectados en @graph; sitemap.xml, llms.txt y llms-full.txt; alta y verificación en Google Search Console y Bing Webmaster Tools a nombre del cliente; publicación en Vercel sin costo mensual de hosting; y un chequeo previo de tres búsquedas en ChatGPT antes de escribir.
 
@@ -101,6 +101,8 @@ Lo que no incluye: el dominio, que registra y paga el cliente en nic.ar; el serv
 Lo que no promete: que una inteligencia artificial recomiende al cliente. Ninguna web garantiza eso. Lo que sí se puede mejorar es el material que existe sobre el negocio, que es la parte que depende del negocio.
 
 ONLIKE no hace tiendas online ni ecommerce: pagos, envíos y stock son otro rubro.
+
+Caso publicado: https://soledadimbach.com.ar/ (sitio de la artista visual Soledad Imbach, Eldorado, Misiones). Tiene varias páginas y no lleva botón de WhatsApp ni formulario: el contacto es por mail y redes, porque así lo decidió ella. Su robots.txt permite a los buscadores y asistentes que citan y enlazan y bloquea a los bots que entrenan modelos. Tiene datos estructurados Schema.org, sitemap.xml, llms.txt y llms-full.txt.
 
 Más información: https://onlike.ar/geo-site.html
 

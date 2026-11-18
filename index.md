@@ -29,7 +29,7 @@ Para alojamientos y proyectos con producto probado: reconstruyo el recorrido del
 
 #### GEO Site
 
-Una página web escrita antes que diseñada, pensada desde el primer texto para personas, buscadores e inteligencias artificiales. Sitio propio en tu dominio, con botón de WhatsApp y formulario de contacto. Desde $250.000. [Ver el servicio](https://onlike.ar/geo-site.html)
+Una página web escrita antes que diseñada, pensada desde el primer texto para personas, buscadores e inteligencias artificiales. Sitio propio en tu dominio, con las páginas que necesite y los canales de contacto que elijas, como WhatsApp o formulario. Desde $250.000. [Ver el servicio](https://onlike.ar/geo-site.html)
 
 #### Posicionamiento en buscadores e inteligencias artificiales
 
