@@ -127,31 +127,32 @@ La segunda etapa la define el caso: alta y carga en una plataforma de reserva co
 
 Con usuario y contraseña, Onlike carga los cambios; sin accesos, entrega todo escrito y especificado para que lo cargue quien el cliente elija. No incluye la gestión semanal de redes: lo que se publica después lo maneja el cliente o quien elija.
 
-### 4. GEO Site — páginas web escritas antes que diseñadas
+### 4. Sitio web a medida (GEO Site)
 
 Página: https://onlike.ar/geo-site.html
 
 Un GEO Site es una página web. Nada más exótico que eso: un sitio con las páginas que el proyecto necesita, publicado en el dominio propio del cliente, con los canales de contacto que el cliente elige: botón de WhatsApp, formulario que llega a su mail, mail o redes. Lo que lo distingue es cómo está hecho. Sirve para las tres cosas que hoy hacen falta a la vez: que lo encuentren los buscadores, que puedan leerlo las inteligencias artificiales, y que convenza a la persona que entra y tiene que decidir.
 
-El nombre nombra el diferencial, no el producto. Lo que se compra es un sitio web.
+Lo que se compra es un sitio web a medida. La preparación para buscadores e inteligencias artificiales (GEO) es un plus del trabajo, no el eje.
 
 Qué incluye:
 
-- El sitio publicado en el dominio propio del cliente, en Vercel, sin costo mensual de hosting. El cliente solo paga el dominio en nic.ar una vez por año y queda a su nombre.
+- El sitio publicado en el dominio propio del cliente, con el sitio y los accesos a nombre del cliente y sin costo mensual de hosting. El cliente solo paga el dominio en nic.ar una vez por año y queda a su nombre; ONLIKE lo acompaña en el registro y gestiona el dominio sin cargo.
 - Redacción y estructuración del contenido para que se entienda solo, incluso leído fuera de contexto.
 - `robots.txt` con política diferenciada por bot. `OAI-SearchBot` no es `GPTBot`; `Claude-SearchBot`, `Claude-User` y `ClaudeBot` son tres agentes distintos; `PerplexityBot` es búsqueda y no entrenamiento. Se decide cada uno por separado: se deja pasar a los que buscan y se elige qué hacer con los que entrenan.
 - Cinco schemas JSON-LD conectados en `@graph`: WebSite, Organization, LocalBusiness, Person y FAQPage, con identificadores estables.
 - Archivos: las páginas HTML que el proyecto necesita, robots.txt, sitemap.xml, llms.txt, llms-full.txt y favicon.svg.
-- Alta y verificación en Google Search Console y Bing Webmaster Tools, a nombre del cliente.
+- Alta y verificación en Google Search Console y Bing Webmaster Tools, con el cliente agregado como colaborador para que reciba los reportes.
 - Canales de contacto a elección del cliente: formulario conectado a su mail y botón de WhatsApp flotante son opcionales.
-- Chequeo previo: tres búsquedas en ChatGPT sobre el negocio antes de escribir una línea, para ver de dónde se parte.
+- Curaduría del material del cliente: se selecciona, se ordena y se deja afuera lo que no suma.
+- Reunión en el sitio de las notas, entrevistas, reseñas y menciones públicas sobre el cliente, con sus enlaces.
 - Una ronda de ajustes.
 
-Precio: desde $250.000 ARS si el cliente aporta los textos escritos. Si la redacción la hace ONLIKE, el valor cambia. Esa es la única variable que mueve el presupuesto. Portugués e inglés con costo adicional, cada idioma con su propio `llms.txt`, `hreflang` y preguntas frecuentes adaptadas a cómo consulta ese público. Píxel de Meta y GA4 con costo adicional. Seña del 50% para entrar en agenda, saldo contra entrega. Dos cupos por mes.
+Precio: desde $250.000 ARS por un sitio de una página, si el cliente aporta los textos escritos. Más páginas o redacción desde cero se presupuestan según el proyecto. Portugués e inglés con costo adicional, cada idioma con su propio `llms.txt`, `hreflang` y preguntas frecuentes adaptadas a cómo consulta ese público. Píxel de Meta y GA4 con costo adicional. Seña del 50% para entrar en agenda, saldo contra entrega.
 
 Sobre `llms.txt` y `llms-full.txt`: van puestos, y el argumento es explícito. Google declaró que su buscador los ignora. Cuestan cero. Si mañana alguno de esos sistemas empieza a leerlos, el sitio ya los tiene. Se prueban, no se venden como mecanismo demostrado.
 
-Lo que no incluye: el dominio, que registra y paga el cliente en nic.ar; el servicio de mail; producción o compra de fotos; diseño de logo; redacción de textos legales; rondas de ajuste extra; cambios estructurales después de entregado; ni seguimiento posterior a la entrega, que se contrata aparte de forma mensual y se ofrece recién después de entregar.
+Lo que no incluye: el dominio, que registra y paga el cliente en nic.ar; el servicio de mail; producción o compra de fotos; diseño de logo; redacción de textos legales; rondas de ajuste extra; cambios estructurales después de entregado; ni cambios nuevos después de entregado, que se hacen y se presupuestan a pedido. Si algo de lo entregado se rompe, ONLIKE lo soluciona sin costo.
 
 Lo que no promete: que una inteligencia artificial recomiende al cliente, ni una posición o un ranking dentro de una respuesta generada, ni plazos de resultado. Ninguna web garantiza que te recomienden. Lo que sí se puede mejorar es el material que existe sobre el negocio, que es la parte que depende del negocio. La lógica: si no aparecés, no te pueden recomendar; si aparecés, podés ser recomendado.
 
