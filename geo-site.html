@@ -55,6 +55,8 @@
   .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
   .nav-links a { color: rgba(19,22,37,0.55); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; transition: color var(--transition); }
   .nav-links a:hover { color: var(--dark); }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.4rem; flex-direction: column; gap: 5px; }
+  .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--dark); border-radius: 2px; transition: all 0.25s; }
   .nav-cta { background: var(--dark) !important; color: var(--white) !important; padding: 0.5rem 1.1rem !important; border-radius: var(--radius); }
   .nav-cta:hover { background: var(--lima) !important; color: var(--dark) !important; }
   .container { max-width: 1160px; margin: 0 auto; padding: 0 3rem; }
@@ -92,6 +94,10 @@
   @media (max-width: 900px) {
     header nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
+    .nav-toggle { display: flex; }
+    .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 60px; left: 0; right: 0; background: var(--white); padding: 2rem; gap: 1.5rem; border-bottom: 1px solid rgba(19,22,37,0.08); }
+    .nav-links.open a { font-size: 1rem; }
+    .nav-links.open .nav-cta { text-align: center; }
     .container { padding: 0 1.5rem; }
     .wa-float-text { display: none; }
     .wa-float { padding: 0.85rem; border-radius: 50%; }
@@ -126,15 +132,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="https://onlike.ar/" class="nav-logo" aria-label="ONLIKE — Ir al inicio">
       <img src="assets/logo-onlike.png" alt="Logo ONLIKE" height="36">
     </a>
-    <ul class="nav-links" role="list">
+    <ul class="nav-links" id="nav-links" role="list">
       <li><a href="https://onlike.ar/">Inicio</a></li>
       <li><a href="https://onlike.ar/turismo.html">Turismo</a></li>
       <li><a href="https://onlike.ar/geo-site.html">Sitio Web</a></li>
       <li><a href="https://onlike.ar/notas.html">Notas</a></li>
       <li><a href="https://onlike.ar/test-turismo">Test gratis</a></li>
       <li><a href="https://onlike.ar/laura-silvester.html">Sobre mí</a></li>
-      <li><a href="https://onlike.ar/#contact" class="nav-cta">Escribime</a></li>
+      <li><a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20escribo%20desde%20tu%20p%C3%A1gina%20de%20sitios%20web." target="_blank" rel="noopener noreferrer" class="nav-cta" data-wa="geo-site-nav">Escribime</a></li>
     </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú de navegación">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 </header>
 <main id="main" role="main" style="padding-top: 70px;">
@@ -144,11 +153,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="geo-hero-inner">
       <div>
         <h1 id="geo-h1"><span class="light">Un sitio web</span><br>que muestra tu trabajo<br>como realmente es.</h1>
-        <p class="geo-hero-sub">Parto de lo que querés lograr, ordeno y selecciono todo el material que tenés y diseño cada parte a tu estilo. El resultado es un sitio propio, claro en el celular y con caminos concretos para consultar, comprar o reservar.</p>
+        <p class="geo-hero-sub">Parto de lo que querés lograr, ordeno y selecciono todo el material que tenés y diseño cada parte a tu estilo. El resultado es un sitio propio, claro en el celular y con caminos concretos para que te contacten, te pidan un presupuesto o te consulten por una compra o una reserva.</p>
         <p class="geo-hero-sub" style="margin-bottom:1.75rem;">Además, queda preparado para buscadores y asistentes de inteligencia artificial como ChatGPT.</p>
         <p class="geo-hero-claim">Versión base desde $250.000 ARS. Más abajo, todo lo que incluye.</p>
         <div class="geo-hero-btns">
-          <a data-wa="geo-site-hero" href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20contarte%20mi%20proyecto." target="_blank" rel="noopener noreferrer" class="btn-accent">Contame qué necesitás</a>
+          <a data-wa="geo-site-hero" href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20contarte%20mi%20proyecto." target="_blank" rel="noopener noreferrer" class="btn-accent">Contame por WhatsApp qué necesitás</a>
           <a href="#caso" class="btn-ghost">Ver un caso publicado</a>
         </div>
       </div>
@@ -177,7 +186,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .geo-diff-num { font-size:0.85rem; font-weight:700; color:#8E51B9; margin-bottom:.85rem; }
   .geo-diff-card h3 { font-family:'Outfit',sans-serif; font-size:1.1rem; font-weight:700; color:#131625; margin-bottom:.7rem; }
   .geo-diff-card p { font-size:.9rem; line-height:1.75; color:rgba(19,22,37,.64); }
-  .geo-diff-card code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.78rem; color:rgba(19,22,37,.8); }
+  .geo-diff-card code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.8rem; color:rgba(19,22,37,.8); }
   .geo-kicker { font-size:.95rem; font-weight:700; color:#8E51B9; margin-top:2rem; }
   .geo-test-link { margin-top:1.6rem; padding:1.1rem 1.25rem; background:#fff; border-left:3px solid #8E51B9; font-size:.9rem; line-height:1.65; color:rgba(19,22,37,.68); }
   .geo-test-link strong { color:#131625; }
@@ -188,7 +197,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .geo-ent { background:#0d0f1c; padding:1.65rem 1.65rem; }
   .geo-ent-t { font-family:'Outfit',sans-serif; font-size:1rem; font-weight:700; color:#fff; margin-bottom:.4rem; line-height:1.25; }
   .geo-ent-d { font-size:.9rem; color:rgba(255,255,255,.62); line-height:1.68; }
-  .geo-ent-d code, .geo-extra code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.78rem; color:rgba(255,255,255,.75); }
+  .geo-ent-d code, .geo-extra code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.8rem; color:rgba(255,255,255,.75); }
   .geo-extra { margin-top:2rem; padding:1.5rem 1.75rem; background:rgba(142,81,185,.12); border:1px solid rgba(142,81,185,.3); border-radius:4px; }
   .geo-extra p:first-child { font-size:0.85rem; font-weight:700; color:#C89BE8; margin-bottom:.5rem; }
   .geo-extra p:last-child { font-size:.85rem; color:rgba(255,255,255,.62); line-height:1.7; }
@@ -221,7 +230,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .geo-cta-row { display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; }
   .geo-testimonio { max-width:700px; margin:3rem auto 0; padding:.4rem 0 .4rem 1.6rem; border-left:3px solid #131625; }
   .geo-testimonio p:first-child { font-size:.95rem; color:#131625; line-height:1.75; font-weight:500; }
-  .geo-testimonio p:last-child { font-size:.78rem; color:rgba(19,22,37,.55); margin-top:.6rem; }
+  .geo-testimonio p:last-child { font-size:.8rem; color:rgba(19,22,37,.55); margin-top:.6rem; }
 
   .geo-faq { background:#131625; padding:6rem 0 7rem; }
   .geo-faq-list { margin-top:2.75rem; }
@@ -251,11 +260,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="geo-diff-card">
         <h3>La curaduría</h3>
-        <p>Revisé todo lo que me pasó, elegí qué mostrar y lo organicé en un sitio de diez páginas. Cada serie y cada libro tiene su espacio; la biografía y el currículum van aparte. Las imágenes se pasaron a blanco y negro para que todo conviviera sin desentonar, y se comprimieron para que el sitio cargue liviano.</p>
+        <p>Revisé el material que me pasó, seleccioné qué mostrar y lo organicé en un sitio de diez páginas. Las cinco series destacadas y los dos libros tienen su propio espacio; la biografía y el currículum van juntos en otra página. Unifiqué el tratamiento visual con predominio del blanco y negro, respetando las piezas que necesitaban conservar su color, y optimicé las imágenes para que el sitio cargue liviano.</p>
       </div>
       <div class="geo-diff-card">
         <h3>Sus decisiones</h3>
-        <p>Solo en español. Sin WhatsApp ni formulario: el contacto es por mail y por sus redes. Los precios de la obra se consultan. Y eligió qué sistemas pueden leer el sitio: buscadores y asistentes que citan y enlazan, sí; los que entrenan modelos con su contenido y sus imágenes, no.</p>
+        <p>Solo en español. Sin WhatsApp ni formulario: el contacto es por mail y por sus redes. Los precios de la obra se consultan. Y eligió una política por bot: permite buscadores y asistentes identificados que citan y enlazan, y bloquea una lista de agentes identificados que entrenan modelos.</p>
       </div>
     </div>
     <div class="geo-test-link">
@@ -276,7 +285,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="geo-diff-card">
         <h3>Después la ordeno</h3>
-        <p>Armo el recorrido para que cada persona encuentre lo que busca, llegue desde donde llegue: Google, una red social, una recomendación o una IA. Cada servicio, obra o producto ocupa el lugar que necesita y lleva al próximo paso: consultar, comprar, reservar o seguir conociéndote.</p>
+        <p>Armo el recorrido para que cada persona encuentre lo que busca, llegue desde donde llegue: Google, una red social, una recomendación o una IA. Cada servicio, obra o producto ocupa el lugar que necesita y lleva al próximo paso: contactarte, pedir un presupuesto, consultar por una compra o una reserva, o seguir conociéndote.</p>
       </div>
       <div class="geo-diff-card">
         <h3>Recién entonces diseño</h3>
@@ -307,8 +316,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="geo-ent-d">Reviso lo que me pasás, elijo qué conviene mostrar, ordeno la información y dejo afuera lo que distrae o se repite.</p>
       </div>
       <div class="geo-ent">
-        <p class="geo-ent-t">Imágenes y videos preparados</p>
-        <p class="geo-ent-d">Se seleccionan, ajustan y comprimen para que mantengan calidad sin volver pesado el sitio. La versión base incluye hasta 8 fotos.</p>
+        <p class="geo-ent-t">Hasta 8 fotos preparadas</p>
+        <p class="geo-ent-d">La versión base incluye hasta 8 fotos seleccionadas, optimizadas y con texto alternativo cuando corresponde, para que mantengan calidad sin volver pesado el sitio.</p>
       </div>
       <div class="geo-ent">
         <p class="geo-ent-t">Tu dominio y tus accesos, a tu nombre</p>
@@ -320,7 +329,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="geo-ent">
         <p class="geo-ent-t">Alta en buscadores y revisión al publicar</p>
-        <p class="geo-ent-d">Doy de alta tu sitio en Google Search Console y Bing Webmaster Tools y te agrego como colaborador, así recibís los reportes vos también. Una vez publicado, verifico que todo funcione y consulto a las IAs para ver si ya reconocen el sitio.</p>
+        <p class="geo-ent-d">Doy de alta tu sitio en Google Search Console y Bing Webmaster Tools y te agrego como colaborador, así recibís los reportes vos también. Una vez publicado, verifico que todo funcione y consulto a las IAs para ver qué reconocen del sitio, como referencia para controles posteriores.</p>
       </div>
       <div class="geo-ent">
         <p class="geo-ent-t">El contacto que elijas</p>
@@ -328,7 +337,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="geo-ent">
         <p class="geo-ent-t">Preparado para buscadores e IA (GEO)</p>
-        <p class="geo-ent-d">Pensado para que Google, los asistentes de IA como ChatGPT y los modelos de lenguaje (LLM) que los hacen funcionar puedan leer tu información: datos estructurados Schema.org, <code>sitemap.xml</code>, <code>robots.txt</code> con permisos por bot, <code>llms.txt</code> y <code>llms-full.txt</code>. Estos dos últimos van como complemento: no hay garantía de que un buscador los use.</p>
+        <p class="geo-ent-d">Pensado para que Google, los asistentes de IA como ChatGPT y los modelos de lenguaje (LLM) que los hacen funcionar puedan leer tu información. Incluye datos estructurados Schema.org, <code>sitemap.xml</code> y <code>robots.txt</code> con permisos por bot. También agrego <code>llms.txt</code> y <code>llms-full.txt</code> como archivos complementarios de lectura.</p>
       </div>
       <div class="geo-ent">
         <p class="geo-ent-t">Revisado antes de entregar</p>
@@ -340,12 +349,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="geo-ent">
         <p class="geo-ent-t">Después de publicar</p>
-        <p class="geo-ent-d">Si algo del sitio que entregué se rompe, me ocupo de solucionarlo sin costo. Los cambios que quieras hacer más adelante los hago y te los presupuesto a pedido.</p>
+        <p class="geo-ent-d">Si algo que entregué deja de funcionar por un problema del sitio, me ocupo de solucionarlo sin costo. No hay abono mensual de mantenimiento. Los cambios nuevos, como textos, fotos, secciones o páginas, se hacen y se presupuestan a pedido.</p>
       </div>
     </div>
     <div class="geo-extra">
       <p>Con costo adicional</p>
-      <p>Otro idioma, como portugués o inglés, con <code>hreflang</code> y contenido adaptado a cada público: $70.000 si traés el texto y $120.000 si lo redacto yo. Fotos de 9 a 20, con optimización y texto alternativo: $50.000. Hasta tres videos embebidos con datos estructurados <code>VideoObject</code>: $30.000. Píxel de Meta o Google Tag Manager con GA4: $30.000 cada uno, o $50.000 los dos. Configuración de mail propio: $40.000.</p>
+      <p>Otro idioma, como portugués o inglés, con <code>hreflang</code> y contenido adaptado a cada público: $70.000 si traés el texto y $120.000 si lo redacto yo. De 9 a 20 fotos, con selección y optimización: $50.000. Hasta tres videos embebidos con datos estructurados <code>VideoObject</code>: $30.000. Píxel de Meta o Google Tag Manager con GA4: $30.000 cada uno, o $50.000 los dos. Configuración de mail propio: $40.000.</p>
     </div>
   </div>
 </section>
@@ -374,7 +383,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="geo-paso">
         <p class="geo-paso-n">03</p>
         <h3>Mandás el material</h3>
-        <p>Servicios, precios si corresponde, preguntas frecuentes, fotos, logo y el contenido base. Tenés 15 días para enviarlo completo.</p>
+        <p>Me mandás servicios, precios si corresponde, preguntas frecuentes, fotos, logo y el contenido base. Si falta algo, lo definimos antes de empezar.</p>
       </div>
       <div class="geo-paso">
         <p class="geo-paso-n">04</p>
@@ -389,12 +398,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="geo-precio">
       <p class="geo-precio-desde">Versión base, desde</p>
-      <p class="geo-precio-num" id="geo-precio-t">$250.000</p>
+      <h2 class="geo-precio-num" id="geo-precio-t">$250.000</h2>
       <p class="geo-precio-ars">ARS</p>
-      <p class="geo-precio-eje">Es un sitio de una página, con la curaduría de tu material, la estructura y el diseño propios, hasta 8 fotos preparadas, la publicación a tu nombre, la verificación en Google y una ronda de ajustes. <strong>El contenido base lo traés vos.</strong></p>
+      <p class="geo-precio-eje">Es un sitio de una página, con la curaduría de tu material, la estructura y el diseño propios, hasta 8 fotos preparadas, la publicación a tu nombre, el alta y la verificación en Google Search Console y Bing Webmaster Tools, con acceso para vos, y una ronda de ajustes. <strong>El contenido base lo traés vos.</strong></p>
       <p class="geo-precio-eje">Si tu proyecto necesita más páginas, como el caso de Soledad, que tiene diez, o querés que redacte los textos desde cero, el presupuesto se arma según lo que necesite. Antes de empezar recibís una propuesta por escrito con lo que incluye, los costos externos y la forma de pago.</p>
       <div class="geo-cta-row">
-        <a data-wa="geo-site-cierre" href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20contarte%20mi%20proyecto." target="_blank" rel="noopener noreferrer" class="btn-dark">Contame qué necesitás</a>
+        <a data-wa="geo-site-cierre" href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20contarte%20mi%20proyecto." target="_blank" rel="noopener noreferrer" class="btn-dark">Contame por WhatsApp qué necesitás</a>
       </div>
     </div>
   </div>
@@ -406,11 +415,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="geo-faq-list">
       <div class="geo-faq-item">
         <p class="geo-faq-q">¿Cuánto cuesta y qué incluye?</p>
-        <p class="geo-faq-a">La versión base parte de $250.000 ARS y es un sitio de una página cuando traés el contenido base. Incluye la curaduría y adaptación de tu material, la estructura, el diseño, hasta 8 fotos preparadas, la publicación a tu nombre, la verificación en Google y una ronda de ajustes. La propuesta indica por escrito qué entra en tu proyecto, qué tiene un costo externo y qué se cotiza por separado.</p>
-      </div>
-      <div class="geo-faq-item">
-        <p class="geo-faq-q">¿Por qué el precio dice "desde"?</p>
-        <p class="geo-faq-a">Porque cada proyecto necesita una cantidad distinta de páginas, textos y materiales. Antes de empezar definimos el alcance y recibís el presupuesto por escrito.</p>
+        <p class="geo-faq-a">La versión base parte de $250.000 ARS y es un sitio de una página cuando traés el contenido base. Incluye la curaduría y adaptación de tu material, la estructura, el diseño, hasta 8 fotos preparadas, la publicación a tu nombre, el alta y la verificación en Google Search Console y Bing Webmaster Tools, con acceso para vos, y una ronda de ajustes. La propuesta indica por escrito qué entra en tu proyecto, qué tiene un costo externo y qué se cotiza por separado. El precio dice "desde" porque cada proyecto necesita una cantidad distinta de páginas, textos y materiales: antes de empezar definimos el alcance y recibís el presupuesto por escrito.</p>
       </div>
       <div class="geo-faq-item">
         <p class="geo-faq-q">¿Tengo que tener los textos y las fotos listos?</p>
@@ -426,7 +431,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="geo-faq-item">
         <p class="geo-faq-q">¿Qué pasa después de que el sitio está publicado?</p>
-        <p class="geo-faq-a">Al publicar, verifico que todo quede funcionando, que el sitio esté dado de alta en los buscadores y consulto a las IAs para ver si ya lo reconocen. Después, el sitio es tuyo: si algo del sitio que entregué se rompe, me ocupo de solucionarlo sin costo, y los cambios que quieras hacer más adelante, como textos, fotos o páginas nuevas, los hago y te los presupuesto a pedido.</p>
+        <p class="geo-faq-a">Al publicar, verifico que todo quede funcionando, que el sitio esté dado de alta en los buscadores y consulto a las IAs para ver qué reconocen del sitio, como referencia para controles posteriores. Después, el sitio es tuyo: si algo que entregué deja de funcionar por un problema del sitio, me ocupo de solucionarlo sin costo. No hay abono mensual de mantenimiento. Los cambios nuevos, como textos, fotos, secciones o páginas, se hacen y se presupuestan a pedido.</p>
       </div>
       <div class="geo-faq-item">
         <p class="geo-faq-q">¿Qué es GEO y qué tiene que ver con mi sitio?</p>
@@ -458,6 +463,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <span class="wa-float-text">Escribime por WhatsApp</span>
 </a>
 <script>
+  var toggle = document.getElementById('nav-toggle');
+  var navLinks = document.getElementById('nav-links');
+  if (toggle && navLinks) {
+    toggle.addEventListener('click', function() {
+      var e = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!e));
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
   window.addEventListener('scroll', function() {
     document.querySelector('header nav').style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(0,0,0,0.3)' : 'none';
   }, {passive: true});
@@ -513,7 +533,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         "GEO Site",
         "Sitio web preparado para buscadores y sistemas de IA"
       ],
-      "description": "Sitio web publicado en dominio y cuentas a nombre del cliente, armado a partir de sus objetivos: curaduría del material, estructura y diseño propios sin plantilla prediseñada, diseño con punto de vista propio (paleta, tipografía y estructura pensadas para el proyecto), imágenes y videos preparados, revisión en celular, con navegación por teclado, contraste y movimiento reducido, verificación en Google Search Console y Bing Webmaster Tools con acceso del cliente, y preparación técnica para buscadores y sistemas de IA (datos estructurados Schema.org, sitemap.xml, robots.txt con política por bot, llms.txt y llms-full.txt). El contacto se define con el cliente: WhatsApp, formulario, mail o redes.",
+      "description": "Sitio web publicado en dominio y cuentas a nombre del cliente, armado a partir de sus objetivos: curaduría del material, estructura y diseño propios sin plantilla prediseñada, diseño con punto de vista propio (paleta, tipografía y estructura pensadas para el proyecto), material visual preparado según el alcance acordado, revisión en celular, con navegación por teclado, contraste y movimiento reducido, verificación en Google Search Console y Bing Webmaster Tools con acceso del cliente, y preparación técnica para buscadores y sistemas de IA (datos estructurados Schema.org, sitemap.xml, robots.txt con política por bot, llms.txt y llms-full.txt). El contacto se define con el cliente: WhatsApp, formulario, mail o redes.",
       "provider": {
         "@id": "https://onlike.ar/#organization"
       },
@@ -537,7 +557,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       "offers": {
         "@type": "Offer",
         "priceCurrency": "ARS",
-        "price": "250000",
         "priceSpecification": {
           "@type": "PriceSpecification",
           "minPrice": "250000",
@@ -559,15 +578,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           "name": "¿Cuánto cuesta y qué incluye?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "La versión base parte de $250.000 ARS y es un sitio de una página cuando traés el contenido base. Incluye la curaduría y adaptación de tu material, la estructura, el diseño, hasta 8 fotos preparadas, la publicación a tu nombre, la verificación en Google y una ronda de ajustes. La propuesta indica por escrito qué entra en tu proyecto, qué tiene un costo externo y qué se cotiza por separado."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Por qué el precio dice \"desde\"?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Porque cada proyecto necesita una cantidad distinta de páginas, textos y materiales. Antes de empezar definimos el alcance y recibís el presupuesto por escrito."
+            "text": "La versión base parte de $250.000 ARS y es un sitio de una página cuando traés el contenido base. Incluye la curaduría y adaptación de tu material, la estructura, el diseño, hasta 8 fotos preparadas, la publicación a tu nombre, el alta y la verificación en Google Search Console y Bing Webmaster Tools, con acceso para vos, y una ronda de ajustes. La propuesta indica por escrito qué entra en tu proyecto, qué tiene un costo externo y qué se cotiza por separado. El precio dice \"desde\" porque cada proyecto necesita una cantidad distinta de páginas, textos y materiales: antes de empezar definimos el alcance y recibís el presupuesto por escrito."
           }
         },
         {
@@ -599,7 +610,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           "name": "¿Qué pasa después de que el sitio está publicado?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Al publicar, verifico que todo quede funcionando, que el sitio esté dado de alta en los buscadores y consulto a las IAs para ver si ya lo reconocen. Después, el sitio es tuyo: si algo del sitio que entregué se rompe, me ocupo de solucionarlo sin costo, y los cambios que quieras hacer más adelante, como textos, fotos o páginas nuevas, los hago y te los presupuesto a pedido."
+            "text": "Al publicar, verifico que todo quede funcionando, que el sitio esté dado de alta en los buscadores y consulto a las IAs para ver qué reconocen del sitio, como referencia para controles posteriores. Después, el sitio es tuyo: si algo que entregué deja de funcionar por un problema del sitio, me ocupo de solucionarlo sin costo. No hay abono mensual de mantenimiento. Los cambios nuevos, como textos, fotos, secciones o páginas, se hacen y se presupuestan a pedido."
           }
         },
         {

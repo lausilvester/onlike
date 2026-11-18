@@ -138,11 +138,11 @@ Lo que se compra es un sitio web a medida. La preparación para buscadores e int
 Qué incluye:
 
 - El sitio publicado en el dominio propio del cliente, con el sitio y los accesos a nombre del cliente y sin costo mensual de hosting. El cliente solo paga el dominio en nic.ar una vez por año y queda a su nombre; ONLIKE lo acompaña en el registro y gestiona el dominio sin cargo.
-- Redacción y estructuración del contenido para que se entienda solo, incluso leído fuera de contexto.
+- Adaptación, selección y estructuración del contenido base que aporta el cliente, para que se entienda solo, incluso leído fuera de contexto. La redacción desde cero se cotiza por separado.
 - `robots.txt` con política diferenciada por bot. `OAI-SearchBot` no es `GPTBot`; `Claude-SearchBot`, `Claude-User` y `ClaudeBot` son tres agentes distintos; `PerplexityBot` es búsqueda y no entrenamiento. Se decide cada uno por separado: se deja pasar a los que buscan y se elige qué hacer con los que entrenan.
-- Cinco schemas JSON-LD conectados en `@graph`: WebSite, Organization, LocalBusiness, Person y FAQPage, con identificadores estables.
+- Datos estructurados Schema.org según el contenido y el tipo de proyecto (por ejemplo WebSite, Organization, Person, LocalBusiness o FAQPage cuando corresponden), conectados con identificadores estables.
 - Archivos: las páginas HTML que el proyecto necesita, robots.txt, sitemap.xml, llms.txt, llms-full.txt y favicon.svg.
-- Alta y verificación en Google Search Console y Bing Webmaster Tools, con el cliente agregado como colaborador para que reciba los reportes. Al publicar, ONLIKE verifica que todo funcione y consulta a las IAs para ver si ya reconocen el sitio.
+- Alta y verificación en Google Search Console y Bing Webmaster Tools, con el cliente agregado como colaborador para que reciba los reportes. Al publicar, ONLIKE verifica que todo funcione y consulta a las IAs para ver qué reconocen del sitio, como referencia para controles posteriores.
 - Canales de contacto a elección del cliente: formulario conectado a su mail y botón de WhatsApp flotante son opcionales.
 - Curaduría del material del cliente: se selecciona, se ordena y se deja afuera lo que no suma.
 - Diseño con punto de vista propio: antes de construir se define paleta, tipografía y estructura pensadas para el proyecto y se las revisa contra lo que el cliente quiere lograr.
@@ -158,7 +158,7 @@ Lo que no incluye: el dominio, que registra y paga el cliente en nic.ar; el serv
 
 Lo que no promete: que una inteligencia artificial recomiende al cliente, ni una posición o un ranking dentro de una respuesta generada, ni plazos de resultado. Ninguna web garantiza que te recomienden. Lo que sí se puede mejorar es el material que existe sobre el negocio, que es la parte que depende del negocio. La lógica: si no aparecés, no te pueden recomendar; si aparecés, podés ser recomendado.
 
-Método de comprobación que se le entrega al cliente: preguntarle a Grok por el nombre del negocio. Cuando lo que dice el sitio empieza a aparecer en esa respuesta, el sitio entró al circuito. No garantiza recomendación; confirma que hay material accesible.
+Método de comprobación que se le entrega al cliente: preguntarle a distintos sistemas de IA, por ejemplo Grok, por el nombre del negocio, antes y después de publicar. Es una referencia, no una prueba: una respuesta puede venir de otras fuentes, no demuestra indexación y no garantiza que el negocio sea citado o recomendado.
 
 ONLIKE no hace tiendas online ni ecommerce. Pagos, envíos y stock son otro rubro. Lo que sí aporta a una tienda que ya funciona es la otra mitad: una inteligencia artificial no recomienda un carrito de compras, recomienda un negocio, y para eso necesita entender qué vende, para quién, qué lo diferencia y por qué conviene comprarle.
 
