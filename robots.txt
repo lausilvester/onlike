@@ -6,7 +6,7 @@
 # y son decisiones separadas. Acá están separadas.
 #
 # Las páginas que no se indexan (diagnostico.html, diagnosticotur.html)
-# se manejan con X-Robots-Tag desde vercel.json, no con Disallow:
+# se manejan con X-Robots-Tag desde la configuración de despliegue, no con Disallow:
 # para que una página no se indexe, el bot primero tiene que poder leerla.
 
 # ============================================================

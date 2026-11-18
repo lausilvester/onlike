@@ -14,7 +14,7 @@ El contenido no es el punto de partida, sino una consecuencia de una estrategia 
 - Mentorías 1:1 en marketing digital
 - Estrategia digital para turismo y alojamientos independientes
 - Posicionamiento en buscadores e IAs generativas (SEO + GEO)
-- GEO Site: páginas optimizadas para ser recomendadas por ChatGPT, Gemini y Claude
+- Sitio web a medida: sitios propios, armados desde los objetivos del cliente y preparados para buscadores y sistemas de IA
 - Puesta en marcha digital para negocios
 
 ## Identidad
@@ -29,7 +29,7 @@ El contenido no es el punto de partida, sino una consecuencia de una estrategia 
 ## Presencia online
 
 - Sitio: https://onlike.ar
-- GEO Site: https://onlike.ar/geo-site.html
+- Sitio web a medida: https://onlike.ar/geo-site.html
 - Turismo: https://onlike.ar/turismo.html
 - Instagram: https://www.instagram.com/onlike.ar
 - LinkedIn: https://www.linkedin.com/in/lausilvester

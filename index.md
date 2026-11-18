@@ -13,7 +13,7 @@ ONLIKE es mi consultoría de estrategia digital, en Eldorado, Misiones. Trabajo 
 
 ## Los servicios
 
-Trabajo sobre una pregunta simple: qué encuentra alguien sobre tu negocio, qué entiende y qué necesita verificar antes de elegirte. Según el caso, el trabajo empieza con un diagnóstico, un GEO Site o una estrategia más amplia.
+Trabajo sobre una pregunta simple: qué encuentra alguien sobre tu negocio, qué entiende y qué necesita verificar antes de elegirte. Según el caso, el trabajo empieza con un diagnóstico, un sitio web a medida o una estrategia más amplia.
 
 ### Para turismo
 
@@ -27,9 +27,9 @@ Para alojamientos y proyectos con producto probado: reconstruyo el recorrido del
 
 ### Para cualquier negocio
 
-#### GEO Site
+#### Sitio web a medida
 
-Una página web escrita antes que diseñada, pensada desde el primer texto para personas, buscadores e inteligencias artificiales. Sitio propio en tu dominio, con botón de WhatsApp y formulario de contacto. Desde $250.000. [Ver el servicio](https://onlike.ar/geo-site.html)
+Un sitio propio, armado desde tus objetivos, con curaduría de tu material, diseño sin plantilla y preparado para buscadores e inteligencias artificiales. En tu dominio, con las páginas que necesite y los canales de contacto que elijas, como WhatsApp o formulario. Desde $250.000 para un sitio de una página. [Ver el servicio](https://onlike.ar/geo-site.html)
 
 #### Posicionamiento en buscadores e inteligencias artificiales
 
@@ -47,7 +47,7 @@ Mentoría uno a uno, a pedido: estudio previo, encuentro y apunte guía. Presenc
 
 Es mi especialidad y donde tengo el trabajo más largo: alojamientos, ecolodges, cabañas, agencias, guías, excursiones y destinos. El viajero busca, compara, verifica y arma una lista corta semanas antes del viaje. Ahí se define también cuánta reserva te va a llegar directa y cuánta va a pasar por una plataforma.
 
-Un negocio no le entrega una descripción a estos sistemas: deja señales, y ellos las recomponen. Cuando el problema está en esas señales —qué información hay, cómo está estructurada, si se puede leer— el diagnóstico deriva en un GEO Site.
+Un negocio no le entrega una descripción a estos sistemas: deja señales, y ellos las recomponen. Cuando el problema está en esas señales —qué información hay, cómo está estructurada, si se puede leer— el diagnóstico puede derivar en un sitio web a medida.
 
 ## Cada negocio trae su propia pregunta
 
@@ -73,7 +73,7 @@ Licenciada en Turismo por la Universidad Nacional de Misiones y fundadora de ONL
 
 **¿Qué es GEO?** Generative Engine Optimization: preparar la información y la presencia digital de un negocio para que pueda ser encontrada e interpretada por sistemas de inteligencia artificial cuando responden consultas. Se suma al SEO.
 
-**¿Cuánto cuestan los servicios?** Cómo te ve un viajero: $90.000 ARS. GEO Site: desde $250.000 ARS cuando traés el contenido base escrito. Las auditorías, mentorías, implementaciones de IA y capacitaciones se cotizan según el caso.
+**¿Cuánto cuestan los servicios?** Cómo te ve un viajero: $90.000 ARS. Sitio web a medida: desde $250.000 ARS por un sitio de una página, cuando traés el contenido base escrito. Las auditorías, mentorías, implementaciones de IA y capacitaciones se cotizan según el caso.
 
 **¿Trabajás solo con turismo?** Turismo es la especialidad. También profesionales independientes, servicios especializados e instituciones.
 

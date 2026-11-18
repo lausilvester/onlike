@@ -127,35 +127,38 @@ La segunda etapa la define el caso: alta y carga en una plataforma de reserva co
 
 Con usuario y contraseña, Onlike carga los cambios; sin accesos, entrega todo escrito y especificado para que lo cargue quien el cliente elija. No incluye la gestión semanal de redes: lo que se publica después lo maneja el cliente o quien elija.
 
-### 4. GEO Site — páginas web escritas antes que diseñadas
+### 4. Sitio web a medida (GEO Site)
 
 Página: https://onlike.ar/geo-site.html
 
-Un GEO Site es una página web. Nada más exótico que eso: un sitio de una sola pantalla, publicado en el dominio propio del cliente, con botón de WhatsApp y formulario de contacto conectado a su mail. Lo que lo distingue es cómo está hecho. Sirve para las tres cosas que hoy hacen falta a la vez: que lo encuentren los buscadores, que puedan leerlo las inteligencias artificiales, y que convenza a la persona que entra y tiene que decidir.
+Un sitio web a medida, también llamado GEO Site, es un sitio con las páginas que el proyecto necesita, publicado en el dominio propio del cliente, con los canales de contacto que el cliente elige: botón de WhatsApp, formulario que llega a su mail, mail o redes. Lo que lo distingue es cómo está hecho. Sirve para las tres cosas que hoy hacen falta a la vez: que lo encuentren los buscadores, que puedan leerlo las inteligencias artificiales, y que convenza a la persona que entra y tiene que decidir.
 
-El nombre nombra el diferencial, no el producto. Lo que se compra es un sitio web.
+Lo que se compra es un sitio web a medida. La preparación para buscadores e inteligencias artificiales (GEO) es un plus del trabajo, no el eje.
 
 Qué incluye:
 
-- El sitio publicado en el dominio propio del cliente, en Vercel, sin costo mensual de hosting. El cliente solo paga el dominio en nic.ar una vez por año y queda a su nombre.
-- Redacción y estructuración del contenido para que se entienda solo, incluso leído fuera de contexto.
+- El sitio publicado en el dominio propio del cliente, con el sitio y los accesos a nombre del cliente y sin costo mensual de hosting. El cliente solo paga el dominio en nic.ar una vez por año y queda a su nombre; ONLIKE lo acompaña en el registro y gestiona el dominio sin cargo.
+- Adaptación, selección y estructuración del contenido base que aporta el cliente, para que se entienda solo, incluso leído fuera de contexto. La redacción desde cero se cotiza por separado.
 - `robots.txt` con política diferenciada por bot. `OAI-SearchBot` no es `GPTBot`; `Claude-SearchBot`, `Claude-User` y `ClaudeBot` son tres agentes distintos; `PerplexityBot` es búsqueda y no entrenamiento. Se decide cada uno por separado: se deja pasar a los que buscan y se elige qué hacer con los que entrenan.
-- Cinco schemas JSON-LD conectados en `@graph`: WebSite, Organization, LocalBusiness, Person y FAQPage, con identificadores estables.
-- Archivos: index.html, robots.txt, sitemap.xml, llms.txt, llms-full.txt y favicon.svg.
-- Alta y verificación en Google Search Console y Bing Webmaster Tools, a nombre del cliente.
-- Formulario de contacto conectado al mail del cliente y botón de WhatsApp flotante.
-- Chequeo previo: tres búsquedas en ChatGPT sobre el negocio antes de escribir una línea, para ver de dónde se parte.
+- Datos estructurados Schema.org según el contenido y el tipo de proyecto (por ejemplo WebSite, Organization, Person, LocalBusiness o FAQPage cuando corresponden), conectados con identificadores estables.
+- Archivos: las páginas HTML que el proyecto necesita, robots.txt, sitemap.xml, llms.txt, llms-full.txt y favicon.svg.
+- Alta y verificación en Google Search Console y Bing Webmaster Tools, con el cliente agregado como colaborador para que reciba los reportes. Al publicar, ONLIKE verifica que todo funcione y consulta a las IAs para ver qué reconocen del sitio, como referencia para controles posteriores.
+- Canales de contacto a elección del cliente: formulario conectado a su mail y botón de WhatsApp flotante son opcionales.
+- Curaduría del material del cliente: se selecciona, se ordena y se deja afuera lo que no suma.
+- Diseño con punto de vista propio: antes de construir se define paleta, tipografía y estructura pensadas para el proyecto y se las revisa contra lo que el cliente quiere lograr.
+- Revisión antes de entregar: en celular, con navegación por teclado, contraste y movimiento reducido.
+- Reunión en el sitio de las notas, entrevistas, reseñas y menciones públicas sobre el cliente, con sus enlaces.
 - Una ronda de ajustes.
 
-Precio: desde $250.000 ARS si el cliente aporta los textos escritos. Si la redacción la hace ONLIKE, el valor cambia. Esa es la única variable que mueve el presupuesto. Portugués e inglés con costo adicional, cada idioma con su propio `llms.txt`, `hreflang` y preguntas frecuentes adaptadas a cómo consulta ese público. Píxel de Meta y GA4 con costo adicional. Seña del 50% para entrar en agenda, saldo contra entrega. Dos cupos por mes.
+Precio: desde $250.000 ARS por un sitio de una página, si el cliente aporta los textos escritos. Más páginas o redacción desde cero se presupuestan según el proyecto. Portugués e inglés con costo adicional, cada idioma con su propio `llms.txt`, `hreflang` y preguntas frecuentes adaptadas a cómo consulta ese público. Píxel de Meta y GA4 con costo adicional. Seña del 50% para entrar en agenda, saldo contra entrega.
 
 Sobre `llms.txt` y `llms-full.txt`: van puestos, y el argumento es explícito. Google declaró que su buscador los ignora. Cuestan cero. Si mañana alguno de esos sistemas empieza a leerlos, el sitio ya los tiene. Se prueban, no se venden como mecanismo demostrado.
 
-Lo que no incluye: el dominio, que registra y paga el cliente en nic.ar; el servicio de mail; producción o compra de fotos; diseño de logo; redacción de textos legales; rondas de ajuste extra; cambios estructurales después de entregado; ni seguimiento posterior a la entrega, que se contrata aparte de forma mensual y se ofrece recién después de entregar.
+Lo que no incluye: el dominio, que registra y paga el cliente en nic.ar; el servicio de mail; producción o compra de fotos; diseño de logo; redacción de textos legales; rondas de ajuste extra; cambios estructurales después de entregado; ni cambios nuevos después de entregado, que se hacen y se presupuestan a pedido. Si algo de lo entregado se rompe, ONLIKE lo soluciona sin costo.
 
 Lo que no promete: que una inteligencia artificial recomiende al cliente, ni una posición o un ranking dentro de una respuesta generada, ni plazos de resultado. Ninguna web garantiza que te recomienden. Lo que sí se puede mejorar es el material que existe sobre el negocio, que es la parte que depende del negocio. La lógica: si no aparecés, no te pueden recomendar; si aparecés, podés ser recomendado.
 
-Método de comprobación que se le entrega al cliente: preguntarle a Grok por el nombre del negocio. Cuando lo que dice el sitio empieza a aparecer en esa respuesta, el sitio entró al circuito. No garantiza recomendación; confirma que hay material accesible.
+Método de comprobación que se le entrega al cliente: preguntarle a distintos sistemas de IA, por ejemplo Grok, por el nombre del negocio, antes y después de publicar. Es una referencia, no una prueba: una respuesta puede venir de otras fuentes, no demuestra indexación y no garantiza que el negocio sea citado o recomendado.
 
 ONLIKE no hace tiendas online ni ecommerce. Pagos, envíos y stock son otro rubro. Lo que sí aporta a una tienda que ya funciona es la otra mitad: una inteligencia artificial no recomienda un carrito de compras, recomienda un negocio, y para eso necesita entender qué vende, para quién, qué lo diferencia y por qué conviene comprarle.
 
@@ -451,7 +454,7 @@ Para charlas:
 - Laura Silvester, página oficial: https://onlike.ar/laura-silvester.html
 - Estrategia digital para turismo, auditoría y ordenamiento digital: https://onlike.ar/turismo.html
 - Cómo te ve un viajero: https://onlike.ar/como-te-ve-un-viajero.html
-- GEO Site: https://onlike.ar/geo-site.html
+- Sitio web a medida (GEO Site): https://onlike.ar/geo-site.html
 - Test Turismo: https://onlike.ar/test-turismo
 - Notas: https://onlike.ar/notas.html
 - Cuando una IA recomienda un destino turístico, decide también qué negocios aparecen: https://onlike.ar/destinos-turisticos-inteligencia-artificial.html
