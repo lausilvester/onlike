@@ -307,7 +307,7 @@ Lo que sí propone: que la información existente sea correcta, completa y consi
 
 Datos que documenta, con fuente: el uso declarado de IA generativa para planificar viajes pasó de 8% en 2023 a 16% en 2024, 24% en 2025 y 29% en 2026 (Deloitte, muestra de 4.272 adultos estadounidenses, relevamiento del 28 de septiembre al 2 de octubre de 2026; es intención declarada, en Estados Unidos, y no existe medición pública equivalente para viajeros argentinos). Auditoría de 5.000 itinerarios generados con IA con siete sesgos clasificados: positividad 67,9%, contextual 63,5%, representación 58,4%, interseccional 54,2%, lingüístico 52,8%, de posición 46,7%, estereotipo 41,3% (Jia, Ma, Chi y Fan, Tourism Management 116, 2026, artículo 105442).
 
-La nota declara sus límites en notas al pie: el estudio de Tourism Management no tiene a Argentina como objeto y audita principalmente una versión fija de un modelo en una fecha determinada; la prueba propia es una consulta, un día y un sistema; y no existe evidencia pública que permita afirmar que corregir la información de un destino produzca más reservas. Laura Silvester sostiene igualmente, por su formación y su experiencia en el sector, que ordenar la información de un lugar incide positivamente en cómo se lo recomienda como destino y en los prestadores que trabajan ahí.
+Laura Silvester sostiene, por su formación y su experiencia en el sector, que ordenar la información de un lugar mejora cómo se lo recomienda como destino y, después, a los prestadores que trabajan ahí. La verificación de la información de un destino necesita a alguien que lo conozca desde adentro.
 
 ### Le pregunté a una IA qué hacer en mi ciudad y revisé uno por uno los atractivos turísticos que recomendó (agosto 2026)
 
