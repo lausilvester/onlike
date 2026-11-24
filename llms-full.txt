@@ -333,6 +333,18 @@ Quién puede resolverlo: ningún prestador puede hacerlo solo, pero sí una cám
 
 Límites declarados: las respuestas de estos sistemas cambian entre consultas y entre personas, porque generan un texto nuevo cada vez; la clasificación de qué se puede visitar es de elaboración propia sobre conocimiento directo de la ciudad y no sobre un registro oficial, porque ese registro no existe en forma pública y verificable; la autora no preguntó por horarios ni accesos, y registra qué contiene el itinerario que el sistema entrega cuando no se le pide ese detalle; y no existe evidencia que permita afirmar que corregir la información de un destino produzca más reservas.
 
+### Cuánta información necesita un negocio (noviembre 2026)
+
+URL: https://onlike.ar/cuanta-informacion-necesita-un-negocio.html
+
+Nota para cualquier negocio, no solo turístico. Tesis propia: la mayoría de los negocios no tiene escrita la información que importa. La saben y la contestan por mensaje o en el mostrador, pero no la dejaron escrita donde otro pueda leerla. Si el precio, las condiciones o para quién es el negocio no están escritos, ni la persona que elige ni los buscadores, los mapas o los asistentes de inteligencia artificial los tienen a mano.
+
+Qué sostiene: no existe un largo correcto; la información alcanza cuando alguien puede decidir sin completar huecos ni abrir otro canal, y pesan más las dudas sobre el precio, las condiciones, si es para esa persona o no y qué pasa si algo sale mal. Dar demasiada información es tan malo como dar poca: primero lo esencial en pocas líneas y después el detalle. Hay que ser lo más específico posible en lo que cambia la decisión (los ejemplos de rubros están armados para ilustrar). Decir para quién no es suma, como lectura propia y no como medición. La información tiene que estar en un lugar público y escrita como texto: no cuenta lo que está solo en una foto, una historia de Instagram, un mensaje privado o en la cabeza de quien atiende.
+
+Datos con fuente: entre los viajeros argentinos encuestados por Booking.com (800, relevamiento de enero de 2025, publicado el 31 de marzo de 2026), tres de las cinco fuentes de inspiración más nombradas son pantallas: redes sociales 54%, buscadores 36% e inteligencia artificial 19%; amigos y familiares 52% y agencias de viajes 17%. En el Stiplo Barcelona Study 2026, la cantidad de reseñas en Google tuvo una correlación de Spearman de 0,50 con las apariciones en respuestas de IA, y la de las plataformas de reserva, 0,11, en los mismos 343 hoteles. En Filieri (2015), con 354 cuestionarios, la calidad informativa de la reseña se asocia con su utilidad percibida (β = 0,555) y la cantidad de reseñas no es significativa (β = 0,032).
+
+Límites declarados: lo de Booking es lo que declaran los encuestados y es un dato de turismo, sin dato propio para otros rubros; lo de Stiplo son asociaciones y no causas, en una sola ciudad, "aparecer" no equivale a recomendación ni a reserva, y la empresa vende servicios de visibilidad en IA; Filieri mide percepción declarada en una muestra de conveniencia de dos universidades (Irlanda e Inglaterra), no ventas ni uso de IA. Los gráficos de ejemplo y la tabla son ilustrativos.
+
 ### La información turística es infraestructura del destino (noviembre 2026)
 
 URL: https://onlike.ar/informacion-turistica-infraestructura-destino.html
@@ -341,7 +353,7 @@ Nota independiente, fuera de la serie de legibilidad digital de destinos. Sostie
 
 Definición de trabajo: la información turística es el conjunto de datos y contenidos que permite reconocer qué ofrece un destino, evaluar si esa propuesta encaja con un viaje y organizar la visita. Circula por el sitio oficial, el portal provincial, los mapas, las plataformas, las páginas de los prestadores, las redes y también la oficina de informes.
 
-Datos con fuente: entre los argentinos encuestados por Booking.com (800 viajeros, relevamiento de enero de 2025, publicado el 31 de marzo de 2026), el 54% se inspira en redes sociales, el 52% en amigos y familiares, el 36% en buscadores, el 19% en herramientas de inteligencia artificial y el 16% en mapas; podían elegir más de una fuente. En el estudio de Expedia Group sobre siete mercados, que no incluye Argentina ni Brasil, el 59% empezó a planificar sin un único destino definido y el panel registró un promedio de 141 páginas de contenido turístico en los 45 días previos a la compra.
+Datos con fuente: entre los argentinos encuestados por Booking.com (800 viajeros, relevamiento de enero de 2025, publicado el 31 de marzo de 2026), el 54% se inspira en redes sociales, el 52% en amigos y familiares, el 36% en buscadores, el 19% en herramientas de inteligencia artificial y el 17% en agencias de viajes; los porcentajes suman más de 100. En el estudio de Expedia Group sobre siete mercados, que no incluye Argentina ni Brasil, el 59% empezó a planificar sin un único destino definido y el panel registró un promedio de 141 páginas de contenido turístico en los 45 días previos a la compra.
 
 Tesis: promocionar y ser encontrado son dos trabajos distintos. La promoción llega a quien la ve; la información llega a quien busca, haya visto o no una acción promocional. La nota compara cómo Finlandia, Francia, Australia, España y Curitiba (Brasil) gestionan la información turística como infraestructura pública, aclara que esas plataformas publican cobertura y adopción pero no una evaluación de demanda antes y después, y cierra con la pregunta de qué encuentran los viajeros que todavía están decidiendo adónde ir.
 
@@ -458,6 +470,7 @@ Para charlas:
 - Test Turismo: https://onlike.ar/test-turismo
 - Notas: https://onlike.ar/notas.html
 - Cuando una IA recomienda un destino turístico, decide también qué negocios aparecen: https://onlike.ar/destinos-turisticos-inteligencia-artificial.html
+- Cuánta información necesita un negocio: https://onlike.ar/cuanta-informacion-necesita-un-negocio.html
 - La información turística es infraestructura del destino: https://onlike.ar/informacion-turistica-infraestructura-destino.html
 - Qué contesta una IA sobre el turismo en Eldorado, Misiones: https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html
 - Versión en portugués de esa nota: https://onlike.ar/pt/destinos-turisticos-inteligencia-artificial.html
