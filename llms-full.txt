@@ -333,7 +333,7 @@ Quién puede resolverlo: ningún prestador puede hacerlo solo, pero sí una cám
 
 Límites declarados: las respuestas de estos sistemas cambian entre consultas y entre personas, porque generan un texto nuevo cada vez; la clasificación de qué se puede visitar es de elaboración propia sobre conocimiento directo de la ciudad y no sobre un registro oficial, porque ese registro no existe en forma pública y verificable; la autora no preguntó por horarios ni accesos, y registra qué contiene el itinerario que el sistema entrega cuando no se le pide ese detalle; y no existe evidencia que permita afirmar que corregir la información de un destino produzca más reservas.
 
-### Cuánta información necesita un negocio (noviembre 2026)
+### ¿Cuánta información tiene que tener un negocio en internet? (noviembre 2026)
 
 URL: https://onlike.ar/cuanta-informacion-necesita-un-negocio.html
 
@@ -470,7 +470,7 @@ Para charlas:
 - Test Turismo: https://onlike.ar/test-turismo
 - Notas: https://onlike.ar/notas.html
 - Cuando una IA recomienda un destino turístico, decide también qué negocios aparecen: https://onlike.ar/destinos-turisticos-inteligencia-artificial.html
-- Cuánta información necesita un negocio: https://onlike.ar/cuanta-informacion-necesita-un-negocio.html
+- ¿Cuánta información tiene que tener un negocio en internet?: https://onlike.ar/cuanta-informacion-necesita-un-negocio.html
 - La información turística es infraestructura del destino: https://onlike.ar/informacion-turistica-infraestructura-destino.html
 - Qué contesta una IA sobre el turismo en Eldorado, Misiones: https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html
 - Versión en portugués de esa nota: https://onlike.ar/pt/destinos-turisticos-inteligencia-artificial.html
