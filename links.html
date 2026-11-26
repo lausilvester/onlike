@@ -28,6 +28,11 @@
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
   :root {
+  --texto-2: #D7DAE4;   /* secundario sobre oscuro  12,9:1 */
+  --texto-3: #AEB3C3;   /* terciario sobre oscuro    8,6:1 */
+  --tinta-2: #3A3B48;   /* secundario sobre claro   11,1:1 */
+  --tinta-3: #4A4B59;   /* terciario sobre claro     8,6:1 */
+
     --dark: #131625;
     --lima: #C8FF00;
     --lima-hover: #B8EB00;
@@ -74,14 +79,14 @@
     font-size: 0.86rem;
     font-weight: 300;
     line-height: 1.55;
-    color: rgba(255,255,255,0.55);
+    color: var(--texto-3);
     letter-spacing: 0.005em;
   }
 
   .tagline strong {
     display: block;
     font-weight: 400;
-    color: rgba(255,255,255,0.85);
+    color: var(--white);
   }
 
   .links {
@@ -95,7 +100,7 @@
   .label {
     font-size:0.85rem;
     font-weight: 700;
-    color: rgba(255,255,255,0.5);
+    color: var(--texto-3);
     margin: 1.35rem 0 0.35rem;
   }
 
@@ -131,7 +136,7 @@
     font-weight: 300;
     letter-spacing: 0;
     line-height: 1.45;
-    color: rgba(19,22,37,0.78);
+    color: var(--tinta-2);
   }
 
   .link-btn--primary:hover {
@@ -147,7 +152,7 @@
   }
 
   .link-btn--primary.link-btn--magenta span {
-    color: rgba(19,22,37,0.92);
+    color: var(--ink);
   }
 
   .link-btn--primary.link-btn--magenta:hover {
@@ -171,7 +176,7 @@
     font-weight: 300;
     letter-spacing: 0;
     line-height: 1.45;
-    color: rgba(255,255,255,0.5);
+    color: var(--texto-3);
   }
 
   .link-btn--featured:hover {
@@ -196,7 +201,7 @@
   .link-btn--soft {
     background: transparent;
     border: 1px solid rgba(255,255,255,0.35);
-    color: rgba(255,255,255,0.9);
+    color: var(--white);
     font-weight: 400;
   }
 
@@ -207,7 +212,7 @@
   }
 
   .social { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.65rem; }
-  .social a { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,0.35); border-radius: 3px; color: rgba(255,255,255,0.9); transition: all 0.18s ease; }
+  .social a { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,0.35); border-radius: 3px; color: var(--white); transition: all 0.18s ease; }
   .social a:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.06); color: var(--white); }
   .social svg { width: 20px; height: 20px; fill: currentColor; }
 
@@ -215,7 +220,7 @@
     margin-top: 2.75rem;
     font-size: 0.8rem;
     font-weight: 300;
-    color: rgba(255,255,255,0.5);
+    color: var(--texto-3);
     letter-spacing: 0.04em;
   }
 

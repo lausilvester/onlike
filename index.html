@@ -424,6 +424,11 @@
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
   :root {
+  --texto-2: #D7DAE4;   /* secundario sobre oscuro  12,9:1 */
+  --texto-3: #AEB3C3;   /* terciario sobre oscuro    8,6:1 */
+  --tinta-2: #3A3B48;   /* secundario sobre claro   11,1:1 */
+  --tinta-3: #4A4B59;   /* terciario sobre claro     8,6:1 */
+
     --dark:         #131625;
     --dark-deep:    #0b0d18;
     --violeta:  #8E51B9;
@@ -515,7 +520,7 @@
   }
 
   .nav-links a {
-    color: rgba(19,22,37,0.6);
+    color: var(--tinta-3);
     font-size:0.8rem;
     font-weight: 500;
     letter-spacing: 0.06em;
@@ -600,14 +605,14 @@
   }
 
   h1.hero-title > span { display: block; }
-  h1.hero-title .light { font-weight: 300; color: rgba(255,255,255,0.82); }
+  h1.hero-title .light { font-weight: 300; color: var(--texto-2); }
   h1.hero-title .accent { color: var(--lima); }
 
   .hero-subtitle {
     font-size:1rem;
     font-weight: 300;
     line-height: 1.75;
-    color: rgba(255,255,255,0.75);
+    color: var(--texto-2);
     max-width: 460px;
     margin-bottom: 2rem;
     animation: fadeUp 0.5s 0.16s ease both;
@@ -618,7 +623,7 @@
     padding-left: 1.2rem;
     font-size:0.9rem;
     font-style: italic;
-    color: rgba(255,255,255,0.5);
+    color: var(--texto-3);
     line-height: 1.65;
     margin-bottom: 2.5rem;
     animation: fadeUp 0.5s 0.22s ease both;
@@ -799,7 +804,7 @@
     font-size:0.9rem;
     font-weight: 400;
     line-height: 1.75;
-    color: rgba(19,22,37,0.75);
+    color: var(--tinta-3);
   }
 
   /* ============================================================
@@ -832,7 +837,7 @@
   }
   .tourism-badge {
     background: transparent;
-    color: rgba(255,255,255,0.75);
+    color: var(--texto-2);
     border: 1px solid rgba(255,255,255,0.2);
     padding: 0.3rem 0.8rem;
     font-size:0.8rem;
@@ -855,7 +860,7 @@
   }
   .tourism-feature-text {
     font-size:0.9rem;
-    color: rgba(255,255,255,0.62);
+    color: var(--texto-3);
     line-height: 1.7;
   }
 
@@ -877,7 +882,7 @@
   .method-header .section-title { color: var(--dark); }
   .method-header p {
     font-size:1rem;
-    color: rgba(19,22,37,0.65);
+    color: var(--tinta-3);
     line-height: 1.8;
   }
   .accordion { border-top: 2px solid var(--dark); }
@@ -933,7 +938,7 @@
   }
   .who-card p {
     font-size:0.9rem;
-    color: rgba(19,22,37,0.7);
+    color: var(--tinta-3);
     line-height: 1.65;
   }
 
@@ -969,7 +974,7 @@
     display: flex;
     align-items: center;
     gap: 0.85rem;
-    color: rgba(255,255,255,0.5);
+    color: var(--texto-3);
     font-size:0.9rem;
     transition: color var(--transition);
   }
@@ -1000,7 +1005,7 @@
   .form-group label {
     font-size:0.8rem;
     font-weight: 600;
-    color: rgba(255,255,255,0.85);
+    color: var(--white);
   }
   .form-group input,
   .form-group textarea {
@@ -1020,7 +1025,7 @@
     border-color: var(--lima);
   }
   .form-group input::placeholder,
-  .form-group textarea::placeholder { color: rgba(255,255,255,0.5); }
+  .form-group textarea::placeholder { color: var(--texto-3); }
   .form-submit {
     background: var(--lima);
     color: var(--dark);
@@ -1041,7 +1046,7 @@
   }
   .form-note {
     font-size:0.8rem;
-    color: rgba(255,255,255,0.5);
+    color: var(--texto-3);
     line-height: 1.5;
     text-align: center;
   }
@@ -1061,7 +1066,7 @@
   }
   .info-box p {
     font-size:0.9rem;
-    color: rgba(255,255,255,0.55);
+    color: var(--texto-3);
     line-height: 1.65;
   }
   .social-row {
@@ -1075,7 +1080,7 @@
     align-items: center;
     gap: 0.35rem;
     background: rgba(255,255,255,0.07);
-    color: rgba(255,255,255,0.6);
+    color: var(--texto-3);
     padding: 0.4rem 0.9rem;
     border-radius: var(--radius);
     font-size:0.8rem;
@@ -1105,7 +1110,7 @@
   }
   .footer-copy {
     font-size:0.8rem;
-    color: rgba(255,255,255,0.7);
+    color: var(--texto-3);
     letter-spacing: 0.03em;
   }
   .footer-logo img {
@@ -1120,7 +1125,7 @@
   }
   .footer-privacy a {
     font-size:0.8rem;
-    color: rgba(255,255,255,0.7);
+    color: var(--texto-3);
     transition: color var(--transition);
   }
   .footer-privacy a:hover { color: var(--lima); }
@@ -1371,7 +1376,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             Consultar por WhatsApp
           </a>
 </div>
-<p style="margin-top:1.5rem;font-size:0.8rem;color:rgba(255,255,255,0.5);line-height:1.7;">Un negocio no le entrega una descripción a estos sistemas: deja señales, y ellos las recomponen. Cuando el problema está en esas señales —qué información hay, cómo está estructurada, si se puede leer— el diagnóstico puede derivar en un sitio web a medida.</p>
+<p style="margin-top:1.5rem;font-size:0.8rem;color: var(--texto-3);line-height:1.7;">Un negocio no le entrega una descripción a estos sistemas: deja señales, y ellos las recomponen. Cuando el problema está en esas señales —qué información hay, cómo está estructurada, si se puede leer— el diagnóstico puede derivar en un sitio web a medida.</p>
 </div>
 <div class="tourism-right" role="list">
 <div class="tourism-feature" role="listitem">
@@ -1416,14 +1421,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <span aria-hidden="true" class="accordion-num">01</span>
 <div>
 <h3 class="accordion-title" style="display:block;margin-bottom:0.7rem;">Primero, mirar.</h3>
-<p style="font-size:0.9rem;color:rgba(19,22,37,0.72);line-height:1.8;max-width:640px;">Miro el negocio desde afuera, cruzo lo que se cree adentro con lo que muestran los canales y ordeno prioridades antes de tocar nada.</p>
+<p style="font-size:0.9rem;color: var(--tinta-3);line-height:1.8;max-width:640px;">Miro el negocio desde afuera, cruzo lo que se cree adentro con lo que muestran los canales y ordeno prioridades antes de tocar nada.</p>
 </div>
 </div>
 <div class="accordion-item" role="listitem" style="padding:1.9rem 0;display:grid;grid-template-columns:auto 1fr;gap:1.6rem;align-items:start;">
 <span aria-hidden="true" class="accordion-num">02</span>
 <div>
 <h3 class="accordion-title" style="display:block;margin-bottom:0.7rem;">Después, acompañar.</h3>
-<p style="font-size:0.9rem;color:rgba(19,22,37,0.72);line-height:1.8;max-width:640px;">Acompaño la ejecución con hoja de ruta y sigo qué cambia en buscadores y en las IAs.</p>
+<p style="font-size:0.9rem;color: var(--tinta-3);line-height:1.8;max-width:640px;">Acompaño la ejecución con hoja de ruta y sigo qué cambia en buscadores y en las IAs.</p>
 </div>
 </div>
 </div>
@@ -1435,7 +1440,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="container">
 <div class="who-inner">
 <h2 class="section-title" id="who-heading" style="color:var(--dark);">Para quién<br/>trabajo.</h2>
-<p style="font-size:1rem;color:rgba(19,22,37,0.7);line-height:1.85;max-width:660px;margin-bottom:2.5rem;">El criterio es el tipo de decisión. Cuanto más necesita una persona entender, comparar, verificar y confiar antes de elegir, más sentido tiene trabajar cómo aparece y se explica el negocio en digital. Turismo es mi especialidad.</p>
+<p style="font-size:1rem;color: var(--tinta-3);line-height:1.85;max-width:660px;margin-bottom:2.5rem;">El criterio es el tipo de decisión. Cuanto más necesita una persona entender, comparar, verificar y confiar antes de elegir, más sentido tiene trabajar cómo aparece y se explica el negocio en digital. Turismo es mi especialidad.</p>
 <div class="who-grid" role="list">
 <article class="who-card" role="listitem">
 <h3>Turismo y hospitalidad</h3>
@@ -1485,7 +1490,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section aria-labelledby="faq-heading" id="faq" style="background:var(--dark);color:var(--white);padding:7rem 0;">
 <div class="container">
 <h2 class="section-title" id="faq-heading" style="color:var(--white);margin-bottom:3rem;">Lo que más<br/>me preguntan.</h2>
-<div class="faq-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;"><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Qué es GEO y por qué importa ahora?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">GEO significa Generative Engine Optimization. Es el trabajo de preparar la información y la presencia digital de un negocio para que pueda ser encontrada e interpretada por motores generativos cuando responden consultas. Se suma al SEO; trabaja otra capa de la visibilidad.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Por qué algunos negocios aparecen en las IAs y otros no?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">Las respuestas se construyen con información disponible en distintas fuentes. Cuando esa información es escasa, contradictoria o difícil de relacionar, el sistema puede describir mal el negocio, reconocerlo solo por su nombre o dejarlo afuera de una respuesta.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Cómo sé qué dicen las IAs sobre mi negocio?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">Una prueba simple es preguntar por lo que ofrecés sin usar tu nombre y después buscarte por nombre. Para hacerlo con más criterio publiqué el procedimiento completo en la nota <a href="https://onlike.ar/buscate-vos-que-dicen-las-ias.html" style="color:var(--lavanda);text-decoration:none;border-bottom:1px solid rgba(160,138,229,0.4);">“Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio”</a>.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Qué incluye un sitio web a medida?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">Es un sitio web propio, armado a partir de tus objetivos: selecciono y ordeno tu material, diseño la estructura y el estilo a medida, lo publico a tu nombre y lo dejo preparado para buscadores y sistemas de IA, con el alta en Google Search Console y Bing. Desde $250.000 ARS para un sitio de una página. <a href="https://onlike.ar/geo-site.html" style="color:var(--lavanda);text-decoration:none;border-bottom:1px solid rgba(160,138,229,0.4);">Ver más</a></p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Cuánto cuestan los servicios?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">Cómo te ve un viajero: $90.000 ARS. Sitio web a medida: desde $250.000 ARS por un sitio de una página, cuando traés el contenido base escrito. Las auditorías, mentorías, implementaciones de IA y capacitaciones se cotizan según el caso.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Trabajás solo con turismo?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">Turismo es mi especialidad. También trabajo con profesionales independientes, servicios especializados e instituciones cuando la decisión necesita explicación, comparación y confianza antes de elegir.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Hacés community management o gestión de redes?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">Mi trabajo es estratégico: diagnóstico, posicionamiento, sitios y metodología. La gestión operativa y diaria de redes queda fuera del servicio.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Ofrecés servicios presenciales o remotos?</h3><p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;">Los dos. Trabajo de forma remota con proyectos de todo el país y de manera presencial en Misiones cuando el proyecto lo requiere.</p></div></div>
+<div class="faq-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;"><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Qué es GEO y por qué importa ahora?</h3><p style="font-size:0.9rem;color: var(--texto-3);line-height:1.75;">GEO significa Generative Engine Optimization. Es el trabajo de preparar la información y la presencia digital de un negocio para que pueda ser encontrada e interpretada por motores generativos cuando responden consultas. Se suma al SEO; trabaja otra capa de la visibilidad.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Por qué algunos negocios aparecen en las IAs y otros no?</h3><p style="font-size:0.9rem;color: var(--texto-3);line-height:1.75;">Las respuestas se construyen con información disponible en distintas fuentes. Cuando esa información es escasa, contradictoria o difícil de relacionar, el sistema puede describir mal el negocio, reconocerlo solo por su nombre o dejarlo afuera de una respuesta.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Cómo sé qué dicen las IAs sobre mi negocio?</h3><p style="font-size:0.9rem;color: var(--texto-3);line-height:1.75;">Una prueba simple es preguntar por lo que ofrecés sin usar tu nombre y después buscarte por nombre. Para hacerlo con más criterio publiqué el procedimiento completo en la nota <a href="https://onlike.ar/buscate-vos-que-dicen-las-ias.html" style="color:var(--lavanda);text-decoration:none;border-bottom:1px solid rgba(160,138,229,0.4);">“Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio”</a>.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Qué incluye un sitio web a medida?</h3><p style="font-size:0.9rem;color: var(--texto-3);line-height:1.75;">Es un sitio web propio, armado a partir de tus objetivos: selecciono y ordeno tu material, diseño la estructura y el estilo a medida, lo publico a tu nombre y lo dejo preparado para buscadores y sistemas de IA, con el alta en Google Search Console y Bing. Desde $250.000 ARS para un sitio de una página. <a href="https://onlike.ar/geo-site.html" style="color:var(--lavanda);text-decoration:none;border-bottom:1px solid rgba(160,138,229,0.4);">Ver más</a></p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Cuánto cuestan los servicios?</h3><p style="font-size:0.9rem;color: var(--texto-3);line-height:1.75;">Cómo te ve un viajero: $90.000 ARS. Sitio web a medida: desde $250.000 ARS por un sitio de una página, cuando traés el contenido base escrito. Las auditorías, mentorías, implementaciones de IA y capacitaciones se cotizan según el caso.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Trabajás solo con turismo?</h3><p style="font-size:0.9rem;color: var(--texto-3);line-height:1.75;">Turismo es mi especialidad. También trabajo con profesionales independientes, servicios especializados e instituciones cuando la decisión necesita explicación, comparación y confianza antes de elegir.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Hacés community management o gestión de redes?</h3><p style="font-size:0.9rem;color: var(--texto-3);line-height:1.75;">Mi trabajo es estratégico: diagnóstico, posicionamiento, sitios y metodología. La gestión operativa y diaria de redes queda fuera del servicio.</p></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding:1.5rem 0;"><h3 style="font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.6rem;">¿Ofrecés servicios presenciales o remotos?</h3><p style="font-size:0.9rem;color: var(--texto-3);line-height:1.75;">Los dos. Trabajo de forma remota con proyectos de todo el país y de manera presencial en Misiones cuando el proyecto lo requiere.</p></div></div>
 </div>
 </section>
 <!-- CHECKLIST -->
@@ -1493,7 +1498,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="container">
 <div style="max-width:700px;">
 <h2 class="section-title" id="checklist-heading" style="color:var(--dark);"><span class="light">Diez preguntas para</span><br/>revisar tu propio negocio.</h2>
-<p style="font-size:1rem;color:rgba(19,22,37,0.7);line-height:1.85;margin:1.6rem 0 2.2rem;">Un test gratuito para ver qué entiende un viajero de tu negocio: si te encuentra, si te entiende y si puede decidir. Se hace sin dejar datos y al final te da un diagnóstico con prioridades.</p>
+<p style="font-size:1rem;color: var(--tinta-3);line-height:1.85;margin:1.6rem 0 2.2rem;">Un test gratuito para ver qué entiende un viajero de tu negocio: si te encuentra, si te entiende y si puede decidir. Se hace sin dejar datos y al final te da un diagnóstico con prioridades.</p>
 <a aria-label="Hacer el Test Turismo" class="btn-primary" href="https://onlike.ar/test-turismo">Hacer el Test Turismo</a>
 </div>
 </div>

@@ -140,6 +140,11 @@
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
   :root {
+  --texto-2: #D7DAE4;   /* secundario sobre oscuro  12,9:1 */
+  --texto-3: #AEB3C3;   /* terciario sobre oscuro    8,6:1 */
+  --tinta-2: #3A3B48;   /* secundario sobre claro   11,1:1 */
+  --tinta-3: #4A4B59;   /* terciario sobre claro     8,6:1 */
+
     --dark:         #131625;
     --dark-deep:    #0b0d18;
     --violeta:  #8E51B9;
@@ -191,7 +196,7 @@
   .nav-logo img { height: 38px; width: auto; }
   .nav-links { display: flex; align-items: center; gap: 2.5rem; list-style: none; }
   .nav-links a {
-    color: rgba(19,22,37,0.6); font-size: 0.82rem; font-weight: 500;
+    color: var(--tinta-3); font-size: 0.82rem; font-weight: 500;
     letter-spacing: 0.06em; text-transform: uppercase; transition: color var(--transition);
   }
   .nav-links a:hover, .nav-links a:focus { color: var(--violeta); outline: none; }
@@ -256,7 +261,7 @@
   }
   .hero-meta {
     display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;
-    font-size: 0.82rem; color: rgba(255,255,255,0.5); animation: fadeUp 0.5s 0.24s ease both;
+    font-size: 0.82rem; color: var(--texto-3); animation: fadeUp 0.5s 0.24s ease both;
   }
   .hero-meta span { display: flex; align-items: center; gap: 0.4rem; }
   .hero-meta .dot { width: 4px; height: 4px; background: var(--lima); border-radius: 50%; }
@@ -343,10 +348,10 @@
     font-size:0.85rem; font-weight: 700; color: var(--lima); margin-bottom: 0.75rem;
   }
   .sources-group p {
-    font-size: 0.8rem; color: rgba(255,255,255,0.5); line-height: 1.85;
+    font-size: 0.8rem; color: var(--texto-3); line-height: 1.85;
   }
   .sources-note {
-    font-size: 0.8rem; color: rgba(255,255,255,0.5); line-height: 1.7;
+    font-size: 0.8rem; color: var(--texto-3); line-height: 1.7;
     border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1.5rem; margin-top: 1rem;
   }
 
@@ -360,11 +365,11 @@
     font-family: var(--font-display); font-size: 1.2rem; font-weight: 700;
     margin-bottom: 0.6rem; line-height: 1.15;
   }
-  .service-card p { font-size: 0.85rem; font-weight: 300; line-height: 1.75; color: rgba(255,255,255,0.65); }
+  .service-card p { font-size: 0.85rem; font-weight: 300; line-height: 1.75; color: var(--texto-3); }
   .work-cta {
     margin-top: 3rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem;
   }
-  .work-cta p { font-size: 0.88rem; color: rgba(255,255,255,0.6); }
+  .work-cta p { font-size: 0.88rem; color: var(--texto-3); }
   .btn-wa {
     display: inline-flex; align-items: center; gap: 0.6rem;
     background: var(--lima); color: var(--dark);
@@ -383,7 +388,7 @@
   .contact-direct { display: flex; flex-direction: column; gap: 0.85rem; }
   .contact-link {
     display: flex; align-items: center; gap: 0.85rem;
-    color: rgba(255,255,255,0.5); font-size: 0.9rem; transition: color var(--transition);
+    color: var(--texto-3); font-size: 0.9rem; transition: color var(--transition);
   }
   .contact-link:hover { color: var(--lima); }
   .contact-link-icon {
@@ -398,11 +403,11 @@
   .info-box h4 {
     font-size:0.85rem; font-weight: 700; color: var(--lima); margin-bottom: 0.65rem;
   }
-  .info-box p { font-size: 0.87rem; color: rgba(255,255,255,0.55); line-height: 1.65; }
+  .info-box p { font-size: 0.87rem; color: var(--texto-3); line-height: 1.65; }
   .social-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
   .social-pill {
     display: inline-flex; align-items: center; background: rgba(255,255,255,0.07);
-    color: rgba(255,255,255,0.6); padding: 0.4rem 0.9rem; border-radius: 100px;
+    color: var(--texto-3); padding: 0.4rem 0.9rem; border-radius: 100px;
     font-size: 0.8rem; font-weight: 500; border: 1px solid transparent;
     transition: all var(--transition);
   }
@@ -413,7 +418,7 @@
   .contact-right { display: flex; flex-direction: column; gap: 1.25rem; }
   .back-link {
     display: inline-flex; align-items: center; gap: 0.4rem;
-    font-size: 0.82rem; color: rgba(255,255,255,0.5); transition: color var(--transition);
+    font-size: 0.82rem; color: var(--texto-3); transition: color var(--transition);
     margin-top: 1.5rem;
   }
   .back-link:hover { color: var(--lima); }
@@ -425,10 +430,10 @@
     display: flex; align-items: center; justify-content: space-between;
     flex-wrap: wrap; gap: 1rem; border-top: 1px solid rgba(255,255,255,0.04);
   }
-  .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.5); letter-spacing: 0.03em; }
+  .footer-copy { font-size: 0.8rem; color: var(--texto-3); letter-spacing: 0.03em; }
   .footer-privacy {
     background: transparent; display: flex; gap: 1.5rem; }
-  .footer-privacy a { font-size: 0.8rem; color: rgba(255,255,255,0.5); transition: color var(--transition); }
+  .footer-privacy a { font-size: 0.8rem; color: var(--texto-3); transition: color var(--transition); }
   .footer-privacy a:hover { color: var(--lima); }
 
   /* WA FLOAT */
