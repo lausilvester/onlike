@@ -175,7 +175,7 @@ Botones y cajas con radio de 2px. En celular, margen lateral de 1.5rem y sin scr
 
 ## Etiquetas, pastillas y mayúsculas
 
-Se retiraron el 26 de noviembre de 2026, por decisión de Laura: no se usan etiquetas pequeñas en mayúsculas con espaciado, ni pastillas redondeadas, ni chips de credenciales. Tampoco rótulos en mayúsculas dentro de los gráficos: van en minúscula, sin espaciado. Las siglas (INDEC, ANAC) se escriben como siglas. Por ahora la única excepción es el menú de arriba.
+Se retiraron el 26 de noviembre de 2026, por decisión de Laura: no se usan etiquetas pequeñas en mayúsculas con espaciado, ni pastillas redondeadas, ni chips de credenciales. Tampoco rótulos en mayúsculas dentro de los gráficos: van en minúscula, sin espaciado. Las siglas (INDEC, ANAC) se escriben como siglas. Las únicas excepciones son el menú de arriba y la etiqueta «¿Es para vos?» del hero de `geo-site.html`, en mayúsculas con 0.06em de espaciado, como el menú. Laura la pidió así el 26 de noviembre de 2026.
 
 ## Aire en las notas
 
