@@ -1,10 +1,8 @@
-# ONLIKE · Laura Silvester — Que te encuentren. Que te entiendan.
+# ONLIKE · Laura Silvester — Que te encuentren. Que te entiendan. Que te elijan.
 
-Estrategia y posicionamiento digital para negocios turísticos y profesionales independientes. Diagnósticos y páginas web para que te encuentren, te entiendan y puedan elegirte.
+Estrategia y posicionamiento digital para negocios de todos los rubros, con especialidad en turismo y destinos. Miro dónde se pierde hoy un cliente —en Google, en las redes o en lo que contesta una IA— y te ayudo a resolverlo.
 
-Hay tres problemas que desde adentro se sienten igual: no te encuentran, te encuentran y no te entienden, o te entienden y no te eligen. Mi trabajo empieza por saber cuál de los tres tenés.
-
-ONLIKE es mi consultoría de estrategia digital, en Eldorado, Misiones. Trabajo con turismo —mi especialidad—, con profesionales independientes y con instituciones: servicios que hay que explicar antes de que alguien los elija.
+ONLIKE es mi consultoría de estrategia digital, en Eldorado, Misiones. Mi especialidad es el turismo, y trabajo con negocios, profesionales e instituciones que sienten que hoy las redes sociales solas no alcanzan: para lograr sus objetivos comerciales, la estrategia tiene que ser más amplia y considerar el ambiente donde hoy se decide, atravesado por IAs y algoritmos.
 
 - Sitio: https://onlike.ar/
 - WhatsApp: https://wa.me/543751566488 (+54 3751 566488)
@@ -13,71 +11,73 @@ ONLIKE es mi consultoría de estrategia digital, en Eldorado, Misiones. Trabajo 
 
 ## Los servicios
 
-Trabajo sobre una pregunta simple: qué encuentra alguien sobre tu negocio, qué entiende y qué necesita verificar antes de elegirte. Según el caso, el trabajo empieza con un diagnóstico, un sitio web a medida o una estrategia más amplia.
+Miro tu negocio dentro del ecosistema digital, hoy atravesado por IAs y algoritmos. Con una mirada global, más allá de las redes sociales, analizo el comportamiento del consumidor, tu competencia, tu propuesta de valor y la estrategia de posicionamiento que hace falta para que te elijan. Según lo que necesites, te digo qué cambiar y lo hacés vos, lo hago yo o te enseño a hacerlo.
 
-### Para turismo
+### Para negocios turísticos
 
 #### Cómo te ve un viajero
 
-Miro tu alojamiento, excursión o servicio desde afuera, como alguien que está por decidir: plataformas de reserva, Google, redes, WhatsApp y qué contesta ChatGPT. Entrego un documento con qué conviene cambiar primero. Después, lo resolvés vos solo o lo resolvemos juntos, con una mentoría, un ordenamiento o los dos. $90.000. [Ver el servicio](https://onlike.ar/como-te-ve-un-viajero.html)
+Reviso cómo se presenta tu negocio turístico y si es capaz de atraer a un viajero: plataformas de reserva, Google, redes, WhatsApp y lo que contesta ChatGPT. No es un informe para archivar: sabés qué está fallando, qué cambiar primero y cómo hacerlo, solo o conmigo. $90.000 ARS. [Ver el servicio](https://onlike.ar/como-te-ve-un-viajero.html)
 
 #### Estrategia digital para turismo
 
-Para alojamientos y proyectos con producto probado: reconstruyo el recorrido del viajero para ver dónde se pierde la consulta, qué canal conviene trabajar primero y cuánta reserva está pasando por plataformas. Siempre empieza con una auditoría que termina en una hoja de ruta. Después la ejecutás vos o sumo mi intervención: ordenamiento digital, mentoría o los dos. [Ver el servicio](https://onlike.ar/turismo.html)
+Encuentro los errores y las oportunidades que hoy te cuestan reservas: por qué tenés buenas reseñas y pocas consultas, si te conviene hacer publicidad y dónde poner la plata primero. Si estás arrancando, qué armar primero. Te llevás una hoja de ruta con las soluciones detalladas y ordenadas por impacto y, si hace falta, las aplico yo. [Ver el servicio](https://onlike.ar/turismo.html)
 
-### Para cualquier negocio
+### Para destinos, municipios y cámaras
+
+#### Información y presencia turística digital
+
+Hoy, aparecer en buscadores e inteligencias artificiales es determinante para captar viajeros, y cada destino compite con otros por entrar en las opciones de un viaje. Trabajamos en eso: la información turística ordenada, los canales digitales completos y un equipo capacitado para sostenerlo. Se consulta por WhatsApp o por mail.
+
+### También para otros rubros
 
 #### Sitio web a medida
 
-Un sitio propio, armado desde tus objetivos, con curaduría de tu material, diseño sin plantilla y preparado para buscadores e inteligencias artificiales. En tu dominio, con las páginas que necesite y los canales de contacto que elijas, como WhatsApp o formulario. Desde $250.000 para un sitio de una página. [Ver el servicio](https://onlike.ar/geo-site.html)
+Un sitio propio, en tu dominio, armado desde tus objetivos: ordeno tu material, diseño sin plantilla y lo dejo preparado para buscadores e IAs. Con las páginas y los canales de contacto que necesites. Desde $250.000 ARS, sitio de una página. [Ver el servicio](https://onlike.ar/geo-site.html)
 
-#### Posicionamiento en buscadores e inteligencias artificiales
+#### Implementación de inteligencia artificial en tu negocio
 
-Trabajo la información que existe sobre el negocio y cómo está estructurada, para que buscadores y sistemas de inteligencia artificial puedan encontrarla y entenderla. SEO y GEO.
-
-#### Implementación de IA
-
-Recorro en persona los procesos de tu negocio: acompaño las tareas y converso con el equipo. Te propongo qué se puede resolver con inteligencia artificial y qué conviene dejar como está, y después elegimos juntos qué poner en marcha. Presencial.
+Recorro en persona tu negocio, acompaño las tareas y converso con el equipo. Te propongo qué se puede resolver con inteligencia artificial y elegimos juntos qué poner en marcha. Solo presencial, en Eldorado y la zona, para cualquier rubro.
 
 #### Mentorías 1:1, capacitaciones y disertaciones
 
-Mentoría uno a uno, a pedido: estudio previo, encuentro y apunte guía. Presencial en tu negocio si estás en Eldorado, virtual para el resto del país. Charlas y capacitaciones para cámaras, entes de turismo, instituciones educativas y equipos de trabajo, sobre inteligencia artificial aplicada, comportamiento del viajero y visibilidad digital.
+A pedido y totalmente personalizadas: antes reviso tu rubro, tu negocio y tu competencia. Con dinámicas prácticas y material de apoyo para que sigas trabajando después. Algunos temas que ya di: IA aplicada, Meta Ads, venta por redes, estrategia de TikTok para una marca, cómo aparecer en ChatGPT y visibilidad de destinos. Se arma según lo que necesites.
 
-## Digital para turismo
+## Turismo, mi especialidad
 
-Es mi especialidad y donde tengo el trabajo más largo: alojamientos, ecolodges, cabañas, agencias, guías, excursiones y destinos. El viajero busca, compara, verifica y arma una lista corta semanas antes del viaje. Ahí se define también cuánta reserva te va a llegar directa y cuánta va a pasar por una plataforma.
+Trabajo con negocios turísticos que están arrancando o que trabajan hace años, y con destinos. El viajero busca, compara y arma una lista corta semanas antes del viaje, y elige con lo que encuentra en pantalla. No me alcanza con saber qué idea tiene de tu negocio: trabajo para que tenga la correcta.
 
-Un negocio no le entrega una descripción a estos sistemas: deja señales, y ellos las recomponen. Cuando el problema está en esas señales —qué información hay, cómo está estructurada, si se puede leer— el diagnóstico puede derivar en un sitio web a medida.
-
-## Cada negocio trae su propia pregunta
-
-Cada propietario llega con un problema propio, y casi nunca es el mismo. Empiezo escuchando ese. La investigación sale de ahí: cómo funciona el negocio por dentro, qué mercado tiene, qué decisión hay que tomar. Lo que investigo lo decide el caso.
-
-1. **Primero, mirar.** Miro el negocio desde afuera, cruzo lo que se cree adentro con lo que muestran los canales y ordeno prioridades antes de tocar nada.
-2. **Después, acompañar.** Acompaño la ejecución con hoja de ruta y sigo qué cambia en buscadores y en las IAs.
-
-## Para quién trabajo
-
-El criterio es el tipo de decisión. Cuanto más necesita una persona entender, comparar, verificar y confiar antes de elegir, más sentido tiene trabajar cómo aparece y se explica el negocio en digital.
-
-- **Turismo y hospitalidad** (especialidad): alojamientos, ecolodges, cabañas, agencias, guías, excursiones y destinos.
-- **Profesionales independientes**: servicios que necesitan explicar con claridad qué hacen, para quién y por qué elegirlos.
-- **Servicios especializados y productos a medida**: todo lo que se pregunta, se compara y se consulta antes de decidir.
-- **Instituciones, cámaras y organizaciones**: entes de turismo y grupos de prestadores que necesitan ordenar su información y la de quienes representan.
+**Un caso.** Surucuá, un ecolodge de avistaje de aves en Misiones, con 13 años, reseñas casi perfectas y huéspedes que vuelven, tenía meses muy flojos. Cuando alguien les escribía, el mail que mandaban vendía muy bien. El problema estaba antes de ese mail: la web lo llamaba “rústico” y las IAs lo repetían, Google lo tenía como “hotel de 3 estrellas”, y en eBird, la plataforma que consultan los observadores de aves antes de viajar, tenía más especies registradas que su competidor directo, pero nadie lo sabía. No había que publicar más: había que traducir lo que ya tenían. [Ver el caso completo](https://onlike.ar/auditoria-negocio-turistico.html)
 
 ## Laura Silvester
 
-Licenciada en Turismo por la Universidad Nacional de Misiones y fundadora de ONLIKE. Trabaja en estrategia y posicionamiento digital, con especialidad en turismo, y da clases en nivel superior desde 2011. Más de veinte años de experiencia en el sector, incluida gestión hotelera. [Trayectoria completa](https://onlike.ar/laura-silvester.html)
+Soy licenciada en Turismo por la Universidad Nacional de Misiones, tengo más de veinte años en el sector, incluida gestión hotelera, y doy clases en nivel superior desde 2011. En junio de 2026 diserté sobre inteligencia artificial y comportamiento del viajero en el [Fórum Internacional de Turismo do Iguassu](https://onlike.ar/forum2026.html).
+
+No tengo ningún talento especial: soy apasionadamente curiosa. Investigo hasta entender causas y efectos, cómo funciona la tecnología y cómo se comporta la gente cuando busca y decide. Lo que afirmo, lo compruebo: cuando digo que una inteligencia artificial recomienda trece lugares de mi ciudad, [voy y los chequeo uno por uno](https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html), y cuando publico una cifra, digo de dónde salió y qué no prueba. Después, a la hora de proponer, criterio y sentido común: soluciones prácticas, que se puedan hacer.
+
+Video: [Mi historia con el marketing turístico](https://www.tiktok.com/@lausilvester/video/7632793413007478036). En 2008 puse un hotel en Booking y llegaron turistas de Rusia a Eldorado.
+
+[Trayectoria, docencia, conferencias e investigaciones publicadas](https://onlike.ar/laura-silvester.html)
 
 ## Preguntas frecuentes
 
-**¿Qué es GEO?** Generative Engine Optimization: preparar la información y la presencia digital de un negocio para que pueda ser encontrada e interpretada por sistemas de inteligencia artificial cuando responden consultas. Se suma al SEO.
+**¿Qué es GEO y por qué importa ahora?** GEO significa Generative Engine Optimization. Es el trabajo de preparar la información y la presencia digital de un negocio para que pueda ser encontrada e interpretada por motores generativos cuando responden consultas. Se suma al SEO; trabaja otra capa de la visibilidad.
+
+**¿Por qué algunos negocios aparecen en las IAs y otros no?** Las respuestas se construyen con información disponible en distintas fuentes. Cuando esa información es escasa, contradictoria o difícil de relacionar, el sistema puede describir mal el negocio, reconocerlo solo por su nombre o dejarlo afuera de una respuesta.
+
+**¿Cómo sé qué dicen las IAs sobre mi negocio?** Una prueba simple es preguntar por lo que ofrecés sin usar tu nombre y después buscarte por nombre. El procedimiento completo está en la nota [Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio](https://onlike.ar/buscate-vos-que-dicen-las-ias.html).
 
 **¿Cuánto cuestan los servicios?** Cómo te ve un viajero: $90.000 ARS. Sitio web a medida: desde $250.000 ARS por un sitio de una página, cuando traés el contenido base escrito. Las auditorías, mentorías, implementaciones de IA y capacitaciones se cotizan según el caso.
 
-**¿Trabajás solo con turismo?** Turismo es la especialidad. También profesionales independientes, servicios especializados e instituciones.
+**¿Hacés community management o gestión de redes?** No hago la gestión del día a día, pero sí dejo tus redes a punto cuando hace falta implementar: creo cuentas, ordeno perfiles e historias destacadas, armo publicaciones y doy de alta tu negocio en plataformas como Booking, a veces en varias redes a la vez. Después, en una mentoría, te enseño a seguir a vos o a tu equipo.
 
-**¿Servicios presenciales o remotos?** Los dos. Remoto en todo el país, presencial en Misiones.
+## Revisá tu negocio turístico en diez preguntas
+
+El Test Turismo es gratis y no te pide datos. Respondés diez preguntas sobre cómo te ve un viajero y al final te dice qué conviene revisar primero. [Hacer el Test Turismo](https://onlike.ar/test-turismo)
+
+## Contame tu caso
+
+Contame qué negocio tenés o querés armar, dónde está y qué te está pasando. Te respondo yo. Remoto en todo el país y presencial en Misiones.
 
 ## Más
 

@@ -49,25 +49,24 @@ Escala de razón 1,25. Cada paso se distingue del anterior sin tener que mirar d
 
 | rem | px | Para qué |
 |---|---|---|
-| 0.875 | 14 | Notas al pie, fuentes de gráfico, metadata |
-| 1 | 16 | Texto secundario, descripciones de tarjeta |
-| **1.125** | **18** | **Cuerpo de nota. El tamaño por defecto** |
-| 1.375 | 22 | Bajada, frase destacada, h3 |
+| 0.875 | 14 | Menú, pie de página y llamadas de nota al pie. Nada del contenido |
+| 1 | 16 | Texto secundario, descripciones de tarjeta, metadata, epígrafes y fuentes de gráfico |
+| **1.125** | **18** | **Cuerpo de nota y bajada (la bajada en 300). El tamaño por defecto** |
+| 1.375 | 22 | Frase destacada, h3 |
 | 1.75 | 28 | h3 de página de servicio, encabezados de grupo |
 | 2.25 | 36 | h2 |
-| 2.75 | 44 | Titular de nota |
-| 4.5 | 72 | Titular de la home |
+| 2.75 | 44 | Titular de nota y de la página Notas, y títulos de sección de la home |
+| 4.5 | 72 | Sin uso desde noviembre de 2026 (era el titular de la home) |
 
 ### Los titulares responsivos
 
-Cinco roles, y nada más. Cada uno va entre dos pasos de la escala.
+Cuatro roles, y nada más. Cada uno va entre dos pasos de la escala.
 
 | Rol | clamp | Rango |
 |---|---|---|
-| Titular de la home | `clamp(2.75rem, 6vw, 4.5rem)` | 44–72px |
-| Titular de página de servicio | `clamp(2.25rem, 4.8vw, 3.5rem)` | 36–56px |
-| Titular de nota | `clamp(1.75rem, 3.6vw, 2.75rem)` | 28–44px |
-| h2 | `clamp(1.75rem, 3vw, 2.25rem)` | 28–36px |
+| Titular de la home y de página de servicio | `clamp(2.25rem, 4.8vw, 3.5rem)` | 36–56px |
+| Titular de nota y de la página Notas, y títulos de sección de la home | `clamp(1.75rem, 3.6vw, 2.75rem)` | 28–44px |
+| h2 de notas y servicios, y título del cierre de las notas | `clamp(1.75rem, 3vw, 2.25rem)` | 28–36px |
 | h3 y frase destacada | `clamp(1.375rem, 2.2vw, 1.75rem)` | 22–28px |
 
 Una página que inventa su propio `clamp()` rompe la escala: con 34 declaraciones distintas, el sitio llegó a mostrar 19 tamaños donde el CSS declaraba 8.
@@ -174,6 +173,11 @@ Botones y cajas con radio de 2px. En celular, margen lateral de 1.5rem y sin scr
 - `<title>` de hasta 60 caracteres y descripción de 120 a 155.
 - Sumar la página al `sitemap.xml` y, si es una nota, al índice de `notas.html` y a `llms.txt`, con su imagen de 1200 × 630 en `assets/`.
 
-## Pendiente de definir por Laura
+## Etiquetas, pastillas y mayúsculas
 
-Hoy varias páginas usan etiquetas pequeñas en mayúsculas con espaciado, pastillas redondeadas y chips de credenciales. Una versión anterior de este archivo los prohibía. Laura decide si se mantienen o se retiran.
+Se retiraron el 26 de noviembre de 2026, por decisión de Laura: no se usan etiquetas pequeñas en mayúsculas con espaciado, ni pastillas redondeadas, ni chips de credenciales. Tampoco rótulos en mayúsculas dentro de los gráficos: van en minúscula, sin espaciado. Las siglas (INDEC, ANAC) se escriben como siglas. Por ahora la única excepción es el menú de arriba.
+
+## Aire en las notas
+
+- Entre el menú y el titular de la portada: 6rem de padding arriba, que con el menú fijo deja unos 27px en escritorio y 35px en celular. Igual en todas las notas y en la página Notas.
+- Entre la portada y el cuerpo: 2rem abajo de la portada y 2rem arriba del cuerpo.
