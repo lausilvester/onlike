@@ -161,7 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="geo-hero-inner">
       <div>
-        <h1 id="geo-h1"><span class="light">Un sitio web</span><br>que muestra tu trabajo<br>como realmente es.</h1>
+        <h1 id="geo-h1"><span class="light">Un sitio web</span><br>que muestra tu trabajo<br><span class="geo-marca">como realmente es.</span></h1>
         <p class="geo-hero-sub">Parto de lo que querés lograr, ordeno y selecciono todo el material que tenés y diseño cada parte a tu estilo. El resultado es un sitio propio, claro en el celular y con caminos concretos para que te contacten, te pidan un presupuesto o te consulten por una compra o una reserva.</p>
         <p class="geo-hero-sub" style="margin-bottom:1.5rem;">Además, queda preparado para buscadores y asistentes de inteligencia artificial como ChatGPT.</p>
         <p class="geo-hero-claim">Versión base desde $250.000 ARS.</p>
@@ -170,7 +170,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="#caso" class="btn-ghost">Ver un caso publicado</a>
         </div>
       </div>
-      <div class="geo-ask">
+      <div class="geo-chat">
+        <p class="geo-chat-q">¿Dónde puedo ver y comprar la obra de Soledad Imbach?</p>
+        <div class="geo-chat-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="geo-chat-a">
+          <p>En su sitio, <strong>soledadimbach.com.ar</strong>, están sus series fotográficas, sus libros y la obra en venta. Los precios se consultan por mail.</p>
+        </div>
+        <p class="geo-chat-nota">Ejemplo ilustrativo. Lo que contesta cada IA depende de la plataforma y de la consulta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="geo-paravos" aria-label="Para quién es">
+  <div class="container">
+    <div class="geo-ask">
         <p class="geo-ask-label">¿Es para vos?</p>
         <p class="geo-ask-q">Si tu negocio o tu trabajo depende de que te elijan, es para vos:</p>
         <ul class="geo-ask-list">
@@ -179,7 +193,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
         <p class="geo-ask-close">Todo queda a tu nombre: el sitio, el dominio y los accesos. Me contás qué querés lograr y yo lo convierto en un sitio claro y pensado para tu objetivo.</p>
       </div>
-    </div>
   </div>
 </section>
 
@@ -205,6 +218,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .geo-ent { background:#0d0f1c; padding:1.5rem 1.5rem; }
   .geo-ent-t { font-family:'Outfit',sans-serif; font-size: 1.125rem; font-weight:700; color: var(--texto-1); margin-bottom:0.5rem; line-height:1.6; }
   .geo-ent-d { font-size: 1rem; color: var(--texto-3); line-height: 1.5; }
+  .geo-marca { background: linear-gradient(transparent 26%, #C8FF00 26%, #C8FF00 88%, transparent 88%); color: #131625; padding: 0 0.2em; margin-left: -0.05em; display: inline-block; line-height: 1.15; margin-top: 0.1em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+  .geo-paravos { background: #fff; padding: 4rem 0; }
+  .geo-paravos .geo-ask { background: #F4F4F0; border: 0; border-left: 3px solid #8E51B9; max-width: 860px; }
+  .geo-paravos .geo-ask-label { color: #8E51B9; }
+  .geo-paravos .geo-ask-q { color: var(--ink); }
+  .geo-paravos .geo-ask-list li { color: var(--tinta-2); border-top-color: rgba(31,31,46,0.12); }
+  .geo-paravos .geo-ask-list strong { color: var(--ink); }
+  .geo-paravos .geo-ask-close { color: var(--tinta-2); }
+  .geo-chat { background: #fff; border-radius: 16px; padding: 1.5rem; box-shadow: 0 24px 48px rgba(0,0,0,0.35); }
+  .geo-chat-q { margin-left: auto; max-width: 88%; background: #EDE6F7; color: var(--ink); font-size: 1rem; line-height: 1.5; padding: 0.75rem 1rem; border-radius: 12px 12px 2px 12px; }
+  .geo-chat-dots { display: none; gap: 6px; padding: 1rem 0.25rem; }
+  .geo-chat-dots span { width: 8px; height: 8px; border-radius: 50%; background: #AEB3C3; animation: geoDot 1s infinite ease-in-out; }
+  .geo-chat-dots span:nth-child(2) { animation-delay: 0.15s; }
+  .geo-chat-dots span:nth-child(3) { animation-delay: 0.3s; }
+  .geo-chat-a { margin-top: 1rem; max-width: 92%; background: #F4F4F0; border-radius: 12px 12px 12px 2px; padding: 1rem; }
+  .geo-chat-a p { font-size: 1rem; line-height: 1.5; color: var(--ink); }
+  .geo-chat-a strong { color: #8E51B9; }
+  .geo-chat-nota { font-size: 0.875rem; line-height: 1.5; color: var(--tinta-3); margin-top: 1rem; }
+  .geo-chat--pensando .geo-chat-dots { display: flex; }
+  .geo-chat--pensando .geo-chat-a { display: none; }
+  .geo-chat--respuesta .geo-chat-a { animation: geoAparece 0.5s ease both; }
+  @keyframes geoDot { 0%, 80%, 100% { opacity: 0.3; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-4px); } }
+  @keyframes geoAparece { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .geo-caso-fig { position: relative; margin-top: 2.5rem; max-width: 900px; padding-right: 130px; }
+  .geo-caso-pc { border: 1px solid #d9d9d2; border-top: 22px solid #e1e1da; border-radius: 8px; overflow: hidden; box-shadow: 0 16px 40px rgba(19,22,37,0.15); background: #000; }
+  .geo-caso-pc img, .geo-caso-cel img { display: block; width: 100%; height: auto; }
+  .geo-caso-cel { position: absolute; right: 0; bottom: 2.5rem; width: 200px; border: 8px solid #131625; border-radius: 24px; overflow: hidden; box-shadow: 0 16px 40px rgba(19,22,37,0.3); background: #000; }
+  .geo-caso-fig figcaption { font-size: 1rem; color: var(--tinta-3); margin-top: 1rem; }
+  @media (max-width: 760px) {
+    .geo-caso-fig { padding-right: 70px; }
+    .geo-caso-cel { width: 110px; border-width: 5px; border-radius: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .geo-chat-dots span, .geo-chat--respuesta .geo-chat-a { animation: none; }
+  }
+  .wa-float.wa-oculto { opacity: 0; visibility: hidden; pointer-events: none; }
   .geo-link { color:#8E51B9; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
   .geo-ent-d code, .geo-extra code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size: 0.875rem; color: var(--texto-2); }
   .geo-extra { margin-top:2rem; padding:1.5rem 1.5rem; background:rgba(142,81,185,.12); border:1px solid rgba(142,81,185,.3); border-radius:4px; }
@@ -262,6 +311,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <h2 id="geo-caso-t">Un caso real.</h2>
     <p class="geo-limits-intro"><a class="geo-link" href="https://soledadimbach.com.ar/" target="_blank" rel="noopener noreferrer">Soledad Imbach</a> es artista visual, fotógrafa y autora de Eldorado. Tenía series, libros, obra en venta, talleres y mucho material disperso. Lo ordené en un sitio de diez páginas donde cada cosa tiene su lugar: quien busca una serie la encuentra con su contexto, y quien quiere comprar una obra llega a la consulta. El 18 de noviembre de 2026, Grok ya lo mostraba como primer resultado al buscar su nombre.</p>
+    <figure class="geo-caso-fig">
+      <div class="geo-caso-pc"><img src="assets/caso-soledad-escritorio.webp" width="1200" height="750" alt="Portada del sitio de Soledad Imbach en una computadora: su nombre, la frase sobre su obra y una fotografía en blanco y negro" loading="lazy" decoding="async"></div>
+      <div class="geo-caso-cel"><img src="assets/caso-soledad-celular.webp" width="375" height="812" alt="El mismo sitio en un celular" loading="lazy" decoding="async"></div>
+      <figcaption>soledadimbach.com.ar, en computadora y en celular.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -398,11 +452,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </nav>
   </div>
 </footer>
-<a data-wa="geo-site-flotante" href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20contacto%20desde%20tu%20sitio%20web." target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Contactar por WhatsApp">
+<a data-wa="geo-site-flotante" href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20contacto%20desde%20tu%20sitio%20web." target="_blank" rel="noopener noreferrer" class="wa-float wa-oculto" aria-label="Contactar por WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   <span class="wa-float-text">Escribime por WhatsApp</span>
 </a>
 <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var wa = document.querySelector('.wa-float');
+    var hero = document.querySelector('.geo-hero');
+    if (wa && hero && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function(e) { wa.classList.toggle('wa-oculto', e[0].isIntersecting); }).observe(hero);
+    } else if (wa) { wa.classList.remove('wa-oculto'); }
+  });
+  (function() {
+    var chat = document.querySelector('.geo-chat');
+    if (!chat || !window.matchMedia || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    chat.classList.add('geo-chat--pensando');
+    setTimeout(function() {
+      chat.classList.remove('geo-chat--pensando');
+      chat.classList.add('geo-chat--respuesta');
+    }, 1600);
+  })();
   var toggle = document.getElementById('nav-toggle');
   var navLinks = document.getElementById('nav-links');
   if (toggle && navLinks) {

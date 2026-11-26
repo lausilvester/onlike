@@ -96,7 +96,7 @@ Atados al tamaño. Cuanto más grande la letra, más cerrado el interlineado.
 ### Reglas
 
 - Ningún texto de lectura por debajo de 0.875rem (14px).
-- Nunca una palabra pintada de otro color ni en cursiva dentro de un titular.
+- Nunca una palabra pintada de otro color ni en cursiva dentro de un titular. Excepción, pedida por Laura el 26 de noviembre de 2026: en `geo-site.html`, «como realmente es.» va resaltado con un fondo lima y tinta encima, como un marcador.
 - **Un título se lee como título.** Más grande que el texto que encabeza, nunca igual ni menor. Los pisos: h2 desde 1,6 veces el cuerpo, h3 desde 1,25, h4 desde 1,12. Una pregunta de preguntas frecuentes que se ve igual que su respuesta no funciona como pregunta.
 - **Largo de línea entre 60 y 80 caracteres.** Si una columna pasa de 80, se agranda la letra o se limita el ancho con `max-width` en `ch`, no en píxeles.
 - El titular de la home lleva dos líneas en 300 y la tercera en 700, con el punto final en lima. Es un ritmo que atraviesa el titular entero, no una palabra resaltada.
@@ -152,6 +152,7 @@ Botones y cajas con radio de 2px. En celular, margen lateral de 1.5rem y sin scr
 - Se detiene con `prefers-reduced-motion` y muestra una pose fija que se entienda sola.
 - Nada de textos que aparecen al hacer scroll ni efectos en cada tarjeta.
 - Referencia: el viajero con la valija en `como-te-ve-un-viajero.html`.
+- En `geo-site.html` la animación es un chat: una pregunta a una IA, tres puntos de espera y la respuesta. Es una excepción a «sin texto adentro», pedida por Laura el 26 de noviembre de 2026. El texto está en el HTML desde el principio, la animación corre una sola vez al cargar y no con el scroll, y con `prefers-reduced-motion` o sin JavaScript el chat se ve completo y quieto. Lleva la aclaración «Ejemplo ilustrativo».
 
 ## Contenido fijo
 
