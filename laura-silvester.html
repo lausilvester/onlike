@@ -32,35 +32,39 @@
 <style>
   *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
   :root {
+  --ink: #1F1F2E;       /* texto sobre claro */
+
+  --texto-1: #ECEEF6;   /* blanco roto sobre oscuro  15,5:1 */
+
   --texto-2: #D7DAE4;   /* secundario sobre oscuro  12,9:1 */
   --texto-3: #AEB3C3;   /* terciario sobre oscuro    8,6:1 */
   --tinta-2: #3A3B48;   /* secundario sobre claro   11,1:1 */
   --tinta-3: #4A4B59;   /* terciario sobre claro     8,6:1 */
  --dark:#131625; --dark-deep:#0b0d18; --lima:#C8FF00; --violeta:#8E51B9; --gray-light:#F4F4F0; --t:0.22s ease; }
   html { scroll-behavior:smooth; }
-  body { font-family:'Outfit',sans-serif; background:var(--dark); color:#fff; overflow-x:hidden; -webkit-font-smoothing:antialiased; }
+  body { font-family:'Outfit',sans-serif; background:var(--dark); color: var(--texto-1); overflow-x:hidden; -webkit-font-smoothing:antialiased; }
   img { max-width:100%; height:auto; display:block; }
   a { text-decoration:none; color:inherit; }
   header { position:fixed; top:0; left:0; right:0; z-index:100; }
   header nav { display:flex; align-items:center; justify-content:space-between; padding:1rem 3rem; background:rgba(255,255,255,0.98); backdrop-filter:blur(12px); border-bottom:1px solid rgba(19,22,37,0.08); }
   .nav-logo img { height:36px; width:auto; }
   .nav-links { display:flex; align-items:center; gap:2rem; list-style:none; }
-  .nav-links a { color: var(--tinta-3); font-size: 0.875rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; transition:color var(--t); }
+  .nav-links a { color: var(--tinta-3); font-size: 0.875rem; font-weight:400; letter-spacing:0.06em; text-transform:uppercase; transition:color var(--t); }
   .nav-links a:hover { color:var(--dark); }
-  .nav-cta { background:var(--dark)!important; color:#fff!important; padding:0.5rem 1.1rem!important; border-radius:2px; }
+  .nav-cta { background:var(--dark)!important; color: var(--texto-1)!important; padding:0.5rem 1.1rem!important; border-radius:2px; }
   .nav-cta:hover { background:var(--lima)!important; color:var(--dark)!important; }
   .container { max-width:1000px; margin:0 auto; padding:0 3rem; }
   .label { display:inline-block; font-size: 1rem; font-weight:700; margin-bottom:1rem; color:var(--lima); }
   .label-dark { color:var(--violeta); }
-  h2.sec { font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(1.9rem,3.2vw,2.8rem); line-height:1.05; letter-spacing:-0.02em; margin-bottom:1.5rem; }
+  h2.sec { font-family:'Outfit',sans-serif; font-weight:700; font-size: clamp(1.75rem, 3.6vw, 2.75rem); line-height:1.05; letter-spacing:-0.02em; margin-bottom:1.5rem; }
 
   /* HERO */
-  .hero { background:var(--dark); padding: 4rem 0 4.5rem; position:relative; overflow:hidden; }
+  .hero { background:var(--dark); padding: 4rem 0 4rem; position:relative; overflow:hidden; }
   .hero-inner { display:grid; grid-template-columns:200px 1fr; gap:3rem; align-items:start; }
   .hero-foto { width:200px; height:240px; object-fit:cover; border-radius:3px; filter:grayscale(15%); }
-  .hero h1 { font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(2.6rem,5vw,4rem); line-height:1.05; letter-spacing:-0.03em; margin-bottom:1rem; }
+  .hero h1 { font-family:'Outfit',sans-serif; font-weight:700; font-size: clamp(2.25rem, 4.8vw, 3.5rem); line-height:1.05; letter-spacing:-0.03em; margin-bottom:1rem; }
   .chips { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem; }
-  .chip { background:rgba(200,255,0,0.1); border:1px solid rgba(200,255,0,0.22); color:var(--lima); padding:0.25rem 0.85rem; font-size: 0.875rem; font-weight:700; border-radius:100px; }
+  .chip { background:rgba(200,255,0,0.1); border:1px solid rgba(200,255,0,0.22); color:var(--lima); padding:0.25rem 0.75rem; font-size: 0.875rem; font-weight:700; border-radius:100px; }
   .chip-n { background:rgba(255,255,255,0.05); border-color:rgba(255,255,255,0.14); color: var(--texto-3); }
   .entidad { font-size: 1.125rem; line-height: 1.6; color: var(--texto-3); max-width:640px; }
 
@@ -68,7 +72,7 @@
   .datos { background:var(--gray-light); color:var(--dark); padding:3rem 0; }
   .datos h2 { font-family:'Outfit',sans-serif; font-size: 1.75rem; font-weight:700; color: var(--tinta-3); margin-bottom:1.5rem; }
   .datos-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5px; background:#e1e1da; }
-  .dato { background:var(--gray-light); padding:1rem 1.25rem; }
+  .dato { background:var(--gray-light); padding:1rem 1rem; }
   .dato dt { font-size: 1rem; font-weight:700; color: var(--tinta-3); margin-bottom:0.25rem; }
   .dato dd { font-size: 1rem; font-weight:700; color:var(--dark); line-height:1.5; }
 
@@ -79,14 +83,14 @@
   .band-light { background:#fff; color:var(--dark); }
   .prosa { font-size: 1.125rem; line-height: 1.6; color: var(--texto-3); max-width:720px; }
   .prosa + .prosa { margin-top:1rem; }
-  .prosa strong { color:#fff; font-weight:700; }
+  .prosa strong { color: var(--texto-1); font-weight:700; }
   .band-light .prosa { color: var(--tinta-3); }
   .band-light .prosa strong { color:var(--dark); }
 
   .lista { list-style:none; max-width:760px; }
   .lista li { padding:1rem 0; border-top:1px solid rgba(255,255,255,0.09); font-size: 1rem; line-height: 1.5; color: var(--texto-3); }
   .lista li:last-child { border-bottom:1px solid rgba(255,255,255,0.09); }
-  .lista strong { color:#fff; font-weight:700; display:block; margin-bottom:0.25rem; font-size: 1.125rem; }
+  .lista strong { color: var(--texto-1); font-weight:700; display:block; margin-bottom:0.25rem; font-size: 1.125rem; }
   .lista .meta { color: var(--texto-3); font-size: 0.875rem; }
   .band-light .lista li { border-color:rgba(19,22,37,0.1); color: var(--tinta-3); }
   .band-light .lista strong { color:var(--violeta); }
@@ -95,7 +99,7 @@
   .band-light .lista .meta a:hover { border-bottom-color:var(--violeta); }
 
   .perfiles { display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.5rem; }
-  .perfil { border:1px solid rgba(255,255,255,0.18); padding:0.5rem 1.15rem; font-size: 1rem; font-weight:700; color: var(--texto-3); border-radius:2px; transition:all var(--t); }
+  .perfil { border:1px solid rgba(255,255,255,0.18); padding:0.5rem 1rem; font-size: 1rem; font-weight:700; color: var(--texto-3); border-radius:2px; transition:all var(--t); }
   .perfil:hover { border-color:var(--lima); color:var(--lima); }
 
   .contacto-l { font-size: 1.125rem; line-height:1.6; color: var(--texto-3); }
