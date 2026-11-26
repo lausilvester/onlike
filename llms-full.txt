@@ -333,6 +333,18 @@ Quién puede resolverlo: ningún prestador puede hacerlo solo, pero sí una cám
 
 Límites declarados: las respuestas de estos sistemas cambian entre consultas y entre personas, porque generan un texto nuevo cada vez; la clasificación de qué se puede visitar es de elaboración propia sobre conocimiento directo de la ciudad y no sobre un registro oficial, porque ese registro no existe en forma pública y verificable; la autora no preguntó por horarios ni accesos, y registra qué contiene el itinerario que el sistema entrega cuando no se le pide ese detalle; y no existe evidencia que permita afirmar que corregir la información de un destino produzca más reservas.
 
+### La IA te recomendó. Ahora el viajero te va a buscar (noviembre 2026)
+
+URL: https://onlike.ar/la-ia-te-recomendo-el-viajero-te-busca.html
+
+Nota sobre qué hace el viajero entre la recomendación de una inteligencia artificial y la reserva. Tesis propia: la recomendación es una promesa que el negocio no escribió, y la verificación pasa por lo que el negocio sí escribió (el sitio, la ficha de Google, el perfil en las plataformas de reserva) y por lo que escribieron otros (las reseñas).
+
+Qué sostiene: la verificación confirma, contradice o no encuentra; es una clasificación y lectura propias. La parte que depende del negocio es la legibilidad digital: que lo que ofrece esté escrito, se encuentre y se entienda. El ejemplo es un hotel boutique de Puerto Iguazú cuyo diferencial más concreto, un desayuno distinto cada día, no estaba contado en ningún canal.
+
+Datos con fuente: en el estudio de Mower (septiembre de 2026, Estados Unidos), entre quienes usaron IA para planificar viajes, el 59% busca en Google lo que le recomendaron, el 49% entra al sitio oficial, el 40% compara precios en varias páginas y el 5% reserva exactamente lo sugerido. En la 2026 Holiday Travel Survey de Deloitte (17 de noviembre de 2026, Estados Unidos), entre quienes usan IA generativa, el 61% busca recomendaciones de actividades y atractivos en el destino y el 56%, de restaurantes. En Rejón-Guardia, Molinillo y Anaya-Sánchez (Journal of Consumer Behaviour, 2026), los errores en capturas de ChatGPT bajaron la exactitud percibida y, por esa vía, la utilidad, la confianza y la intención de seguir el itinerario. Según Booking Holdings (tercer trimestre de 2026), las referencias desde modelos de lenguaje representan bastante menos del 1% de las noches de Booking.com. Google anunció el 27 de agosto de 2026 reservas de hotel dentro de su modo con IA en Estados Unidos, con diez socios.
+
+Límites declarados: lo de Mower son respuestas declaradas de usuarios de IA, sin viajeros de Argentina, y la empresa vende servicios de marketing a hoteles y destinos; lo de Deloitte es intención declarada sobre qué se le pide a la IA, no sobre qué se comprueba; el estudio de Málaga mide la intención de seguir un itinerario en estudiantes universitarios de España, con efecto directo no significativo, y no mide reservas; el dato de Booking lo informa la propia empresa e incluye referencias orgánicas y pagas; ningún estudio mide cuántas reservas se ganan o se pierden durante la verificación; el caso del hotel es uno solo y no mide frecuencia.
+
 ### ¿Cuánta información tiene que tener un negocio en internet? (noviembre 2026)
 
 URL: https://onlike.ar/cuanta-informacion-necesita-un-negocio.html
@@ -470,6 +482,7 @@ Para charlas:
 - Test Turismo: https://onlike.ar/test-turismo
 - Notas: https://onlike.ar/notas.html
 - Cuando una IA recomienda un destino turístico, decide también qué negocios aparecen: https://onlike.ar/destinos-turisticos-inteligencia-artificial.html
+- La IA te recomendó. Ahora el viajero te va a buscar: https://onlike.ar/la-ia-te-recomendo-el-viajero-te-busca.html
 - ¿Cuánta información tiene que tener un negocio en internet?: https://onlike.ar/cuanta-informacion-necesita-un-negocio.html
 - La información turística es infraestructura del destino: https://onlike.ar/informacion-turistica-infraestructura-destino.html
 - Qué contesta una IA sobre el turismo en Eldorado, Misiones: https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html
