@@ -38,6 +38,7 @@ ONLIKE trabaja GEO (Generative Engine Optimization): que la información de un n
 - [Test Turismo — autodiagnóstico gratuito para negocios turísticos](https://onlike.ar/test-turismo)
 - [Notas](https://onlike.ar/notas.html)
 - [Qué te llevás de una auditoría de tu negocio turístico](https://onlike.ar/auditoria-negocio-turistico.html)
+- [La IA te recomendó. Ahora el viajero te va a buscar](https://onlike.ar/la-ia-te-recomendo-el-viajero-te-busca.html)
 - [¿Cuánta información tiene que tener un negocio en internet?](https://onlike.ar/cuanta-informacion-necesita-un-negocio.html)
 - [La información turística es infraestructura del destino](https://onlike.ar/informacion-turistica-infraestructura-destino.html)
 - [Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio](https://onlike.ar/buscate-vos-que-dicen-las-ias.html)
