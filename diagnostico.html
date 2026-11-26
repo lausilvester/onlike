@@ -33,6 +33,11 @@
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
+  --texto-2: #D7DAE4;   /* secundario sobre oscuro  12,9:1 */
+  --texto-3: #AEB3C3;   /* terciario sobre oscuro    8,6:1 */
+  --tinta-2: #3A3B48;   /* secundario sobre claro   11,1:1 */
+  --tinta-3: #4A4B59;   /* terciario sobre claro     8,6:1 */
+
     --dark: #131625;
     --dark-deep: #0b0d18;
     --violeta: #8E51B9;
@@ -51,29 +56,29 @@
   nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 3rem; background: rgba(255,255,255,0.98); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(19,22,37,0.08); }
   .nav-logo img { height: 36px; width: auto; }
   .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
-  .nav-links a { color: rgba(19,22,37,0.6); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; transition: color var(--transition); }
+  .nav-links a { color: var(--tinta-3); font-size: 0.875rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; transition: color var(--transition); }
   .nav-links a:hover { color: var(--dark); }
   .nav-cta { background: var(--dark) !important; color: var(--white) !important; padding: 0.5rem 1.1rem !important; border-radius: var(--radius); }
   .nav-cta:hover { background: var(--violeta) !important; color: var(--dark) !important; }
   .container { max-width: 1160px; margin: 0 auto; padding: 0 3rem; }
-  footer { background: var(--dark-deep); background-color: #0b0d18; padding: 1.75rem 3rem; border-top: 1px solid rgba(255,255,255,0.04); text-align: center; }
-  .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.5); letter-spacing: 0.03em; }
+  footer { background: var(--dark-deep); background-color: #0b0d18; padding: 1.5rem 3rem; border-top: 1px solid rgba(255,255,255,0.04); text-align: center; }
+  .footer-copy { font-size: 0.875rem; color: var(--texto-3); letter-spacing: 0.03em; }
   footer nav { background: transparent !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; border-bottom: 0 !important; padding: 0 !important; }
-  .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; display: flex; align-items: center; gap: 0.65rem; background: #25D366; color: #fff; padding: 0.75rem 1.2rem 0.75rem 1rem; border-radius: 100px; font-size: 0.82rem; font-weight: 600; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: all var(--transition); }
+  .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; display: flex; align-items: center; gap: 0.75rem; background: #25D366; color: #fff; padding: 0.75rem 1.2rem 0.75rem 1rem; border-radius: 100px; font-size: 0.875rem; font-weight: 700; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: all var(--transition); }
   .wa-float:hover { background: #1ebe5d; transform: translateY(-2px); }
   .wa-float-text { white-space: nowrap; }
-  .btn-accent { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--violeta); color: var(--dark); padding: 0.9rem 1.8rem; font-size: 0.9rem; font-weight: 700; border-radius: var(--radius); transition: all var(--transition); border: none; cursor: pointer; letter-spacing: 0.02em; }
+  .btn-accent { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--violeta); color: var(--dark); padding: 1rem 1.8rem; font-size: 1rem; font-weight: 700; border-radius: var(--radius); transition: all var(--transition); border: none; cursor: pointer; letter-spacing: 0.02em; }
   .btn-accent:hover { opacity: 0.88; transform: translateY(-2px); }
-  .btn-ghost { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--white); padding: 0.9rem 1.8rem; font-size: 0.9rem; font-weight: 500; border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius); transition: all var(--transition); }
+  .btn-ghost { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--white); padding: 1rem 1.8rem; font-size: 1rem; font-weight: 400; border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius); transition: all var(--transition); }
   .btn-ghost:hover { border-color: var(--violeta); color: var(--violeta); }
-  .section-label { display: inline-block; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.25rem; color: var(--violeta); }
-  .section-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.4rem, 4vw, 4.2rem); line-height: 0.92; letter-spacing: -0.02em; margin-bottom: 1.75rem; }
+  .section-label { display: inline-block; font-size: 0.875rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1rem; color: var(--violeta); }
+  .section-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.4rem, 4vw, 4.2rem); line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
   @media (max-width: 900px) {
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
     .container { padding: 0 1.5rem; }
     .wa-float-text { display: none; }
-    .wa-float { padding: 0.85rem; border-radius: 50%; }
+    .wa-float { padding: 0.75rem; border-radius: 50%; }
     footer { background-color: #0b0d18; padding: 1.5rem; }
   }
 </style>
@@ -109,20 +114,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main id="main" role="main" style="padding-top: 70px;">
 
 <style>
-  .diag-wrap { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 5rem 0; }
-  .diag-inner { display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem; align-items: start; }
-  .diag-title { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.4rem, 4vw, 4rem); line-height: 0.92; letter-spacing: -0.02em; color: #fff; margin-bottom: 1.25rem; }
+  .diag-wrap { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 4rem 0; }
+  .diag-inner { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: start; }
+  .diag-title { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.4rem, 4vw, 4rem); line-height: 1.05; letter-spacing: -0.02em; color: #fff; margin-bottom: 1rem; }
   .diag-title em { font-style: normal; color: #8E51B9; }
-  .diag-sub { font-size: 0.98rem; color: rgba(255,255,255,0.55); line-height: 1.8; margin-bottom: 2rem; }
+  .diag-sub { font-size: 1.125rem; color: var(--texto-3); line-height: 1.6; margin-bottom: 2rem; }
   .diag-contact { display: flex; flex-direction: column; gap: 0.75rem; }
-  .diag-contact a { display: flex; align-items: center; gap: 0.75rem; color: rgba(255,255,255,0.5); font-size: 0.88rem; transition: color 0.2s; }
+  .diag-contact a { display: flex; align-items: center; gap: 0.75rem; color: var(--texto-3); font-size: 1rem; transition: color 0.2s; }
   .diag-contact a:hover { color: #8E51B9; }
   .diag-form-wrap { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 4px; overflow: hidden; }
   .diag-form-header { padding: 1.5rem 2rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
-  .diag-form-header p { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #8E51B9; }
+  .diag-form-header p { font-size: 0.875rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #8E51B9; }
   @media (max-width: 900px) {
-    .diag-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-    .diag-wrap { padding: 4rem 0; }
+    .diag-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .diag-wrap { padding: 3rem 0; }
   }
 </style>
 <section class="diag-wrap">
@@ -134,11 +139,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="diag-sub">Completá el formulario y en 24-48 horas te mando la cotización para el diagnóstico de tu presencia digital.</p>
         <div class="diag-contact">
           <a data-wa="diagnostico-contacto" href="https://wa.me/543751566488" target="_blank" rel="noopener noreferrer">
-            <span style="width:32px;height:32px;background:rgba(255,255,255,0.06);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.8rem;">📱</span>
+            <span style="width:32px;height:32px;background:rgba(255,255,255,0.06);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size: 0.875rem;">📱</span>
             +54 3751 566488
           </a>
           <a href="mailto:lau@onlike.ar">
-            <span style="width:32px;height:32px;background:rgba(255,255,255,0.06);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.8rem;">✉️</span>
+            <span style="width:32px;height:32px;background:rgba(255,255,255,0.06);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size: 0.875rem;">✉️</span>
             lau@onlike.ar
           </a>
         </div>
@@ -153,14 +158,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </main>
 <footer role="contentinfo">
-  <div style="max-width:1160px;margin:0 auto;padding:1.75rem 3rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+  <div style="max-width:1160px;margin:0 auto;padding:1.5rem 3rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
     <div>
-      <p style="font-size:0.8rem;color:rgba(255,255,255,0.7);margin-bottom:0.3rem;font-weight:500;">ONLIKE · Laura Silvester · Estrategia y posicionamiento digital</p>
-      <p style="font-size:0.8rem;color:rgba(255,255,255,0.7);">Eldorado, Misiones, Argentina · <a href="mailto:lau@onlike.ar" style="color:rgba(255,255,255,0.7);text-decoration:none;" onmouseover="this.style.color='#D1FA3E'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">lau@onlike.ar</a> · WhatsApp +54 3751 566488</p>
+      <p style="font-size: 0.875rem;color: var(--texto-3);margin-bottom:0.25rem;font-weight:400;">ONLIKE · Laura Silvester · Estrategia y posicionamiento digital</p>
+      <p style="font-size: 0.875rem;color: var(--texto-3);">Eldorado, Misiones, Argentina · <a href="mailto:lau@onlike.ar" style="color: var(--texto-3);text-decoration:none;" onmouseover="this.style.color='#D1FA3E'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">lau@onlike.ar</a> · WhatsApp +54 3751 566488</p>
     </div>
     <nav style="background:transparent !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;border-bottom:0 !important;padding:0 !important;display:flex;gap:1.5rem;align-items:center;" aria-label="Legal">
-      <a href="https://onlike.ar/privacidad.html" style="font-size:0.8rem;color:rgba(255,255,255,0.7);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#D1FA3E'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">Política de privacidad</a>
-      <span style="font-size:0.8rem;color:rgba(255,255,255,0.7);">© 2026</span>
+      <a href="https://onlike.ar/privacidad.html" style="font-size: 0.875rem;color: var(--texto-3);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#D1FA3E'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">Política de privacidad</a>
+      <span style="font-size: 0.875rem;color: var(--texto-3);">© 2026</span>
     </nav>
   </div>
 </footer>
