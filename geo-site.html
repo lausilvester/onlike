@@ -82,18 +82,18 @@
   .btn-dark-outline { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: #131625; padding: 1rem 2rem; font-size: 1rem; font-weight: 700; border: 1.5px solid rgba(19,22,37,0.3); border-radius: 2px; transition: all 0.22s; }
   .btn-dark-outline:hover { border-color: #131625; }
   .section-label { display: inline-block; font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--lima); }
-  .section-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.75rem, 6vw, 4.5rem); line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
+  .section-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.75rem, 3.6vw, 2.75rem); line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
 
   /* HERO */
   .geo-hero { background: #131625; padding: 4rem 0 4rem; position: relative; overflow: hidden; }
   .geo-hero-inner { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 4rem; align-items: center; }
-  .geo-hero h1 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.75rem, 6vw, 4.5rem); line-height: 1.05; letter-spacing: -0.02em; color: var(--texto-1); margin-bottom: 1.5rem; }
+  .geo-hero h1 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.25rem, 4.8vw, 3.5rem); line-height: 1.05; letter-spacing: -0.02em; color: var(--texto-1); margin-bottom: 1.5rem; }
   .geo-hero h1 .light { font-weight: 300; color: inherit; }
   .geo-hero-sub { font-size: 1.125rem; font-weight: 300; line-height: 1.6; color: var(--texto-3); margin-bottom: 1.5rem; max-width: 520px; }
   .geo-hero-claim { font-size: 1.125rem; font-weight: 700; color: #C8FF00; line-height: 1.6; margin-bottom: 2rem; max-width: 460px; }
   .geo-hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
   .geo-ask { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 2px; padding: 2rem 2rem; }
-  .geo-ask-label { font-size: 1.125rem; font-weight: 700; color: #A08AE5; margin-bottom: 1rem; }
+  .geo-ask-label { font-size: 1.125rem; font-weight: 700; color: #A08AE5; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.06em; }
   .geo-ask-q { font-family: 'Outfit', sans-serif; font-size: 1.375rem; font-weight: 700; line-height: 1.45; color: var(--texto-1); margin-bottom: 1rem; }
   .geo-ask-list { list-style: none; margin-bottom: 1rem; }
   .geo-ask-list li { font-size: 1.125rem; color: var(--texto-3); line-height: 1.6; padding: 0.75rem 0; border-top: 1px solid rgba(255,255,255,0.07); }
@@ -161,16 +161,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="geo-hero-inner">
       <div>
-        <h1 id="geo-h1"><span class="light">Un sitio web</span><br>que muestra tu trabajo<br>como realmente es.</h1>
+        <h1 id="geo-h1"><span class="light">Un sitio web</span><br>que muestra tu trabajo<br><span class="geo-marca">como realmente es.</span></h1>
         <p class="geo-hero-sub">Parto de lo que querés lograr, ordeno y selecciono todo el material que tenés y diseño cada parte a tu estilo. El resultado es un sitio propio, claro en el celular y con caminos concretos para que te contacten, te pidan un presupuesto o te consulten por una compra o una reserva.</p>
         <p class="geo-hero-sub" style="margin-bottom:1.5rem;">Además, queda preparado para buscadores y asistentes de inteligencia artificial como ChatGPT.</p>
-        <p class="geo-hero-claim">Versión base desde $250.000 ARS. Más abajo, todo lo que incluye.</p>
+        <p class="geo-hero-claim">Versión base desde $250.000 ARS.</p>
         <div class="geo-hero-btns">
           <a data-wa="geo-site-hero" href="https://wa.me/543751566488?text=Hola%20Laura%2C%20quiero%20contarte%20mi%20proyecto." target="_blank" rel="noopener noreferrer" class="btn-accent">Contame por WhatsApp qué necesitás</a>
           <a href="#caso" class="btn-ghost">Ver un caso publicado</a>
         </div>
       </div>
-      <div class="geo-ask">
+      <div class="geo-chat">
+        <p class="geo-chat-q">¿Dónde puedo ver y comprar la obra de Soledad Imbach?</p>
+        <div class="geo-chat-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="geo-chat-a">
+          <p>En su sitio, <strong>soledadimbach.com.ar</strong>, están sus series fotográficas, sus libros y la obra en venta. Los precios se consultan por mail.</p>
+        </div>
+        <p class="geo-chat-nota">Ejemplo ilustrativo. Lo que contesta cada IA depende de la plataforma y de la consulta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="geo-paravos" aria-label="Para quién es">
+  <div class="container">
+    <div class="geo-ask">
         <p class="geo-ask-label">¿Es para vos?</p>
         <p class="geo-ask-q">Si tu negocio o tu trabajo depende de que te elijan, es para vos:</p>
         <ul class="geo-ask-list">
@@ -179,13 +193,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
         <p class="geo-ask-close">Todo queda a tu nombre: el sitio, el dominio y los accesos. Me contás qué querés lograr y yo lo convierto en un sitio claro y pensado para tu objetivo.</p>
       </div>
-    </div>
   </div>
 </section>
 
 <style>
   .geo-diff { background:#F4F4F0; color:#131625; padding: 4rem 0; }
-  .geo-diff h2, .geo-limits h2 { font-family:'Outfit',sans-serif; font-weight:700; font-size: clamp(2.25rem, 4.8vw, 3.5rem); line-height:1.05; letter-spacing:-.02em; margin-bottom:1rem; }
+  .geo-diff h2, .geo-limits h2 { font-family:'Outfit',sans-serif; font-weight:700; font-size: clamp(1.75rem, 3.6vw, 2.75rem); line-height:1.1; letter-spacing:-.02em; margin-bottom:1rem; }
   .geo-label-dark { display:inline-block; font-size: 1rem; font-weight:700; color:#8E51B9; margin-bottom:1rem; }
   .geo-diff-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:#e1e1da; margin-top:3rem; }
   .geo-diff-card { background:#fff; padding:2rem 2rem; }
@@ -205,6 +218,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .geo-ent { background:#0d0f1c; padding:1.5rem 1.5rem; }
   .geo-ent-t { font-family:'Outfit',sans-serif; font-size: 1.125rem; font-weight:700; color: var(--texto-1); margin-bottom:0.5rem; line-height:1.6; }
   .geo-ent-d { font-size: 1rem; color: var(--texto-3); line-height: 1.5; }
+  .geo-marca { background: linear-gradient(transparent 26%, #C8FF00 26%, #C8FF00 88%, transparent 88%); color: #131625; padding: 0 0.2em; margin-left: -0.05em; display: inline-block; line-height: 1.15; margin-top: 0.1em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+  .geo-paravos { background: #fff; padding: 4rem 0; }
+  .geo-paravos .geo-ask { background: #F4F4F0; border: 0; border-left: 3px solid #8E51B9; max-width: 860px; }
+  .geo-paravos .geo-ask-label { color: #8E51B9; }
+  .geo-paravos .geo-ask-q { color: var(--ink); }
+  .geo-paravos .geo-ask-list li { color: var(--tinta-2); border-top-color: rgba(31,31,46,0.12); }
+  .geo-paravos .geo-ask-list strong { color: var(--ink); }
+  .geo-paravos .geo-ask-close { color: var(--tinta-2); }
+  .geo-chat { background: #fff; border-radius: 16px; padding: 1.5rem; box-shadow: 0 24px 48px rgba(0,0,0,0.35); }
+  .geo-chat-q { margin-left: auto; max-width: 88%; background: #EDE6F7; color: var(--ink); font-size: 1rem; line-height: 1.5; padding: 0.75rem 1rem; border-radius: 12px 12px 2px 12px; }
+  .geo-chat-dots { display: none; gap: 6px; padding: 1rem 0.25rem; }
+  .geo-chat-dots span { width: 8px; height: 8px; border-radius: 50%; background: #AEB3C3; animation: geoDot 1s infinite ease-in-out; }
+  .geo-chat-dots span:nth-child(2) { animation-delay: 0.15s; }
+  .geo-chat-dots span:nth-child(3) { animation-delay: 0.3s; }
+  .geo-chat-a { margin-top: 1rem; max-width: 92%; background: #F4F4F0; border-radius: 12px 12px 12px 2px; padding: 1rem; }
+  .geo-chat-a p { font-size: 1rem; line-height: 1.5; color: var(--ink); }
+  .geo-chat-a strong { color: #8E51B9; }
+  .geo-chat-nota { font-size: 0.875rem; line-height: 1.5; color: var(--tinta-3); margin-top: 1rem; }
+  .geo-chat--pensando .geo-chat-dots { display: flex; }
+  .geo-chat--pensando .geo-chat-a { display: none; }
+  .geo-chat--respuesta .geo-chat-a { animation: geoAparece 0.5s ease both; }
+  @keyframes geoDot { 0%, 80%, 100% { opacity: 0.3; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-4px); } }
+  @keyframes geoAparece { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .geo-caso-fig { position: relative; margin-top: 2.5rem; max-width: 900px; padding-right: 130px; }
+  .geo-caso-pc { border: 1px solid #d9d9d2; border-top: 22px solid #e1e1da; border-radius: 8px; overflow: hidden; box-shadow: 0 16px 40px rgba(19,22,37,0.15); background: #000; }
+  .geo-caso-pc img, .geo-caso-cel img { display: block; width: 100%; height: auto; }
+  .geo-caso-cel { position: absolute; right: 0; bottom: 2.5rem; width: 200px; border: 8px solid #131625; border-radius: 24px; overflow: hidden; box-shadow: 0 16px 40px rgba(19,22,37,0.3); background: #000; }
+  .geo-caso-fig figcaption { font-size: 1rem; color: var(--tinta-3); margin-top: 1rem; }
+  @media (max-width: 760px) {
+    .geo-caso-fig { padding-right: 70px; }
+    .geo-caso-cel { width: 110px; border-width: 5px; border-radius: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .geo-chat-dots span, .geo-chat--respuesta .geo-chat-a { animation: none; }
+  }
+  .wa-float.wa-oculto { opacity: 0; visibility: hidden; pointer-events: none; }
+  .geo-link { color:#8E51B9; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
   .geo-ent-d code, .geo-extra code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size: 0.875rem; color: var(--texto-2); }
   .geo-extra { margin-top:2rem; padding:1.5rem 1.5rem; background:rgba(142,81,185,.12); border:1px solid rgba(142,81,185,.3); border-radius:4px; }
   .geo-extra p:first-child { font-size: 1rem; font-weight:700; color:#C89BE8; margin-bottom:0.5rem; }
@@ -232,7 +282,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .geo-precio-sec { background:#fff; color:#131625; border-top:1px solid #e7e7e0; padding: 4rem 0; }
   .geo-precio { text-align:center; max-width:660px; margin:0 auto; }
   .geo-precio-desde { font-size: 1rem; font-weight:700; color: var(--tinta-3); margin-bottom:0.5rem; }
-  .geo-precio-num { font-family:'Outfit',sans-serif; font-weight:700; font-size: clamp(2.75rem, 6vw, 4.5rem); color:#131625; line-height:1.05; }
+  .geo-precio-num { font-family:'Outfit',sans-serif; font-weight:700; font-size: clamp(2.25rem, 4.8vw, 3.5rem); color:#131625; line-height:1.05; }
   .geo-precio-ars { font-size: 1.125rem; color: var(--tinta-3); font-weight:700; letter-spacing:.1em; margin-bottom:1.5rem; }
   .geo-precio-eje { font-size: 1.125rem; color: var(--tinta-3); line-height: 1.6; margin-bottom:1.5rem; }
   .geo-cta-row { display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; }
@@ -259,48 +309,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="geo-diff" id="caso" aria-labelledby="geo-caso-t">
   <div class="container">
-    <h2 id="geo-caso-t">Caso real:<br>el sitio de Soledad Imbach</h2>
-    <p class="geo-limits-intro">Soledad es artista visual, fotógrafa y autora de Eldorado, Misiones. Tenía series fotográficas, libros, obra en venta, proyectos audiovisuales, talleres, trabajo profesional, biografía y mucho material. El desafío no era ponerlo todo en una pantalla: era darle a cada parte el lugar que necesitaba.</p>
-    <div class="geo-diff-grid">
-      <div class="geo-diff-card">
-        <h3>El objetivo</h3>
-        <p>Mostrar su obra y su trayectoria sin mezclar recorridos. Quien busca una serie la conoce con su contexto, quien quiere comprar una obra llega a la consulta, y quien necesita fotografía o un taller encuentra ese camino.</p>
-      </div>
-      <div class="geo-diff-card">
-        <h3>La curaduría</h3>
-        <p>Revisé el material que me pasó, seleccioné qué mostrar y lo organicé en un sitio de diez páginas. Las cinco series destacadas y los dos libros tienen su propio espacio; la biografía y el currículum van juntos en otra página. Unifiqué el tratamiento visual con predominio del blanco y negro, respetando las piezas que necesitaban conservar su color, y optimicé las imágenes para que el sitio cargue liviano.</p>
-      </div>
-      <div class="geo-diff-card">
-        <h3>Sus decisiones</h3>
-        <p>Solo en español. Sin WhatsApp ni formulario: el contacto es por mail y por sus redes. Los precios de la obra se consultan. Y eligió una política por bot: permite buscadores y asistentes identificados que citan y enlazan, y bloquea una lista de agentes identificados que entrenan modelos.</p>
-      </div>
-    </div>
-    <div class="geo-test-link">
-      <strong>Podés recorrerlo.</strong> Está publicado en su propio dominio: <a href="https://soledadimbach.com.ar/" target="_blank" rel="noopener noreferrer">soledadimbach.com.ar</a>.
-    </div>
-    <div class="geo-test-link">
-      <strong>Una prueba de lectura, con fecha.</strong> El 18 de noviembre de 2026 consulté a Grok por el sitio de Soledad, el asistente que uso como termómetro porque, en mi experiencia, suele ser el primero en reconocer un sitio nuevo. Respondió que ya estaba indexado y que aparecía como primer resultado al buscar el dominio o su nombre. Es una referencia de ese momento y de ese sistema: no demuestra que otros asistentes lo muestren ni garantiza que un sitio sea citado o recomendado.
-    </div>
-    <p class="geo-kicker">Cada sitio lleva lo que la persona decide mostrar.</p>
+    <h2 id="geo-caso-t">Un caso real.</h2>
+    <p class="geo-limits-intro"><a class="geo-link" href="https://soledadimbach.com.ar/" target="_blank" rel="noopener noreferrer">Soledad Imbach</a> es artista visual, fotógrafa y autora de Eldorado. Tenía series, libros, obra en venta, talleres y mucho material disperso. Lo ordené en un sitio de diez páginas donde cada cosa tiene su lugar: quien busca una serie la encuentra con su contexto, y quien quiere comprar una obra llega a la consulta. El 18 de noviembre de 2026, Grok ya lo mostraba como primer resultado al buscar su nombre.</p>
+    <figure class="geo-caso-fig">
+      <div class="geo-caso-pc"><img src="assets/caso-soledad-escritorio.webp" width="1200" height="750" alt="Portada del sitio de Soledad Imbach en una computadora: su nombre, la frase sobre su obra y una fotografía en blanco y negro" loading="lazy" decoding="async"></div>
+      <div class="geo-caso-cel"><img src="assets/caso-soledad-celular.webp" width="375" height="812" alt="El mismo sitio en un celular" loading="lazy" decoding="async"></div>
+      <figcaption>soledadimbach.com.ar, en computadora y en celular.</figcaption>
+    </figure>
   </div>
 </section>
 
-<section class="geo-limits" aria-labelledby="geo-asi-t">
+<section class="geo-trabajo" aria-labelledby="geo-trab-t">
   <div class="container">
-    <h2 id="geo-asi-t">Así lo armamos.</h2>
-    <p class="geo-limits-intro">No empiezo por una plantilla. Empiezo por entender qué necesitás que haga el sitio.</p>
-    <div class="geo-diff-grid">
-      <div class="geo-diff-card">
-        <h3>Primero trabajo la información</h3>
-        <p>Me contás qué querés lograr: vender, recibir consultas, mostrar tu obra, conseguir reservas o reunir todo lo que hoy está disperso. Me pasás fotos, textos, servicios, productos, notas y links. Yo elijo qué conviene mostrar, qué no suma y qué falta definir.</p>
+    <h2 id="geo-trab-t" class="section-title" style="color: var(--texto-1);margin-bottom:0;">Así lo armamos.</h2>
+    <div class="geo-pasos">
+      <div class="geo-paso">
+        <p class="geo-paso-n">01</p>
+        <h3>Hablamos</h3>
+        <p>Me contás qué querés lograr y te mando una propuesta por escrito, con el alcance y el precio. Con la seña del 50% entrás en agenda; el saldo va contra entrega.</p>
       </div>
-      <div class="geo-diff-card">
-        <h3>Después la ordeno</h3>
-        <p>Armo el recorrido para que cada persona encuentre lo que busca, llegue desde donde llegue: Google, una red social, una recomendación o una IA. Cada servicio, obra o producto ocupa el lugar que necesita y lleva al próximo paso: contactarte, pedir un presupuesto, consultar por una compra o una reserva, o seguir conociéndote.</p>
+      <div class="geo-paso">
+        <p class="geo-paso-n">02</p>
+        <h3>Me pasás el material</h3>
+        <p>Fotos, textos, servicios, notas y links, como los tengas. Elijo qué conviene mostrar, qué no suma y qué falta definir.</p>
       </div>
-      <div class="geo-diff-card">
-        <h3>Recién entonces diseño</h3>
-        <p>Diseño el sitio desde cero, sin una plantilla que decida por vos, y las decisiones de estilo las tomamos juntas. Preparo las imágenes y los videos para que todo combine y cargue liviano, y el sitio se ve cómodo en el celular. El contacto queda por el canal que elijas.</p>
+      <div class="geo-paso">
+        <p class="geo-paso-n">03</p>
+        <h3>Ordeno y diseño</h3>
+        <p>Armo el recorrido para que cada persona encuentre lo que busca y sepa cómo contactarte. Diseño desde cero, sin plantilla, y las decisiones de estilo las tomamos juntos.</p>
+      </div>
+      <div class="geo-paso">
+        <p class="geo-paso-n">04</p>
+        <h3>Publico a tu nombre</h3>
+        <p>Lo revisás, hacemos una ronda de ajustes y lo publico en tu dominio, dado de alta en Google y Bing.</p>
       </div>
     </div>
   </div>
@@ -308,105 +349,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="geo-entrego" id="entrego" aria-labelledby="geo-ent-t">
   <div class="container">
-    <h2 id="geo-ent-t" class="section-title" style="color: var(--texto-1);margin-bottom:0.75rem;">Todo lo que<br>recibís.</h2>
-    <h3 class="geo-ent-group">Lo que armamos</h3>
+    <h2 id="geo-ent-t" class="section-title" style="color: var(--texto-1);margin-bottom:0.75rem;">Lo que te llevás.</h2>
     <div class="geo-entrego-grid">
       <div class="geo-ent">
-        <p class="geo-ent-t">Un sitio pensado para tu proyecto</p>
-        <p class="geo-ent-d">No recibís una plantilla completada: la estructura y el diseño se arman a partir de tu objetivo, de qué mostrar, en qué orden y hacia dónde lleva cada parte.</p>
+        <p class="geo-ent-t">Un sitio pensado para lo que querés lograr</p>
+        <p class="geo-ent-d">No es una plantilla completada: la estructura, el diseño y el orden salen de tu objetivo, y lo reviso en el celular antes de entregarlo.</p>
       </div>
       <div class="geo-ent">
-        <p class="geo-ent-t">Diseño con punto de vista propio</p>
-        <p class="geo-ent-d">Antes de construir defino paleta, tipografía y estructura pensadas para tu proyecto, y las reviso contra lo que querés lograr.</p>
-      </div>
-      <div class="geo-ent">
-        <p class="geo-ent-t">Curaduría de tu material</p>
-        <p class="geo-ent-d">Reviso lo que me pasás, elijo qué conviene mostrar, ordeno la información y dejo afuera lo que distrae o se repite.</p>
-      </div>
-      <div class="geo-ent">
-        <p class="geo-ent-t">Hasta 8 fotos preparadas</p>
-        <p class="geo-ent-d">La versión base incluye hasta 8 fotos seleccionadas, optimizadas y con texto alternativo cuando corresponde, para que mantengan calidad sin volver pesado el sitio.</p>
+        <p class="geo-ent-t">Tu material, elegido y ordenado</p>
+        <p class="geo-ent-d">Reviso lo que me pasás, elijo qué mostrar, preparo las fotos y reúno las notas y menciones que hay sobre vos o tu negocio.</p>
       </div>
       <div class="geo-ent">
         <p class="geo-ent-t">El contacto que elijas</p>
-        <p class="geo-ent-d">Te armo WhatsApp y formulario si los querés. Si preferís otro canal, como mail o redes, el sitio lleva el que elijas y no agrego los que no quieras usar.</p>
+        <p class="geo-ent-d">WhatsApp, formulario, mail o redes: el sitio lleva los canales que quieras usar, y ninguno que no.</p>
       </div>
       <div class="geo-ent">
-        <p class="geo-ent-t">Tus menciones, reunidas</p>
-        <p class="geo-ent-d">Busco las notas, entrevistas, reseñas y menciones públicas sobre vos o tu negocio y las reúno en el sitio, con sus links.</p>
-      </div>
-    </div>
-    <h3 class="geo-ent-group">Cómo queda publicado</h3>
-    <div class="geo-entrego-grid">
-      <div class="geo-ent">
-        <p class="geo-ent-t">Tu dominio y tus accesos, a tu nombre</p>
-        <p class="geo-ent-d">Te acompaño a registrar el dominio en nic.ar y queda a tu nombre. El sitio se publica en cuentas a tu nombre y vos tenés los accesos.</p>
+        <p class="geo-ent-t">Todo a tu nombre</p>
+        <p class="geo-ent-d">El dominio, el sitio y los accesos. Te acompaño a registrar el dominio en nic.ar.</p>
       </div>
       <div class="geo-ent">
-        <p class="geo-ent-t">Alta en buscadores y revisión al publicar</p>
-        <p class="geo-ent-d">Doy de alta tu sitio en Google Search Console y Bing Webmaster Tools y te agrego como colaborador, así recibís los reportes vos también. Una vez publicado, verifico que todo funcione y consulto a las IAs para ver qué reconocen del sitio, como referencia para controles posteriores.</p>
-      </div>
-      <div class="geo-ent">
-        <p class="geo-ent-t">Preparado para buscadores e IA (GEO)</p>
-        <p class="geo-ent-d">Pensado para que Google, los asistentes de IA como ChatGPT y los modelos de lenguaje (LLM) que los hacen funcionar puedan leer tu información. Incluye datos estructurados Schema.org, <code>sitemap.xml</code> y <code>robots.txt</code> con permisos por bot. También agrego <code>llms.txt</code> y <code>llms-full.txt</code> como archivos complementarios de lectura.</p>
-      </div>
-      <div class="geo-ent">
-        <p class="geo-ent-t">Revisado antes de entregar</p>
-        <p class="geo-ent-d">Revisado en celular, con navegación por teclado, contraste y movimiento reducido. También compruebo que el contacto funcione y que la lectura y la velocidad se sientan bien en pantalla chica.</p>
-      </div>
-    </div>
-    <h3 class="geo-ent-group">Revisión y después de publicar</h3>
-    <div class="geo-entrego-grid">
-      <div class="geo-ent">
-        <p class="geo-ent-t">Tu revisión y una ronda de ajustes</p>
-        <p class="geo-ent-d">Después de mi revisión, lo revisás vos, marcás cambios y hacemos una ronda de correcciones.</p>
+        <p class="geo-ent-t">Listo para buscadores e IAs</p>
+        <p class="geo-ent-d">Lo doy de alta en Google y Bing, con acceso para vos, y lo dejo preparado para que Google y los asistentes de IA puedan leer tu información.</p>
       </div>
       <div class="geo-ent">
         <p class="geo-ent-t">Después de publicar</p>
-        <p class="geo-ent-d">Si algo que entregué deja de funcionar por un problema del sitio, me ocupo de solucionarlo sin costo. No hay abono mensual de mantenimiento. Los cambios nuevos, como textos, fotos, secciones o páginas, se hacen y se presupuestan a pedido.</p>
+        <p class="geo-ent-d">Si algo que entregué deja de funcionar, lo arreglo sin costo. No hay abono mensual; los cambios nuevos se presupuestan a pedido.</p>
       </div>
     </div>
     <div class="geo-extra">
       <p>Con costo adicional</p>
-      <p>Otro idioma, como portugués o inglés, con <code>hreflang</code> y contenido adaptado a cada público: $70.000 si traés el texto y $120.000 si lo redacto yo. De 9 a 20 fotos, con selección y optimización: $50.000. Hasta tres videos embebidos con datos estructurados <code>VideoObject</code>: $30.000. Píxel de Meta o Google Tag Manager con GA4: $30.000 cada uno, o $50.000 los dos. Configuración de mail propio: $40.000.</p>
+      <p>Otro idioma, más fotos, videos, medición con Meta o Google y mail propio se cotizan aparte.</p>
     </div>
   </div>
 </section>
 
 <section class="geo-diff" aria-labelledby="geo-criterio-t">
   <div class="container">
-    <h2 id="geo-criterio-t">El criterio<br>detrás del sitio.</h2>
-    <p class="geo-limits-intro">Soy Laura Silvester, licenciada en Turismo, con más de veinte años en el sector turístico y los últimos quince también como docente. En cada sitio mi trabajo es entender qué necesitás lograr, elegir qué conviene mostrar y convertir material disperso en algo claro. No parto de la tecnología: parto de las personas, de la información y de las decisiones que tienen que poder tomar. Este mismo sitio está armado con esa lógica.</p>
+    <h2 id="geo-criterio-t">El criterio detrás del sitio.</h2>
+    <p class="geo-limits-intro">En cada sitio mi trabajo es entender qué necesitás lograr, elegir qué conviene mostrar y convertir material disperso en algo claro. Este mismo sitio está armado con esa lógica.</p>
   </div>
 </section>
 
-<section class="geo-trabajo" aria-labelledby="geo-trab-t">
-  <div class="container">
-    <h2 id="geo-trab-t" class="section-title" style="color: var(--texto-1);margin-bottom:0;">Cuatro pasos<br>y está publicado.</h2>
-    <div class="geo-pasos">
-      <div class="geo-paso">
-        <p class="geo-paso-n">01</p>
-        <h3>Hablamos</h3>
-        <p>Me contás qué hacés y qué querés lograr, y te mando una propuesta con el alcance por escrito.</p>
-      </div>
-      <div class="geo-paso">
-        <p class="geo-paso-n">02</p>
-        <h3>Seña del 50%</h3>
-        <p>Con la seña entrás en agenda. El saldo va contra entrega.</p>
-      </div>
-      <div class="geo-paso">
-        <p class="geo-paso-n">03</p>
-        <h3>Mandás el material</h3>
-        <p>Me mandás servicios, precios si corresponde, preguntas frecuentes, fotos, logo y el contenido base. Si falta algo, lo definimos antes de empezar.</p>
-      </div>
-      <div class="geo-paso">
-        <p class="geo-paso-n">04</p>
-        <h3>Trabajo y publico</h3>
-        <p>Ordeno el contenido, estructuro el sitio y lo publico a tu nombre. Lo revisás, hacemos una ronda de ajustes y queda cerrado.</p>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <section class="geo-precio-sec" aria-labelledby="geo-precio-t">
   <div class="container">
@@ -425,12 +409,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="geo-faq" aria-labelledby="geo-faq-t">
   <div class="container">
-    <h2 id="geo-faq-t" class="section-title" style="color: var(--texto-1);margin-bottom:0;">Lo que me preguntan<br>antes de contratar.</h2>
+    <h2 id="geo-faq-t" class="section-title" style="color: var(--texto-1);margin-bottom:0;">Lo que me preguntan antes de contratar.</h2>
     <div class="geo-faq-list">
-      <div class="geo-faq-item">
-        <p class="geo-faq-q">¿Cuánto cuesta y qué incluye?</p>
-        <p class="geo-faq-a">La versión base parte de $250.000 ARS y es un sitio de una página cuando traés el contenido base. Incluye la curaduría y adaptación de tu material, la estructura, el diseño, hasta 8 fotos preparadas, la publicación a tu nombre, el alta y la verificación en Google Search Console y Bing Webmaster Tools, con acceso para vos, y una ronda de ajustes. La propuesta indica por escrito qué entra en tu proyecto, qué tiene un costo externo y qué se cotiza por separado. El precio dice "desde" porque cada proyecto necesita una cantidad distinta de páginas, textos y materiales: antes de empezar definimos el alcance y recibís el presupuesto por escrito.</p>
-      </div>
       <div class="geo-faq-item">
         <p class="geo-faq-q">¿Tengo que tener los textos y las fotos listos?</p>
         <p class="geo-faq-a">No hace falta que llegues con el sitio pensado. Podés pasarme el material como lo tengas y yo me ocupo de seleccionarlo y ordenarlo. Si faltan textos, fotos u otros contenidos, definimos qué aportás vos y qué necesitás que redacte o produzca yo, y eso se suma al presupuesto.</p>
@@ -472,11 +452,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </nav>
   </div>
 </footer>
-<a data-wa="geo-site-flotante" href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20contacto%20desde%20tu%20sitio%20web." target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Contactar por WhatsApp">
+<a data-wa="geo-site-flotante" href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20contacto%20desde%20tu%20sitio%20web." target="_blank" rel="noopener noreferrer" class="wa-float wa-oculto" aria-label="Contactar por WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   <span class="wa-float-text">Escribime por WhatsApp</span>
 </a>
 <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var wa = document.querySelector('.wa-float');
+    var hero = document.querySelector('.geo-hero');
+    if (wa && hero && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function(e) { wa.classList.toggle('wa-oculto', e[0].isIntersecting); }).observe(hero);
+    } else if (wa) { wa.classList.remove('wa-oculto'); }
+  });
+  (function() {
+    var chat = document.querySelector('.geo-chat');
+    if (!chat || !window.matchMedia || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    chat.classList.add('geo-chat--pensando');
+    setTimeout(function() {
+      chat.classList.remove('geo-chat--pensando');
+      chat.classList.add('geo-chat--respuesta');
+    }, 1600);
+  })();
   var toggle = document.getElementById('nav-toggle');
   var navLinks = document.getElementById('nav-links');
   if (toggle && navLinks) {
@@ -587,14 +583,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       "@type": "FAQPage",
       "@id": "https://onlike.ar/geo-site.html#faq",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "¿Cuánto cuesta y qué incluye?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "La versión base parte de $250.000 ARS y es un sitio de una página cuando traés el contenido base. Incluye la curaduría y adaptación de tu material, la estructura, el diseño, hasta 8 fotos preparadas, la publicación a tu nombre, el alta y la verificación en Google Search Console y Bing Webmaster Tools, con acceso para vos, y una ronda de ajustes. La propuesta indica por escrito qué entra en tu proyecto, qué tiene un costo externo y qué se cotiza por separado. El precio dice \"desde\" porque cada proyecto necesita una cantidad distinta de páginas, textos y materiales: antes de empezar definimos el alcance y recibís el presupuesto por escrito."
-          }
-        },
         {
           "@type": "Question",
           "name": "¿Tengo que tener los textos y las fotos listos?",
