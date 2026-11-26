@@ -26,7 +26,7 @@ El texto va siempre en un color sólido. Nada de `rgba` ni de `opacity` en las l
 
 | Token | Hex | Sobre | Contraste | Para qué |
 |---|---|---|---|---|
-| `--white` | `#FFFFFF` | navy | 17,9:1 | Titulares y cuerpo sobre oscuro |
+| `--texto-1` | `#ECEEF6` | navy | 15,5:1 | Titulares y cuerpo sobre oscuro |
 | `--texto-2` | `#D7DAE4` | navy | 12,9:1 | Bajadas y apoyos sobre oscuro |
 | `--texto-3` | `#AEB3C3` | navy | 8,6:1 | Fuentes, pies y metadata sobre oscuro |
 | `--ink` | `#1F1F2E` | blanco | 16,2:1 | Titulares y cuerpo sobre claro |
@@ -34,6 +34,10 @@ El texto va siempre en un color sólido. Nada de `rgba` ni de `opacity` en las l
 | `--tinta-3` | `#4A4B59` | blanco | 8,6:1 | Fuentes, pies y metadata sobre claro |
 
 Son grises con una pizca de azul, de la familia del navy. Ningún texto baja de 8:1.
+
+**Ni blanco puro ni negro puro.** El texto sobre oscuro va en `#ECEEF6`, no en `#FFFFFF`: el blanco puro sobre navy florece y cansa la vista. El texto sobre claro va en `#1F1F2E`. El `#FFFFFF` queda solo para fondos. Para dar énfasis se usa el peso, no el brillo.
+
+Los tokens `--texto-1`, `--texto-2`, `--texto-3`, `--ink`, `--tinta-2` y `--tinta-3` tienen que estar definidos en el `:root` de cada página. Un `var()` que apunta a un token inexistente no falla: hereda en silencio, y el texto termina del color equivocado.
 
 ## Tipografía
 
@@ -54,7 +58,19 @@ Escala de razón 1,25. Cada paso se distingue del anterior sin tener que mirar d
 | 2.75 | 44 | Titular de nota |
 | 4.5 | 72 | Titular de la home |
 
-Los titulares responsivos usan `clamp()` entre dos pasos de la escala, nunca valores sueltos.
+### Los titulares responsivos
+
+Cinco roles, y nada más. Cada uno va entre dos pasos de la escala.
+
+| Rol | clamp | Rango |
+|---|---|---|
+| Titular de la home | `clamp(2.75rem, 6vw, 4.5rem)` | 44–72px |
+| Titular de página de servicio | `clamp(2.25rem, 4.8vw, 3.5rem)` | 36–56px |
+| Titular de nota | `clamp(1.75rem, 3.6vw, 2.75rem)` | 28–44px |
+| h2 | `clamp(1.75rem, 3vw, 2.25rem)` | 28–36px |
+| h3 y frase destacada | `clamp(1.375rem, 2.2vw, 1.75rem)` | 22–28px |
+
+Una página que inventa su propio `clamp()` rompe la escala: con 34 declaraciones distintas, el sitio llegó a mostrar 19 tamaños donde el CSS declaraba 8.
 
 ### Los tres pesos
 
@@ -95,11 +111,19 @@ Grilla de nueve pasos, la misma que usa el design system para las piezas. Márge
 - Padding de sección: entre 3 y 4rem. Por encima de 5rem la página se siente vacía y obliga a scrollear de más.
 - El aire separa bloques distintos. Entre cosas que van juntas, el hueco es chico.
 
-## El nicho va resaltado
+## Las etiquetas de grupo van resaltadas
 
-En la lista de servicios de la home, el grupo "Para turismo" va sobre un bloque lima con tinta encima (13,7:1), radio de 2px. Los otros dos grupos van en tinta plana, al mismo tamaño.
+En la lista de servicios de la home, cada etiqueta de grupo va sobre un bloque lima con tinta encima (13,7:1), radio de 2px, en 28px. El resaltado es el formato de la etiqueta de grupo: marca dónde empieza cada bloque de servicios.
 
-Es uno solo a propósito: si los tres llevaran lima, el lima dejaría de señalar algo.
+Los grupos son "Para negocios turísticos", "Para destinos, municipios y cámaras" y "Para cualquier negocio".
+
+## La barra de arriba
+
+Igual en todas las páginas: fondo blanco al 98% con desenfoque, links en 14px peso 400 con espaciado de 0.06em, y el botón "Escribime" en navy.
+
+## El botón de WhatsApp
+
+Verde `#25D366` con texto y ícono en tinta `#1F1F2E`: 8,2:1. El texto blanco sobre ese verde da 1,7:1 y no se lee. Se conserva el verde porque es el que la gente reconoce; lo que cambia es el texto.
 
 ## Estructura de una nota
 

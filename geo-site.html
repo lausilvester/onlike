@@ -34,6 +34,10 @@
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
+  --ink: #1F1F2E;       /* texto sobre claro */
+
+  --texto-1: #ECEEF6;   /* blanco roto sobre oscuro  15,5:1 */
+
   --texto-2: #D7DAE4;   /* secundario sobre oscuro  12,9:1 */
   --texto-3: #AEB3C3;   /* terciario sobre oscuro    8,6:1 */
   --tinta-2: #3A3B48;   /* secundario sobre claro   11,1:1 */
@@ -51,50 +55,50 @@
     --radius: 2px;
   }
   html { scroll-behavior: smooth; }
-  body { font-family: var(--font-body); background: var(--dark); color: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  body { font-family: var(--font-body); background: var(--dark); color: var(--texto-1); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
   img { max-width: 100%; height: auto; display: block; }
   a { text-decoration: none; color: inherit; }
   header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; }
   header nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 3rem; background: rgba(255,255,255,0.98); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(19,22,37,0.08); }
   .nav-logo img { height: 36px; width: auto; }
   .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
-  .nav-links a { color: var(--tinta-3); font-size: 0.875rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; transition: color var(--transition); }
+  .nav-links a { color: var(--tinta-3); font-size: 0.875rem; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; transition: color var(--transition); }
   .nav-links a:hover { color: var(--dark); }
-  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; flex-direction: column; gap: 5px; }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; flex-direction: column; gap: 0.25rem; }
   .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--dark); border-radius: 2px; transition: all 0.25s; }
-  .nav-cta { background: var(--dark) !important; color: var(--white) !important; padding: 0.5rem 1.1rem !important; border-radius: var(--radius); }
+  .nav-cta { background: var(--dark) !important; color: var(--texto-1) !important; padding: 0.5rem 1rem !important; border-radius: var(--radius); }
   .nav-cta:hover { background: var(--lima) !important; color: var(--dark) !important; }
   .container { max-width: 1160px; margin: 0 auto; padding: 0 3rem; }
   footer { background: var(--dark-deep); background-color: #0b0d18; border-top: 1px solid rgba(255,255,255,0.04); }
-  .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; display: flex; align-items: center; gap: 0.75rem; background: #25D366; color: #fff; padding: 0.75rem 1.2rem 0.75rem 1rem; border-radius: 100px; font-size: 0.875rem; font-weight: 700; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: all var(--transition); }
+  .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; display: flex; align-items: center; gap: 0.75rem; background: #25D366; color: var(--ink); padding: 0.75rem 1rem 0.75rem 1rem; border-radius: 100px; font-size: 0.875rem; font-weight: 700; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: all var(--transition); }
   .wa-float:hover { background: #1ebe5d; transform: translateY(-2px); }
   .wa-float-text { white-space: nowrap; }
-  .btn-accent { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--lima); color: var(--dark); padding: 1rem 1.8rem; font-size: 1rem; font-weight: 700; border-radius: var(--radius); transition: all var(--transition); border: none; cursor: pointer; letter-spacing: 0.02em; }
+  .btn-accent { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--lima); color: var(--dark); padding: 1rem 2rem; font-size: 1rem; font-weight: 700; border-radius: var(--radius); transition: all var(--transition); border: none; cursor: pointer; letter-spacing: 0.02em; }
   .btn-accent:hover { opacity: 0.88; transform: translateY(-2px); }
-  .btn-ghost { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--white); padding: 1rem 1.8rem; font-size: 1rem; font-weight: 400; border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius); transition: all var(--transition); }
+  .btn-ghost { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--texto-1); padding: 1rem 2rem; font-size: 1rem; font-weight: 400; border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius); transition: all var(--transition); }
   .btn-ghost:hover { border-color: var(--lima); color: var(--lima); }
-  .btn-dark { display: inline-flex; align-items: center; gap: 0.5rem; background: #131625; color: #fff; padding: 1rem 1.8rem; font-size: 1rem; font-weight: 700; border-radius: 2px; transition: all 0.22s; }
+  .btn-dark { display: inline-flex; align-items: center; gap: 0.5rem; background: #131625; color: var(--texto-1); padding: 1rem 2rem; font-size: 1rem; font-weight: 700; border-radius: 2px; transition: all 0.22s; }
   .btn-dark:hover { background: var(--violeta); }
-  .btn-dark-outline { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: #131625; padding: 1rem 1.8rem; font-size: 1rem; font-weight: 700; border: 1.5px solid rgba(19,22,37,0.3); border-radius: 2px; transition: all 0.22s; }
+  .btn-dark-outline { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: #131625; padding: 1rem 2rem; font-size: 1rem; font-weight: 700; border: 1.5px solid rgba(19,22,37,0.3); border-radius: 2px; transition: all 0.22s; }
   .btn-dark-outline:hover { border-color: #131625; }
   .section-label { display: inline-block; font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--lima); }
-  .section-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.4rem, 4vw, 4.2rem); line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
+  .section-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.75rem, 6vw, 4.5rem); line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
 
   /* HERO */
-  .geo-hero { background: #131625; padding: 4rem 0 4.32rem; position: relative; overflow: hidden; }
+  .geo-hero { background: #131625; padding: 4rem 0 4rem; position: relative; overflow: hidden; }
   .geo-hero-inner { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 4rem; align-items: center; }
-  .geo-tag { display: inline-block; background: rgba(200,255,0,0.12); color: #C8FF00; border: 1px solid rgba(200,255,0,0.25); padding: 0.25rem 0.9rem; font-size: 1rem; font-weight: 700; border-radius: 100px; margin-bottom: 1.5rem; }
-  .geo-hero h1 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.6rem, 4.4vw, 4.4rem); line-height: 1.05; letter-spacing: -0.02em; color: #fff; margin-bottom: 1.5rem; }
+  .geo-tag { display: inline-block; background: rgba(200,255,0,0.12); color: #C8FF00; border: 1px solid rgba(200,255,0,0.25); padding: 0.25rem 1rem; font-size: 1rem; font-weight: 700; border-radius: 100px; margin-bottom: 1.5rem; }
+  .geo-hero h1 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.75rem, 6vw, 4.5rem); line-height: 1.05; letter-spacing: -0.02em; color: var(--texto-1); margin-bottom: 1.5rem; }
   .geo-hero h1 .light { font-weight: 300; color: inherit; }
   .geo-hero-sub { font-size: 1.125rem; font-weight: 300; line-height: 1.6; color: var(--texto-3); margin-bottom: 1.5rem; max-width: 520px; }
   .geo-hero-claim { font-size: 1.125rem; font-weight: 700; color: #C8FF00; line-height: 1.6; margin-bottom: 2rem; max-width: 460px; }
   .geo-hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
   .geo-ask { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 2px; padding: 2rem 2rem; }
   .geo-ask-label { font-size: 1.125rem; font-weight: 700; color: #A08AE5; margin-bottom: 1rem; }
-  .geo-ask-q { font-family: 'Outfit', sans-serif; font-size: 1.375rem; font-weight: 700; line-height: 1.45; color: #fff; margin-bottom: 1rem; }
+  .geo-ask-q { font-family: 'Outfit', sans-serif; font-size: 1.375rem; font-weight: 700; line-height: 1.45; color: var(--texto-1); margin-bottom: 1rem; }
   .geo-ask-list { list-style: none; margin-bottom: 1rem; }
   .geo-ask-list li { font-size: 1.125rem; color: var(--texto-3); line-height: 1.6; padding: 0.75rem 0; border-top: 1px solid rgba(255,255,255,0.07); }
-  .geo-ask-list strong { color: #fff; font-weight: 700; }
+  .geo-ask-list strong { color: var(--texto-1); font-weight: 700; }
   .geo-ask-close { font-size: 1.125rem; color: var(--texto-2); line-height: 1.6; }
 
   @media (max-width: 900px) {
@@ -152,7 +156,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </button>
   </nav>
 </header>
-<main id="main" role="main" style="padding-top: 70px;">
+<main id="main" role="main" style="padding-top: 4rem;">
 
 <section class="geo-hero" aria-labelledby="geo-h1">
   <div class="container">
@@ -182,16 +186,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <style>
   .geo-diff { background:#F4F4F0; color:#131625; padding: 4rem 0; }
-  .geo-diff h2, .geo-limits h2 { font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(2.2rem,4vw,3.7rem); line-height:1.05; letter-spacing:-.02em; margin-bottom:1rem; }
+  .geo-diff h2, .geo-limits h2 { font-family:'Outfit',sans-serif; font-weight:700; font-size: clamp(2.25rem, 4.8vw, 3.5rem); line-height:1.05; letter-spacing:-.02em; margin-bottom:1rem; }
   .geo-label-dark { display:inline-block; font-size: 1rem; font-weight:700; color:#8E51B9; margin-bottom:1rem; }
   .geo-diff-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:#e1e1da; margin-top:3rem; }
-  .geo-diff-card { background:#fff; padding:2rem 1.8rem; }
+  .geo-diff-card { background:#fff; padding:2rem 2rem; }
   .geo-diff-num { font-size: 1rem; font-weight:700; color:#8E51B9; margin-bottom:0.75rem; }
   .geo-diff-card h3 { font-family:'Outfit',sans-serif; font-size: 1.375rem; font-weight:700; color:#131625; margin-bottom:0.75rem; }
   .geo-diff-card p { font-size: 1rem; line-height: 1.5; color: var(--tinta-3); }
   .geo-diff-card code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size: 0.875rem; color: var(--tinta-2); }
   .geo-kicker { font-size: 1.125rem; font-weight:700; color:#8E51B9; margin-top:2rem; }
-  .geo-test-link { margin-top:1.5rem; padding:1rem 1.25rem; background:#fff; border-left:3px solid #8E51B9; font-size: 1rem; line-height: 1.5; color: var(--tinta-3); }
+  .geo-test-link { margin-top:1.5rem; padding:1rem 1rem; background:#fff; border-left:3px solid #8E51B9; font-size: 1rem; line-height: 1.5; color: var(--tinta-3); }
   .geo-test-link strong { color:#131625; }
   .geo-test-link a { color:#8E51B9; font-weight:700; border-bottom:1px solid rgba(142,81,185,.3); }
 
@@ -199,11 +203,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .geo-entrego-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5px; background:rgba(255,255,255,.07); margin-top:3rem; }
   .geo-ent-group { font-size: 1.375rem; font-weight:700; color:#A08AE5; margin-top:3rem; }
   .geo-ent-group + .geo-entrego-grid { margin-top:1rem; }
-  .geo-ent { background:#0d0f1c; padding:1.5rem 1.65rem; }
-  .geo-ent-t { font-family:'Outfit',sans-serif; font-size: 1.125rem; font-weight:700; color:#fff; margin-bottom:0.5rem; line-height:1.6; }
+  .geo-ent { background:#0d0f1c; padding:1.5rem 1.5rem; }
+  .geo-ent-t { font-family:'Outfit',sans-serif; font-size: 1.125rem; font-weight:700; color: var(--texto-1); margin-bottom:0.5rem; line-height:1.6; }
   .geo-ent-d { font-size: 1rem; color: var(--texto-3); line-height: 1.5; }
   .geo-ent-d code, .geo-extra code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size: 0.875rem; color: var(--texto-2); }
-  .geo-extra { margin-top:2rem; padding:1.5rem 1.75rem; background:rgba(142,81,185,.12); border:1px solid rgba(142,81,185,.3); border-radius:4px; }
+  .geo-extra { margin-top:2rem; padding:1.5rem 1.5rem; background:rgba(142,81,185,.12); border:1px solid rgba(142,81,185,.3); border-radius:4px; }
   .geo-extra p:first-child { font-size: 1rem; font-weight:700; color:#C89BE8; margin-bottom:0.5rem; }
   .geo-extra p:last-child { font-size: 1rem; color: var(--texto-3); line-height: 1.5; }
   .geo-ent-note { font-size: 1rem; color: var(--texto-3); line-height: 1.5; max-width:760px; margin-top:2rem; border-left:3px solid rgba(255,255,255,.2); padding-left:1rem; }
@@ -212,9 +216,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .geo-limits-intro { font-size: 1.125rem; color: var(--tinta-3); line-height: 1.6; max-width:720px; }
   .geo-limits-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:2px; background:#e7e7e0; margin-top:2rem; }
   .geo-limits-card { background:#F4F4F0; padding:2rem; }
-  .geo-limits-card:last-child { background:#131625; color:#fff; }
+  .geo-limits-card:last-child { background:#131625; color: var(--texto-1); }
   .geo-limits-card h3 { font-family:'Outfit',sans-serif; font-size: 1.375rem; font-weight:700; margin-bottom:1rem; color:#131625; }
-  .geo-limits-card:last-child h3 { color:#fff; }
+  .geo-limits-card:last-child h3 { color: var(--texto-1); }
   .geo-limits-card p { font-size: 1rem; line-height: 1.5; color: var(--tinta-3); }
   .geo-limits-card p + p { margin-top:0.75rem; }
   .geo-limits-card:last-child p { color: var(--texto-3); }
@@ -223,25 +227,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .geo-pasos { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5px; background:rgba(255,255,255,.08); margin-top:3rem; }
   .geo-paso { background:#131625; padding:2rem 1.5rem; }
   .geo-paso-n { font-family:'Outfit',sans-serif; font-size:1.75rem; font-weight:700; color:#A08AE5; line-height:1.2; margin-bottom:0.75rem; }
-  .geo-paso h3 { font-family:'Outfit',sans-serif; font-size: 1.375rem; font-weight:700; color:#fff; margin-bottom:0.5rem; line-height:1.45; }
+  .geo-paso h3 { font-family:'Outfit',sans-serif; font-size: 1.375rem; font-weight:700; color: var(--texto-1); margin-bottom:0.5rem; line-height:1.45; }
   .geo-paso p { font-size: 1rem; color: var(--texto-3); line-height: 1.5; }
 
   .geo-precio-sec { background:#fff; color:#131625; border-top:1px solid #e7e7e0; padding: 4rem 0; }
   .geo-precio { text-align:center; max-width:660px; margin:0 auto; }
   .geo-precio-desde { font-size: 1rem; font-weight:700; color: var(--tinta-3); margin-bottom:0.5rem; }
-  .geo-precio-num { font-family:'Outfit',sans-serif; font-weight:700; font-size:clamp(3rem,7vw,4.5rem); color:#131625; line-height:1.05; }
+  .geo-precio-num { font-family:'Outfit',sans-serif; font-weight:700; font-size: clamp(2.75rem, 6vw, 4.5rem); color:#131625; line-height:1.05; }
   .geo-precio-ars { font-size: 1.125rem; color: var(--tinta-3); font-weight:700; letter-spacing:.1em; margin-bottom:1.5rem; }
   .geo-precio-eje { font-size: 1.125rem; color: var(--tinta-3); line-height: 1.6; margin-bottom:1.5rem; }
   .geo-cta-row { display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; }
-  .geo-testimonio { max-width:700px; margin:3rem auto 0; padding:0.5rem 0 .4rem 1.6rem; border-left:3px solid #131625; }
+  .geo-testimonio { max-width:700px; margin:3rem auto 0; padding:0.5rem 0 0.5rem 1.5rem; border-left:3px solid #131625; }
   .geo-testimonio p:first-child { font-size: 1.125rem; color:#131625; line-height: 1.6; font-weight:400; }
   .geo-testimonio p:last-child { font-size: 0.875rem; color: var(--tinta-3); margin-top:0.5rem; }
 
-  .geo-faq { background:#131625; padding: 4rem 0 5.04rem; }
+  .geo-faq { background:#131625; padding: 4rem 0 6rem; }
   .geo-faq-list { margin-top:3rem; }
   .geo-faq-item { border-top:1px solid rgba(255,255,255,.09); padding:1.5rem 0; }
   .geo-faq-item:last-child { border-bottom:1px solid rgba(255,255,255,.09); }
-  .geo-faq-q { font-family:'Outfit',sans-serif; font-size: 1.125rem; font-weight:700; color:#fff; margin-bottom:0.5rem; line-height:1.6; }
+  .geo-faq-q { font-family:'Outfit',sans-serif; font-size: 1.125rem; font-weight:700; color: var(--texto-1); margin-bottom:0.5rem; line-height:1.6; }
   .geo-faq-a { font-size: 1rem; color: var(--texto-3); line-height: 1.5; max-width:800px; }
   .footer-inner { max-width:1160px; margin:0 auto; padding:2rem 3rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
 
@@ -305,7 +309,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="geo-entrego" id="entrego" aria-labelledby="geo-ent-t">
   <div class="container">
-    <h2 id="geo-ent-t" class="section-title" style="color:#fff;margin-bottom:0.75rem;">Todo lo que<br>recibís.</h2>
+    <h2 id="geo-ent-t" class="section-title" style="color: var(--texto-1);margin-bottom:0.75rem;">Todo lo que<br>recibís.</h2>
     <h3 class="geo-ent-group">Lo que armamos</h3>
     <div class="geo-entrego-grid">
       <div class="geo-ent">
@@ -379,7 +383,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="geo-trabajo" aria-labelledby="geo-trab-t">
   <div class="container">
-    <h2 id="geo-trab-t" class="section-title" style="color:#fff;margin-bottom:0;">Cuatro pasos<br>y está publicado.</h2>
+    <h2 id="geo-trab-t" class="section-title" style="color: var(--texto-1);margin-bottom:0;">Cuatro pasos<br>y está publicado.</h2>
     <div class="geo-pasos">
       <div class="geo-paso">
         <p class="geo-paso-n">01</p>
@@ -422,7 +426,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="geo-faq" aria-labelledby="geo-faq-t">
   <div class="container">
-    <h2 id="geo-faq-t" class="section-title" style="color:#fff;margin-bottom:0;">Lo que me preguntan<br>antes de contratar.</h2>
+    <h2 id="geo-faq-t" class="section-title" style="color: var(--texto-1);margin-bottom:0;">Lo que me preguntan<br>antes de contratar.</h2>
     <div class="geo-faq-list">
       <div class="geo-faq-item">
         <p class="geo-faq-q">¿Cuánto cuesta y qué incluye?</p>

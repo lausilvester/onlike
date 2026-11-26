@@ -36,6 +36,8 @@
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
+  --texto-1: #ECEEF6;   /* blanco roto sobre oscuro  15,5:1 */
+
   --texto-2: #D7DAE4;   /* secundario sobre oscuro  12,9:1 */
   --texto-3: #AEB3C3;   /* terciario sobre oscuro    8,6:1 */
   --tinta-2: #3A3B48;   /* secundario sobre claro   11,1:1 */
@@ -55,53 +57,53 @@
     --radius: 2px;
   }
   html { scroll-behavior: smooth; }
-  body { font-family: var(--font-body); background: var(--dark); color: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  body { font-family: var(--font-body); background: var(--dark); color: var(--texto-1); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
   img { max-width: 100%; height: auto; display: block; }
   a { text-decoration: none; color: inherit; }
   header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; }
   nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 3rem; background: rgba(255,255,255,0.98); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(19,22,37,0.08); }
   .nav-logo img { height: 36px; width: auto; }
   .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
-  .nav-links a { color: var(--tinta-3); font-size: 0.875rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; transition: color var(--transition); }
+  .nav-links a { color: var(--tinta-3); font-size: 0.875rem; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; transition: color var(--transition); }
   .nav-links a:hover { color: var(--dark); }
-  .nav-cta { background: var(--dark) !important; color: var(--white) !important; padding: 0.5rem 1.1rem !important; border-radius: var(--radius); }
+  .nav-cta { background: var(--dark) !important; color: var(--texto-1) !important; padding: 0.5rem 1rem !important; border-radius: var(--radius); }
   .nav-cta:hover { background: var(--lima) !important; color: var(--dark) !important; }
-  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; flex-direction: column; gap: 5px; }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; flex-direction: column; gap: 0.25rem; }
   .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--dark); border-radius: 2px; transition: all 0.25s; }
   .container { max-width: 1160px; margin: 0 auto; padding: 0 3rem; }
   .container-narrow { max-width: 820px; margin: 0 auto; padding: 0 3rem; }
 
   /* ---------- botones ---------- */
-  .btn-lima { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--lima); color: var(--dark); padding: 1rem 1.9rem; font-size: 1rem; font-weight: 700; border-radius: var(--radius); transition: all var(--transition); letter-spacing: 0.01em; }
+  .btn-lima { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--lima); color: var(--dark); padding: 1rem 2rem; font-size: 1rem; font-weight: 700; border-radius: var(--radius); transition: all var(--transition); letter-spacing: 0.01em; }
   .btn-lima:hover { background: #B8EB00; transform: translateY(-2px); }
-  .btn-ghost { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--white); padding: 1rem 1.9rem; font-size: 1rem; font-weight: 400; border: 1px solid rgba(255,255,255,0.22); border-radius: var(--radius); transition: all var(--transition); }
+  .btn-ghost { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--texto-1); padding: 1rem 2rem; font-size: 1rem; font-weight: 400; border: 1px solid rgba(255,255,255,0.22); border-radius: var(--radius); transition: all var(--transition); }
   .btn-ghost:hover { border-color: var(--lima); color: var(--lima); }
-  .btn-ghost-dark { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--ink); padding: 1rem 1.9rem; font-size: 1rem; font-weight: 700; border: 1.5px solid rgba(19,22,37,0.2); border-radius: var(--radius); transition: all var(--transition); }
-  .btn-ghost-dark:hover { border-color: var(--ink); background: var(--ink); color: var(--white); }
-  .btn-dark { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--ink); color: var(--white); padding: 1rem 1.9rem; font-size: 1rem; font-weight: 700; border-radius: var(--radius); transition: all var(--transition); }
+  .btn-ghost-dark { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--ink); padding: 1rem 2rem; font-size: 1rem; font-weight: 700; border: 1.5px solid rgba(19,22,37,0.2); border-radius: var(--radius); transition: all var(--transition); }
+  .btn-ghost-dark:hover { border-color: var(--ink); background: var(--ink); color: var(--texto-1); }
+  .btn-dark { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--ink); color: var(--texto-1); padding: 1rem 2rem; font-size: 1rem; font-weight: 700; border-radius: var(--radius); transition: all var(--transition); }
   .btn-dark:hover { background: #000; transform: translateY(-2px); }
 
   /* ---------- tipografía de sección ---------- */
   .s-label { display: inline-block; font-size: 1rem; font-weight: 700; margin-bottom: 1.5rem; }
-  .s-title { font-weight: 700; font-size: clamp(2.1rem, 3.8vw, 3.6rem); line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.5rem; }
+  .s-title { font-weight: 700; font-size: clamp(2.25rem, 4.8vw, 3.5rem); line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.5rem; }
   .s-title .thin { font-weight: 300; }
   .lead { font-size: 1.125rem; font-weight: 300; line-height: 1.6; margin-bottom: 1.5rem; }
   .body-t { font-size: 1.125rem; line-height: 1.6; margin-bottom: 1.5rem; }
   section { padding: 4rem 0; }
-  .sec-dark { background: var(--dark); color: var(--white); }
+  .sec-dark { background: var(--dark); color: var(--texto-1); }
   .sec-white { background: var(--white); color: var(--ink); }
   .sec-gray { background: var(--gray-light); color: var(--ink); }
-  .sec-violeta { background: var(--dark); color: var(--white); }
+  .sec-violeta { background: var(--dark); color: var(--texto-1); }
   .on-dark .body-t, .on-dark .lead { color: var(--texto-3); }
   .on-light .body-t, .on-light .lead { color: var(--tinta-3); }
   .on-light strong { color: var(--ink); font-weight: 700; }
-  .on-dark strong { color: #fff; font-weight: 700; }
+  .on-dark strong { color: var(--texto-1); font-weight: 700; }
 
   /* ---------- hero ---------- */
-  .hero { background: var(--dark); padding: 4rem 0 4.68rem; position: relative; overflow: hidden; }
+  .hero { background: var(--dark); padding: 4rem 0 4rem; position: relative; overflow: hidden; }
   .hero-inner { max-width: 780px; position: relative; }
-  .tag { display: inline-block; background: rgba(200,255,0,0.1); color: var(--lima); border: 1px solid rgba(200,255,0,0.25); padding: 0.25rem 0.95rem; font-size: 1rem; font-weight: 700; border-radius: 100px; margin-bottom: 1.5rem; }
-  .hero h1 { font-weight: 700; font-size: clamp(2.6rem, 5.6vw, 4.6rem); line-height: 1.05; letter-spacing: -0.035em; color: #fff; margin-bottom: 1.5rem; }
+  .tag { display: inline-block; background: rgba(200,255,0,0.1); color: var(--lima); border: 1px solid rgba(200,255,0,0.25); padding: 0.25rem 1rem; font-size: 1rem; font-weight: 700; border-radius: 100px; margin-bottom: 1.5rem; }
+  .hero h1 { font-weight: 700; font-size: clamp(2.75rem, 6vw, 4.5rem); line-height: 1.05; letter-spacing: -0.035em; color: var(--texto-1); margin-bottom: 1.5rem; }
   .hero h1 .thin { font-weight: 300; }
   .hero-sub { font-size: 1.125rem; font-weight: 300; line-height: 1.6; color: var(--texto-3); margin-bottom: 3rem; max-width: 620px; }
   .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
@@ -110,16 +112,16 @@
   .rubros { background: var(--dark-deep); padding: 3rem 0; border-top: 1px solid rgba(255,255,255,0.05); }
   .rubros-title { font-size: 1rem; font-weight: 700; color: var(--texto-3); margin-bottom: 1.5rem; }
   .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-  .chip { background: rgba(255,255,255,0.05); color: var(--texto-2); border: 1px solid rgba(255,255,255,0.08); padding: 0.5rem 0.95rem; font-size: 0.875rem; font-weight: 400; border-radius: 2px; }
+  .chip { background: rgba(255,255,255,0.05); color: var(--texto-2); border: 1px solid rgba(255,255,255,0.08); padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: 400; border-radius: 2px; }
   .chip-lima { background: rgba(200,255,0,0.1); color: var(--lima); border-color: rgba(200,255,0,0.22); }
 
   /* ---------- datos ---------- */
   .datos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(31,31,46,0.1); margin: 3rem 0; }
-  .dato { background: var(--white); padding: 2rem 1.75rem; }
+  .dato { background: var(--white); padding: 2rem 1.5rem; }
   .dato-num { font-weight: 700; font-size: 2.75rem; line-height: 1.05; letter-spacing: -0.03em; color: var(--violeta); margin-bottom: 0.5rem; }
   .dato-txt { font-size: 1rem; line-height: 1.5; color: var(--tinta-3); }
   .dato-src { font-size: 0.875rem; color: var(--tinta-3); margin-top: 0.5rem; }
-  .pull { font-size: clamp(1.5rem, 2.8vw, 2.15rem); font-weight: 300; line-height: 1.2; letter-spacing: -0.02em; margin: 3rem 0; padding-left: 1.5rem; border-left: 3px solid var(--lima); }
+  .pull { font-size: clamp(1.75rem, 3vw, 2.25rem); font-weight: 300; line-height: 1.2; letter-spacing: -0.02em; margin: 3rem 0; padding-left: 1.5rem; border-left: 3px solid var(--lima); }
   .pull b { font-weight: 700; }
   .pull .pop { color: inherit; font-weight: 700; }
 
@@ -132,38 +134,38 @@
 
   /* ---------- situaciones y pasos ---------- */
   .situaciones { list-style: none; margin-top: 1.5rem; }
-  .situaciones li { font-size: 1.125rem; line-height: 1.6; padding: 0.75rem 0 0.85rem 1.9rem; position: relative; border-bottom: 1px solid rgba(31,31,46,0.1); }
+  .situaciones li { font-size: 1.125rem; line-height: 1.6; padding: 0.75rem 0 0.75rem 2rem; position: relative; border-bottom: 1px solid rgba(31,31,46,0.1); }
   .on-light .situaciones li { color: var(--tinta-2); }
   .situaciones li::before { content: '→'; position: absolute; left: 0; top: 0.85rem; color: var(--violeta); font-weight: 700; }
   .situaciones li:first-child { border-top: 1px solid rgba(31,31,46,0.14); }
   .paso-l { display: grid; grid-template-columns: 60px 1fr; gap: 1.5rem; padding: 2rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
   .paso-l:first-of-type { border-top: 1px solid rgba(255,255,255,0.14); }
   .paso-k { font-size: 1.375rem; font-weight: 700; color: var(--lima); line-height: 1.45; letter-spacing: -0.03em; }
-  .paso-l h3 { font-size: 1.375rem; font-weight: 700; color: #fff; margin-bottom: 0.75rem; letter-spacing: -0.02em; line-height: 1.45; }
+  .paso-l h3 { font-size: 1.375rem; font-weight: 700; color: var(--texto-1); margin-bottom: 0.75rem; letter-spacing: -0.02em; line-height: 1.45; }
   .paso-l > div > p { font-size: 1.125rem; line-height: 1.6; color: var(--texto-3); }
   .paso-l .cruce-h { margin-top: 1.5rem; }
   .faq-d { border-bottom: 1px solid rgba(255,255,255,0.09); padding: 1.5rem 0; }
   .faq-d:first-of-type { border-top: 1px solid rgba(255,255,255,0.14); }
-  .faq-d h3 { font-size: 1.375rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; letter-spacing: -0.01em; }
+  .faq-d h3 { font-size: 1.375rem; font-weight: 700; color: var(--texto-1); margin-bottom: 0.5rem; letter-spacing: -0.01em; }
   .faq-d p { font-size: 1.125rem; line-height: 1.6; color: var(--texto-3); }
   .micro { font-size: 1rem; color: var(--tinta-3); margin-top: 1.5rem; }
 
   /* ---------- foto fórum ---------- */
   .yo-forum { margin-top: 3rem; border: 1px solid rgba(255,255,255,0.09); border-radius: 3px; overflow: hidden; }
   .yo-forum img { width: 100%; display: block; }
-  .yo-forum figcaption { font-size: 0.875rem; color: var(--texto-3); padding: 0.75rem 1.15rem; background: rgba(255,255,255,0.03); letter-spacing: 0.02em; }
+  .yo-forum figcaption { font-size: 0.875rem; color: var(--texto-3); padding: 0.75rem 1rem; background: rgba(255,255,255,0.03); letter-spacing: 0.02em; }
 
   /* ---------- qué recibís ---------- */
   .bloque { margin-top: 3rem; }
   .bloque-k { font-size: 1rem; font-weight: 700; color: var(--lima); margin-bottom: 1rem; }
-  .bloque h3 { font-size: 1.375rem; font-weight: 700; letter-spacing: -0.02em; color: #fff; margin-bottom: 1rem; line-height: 1.45; }
+  .bloque h3 { font-size: 1.375rem; font-weight: 700; letter-spacing: -0.02em; color: var(--texto-1); margin-bottom: 1rem; line-height: 1.45; }
   .m-label { display: none; }
-  .cruce-h { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; padding: 0 0 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.14); }
+  .cruce-h { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; padding: 0 0 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.14); }
   .cruce-h span { font-size: 1rem; font-weight: 700; color: var(--texto-3); }
   .cruce-r { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; padding: 1.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
   .cruce-r p { font-size: 1.125rem; line-height: 1.6; }
   .cruce-cree { color: var(--texto-3); }
-  .cruce-real { color: var(--white); }
+  .cruce-real { color: var(--texto-1); }
   .def { display: grid; grid-template-columns: 250px 1fr; gap: 2rem; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
   .def:first-of-type { border-top: 1px solid rgba(255,255,255,0.14); }
   .def dt { font-size: 1.125rem; font-weight: 700; color: var(--lima); }
@@ -172,9 +174,9 @@
   .ruta-i { display: grid; grid-template-columns: 42px 210px 1fr; gap: 1.5rem; align-items: baseline; padding: 1.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
   .ruta-i:first-of-type { border-top: 1px solid rgba(255,255,255,0.14); }
   .ruta-n { font-size: 1.375rem; font-weight: 700; color: var(--lima); line-height: 1.45; }
-  .ruta-i h4 { font-size: 1.125rem; font-weight: 700; color: #fff; }
+  .ruta-i h4 { font-size: 1.125rem; font-weight: 700; color: var(--texto-1); }
   .ruta-i p { font-size: 1rem; line-height: 1.5; color: var(--texto-3); }
-  .nota-honesta { margin-top: 3rem; padding: 1.5rem 1.9rem; border-left: 3px solid var(--lima); background: rgba(255,255,255,0.025); }
+  .nota-honesta { margin-top: 3rem; padding: 1.5rem 2rem; border-left: 3px solid var(--lima); background: rgba(255,255,255,0.025); }
   .nota-honesta p { font-size: 1rem; line-height: 1.5; color: var(--texto-3); margin-bottom: 1rem; }
   .nota-honesta p:last-child { margin-bottom: 0; }
 
@@ -189,23 +191,23 @@
 
   /* ---------- qué reviso ---------- */
   .items { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(255,255,255,0.18); margin-top: 3rem; }
-  .item { background: var(--dark); padding: 2rem 1.8rem; }
+  .item { background: var(--dark); padding: 2rem 2rem; }
   .item-num { font-size: 0.875rem; font-weight: 700; letter-spacing: 0.18em; color: var(--texto-3); margin-bottom: 1rem; }
-  .item h3 { font-size: 1.375rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; line-height: 1.45; letter-spacing: -0.01em; }
+  .item h3 { font-size: 1.375rem; font-weight: 700; color: var(--texto-1); margin-bottom: 0.5rem; line-height: 1.45; letter-spacing: -0.01em; }
   .item p { font-size: 1rem; color: var(--texto-2); line-height: 1.5; }
 
   /* ---------- dos formas ---------- */
   .formas { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
-  .forma { border: 1px solid rgba(31,31,46,0.14); border-radius: 3px; padding: 2rem 2.2rem; }
+  .forma { border: 1px solid rgba(31,31,46,0.14); border-radius: 3px; padding: 2rem 2rem; }
   .forma-k { font-size: 1rem; font-weight: 700; color: var(--violeta); margin-bottom: 1rem; }
   .forma h3 { font-size: 1.375rem; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 1rem; line-height: 1.45; }
   .forma p { font-size: 1rem; line-height: 1.5; color: var(--tinta-3); margin-bottom: 1rem; }
   .forma-para { font-size: 1rem; color: var(--tinta-3); border-top: 1px solid rgba(31,31,46,0.1); padding-top: 1rem; margin-top: 1.5rem; }
 
   /* ---------- producto entrada ---------- */
-  .prod { border: 1px solid rgba(200,255,0,0.3); border-radius: 3px; padding: 3rem 2.8rem; background: rgba(200,255,0,0.04); }
+  .prod { border: 1px solid rgba(200,255,0,0.3); border-radius: 3px; padding: 3rem 3rem; background: rgba(200,255,0,0.04); }
   .prod-top { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
-  .prod-top h3 { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.03em; color: #fff; }
+  .prod-top h3 { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.03em; color: var(--texto-1); }
   .prod-precio { font-size: 1.75rem; font-weight: 700; color: var(--lima); letter-spacing: -0.03em; white-space: nowrap; }
 
   /* ---------- pasos ---------- */
@@ -227,11 +229,11 @@
 
   .link-v { color: var(--violeta); font-weight: 700; text-decoration: none; border-bottom: 1px solid rgba(142,81,185,0.35); }
   footer { background: var(--dark-deep); padding: 1.5rem 3rem; border-top: 1px solid rgba(255,255,255,0.04); }
-  .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; display: flex; align-items: center; gap: 0.75rem; background: #25D366; color: #fff; padding: 0.75rem 1.2rem 0.75rem 1rem; border-radius: 100px; font-size: 0.875rem; font-weight: 700; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: all var(--transition); }
+  .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; display: flex; align-items: center; gap: 0.75rem; background: #25D366; color: var(--ink); padding: 0.75rem 1rem 0.75rem 1rem; border-radius: 100px; font-size: 0.875rem; font-weight: 700; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: all var(--transition); }
   .wa-float:hover { background: #1ebe5d; transform: translateY(-2px); }
 
   @media (max-width: 900px) {
-    nav { padding: 0.75rem 1.25rem; }
+    nav { padding: 0.75rem 1rem; }
     .nav-links { display: none; }
     .nav-toggle { display: flex; }
     .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 60px; left: 0; right: 0; background: var(--white); padding: 2rem; gap: 1.5rem; border-bottom: 1px solid rgba(19,22,37,0.08); }
@@ -239,7 +241,7 @@
     .nav-links.open .nav-cta { text-align: center; }
     .container, .container-narrow { padding: 0 1.5rem; }
     section { padding: 3rem 0; }
-    .hero { padding: 4rem 0 4.5rem; }
+    .hero { padding: 4rem 0 4rem; }
     .yo-inner, .formas { grid-template-columns: 1fr; gap: 2rem; }
     .datos, .items, .pasos { grid-template-columns: 1fr; }
     .cruce-h { display: none; }
@@ -248,7 +250,7 @@
     .def { grid-template-columns: 1fr; gap: 0.5rem; }
     .ruta-i { grid-template-columns: 32px 1fr; gap: 0.5rem 1rem; }
     .ruta-n { grid-row: span 2; }
-    .nota-honesta { padding: 1.5rem 1.25rem; }
+    .nota-honesta { padding: 1.5rem 1rem; }
     .paso-l { grid-template-columns: 1fr; gap: 0.5rem; }
     .situaciones li { font-size: 1.125rem; }
     .datos { gap: 1px; }
@@ -725,7 +727,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ============ CÓMO MIRO TU NEGOCIO ============ -->
 <section class="sec-violeta" id="como-trabajo" aria-labelledby="h-como">
   <div class="container">
-    <h2 class="s-title" id="h-como" style="color:#fff;">Recorro tu negocio<br><span class="thin">como lo recorre el viajero.</span></h2>
+    <h2 class="s-title" id="h-como" style="color: var(--texto-1);">Recorro tu negocio<br><span class="thin">como lo recorre el viajero.</span></h2>
     <p class="lead" style="color: var(--texto-2);max-width:640px;">Y también como lo lee una máquina: las señales que confunden a una persona confunden a un buscador, y las que aclaran, aclaran para los dos. Antes de mirar un solo canal te paso un cuestionario sobre cómo funciona el negocio desde adentro. Después cruzo eso con lo que encuentro afuera.</p>
     <div class="items">
       <div class="item">
@@ -761,21 +763,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div style="max-width:820px;margin-top:3rem;">
-      <p class="bloque-k" style="color:#fff;">Lo que aparece cuando se cruzan las dos miradas</p>
+      <p class="bloque-k" style="color: var(--texto-1);">Lo que aparece cuando se cruzan las dos miradas</p>
       <div class="cruce-h" aria-hidden="true"><span style="color: var(--texto-3);">Lo que se cree</span><span style="color: var(--texto-3);">Lo que estaba pasando</span></div>
       <div class="cruce-r">
         <div><span class="m-label" style="color: var(--texto-3);">Lo que se cree</span><p class="cruce-cree" style="color: var(--texto-3);">"Nos falta gente porque estamos lejos."</p></div>
-        <div><span class="m-label" style="color: var(--texto-3);">Lo que estaba pasando</span><p class="cruce-real" style="color:#fff;">El competidor gana por señales acumuladas durante veinte años, más que por estar más cerca.</p></div>
+        <div><span class="m-label" style="color: var(--texto-3);">Lo que estaba pasando</span><p class="cruce-real" style="color: var(--texto-1);">El competidor gana por señales acumuladas durante veinte años, más que por estar más cerca.</p></div>
       </div>
       <div class="cruce-r">
         <div><span class="m-label" style="color: var(--texto-3);">Lo que se cree</span><p class="cruce-cree" style="color: var(--texto-3);">"La plataforma nos convierte poco."</p></div>
-        <div><span class="m-label" style="color: var(--texto-3);">Lo que estaba pasando</span><p class="cruce-real" style="color:#fff;">Tres razones concretas, todas identificables y todas corregibles.</p></div>
+        <div><span class="m-label" style="color: var(--texto-3);">Lo que estaba pasando</span><p class="cruce-real" style="color: var(--texto-1);">Tres razones concretas, todas identificables y todas corregibles.</p></div>
       </div>
       <div class="cruce-r">
         <div><span class="m-label" style="color: var(--texto-3);">Lo que se cree</span><p class="cruce-cree" style="color: var(--texto-3);">"Somos rústicos, es parte del encanto."</p></div>
-        <div><span class="m-label" style="color: var(--texto-3);">Lo que estaba pasando</span><p class="cruce-real" style="color:#fff;">Esa palabra estaba abaratando un producto premium, y se repetía en todas partes.</p></div>
+        <div><span class="m-label" style="color: var(--texto-3);">Lo que estaba pasando</span><p class="cruce-real" style="color: var(--texto-1);">Esa palabra estaba abaratando un producto premium, y se repetía en todas partes.</p></div>
       </div>
-      <p class="lead" style="color:#fff;margin-top:2rem;">Todas las preguntas que me hago cuando miro un negocio turístico están en la nota <a href="https://onlike.ar/auditoria-negocio-turistico.html" style="color:var(--lima);font-weight:700;border-bottom:1px solid rgba(200,255,0,0.4);">Qué te llevás de una auditoría de tu negocio turístico →</a></p>
+      <p class="lead" style="color: var(--texto-1);margin-top:2rem;">Todas las preguntas que me hago cuando miro un negocio turístico están en la nota <a href="https://onlike.ar/auditoria-negocio-turistico.html" style="color:var(--lima);font-weight:700;border-bottom:1px solid rgba(200,255,0,0.4);">Qué te llevás de una auditoría de tu negocio turístico →</a></p>
     </div>
   </div>
 </section>
@@ -796,7 +798,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="yo-inner">
       <div>
-        <h2 class="s-title" id="h-yo" style="color:#fff;">Turismo, estrategia digital<br><span class="thin">y negocios reales.</span></h2>
+        <h2 class="s-title" id="h-yo" style="color: var(--texto-1);">Turismo, estrategia digital<br><span class="thin">y negocios reales.</span></h2>
         <p class="body-t">Soy Laura Silvester, licenciada en Turismo por la Universidad Nacional de Misiones, docente de marketing turístico en nivel superior y fundadora de Onlike. Más de veinte años en el sector, con experiencia en gestión hotelera.</p>
         <p class="body-t"><strong>Esa combinación cambia la forma de analizar un proyecto turístico.</strong> Miro cómo funciona la propuesta dentro del sistema turístico: qué espera el viajero, cómo valida, con qué compara, qué intermediarios intervienen y qué frena la elección.</p>
         <p class="body-t">En junio de 2026 diserté sobre inteligencia artificial y comportamiento del viajero en el <a href="https://onlike.ar/forum2026.html" style="color:var(--lima);text-decoration:none;border-bottom:1px solid rgba(200,255,0,0.3);">Fórum Internacional de Turismo do Iguassu</a>, en Foz do Iguaçu, ante estudiantes y docentes de turismo de Brasil y Argentina.</p>
@@ -829,7 +831,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ============ FAQ ============ -->
 <section class="sec-dark on-dark" aria-labelledby="h-faq">
   <div class="container-narrow">
-    <h2 class="s-title" id="h-faq" style="color:#fff;">Lo que siempre<br><span class="thin">me preguntan.</span></h2>
+    <h2 class="s-title" id="h-faq" style="color: var(--texto-1);">Lo que siempre<br><span class="thin">me preguntan.</span></h2>
 
     <div class="faq-d">
       <h3>¿Es una auditoría de redes sociales?</h3>

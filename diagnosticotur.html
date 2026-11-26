@@ -33,6 +33,10 @@
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
+  --ink: #1F1F2E;       /* texto sobre claro */
+
+  --texto-1: #ECEEF6;   /* blanco roto sobre oscuro  15,5:1 */
+
   --texto-2: #D7DAE4;   /* secundario sobre oscuro  12,9:1 */
   --texto-3: #AEB3C3;   /* terciario sobre oscuro    8,6:1 */
   --tinta-2: #3A3B48;   /* secundario sobre claro   11,1:1 */
@@ -49,30 +53,30 @@
     --radius: 2px;
   }
   html { scroll-behavior: smooth; }
-  body { font-family: var(--font-body); background: var(--dark); color: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  body { font-family: var(--font-body); background: var(--dark); color: var(--texto-1); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
   img { max-width: 100%; height: auto; display: block; }
   a { text-decoration: none; color: inherit; }
   header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; }
   nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 3rem; background: rgba(255,255,255,0.98); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(19,22,37,0.08); }
   .nav-logo img { height: 36px; width: auto; }
   .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
-  .nav-links a { color: var(--tinta-3); font-size: 0.875rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; transition: color var(--transition); }
+  .nav-links a { color: var(--tinta-3); font-size: 0.875rem; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; transition: color var(--transition); }
   .nav-links a:hover { color: var(--dark); }
-  .nav-cta { background: var(--dark) !important; color: var(--white) !important; padding: 0.5rem 1.1rem !important; border-radius: var(--radius); }
+  .nav-cta { background: var(--dark) !important; color: var(--texto-1) !important; padding: 0.5rem 1rem !important; border-radius: var(--radius); }
   .nav-cta:hover { background: var(--magenta) !important; color: var(--dark) !important; }
   .container { max-width: 1160px; margin: 0 auto; padding: 0 3rem; }
   footer { background: var(--dark-deep); background-color: #0b0d18; padding: 1.5rem 3rem; border-top: 1px solid rgba(255,255,255,0.04); text-align: center; }
   footer nav { background: transparent !important; background-color: transparent !important; border-bottom: 0 !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; padding: 0 !important; }
   .footer-copy { font-size: 0.875rem; color: var(--texto-3); letter-spacing: 0.03em; }
-  .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; display: flex; align-items: center; gap: 0.75rem; background: #25D366; color: #fff; padding: 0.75rem 1.2rem 0.75rem 1rem; border-radius: 100px; font-size: 0.875rem; font-weight: 700; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: all var(--transition); }
+  .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; display: flex; align-items: center; gap: 0.75rem; background: #25D366; color: var(--ink); padding: 0.75rem 1rem 0.75rem 1rem; border-radius: 100px; font-size: 0.875rem; font-weight: 700; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: all var(--transition); }
   .wa-float:hover { background: #1ebe5d; transform: translateY(-2px); }
   .wa-float-text { white-space: nowrap; }
-  .btn-accent { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--magenta); color: var(--dark); padding: 1rem 1.8rem; font-size: 1rem; font-weight: 700; border-radius: var(--radius); transition: all var(--transition); border: none; cursor: pointer; letter-spacing: 0.02em; }
+  .btn-accent { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--magenta); color: var(--dark); padding: 1rem 2rem; font-size: 1rem; font-weight: 700; border-radius: var(--radius); transition: all var(--transition); border: none; cursor: pointer; letter-spacing: 0.02em; }
   .btn-accent:hover { opacity: 0.88; transform: translateY(-2px); }
-  .btn-ghost { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--white); padding: 1rem 1.8rem; font-size: 1rem; font-weight: 400; border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius); transition: all var(--transition); }
+  .btn-ghost { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--texto-1); padding: 1rem 2rem; font-size: 1rem; font-weight: 400; border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius); transition: all var(--transition); }
   .btn-ghost:hover { border-color: var(--magenta); color: var(--magenta); }
   .section-label { display: inline-block; font-size: 0.875rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1rem; color: var(--magenta); }
-  .section-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.4rem, 4vw, 4.2rem); line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
+  .section-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.75rem, 6vw, 4.5rem); line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
   @media (max-width: 900px) {
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
@@ -111,12 +115,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </ul>
   </nav>
 </header>
-<main id="main" role="main" style="padding-top: 70px;">
+<main id="main" role="main" style="padding-top: 4rem;">
 
 <style>
   .diagtur-wrap { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 4rem 0; }
   .diagtur-inner { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: start; }
-  .diagtur-title { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.4rem, 4vw, 4rem); line-height: 1.05; letter-spacing: -0.02em; color: #fff; margin-bottom: 1rem; }
+  .diagtur-title { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.25rem, 4.8vw, 3.5rem); line-height: 1.05; letter-spacing: -0.02em; color: var(--texto-1); margin-bottom: 1rem; }
   .diagtur-title em { font-style: normal; color: #FF3EBE; }
   .diagtur-sub { font-size: 1.125rem; color: var(--texto-3); line-height: 1.6; margin-bottom: 2rem; }
   .diagtur-contact { display: flex; flex-direction: column; gap: 0.75rem; }

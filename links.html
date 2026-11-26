@@ -28,6 +28,10 @@
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
   :root {
+  --ink: #1F1F2E;       /* texto sobre claro */
+
+  --texto-1: #ECEEF6;   /* blanco roto sobre oscuro  15,5:1 */
+
   --texto-2: #D7DAE4;   /* secundario sobre oscuro  12,9:1 */
   --texto-3: #AEB3C3;   /* terciario sobre oscuro    8,6:1 */
   --tinta-2: #3A3B48;   /* secundario sobre claro   11,1:1 */
@@ -47,7 +51,7 @@
   html, body {
     min-height: 100%;
     background: var(--dark);
-    color: var(--white);
+    color: var(--texto-1);
     font-family: 'Outfit', sans-serif;
     -webkit-font-smoothing: antialiased;
   }
@@ -72,7 +76,7 @@
     width: clamp(170px, 48vw, 210px);
     height: auto;
     display: block;
-    margin: 0 auto 1.25rem;
+    margin: 0 auto 1.5rem;
   }
 
   .tagline {
@@ -86,7 +90,7 @@
   .tagline strong {
     display: block;
     font-weight: 400;
-    color: var(--white);
+    color: var(--texto-1);
   }
 
   .links {
@@ -101,7 +105,7 @@
     font-size: 1rem;
     font-weight: 700;
     color: var(--texto-3);
-    margin: 1.5rem 0 0.35rem;
+    margin: 1.5rem 0 0.25rem;
   }
 
   .label:first-child { margin-top: 0; }
@@ -109,7 +113,7 @@
   .link-btn {
     display: block;
     width: 100%;
-    padding: 1rem 1.35rem;
+    padding: 1rem 1.5rem;
     border-radius: 3px;
     font-family: 'Outfit', sans-serif;
     font-size: 1rem;
@@ -125,7 +129,7 @@
     background: var(--lima);
     border: 1px solid var(--lima);
     color: var(--dark);
-    padding: 1rem 1.35rem;
+    padding: 1rem 1.5rem;
     line-height: 1.2;
   }
 
@@ -165,7 +169,7 @@
     background: transparent;
     border: 1px solid rgba(200,255,0,0.45);
     color: var(--lima);
-    padding: 1rem 1.35rem;
+    padding: 1rem 1.5rem;
     line-height: 1.2;
   }
 
@@ -194,26 +198,26 @@
   .link-btn--service:hover {
     border-color: var(--violeta);
     background: rgba(142,81,185,0.12);
-    color: var(--white);
+    color: var(--texto-1);
   }
 
   /* Marca y contacto */
   .link-btn--soft {
     background: transparent;
     border: 1px solid rgba(255,255,255,0.35);
-    color: var(--white);
+    color: var(--texto-1);
     font-weight: 400;
   }
 
   .link-btn--soft:hover {
     border-color: rgba(255,255,255,0.45);
     background: rgba(255,255,255,0.04);
-    color: var(--white);
+    color: var(--texto-1);
   }
 
   .social { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.75rem; }
-  .social a { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,0.35); border-radius: 3px; color: var(--white); transition: all 0.18s ease; }
-  .social a:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.06); color: var(--white); }
+  .social a { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,0.35); border-radius: 3px; color: var(--texto-1); transition: all 0.18s ease; }
+  .social a:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.06); color: var(--texto-1); }
   .social svg { width: 20px; height: 20px; fill: currentColor; }
 
   .signature {
