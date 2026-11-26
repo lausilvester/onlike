@@ -37,23 +37,62 @@ Son grises con una pizca de azul, de la familia del navy. Ningún texto baja de 
 
 ## Tipografía
 
-- Outfit, una sola familia, en pesos 300, 400, 500 y 700.
-- Titular de nota: `clamp(1.95rem, 3.8vw, 3.1rem)`, peso 700 con una parte en 300, interlineado 1.05.
-- Bajada: 1.25rem, peso 300, interlineado 1.55.
-- Cuerpo de nota: 1.165rem (18,6px), interlineado 1.65.
-- Subtítulos (h2): `clamp(1.5rem, 2.6vw, 2.05rem)`, peso 700.
-- Frase destacada: `clamp(1.35rem, 2.4vw, 1.85rem)`, peso 300, con filete lima a la izquierda.
+Outfit, una sola familia. **Ocho tamaños, tres pesos, cinco interlineados.** Todo lo que se escriba sale de acá; un valor que no esté en estas tablas no entra.
+
+### Los ocho tamaños
+
+Escala de razón 1,25. Cada paso se distingue del anterior sin tener que mirar dos veces.
+
+| rem | px | Para qué |
+|---|---|---|
+| 0.875 | 14 | Notas al pie, fuentes de gráfico, metadata |
+| 1 | 16 | Texto secundario, descripciones de tarjeta |
+| **1.125** | **18** | **Cuerpo de nota. El tamaño por defecto** |
+| 1.375 | 22 | Bajada, frase destacada, h3 |
+| 1.75 | 28 | h3 de página de servicio, encabezados de grupo |
+| 2.25 | 36 | h2 |
+| 2.75 | 44 | Titular de nota |
+| 4.5 | 72 | Titular de la home |
+
+Los titulares responsivos usan `clamp()` entre dos pasos de la escala, nunca valores sueltos.
+
+### Los tres pesos
+
+| Peso | Para qué |
+|---|---|
+| 300 | La parte fina del titular, y la bajada |
+| 400 | Todo el cuerpo |
+| 700 | Títulos, botones, etiquetas y la parte gruesa del titular |
+
+No se usan 500, 600 ni 900. En Outfit, 500 contra 400 y 600 contra 700 casi no se distinguen: dos pesos que no se diferencian no marcan jerarquía, solo ensucian.
+
+### Los cinco interlineados
+
+Atados al tamaño. Cuanto más grande la letra, más cerrado el interlineado.
+
+| Tamaño | Interlineado |
+|---|---|
+| 14–16px | 1.5 |
+| 18px | 1.6 |
+| 22–24px | 1.45 |
+| 28–36px | 1.2 |
+| 44px y más | 1.05 |
+
+### Reglas
+
 - Ningún texto de lectura por debajo de 0.875rem (14px).
 - Nunca una palabra pintada de otro color ni en cursiva dentro de un titular.
-
-**Un título se lee como título.** Tiene que ser visiblemente más grande que el texto que encabeza, nunca igual ni menor. Los pisos: h2 desde 1,6 veces el cuerpo, h3 desde 1,25 veces, h4 desde 1,12 veces. Una pregunta de preguntas frecuentes que se ve igual que su respuesta no funciona como pregunta.
-
-**Largo de línea.** Entre 60 y 80 caracteres. Si una columna pasa de 80, se agranda la letra o se limita el ancho con `max-width` en `ch`, no en píxeles.
+- **Un título se lee como título.** Más grande que el texto que encabeza, nunca igual ni menor. Los pisos: h2 desde 1,6 veces el cuerpo, h3 desde 1,25, h4 desde 1,12. Una pregunta de preguntas frecuentes que se ve igual que su respuesta no funciona como pregunta.
+- **Largo de línea entre 60 y 80 caracteres.** Si una columna pasa de 80, se agranda la letra o se limita el ancho con `max-width` en `ch`, no en píxeles.
+- El titular de la home lleva dos líneas en 300 y la tercera en 700, con el punto final en lima. Es un ritmo que atraviesa el titular entero, no una palabra resaltada.
 
 ## Aire
 
-- Padding de sección: entre 3,4rem y 5rem. Por encima de 5rem la página se siente vacía y obliga a scrollear de más.
-- Interlineado del cuerpo: 1,55 a 1,65. Por encima de 1,8 el párrafo se desarma.
+Grilla de nueve pasos, la misma que usa el design system para las piezas. Márgenes, padding y gap salen de acá.
+
+`0.25 · 0.5 · 0.75 · 1 · 1.5 · 2 · 3 · 4 · 6` rem — es decir 4, 8, 12, 16, 24, 32, 48, 64 y 96px.
+
+- Padding de sección: entre 3 y 4rem. Por encima de 5rem la página se siente vacía y obliga a scrollear de más.
 - El aire separa bloques distintos. Entre cosas que van juntas, el hueco es chico.
 
 ## El nicho va resaltado
