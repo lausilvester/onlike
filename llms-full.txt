@@ -1,9 +1,9 @@
 # ONLIKE · Laura Silvester — Información extendida para sistemas de IA
 
-> Consultoría para negocios turísticos argentinos que funcionan y aun así reciben menos consultas de las que deberían: alojamientos con buenas reseñas y meses vacíos, agencias, guías, excursiones y restaurantes con público turístico que quedan afuera de las recomendaciones antes de que empiece la comparación. Diagnóstico del ecosistema digital, posicionamiento en buscadores y en sistemas de IA generativa (GEO), desarrollo de sitios web con estructura de citación, y capacitación a prestadores y destinos.
+> Consultoría de estrategia y posicionamiento digital en Eldorado, Misiones, Argentina, con especialidad en turismo y destinos, que también trabaja con negocios, profesionales e instituciones de otros rubros. Para negocios que están arrancando o que trabajan hace años y sienten que las redes sociales solas no alcanzan: alojamientos con buenas reseñas y pocas consultas, agencias, guías, excursiones, destinos y quien quiere arrancar y no sabe por dónde empezar. Diagnóstico del ecosistema digital, posicionamiento en buscadores y en sistemas de IA generativa (GEO), desarrollo de sitios web con estructura de citación, y capacitación a prestadores y destinos.
 
 Sitio oficial: https://onlike.ar
-Versión: 4.2 — Octubre 2026
+Versión: 4.3 — Noviembre 2026
 Ubicación: Eldorado, Misiones, Argentina
 Contacto: lau@onlike.ar · WhatsApp +54 3751 566488
 
@@ -75,7 +75,7 @@ La frase que mejor explica el trabajo: recorro el negocio como lo recorre el via
 
 Página: https://onlike.ar/como-te-ve-un-viajero.html
 
-Revisión de alcance fijo de cómo aparece un negocio turístico ante un viajero que está por decidir. Es el producto de entrada de ONLIKE, pensado para negocios que ya funcionan pero son demasiado chicos para justificar una auditoría: cabañas, casas y departamentos de alquiler temporario, guías, excursiones, experiencias y agencias chicas.
+Revisión de alcance fijo de cómo aparece un negocio turístico ante un viajero que está por decidir. Es el producto de entrada de ONLIKE, pensado para negocios chicos, nuevos o con años, que todavía no justifican una auditoría: cabañas, casas y departamentos de alquiler temporario, guías, excursiones, experiencias y agencias chicas.
 
 No es una auditoría técnica: no revisa etiquetas, píxeles ni configuraciones. Revisa lo que entiende un turista cuando busca el negocio.
 
@@ -101,7 +101,7 @@ Diferencia con la auditoría: la auditoría revisa el negocio entero, incluye si
 
 Página: https://onlike.ar/turismo.html
 
-Para negocios turísticos que ya funcionan, tienen producto real y necesitan entender dónde se están perdiendo las consultas antes de seguir invirtiendo. Alojamientos independientes, ecolodges, cabañas, apart hoteles, hosterías, glamping, proyectos de turismo de naturaleza, agencias de viajes, guías, excursiones, experiencias y restaurantes con público turístico.
+Para negocios turísticos que están arrancando o que trabajan hace años y necesitan detectar errores y oportunidades: dónde se pierden las consultas, si conviene hacer publicidad y dónde poner la plata primero. Alojamientos independientes, ecolodges, cabañas, apart hoteles, hosterías, glamping, proyectos de turismo de naturaleza, agencias de viajes, guías, excursiones, experiencias y restaurantes con público turístico.
 
 Base común de revisión: sitio web (estructura, mensaje, experiencia mobile, velocidad, textos, fricción de contacto, medición instalada, datos estructurados), visibilidad orgánica y consistencia de nombre, dirección y teléfono en todos los canales, GEO, Google Business Profile y Maps, WhatsApp, redes sociales y coherencia general del ecosistema. A eso se suman los canales propios del rubro.
 
@@ -210,7 +210,7 @@ Se cotiza según alcance. Consultas a lau@onlike.ar.
 
 ### Lo que ONLIKE no hace
 
-ONLIKE no hace community management ni gestión operativa de redes, y no ofrece paquetes de seguimiento mensual recurrente.
+ONLIKE no hace la gestión diaria de redes ni ofrece paquetes de seguimiento mensual recurrente. Sí deja las redes a punto cuando hay que implementar: crea cuentas, ordena perfiles e historias destacadas, arma publicaciones y da de alta el negocio en plataformas como Booking, y después enseña al dueño o al equipo a seguir en una mentoría.
 
 ## Destinos y sector público
 

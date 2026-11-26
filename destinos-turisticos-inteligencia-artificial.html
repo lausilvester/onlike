@@ -83,34 +83,33 @@
   section { padding: 4rem 0; }
   .sec-dark { background: var(--dark); color: var(--texto-1); }
   .cierre { text-align: center; }
-  .cierre .s-title { max-width: 780px; margin-left: auto; margin-right: auto; }
+  .cierre .s-title { max-width: 780px; margin-left: auto; margin-right: auto; font-size: clamp(1.75rem, 3vw, 2.25rem); line-height: 1.2; }
   .cierre-btns { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
 
   footer { background: var(--dark-deep); padding: 1.5rem 3rem; border-top: 1px solid rgba(255,255,255,0.04); }
   .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; display: flex; align-items: center; gap: 0.75rem; background: #25D366; color: var(--ink); padding: 0.75rem 1rem 0.75rem 1rem; border-radius: 100px; font-size: 0.875rem; font-weight: 700; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: all var(--transition); }
   .wa-float:hover { background: #1ebe5d; transform: translateY(-2px); }
 
-  .nota-hero { background: var(--dark); padding: 6rem 0 4rem; position: relative; overflow: hidden; }
+  .nota-hero { background: var(--dark); padding: 6rem 0 2rem; position: relative; overflow: hidden; }
   .nota-hero .container-narrow { position: relative; }
-  .nota-kicker { display: inline-block; background: rgba(200,255,0,0.1); color: var(--lima); border: 1px solid rgba(200,255,0,0.25); padding: 0.25rem 1rem; font-size: 1rem; font-weight: 700; border-radius: 100px; margin-bottom: 1.5rem; }
-  .nota-hero h1 { font-weight: 700; font-size: clamp(2.25rem, 4.8vw, 3.5rem); line-height: 1.05; letter-spacing: -0.035em; color: var(--texto-1); margin-bottom: 1.5rem; }
+  .nota-hero h1 { font-weight: 700; font-size: clamp(1.75rem, 3.6vw, 2.75rem); line-height: 1.1; letter-spacing: -0.035em; color: var(--texto-1); margin-bottom: 1.5rem; }
   .nota-hero h1 .thin { font-weight: 300; }
-  .nota-bajada { font-size: 1.375rem; font-weight: 300; line-height: 1.45; color: var(--texto-3); margin-bottom: 2rem; }
-  .nota-meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-size: 0.875rem; color: var(--texto-3); border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem; }
+  .nota-bajada { font-size: 1.125rem; font-weight: 300; line-height: 1.6; color: var(--texto-3); margin-bottom: 2rem; }
+  .nota-meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-size: 1rem; color: var(--texto-3); border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem; }
   .nota-meta strong { color: var(--texto-3); font-weight: 400; }
 
-  .nota-body { background: var(--white); color: var(--ink); padding: 4rem 0 4rem; }
+  .nota-body { background: var(--white); color: var(--ink); padding: 2rem 0 4rem; }
   .nota-body h2 { font-size: clamp(1.75rem, 3vw, 2.25rem); font-weight: 700; letter-spacing: -0.025em; line-height: 1.2; color: var(--ink); margin: 4rem 0 1.5rem; }
   .nota-body h2:first-of-type { margin-top: 0; }
-  .nota-body p { font-size: 1.125rem; line-height: 1.6; color: var(--tinta-2); margin-bottom: 1.5rem; }
+  .nota-body p { font-size: 1.125rem; line-height: 1.6; color: var(--ink); margin-bottom: 1.5rem; }
   .nota-body strong { color: var(--ink); font-weight: 700; }
   .nota-body ul { list-style: none; margin: 0 0 1.5rem; }
-  .nota-body ul li { font-size: 1.125rem; line-height: 1.6; color: var(--tinta-2); padding: 0.75rem 0 0.75rem 2rem; position: relative; border-bottom: 1px solid rgba(31,31,46,0.08); }
+  .nota-body ul li { font-size: 1.125rem; line-height: 1.6; color: var(--ink); padding: 0.75rem 0 0.75rem 2rem; position: relative; border-bottom: 1px solid rgba(31,31,46,0.08); }
   .nota-body ul li::before { content: '→'; position: absolute; left: 0; top: 0.7rem; color: var(--violeta); font-weight: 700; }
   .nota-body ul li:first-child { border-top: 1px solid rgba(31,31,46,0.12); }
   .nota-body .cita { font-size: 1.125rem; font-weight: 400; line-height: 1.6; color: var(--ink); margin: 2rem 0; padding-left: 1.5rem; border-left: 3px solid rgba(31,31,46,0.15); font-style: italic; }
 
-  .nota-body .nota-destacado { font-size: clamp(1.375rem, 2.2vw, 1.75rem); font-weight: 300; line-height: 1.45; letter-spacing: -0.02em; color: var(--ink); margin: 3rem 0; padding-left: 1.5rem; border-left: 3px solid var(--lima); }
+  .nota-body .nota-destacado { font-size: 1.375rem; font-weight: 300; line-height: 1.45; letter-spacing: -0.02em; color: var(--ink); margin: 3rem 0; padding-left: 1.5rem; border-left: 3px solid var(--lima); }
   .nota-destacado b { font-weight: 700; }
 
   sup.nref { font-size: 0.875rem; font-weight: 700; vertical-align: super; line-height: 1.5; }
@@ -129,7 +128,7 @@
 
   figure { margin: 3rem 0; }
   figure svg { width: 100%; height: auto; display: block; border-radius: 6px; }
-  figcaption { font-size: 0.875rem; line-height: 1.5; color: var(--tinta-3); margin-top: 0.75rem; }
+  figcaption { font-size: 1rem; line-height: 1.5; color: var(--tinta-3); margin-top: 0.75rem; }
 
   .notas-pie { margin-top: 3rem; padding-top: 1.5rem; border-top: 2px solid rgba(31,31,46,0.15); }
   .notas-pie-k { font-size: 1rem; font-weight: 700; color: var(--violeta); margin-bottom: 1rem; display: block; }
@@ -148,9 +147,6 @@
   .firma img { width: 96px; height: 120px; object-fit: cover; border-radius: 3px; }
   .firma p { font-size: 1rem; line-height: 1.5; color: var(--tinta-3); margin-bottom: 0.75rem; }
   .firma strong { color: var(--ink); }
-  .firma-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem; }
-  .firma-chips span { font-size: 0.875rem; font-weight: 700; letter-spacing: 0.04em; padding: 0.25rem 0.5rem; border: 1px solid rgba(31,31,46,0.18); border-radius: 100px; color: var(--tinta-3); }
-  .firma-chips span.lima { background: var(--lima); border-color: var(--lima); color: var(--ink); }
   .firma-redes { display: flex; flex-wrap: wrap; gap: 0.5rem; }
   .firma-redes a { font-size: 1rem; font-weight: 700; padding: 0.25rem 0.75rem; border: 1px solid rgba(31,31,46,0.2); border-radius: var(--radius); color: var(--tinta-3); transition: all var(--transition); }
   .firma-redes a:hover { background: var(--dark); border-color: var(--dark); color: var(--texto-1); }
@@ -163,8 +159,8 @@
     .nav-links.open a { font-size: 1.125rem; }
     .container, .container-narrow { padding: 0 1.5rem; }
     section { padding: 3rem 0; }
-    .nota-hero { padding: 4rem 0 3rem; }
-    .nota-body { padding: 3rem 0 4rem; }
+    .nota-hero { padding: 6rem 0 2rem; }
+    .nota-body { padding: 2rem 0 4rem; }
     .nota-body .nota-destacado { font-size: 1.375rem; padding-left: 1rem; }
     .cierre-nota { padding: 1.5rem 1.5rem; }
     .firma { grid-template-columns: 1fr; gap: 1rem; }
@@ -446,7 +442,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <title id="g1t">Las tres decisiones encadenadas del viajero antes de elegir un alojamiento</title>
         <desc id="g1d">El viajero decide primero la provincia o región: Misiones, Jujuy, Salta o Mendoza. Después decide en qué localidad para o hace base dentro de esa región. Recién en tercer lugar elige el alojamiento o la experiencia concreta. Las dos primeras decisiones están fuera del alcance de un prestador individual; la tercera es la única que puede gestionar. Las dos primeras determinan cuánta gente llega a la tercera.</desc>
         <rect x="0" y="0" width="720" height="520" rx="10" fill="#131625"/>
-        <text x="48" y="52" font-size="11" font-weight="700" letter-spacing="1.98" fill="#A08AE5">LA SECUENCIA DE DECISIÓN</text>
+        <text x="48" y="52" font-size="13" font-weight="700" fill="#A08AE5">La secuencia de decisión</text>
         <text x="48" y="96" font-size="38" letter-spacing="-1.14" fill="#FFFFFF"><tspan font-weight="200">Tres decisiones </tspan><tspan font-weight="700">antes de la tuya</tspan></text>
         <text x="48" y="126" font-size="15" font-weight="300" fill="#FFFFFF" fill-opacity="0.6">Cómo se ordena la elección de un viaje dentro del país</text>
         <line x1="48" y1="158" x2="672" y2="158" stroke="#FFFFFF" stroke-opacity="0.1"/>
@@ -454,16 +450,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <rect x="48" y="186" width="4" height="76" fill="#FF3EBE"/>
         <text x="76" y="216" font-size="17" font-weight="700" fill="#FFFFFF">1 · Elegir la región</text>
         <text x="76" y="241" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.62">Misiones o Jujuy. La Patagonia o el Litoral. Acá se define cuánta gente viene.</text>
-        <text x="656" y="216" font-size="10" font-weight="700" letter-spacing="1.4" fill="#FF3EBE" text-anchor="end">FUERA DE TU ALCANCE</text>
+        <text x="656" y="216" font-size="13" font-weight="700" fill="#FF3EBE" text-anchor="end">Fuera de tu alcance</text>
         <rect x="48" y="278" width="624" height="76" rx="4" fill="#FFFFFF" fill-opacity="0.05"/>
         <rect x="48" y="278" width="4" height="76" fill="#FF3EBE"/>
         <text x="76" y="308" font-size="17" font-weight="700" fill="#FFFFFF">2 · Elegir dónde parar</text>
         <text x="76" y="333" font-size="14" font-weight="300" fill="#FFFFFF" fill-opacity="0.62">Ya resuelta la región: en qué localidad hace base. Acá se reparte.</text>
-        <text x="656" y="308" font-size="10" font-weight="700" letter-spacing="1.4" fill="#FF3EBE" text-anchor="end">FUERA DE TU ALCANCE</text>
+        <text x="656" y="308" font-size="13" font-weight="700" fill="#FF3EBE" text-anchor="end">Fuera de tu alcance</text>
         <rect x="48" y="370" width="624" height="76" rx="4" fill="#C8FF00"/>
         <text x="76" y="400" font-size="17" font-weight="700" fill="#131625">3 · Elegir tu negocio</text>
         <text x="76" y="425" font-size="14" font-weight="400" fill="#131625" fill-opacity="0.75">Recién acá aparecen tu nombre, tu precio, tus fotos y tus reseñas.</text>
-        <text x="656" y="400" font-size="10" font-weight="700" letter-spacing="1.4" fill="#131625" text-anchor="end">TU TRABAJO</text>
+        <text x="656" y="400" font-size="13" font-weight="700" fill="#131625" text-anchor="end">Tu trabajo</text>
         <line x1="48" y1="472" x2="672" y2="472" stroke="#FFFFFF" stroke-opacity="0.1"/>
         <text x="48" y="500" font-size="16" font-weight="400" fill="#FFFFFF" fill-opacity="0.85">Trabajás la tercera. Las dos primeras deciden cuánta gente llega a la tercera.</text>
         <text x="672" y="500" font-size="13" font-weight="700" fill="#C8FF00" text-anchor="end">onlike.ar</text>
@@ -512,24 +508,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <title id="g2t">Cómo la descripción de un destino condiciona qué prestadores entran en el itinerario</title>
         <desc id="g2d">Primero el sistema define qué es el destino: qué tipo de lugar es y qué actividades ofrece. Después arma el itinerario, reparte los días, propone actividades y nombra dónde comer. Recién en ese momento se decide qué prestadores locales entran en la recomendación y cuáles quedan afuera. La oferta local que no entró no perdió por precio, por producto ni por reseñas: no llegó a competir.</desc>
         <rect x="0" y="0" width="720" height="560" rx="10" fill="#131625"/>
-        <text x="48" y="52" font-size="11" font-weight="700" letter-spacing="1.98" fill="#A08AE5">LA CASCADA</text>
+        <text x="48" y="52" font-size="13" font-weight="700" fill="#A08AE5">La cascada</text>
         <text x="48" y="96" font-size="38" font-weight="200" letter-spacing="-1.14" fill="#FFFFFF">Lo que se decide primero</text>
         <text x="48" y="136" font-size="38" font-weight="700" letter-spacing="-1.14" fill="#FFFFFF">condiciona todo lo demás</text>
         <line x1="48" y1="168" x2="672" y2="168" stroke="#FFFFFF" stroke-opacity="0.1"/>
 
         <rect x="48" y="196" width="624" height="70" rx="4" fill="#FFFFFF" fill-opacity="0.06"/>
-        <text x="72" y="224" font-size="11" font-weight="700" letter-spacing="1.4" fill="#A08AE5">PASO 1 · DEFINE QUÉ ES EL DESTINO</text>
+        <text x="72" y="224" font-size="13" font-weight="700" fill="#A08AE5">Paso 1 · Define qué es el destino</text>
         <text x="72" y="250" font-size="15" font-weight="300" fill="#FFFFFF" fill-opacity="0.8">Qué tipo de lugar es y qué actividades ofrece.</text>
         <path d="M360,266 L360,288" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1.5"/>
         <path d="M354,281 L360,289 L366,281" fill="none" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1.5"/>
 
         <rect x="48" y="296" width="624" height="70" rx="4" fill="#FFFFFF" fill-opacity="0.06"/>
-        <text x="72" y="324" font-size="11" font-weight="700" letter-spacing="1.4" fill="#A08AE5">PASO 2 · ARMA EL ITINERARIO</text>
+        <text x="72" y="324" font-size="13" font-weight="700" fill="#A08AE5">Paso 2 · Arma el itinerario</text>
         <text x="72" y="350" font-size="15" font-weight="300" fill="#FFFFFF" fill-opacity="0.8">Reparte los días, propone actividades y nombra dónde comer.</text>
         <path d="M360,366 L360,388" stroke="#FF3EBE" stroke-opacity="0.6" stroke-width="1.5"/>
         <path d="M354,381 L360,389 L366,381" fill="none" stroke="#FF3EBE" stroke-opacity="0.6" stroke-width="1.5"/>
 
-        <text x="48" y="414" font-size="11" font-weight="700" letter-spacing="1.4" fill="#A08AE5">PASO 3 · SE DECIDE LA OFERTA LOCAL</text>
+        <text x="48" y="414" font-size="13" font-weight="700" fill="#A08AE5">Paso 3 · Se decide la oferta local</text>
 
         <rect x="48" y="426" width="304" height="66" rx="4" fill="#C8FF00"/>
         <text x="72" y="452" font-size="16" font-weight="700" fill="#131625">Los que entran</text>
