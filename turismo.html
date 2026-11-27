@@ -100,7 +100,7 @@
   .on-dark strong { color: var(--texto-1); font-weight: 700; }
 
   /* ---------- hero ---------- */
-  .hero { background: var(--dark); padding: 6rem 0 4rem; position: relative; overflow: hidden; }
+  .hero { background: var(--dark); padding: 6rem 0 3rem; position: relative; overflow: hidden; }
   .hero-inner { max-width: 780px; position: relative; }
   .hero h1 { font-weight: 700; font-size: clamp(2.25rem, 4.8vw, 3.5rem); line-height: 1.05; letter-spacing: -0.035em; color: var(--texto-1); margin-bottom: 1.5rem; }
   .hero h1 .thin { font-weight: 300; }
@@ -275,7 +275,7 @@
   .r-line { fill: none; stroke: #A08AE5; stroke-width: 4; stroke-dasharray: 6 7; stroke-linecap: round; }
   .r-draw { stroke-dasharray: 1; stroke-dashoffset: 0; }
   .r-node { fill: #C8FF00; }
-  .r-lab { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 19px; fill: #fff; }
+  .r-lab { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 18px; fill: #ECEEF6; }
   .r-off { fill: rgba(255,255,255,0.35); }
   .r-lost { fill: #C8FF00; }
   .r-ring { fill: none; stroke: rgba(200,255,0,0.45); stroke-width: 2; transform-box: fill-box; transform-origin: center; }
@@ -318,6 +318,23 @@
 
   .light { font-weight: 300; }
   .hero-kicker { font-size: 1rem; font-weight: 700; color: var(--lavanda); margin-bottom: 1rem; }
+  .hero-rubros { font-size: 1rem; line-height: 1.5; color: var(--texto-3); max-width: 560px; margin: -0.5rem 0 2rem; }
+  .casos { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2.5rem; }
+  .caso { background: var(--gray-light); border-left: 3px solid var(--violeta); padding: 2rem; }
+  .caso-k { font-size: 1rem; font-weight: 700; color: var(--violeta); margin-bottom: 0.5rem; }
+  .caso h3 { font-size: 1.375rem; font-weight: 700; color: var(--ink); margin-bottom: 0.75rem; }
+  .caso p { font-size: 1rem; line-height: 1.5; color: var(--tinta-2); margin-bottom: 1rem; }
+  .caso-fin { font-weight: 700; color: var(--ink) !important; margin-bottom: 0 !important; }
+  .formas-3 { grid-template-columns: repeat(3, 1fr); }
+  .items-4 { grid-template-columns: repeat(2, 1fr); }
+  .faq-claro .faq-d { border-bottom-color: rgba(31,31,46,0.12); }
+  .faq-claro .faq-d:first-of-type { border-top-color: rgba(31,31,46,0.16); }
+  .faq-claro .faq-d h3 { color: var(--ink); }
+  .faq-claro .faq-d p { color: var(--tinta-2); }
+  .dato-src a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  @media (max-width: 900px) {
+    .casos, .formas-3, .items-4 { grid-template-columns: 1fr; }
+  }
 </style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -405,7 +422,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     },
     {
       "@type": "Service",
-      "@id": "https://onlike.ar/turismo.html#estrategia",
+      "@id": "https://onlike.ar/turismo.html#service",
       "name": "Estrategia digital para turismo",
       "alternateName": [
         "Auditoría digital para negocios turísticos",
@@ -433,8 +450,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "priceSpecification": {
           "@type": "PriceSpecification",
           "priceCurrency": "ARS",
-          "minPrice": "300000",
-          "description": "Arranca en ARS 300.000. El alcance y el precio se definen caso por caso, según el tipo de proyecto, su mercado, su escala y la pregunta que necesita responder."
+          "minPrice": "90000",
+          "description": "Cómo te ve un viajero, ARS 90.000. Auditoría, desde ARS 300.000. Ordenamiento digital, según el caso. El alcance y el precio se definen caso por caso, según el tipo de proyecto, su mercado, su escala y la pregunta que necesita responder."
         },
         "availability": "https://schema.org/InStock",
         "seller": {
@@ -449,6 +466,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {
             "@type": "Offer",
             "url": "https://onlike.ar/auditoria-negocio-turistico.html",
+            "priceCurrency": "ARS",
+            "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "ARS", "minPrice": "300000" },
             "itemOffered": {
               "@type": "Service",
               "name": "Auditoría digital para negocios turísticos"
@@ -472,20 +491,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               "name": "Cómo te ve un viajero",
               "description": "Revisión de alcance fijo en cinco lugares: plataformas de reserva, Google, Instagram y Facebook, WhatsApp y ChatGPT. Documento escrito con qué cambiar primero."
             }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Mentorías para equipos y dueños de proyectos turísticos"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Capacitaciones en marketing turístico e inteligencia artificial"
-            }
           }
         ]
       },
@@ -499,30 +504,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "@type": "FAQPage",
       "@id": "https://onlike.ar/turismo.html#faq",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "¿Es una auditoría de redes sociales?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Las redes son una parte. La auditoría estudia el ecosistema completo: el recorrido del viajero, la propuesta, el sitio, las búsquedas, los mapas, la reputación, las plataformas de reserva, el contacto y la comercialización."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Incluye posicionamiento en inteligencias artificiales?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí. Es una capa de todos los trabajos: cómo te encuentran, interpretan y comparan las IA cuando alguien busca lo que ofrecés."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Implementás vos o solo decís qué hacer?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Las dos cosas, según quién vaya a ejecutar. Con la auditoría te llevás el qué y el orden, para que lo haga tu equipo o quien maneja tus redes. Con el ordenamiento digital lo dejo hecho yo. Y si preferís hacerlo vos con acompañamiento, la auditoría puede seguir con una mentoría 1:1."
-          }
-        },
         {
           "@type": "Question",
           "name": "¿Manejás mis redes todas las semanas?",
@@ -544,7 +525,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           "name": "¿Se puede trabajar de forma remota?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. El relevamiento y la reunión de devolución se hacen en forma remota, en todo el país. En Misiones y la región también trabajo presencial."
+            "text": "Sí. El relevamiento y la reunión de devolución se hacen en forma remota, en todo el país. En Misiones y la región también trabajo presencial. Trabajo en español, portugués e inglés."
           }
         },
         {
@@ -593,8 +574,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container hero-grid">
     <div class="hero-inner">
       <p class="hero-kicker">Para negocios turísticos</p>
-      <h1 id="h1">Buenas reseñas.<br><span class="thin">Pocas consultas.</span></h1>
+      <h1 id="h1">El viajero decide<br><span class="thin">antes de escribirte.</span></h1>
       <p class="hero-sub">Puede ser una temporada floja que nadie sabe explicar, un proyecto que recién arranca, o un producto que en persona es excelente y en pantalla parece uno más. Analizo cómo el viajero encuentra, entiende, compara y elige tu negocio, y dónde se pierden las consultas antes de llegar a vos. Y cuando hace falta, lo ordeno yo.</p>
+      <p class="hero-rubros">Alojamientos, ecolodges, cabañas, hosterías, agencias, guías, excursiones, experiencias y restaurantes con público turístico, nuevos o con años. En todo el país, en español, portugués o inglés.</p>
       <div class="hero-btns">
         <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20escribo%20desde%20tu%20p%C3%A1gina.%20Quiero%20contarte%20mi%20caso." target="_blank" rel="noopener noreferrer" class="btn-lima js-wa" data-wa="hero">Contame tu caso</a>
         <a href="#formas" class="btn-ghost">Cómo trabajo</a>
@@ -628,41 +610,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- ============ RUBROS ============ -->
-<section class="rubros" aria-label="Con quién trabajo" style="padding:3rem 0;">
-  <div class="container">
-    <p class="rubros-title">Alojamientos, experiencias y proyectos turísticos, nuevos o con años</p>
-    <div class="chips">
-      <span class="chip">Ecolodges y lodges de naturaleza</span>
-      <span class="chip">Cabañas y glamping</span>
-      <span class="chip">Hoteles boutique y apart-hoteles</span>
-      <span class="chip">Hosterías</span>
-      <span class="chip">Agencias y turismo receptivo</span>
-      <span class="chip">Guías y excursiones</span>
-      <span class="chip">Experiencias</span>
-      <span class="chip">Restaurantes con público turístico</span>
-      <span class="chip">Remoto en todo el país</span>
-    </div>
-  </div>
-</section>
-
 <!-- ============ PARA QUIÉN ES ============ -->
 <section class="sec-white on-light" aria-labelledby="h-paraquien">
   <div class="container-narrow">
     <h2 class="s-title" id="h-paraquien">Cuando hay una decisión<br><span class="thin">por tomar.</span></h2>
     <ul class="situaciones">
       <li>Entran menos consultas y no está claro cuánto es del mercado y cuánto es tuyo.</li>
-      <li>Tenés buenas reseñas y pocas consultas.</li>
       <li>Las cosas van bien y querés saber si las estás haciendo bien, o qué te falta para captar más.</li>
       <li>Estás por invertir en publicidad, en una web nueva o en una agencia, y querés saber dónde poner la plata primero.</li>
       <li>La experiencia real es mucho mejor que lo que muestran la web y las plataformas.</li>
       <li>Tenés el producto, pero lo digital está desarmado y no tenés quién lo ordene.</li>
-      <li>Estás arrancando y no sabés qué armar primero.</li>
       <li>Querés llegar a un viajero nuevo: otro país, otro idioma, otro segmento.</li>
     </ul>
     <p class="body-t" style="margin-top:2rem;">Si tu proyecto recién arranca, mi especialidad me permite acompañarte desde el principio: pensar el producto para el viajero al que apuntás, cómo comercializarlo, qué estrategia de precios conviene, cuál es tu propuesta de valor y cómo promocionarlo, dónde y con qué argumentos. En un negocio que ya funciona termino revisando todo eso igual; si estás arrancando, conviene pensarlo antes.</p>
-    <p class="body-t">Podés llegar sin saber qué te pasa. El trabajo empieza justamente por ahí.</p>
-    <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20pasa%20algo%20de%20esto%20y%20quiero%20contarte%20mi%20caso." target="_blank" rel="noopener noreferrer" class="btn-dark js-wa" data-wa="para-quien" style="margin-top:1rem;">Me pasa esto</a>
   </div>
 </section>
 
@@ -679,12 +639,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="dato">
         <p class="dato-num">59%</p>
         <p class="dato-txt">empieza a buscar su próximo viaje sin un destino definido, o mirando varios a la vez.</p>
-        <p class="dato-src">Expedia Group · Luth Research, 2023. Siete mercados, entre ellos México</p>
+        <p class="dato-src"><a href="https://www.expedia.com/newsroom/eg-path-to-purchase-research/" target="_blank" rel="noopener noreferrer">Expedia Group · Luth Research, 2023</a>. Siete mercados, entre ellos México</p>
       </div>
       <div class="dato">
         <p class="dato-num">70%</p>
         <p class="dato-txt">ya usó inteligencia artificial para planificar un viaje.</p>
-        <p class="dato-src">Arival · Phocuswright, 2026. Viajeros de Argentina, Brasil y México</p>
+        <p class="dato-src"><a href="https://arival.travel/article/how-latam-travelers-plan-trips/" target="_blank" rel="noopener noreferrer">Arival · Phocuswright, 2026</a>. Viajeros de Argentina, Brasil y México</p>
       </div>
       <div class="dato">
         <p class="dato-num">42%</p>
@@ -693,27 +653,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    <p class="body-t">Los tres juntos ordenan el problema. Casi seis de cada diez viajeros todavía están eligiendo adónde ir: ahí se arma la lista corta. La IA ya participa de ese momento. Y la confianza sigue estando en las personas y en las reseñas, así que después el viajero entra igual a tu sitio, a tu Google y a tus reseñas. Si ahí encuentra cosas que no coinciden, duda.</p>
-
     <p class="body-t"><strong>La calidad de lo que ofrecés suele estar. Lo que falta es que esté traducida, conectada y comprobable en digital.</strong></p>
-
-    <p class="body-t" style="font-size: 1rem;">Para seguir leyendo: <a href="https://onlike.ar/turismo-argentina-2026.html" class="link-v">Cuánto bajó realmente el turismo en Argentina →</a> · <a href="https://onlike.ar/por-que-bajaron-las-consultas-alojamiento.html" class="link-v">Por qué bajaron las consultas →</a></p>
   </div>
 </section>
 
-<!-- ============ DOS FORMAS DE TRABAJAR ============ -->
+<!-- ============ CASOS ============ -->
+<section class="sec-white on-light" aria-labelledby="h-caso">
+  <div class="container">
+    <h2 class="s-title" id="h-caso">El valor ya existía.<br><span class="thin">Estaba escondido.</span></h2>
+    <div class="casos">
+      <div class="caso">
+        <p class="caso-k">Ecolodge de avistaje de aves · Misiones</p>
+        <h3>Surucuá</h3>
+        <p>13 años, reseñas casi perfectas, huéspedes que vuelven y meses muy flojos que nadie sabía explicar. Cuando alguien les escribía, el mail que mandaban vendía muy bien. El problema estaba antes: la web lo llamaba “rústico” y las IAs lo repetían, Google lo tenía como “hotel de 3 estrellas”, y en eBird tenía más especies registradas que su competidor directo, pero nadie lo sabía.</p>
+        <p class="caso-fin">No había que publicar más: había que traducir lo que ya tenían.</p>
+      </div>
+      <div class="caso">
+        <p class="caso-k">Hotel boutique · Puerto Iguazú</p>
+        <h3>Siete habitaciones</h3>
+        <p>Al momento del relevamiento tenía 9,6 en Booking y huéspedes que nombraban al equipo en las reseñas, pero sentían que bajaba la ocupación y dudaban si invertir en publicidad. En veinte respuestas de asistentes de IA sobre alojamiento en la zona apareció tres veces, y su diferencial, un desayuno distinto cada día pensado según de dónde viene el huésped, no estaba contado en ningún canal.</p>
+        <p class="caso-fin">Primero, corregir lo que el viajero veía en Booking. Después, publicidad con presupuesto acotado y midiendo reservas.</p>
+      </div>
+    </div>
+    <a href="https://onlike.ar/auditoria-negocio-turistico.html" class="btn-dark" style="margin-top:2rem;">Ver los dos casos en video</a>
+  </div>
+</section>
+<!-- ============ QUIÉN SOY ============ -->
+<section class="sec-dark on-dark" aria-labelledby="h-yo">
+  <div class="container">
+    <div class="yo-inner">
+      <div>
+        <h2 class="s-title" id="h-yo" style="color: var(--texto-1);">Turismo, estrategia digital<br><span class="thin">y negocios reales.</span></h2>
+        <p class="body-t">Soy Laura Silvester, licenciada en Turismo por la Universidad Nacional de Misiones, docente de marketing turístico en nivel superior y fundadora de ONLIKE. Más de veinte años en el sector, con experiencia en gestión hotelera. En junio de 2026 diserté sobre inteligencia artificial y comportamiento del viajero en el <a href="https://onlike.ar/forum2026.html" style="color:var(--lavanda);text-decoration:underline;text-underline-offset:3px;">Fórum Internacional de Turismo do Iguassu</a>.</p>
+      </div>
+      <div class="yo-foto">
+        <img src="assets/laura.webp" width="800" height="1000" alt="Laura Silvester, licenciada en Turismo y consultora en estrategia digital, Eldorado, Misiones" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============ TRES FORMAS DE EMPEZAR ============ -->
 <section class="sec-white on-light" id="formas" aria-labelledby="h-formas">
   <div class="container">
-    <h2 class="s-title" id="h-formas">La pregunta que decide es una:<br><span class="thin">¿quién lo va a hacer?</span></h2>
-    <div class="formas">
+    <h2 class="s-title" id="h-formas">Tres formas<br><span class="thin">de empezar.</span></h2>
+    <div class="formas formas-3">
       <div class="forma">
-        <p class="forma-k">Auditoría</p>
-        <h3>Te muestro qué pasa y en qué orden resolverlo.</h3>
-        <p>Para cuando tenés equipo, alguien que maneja tus redes o ganas de hacerlo vos. Recibís un diagnóstico con evidencia, una hoja de ruta ordenada por impacto, con criterio de pauta incluido, y una reunión en vivo para bajar todo a decisiones.</p>
-        <p class="forma-para"><a href="https://onlike.ar/auditoria-negocio-turistico.html" class="link-v">Qué te llevás de una auditoría →</a></p>
+        <p class="forma-k">Cómo te ve un viajero · $90.000 ARS</p>
+        <h3>Te digo qué cambiar primero.</h3>
+        <p>Una revisión de alcance fijo: miro tu negocio en los cinco lugares donde el viajero te compara antes de decidir (las plataformas donde vendés, Google, Instagram y Facebook, WhatsApp y ChatGPT) y te entrego por escrito qué encontré y qué cambiar primero. Para un negocio chico o para empezar por algo acotado.</p>
+        <p class="forma-para"><a href="https://onlike.ar/como-te-ve-un-viajero.html" class="link-v">Ver cómo funciona →</a></p>
       </div>
       <div class="forma">
-        <p class="forma-k">Ordenamiento digital</p>
+        <p class="forma-k">Auditoría · desde $300.000 ARS</p>
+        <h3>Te muestro qué pasa y en qué orden resolverlo.</h3>
+        <p>Para cuando tenés equipo, alguien que maneja tus redes o ganas de hacerlo vos. Recibís un diagnóstico con evidencia, una hoja de ruta ordenada por impacto, con criterio de pauta incluido, y una reunión en vivo para bajar todo a decisiones.</p>
+        <a href="https://onlike.ar/auditoria-negocio-turistico.html" class="btn-dark">Qué te llevás de una auditoría</a>
+      </div>
+      <div class="forma">
+        <p class="forma-k">Ordenamiento digital · según el caso</p>
         <h3>Lo dejo hecho.</h3>
         <p>Para cuando el producto es bueno, lo digital está desarmado y no hay quién lo ejecute. Recibís todo armado y funcionando: una promesa clara y el viajero al que le hablás, precios y paquetes ordenados en las monedas de tu mercado, la experiencia escrita en los idiomas que hagan falta, tu ficha de Google y Maps, WhatsApp Business con catálogo, Instagram y Facebook ordenados, y las reseñas respondidas.</p>
         <p>Se hace por etapas. Primero, lo que el viajero ve cuando te busca. Después, según tu caso, Booking, la web o la visibilidad.</p>
@@ -721,15 +718,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <p class="body-t" style="margin-top:2rem;max-width:720px;">El ordenamiento siempre parte de una lectura previa: una auditoría o Cómo te ve un viajero. Con esa base decidimos qué hago yo y qué hacés vos.</p>
+    <p class="micro" style="margin-top:1rem;">Si preferís hacer una primera revisión por tu cuenta, está el <a href="https://onlike.ar/test-turismo" class="link-v">Test Turismo</a> gratuito: diez preguntas, sin dejar datos.</p>
   </div>
 </section>
-
 <!-- ============ CÓMO MIRO TU NEGOCIO ============ -->
 <section class="sec-violeta" id="como-trabajo" aria-labelledby="h-como">
   <div class="container">
     <h2 class="s-title" id="h-como" style="color: var(--texto-1);">Recorro tu negocio<br><span class="thin">como lo recorre el viajero.</span></h2>
-    <p class="lead" style="color: var(--texto-2);max-width:640px;">Y también como lo lee una máquina: las señales que confunden a una persona confunden a un buscador, y las que aclaran, aclaran para los dos. Antes de mirar un solo canal te paso un cuestionario sobre cómo funciona el negocio desde adentro. Después cruzo eso con lo que encuentro afuera.</p>
-    <div class="items">
+    <p class="lead" style="color: var(--texto-2);max-width:640px;">Y también como lo lee una máquina. Antes de mirar un solo canal te paso un cuestionario sobre cómo funciona el negocio desde adentro, y después cruzo eso con lo que encuentro afuera.</p>
+    <div class="items items-4">
       <div class="item">
         <p class="item-num">01</p>
         <h3>Mercado y demanda</h3>
@@ -742,23 +739,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="item">
         <p class="item-num">03</p>
-        <h3>Ecosistema digital</h3>
-        <p>Sitio, Google, mapas, redes, WhatsApp y plataformas de reserva, y si trabajan juntos.</p>
+        <h3>Canales, buscadores e IA</h3>
+        <p>Sitio, Google, mapas, redes, WhatsApp, plataformas de reserva y lo que contestan las IAs: si trabajan juntos y qué señales tienen para recomendarte.</p>
       </div>
       <div class="item">
         <p class="item-num">04</p>
-        <h3>Reputación y confianza</h3>
-        <p>Reseñas, menciones y credenciales. Qué celebra el huésped y si eso aparece en tu comunicación.</p>
-      </div>
-      <div class="item">
-        <p class="item-num">05</p>
-        <h3>Comercialización</h3>
-        <p>Qué pasa entre el interés y la confirmación: precios, políticas, pagos, tiempos de respuesta e intermediarios.</p>
-      </div>
-      <div class="item">
-        <p class="item-num">06</p>
-        <h3>Buscadores e IA</h3>
-        <p>Cómo te encuentran, interpretan y comparan Google y las IA, y qué señales tienen para recomendarte.</p>
+        <h3>Confianza y comercialización</h3>
+        <p>Reseñas y credenciales, y lo que pasa entre el interés y la reserva: precios, políticas, pagos, tiempos de respuesta e intermediarios.</p>
       </div>
     </div>
 
@@ -769,99 +756,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div><span class="m-label" style="color: var(--texto-3);">Lo que se cree</span><p class="cruce-cree" style="color: var(--texto-3);">"Nos falta gente porque estamos lejos."</p></div>
         <div><span class="m-label" style="color: var(--texto-3);">Lo que estaba pasando</span><p class="cruce-real" style="color: var(--texto-1);">El competidor gana por señales acumuladas durante veinte años, más que por estar más cerca.</p></div>
       </div>
-      <div class="cruce-r">
-        <div><span class="m-label" style="color: var(--texto-3);">Lo que se cree</span><p class="cruce-cree" style="color: var(--texto-3);">"La plataforma nos convierte poco."</p></div>
-        <div><span class="m-label" style="color: var(--texto-3);">Lo que estaba pasando</span><p class="cruce-real" style="color: var(--texto-1);">Tres razones concretas, todas identificables y todas corregibles.</p></div>
-      </div>
-      <div class="cruce-r">
-        <div><span class="m-label" style="color: var(--texto-3);">Lo que se cree</span><p class="cruce-cree" style="color: var(--texto-3);">"Somos rústicos, es parte del encanto."</p></div>
-        <div><span class="m-label" style="color: var(--texto-3);">Lo que estaba pasando</span><p class="cruce-real" style="color: var(--texto-1);">Esa palabra estaba abaratando un producto premium, y se repetía en todas partes.</p></div>
-      </div>
-      <p class="lead" style="color: var(--texto-1);margin-top:2rem;">Todas las preguntas que me hago cuando miro un negocio turístico están en la nota <a href="https://onlike.ar/auditoria-negocio-turistico.html" style="color:var(--lima);font-weight:700;border-bottom:1px solid rgba(200,255,0,0.4);">Qué te llevás de una auditoría de tu negocio turístico →</a></p>
     </div>
-  </div>
-</section>
-
-<!-- ============ CASO ============ -->
-<section class="sec-white on-light" aria-labelledby="h-caso">
-  <div class="container-narrow">
-    <h2 class="s-title" id="h-caso">El valor ya existía.<br><span class="thin">Estaba escondido.</span></h2>
-    <p class="body-t">Surucuá, un ecolodge de avistaje de aves en Misiones, con 13 años, reseñas casi perfectas y huéspedes que vuelven, tenía meses muy flojos que nadie sabía explicar. Cuando alguien les escribía, el mail que mandaban vendía muy bien.</p>
-    <p class="body-t">El problema estaba antes de ese mail: la web lo llamaba “rústico” y las IAs lo repetían, Google lo tenía como “hotel de 3 estrellas”, y en eBird, la plataforma que consultan los observadores de aves antes de viajar, tenía más especies registradas que su competidor directo, pero nadie lo sabía.</p>
-    <p class="pull" style="border-color:var(--violeta);">No había que publicar más: <b>había que traducir lo que ya tenían</b>.</p>
-    <p class="body-t" style="font-size: 1rem;">El caso completo, en video, junto con el de un hotel boutique de Puerto Iguazú: <a href="https://onlike.ar/auditoria-negocio-turistico.html" class="link-v">leer la nota →</a></p>
-  </div>
-</section>
-
-<!-- ============ QUIÉN SOY ============ -->
-<section class="sec-dark on-dark" aria-labelledby="h-yo">
-  <div class="container">
-    <div class="yo-inner">
-      <div>
-        <h2 class="s-title" id="h-yo" style="color: var(--texto-1);">Turismo, estrategia digital<br><span class="thin">y negocios reales.</span></h2>
-        <p class="body-t">Soy Laura Silvester, licenciada en Turismo por la Universidad Nacional de Misiones, docente de marketing turístico en nivel superior y fundadora de ONLIKE. Más de veinte años en el sector, con experiencia en gestión hotelera.</p>
-        <p class="body-t"><strong>Esa combinación cambia la forma de analizar un proyecto turístico.</strong> Miro cómo funciona la propuesta dentro del sistema turístico: qué espera el viajero, cómo valida, con qué compara, qué intermediarios intervienen y qué frena la elección.</p>
-        <p class="body-t">En junio de 2026 diserté sobre inteligencia artificial y comportamiento del viajero en el <a href="https://onlike.ar/forum2026.html" style="color:var(--lima);text-decoration:none;border-bottom:1px solid rgba(200,255,0,0.3);">Fórum Internacional de Turismo do Iguassu</a>, en Foz do Iguaçu, ante estudiantes y docentes de turismo de Brasil y Argentina.</p>
-      </div>
-      <div class="yo-foto">
-        <img src="assets/laura.webp" width="800" height="1000" alt="Laura Silvester, licenciada en Turismo y consultora en estrategia digital, Eldorado, Misiones" loading="lazy">
-      </div>
-    </div>
-    <figure class="yo-forum">
-      <img src="assets/forum-escenario.webp" width="1162" height="830" alt="Laura Silvester disertando sobre inteligencia artificial y comportamiento del viajero en el Fórum Internacional de Turismo do Iguassu, Foz do Iguaçu, junio de 2026" loading="lazy">
-    </figure>
-  </div>
-</section>
-
-<!-- ============ CÓMO TE VE UN VIAJERO ============ -->
-<section class="sec-white on-light" aria-labelledby="h-entrada">
-  <div class="container-narrow">
-    <div class="prod" style="background:var(--gray-light);border-color:rgba(142,81,185,0.3);">
-      <div class="prod-top">
-        <h2 id="h-entrada" style="font-size:1.75rem;font-weight:700;letter-spacing:-0.03em;color:var(--ink);">Cómo te ve un viajero</h2>
-        <p class="prod-precio" style="color:var(--violeta);">$90.000</p>
-      </div>
-      <p class="body-t">Una revisión de alcance fijo. Miro tu negocio en los cinco lugares donde el viajero te compara antes de decidir: las plataformas donde vendés, Google, Instagram y Facebook, WhatsApp y ChatGPT. Te entrego por escrito qué encontré y qué cambiar primero.</p>
-      <a href="https://onlike.ar/como-te-ve-un-viajero.html" class="btn-dark" style="margin-top:0.5rem;">Ver cómo funciona</a>
-    </div>
-    <p class="micro" style="margin-top:1.5rem;">Si preferís hacer una primera revisión por tu cuenta, está el <a href="https://onlike.ar/test-turismo" class="link-v">Test Turismo</a> gratuito: diez preguntas, sin dejar datos.</p>
   </div>
 </section>
 
 <!-- ============ FAQ ============ -->
-<section class="sec-dark on-dark" aria-labelledby="h-faq">
+<section class="sec-white on-light faq-claro" aria-labelledby="h-faq">
   <div class="container-narrow">
-    <h2 class="s-title" id="h-faq" style="color: var(--texto-1);">Lo que siempre<br><span class="thin">me preguntan.</span></h2>
-
-    <div class="faq-d">
-      <h3>¿Es una auditoría de redes sociales?</h3>
-      <p>Las redes son una parte. La auditoría estudia el ecosistema completo: el recorrido del viajero, la propuesta, el sitio, las búsquedas, los mapas, la reputación, las plataformas de reserva, el contacto y la comercialización.</p>
-    </div>
-    <div class="faq-d">
-      <h3>¿Incluye posicionamiento en inteligencias artificiales?</h3>
-      <p>Sí. Es una capa de todos los trabajos: cómo te encuentran, interpretan y comparan las IA cuando alguien busca lo que ofrecés.</p>
-    </div>
-    <div class="faq-d">
-      <h3>¿Implementás vos o solo decís qué hacer?</h3>
-      <p>Las dos cosas, según quién vaya a ejecutar. Con la auditoría te llevás el qué y el orden, para que lo haga tu equipo o quien maneja tus redes. Con el ordenamiento digital lo dejo hecho yo. Y si preferís hacerlo vos con acompañamiento, la auditoría puede seguir con una mentoría 1:1.</p>
-    </div>
-    <div class="faq-d">
-      <h3>¿Manejás mis redes todas las semanas?</h3>
-      <p>No hago la gestión del día a día, pero sí dejo tus redes a punto cuando hace falta implementar: creo cuentas, ordeno perfiles e historias destacadas, armo publicaciones y doy de alta tu negocio en plataformas como Booking. Después, en una mentoría, te enseño a seguir a vos o a tu equipo.</p>
-    </div>
+    <h2 class="s-title" id="h-faq">Lo que siempre<br><span class="thin">me preguntan.</span></h2>
     <div class="faq-d">
       <h3>¿Cómo se define el alcance y cuánto sale?</h3>
       <p>A partir de una primera conversación sobre el proyecto, su situación, sus mercados y la pregunta que necesitás responder. Cada caso pide revisar plataformas distintas, con distinta profundidad. Arranca en $300.000 y se define caso por caso.</p>
     </div>
     <div class="faq-d">
       <h3>¿Se puede trabajar de forma remota?</h3>
-      <p>Sí. El relevamiento y la reunión de devolución se hacen en forma remota, en todo el país. En Misiones y la región también trabajo presencial.</p>
+      <p>Sí. El relevamiento y la reunión de devolución se hacen en forma remota, en todo el país. En Misiones y la región también trabajo presencial. Trabajo en español, portugués e inglés.</p>
+    </div>
+    <div class="faq-d">
+      <h3>¿Manejás mis redes todas las semanas?</h3>
+      <p>No hago la gestión del día a día, pero sí dejo tus redes a punto cuando hace falta implementar: creo cuentas, ordeno perfiles e historias destacadas, armo publicaciones y doy de alta tu negocio en plataformas como Booking. Después, en una mentoría, te enseño a seguir a vos o a tu equipo.</p>
     </div>
     <div class="faq-d">
       <h3>¿En qué se diferencia una auditoría de Cómo te ve un viajero?</h3>
       <p>Cómo te ve un viajero mira cinco lugares fijos y te entrega por escrito qué encontré y qué cambiar primero. Cuesta $90.000 y el documento cierra el trabajo. La auditoría recorre todo tu ecosistema según el rubro, cruza lo que encuentro con lo que me contás, ordena las acciones por impacto y termina en una reunión de devolución. Si tu negocio es chico o querés empezar por algo acotado, Cómo te ve un viajero es el primer paso.</p>
     </div>
-  </div>
 </section>
 
 <!-- ============ CIERRE ============ -->
