@@ -85,7 +85,7 @@
 
   /* ---------- tipografía de sección ---------- */
   .s-label { display: inline-block; font-size: 1rem; font-weight: 700; margin-bottom: 1.5rem; }
-  .s-title { font-weight: 700; font-size: clamp(2.25rem, 4.8vw, 3.5rem); line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.5rem; }
+  .s-title { font-weight: 700; font-size: clamp(1.75rem, 3.6vw, 2.75rem); line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.5rem; }
   .s-title .thin { font-weight: 300; }
   .lead { font-size: 1.125rem; font-weight: 300; line-height: 1.6; margin-bottom: 1.5rem; }
   .body-t { font-size: 1.125rem; line-height: 1.6; margin-bottom: 1.5rem; }
@@ -100,9 +100,9 @@
   .on-dark strong { color: var(--texto-1); font-weight: 700; }
 
   /* ---------- hero ---------- */
-  .hero { background: var(--dark); padding: 4rem 0 4rem; position: relative; overflow: hidden; }
+  .hero { background: var(--dark); padding: 6rem 0 4rem; position: relative; overflow: hidden; }
   .hero-inner { max-width: 780px; position: relative; }
-  .hero h1 { font-weight: 700; font-size: clamp(2.75rem, 6vw, 4.5rem); line-height: 1.05; letter-spacing: -0.035em; color: var(--texto-1); margin-bottom: 1.5rem; }
+  .hero h1 { font-weight: 700; font-size: clamp(2.25rem, 4.8vw, 3.5rem); line-height: 1.05; letter-spacing: -0.035em; color: var(--texto-1); margin-bottom: 1.5rem; }
   .hero h1 .thin { font-weight: 300; }
   .hero-sub { font-size: 1.125rem; font-weight: 300; line-height: 1.6; color: var(--texto-3); margin-bottom: 3rem; max-width: 620px; }
   .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
@@ -112,7 +112,6 @@
   .rubros-title { font-size: 1rem; font-weight: 700; color: var(--texto-3); margin-bottom: 1.5rem; }
   .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
   .chip { background: rgba(255,255,255,0.05); color: var(--texto-2); border: 1px solid rgba(255,255,255,0.08); padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: 400; border-radius: 2px; }
-  .chip-lima { background: rgba(200,255,0,0.1); color: var(--lima); border-color: rgba(200,255,0,0.22); }
 
   /* ---------- datos ---------- */
   .datos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(31,31,46,0.1); margin: 3rem 0; }
@@ -135,7 +134,14 @@
   .situaciones { list-style: none; margin-top: 1.5rem; }
   .situaciones li { font-size: 1.125rem; line-height: 1.6; padding: 0.75rem 0 0.75rem 2rem; position: relative; border-bottom: 1px solid rgba(31,31,46,0.1); }
   .on-light .situaciones li { color: var(--tinta-2); }
-  .situaciones li::before { content: '→'; position: absolute; left: 0; top: 0.85rem; color: var(--violeta); font-weight: 700; }
+  .situaciones li::before { content: ''; position: absolute; left: 0; top: 1.275rem; width: 12px; height: 12px; border-radius: 50%; background: #7B3FB0; }
+.situaciones li:nth-child(2)::before { background: #8E3FB2; }
+.situaciones li:nth-child(3)::before { background: #A13FB4; }
+.situaciones li:nth-child(4)::before { background: #B43FB6; }
+.situaciones li:nth-child(5)::before { background: #C63EB8; }
+.situaciones li:nth-child(6)::before { background: #D93EBA; }
+.situaciones li:nth-child(7)::before { background: #EC3EBC; }
+.situaciones li:nth-child(8)::before { background: #FF3EBE; }
   .situaciones li:first-child { border-top: 1px solid rgba(31,31,46,0.14); }
   .paso-l { display: grid; grid-template-columns: 60px 1fr; gap: 1.5rem; padding: 2rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
   .paso-l:first-of-type { border-top: 1px solid rgba(255,255,255,0.14); }
@@ -240,7 +246,7 @@
     .nav-links.open .nav-cta { text-align: center; }
     .container, .container-narrow { padding: 0 1.5rem; }
     section { padding: 3rem 0; }
-    .hero { padding: 4rem 0 4rem; }
+    .hero { padding: 6rem 0 3rem; }
     .yo-inner, .formas { grid-template-columns: 1fr; gap: 2rem; }
     .datos, .items, .pasos { grid-template-columns: 1fr; }
     .cruce-h { display: none; }
@@ -311,6 +317,7 @@
   }
 
   .light { font-weight: 300; }
+  .hero-kicker { font-size: 1rem; font-weight: 700; color: var(--lavanda); margin-bottom: 1rem; }
 </style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -361,7 +368,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "@id": "https://onlike.ar/#person",
       "name": "Laura Silvester",
       "jobTitle": "Consultora en estrategia y posicionamiento digital para turismo",
-      "description": "Licenciada en Turismo por la Universidad Nacional de Misiones. Más de veinte años en el sector turístico y quince como docente de marketing turístico, con experiencia en gestión hotelera. Fundadora de Onlike, especializada en GEO (Generative Engine Optimization) aplicado a negocios turísticos.",
+      "description": "Licenciada en Turismo por la Universidad Nacional de Misiones. Más de veinte años en el sector turístico y quince como docente de marketing turístico, con experiencia en gestión hotelera. Fundadora de ONLIKE, especializada en GEO (Generative Engine Optimization) aplicado a negocios turísticos.",
       "url": "https://onlike.ar/turismo.html",
       "image": "https://onlike.ar/assets/laura.webp",
       "email": "lau@onlike.ar",
@@ -437,7 +444,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "serviceOutput": "Auditoría: diagnóstico con evidencia, hoja de ruta por impacto y reunión en vivo. Ordenamiento digital: presencia digital armada y funcionando.",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Servicios de Onlike para turismo",
+        "name": "Servicios de ONLIKE para turismo",
         "itemListElement": [
           {
             "@type": "Offer",
@@ -502,14 +509,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         },
         {
           "@type": "Question",
-          "name": "¿Trabajás solamente con hoteles?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Con cualquier negocio turístico: alojamientos, ecolodges, cabañas, hosterías, glamping, agencias, turismo receptivo, guías, excursiones, experiencias y restaurantes con público turístico. El alcance cambia según el modelo de negocio."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "¿Incluye posicionamiento en inteligencias artificiales?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -529,7 +528,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           "name": "¿Manejás mis redes todas las semanas?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "El ordenamiento deja todo armado y funcionando. Lo que se publica después lo manejás vos o quien elijas."
+            "text": "No hago la gestión del día a día, pero sí dejo tus redes a punto cuando hace falta implementar: creo cuentas, ordeno perfiles e historias destacadas, armo publicaciones y doy de alta tu negocio en plataformas como Booking. Después, en una mentoría, te enseño a seguir a vos o a tu equipo."
           }
         },
         {
@@ -593,8 +592,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="hero" aria-labelledby="h1">
   <div class="container hero-grid">
     <div class="hero-inner">
+      <p class="hero-kicker">Para negocios turísticos</p>
       <h1 id="h1">Buenas reseñas.<br><span class="thin">Pocas consultas.</span></h1>
-      <p class="hero-sub">Puede ser una temporada floja que nadie sabe explicar, la dependencia de un solo canal, o un producto que en persona es excelente y en pantalla parece uno más. Analizo cómo el viajero encuentra, entiende, compara y elige tu negocio, y dónde se pierden las consultas antes de llegar a vos. Y cuando hace falta, lo ordeno yo.</p>
+      <p class="hero-sub">Puede ser una temporada floja que nadie sabe explicar, un proyecto que recién arranca, o un producto que en persona es excelente y en pantalla parece uno más. Analizo cómo el viajero encuentra, entiende, compara y elige tu negocio, y dónde se pierden las consultas antes de llegar a vos. Y cuando hace falta, lo ordeno yo.</p>
       <div class="hero-btns">
         <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20te%20escribo%20desde%20tu%20p%C3%A1gina.%20Quiero%20contarte%20mi%20caso." target="_blank" rel="noopener noreferrer" class="btn-lima js-wa" data-wa="hero">Contame tu caso</a>
         <a href="#formas" class="btn-ghost">Cómo trabajo</a>
@@ -641,7 +641,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="chip">Guías y excursiones</span>
       <span class="chip">Experiencias</span>
       <span class="chip">Restaurantes con público turístico</span>
-      <span class="chip chip-lima">Remoto en todo el país</span>
+      <span class="chip">Remoto en todo el país</span>
     </div>
   </div>
 </section>
@@ -649,18 +649,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ============ PARA QUIÉN ES ============ -->
 <section class="sec-white on-light" aria-labelledby="h-paraquien">
   <div class="container-narrow">
-    <h2 class="s-title" id="h-paraquien">Cuando el producto ya existe<br><span class="thin">y hay una decisión por tomar.</span></h2>
+    <h2 class="s-title" id="h-paraquien">Cuando hay una decisión<br><span class="thin">por tomar.</span></h2>
     <ul class="situaciones">
       <li>Entran menos consultas y no está claro cuánto es del mercado y cuánto es tuyo.</li>
       <li>Tenés buenas reseñas y pocas consultas.</li>
       <li>Las cosas van bien y querés saber si las estás haciendo bien, o qué te falta para captar más.</li>
       <li>Estás por invertir en publicidad, en una web nueva o en una agencia, y querés saber dónde poner la plata primero.</li>
-      <li>Dependés de un solo canal, sea Booking, una agencia o el boca en boca.</li>
       <li>La experiencia real es mucho mejor que lo que muestran la web y las plataformas.</li>
       <li>Tenés el producto, pero lo digital está desarmado y no tenés quién lo ordene.</li>
+      <li>Estás arrancando y no sabés qué armar primero.</li>
       <li>Querés llegar a un viajero nuevo: otro país, otro idioma, otro segmento.</li>
     </ul>
-    <p class="body-t" style="margin-top:2rem;">Podés llegar sin saber qué te pasa. El trabajo empieza justamente por ahí.</p>
+    <p class="body-t" style="margin-top:2rem;">Si tu proyecto recién arranca, mi especialidad me permite acompañarte desde el principio: pensar el producto para el viajero al que apuntás, cómo comercializarlo, qué estrategia de precios conviene, cuál es tu propuesta de valor y cómo promocionarlo, dónde y con qué argumentos. En un negocio que ya funciona termino revisando todo eso igual; si estás arrancando, conviene pensarlo antes.</p>
+    <p class="body-t">Podés llegar sin saber qué te pasa. El trabajo empieza justamente por ahí.</p>
     <a href="https://wa.me/543751566488?text=Hola%20Laura%2C%20me%20pasa%20algo%20de%20esto%20y%20quiero%20contarte%20mi%20caso." target="_blank" rel="noopener noreferrer" class="btn-dark js-wa" data-wa="para-quien" style="margin-top:1rem;">Me pasa esto</a>
   </div>
 </section>
@@ -785,9 +786,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="sec-white on-light" aria-labelledby="h-caso">
   <div class="container-narrow">
     <h2 class="s-title" id="h-caso">El valor ya existía.<br><span class="thin">Estaba escondido.</span></h2>
-    <p class="body-t">Un ecolodge de avistaje de aves con años de trayectoria, reputación sobresaliente y huéspedes que vuelven, atravesando temporadas de baja ocupación que nadie terminaba de explicar.</p>
-    <p class="body-t">La auditoría encontró una credencial internacional, su lugar en eBird, con más especies registradas que su competidor directo, escondida detrás de un link que nadie clickeaba; una web que mostraba las habitaciones y dejaba en segundo plano la experiencia; autoridad acumulada en medios y guías, pero desconectada; y dos líneas de negocio compartiendo los mismos canales.</p>
-    <p class="pull" style="border-color:var(--violeta);">La pregunta cambió. De publicar más, <b>a entrar en la consideración del viajero correcto</b>, con una identidad clara y menos fricción hasta la reserva.</p>
+    <p class="body-t">Surucuá, un ecolodge de avistaje de aves en Misiones, con 13 años, reseñas casi perfectas y huéspedes que vuelven, tenía meses muy flojos que nadie sabía explicar. Cuando alguien les escribía, el mail que mandaban vendía muy bien.</p>
+    <p class="body-t">El problema estaba antes de ese mail: la web lo llamaba “rústico” y las IAs lo repetían, Google lo tenía como “hotel de 3 estrellas”, y en eBird, la plataforma que consultan los observadores de aves antes de viajar, tenía más especies registradas que su competidor directo, pero nadie lo sabía.</p>
+    <p class="pull" style="border-color:var(--violeta);">No había que publicar más: <b>había que traducir lo que ya tenían</b>.</p>
     <p class="body-t" style="font-size: 1rem;">El caso completo, en video, junto con el de un hotel boutique de Puerto Iguazú: <a href="https://onlike.ar/auditoria-negocio-turistico.html" class="link-v">leer la nota →</a></p>
   </div>
 </section>
@@ -798,7 +799,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="yo-inner">
       <div>
         <h2 class="s-title" id="h-yo" style="color: var(--texto-1);">Turismo, estrategia digital<br><span class="thin">y negocios reales.</span></h2>
-        <p class="body-t">Soy Laura Silvester, licenciada en Turismo por la Universidad Nacional de Misiones, docente de marketing turístico en nivel superior y fundadora de Onlike. Más de veinte años en el sector, con experiencia en gestión hotelera.</p>
+        <p class="body-t">Soy Laura Silvester, licenciada en Turismo por la Universidad Nacional de Misiones, docente de marketing turístico en nivel superior y fundadora de ONLIKE. Más de veinte años en el sector, con experiencia en gestión hotelera.</p>
         <p class="body-t"><strong>Esa combinación cambia la forma de analizar un proyecto turístico.</strong> Miro cómo funciona la propuesta dentro del sistema turístico: qué espera el viajero, cómo valida, con qué compara, qué intermediarios intervienen y qué frena la elección.</p>
         <p class="body-t">En junio de 2026 diserté sobre inteligencia artificial y comportamiento del viajero en el <a href="https://onlike.ar/forum2026.html" style="color:var(--lima);text-decoration:none;border-bottom:1px solid rgba(200,255,0,0.3);">Fórum Internacional de Turismo do Iguassu</a>, en Foz do Iguaçu, ante estudiantes y docentes de turismo de Brasil y Argentina.</p>
       </div>
@@ -837,10 +838,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Las redes son una parte. La auditoría estudia el ecosistema completo: el recorrido del viajero, la propuesta, el sitio, las búsquedas, los mapas, la reputación, las plataformas de reserva, el contacto y la comercialización.</p>
     </div>
     <div class="faq-d">
-      <h3>¿Trabajás solamente con hoteles?</h3>
-      <p>Con cualquier negocio turístico: alojamientos, ecolodges, cabañas, hosterías, glamping, agencias, turismo receptivo, guías, excursiones, experiencias y restaurantes con público turístico. El alcance cambia según el modelo de negocio.</p>
-    </div>
-    <div class="faq-d">
       <h3>¿Incluye posicionamiento en inteligencias artificiales?</h3>
       <p>Sí. Es una capa de todos los trabajos: cómo te encuentran, interpretan y comparan las IA cuando alguien busca lo que ofrecés.</p>
     </div>
@@ -850,7 +847,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="faq-d">
       <h3>¿Manejás mis redes todas las semanas?</h3>
-      <p>El ordenamiento deja todo armado y funcionando. Lo que se publica después lo manejás vos o quien elijas.</p>
+      <p>No hago la gestión del día a día, pero sí dejo tus redes a punto cuando hace falta implementar: creo cuentas, ordeno perfiles e historias destacadas, armo publicaciones y doy de alta tu negocio en plataformas como Booking. Después, en una mentoría, te enseño a seguir a vos o a tu equipo.</p>
     </div>
     <div class="faq-d">
       <h3>¿Cómo se define el alcance y cuánto sale?</h3>
@@ -888,7 +885,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p style="font-size: 0.875rem;color: var(--texto-3);">Eldorado, Misiones, Argentina · <a href="mailto:lau@onlike.ar" style="color: var(--texto-3);">lau@onlike.ar</a> · WhatsApp +54 3751 566488</p>
     </div>
     <nav style="display:flex;gap:1.5rem;align-items:center;background:transparent;padding:0;border-bottom:0;backdrop-filter:none;-webkit-backdrop-filter:none;" aria-label="Legal">
-      <a href="https://onlike.ar/" style="font-size: 0.875rem;color: var(--texto-3);">Onlike</a>
+      <a href="https://onlike.ar/" style="font-size: 0.875rem;color: var(--texto-3);">ONLIKE</a>
       <a href="https://onlike.ar/como-te-ve-un-viajero.html" style="font-size: 0.875rem;color: var(--texto-3);">Cómo te ve un viajero</a>
       <a href="https://onlike.ar/notas.html" style="font-size: 0.875rem;color: var(--texto-3);">Notas</a>
       <a href="https://onlike.ar/privacidad.html" style="font-size: 0.875rem;color: var(--texto-3);">Política de privacidad</a>
