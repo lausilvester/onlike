@@ -86,7 +86,7 @@
 
   /* HERO */
   .geo-hero { background: #131625; padding: 4rem 0 4rem; position: relative; overflow: hidden; }
-  .geo-hero-inner { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 4rem; align-items: center; }
+  .geo-hero-inner { display: grid; grid-template-columns: 1fr; }
   .geo-hero h1 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(2.25rem, 4.8vw, 3.5rem); line-height: 1.05; letter-spacing: -0.02em; color: var(--texto-1); margin-bottom: 1.5rem; }
   .geo-hero h1 .light { font-weight: 300; color: inherit; }
   .geo-hero-sub { font-size: 1.125rem; font-weight: 300; line-height: 1.6; color: var(--texto-3); margin-bottom: 1.5rem; max-width: 520px; }
@@ -111,7 +111,6 @@
     .wa-float-text { display: none; }
     .wa-float { padding: 0.75rem; border-radius: 50%; }
     .geo-hero { padding: 4rem 0 4rem; }
-    .geo-hero-inner { grid-template-columns: 1fr; gap: 2rem; }
     .geo-hero-btns { flex-direction: column; }
   }
 
@@ -170,14 +169,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="#caso" class="btn-ghost">Ver un caso publicado</a>
         </div>
       </div>
-      <div class="geo-chat">
-        <p class="geo-chat-q">¿Dónde puedo ver y comprar la obra de Soledad Imbach?</p>
-        <div class="geo-chat-dots" aria-hidden="true"><span></span><span></span><span></span></div>
-        <div class="geo-chat-a">
-          <p>En su sitio, <strong>soledadimbach.com.ar</strong>, están sus series fotográficas, sus libros y la obra en venta. Los precios se consultan por mail.</p>
-        </div>
-        <p class="geo-chat-nota">Ejemplo ilustrativo. Lo que contesta cada IA depende de la plataforma y de la consulta.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -211,13 +202,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .geo-test-link strong { color:#131625; }
   .geo-test-link a { color:#8E51B9; font-weight:700; border-bottom:1px solid rgba(142,81,185,.3); }
 
-  .geo-entrego { background:#0d0f1c; padding: 4rem 0; }
-  .geo-entrego-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5px; background:rgba(255,255,255,.07); margin-top:3rem; }
-  .geo-ent-group { font-size: 1.375rem; font-weight:700; color:#A08AE5; margin-top:3rem; }
+  .geo-entrego { background:#fff; padding: 4rem 0; }
+  .geo-entrego-grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; background:#e7e7e0; margin-top:3rem; }
+  .geo-ent-group { font-size: 1.375rem; font-weight:700; color:#8E51B9; margin-top:3rem; }
   .geo-ent-group + .geo-entrego-grid { margin-top:1rem; }
-  .geo-ent { background:#0d0f1c; padding:1.5rem 1.5rem; }
-  .geo-ent-t { font-family:'Outfit',sans-serif; font-size: 1.125rem; font-weight:700; color: var(--texto-1); margin-bottom:0.5rem; line-height:1.6; }
-  .geo-ent-d { font-size: 1rem; color: var(--texto-3); line-height: 1.5; }
+  .geo-ent { background:#F4F4F0; padding:1.5rem 1.5rem; }
+  .geo-ent-t { font-family:'Outfit',sans-serif; font-size: 1.125rem; font-weight:700; color: var(--ink); margin-bottom:0.5rem; line-height:1.6; }
+  .geo-ent-d { font-size: 1rem; color: var(--tinta-3); line-height: 1.5; }
   .geo-marca { background: linear-gradient(transparent 26%, #C8FF00 26%, #C8FF00 88%, transparent 88%); color: #131625; padding: 0 0.2em; margin-left: -0.05em; display: inline-block; line-height: 1.15; margin-top: 0.1em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
   .geo-paravos { background: #fff; padding: 4rem 0; }
   .geo-paravos .geo-ask { background: #F4F4F0; border: 0; border-left: 3px solid #8E51B9; max-width: 860px; }
@@ -226,21 +217,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .geo-paravos .geo-ask-list li { color: var(--tinta-2); border-top-color: rgba(31,31,46,0.12); }
   .geo-paravos .geo-ask-list strong { color: var(--ink); }
   .geo-paravos .geo-ask-close { color: var(--tinta-2); }
-  .geo-chat { background: #fff; border-radius: 16px; padding: 1.5rem; box-shadow: 0 24px 48px rgba(0,0,0,0.35); }
-  .geo-chat-q { margin-left: auto; max-width: 88%; background: #EDE6F7; color: var(--ink); font-size: 1rem; line-height: 1.5; padding: 0.75rem 1rem; border-radius: 12px 12px 2px 12px; }
-  .geo-chat-dots { display: none; gap: 6px; padding: 1rem 0.25rem; }
-  .geo-chat-dots span { width: 8px; height: 8px; border-radius: 50%; background: #AEB3C3; animation: geoDot 1s infinite ease-in-out; }
-  .geo-chat-dots span:nth-child(2) { animation-delay: 0.15s; }
-  .geo-chat-dots span:nth-child(3) { animation-delay: 0.3s; }
-  .geo-chat-a { margin-top: 1rem; max-width: 92%; background: #F4F4F0; border-radius: 12px 12px 12px 2px; padding: 1rem; }
-  .geo-chat-a p { font-size: 1rem; line-height: 1.5; color: var(--ink); }
-  .geo-chat-a strong { color: #8E51B9; }
-  .geo-chat-nota { font-size: 0.875rem; line-height: 1.5; color: var(--tinta-3); margin-top: 1rem; }
-  .geo-chat--pensando .geo-chat-dots { display: flex; }
-  .geo-chat--pensando .geo-chat-a { display: none; }
-  .geo-chat--respuesta .geo-chat-a { animation: geoAparece 0.5s ease both; }
-  @keyframes geoDot { 0%, 80%, 100% { opacity: 0.3; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-4px); } }
-  @keyframes geoAparece { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
   .geo-caso-fig { position: relative; margin-top: 2.5rem; max-width: 900px; padding-right: 130px; }
   .geo-caso-pc { border: 1px solid #d9d9d2; border-top: 22px solid #e1e1da; border-radius: 8px; overflow: hidden; box-shadow: 0 16px 40px rgba(19,22,37,0.15); background: #000; }
   .geo-caso-pc img, .geo-caso-cel img { display: block; width: 100%; height: auto; }
@@ -250,15 +226,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .geo-caso-fig { padding-right: 70px; }
     .geo-caso-cel { width: 110px; border-width: 5px; border-radius: 16px; }
   }
-  @media (prefers-reduced-motion: reduce) {
-    .geo-chat-dots span, .geo-chat--respuesta .geo-chat-a { animation: none; }
-  }
   .wa-float.wa-oculto { opacity: 0; visibility: hidden; pointer-events: none; }
   .geo-link { color:#8E51B9; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
-  .geo-ent-d code, .geo-extra code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size: 0.875rem; color: var(--texto-2); }
-  .geo-extra { margin-top:2rem; padding:1.5rem 1.5rem; background:rgba(142,81,185,.12); border:1px solid rgba(142,81,185,.3); border-radius:4px; }
-  .geo-extra p:first-child { font-size: 1rem; font-weight:700; color:#C89BE8; margin-bottom:0.5rem; }
-  .geo-extra p:last-child { font-size: 1rem; color: var(--texto-3); line-height: 1.5; }
+  .geo-ent-d code, .geo-extra code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size: 0.875rem; color: var(--tinta-2); }
+  .geo-extra { margin-top:2rem; padding:1.5rem 1.5rem; background:#F4F4F0; border:0; border-left:3px solid #8E51B9; border-radius:2px; }
+  .geo-extra p:first-child { font-size: 1rem; font-weight:700; color:#8E51B9; margin-bottom:0.5rem; }
+  .geo-extra p:last-child { font-size: 1rem; color: var(--tinta-3); line-height: 1.5; }
   .geo-ent-note { font-size: 1rem; color: var(--texto-3); line-height: 1.5; max-width:760px; margin-top:2rem; border-left:3px solid rgba(255,255,255,.2); padding-left:1rem; }
 
   .geo-limits { background:#fff; color:#131625; padding: 4rem 0; }
@@ -349,7 +322,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="geo-entrego" id="entrego" aria-labelledby="geo-ent-t">
   <div class="container">
-    <h2 id="geo-ent-t" class="section-title" style="color: var(--texto-1);margin-bottom:0.75rem;">Lo que te llevás.</h2>
+    <h2 id="geo-ent-t" class="section-title" style="color: var(--ink);margin-bottom:0.75rem;">Lo que te llevás.</h2>
     <div class="geo-entrego-grid">
       <div class="geo-ent">
         <p class="geo-ent-t">Un sitio pensado para lo que querés lograr</p>
@@ -464,15 +437,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       new IntersectionObserver(function(e) { wa.classList.toggle('wa-oculto', e[0].isIntersecting); }).observe(hero);
     } else if (wa) { wa.classList.remove('wa-oculto'); }
   });
-  (function() {
-    var chat = document.querySelector('.geo-chat');
-    if (!chat || !window.matchMedia || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    chat.classList.add('geo-chat--pensando');
-    setTimeout(function() {
-      chat.classList.remove('geo-chat--pensando');
-      chat.classList.add('geo-chat--respuesta');
-    }, 1600);
-  })();
   var toggle = document.getElementById('nav-toggle');
   var navLinks = document.getElementById('nav-links');
   if (toggle && navLinks) {

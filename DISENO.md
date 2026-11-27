@@ -55,7 +55,7 @@ Escala de razón 1,25. Cada paso se distingue del anterior sin tener que mirar d
 | 1.375 | 22 | Frase destacada, h3 |
 | 1.75 | 28 | h3 de página de servicio, encabezados de grupo |
 | 2.25 | 36 | h2 |
-| 2.75 | 44 | Titular de nota y de la página Notas, y títulos de sección de la home |
+| 2.75 | 44 | Titular de nota y títulos de sección de la home |
 | 4.5 | 72 | Sin uso desde noviembre de 2026 (era el titular de la home) |
 
 ### Los titulares responsivos
@@ -64,8 +64,8 @@ Cuatro roles, y nada más. Cada uno va entre dos pasos de la escala.
 
 | Rol | clamp | Rango |
 |---|---|---|
-| Titular de la home y de página de servicio | `clamp(2.25rem, 4.8vw, 3.5rem)` | 36–56px |
-| Titular de nota y de la página Notas, y títulos de sección de la home | `clamp(1.75rem, 3.6vw, 2.75rem)` | 28–44px |
+| Titular de la home, de página de servicio y de la página Notas | `clamp(2.25rem, 4.8vw, 3.5rem)` | 36–56px |
+| Titular de nota y títulos de sección de la home | `clamp(1.75rem, 3.6vw, 2.75rem)` | 28–44px |
 | h2 de notas y servicios, y título del cierre de las notas | `clamp(1.75rem, 3vw, 2.25rem)` | 28–36px |
 | h3 y frase destacada | `clamp(1.375rem, 2.2vw, 1.75rem)` | 22–28px |
 
@@ -152,7 +152,8 @@ Botones y cajas con radio de 2px. En celular, margen lateral de 1.5rem y sin scr
 - Se detiene con `prefers-reduced-motion` y muestra una pose fija que se entienda sola.
 - Nada de textos que aparecen al hacer scroll ni efectos en cada tarjeta.
 - Referencia: el viajero con la valija en `como-te-ve-un-viajero.html`.
-- En `geo-site.html` la animación es un chat: una pregunta a una IA, tres puntos de espera y la respuesta. Es una excepción a «sin texto adentro», pedida por Laura el 26 de noviembre de 2026. El texto está en el HTML desde el principio, la animación corre una sola vez al cargar y no con el scroll, y con `prefers-reduced-motion` o sin JavaScript el chat se ve completo y quieto. Lleva la aclaración «Ejemplo ilustrativo».
+- `geo-site.html` no lleva animación: el chat de ejemplo del hero se retiró el 26 de noviembre de 2026, por decisión de Laura.
+- En `geo-site.html`, para que dos secciones oscuras no se confundan, «Lo que te llevás» va sobre fondo blanco con tarjetas en gris claro `#F4F4F0`. La secuencia de fondos es: navy (hero), blanco, gris claro, navy, blanco, gris claro, blanco, navy.
 
 ## Contenido fijo
 
