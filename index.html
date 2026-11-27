@@ -1053,6 +1053,19 @@
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
   }
+  /* Titular del hero: las tres frases entran de a una y el punto lima cae como un sello. Pasa una vez, al cargar. */
+  h1.hero-title > span { animation: fadeUp .7s ease-out both; }
+  h1.hero-title > span:nth-child(2) { animation-delay: .35s; }
+  h1.hero-title > span:nth-child(3) { animation-delay: .7s; }
+  h1.hero-title .accent { display: inline-block; transform-origin: 50% 90%; animation: punto-sello 1.1s 1.5s both; }
+  @keyframes punto-sello {
+    0%   { transform: translateY(-140px); opacity: 0; }
+    10%  { opacity: 1; }
+    45%  { transform: translateY(0) scale(1.35, .65); animation-timing-function: ease-out; }
+    65%  { transform: translateY(-16px) scale(.95, 1.1); }
+    85%  { transform: translateY(0) scale(1.1, .9); }
+    100% { transform: none; opacity: 1; }
+  }
 
   /* ============================================================
      RESPONSIVE
