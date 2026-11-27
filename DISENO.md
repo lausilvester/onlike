@@ -65,8 +65,8 @@ Cuatro roles, y nada más. Cada uno va entre dos pasos de la escala.
 | Rol | clamp | Rango |
 |---|---|---|
 | Titular de la home, de página de servicio y de la página Notas | `clamp(2.25rem, 4.8vw, 3.5rem)` | 36–56px |
-| Titular de nota y títulos de sección de la home | `clamp(1.75rem, 3.6vw, 2.75rem)` | 28–44px |
-| h2 de notas y servicios, y título del cierre de las notas | `clamp(1.75rem, 3vw, 2.25rem)` | 28–36px |
+| Titular de nota y títulos de sección de la home y de las páginas de servicio | `clamp(1.75rem, 3.6vw, 2.75rem)` | 28–44px |
+| h2 de notas y título del cierre de las notas | `clamp(1.75rem, 3vw, 2.25rem)` | 28–36px |
 | h3 y frase destacada | `clamp(1.375rem, 2.2vw, 1.75rem)` | 22–28px |
 
 Una página que inventa su propio `clamp()` rompe la escala: con 34 declaraciones distintas, el sitio llegó a mostrar 19 tamaños donde el CSS declaraba 8.
@@ -97,7 +97,7 @@ Atados al tamaño. Cuanto más grande la letra, más cerrado el interlineado.
 
 - Ningún texto de lectura por debajo de 0.875rem (14px).
 - Nunca una palabra pintada de otro color ni en cursiva dentro de un titular. Excepción, pedida por Laura el 26 de noviembre de 2026: en `geo-site.html`, «como realmente es.» va resaltado con un fondo lima y tinta encima, como un marcador.
-- **Un título se lee como título.** Más grande que el texto que encabeza, nunca igual ni menor. Los pisos: h2 desde 1,6 veces el cuerpo, h3 desde 1,25, h4 desde 1,12. Una pregunta de preguntas frecuentes que se ve igual que su respuesta no funciona como pregunta.
+- **Un título se lee como título.** Más grande que el texto que encabeza, nunca igual ni menor. Los pisos: h2 desde 1,6 veces el cuerpo, h3 desde 1,25, h4 desde 1,12. Una pregunta de preguntas frecuentes que se ve igual que su respuesta no funciona como pregunta. Excepción pedida por Laura el 26 de noviembre de 2026: en las preguntas frecuentes de la home, la página del sitio web y Turismo, la pregunta va en 18px y 700 y la respuesta en 16px y 400; el peso las distingue.
 - **Largo de línea entre 60 y 80 caracteres.** Si una columna pasa de 80, se agranda la letra o se limita el ancho con `max-width` en `ch`, no en píxeles.
 - El titular de la home lleva dos líneas en 300 y la tercera en 700, con el punto final en lima. Es un ritmo que atraviesa el titular entero, no una palabra resaltada.
 
