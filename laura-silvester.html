@@ -128,6 +128,15 @@
   }
 
   .light { font-weight: 300; }
+  .video-lite { position: relative; display: flex; flex-direction: column; justify-content: flex-end; width: 100%; max-width: 300px; aspect-ratio: 9 / 16; padding: 1.5rem; background: #222741; border: 1px solid rgba(255,255,255,0.12); color: var(--texto-1); border-radius: 2px; text-decoration: none; margin-top: 2rem; }
+  .video-lite-play { position: absolute; top: 50%; left: 50%; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%; background: #C8FF00; transition: transform 0.22s ease; }
+  .video-lite-play::after { content: ''; position: absolute; top: 50%; left: 50%; margin: -10px 0 0 -6px; border-style: solid; border-width: 10px 0 10px 17px; border-color: transparent transparent transparent #131625; }
+  .video-lite:hover .video-lite-play, .video-lite:focus-visible .video-lite-play { transform: scale(1.08); }
+  .video-lite-t { font-size: 1.375rem; font-weight: 700; line-height: 1.25; }
+  .video-lite-d { font-size: 1rem; line-height: 1.5; color: var(--texto-2); margin-top: 0.5rem; }
+  .video-frame { width: 100%; max-width: 300px; aspect-ratio: 9 / 16; margin-top: 2rem; }
+  .video-frame iframe { width: 100%; height: 100%; border: 0; border-radius: 2px; }
+  @media (prefers-reduced-motion: reduce) { .video-lite-play { transition: none; } }
 </style>
 </head>
 <body>
@@ -156,7 +165,7 @@
       <img class="hero-foto" src="assets/foto-lau.jpg" alt="Laura Silvester, consultora en estrategia digital y GEO, Eldorado, Misiones" width="200" height="240">
       <div>
         <h1 id="h1">Laura Silvester</h1>
-        <p class="entidad">Laura Silvester es Licenciada en Turismo por la Universidad Nacional de Misiones y fundadora de ONLIKE, consultoría de estrategia y posicionamiento digital con base en Eldorado, Misiones, Argentina. Trabaja sobre cómo se descubre, se comprende y se elige una oferta turística en buscadores, plataformas y sistemas de inteligencia artificial, con negocios turísticos, destinos e instituciones. Da clases de marketing turístico y materias afines en nivel superior desde 2011.</p>
+        <p class="entidad">Laura Silvester es Licenciada en Turismo por la Universidad Nacional de Misiones y fundadora de ONLIKE, consultoría de estrategia y posicionamiento digital con base en Eldorado, Misiones, Argentina. Trabaja sobre cómo se descubre, se comprende y se elige un negocio en buscadores, plataformas y sistemas de inteligencia artificial, con especialidad en turismo y destinos, y también con negocios, profesionales e instituciones de otros rubros. Da clases de marketing turístico y materias afines en nivel superior desde 2011.</p>
       </div>
     </div>
   </div>
@@ -182,8 +191,13 @@
 <section class="band band-dark" aria-labelledby="tray-t">
   <div class="container">
     <h2 class="sec" id="tray-t">Cómo llegué acá.</h2>
-    <p class="prosa">Trabajo desde chica: en las vacaciones de la primaria mi papá me llevaba a su estudio contable, y no paré más. A los 24 era gerente del hotel del ACA. Estudié Turismo en la Universidad Nacional de Misiones y desde 2011 doy clases. Seis años los pasé en gestión y ejecución de proyectos del clúster forestal, trabajando con ingenieros.</p>
+    <p class="prosa">Trabajo desde chica: en las vacaciones de la primaria mi papá me llevaba a su estudio contable, y no paré más. A los 24 era gerente del hotel del ACA. En 2008 puse ese hotel en Booking y empezaron a llegar turistas de Rusia a Eldorado. Estudié Turismo en la Universidad Nacional de Misiones y desde 2011 doy clases. Seis años los pasé en gestión y ejecución de proyectos del clúster forestal, trabajando con ingenieros.</p>
     <p class="prosa">De todo eso no me quedó una técnica. Me quedó una forma de trabajar: <strong>reviso</strong>. Cuando digo que una inteligencia artificial recomienda trece lugares de mi ciudad, voy y los verifico uno por uno. Cuando publico una cifra, digo de dónde salió y qué no prueba.</p>
+    <a class="video-lite" href="https://www.tiktok.com/@lausilvester/video/7632793413007478036" data-tt="7632793413007478036" target="_blank" rel="noopener noreferrer" aria-label="Ver el video: mi historia con el marketing turístico">
+      <span class="video-lite-play" aria-hidden="true"></span>
+      <span class="video-lite-t">Mi historia con el marketing turístico</span>
+      <span class="video-lite-d">La cuento en video.</span>
+    </a>
   </div>
 </section>
 
@@ -201,8 +215,8 @@
 
 <section class="band band-light" aria-labelledby="hoy-t">
   <div class="container">
-    <h2 class="sec" id="hoy-t" style="color:#131625;">Trabajo sobre lo que<br>se puede leer de un negocio.</h2>
-    <p class="prosa">Desde ONLIKE hago diagnóstico digital, posicionamiento en buscadores y en sistemas de inteligencia artificial generativa, y desarrollo de sitios escritos para ser leídos. Trabajo con alojamientos, agencias, guías, excursiones y restaurantes con público turístico de toda la Argentina, y con profesionales independientes e instituciones.</p>
+    <h2 class="sec" id="hoy-t" style="color:#131625;">Lo que hago hoy.</h2>
+    <p class="prosa">Desde ONLIKE trabajo la estrategia y el posicionamiento digital de negocios, profesionales, destinos e instituciones, con especialidad en turismo. Para lograr objetivos comerciales hoy no alcanzan las redes sociales: miro el ecosistema digital completo, atravesado por IAs y algoritmos, cómo busca y decide la gente, qué muestra la competencia y qué hace falta para que te elijan. Según el caso, te digo qué cambiar y lo hacés vos, lo hago yo o te enseño a hacerlo.</p>
     <p class="prosa">Mi tema no es la inteligencia artificial en general. Es <strong>cómo se decide un viaje ahora que buena parte de esa decisión pasa adentro de una conversación con una máquina</strong>: quién entra en la lista corta, quién queda afuera antes de que empiece la comparación, y qué información hace la diferencia entre una cosa y la otra.</p>
     <p class="prosa">Ninguna web garantiza que una inteligencia artificial recomiende a nadie. Lo que sí se puede mejorar es el material que existe sobre un negocio, que es la parte que depende del negocio.</p>
   </div>
@@ -231,9 +245,12 @@
 
 <section class="band band-deep" aria-labelledby="inv-t">
   <div class="container">
-    <h2 class="sec" id="inv-t">Lo que probé<br>y lo que encontré.</h2>
+    <h2 class="sec" id="inv-t">Lo que probé y lo que encontré.</h2>
     <p class="prosa" style="margin-bottom:2rem;">Trabajo propio, con método declarado, fecha de captura y límites escritos al pie.</p>
     <ul class="lista">
+      <li><strong><a href="https://onlike.ar/la-ia-te-recomendo-el-viajero-te-busca.html">La IA te recomendó. Ahora el viajero te va a buscar</a></strong>Qué hace el viajero entre la recomendación de la IA y la reserva, qué pasa cuando lo que publicaste confirma, contradice o falta, y qué parte depende de vos.<span class="meta"> · 26 de noviembre de 2026</span></li>
+      <li><strong><a href="https://onlike.ar/cuanta-informacion-necesita-un-negocio.html">¿Cuánta información tiene que tener un negocio en internet?</a></strong>Cuánta información alcanza para que alguien decida sin escribirte, si se puede dar demasiada y qué tan específica tiene que ser.<span class="meta"> · 24 de noviembre de 2026</span></li>
+      <li><strong><a href="https://onlike.ar/informacion-turistica-infraestructura-destino.html">La información turística es infraestructura del destino</a></strong>Quien llegó por una campaña y quien nunca vio ninguna deciden con la información que encuentran. Qué es la información turística y quién la tiene que sostener.<span class="meta"> · 4 de noviembre de 2026</span></li>
       <li><strong><a href="https://onlike.ar/buscate-vos-que-dicen-las-ias.html">Buscate vos: cómo saber qué dicen las inteligencias artificiales sobre tu negocio</a></strong>El procedimiento completo del autodiagnóstico, gratuito y sin registro: tres búsquedas, una repregunta, qué mirar en la respuesta y once errores de legibilidad observados en relevamientos propios.<span class="meta"> · 8 de septiembre de 2026</span></li>
       <li><strong><a href="https://onlike.ar/que-contesta-la-ia-sobre-el-turismo-en-eldorado.html">Le pregunté a una IA qué hacer en mi ciudad y revisé uno por uno los atractivos que recomendó</a></strong>Siete consultas en dos fechas. De trece lugares recomendados, seis no se pueden visitar. Cuatro prestadores locales de kayak y cabalgatas no aparecen en un itinerario que afirma que la ciudad ofrece kayak y cabalgatas.<span class="meta"> · 31 de agosto de 2026</span></li>
       <li><strong><a href="https://onlike.ar/destinos-turisticos-inteligencia-artificial.html">Cuando una inteligencia artificial recomienda un destino turístico, decide también qué negocios aparecen</a></strong>Antes de elegir dónde duerme, el viajero elige el destino, y esa definición condiciona qué prestadores entran después en el itinerario. No se controla la respuesta: se controla el insumo.<span class="meta"> · 27 de agosto de 2026 · <a href="https://onlike.ar/pt/destinos-turisticos-inteligencia-artificial.html" style="color: var(--texto-3);">versão em português</a></span></li>
@@ -336,7 +353,7 @@
       },
       "image": "https://onlike.ar/assets/foto-lau.jpg",
       "jobTitle": "Consultora en estrategia digital y GEO",
-      "description": "Laura Silvester es Licenciada en Turismo por la Universidad Nacional de Misiones y fundadora de ONLIKE, consultoría de estrategia y posicionamiento digital con base en Eldorado, Misiones, Argentina. Trabaja sobre cómo se descubre, se comprende y se elige una oferta turística en buscadores, plataformas y sistemas de inteligencia artificial, con negocios turísticos, destinos e instituciones. Da clases de marketing turístico y materias afines en nivel superior desde 2011. Más de veinte años en el sector turístico, con experiencia en gerencia hotelera y en gestión de proyectos del clúster forestal.",
+      "description": "Laura Silvester es Licenciada en Turismo por la Universidad Nacional de Misiones y fundadora de ONLIKE, consultoría de estrategia y posicionamiento digital con base en Eldorado, Misiones, Argentina. Trabaja sobre cómo se descubre, se comprende y se elige un negocio en buscadores, plataformas y sistemas de inteligencia artificial, con especialidad en turismo y destinos, y también con negocios, profesionales e instituciones de otros rubros. Da clases de marketing turístico y materias afines en nivel superior desde 2011. Más de veinte años en el sector turístico, con experiencia en gerencia hotelera y en gestión de proyectos del clúster forestal.",
       "email": "lau@onlike.ar",
       "telephone": "+543751566488",
       "knowsLanguage": [
@@ -606,6 +623,23 @@
     }
   ]
 }
+</script>
+<script>
+  document.querySelectorAll('.video-lite[data-tt]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      var box = document.createElement('div');
+      box.className = 'video-frame';
+      var f = document.createElement('iframe');
+      f.src = 'https://www.tiktok.com/player/v1/' + a.getAttribute('data-tt') + '?autoplay=1&rel=0';
+      f.title = 'Mi historia con el marketing turístico';
+      f.allow = 'autoplay; fullscreen; encrypted-media; picture-in-picture';
+      f.allowFullscreen = true;
+      box.appendChild(f);
+      a.replaceWith(box);
+      f.focus();
+    });
+  });
 </script>
 </body>
 </html>
