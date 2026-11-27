@@ -89,10 +89,9 @@ Qué revisa, cinco lugares y el cruce entre ellos:
 
 Entrega: documento escrito con lo encontrado en cada lugar y una lista priorizada de qué conviene cambiar primero, concreta: qué foto, qué texto, qué falta cargar.
 
-Qué no incluye: sitio web propio, ejecución de los cambios y reunión de devolución. El documento cierra el trabajo. Sin rondas de corrección. Después, el negocio puede resolverlo por su cuenta o seguir con una mentoría, un ordenamiento digital o los dos.
+Qué no incluye: sitio web propio, ejecución de los cambios y reunión de devolución. Sin rondas de corrección. Después, el negocio puede resolverlo por su cuenta o seguir con una mentoría, un ordenamiento digital o los dos.
 
 Precio: $90.000 ARS, por transferencia antes de empezar.
-Plazo: 5 días hábiles.
 Modalidad: remota, para toda Argentina.
 
 Diferencia con la auditoría: la auditoría revisa el negocio entero, incluye sitio web, análisis competitivo y reunión de devolución, y se cotiza por caso. Cómo te ve un viajero es una revisión acotada de cinco lugares, sin reunión.
@@ -169,6 +168,10 @@ A quién le sirve: cuanto más necesita una persona explicar su necesidad, compa
 Trabaja la información que existe sobre el negocio y cómo está estructurada, para que buscadores y sistemas de inteligencia artificial puedan encontrarla y entenderla. SEO y GEO. Se cotiza según el caso.
 
 ### 6. Información y presencia turística digital de un destino
+
+Página: https://onlike.ar/destinos.html
+
+Trabajo sobre la legibilidad de los destinos: ordenar la información turística para que un viajero, un buscador o una inteligencia artificial pueda encontrar, entender y usar la oferta del lugar para organizar una visita. Eso influye en qué emprendimientos y prestadores entran en los planes del viajero y cuáles quedan afuera. Para Laura Silvester, la información de un destino no es un complemento de la promoción: debería ocupar por lo menos la mitad de su estrategia.
 
 Para municipios, organismos públicos, cámaras y asociaciones del sector turístico. Es un programa de cuatro etapas complementarias, cada una con objetivos, entregables, alcance, presupuesto y contratación propios.
 

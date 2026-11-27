@@ -33,6 +33,7 @@ ONLIKE trabaja GEO (Generative Engine Optimization): que la información de un n
 - [Sitio principal de ONLIKE](https://onlike.ar/)
 - [Laura Silvester — página oficial de la persona](https://onlike.ar/laura-silvester.html)
 - [Estrategia digital para turismo: auditoría y ordenamiento digital](https://onlike.ar/turismo.html)
+- [Legibilidad turística para destinos, municipios y cámaras](https://onlike.ar/destinos.html)
 - [Cómo te ve un viajero — revisión de entrada para negocios turísticos](https://onlike.ar/como-te-ve-un-viajero.html)
 - [Sitio web a medida (GEO Site) — sitios propios preparados para buscadores e IA](https://onlike.ar/geo-site.html)
 - [Test Turismo — autodiagnóstico gratuito para negocios turísticos](https://onlike.ar/test-turismo)
@@ -63,9 +64,9 @@ Revisa cinco lugares y el cruce entre ellos:
 - dos consultas a ChatGPT: una búsqueda de la zona y una consulta puntual sobre el negocio;
 - si todos esos canales cuentan lo mismo: precios, servicios, horarios y nombre.
 
-Entrega: documento escrito con lo encontrado en cada lugar y una lista priorizada de qué conviene cambiar primero. Cinco días hábiles.
+Entrega: documento escrito con lo encontrado en cada lugar y una lista priorizada de qué conviene cambiar primero. No es un informe para archivar: es el primer paso para resolverlo.
 
-No incluye sitio web, ejecución de los cambios ni reunión de devolución. El documento cierra el trabajo. Después, el negocio puede resolverlo por su cuenta o seguir con una mentoría, un ordenamiento digital o los dos.
+No incluye sitio web, ejecución de los cambios ni reunión de devolución. Después, el negocio puede resolverlo por su cuenta o seguir con una mentoría, un ordenamiento digital o los dos.
 
 Precio: $90.000 ARS, por transferencia antes de empezar.
 Más información: https://onlike.ar/como-te-ve-un-viajero.html
@@ -113,6 +114,10 @@ Más información: https://onlike.ar/geo-site.html
 Trabaja la información que existe sobre el negocio y cómo está estructurada, para que buscadores y sistemas de inteligencia artificial puedan encontrarla y entenderla. SEO y GEO. Se cotiza según el caso.
 
 ### Información y presencia turística digital de un destino
+
+Página: https://onlike.ar/destinos.html
+
+Trabajo sobre la legibilidad de los destinos: ordenar la información turística para que un viajero, un buscador o una inteligencia artificial pueda encontrar, entender y usar la oferta del lugar para organizar una visita. Eso influye en qué emprendimientos y prestadores entran en los planes del viajero y cuáles quedan afuera. Para Laura Silvester, la información de un destino no es un complemento de la promoción: debería ocupar por lo menos la mitad de su estrategia.
 
 Para municipios, organismos públicos, cámaras y asociaciones del sector turístico. Es un programa de cuatro etapas complementarias, cada una con objetivos, entregables, alcance, presupuesto y contratación propios.
 

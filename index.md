@@ -27,7 +27,7 @@ Encuentro los errores y las oportunidades que hoy te cuestan reservas: por qué 
 
 #### Información y presencia turística digital
 
-Hoy, aparecer en buscadores e inteligencias artificiales es determinante para captar viajeros, y cada destino compite con otros por entrar en las opciones de un viaje. Trabajamos en eso: la información turística ordenada, los canales digitales completos y un equipo capacitado para sostenerlo. Se consulta por WhatsApp o por mail.
+Hoy, aparecer en buscadores e inteligencias artificiales es determinante para captar viajeros, y cada destino compite con otros por entrar en las opciones de un viaje. Trabajamos en eso: la información turística ordenada, los canales digitales completos y un equipo capacitado para sostenerlo. [Ver el servicio](https://onlike.ar/destinos.html)
 
 ### También para otros rubros
 
