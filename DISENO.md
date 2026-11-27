@@ -15,7 +15,7 @@ Para una página nueva, copiar la estructura de la nota más reciente (`informac
 | Lima | `#C8FF00`. Botón principal, filete izquierdo de 3px en destacados y cajas de cierre, y el dato principal o positivo de un gráfico |
 | Violeta | `#8E51B9`. Links, notas al pie y números sobre fondo claro |
 | Lavanda | `#A08AE5`. Links, números y etiquetas sobre fondo oscuro |
-| Magenta | `#FF3EBE`. El dato negativo o ausente dentro de un gráfico y las posdatas de las notas. También el degradé de violeta a magenta de los círculos de la lista «Cuando hay una decisión por tomar» en `turismo.html` (pedido por Laura el 26 de noviembre de 2026); no se repite en otras listas. También el acento de `diagnosticotur.html` y el botón del Test Turismo en `links.html` |
+| Magenta | `#FF3EBE`. El dato negativo o ausente dentro de un gráfico y las posdatas de las notas. También el degradé de violeta a magenta de los círculos de la lista «Cuándo tiene sentido trabajar conmigo» en `turismo.html` (pedido por Laura el 26 de noviembre de 2026); no se repite en otras listas. También el acento de `diagnosticotur.html` y el botón del Test Turismo en `links.html` |
 | Verde | `#25D366`. Solo el botón flotante de WhatsApp |
 
 No se usan secciones enteras en lima ni en violeta.
