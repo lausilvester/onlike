@@ -246,7 +246,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .btn-violeta:hover { background: #7c43a4; transform: translateY(-2px); }
 
   /* ---------- hero ---------- */
-  .hero { background: var(--dark); padding: 4rem 0 4rem; position: relative; overflow: hidden; }
+  .hero { background: var(--dark); padding: 6rem 0 3rem; position: relative; overflow: hidden; }
   .hero-inner { max-width: 560px; position: relative; }
   .hero h1 { font-weight: 300; font-size: clamp(2.75rem, 6vw, 4.5rem); line-height: 1.05; letter-spacing: -0.035em; color: var(--texto-1); margin-bottom: 1.5rem; }
   .hero h1 b { font-weight: 700; }
@@ -307,7 +307,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .nav-links li:not(:last-child) { display: none; }
     .container, .narrow { padding: 0 1.5rem; }
     section { padding: 3rem 0; }
-    .hero { padding: 4rem 0 4rem; }
+    .hero { padding: 6rem 0 3rem; }
     .duo { grid-template-columns: 1fr; gap: 2rem; }
     .precio-box { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem; }
     .lugar { grid-template-columns: 34px 1fr; gap: 0.75rem; }
@@ -319,7 +319,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   /* ---------- animación del hero ---------- */
   .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
-  .hero-anim svg { display: block; width: 100%; max-width: 520px; height: auto; margin-left: auto; }
+  .hero-anim svg { display: block; width: 100%; max-width: 320px; height: auto; margin: 0 auto; }
   .v-walker { animation: v-walk 8s linear infinite; }
   .v-leg, .v-arm { transform-box: fill-box; transform-origin: top center; }
   .v-leg-a { animation: v-leg-a 8s linear infinite; }
@@ -340,7 +340,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   @keyframes v-q3 { 0%,48% { opacity: 0; transform: scale(0.5); } 52%,61% { opacity: 1; transform: scale(1); } 64%,100% { opacity: 0; transform: scale(1); } }
   @media (max-width: 860px) {
     .hero-grid { grid-template-columns: 1fr; }
-    .hero-anim svg { max-width: 360px; margin: 1rem 0 0; }
+    .hero-anim svg { max-width: 240px; margin: 1rem 0 0; }
   }
   @media (prefers-reduced-motion: reduce) {
     .v-walker, .v-leg-a, .v-leg-b, .v-arm, .v-phone, .v-q1, .v-q2, .v-q3 { animation: none !important; }
