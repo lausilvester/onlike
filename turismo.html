@@ -14,18 +14,18 @@
 <link rel="canonical" href="https://onlike.ar/turismo.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Estrategia digital para turismo · ONLIKE">
-<meta property="og:description" content="Buenas reseñas y pocas consultas. La calidad de lo que ofrecés suele estar: lo que falta es que esté traducida, conectada y comprobable en digital.">
+<meta property="og:description" content="El viajero decide antes de escribirte. Dónde se pierden las consultas de tu negocio turístico y qué conviene priorizar primero.">
 <meta property="og:url" content="https://onlike.ar/turismo.html">
 <meta property="og:locale" content="es_AR">
 <meta property="og:image" content="https://onlike.ar/assets/og-turismo.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Estrategia digital para turismo · ONLIKE. Buenas reseñas, pocas consultas.">
+<meta property="og:image:alt" content="Estrategia digital para turismo · ONLIKE. El viajero decide antes de escribirte.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Estrategia digital para turismo · ONLIKE">
-<meta name="twitter:description" content="Buen producto y la temporada vacía. Dónde se pierden las consultas, qué priorizar y si conviene invertir en pauta.">
+<meta name="twitter:description" content="El viajero decide antes de escribirte. Dónde se pierden las consultas de tu negocio turístico y qué conviene priorizar primero.">
 <meta name="twitter:image" content="https://onlike.ar/assets/og-turismo.png">
-<meta name="twitter:image:alt" content="Estrategia digital para turismo · ONLIKE. Buenas reseñas, pocas consultas.">
+<meta name="twitter:image:alt" content="Estrategia digital para turismo · ONLIKE. El viajero decide antes de escribirte.">
 <meta name="google-site-verification" content="hInoWU68h1d6ULKuopnIw51sVLE0juKjC98S1EQ3e98">
 <meta name="msvalidate.01" content="0F33184E2EE4830D19FB8460FF45F9AE">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -335,6 +335,14 @@
   @media (max-width: 900px) {
     .casos, .formas-3, .items-4 { grid-template-columns: 1fr; }
   }
+  /* Submenú de Turismo: negocios y destinos */
+  .nav-sub { position: relative; padding-bottom: 0.75rem; margin-bottom: -0.75rem; }
+  .nav-sub > a::after { content: " ▾"; font-size: 0.75em; }
+  .nav-sub-list { display: none; position: absolute; top: 100%; left: -1rem; min-width: 220px; list-style: none; margin: 0; padding: 0.75rem 1rem; background: #fff; border: 1px solid rgba(31,31,46,0.1); box-shadow: 0 8px 24px rgba(19,22,37,0.12); z-index: 300; flex-direction: column; gap: 0.75rem; }
+  .nav-sub:hover .nav-sub-list, .nav-sub:focus-within .nav-sub-list { display: flex; }
+  .nav-links.open .nav-sub { padding-bottom: 0; margin-bottom: 0; display: flex; flex-direction: column; align-items: center; }
+  .nav-links.open .nav-sub-list { display: flex; position: static; box-shadow: none; border: 0; padding: 0.75rem 0 0; min-width: 0; background: transparent; align-items: center; }
+  .nav-links.open .nav-sub-list a { font-size: 1rem; }
 </style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -554,7 +562,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </a>
     <ul class="nav-links" id="nav-links" role="list">
       <li><a href="https://onlike.ar/">Inicio</a></li>
-      <li><a href="https://onlike.ar/turismo.html">Turismo</a></li>
+      <li class="nav-sub"><a href="https://onlike.ar/turismo.html" aria-haspopup="true">Turismo</a><ul class="nav-sub-list"><li><a href="https://onlike.ar/turismo.html">Negocios turísticos</a></li><li><a href="https://onlike.ar/destinos.html">Destinos</a></li></ul></li>
       <li><a href="https://onlike.ar/geo-site.html">Sitio Web</a></li>
       <li><a href="https://onlike.ar/notas.html">Notas</a></li>
       <li><a href="https://onlike.ar/test-turismo">Test gratis</a></li>

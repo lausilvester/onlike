@@ -199,6 +199,14 @@
   th { text-align: left; font-size: 1rem; font-weight: 700; color: var(--tinta-3); padding: 0.75rem 1rem 0.75rem 0; border-bottom: 1.5px solid rgba(31,31,46,0.2); }
   td { padding: 0.75rem 1rem 0.75rem 0; border-bottom: 1px solid rgba(31,31,46,0.1); color: var(--tinta-2); vertical-align: top; }
   td:first-child { font-weight: 700; color: var(--ink); white-space: nowrap; }
+  /* Submenú de Turismo: negocios y destinos */
+  .nav-sub { position: relative; padding-bottom: 0.75rem; margin-bottom: -0.75rem; }
+  .nav-sub > a::after { content: " ▾"; font-size: 0.75em; }
+  .nav-sub-list { display: none; position: absolute; top: 100%; left: -1rem; min-width: 220px; list-style: none; margin: 0; padding: 0.75rem 1rem; background: #fff; border: 1px solid rgba(31,31,46,0.1); box-shadow: 0 8px 24px rgba(19,22,37,0.12); z-index: 300; flex-direction: column; gap: 0.75rem; }
+  .nav-sub:hover .nav-sub-list, .nav-sub:focus-within .nav-sub-list { display: flex; }
+  .nav-links.open .nav-sub { padding-bottom: 0; margin-bottom: 0; display: flex; flex-direction: column; align-items: center; }
+  .nav-links.open .nav-sub-list { display: flex; position: static; box-shadow: none; border: 0; padding: 0.75rem 0 0; min-width: 0; background: transparent; align-items: center; }
+  .nav-links.open .nav-sub-list a { font-size: 1rem; }
 </style>
 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -431,7 +439,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </a>
     <ul class="nav-links" id="nav-links" role="list">
       <li><a href="https://onlike.ar/">Inicio</a></li>
-      <li><a href="https://onlike.ar/turismo.html">Turismo</a></li>
+      <li class="nav-sub"><a href="https://onlike.ar/turismo.html" aria-haspopup="true">Turismo</a><ul class="nav-sub-list"><li><a href="https://onlike.ar/turismo.html">Negocios turísticos</a></li><li><a href="https://onlike.ar/destinos.html">Destinos</a></li></ul></li>
       <li><a href="https://onlike.ar/geo-site.html">Sitio Web</a></li>
       <li><a href="https://onlike.ar/notas.html">Notas</a></li>
       <li><a href="https://onlike.ar/test-turismo">Test gratis</a></li>
