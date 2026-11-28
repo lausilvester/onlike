@@ -75,6 +75,12 @@
 
   /* BLOQUES */
   .band { padding: 4rem 0; }
+  /* fotos intercaladas con el texto, alternando lados */
+  .foto { margin: 2rem 0; max-width: 560px; }
+  .foto.der { margin-left: auto; }
+  .foto img { width: 100%; height: auto; border-radius: 2px; }
+  .foto figcaption { font-size: 1rem; line-height: 1.5; color: var(--texto-3); margin-top: 0.5rem; }
+  @media (max-width: 700px) { .foto, .foto.der { max-width: none; margin-left: 0; } }
   .band-dark { background:var(--dark); }
   .band-deep { background:var(--dark-deep); }
   .band-light { background:#fff; color:var(--dark); }
@@ -201,6 +207,10 @@
     <h2 class="sec" id="tray-t">Cómo llegué acá.</h2>
     <p class="prosa">Trabajo desde chica: en las vacaciones de la primaria mi papá me llevaba a su estudio contable, y no paré más. A los 24 era gerente del hotel del ACA. En 2008 puse ese hotel en Booking y empezaron a llegar turistas de Rusia a Eldorado. Estudié Turismo en la Universidad Nacional de Misiones y desde 2011 doy clases. Seis años los pasé en gestión y ejecución de proyectos del clúster forestal, trabajando con ingenieros.</p>
     <p class="prosa">De todo eso no me quedó una técnica. Me quedó una forma de trabajar: <strong>reviso</strong>. Cuando digo que una inteligencia artificial recomienda trece lugares de mi ciudad, voy y los verifico uno por uno. Cuando publico una cifra, digo de dónde salió y qué no prueba.</p>
+    <figure class="foto der">
+      <img src="assets/visita-awasi.webp" width="1200" height="931" loading="lazy" decoding="async" alt="Laura Silvester con un grupo de alumnos de turismo en la entrada de Awasi, en la selva misionera">
+      <figcaption>Visita técnica con alumnos de turismo a Awasi, Iguazú.</figcaption>
+    </figure>
     <a class="video-lite" href="https://www.tiktok.com/@lausilvester/video/7632793413007478036" data-tt="7632793413007478036" target="_blank" rel="noopener noreferrer" aria-label="Ver el video: mi historia con el marketing turístico">
       <span class="video-lite-play" aria-hidden="true"></span>
       <span class="video-lite-t">Mi historia con el marketing turístico</span>
@@ -213,11 +223,19 @@
   <div class="container">
     <h2 class="sec" id="doc-t">Quince años dando clases.</h2>
     <p class="prosa" style="margin-bottom:2rem;">Doy clases en el Centro de Estudios Superiores de Misiones (CESMI), en Eldorado, en las carreras de Turismo y Hotelería y de Administración de Empresas.</p>
+    <figure class="foto">
+      <img src="assets/clase-mesa.webp" width="1200" height="1200" loading="lazy" decoding="async" alt="Laura Silvester de pie en la cabecera de una mesa larga, dando clase a sus alumnos">
+      <figcaption>En clase, en Eldorado.</figcaption>
+    </figure>
     <ul class="lista">
       <li><strong>Materias en nivel superior</strong>Marketing turístico · Investigación de mercado · Principios de comercialización · Proyectos turísticos · Servicios hoteleros · Transporte y servicios turísticos</li>
       <li><strong>Inteligencia Artificial Práctica</strong>Curso presencial de cuatro meses en Eldorado, para profesionales y personas que trabajan. No es teoría sobre inteligencia artificial: es usarla en el trabajo de cada uno.<span class="meta"> · En dictado, 2026</span></li>
       <li><strong>Capacitaciones a prestadores y destinos</strong>Talleres para cámaras empresarias, entes de turismo, municipios y grupos de prestadores de un mismo destino. El material se arma con casos del propio lugar, relevados antes, para que cada participante vea cómo lo describen hoy los sistemas de inteligencia artificial.</li>
     </ul>
+    <figure class="foto der">
+      <img src="assets/clase-pizarron.webp" width="1200" height="660" loading="lazy" decoding="async" alt="Laura Silvester con un grupo de alumnos frente al pizarrón del aula">
+      <figcaption>Con alumnos, en el aula.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -238,6 +256,10 @@
       <li><strong>CAMEM Eldorado — IA que impulsa: Mujeres Empresarias Liderando la Transformación Digital</strong>Taller sobre inteligencia artificial aplicada a los negocios: cómo encuentran, interpretan y recomiendan las inteligencias artificiales a negocios y profesionales. Organizado por el Nodo Eldorado de la Cámara de Mujeres Empresarias de Misiones.<span class="meta"> · Septiembre 2026 · <a href="https://nortemisionero.com.ar/eldorado/la-escribana-andrea-payeska-invito-a-la-charla-gratuita-ia-que-impulsa-en-eldorado/" style="color: var(--texto-3);border-bottom:1px solid rgba(255,255,255,0.2);" target="_blank" rel="noopener noreferrer">Anuncio en Norte Misionero ↗</a></span></li>
       <li><strong>Consejo Provincial de Turismo de Misiones (COPROTUR)</strong>Reunión del sector turístico encabezada por el ministro de Turismo de Misiones, José María Arrúa, en Cabañas San Valentín, Eldorado. Exposición sobre el posicionamiento de los destinos turísticos en las recomendaciones de las plataformas de inteligencia artificial.<span class="meta"> · Noviembre 2026 · <a href="https://misiones.tur.ar/el-coprotur-reunio-en-eldorado-a-referentes-del-sector-para-analizar-la-actualidad-y-planificar-el-turismo-en-misiones/" style="color: var(--texto-3);border-bottom:1px solid rgba(255,255,255,0.2);" target="_blank" rel="noopener noreferrer">Comunicado del Ministerio de Turismo de Misiones ↗</a> · Cobertura: <a href="https://www.canal12misiones.com/noticias-de-misiones/turismo/misiones-222" style="color: var(--texto-3);border-bottom:1px solid rgba(255,255,255,0.2);" target="_blank" rel="noopener noreferrer">Canal 12 Misiones ↗</a>, <a href="https://economis.com.ar/el-coprotur-reunio-en-eldorado-al-sector-turistico-para-planificar-la-temporada-de-verano-en-misiones/" style="color: var(--texto-3);border-bottom:1px solid rgba(255,255,255,0.2);" target="_blank" rel="noopener noreferrer">Economis ↗</a>, <a href="https://turismo180grados.com/destinos/la-planificacion-del-turismo-misionero-en-reunion-del-coprotur-en-eldorado/" style="color: var(--texto-3);border-bottom:1px solid rgba(255,255,255,0.2);" target="_blank" rel="noopener noreferrer">Turismo 180 Grados ↗</a> y <a href="https://nortemisionero.com.ar/actualidad/el-coprotur-reunio-en-eldorado-a-referentes-del-sector-para-analizar-la-actualidad-y-planificar-el-turismo-en-misiones/" style="color: var(--texto-3);border-bottom:1px solid rgba(255,255,255,0.2);" target="_blank" rel="noopener noreferrer">Norte Misionero ↗</a></span></li>
     </ul>
+    <figure class="foto">
+      <img src="assets/charla-camem-2025.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Laura Silvester junto a integrantes de la Cámara de Mujeres Empresarias de Misiones, frente al banner de la cámara">
+      <figcaption>Taller en la Cámara de Mujeres Empresarias de Misiones (CAMEM), Eldorado, 2025.</figcaption>
+    </figure>
   </div>
 </section>
 
