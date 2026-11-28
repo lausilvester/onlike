@@ -191,6 +191,16 @@
   .fuente-preferida { margin: 3rem 0 0; padding: 1.5rem 2rem; background: var(--gray-light); border-left: 3px solid var(--lima); display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; }
   .fuente-preferida p { font-size: 1rem; font-weight: 400; line-height: 1.5; color: var(--ink); margin: 0; flex: 1 1 260px; }
 
+  /* Titular: el punto lima cae como un sello, igual que en el Inicio. Pasa una vez, al cargar. */
+  .punto { display: inline-block; color: var(--lima); transform-origin: 50% 90%; animation: punto-sello 1.1s .5s both; }
+  @keyframes punto-sello {
+    0%   { transform: translateY(-140px); opacity: 0; }
+    10%  { opacity: 1; }
+    45%  { transform: translateY(0) scale(1.35, .65); animation-timing-function: ease-out; }
+    65%  { transform: translateY(-16px) scale(.95, 1.1); }
+    85%  { transform: translateY(0) scale(1.1, .9); }
+    100% { transform: none; opacity: 1; }
+  }
   /* foco visible y movimiento reducido */
   :focus-visible { outline: 2px solid #C8FF00; outline-offset: 3px; }
   .nota-body :focus-visible, .idx-list :focus-visible, .sec-white :focus-visible, nav :focus-visible { outline-color: #8E51B9; }
@@ -419,7 +429,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="idx-hero">
   <div class="container-narrow">
-    <h1><span class="thin">Notas sobre turismo</span><br>y visibilidad digital.</h1>
+    <h1><span class="thin">Notas sobre turismo</span><br>y visibilidad digital<span class="punto">.</span></h1>
     <p>Trabajos propios sobre lo que está pasando con la demanda turística argentina y sobre por qué un buen negocio puede quedar afuera de las recomendaciones antes de que empiece la comparación. Con fuentes, y con los límites de cada dato declarados.</p>
   </div>
 </div>
