@@ -295,6 +295,16 @@
     .d-lab { opacity: 1; }
   }
 
+  /* foto junto a la introducción de los tres momentos */
+  .mom-intro { display: grid; grid-template-columns: minmax(0, 760px) 300px; gap: 3rem; align-items: start; justify-content: space-between; }
+  .mom-fig { margin: 0; }
+  .mom-fig img { display: block; width: 100%; height: auto; border-radius: 2px; }
+  .mom-fig figcaption { font-size: 1rem; line-height: 1.5; color: var(--tinta-3); margin-top: 0.5rem; }
+  @media (max-width: 900px) {
+    .mom-intro { grid-template-columns: 1fr; gap: 1.5rem; }
+    .mom-fig { max-width: 340px; }
+  }
+
   /* foco visible y movimiento reducido */
   :focus-visible { outline: 2px solid #C8FF00; outline-offset: 3px; }
   .nota-body :focus-visible, .idx-list :focus-visible, .sec-white :focus-visible, nav :focus-visible { outline-color: #8E51B9; }
@@ -513,7 +523,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="sec-white on-light" aria-labelledby="h-momentos">
   <div class="container">
     <h2 class="s-title" id="h-momentos">El viajero elige el destino<br><span class="thin">antes de elegir dónde dormir.</span></h2>
-    <p class="body-t" style="max-width:760px;">Antes de decidir un viaje, las personas arman una lista de lugares posibles. Buscan destinos, comparan experiencias, consultan mapas, sitios web, redes sociales y recomendaciones. Cada vez más, también le preguntan a una inteligencia artificial qué hacer y cómo organizar el recorrido. En ese camino, un destino puede perder la oportunidad de ser elegido en tres momentos.</p>
+    <div class="mom-intro">
+      <p class="body-t">Antes de decidir un viaje, las personas arman una lista de lugares posibles. Buscan destinos, comparan experiencias, consultan mapas, sitios web, redes sociales y recomendaciones. Cada vez más, también le preguntan a una inteligencia artificial qué hacer y cómo organizar el recorrido. En ese camino, un destino puede perder la oportunidad de ser elegido en tres momentos.</p>
+      <figure class="mom-fig">
+        <img src="assets/laguna-torre-chalten.webp" width="1000" height="1250" loading="lazy" decoding="async" alt="Laura Silvester frente a la Laguna Torre, con el Cerro Torre de fondo, en El Chaltén">
+        <figcaption>Laguna Torre, El Chaltén.</figcaption>
+      </figure>
+    </div>
     <div class="momentos">
       <div class="momento">
         <h3>Cuando queda fuera de las opciones.</h3>
